@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { guides, type GuideCategory } from '../data/guides';
+
+const sorted = [...guides].sort((a, b) => b.updated.localeCompare(a.updated));
+
+const SECTIONS: { category: GuideCategory[]; label: string; path: string; deck: string }[] = [
+	{
+		category: ['Area Code Lists', 'Area Code Guides', 'Area Codes'],
+		label: 'Area Codes',
+		path: '/area-codes/',
+		deck: 'State and province lists, individual lookups, and how the numbering plan actually works.',
+	},
+	{
+		category: ['ZIP Codes'],
+		label: 'ZIP Codes',
+		path: '/zip-codes/',
+		deck: 'City ZIP code lists and county breakdowns, sourced from USPS/Census data.',
+	},
+	{
+		category: ['Counties'],
+		label: 'Counties',
+		path: '/counties/',
+		deck: 'Which county a major US city actually sits in.',
+	},
+	{
+		category: ['International Dialing'],
+		label: 'International Dialing',
+		path: '/international-dialing/',
+		deck: 'Current dialing formats for calling abroad from the US.',
+	},
+];
+
+const bySection = SECTIONS.map((s) => ({
+	...s,
+	items: sorted.filter((g) => s.category.includes(g.category)).slice(0, 3),
+}));
+---
+
+<Layout>
+	<section class="pt-4 pb-14 md:pt-8">
+		<h1 class="max-w-3xl text-4xl leading-[1.12] font-bold tracking-tight text-[var(--ink)] md:text-5xl">
+			Where a phone number is really from, and why.
+		</h1>
+		<p class="mt-5 max-w-xl text-[1.02rem] leading-relaxed text-[var(--ink)]/60">
+			Area codes, ZIP codes, counties, and international dialing formats -- sourced from NANPA,
+			USPS/Census data, and current carrier records, with the split-and-overlay history and local
+			context a one-line answer leaves out.
+		</p>
+	</section>
+
+	{bySection.map((s) => (
+		<section class="mb-14 last:mb-0">
+			<div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+				<h2 class="m-0 text-[1.5rem] font-bold tracking-tight text-[var(--ink)]">{s.label}</h2>
+				<a href={s.path} class="text-sm font-medium text-[var(--accent-dark)] no-underline hover:underline">Browse all</a>
+			</div>
+			<p class="mt-1.5 max-w-xl text-sm text-[var(--ink)]/55">{s.deck}</p>
+
+			{s.items.length === 0 ? (
+				<p class="mt-6 text-sm text-[var(--ink)]/40">Coming soon.</p>
+			) : (
+				<div class="mt-6 flex flex-col">
+					{s.items.map((g) => (
+						<a href={`/${g.slug}/`} class="item border-b border-[var(--rule)] py-4 no-underline first:pt-0 last:border-b-0">
+							<p class="m-0 text-base font-bold leading-snug text-[var(--ink)] hover:underline">{g.title}</p>
+							<p class="m-0 mt-1 text-sm text-[var(--ink)]/55">{g.description}</p>
+						</a>
+					))}
+				</div>
+			)}
+		</section>
+	))}
+</Layout>
+
+<style>
+	.item {
+		display: block;
+		transition: padding-left 0.15s ease;
+	}
+	.item:hover {
+		padding-left: 0.5rem;
+	}
+</style>

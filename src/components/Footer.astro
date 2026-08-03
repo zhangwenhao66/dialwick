@@ -1,0 +1,27 @@
+---
+const YEAR = new Date().getUTCFullYear();
+---
+
+<footer class="mt-16 border-t border-[var(--rule)] bg-[var(--directory)]">
+	<div class="mx-auto max-w-5xl px-4 py-10 text-sm text-[var(--directory-text)]">
+		<div class="flex flex-wrap items-start justify-between gap-8">
+			<div class="max-w-sm">
+				<p class="m-0 text-base font-bold text-white">DialWick</p>
+				<p class="mt-2 mb-0 leading-relaxed text-[var(--directory-text)]/80">
+					A reference for US area codes, ZIP codes, and international dialing — sourced from
+					NANPA, USPS/Census data, and public carrier records.
+				</p>
+			</div>
+			<nav class="flex flex-wrap gap-x-8 gap-y-2">
+				<a href="/area-codes/" class="text-[var(--directory-text)] no-underline hover:text-white hover:underline">Area Codes</a>
+				<a href="/zip-codes/" class="text-[var(--directory-text)] no-underline hover:text-white hover:underline">ZIP Codes</a>
+				<a href="/counties/" class="text-[var(--directory-text)] no-underline hover:text-white hover:underline">Counties</a>
+				<a href="/international-dialing/" class="text-[var(--directory-text)] no-underline hover:text-white hover:underline">International Dialing</a>
+				<a href="/about/" class="text-[var(--directory-text)] no-underline hover:text-white hover:underline">About</a>
+				<a href="/privacy/" class="text-[var(--directory-text)] no-underline hover:text-white hover:underline">Privacy</a>
+				<a href="/terms/" class="text-[var(--directory-text)] no-underline hover:text-white hover:underline">Terms</a>
+			</nav>
+		</div>
+		<p class="m-0 mt-8 text-xs text-[var(--directory-text)]/50">© {YEAR} DialWick. Not affiliated with NANPA, the FCC, or USPS.</p>
+	</div>
+</footer>

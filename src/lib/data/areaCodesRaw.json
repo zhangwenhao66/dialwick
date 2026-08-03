@@ -1,0 +1,5693 @@
+{
+  "source": "https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes",
+  "license": "CC BY-SA 4.0 (Wikipedia); facts/data are not independently copyrightable",
+  "retrieved": "2026-08-03",
+  "recordCount": 800,
+  "records": [
+    {
+      "code": "200",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "201",
+      "location": "North-east New Jersey ( Bergen County and Hudson County )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of New Jersey 1956: split to create 609 1990: split to create 908 1997: split to create 973 2001: overlaid by 551"
+    },
+    {
+      "code": "202",
+      "location": "Washington, D.C. (all)",
+      "dateEstablished": "1947",
+      "notes": "2021: overlaid by 771"
+    },
+    {
+      "code": "203",
+      "location": "South-west Connecticut ( Bridgeport , Danbury , New Haven , Waterbury )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Connecticut 1995: split to create 860 2009: overlaid by 475"
+    },
+    {
+      "code": "204",
+      "location": "Manitoba (all)",
+      "dateEstablished": "1947",
+      "notes": "2012: overlaid by 431 2022: overlaid by 584"
+    },
+    {
+      "code": "205",
+      "location": "Western and central Alabama ( Birmingham , Tuscaloosa )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Alabama 1995: split to create 334 1998: split to create 256 2019: overlaid by 659"
+    },
+    {
+      "code": "206",
+      "location": "Washington ( Seattle area)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Washington 1957: split to create 509 1995: split to create 360 1997: split to create 425 and 253"
+    },
+    {
+      "code": "207",
+      "location": "Maine (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "208",
+      "location": "Idaho (all)",
+      "dateEstablished": "1947",
+      "notes": "2017: overlaid by 986"
+    },
+    {
+      "code": "209",
+      "location": "Part of central California ( Stockton , Modesto , and Merced , extending into central Yosemite National Park )",
+      "dateEstablished": "1958",
+      "notes": "Split of 916 1998: split to create 559 2022: overlaid by 350"
+    },
+    {
+      "code": "210",
+      "location": "Texas ( San Antonio metropolitan area)",
+      "dateEstablished": "November 1, 1992",
+      "notes": "Split of 512 1997: split three ways to create 830 and 956 2017: overlaid by 726"
+    },
+    {
+      "code": "211",
+      "location": "Not assignable; N11 code for community services, local/regional information service",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "212",
+      "location": "Borough of Manhattan in New York City",
+      "dateEstablished": "1947",
+      "notes": "Created for all of New York City 1984: split to create 718 for Brooklyn, Queens, and Staten Island 1992: the Bronx switched to 718 1992: overlaid by 917 1999: overlaid by 646 2017: overlaid by 332"
+    },
+    {
+      "code": "213",
+      "location": "California (central area of Los Angeles )",
+      "dateEstablished": "1947",
+      "notes": "Created for the southern third of California 1951: split to create 714 1957: split to create 805 1984: split to create 818 1991: split to create 310 1998: split to create 323 2017: merged with 323 as an overlay 2024: overlaid by 738"
+    },
+    {
+      "code": "214",
+      "location": "Texas ( Dallas metropolitan area)",
+      "dateEstablished": "1947",
+      "notes": "1953: split to create 817 1990: split to create 903 1996: split to create 972 1999: merged with 972 and overlaid with 469 2021: overlaid by 945"
+    },
+    {
+      "code": "215",
+      "location": "Pennsylvania ( Philadelphia area, including all its suburbs and parts of surrounding counties)",
+      "dateEstablished": "1947",
+      "notes": "1994: split to create 610 1997: overlaid by 267 2018: overlaid by 445"
+    },
+    {
+      "code": "216",
+      "location": "Ohio ( Cleveland area)",
+      "dateEstablished": "1947",
+      "notes": "1996: split to create 330 1997: split to create 440"
+    },
+    {
+      "code": "217",
+      "location": "Central Illinois ( Springfield , Champaign , Decatur , Urbana , Lincoln )",
+      "dateEstablished": "1947",
+      "notes": "1957: split to create a part of 309 2021: overlaid by 447"
+    },
+    {
+      "code": "218",
+      "location": "Northern Minnesota ( Duluth , Moorhead , Thief River Falls , Bemidji , Brainerd , International Falls )",
+      "dateEstablished": "1947",
+      "notes": "1954: split to create 507"
+    },
+    {
+      "code": "219",
+      "location": "Indiana ( Gary area)",
+      "dateEstablished": "1948",
+      "notes": "Split of 317 2002: split to create 260 and 574"
+    },
+    {
+      "code": "220",
+      "location": "Central Ohio outside of Franklin County (suburban Columbus )",
+      "dateEstablished": "April 22, 2015",
+      "notes": "Overlaid on area code 740"
+    },
+    {
+      "code": "221",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "222",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "223",
+      "location": "South-central Pennsylvania ( Harrisburg , Gettysburg , Lancaster , York )",
+      "dateEstablished": "September 26, 2017",
+      "notes": "Overlaid on 717 Mnemonic : ABE"
+    },
+    {
+      "code": "224",
+      "location": "Illinois (North and northwest suburbs of Chicago)",
+      "dateEstablished": "January 5, 2002",
+      "notes": "Overlaid on 847"
+    },
+    {
+      "code": "225",
+      "location": "East-central Louisiana ( Baton Rouge )",
+      "dateEstablished": "August 17, 1998",
+      "notes": "Created by split of 504"
+    },
+    {
+      "code": "226",
+      "location": "Southwestern Ontario ( London , Windsor , Kitchener-Waterloo , Cambridge )",
+      "dateEstablished": "October 21, 2006",
+      "notes": "Overlaid on 519 2016: overlaid by 548 2023: overlaid by 382 487 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "227",
+      "location": "Western Maryland ( Washington, D.C., suburbs ; all counties which touch the Potomac River ; Silver Spring, Hagerstown, Frederick, Rockville, Cumberland)",
+      "dateEstablished": "June 14, 2023",
+      "notes": "Overlaid on 240/301"
+    },
+    {
+      "code": "228",
+      "location": "Mississippi (Gulfport, Biloxi, Pascagoula , Bay St. Louis, and southmost Mississippi)",
+      "dateEstablished": "September 15, 1997",
+      "notes": "Split of 601"
+    },
+    {
+      "code": "229",
+      "location": "Southwestern Georgia ( Albany , Valdosta, Bainbridge, Americus, Fitzgerald)",
+      "dateEstablished": "August 1, 2000",
+      "notes": "Split of 912"
+    },
+    {
+      "code": "230",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "231",
+      "location": "Northwestern Michigan (Muskegon, Traverse City , Ludington, Petoskey)",
+      "dateEstablished": "June 5, 1999",
+      "notes": "Split of 616"
+    },
+    {
+      "code": "232",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "233",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "234",
+      "location": "Northeastern Ohio ( Akron , Canton, Youngstown, Warren)",
+      "dateEstablished": "October 30, 2000",
+      "notes": "Overlaid on 330"
+    },
+    {
+      "code": "235",
+      "location": "Eastern Missouri ( Columbia , Jefferson City , Hannibal, Cape Girardeau , Farmington, Lake of the Ozarks , Poplar Bluff)",
+      "dateEstablished": "March 24, 2024",
+      "notes": "Overlaid on 573"
+    },
+    {
+      "code": "236",
+      "location": "British Columbia",
+      "dateEstablished": "June 1, 2013",
+      "notes": "Overlaid on 604 , 250 , and 778 [ 2 ] 2019: overlaid by 672 2025: overlaid by 257"
+    },
+    {
+      "code": "237",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "238",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "239",
+      "location": "Southwest Florida ( Lee County , Collier County , the mainland part of Monroe County , including Cape Coral, Fort Myers , Naples, and Everglades)",
+      "dateEstablished": "March 11, 2002",
+      "notes": "Split of 941"
+    },
+    {
+      "code": "240",
+      "location": "Western Maryland (Silver Spring; Washington, D.C., suburbs ; all counties which touch the Potomac River ; Waldorf, Hagerstown, Frederick, Rockville, Cumberland)",
+      "dateEstablished": "June 1, 1997",
+      "notes": "Overlaid on 301 2023: overlaid by 227"
+    },
+    {
+      "code": "241",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "242",
+      "location": "The Bahamas (all)",
+      "dateEstablished": "October 1, 1996",
+      "notes": "Split of 809 Mnemonic : BHA"
+    },
+    {
+      "code": "243",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "244",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "245",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "246",
+      "location": "Barbados (all)",
+      "dateEstablished": "July 1, 1996",
+      "notes": "Split of 809 Mnemonic : BIM"
+    },
+    {
+      "code": "247",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "248",
+      "location": "Michigan ( Oakland County )",
+      "dateEstablished": "May 10, 1997",
+      "notes": "Split of 810 2002: overlaid by 947"
+    },
+    {
+      "code": "249",
+      "location": "Ontario ( Northeastern Ontario and Central Ontario : Greater Sudbury , Sault Ste. Marie , North Bay , etc.)",
+      "dateEstablished": "March 19, 2011",
+      "notes": "Overlaid on 705 2022: overlaid by 683 460 reserved for overlay"
+    },
+    {
+      "code": "250",
+      "location": "British Columbia ( Victoria , Prince George, Prince Rupert, Kelowna, all areas except for Metro Vancouver and the Fraser Valley ; and the isolated border town of Hyder, Alaska , US)",
+      "dateEstablished": "October 19, 1996",
+      "notes": "Split of 604 2008: overlaid by 778 2013: overlaid by 236 2019: overlaid by 672"
+    },
+    {
+      "code": "251",
+      "location": "Alabama ( Mobile County , Baldwin County , Bay Minette, Jackson, Brewton, Citronelle, and a part of southwestern Alabama)",
+      "dateEstablished": "June 18, 2001",
+      "notes": "Split of 334"
+    },
+    {
+      "code": "252",
+      "location": "North Carolina ( Greenville , New Bern , Elizabeth City , Kinston , Outer Banks , Rocky Mount )",
+      "dateEstablished": "March 22, 1998",
+      "notes": "Split of 919"
+    },
+    {
+      "code": "253",
+      "location": "Washington ( Tacoma , McChord Air Force Base, Fort Lewis, Lakewood, Auburn , Puyallup, Enumclaw, Spanaway, and the southern suburbs of Seattle)",
+      "dateEstablished": "April 27, 1997",
+      "notes": "Split of 206"
+    },
+    {
+      "code": "254",
+      "location": "Texas ( Waco , Killeen, Temple, Belton, and Stephenville)",
+      "dateEstablished": "May 25, 1997",
+      "notes": "Split of 817"
+    },
+    {
+      "code": "255",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "256",
+      "location": "Alabama ( Huntsville , Decatur, Cullman, Gadsden, Madison, Florence, Sheffield, Tuscumbia, Fort Payne, Scottsboro, and most of northern Alabama)",
+      "dateEstablished": "March 23, 1998",
+      "notes": "Split of 205 2010: overlaid by 938"
+    },
+    {
+      "code": "257",
+      "location": "British Columbia (all, and the isolated border town of Hyder, Alaska , US)",
+      "dateEstablished": "May 24, 2025",
+      "notes": "Overlaid on 236/672/778 , 604 , 250"
+    },
+    {
+      "code": "258",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "259",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "260",
+      "location": "Indiana (Fort Wayne, New Haven, Decatur, Angola, Huntington, Wabash, and most of northeastern Indiana)",
+      "dateEstablished": "January 15, 2002",
+      "notes": "Split of 219"
+    },
+    {
+      "code": "261",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "262",
+      "location": "Wisconsin (Racine, Kenosha , Menomonee Falls, Waukesha, and most of southeastern Wisconsin excluding Milwaukee County )",
+      "dateEstablished": "September 25, 1999",
+      "notes": "Split of 414"
+    },
+    {
+      "code": "263",
+      "location": "Quebec ( Montreal metropolitan area)",
+      "dateEstablished": "October 22, 2022",
+      "notes": "Overlaid on 514 and 438"
+    },
+    {
+      "code": "264",
+      "location": "Anguilla (all)",
+      "dateEstablished": "March 31, 1997",
+      "notes": "Split of 809 Mnemonic : ANG"
+    },
+    {
+      "code": "265",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "266",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "267",
+      "location": "Pennsylvania (Philadelphia and surrounding suburban area)",
+      "dateEstablished": "July 1, 1999",
+      "notes": "Overlaid on 215"
+    },
+    {
+      "code": "268",
+      "location": "Antigua and Barbuda (all)",
+      "dateEstablished": "April 1, 1996",
+      "notes": "Split of 809 Mnemonic : ANT"
+    },
+    {
+      "code": "269",
+      "location": "Michigan (Battle Creek, Kalamazoo , Benton Harbor, Allegan, Hastings, St. Joseph, and most of southwestern Michigan)",
+      "dateEstablished": "July 13, 2002",
+      "notes": "Split of 616"
+    },
+    {
+      "code": "270",
+      "location": "Kentucky (Owensboro, Paducah , Bowling Green, Hopkinsville, Henderson, Elizabethtown, and most of western Kentucky)",
+      "dateEstablished": "April 19, 1999",
+      "notes": "Split of 502 2014: overlaid by 364"
+    },
+    {
+      "code": "271",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "272",
+      "location": "Pennsylvania (the Wyoming Valley, including Scranton and Wilkes-Barre, Bloomsburg, Danville, Nanticoke, Williamsport, and most of northeastern Pennsylvania)",
+      "dateEstablished": "October 21, 2013",
+      "notes": "Overlaid on 570"
+    },
+    {
+      "code": "273",
+      "location": "Quebec ( Quebec City , Saguenay, the Gaspé Peninsula , Côte-Nord, Chibougamau, St-Georges), Maine ( Estcourt Station )",
+      "dateEstablished": "February 27, 2027",
+      "notes": "reserved for relief (without schedule) of 367/418/581"
+    },
+    {
+      "code": "274",
+      "location": "Wisconsin (Appleton, Sheboygan, Oshkosh, Green Bay , Manitowoc , Marquette, Fond du Lac, and parts of eastern Wisconsin—but not in Milwaukee County )",
+      "dateEstablished": "May 5, 2023",
+      "notes": "Overlaid on 920"
+    },
+    {
+      "code": "275",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "276",
+      "location": "Virginia ( Bristol , Abingdon, Wytheville, Martinsville, Bluefield, Big Stone Gap , and the remainder of southwestern Virginia)",
+      "dateEstablished": "September 1, 2001",
+      "notes": "Split of 540"
+    },
+    {
+      "code": "277",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "278",
+      "location": "Not in use, but reserved for future geographic assignment",
+      "dateEstablished": "",
+      "notes": "Is reserved for relief of 734 , but relief was canceled"
+    },
+    {
+      "code": "279",
+      "location": "California (the Sacramento Metropolitan Area )",
+      "dateEstablished": "March 10, 2018",
+      "notes": "Overlaid on 916"
+    },
+    {
+      "code": "280",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "281",
+      "location": "Texas ( Houston area)",
+      "dateEstablished": "November 2, 1996",
+      "notes": "Split of 713 1999: merged with 713 as an overlay 1999: overlaid by 832 2014: overlaid by 346 2025: overlaid by 621"
+    },
+    {
+      "code": "282",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "283",
+      "location": "Ohio ( Cincinnati , Middletown, Hamilton, Lebanon, and parts of southern and southwestern Ohio)",
+      "dateEstablished": "April 28, 2023",
+      "notes": "Overlaid on 513"
+    },
+    {
+      "code": "284",
+      "location": "British Virgin Islands (all)",
+      "dateEstablished": "October 1, 1997",
+      "notes": "Split of 809 Mnemonic : BVI"
+    },
+    {
+      "code": "285",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "286",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "287",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "288",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "289",
+      "location": "Ontario (Oshawa-Hamilton and Golden Horseshoe, excluding Toronto 416 but including its adjacent suburbs)",
+      "dateEstablished": "June 9, 2001",
+      "notes": "Overlaid on 905 2013: overlaid by 365 2021: overlaid by 742 537 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "290",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "291",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "292",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "293",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "294",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "295",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "296",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "297",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "298",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "299",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "300",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "301",
+      "location": "Maryland (Silver Spring; Washington, D.C., suburbs ; all counties which touch the Potomac River ; Waldorf, Hagerstown, Frederick, Rockville, Cumberland; and land line telephones in western Maryland)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Maryland 1991: split to create 410 1997: overlaid by 240 2023: overlaid by 227"
+    },
+    {
+      "code": "302",
+      "location": "Delaware (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "303",
+      "location": "Colorado ( Denver , Boulder, Longmont, Aurora, Golden, Limon, Littleton, Centennial; central Colorado)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Colorado 1988: split to create 719 1995: split to create 970 1998: overlaid by 720 2022: overlaid by 983"
+    },
+    {
+      "code": "304",
+      "location": "West Virginia",
+      "dateEstablished": "1947",
+      "notes": "2009: overlaid by 681"
+    },
+    {
+      "code": "305",
+      "location": "Florida (all of Miami-Dade County and the Florida Keys )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Florida 1953: split to create 813 1965: split to create 904 1988: split to create 407 1995: split to create 954 1998: partially overlaid by 786 , in Miami-Dade County only 2008: completely overlaid by 786 , including the Florida Keys 2023: overlaid with 645"
+    },
+    {
+      "code": "306",
+      "location": "Saskatchewan (all)",
+      "dateEstablished": "1947",
+      "notes": "2012: overlaid by 639 [ 3 ] 2021: overlaid by 474 [ 4 ]"
+    },
+    {
+      "code": "307",
+      "location": "Wyoming (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "308",
+      "location": "Nebraska (North Platte, Scottsbluff, McCook, Kearney, Grand Island ; western Nebraska)",
+      "dateEstablished": "1955",
+      "notes": "Split of 402"
+    },
+    {
+      "code": "309",
+      "location": "Illinois ( Peoria , Bloomington , Moline , Rock Island , Galesburg ; west-central Illinois)",
+      "dateEstablished": "1957",
+      "notes": "Created from parts of 217 and 815 2023: overlaid by 861"
+    },
+    {
+      "code": "310",
+      "location": "California (southwestern coastal and coastal-adjacent areas of Los Angeles County , including Beverly Hills , Brentwood, Malibu, Pacific Palisades, Redondo Beach, Santa Monica, Torrance, and Santa Catalina Island)",
+      "dateEstablished": "November 2, 1991",
+      "notes": "Split of 213 1997: split to create 562 2006: overlaid by 424"
+    },
+    {
+      "code": "311",
+      "location": "Not assignable; N11 code for non-emergency calls to local government, or to reach the city or county hall",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "312",
+      "location": "Illinois (downtown Chicago )",
+      "dateEstablished": "1947",
+      "notes": "1989: split to create 708 1996: split to create 773 2009: overlaid by 872"
+    },
+    {
+      "code": "313",
+      "location": "Michigan (Dearborn, the Grosse Pointes, Detroit , and the latter's enclaves of Hamtramck and Highland Park)",
+      "dateEstablished": "1947",
+      "notes": "1993: split to create 810 1997: split to create 734 2025: overlaid by 679"
+    },
+    {
+      "code": "314",
+      "location": "Missouri ( St. Louis , St. Louis County , Florissant, Crestwood, Hazelwood, Kirkwood, and surrounding suburbs of St. Louis)",
+      "dateEstablished": "1947",
+      "notes": "1950: split to create a part of 417 1996: split to create 573 1999: split to create 636 2022: overlaid by 557"
+    },
+    {
+      "code": "315",
+      "location": "New York ( Syracuse , Utica, Watertown; north-central New York)",
+      "dateEstablished": "1947",
+      "notes": "1954: split to create a part of 607 2017: overlaid by 680"
+    },
+    {
+      "code": "316",
+      "location": "Kansas ( Wichita metro, McConnell AFB , Cheney , El Dorado , Mulvane , Newton )",
+      "dateEstablished": "1947",
+      "notes": "2001: split to create 620"
+    },
+    {
+      "code": "317",
+      "location": "Indiana ( Indianapolis and immediate metro area including Carmel, Fishers, Noblesville, Westfield, Greenwood, Mooresville, Beech Grove, Plainfield, Avon, Brownsburg, and Zionsville)",
+      "dateEstablished": "1947",
+      "notes": "1948: split to create 219 1997: split to create 765 2016: overlaid by 463"
+    },
+    {
+      "code": "318",
+      "location": "Louisiana ( Shreveport–Bossier City , Monroe, Alexandria, Fisher, Tallulah, and most of northern Louisiana)",
+      "dateEstablished": "1957",
+      "notes": "Originally used temporarily for the San Francisco Bay Area until 1953. [ 5 ] Split of 504 1999: split to create 337 2025: overlaid with 457"
+    },
+    {
+      "code": "319",
+      "location": "Iowa ( Cedar Rapids , Waterloo, Burlington, Iowa City ; parts of eastern Iowa)",
+      "dateEstablished": "1947",
+      "notes": "2001: split to create 563"
+    },
+    {
+      "code": "320",
+      "location": "Minnesota ( St. Cloud , Alexandria, Morris, Hutchinson, Sandstone, Appleton, Willmar; central Minnesota)",
+      "dateEstablished": "March 17, 1996",
+      "notes": "Split of 612"
+    },
+    {
+      "code": "321",
+      "location": "Florida ( Orlando , Cocoa, Melbourne, Rockledge , Titusville , St. Cloud, and east-central Florida)",
+      "dateEstablished": "November 1, 1999",
+      "notes": "In 1999, created by a simultaneous split and overlay of the 407 area code."
+    },
+    {
+      "code": "322",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "323",
+      "location": "California ( Downtown Los Angeles and surrounding areas)",
+      "dateEstablished": "June 13, 1998",
+      "notes": "Split of 213 2017: merged with 213 as an overlay 2024: overlaid with 738"
+    },
+    {
+      "code": "324",
+      "location": "Florida ( Jacksonville , St. Augustine, Starke, and most of northeastern Florida)",
+      "dateEstablished": "February 26, 2024",
+      "notes": "Overlaid with 904"
+    },
+    {
+      "code": "325",
+      "location": "Texas ( Abilene , San Angelo, Sweetwater, Snyder)",
+      "dateEstablished": "April 5, 2003",
+      "notes": "Split of 915"
+    },
+    {
+      "code": "326",
+      "location": "Ohio ( Dayton , Springfield , and southwestern Ohio north and east of the Cincinnati metropolitan area )",
+      "dateEstablished": "March 8, 2020",
+      "notes": "Overlaid on 937"
+    },
+    {
+      "code": "327",
+      "location": "Arkansas ( Texarkana , Jonesboro, Pine Bluff; southern, eastern, and northeastern Arkansas)",
+      "dateEstablished": "February 20, 2024",
+      "notes": "Overlaid on 870 2027: 870 & 327 will soon cover the entire state with boundary elimination details are TBD"
+    },
+    {
+      "code": "328",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "329",
+      "location": "New York ( Dutchess , Orange , Putnam , Rockland , Sullivan , and Ulster counties)",
+      "dateEstablished": "March 24, 2023",
+      "notes": "Overlaid on 845"
+    },
+    {
+      "code": "330",
+      "location": "Ohio ( Akron , Canton, Youngstown, Warren, and most of northeastern Ohio )",
+      "dateEstablished": "March 9, 1996",
+      "notes": "Split of 216 2000: overlaid by 234"
+    },
+    {
+      "code": "331",
+      "location": "Illinois (Aurora, Naperville, Oswego; western suburbs of Chicago )",
+      "dateEstablished": "October 7, 2007",
+      "notes": "Overlaid on 630"
+    },
+    {
+      "code": "332",
+      "location": "New York ( New York City : Manhattan only, except for Marble Hill )",
+      "dateEstablished": "June 10, 2017",
+      "notes": "Created as an overlay of 212 , 646 , and a part of 917"
+    },
+    {
+      "code": "333",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "334",
+      "location": "Alabama ( Montgomery , Auburn, Dothan, Enterprise, Eufaula, Opelika, Phenix City, Selma, Tuskegee, and most of southeastern Alabama)",
+      "dateEstablished": "January 15, 1995",
+      "notes": "Split of 205 2001: split to create 251 2026: overlaid by 483"
+    },
+    {
+      "code": "335",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "336",
+      "location": "North Carolina (the Piedmont Triad , Wilkesboro, Roxboro , and most of northwestern North Carolina)",
+      "dateEstablished": "December 15, 1997",
+      "notes": "Split of 910 2016: overlaid by 743"
+    },
+    {
+      "code": "337",
+      "location": "Louisiana (Lafayette, Lake Charles , Leesville, New Iberia, Opelousas, and most of southwestern Louisiana)",
+      "dateEstablished": "October 11, 1999",
+      "notes": "Split of 318"
+    },
+    {
+      "code": "338",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "339",
+      "location": "Eastern Massachusetts (suburbs of Boston )",
+      "dateEstablished": "May 2, 2001",
+      "notes": "Overlaid on 781"
+    },
+    {
+      "code": "340",
+      "location": "U.S. Virgin Islands (all)",
+      "dateEstablished": "June 1, 1997",
+      "notes": "Split of 809"
+    },
+    {
+      "code": "341",
+      "location": "California (coastal regions of the East Bay — Oakland , Fremont, Hayward, Richmond, Berkeley, and Alameda)",
+      "dateEstablished": "July 22, 2019",
+      "notes": "Overlaid on 510"
+    },
+    {
+      "code": "342",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "343",
+      "location": "Ontario ( Ottawa metropolitan area and southeastern Ontario)",
+      "dateEstablished": "May 17, 2010",
+      "notes": "Overlaid on 613 2022: overlaid by 753 871 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "344",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "345",
+      "location": "The Cayman Islands (all)",
+      "dateEstablished": "September 1, 1996",
+      "notes": "Split of 809"
+    },
+    {
+      "code": "346",
+      "location": "Texas ( Houston area)",
+      "dateEstablished": "July 1, 2014",
+      "notes": "Overlaid on 713 , 281 , and 832 2025: overlaid by 621"
+    },
+    {
+      "code": "347",
+      "location": "New York ( New York City : The Bronx , Brooklyn , Queens , Staten Island , and Marble Hill )",
+      "dateEstablished": "October 1, 1999",
+      "notes": "Overlaid on 718 and a part of 917 2011: overlaid by 929 2026: to be overlaid by 465"
+    },
+    {
+      "code": "348",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "349",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "350",
+      "location": "California ( Stockton , Modesto , Merced , Tracy, San Andreas, and a part of central California extending into central Yosemite National Park)",
+      "dateEstablished": "November 28, 2022",
+      "notes": "Overlaid on 209"
+    },
+    {
+      "code": "351",
+      "location": "Massachusetts ( Ashby , Barre , Boxborough , Carlisle , Groveland , Rowley , Wendell , Wenham , and northeastern Massachusetts)",
+      "dateEstablished": "May 2, 2001",
+      "notes": "Overlaid on 978"
+    },
+    {
+      "code": "352",
+      "location": "Florida ( Gainesville , Ocala, Inverness, Dunnellon, and a part of central Florida)",
+      "dateEstablished": "December 3, 1995",
+      "notes": "Split of 904 Mnemonic : FLA"
+    },
+    {
+      "code": "353",
+      "location": "Wisconsin ( Madison , La Crosse , Platteville, Beloit, and most of southwestern Wisconsin)",
+      "dateEstablished": "September 15, 2023",
+      "notes": "Overlaid on 608"
+    },
+    {
+      "code": "354",
+      "location": "Quebec (central southern Quebec; surrounding Montreal )",
+      "dateEstablished": "October 22, 2022",
+      "notes": "Overlaid on 450/579"
+    },
+    {
+      "code": "355",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "356",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Was authorized as a relief area code in New Jersey , but 862 was used"
+    },
+    {
+      "code": "357",
+      "location": "California ( Fresno , Hanford, Madera, Tulare, Visalia, and parts of the San Joaquin Valley )",
+      "dateEstablished": "March 26, 2025",
+      "notes": "Overlaid on 559"
+    },
+    {
+      "code": "358",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "359",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "360",
+      "location": "Washington ( Olympia , Vancouver, Bellingham, Bremerton, Port Angeles, Aberdeen, and most of western Washington, except the Seattle metropolitan area)",
+      "dateEstablished": "January 15, 1995",
+      "notes": "Split of 206 2017: overlaid by 564"
+    },
+    {
+      "code": "361",
+      "location": "Texas ( Corpus Christi , Victoria, George West, and much of south Texas )",
+      "dateEstablished": "February 13, 1999",
+      "notes": "Split of 512"
+    },
+    {
+      "code": "362",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "363",
+      "location": "New York ( Nassau County , including Hempstead and Mineola )",
+      "dateEstablished": "January 20, 2023",
+      "notes": "Overlaid on 516"
+    },
+    {
+      "code": "364",
+      "location": "Kentucky (Owensboro, Paducah , Bowling Green, Hopkinsville, Henderson, Elizabethtown, and most of western Kentucky)",
+      "dateEstablished": "March 3, 2014",
+      "notes": "Overlaid on 270"
+    },
+    {
+      "code": "365",
+      "location": "Ontario (Oshawa-Hamilton and the Golden Horseshoe, excluding Toronto 's 416 but including its adjacent suburbs)",
+      "dateEstablished": "March 25, 2013",
+      "notes": "Overlaid on 905 and 289 [ 6 ] Overlaid by 742 in 2021 [ 7 ] 537 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "366",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "367",
+      "location": "Quebec ( Quebec City , Saguenay, the Gaspé Peninsula , Côte-Nord, Chibougamau, St-Georges), Maine ( Estcourt Station )",
+      "dateEstablished": "November 24, 2018",
+      "notes": "Overlaid on 418/581 [ 8 ] [ 9 ] 273 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "368",
+      "location": "Alberta (all)",
+      "dateEstablished": "April 23, 2022",
+      "notes": "Overlaid on 403 , 780 , and 587/825 568 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "369",
+      "location": "California ( Vallejo , Crescent City, Eureka, Redwoods National Park , Santa Rosa, Ukiah, and most of northwestern California)",
+      "dateEstablished": "February 1, 2023",
+      "notes": "Overlaid on 707"
+    },
+    {
+      "code": "370",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "371",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "372",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "373",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "374",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "375",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "376",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "377",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "378",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "379",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "377 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "380",
+      "location": "Ohio (Columbus and Franklin County)",
+      "dateEstablished": "February 27, 2016",
+      "notes": "Overlaid on 614 in Ohio"
+    },
+    {
+      "code": "381",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "382",
+      "location": "Ontario ( London , Windsor , Kitchener-Waterloo , Cambridge , and most of southwestern Ontario )",
+      "dateEstablished": "June 17, 2023",
+      "notes": "overlaid on 519/226/548 487 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "383",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "384",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "385",
+      "location": "Utah (Counties of Davis ; Morgan ; Salt Lake ; Utah ; and Weber along the Wasatch Front , including the cities of Salt Lake City , Ogden , and Provo )",
+      "dateEstablished": "March 29, 2009",
+      "notes": "Overlaid on 801"
+    },
+    {
+      "code": "386",
+      "location": "Florida ( Daytona Beach , Lake City, Live Oak, Crescent City, and parts of northeastern Florida)",
+      "dateEstablished": "February 15, 2001",
+      "notes": "Split of 904 Mnemonic : FUN"
+    },
+    {
+      "code": "387",
+      "location": "Not in use; reserved to overlay 416/647/437 ( Toronto metropolitan area)",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "388",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "389",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "390",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "391",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "392",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "393",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "394",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "395",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "396",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "397",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "398",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "399",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "400",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "401",
+      "location": "Rhode Island (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "402",
+      "location": "Nebraska ( Omaha , Lincoln, Norfolk, Superior, and most of eastern Nebraska)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Nebraska 1954: split to create 308 2011: overlaid by 531"
+    },
+    {
+      "code": "403",
+      "location": "Alberta ( Calgary , Banff, Red Deer, Medicine Hat, Lethbridge, Brooks, and most of southern Alberta)",
+      "dateEstablished": "1947",
+      "notes": "Originally also covered all of the Yukon Territory and a part of the Northwest Territories 1997: split to create a part of 867 1999: split to create 780 2008: overlaid by 587 2016: overlaid by 825 2022: overlaid by 368 568 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "404",
+      "location": "Georgia ( Atlanta and the Atlanta metropolitan area inside of the Interstate 285 perimeter highway)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Georgia 1954: split to create area code 912 1992: split to create area code 706 1995: split to create area code 770 1998: overlaid by 678"
+    },
+    {
+      "code": "405",
+      "location": "Oklahoma ( Oklahoma City , Stillwater, Edmond, Norman, Shawnee, and most of central Oklahoma)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Oklahoma 1953: split to create 918 1997: split to create 580 2021: overlaid by 572"
+    },
+    {
+      "code": "406",
+      "location": "Montana (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "407",
+      "location": "Florida ( Orlando , Sanford, St. Cloud, Kissimmee , and a part of east-central Florida)",
+      "dateEstablished": "April 16, 1988",
+      "notes": "Split of 305 1996: split to create 561 1999: split and overlaid, partially, by 321 2019: overlaid by 689"
+    },
+    {
+      "code": "408",
+      "location": "California ( San Jose , Cupertino , Los Altos, Los Altos Hills, Los Gatos, Milpitas, Mountain View, Santa Clara, Sunnyvale, and Silicon Valley )",
+      "dateEstablished": "1959",
+      "notes": "Split of 415 1998: split to create 831 2012: overlaid by 669"
+    },
+    {
+      "code": "409",
+      "location": "Texas ( Beaumont , Galveston , Orange , Port Arthur, and Texas City )",
+      "dateEstablished": "November 1, 1982",
+      "notes": "Split of 713 2000: split to create 936 and 979"
+    },
+    {
+      "code": "410",
+      "location": "Maryland (Baltimore, Annapolis, Columbia, and all counties and cities which touch the Chesapeake Bay , the Atlantic Ocean , or Delaware , except for St. Mary's County (in 301))",
+      "dateEstablished": "October 6, 1991",
+      "notes": "Split of 301 1997: overlaid by 443 2012: overlaid by 667"
+    },
+    {
+      "code": "411",
+      "location": "Not assignable; N11 code for local information, local directory assistance",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "412",
+      "location": "Pennsylvania ( Pittsburgh region)",
+      "dateEstablished": "1947",
+      "notes": "1998: split to create 724 2001: overlaid by 878"
+    },
+    {
+      "code": "413",
+      "location": "Western Massachusetts",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "414",
+      "location": "Wisconsin ( Milwaukee County includes cities of Milwaukee, West Allis, Oak Creek, and others)",
+      "dateEstablished": "1947",
+      "notes": "1955: split to create a part of 608 1997: split to create 920 1999: split to create 262"
+    },
+    {
+      "code": "415",
+      "location": "California ( San Francisco , Daly City, Brisbane, and most of Marin County )",
+      "dateEstablished": "1947",
+      "notes": "1959: split to create 408 and 707 1991: split to create 510 1997: split to create 650 2015: overlaid by 628"
+    },
+    {
+      "code": "416",
+      "location": "Ontario (the City of Toronto )",
+      "dateEstablished": "1947",
+      "notes": "1953: split to create a part of 519 1993: split to create 905 2001: overlaid by 647 2013: overlaid by 437 2025: overlaid by 942 Area code 387 is reserved as a fifth code for the region"
+    },
+    {
+      "code": "417",
+      "location": "Missouri ( Springfield , Joplin, Branson, Lamar, Lebanon, and most of southwestern Missouri)",
+      "dateEstablished": "1950",
+      "notes": "Created from parts of the area codes 314 and 816"
+    },
+    {
+      "code": "418",
+      "location": "Quebec ( Quebec City , Saguenay, the Gaspé Peninsula , Côte-Nord, Chibougamau, St-Georges), Maine ( Estcourt Station )",
+      "dateEstablished": "1947",
+      "notes": "2008: overlaid by 581 2018: overlaid by 367 273 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "419",
+      "location": "Ohio ( Toledo area and most of northwestern Ohio)",
+      "dateEstablished": "1947",
+      "notes": "2002: overlaid by 567"
+    },
+    {
+      "code": "420",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "421",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "422",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "423",
+      "location": "Tennessee (two discontiguous portions of East Tennessee in the northeast and in the southeast)",
+      "dateEstablished": "September 11, 1995",
+      "notes": "Split of 615 1999: split to create 865 2025: overlaid with 729"
+    },
+    {
+      "code": "424",
+      "location": "California (southwestern coastal and coastal-adjacent areas of Los Angeles County; also Santa Catalina Island)",
+      "dateEstablished": "August 26, 2006",
+      "notes": "Overlaid on 310"
+    },
+    {
+      "code": "425",
+      "location": "Washington (northern and eastern suburbs of Seattle )",
+      "dateEstablished": "April 27, 1997",
+      "notes": "Split of 206"
+    },
+    {
+      "code": "426",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "427",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "428",
+      "location": "New Brunswick",
+      "dateEstablished": "April 29, 2023",
+      "notes": "Overlaid on 506"
+    },
+    {
+      "code": "429",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "430",
+      "location": "Texas (Tyler, Sherman, Longview, Marshall, Palestine, Jacksonville, Carthage, and northeast Texas)",
+      "dateEstablished": "February 15, 2003",
+      "notes": "Overlaid on 903"
+    },
+    {
+      "code": "431",
+      "location": "Manitoba",
+      "dateEstablished": "November 3, 2012",
+      "notes": "Overlaid on 204 2022: overlaid by 584"
+    },
+    {
+      "code": "432",
+      "location": "Western Texas ( Midland , Odessa , Big Spring, Alpine, Fort Stockton)",
+      "dateEstablished": "April 5, 2003",
+      "notes": "Split of 915"
+    },
+    {
+      "code": "433",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "434",
+      "location": "Virginia ( Charlottesville , Lynchburg, Danville, and south-central Virginia)",
+      "dateEstablished": "June 1, 2001",
+      "notes": "Split of 804"
+    },
+    {
+      "code": "435",
+      "location": "Most of Utah outside the Salt Lake City, Ogden, and Provo metropolitan areas in northern Utah",
+      "dateEstablished": "September 21, 1997",
+      "notes": "Split of 801"
+    },
+    {
+      "code": "436",
+      "location": "Ohio (surrounding Cleveland on three sides, including: Elyria, Lorain, Oberlin, Ashtabula, and most of north-central Ohio)",
+      "dateEstablished": "March 1, 2024",
+      "notes": "Overlaid on 440"
+    },
+    {
+      "code": "437",
+      "location": "Ontario ( Toronto metropolitan area)",
+      "dateEstablished": "March 25, 2013",
+      "notes": "Overlaid on 416/647 2025: overlaid by 942 Area code 387 is reserved for the region"
+    },
+    {
+      "code": "438",
+      "location": "Quebec ( Montreal metropolitan area)",
+      "dateEstablished": "November 4, 2006",
+      "notes": "Overlaid on 514 2022: overlaid by 263"
+    },
+    {
+      "code": "439",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "440",
+      "location": "Ohio (surrounding Cleveland on three sides, including: Elyria, Lorain, Oberlin, Ashtabula, and most of north-central Ohio)",
+      "dateEstablished": "August 16, 1997",
+      "notes": "Split of 216 2024: overlaid by 436"
+    },
+    {
+      "code": "441",
+      "location": "Bermuda (all)",
+      "dateEstablished": "October 1, 1995",
+      "notes": "1995: the first of many splits from 809"
+    },
+    {
+      "code": "442",
+      "location": "California (most of the desert and mountain portions of the southeastern two-thirds of California)",
+      "dateEstablished": "November 21, 2009",
+      "notes": "Overlaid on 760"
+    },
+    {
+      "code": "443",
+      "location": "Maryland (Baltimore, Annapolis, Columbia, and all counties and cities which touch the Chesapeake Bay , the Atlantic Ocean , or Delaware , except for St. Mary's County (in 301))",
+      "dateEstablished": "June 1, 1997",
+      "notes": "Overlaid on 410 2012: overlaid by 667"
+    },
+    {
+      "code": "444",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "445",
+      "location": "overlay of 215 and 267 ( Philadelphia , Pennsylvania )",
+      "dateEstablished": "March 3, 2018",
+      "notes": "Created in 2018 One thousands block is assigned to a switch in Tucson, Arizona"
+    },
+    {
+      "code": "446",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "447",
+      "location": "Illinois ( Springfield , Champaign , Decatur, Urbana, Lincoln, and parts of central Illinois)",
+      "dateEstablished": "March 27, 2021",
+      "notes": "Overlaid on 217"
+    },
+    {
+      "code": "448",
+      "location": "The Florida Panhandle",
+      "dateEstablished": "June 22, 2021",
+      "notes": "Overlaid on 850"
+    },
+    {
+      "code": "449",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "450",
+      "location": "Quebec (central southern Quebec; surrounds Montreal )",
+      "dateEstablished": "June 13, 1998",
+      "notes": "Split of 514 2010: overlaid by 579 2022: overlaid by 354"
+    },
+    {
+      "code": "451",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "452",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "453",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "454",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "455",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "456",
+      "location": "Not in use; became available for geographic assignment in 2023",
+      "dateEstablished": "",
+      "notes": "Originally reserved for inbound international calls for carrier-specific services 2017: was withdrawn because of lack of demand 2023: returned to the pool of area codes available for future area code relief"
+    },
+    {
+      "code": "457",
+      "location": "Louisiana ( Shreveport–Bossier City , Monroe, Alexandria, Fisher, Tallulah, and most of northern Louisiana)",
+      "dateEstablished": "September 25, 2025",
+      "notes": "Overlaid to 318"
+    },
+    {
+      "code": "458",
+      "location": "Oregon ( Eugene , Medford, Bend, Pendleton, Corvallis, Ontario, Burns; excludes the Portland metropolitan area)",
+      "dateEstablished": "February 10, 2010",
+      "notes": "Overlaid on 541"
+    },
+    {
+      "code": "459",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "460",
+      "location": "Ontario ( Northeastern Ontario and Central Ontario : Greater Sudbury , Sault Ste. Marie , North Bay , etc.)",
+      "dateEstablished": "",
+      "notes": "reserved as a fourth area code to overlay 705/249/683 with no set date of implementation"
+    },
+    {
+      "code": "461",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "462",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "463",
+      "location": "Indiana ( Indianapolis and immediate metro area including Carmel, Fishers, Noblesville, Westfield, Greenwood, Mooresville, Beech Grove, Plainfield, Avon, Brownsburg, and Zionsville)",
+      "dateEstablished": "November 15, 2016",
+      "notes": "Overlaid on 317 Mnemonic : INDiana"
+    },
+    {
+      "code": "464",
+      "location": "Illinois (western and southern portions of suburban Cook County and far eastern sections of Will County and southern and near western suburbs of Chicago )",
+      "dateEstablished": "January 21, 2022",
+      "notes": "Overlaid on 708"
+    },
+    {
+      "code": "465",
+      "location": "New York ( New York City : The Bronx , Brooklyn , Queens , Staten Island , and Marble Hill )",
+      "dateEstablished": "June 18, 2026",
+      "notes": "To be overlaid on 347/718/929"
+    },
+    {
+      "code": "466",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "467",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "468",
+      "location": "Quebec (Western Québec, except Montréal 514 and surrounding area 450: a large area including Abitibi-Témiscamingue, Estrie, Mauricie, Outaouais, Sherbrooke, and Trois-Rivières)",
+      "dateEstablished": "October 22, 2022",
+      "notes": "Overlaid on 819/873"
+    },
+    {
+      "code": "469",
+      "location": "Texas ( Dallas metropolitan area)",
+      "dateEstablished": "July 1, 1999",
+      "notes": "Overlaid on 214 and 972 2021: overlaid by 945"
+    },
+    {
+      "code": "470",
+      "location": "Georgia ( Atlanta metropolitan area)",
+      "dateEstablished": "February 26, 2010",
+      "notes": "Overlaid on area codes 404 , 678 and 770"
+    },
+    {
+      "code": "471",
+      "location": "Mississippi ( Tupelo , Columbus , Corinth, Greenville, Greenwood, Starkville, and most of northern Mississippi)",
+      "dateEstablished": "January 30, 2026",
+      "notes": "Overlaid on 662"
+    },
+    {
+      "code": "472",
+      "location": "North Carolina ( Fayetteville , Wilmington , Fort Bragg , Seymour Johnson Air Force Base , Jacksonville, Lumberton, and much of southeastern North Carolina)",
+      "dateEstablished": "October 7, 2022",
+      "notes": "Overlaid on 910"
+    },
+    {
+      "code": "473",
+      "location": "Grenada (all)",
+      "dateEstablished": "October 31, 1997",
+      "notes": "Split of 809 Mnemonic : GRE or GRD"
+    },
+    {
+      "code": "474",
+      "location": "Saskatchewan",
+      "dateEstablished": "October 2, 2021",
+      "notes": "Overlaid on 306/639 [ 4 ]"
+    },
+    {
+      "code": "475",
+      "location": "Connecticut ( Bridgeport , Danbury , New Haven , Waterbury , and southwestern Connecticut)",
+      "dateEstablished": "December 12, 2009",
+      "notes": "Overlaid on 203"
+    },
+    {
+      "code": "476",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "477",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "478",
+      "location": "Georgia ( Macon , Warner Robins, Swainsboro, Milledgeville , Perry, and a part of central Georgia)",
+      "dateEstablished": "August 1, 2000",
+      "notes": "Split of 912"
+    },
+    {
+      "code": "479",
+      "location": "Arkansas (Fort Smith, Fayetteville , Rogers, and most of northwestern Arkansas)",
+      "dateEstablished": "January 19, 2002",
+      "notes": "Split of 501"
+    },
+    {
+      "code": "480",
+      "location": "Arizona ( Phoenix metropolitan area ; primarily the East Valley )",
+      "dateEstablished": "March 1, 1999",
+      "notes": "Created by a three-way split of 602 (along with 623 ) 2023: combined with 602 and 623 into an overlay complex for the Phoenix metropolitan area"
+    },
+    {
+      "code": "481",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "482",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "483",
+      "location": "Alabama (Montgomery, Auburn, Dothan, Enterprise, Eufaula, Opelika, Phenix City, Selma, Tuskegee, and most of southeastern Alabama)",
+      "dateEstablished": "February 23, 2026",
+      "notes": "Overlaid on 334"
+    },
+    {
+      "code": "484",
+      "location": "Pennsylvania (Chester, Lehigh Valley , Norristown, Reading; parts of southeastern Pennsylvania)",
+      "dateEstablished": "June 5, 1999",
+      "notes": "Overlaid on 610 2022: overlaid by 835"
+    },
+    {
+      "code": "485",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "486",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "487",
+      "location": "Ontario ( London , Windsor , Kitchener-Waterloo , Cambridge , and most of southwestern Ontario )",
+      "dateEstablished": "",
+      "notes": "reserved as a fifth area code to overlay 519/226/548/382 with no set date of implementation"
+    },
+    {
+      "code": "488",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "489",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "490",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "491",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "492",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "493",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "494",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "495",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "496",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "497",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "498",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "499",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "500",
+      "location": "Personal communications services",
+      "dateEstablished": "May 19, 1994",
+      "notes": ""
+    },
+    {
+      "code": "501",
+      "location": "Arkansas ( Little Rock , Hot Springs, and much of central Arkansas, excluding Pine Bluff)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Arkansas 1997: split to create 870 2002: split to create 479"
+    },
+    {
+      "code": "502",
+      "location": "Kentucky ( Louisville , Frankfort , Shelbyville, Bardstown, and most of north-central Kentucky)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Kentucky 1954: split to create 606 1999: split to create 270"
+    },
+    {
+      "code": "503",
+      "location": "Oregon ( Portland , Salem , Hillsboro , Beaverton , St. Helens , Tillamook , Astoria , and most of northwestern Oregon)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Oregon 1995: split to create 541 2000: partially overlaid by 971 , excluding Clatsop County and Tillamook County 2008: complete overlay implemented"
+    },
+    {
+      "code": "504",
+      "location": "Louisiana ( New Orleans metropolitan area)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Louisiana 1957: split to create 318 1998: split to create 225 2001: split to create 985"
+    },
+    {
+      "code": "505",
+      "location": "New Mexico ( Albuquerque , Santa Fe , Farmington, Gallup, all of northwestern New Mexico, and a part of central New Mexico)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of New Mexico 2007: split to create 575"
+    },
+    {
+      "code": "506",
+      "location": "New Brunswick (all)",
+      "dateEstablished": "1955",
+      "notes": "Split of 902 Originally also covered Newfoundland 1962: split to give Newfoundland its own 709 area code 2023: overlaid by 428"
+    },
+    {
+      "code": "507",
+      "location": "Minnesota ( Rochester , Mankato , Austin , Marshall , Winona , and most of southern Minnesota)",
+      "dateEstablished": "1954",
+      "notes": "Split of 612 and 218 August 30, 2024: overlaid by 924"
+    },
+    {
+      "code": "508",
+      "location": "Southeastern Massachusetts",
+      "dateEstablished": "July 16, 1988",
+      "notes": "Split of 617 1997: split to create 978 2001: overlaid by 774"
+    },
+    {
+      "code": "509",
+      "location": "Washington (all of eastern Washington, including Spokane , Ellensburg, Pullman, the Tri-Cities area, Walla Walla , Wenatchee , and Yakima )",
+      "dateEstablished": "1956",
+      "notes": "Split of 206"
+    },
+    {
+      "code": "510",
+      "location": "California (coastal regions of the East Bay : Oakland , Fremont, Hayward, Richmond, Berkeley, and Alameda)",
+      "dateEstablished": "September 2, 1991",
+      "notes": "Used until 1981 for TWX service Split of 415 1998: split to create 925 2019: overlaid by 341"
+    },
+    {
+      "code": "511",
+      "location": "Not assignable; N11 code for local information for transportation and road conditions, local police non-emergency services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "512",
+      "location": "Texas ( Austin , San Marcos, and parts of central Texas)",
+      "dateEstablished": "1947",
+      "notes": "1992: split to create 210 1999: split to create 361 2013: overlaid by 737"
+    },
+    {
+      "code": "513",
+      "location": "Ohio ( Cincinnati , Middletown, Hamilton, Lebanon, and parts of southern and southwestern Ohio)",
+      "dateEstablished": "1947",
+      "notes": "1996: split to create 937 2023: overlaid by 283"
+    },
+    {
+      "code": "514",
+      "location": "Quebec ( Montreal metropolitan area)",
+      "dateEstablished": "1947",
+      "notes": "1957: split to create 819 1998: split to create 450 2006: overlaid by 438 2022: overlaid by 263"
+    },
+    {
+      "code": "515",
+      "location": "Iowa ( Des Moines , Ames, Fort Dodge, Jefferson, Indianola, and most of north-central Iowa)",
+      "dateEstablished": "1947",
+      "notes": "2000: split to create 641"
+    },
+    {
+      "code": "516",
+      "location": "New York ( Nassau County , including Hempstead and Mineola )",
+      "dateEstablished": "1951",
+      "notes": "Split of 914 1999: split to create 631 2023: overlaid by 363"
+    },
+    {
+      "code": "517",
+      "location": "Michigan ( Lansing , Jackson, Charlotte, Deerfield, Addison, and most of south-central Michigan)",
+      "dateEstablished": "1947",
+      "notes": "2000: split to create 989"
+    },
+    {
+      "code": "518",
+      "location": "New York ( Albany , Schenectady, Plattsburgh, Saranac Lake, Lake George, Westport, and most of northeastern New York)",
+      "dateEstablished": "1947",
+      "notes": "2017: overlaid by 838"
+    },
+    {
+      "code": "519",
+      "location": "Ontario ( London , Windsor , Kitchener-Waterloo , Cambridge , Brantford , Guelph , and most of southwestern Ontario )",
+      "dateEstablished": "1953",
+      "notes": "Created from parts of 416 and 613 1957: split to create a part of 705 2006: overlaid by 226 2016: overlaid by 548 2023: overlaid by 382 487 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "520",
+      "location": "Arizona ( Tucson , Nogales , Fort Huachuca , and most of southeastern Arizona)",
+      "dateEstablished": "March 19, 1995",
+      "notes": "Split of 602 2001: split to create 928"
+    },
+    {
+      "code": "521",
+      "location": "Personal communications services",
+      "dateEstablished": "September 21, 2017",
+      "notes": ""
+    },
+    {
+      "code": "522",
+      "location": "Personal communications services",
+      "dateEstablished": "August 1, 2016",
+      "notes": ""
+    },
+    {
+      "code": "523",
+      "location": "Personal communications services",
+      "dateEstablished": "November 13, 2018",
+      "notes": ""
+    },
+    {
+      "code": "524",
+      "location": "Personal communications services",
+      "dateEstablished": "July 12, 2019",
+      "notes": ""
+    },
+    {
+      "code": "525",
+      "location": "Personal communications services",
+      "dateEstablished": "July 13, 2020",
+      "notes": ""
+    },
+    {
+      "code": "526",
+      "location": "Personal communications services",
+      "dateEstablished": "January 28, 2021",
+      "notes": ""
+    },
+    {
+      "code": "527",
+      "location": "Personal communications services",
+      "dateEstablished": "September 29, 2021",
+      "notes": ""
+    },
+    {
+      "code": "528",
+      "location": "Personal communications services",
+      "dateEstablished": "March 2, 2022",
+      "notes": ""
+    },
+    {
+      "code": "529",
+      "location": "Personal communications services",
+      "dateEstablished": "September 16, 2022",
+      "notes": ""
+    },
+    {
+      "code": "530",
+      "location": "California ( Redding , Auburn , Chico, Davis, the California shore of Lake Tahoe , Placerville, Susanville, Truckee, Yreka , and most of northeastern California)",
+      "dateEstablished": "November 1, 1997",
+      "notes": "Split of 916 2025: overlaid by 837"
+    },
+    {
+      "code": "531",
+      "location": "Nebraska ( Omaha , Lincoln , Norfolk, Superior, and most of eastern Nebraska)",
+      "dateEstablished": "March 26, 2011",
+      "notes": "Overlaid on 402"
+    },
+    {
+      "code": "532",
+      "location": "Personal communications services",
+      "dateEstablished": "2024",
+      "notes": "Overlaid on area codes 500, 521, 522, 523, 524, 525, 526, 527, 528, 529, 533, 544, 566, 577, and 588"
+    },
+    {
+      "code": "533",
+      "location": "Personal communications services",
+      "dateEstablished": "September 26, 2009",
+      "notes": ""
+    },
+    {
+      "code": "534",
+      "location": "Wisconsin (Wausau, Eau Claire, Rhinelander, and most of northern Wisconsin)",
+      "dateEstablished": "August 14, 2010",
+      "notes": "Overlaid on 715"
+    },
+    {
+      "code": "535",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "536",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "537",
+      "location": "Ontario ( Niagara Falls Region (including St. Catharines ), Hamilton , and Greater Toronto Area , except for Toronto )",
+      "dateEstablished": "",
+      "notes": "reserved as a fifth area code to overlay 905/289/365/742 with no set date of implementation"
+    },
+    {
+      "code": "538",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "539",
+      "location": "Oklahoma ( Tulsa , Bartlesville, McAlester, Muskogee, Henryetta, and northeastern Oklahoma)",
+      "dateEstablished": "April 1, 2011",
+      "notes": "Overlaid on 918"
+    },
+    {
+      "code": "540",
+      "location": "Virginia ( Fredericksburg , Roanoke , Blacksburg, Harrisonburg, Lexington, Staunton, Winchester, and parts of north-central Virginia)",
+      "dateEstablished": "July 15, 1995",
+      "notes": "Split of 703 2001: split to create 276 2022: overlaid by 826"
+    },
+    {
+      "code": "541",
+      "location": "Oregon ( Eugene , Bend, Corvallis, Medford, Pendleton, and all of Oregon except metropolitan northwestern Oregon, including Portland, Salem, and Astoria)",
+      "dateEstablished": "November 5, 1995",
+      "notes": "Split of 503 2010: overlaid by 458"
+    },
+    {
+      "code": "542",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "543",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "544",
+      "location": "Personal communications services",
+      "dateEstablished": "December 15, 2010",
+      "notes": ""
+    },
+    {
+      "code": "545",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "546",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "547",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "548",
+      "location": "Ontario ( London , Windsor , Kitchener-Waterloo , Cambridge , and most of southwestern Ontario )",
+      "dateEstablished": "June 4, 2016",
+      "notes": "Overlaid on 519/226 2023: overlaid by 382 487 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "549",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "550",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "551",
+      "location": "New Jersey ( Bergen County and Hudson County )",
+      "dateEstablished": "December 29, 2001",
+      "notes": "Overlaid on 201"
+    },
+    {
+      "code": "552",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "553",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "554",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "555",
+      "location": "Not in use; code is reserved for directory assistance applications",
+      "dateEstablished": "",
+      "notes": "1-NPA-555-01XX is used for fictional telephone numbers ; 1-NPA-555-1212 is used for directory assistance ; and other 1-NPA-555-XXXX numbers can be used for other 555 services"
+    },
+    {
+      "code": "556",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "557",
+      "location": "Missouri ( St. Louis , St. Louis County , Florissant, Crestwood, Hazelwood, Kirkwood, and surrounding suburbs of St. Louis)",
+      "dateEstablished": "August 12, 2022",
+      "notes": "Overlaid on 314"
+    },
+    {
+      "code": "558",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "559",
+      "location": "California ( Fresno , Hanford, Madera, Tulare, Visalia, and parts of the San Joaquin Valley )",
+      "dateEstablished": "November 14, 1998",
+      "notes": "Split of 209 2025: overlaid by 357"
+    },
+    {
+      "code": "560",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "561",
+      "location": "Florida ( Palm Beach County , including Palm Beach , West Palm Beach , Boca Raton, Boynton Beach, etc.)",
+      "dateEstablished": "May 13, 1996",
+      "notes": "Split of 407 2002: split to create 772 2023: overlaid with 728"
+    },
+    {
+      "code": "562",
+      "location": "California (Downey, Long Beach , Whittier, Norwalk, La Habra, Lakewood, Pico Rivera, and most of southeastern Los Angeles County )",
+      "dateEstablished": "January 25, 1997",
+      "notes": "Split of 310"
+    },
+    {
+      "code": "563",
+      "location": "Iowa ( Davenport , Dubuque, Clinton, Bettendorf, and most of eastern and northeastern Iowa)",
+      "dateEstablished": "March 25, 2001",
+      "notes": "Split of 319"
+    },
+    {
+      "code": "564",
+      "location": "Washington ( Olympia , Vancouver, Bellingham, Bremerton, Port Angeles, Aberdeen, and all of western Washington)",
+      "dateEstablished": "August 28, 2017",
+      "notes": "Overlaid on 360"
+    },
+    {
+      "code": "565",
+      "location": "Not in use; available for geographic assignment, but in planning stage in Georgia for overlay with 912",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "566",
+      "location": "Personal communications services",
+      "dateEstablished": "April 17, 2012",
+      "notes": ""
+    },
+    {
+      "code": "567",
+      "location": "Ohio (Toledo area and most of northwestern Ohio)",
+      "dateEstablished": "January 1, 2002",
+      "notes": "Overlaid on 419"
+    },
+    {
+      "code": "568",
+      "location": "Alberta (all)",
+      "dateEstablished": "",
+      "notes": "reserved as a fifth area code to overlay 403/780/587/825/368 with no set date of implementation"
+    },
+    {
+      "code": "569",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "570",
+      "location": "Pennsylvania (the Wyoming Valley , including Scranton and Wilkes-Barre ; Bloomsburg; Danville; Nanticoke; Williamsport; and most of northeastern Pennsylvania)",
+      "dateEstablished": "December 5, 1998",
+      "notes": "Split of 717 2013: overlaid by 272"
+    },
+    {
+      "code": "571",
+      "location": "Virginia ( Washington, D.C. suburbs, including Arlington and Alexandria)",
+      "dateEstablished": "March 1, 2000",
+      "notes": "Overlaid on 703"
+    },
+    {
+      "code": "572",
+      "location": "Oklahoma ( Oklahoma City , Stillwater, Edmond, Norman, Shawnee, and most of central Oklahoma)",
+      "dateEstablished": "May 24, 2021",
+      "notes": "Overlaid on 405"
+    },
+    {
+      "code": "573",
+      "location": "Missouri ( Columbia , Jefferson City , Hannibal, Cape Girardeau , Farmington, Lake of the Ozarks , Poplar Bluff, and most of eastern Missouri excluding the St. Louis metropolitan area )",
+      "dateEstablished": "January 7, 1996",
+      "notes": "Split of 314 2024: overlaid by 235"
+    },
+    {
+      "code": "574",
+      "location": "Indiana ( South Bend , Elkhart, Goshen, Logansport, and most of north-central Indiana)",
+      "dateEstablished": "January 15, 2002",
+      "notes": "Split of 219"
+    },
+    {
+      "code": "575",
+      "location": "New Mexico ( Las Cruces , Roswell , Carlsbad Caverns National Park , Socorro , Taos , and Truth or Consequences ; excludes central ( Albuquerque and its suburbs) and northwestern New Mexico)",
+      "dateEstablished": "October 7, 2007",
+      "notes": "Split of 505"
+    },
+    {
+      "code": "576",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "577",
+      "location": "Personal communications services",
+      "dateEstablished": "March 27, 2014",
+      "notes": ""
+    },
+    {
+      "code": "578",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "579",
+      "location": "Quebec (central southern Quebec; surrounds Montreal )",
+      "dateEstablished": "August 21, 2010",
+      "notes": "Overlaid on 450 2022: overlaid by 354"
+    },
+    {
+      "code": "580",
+      "location": "Oklahoma ( Ponca City , Ada, Ardmore, Enid, Lawton, Elk City, and most of southern and western Oklahoma)",
+      "dateEstablished": "November 1, 1997",
+      "notes": "Split of 405"
+    },
+    {
+      "code": "581",
+      "location": "Quebec ( Quebec City , Saguenay, the Gaspé Peninsula , Côte-Nord, Chibougamau, St-Georges), Maine ( Estcourt Station )",
+      "dateEstablished": "September 19, 2008",
+      "notes": "Overlaid on 418 2018: overlaid by 367 273 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "582",
+      "location": "Pennsylvania ( Erie , State College , Altoona, Clearfield, Emporium, Johnsonburg, Johnstown, Meyersdale, Ridgway, Somerset, and most of northwestern and parts of central Pennsylvania)",
+      "dateEstablished": "May 1, 2021",
+      "notes": "Overlaid on 814"
+    },
+    {
+      "code": "583",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "584",
+      "location": "Manitoba",
+      "dateEstablished": "October 29, 2022",
+      "notes": "Overlaid on 204/431"
+    },
+    {
+      "code": "585",
+      "location": "New York ( Rochester , Batavia, and much of western New York)",
+      "dateEstablished": "November 15, 2001",
+      "notes": "Split of 716"
+    },
+    {
+      "code": "586",
+      "location": "Michigan ( Macomb County )",
+      "dateEstablished": "September 22, 2001",
+      "notes": "Split of 810"
+    },
+    {
+      "code": "587",
+      "location": "Alberta (all)",
+      "dateEstablished": "September 19, 2008",
+      "notes": "Overlaid on 403 and 780 2016: overlaid by 825 2022: overlaid by 368 568 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "588",
+      "location": "Personal communications services",
+      "dateEstablished": "September 9, 2015",
+      "notes": ""
+    },
+    {
+      "code": "589",
+      "location": "Not in use; available for personal communications services",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "590",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "591",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "592",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "593",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "594",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "595",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "596",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "597",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "598",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "599",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "600",
+      "location": "Canadian non-geographic tariffed: teleprinter, caller-pays mobile, etc.",
+      "dateEstablished": "October 1, 1993",
+      "notes": "Rarely used, but serves some satellite phones in the Canadian high Arctic Canadian TWX service used area code 610 until 1992, when it was exchanged for 600. 2015: 622 was activated for Canadian non-geographic use 2023: 622 was overlaid with 633 for non-geographic use"
+    },
+    {
+      "code": "601",
+      "location": "Mississippi ( Jackson , Hattiesburg , Meridian, Natchez , Vicksburg , and most of central Mississippi)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Mississippi 1997: split to create 228 1999: split to create 662 2005: overlaid by 769"
+    },
+    {
+      "code": "602",
+      "location": "Arizona ( Phoenix metropolitan area ; primarily the city of Phoenix )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Arizona 1995: split to create 520 1999: split to create 480 and 623 2023: recombined with 480 and 623 into an overlay complex for the Phoenix metropolitan area"
+    },
+    {
+      "code": "603",
+      "location": "New Hampshire (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "604",
+      "location": "British Columbia ( Metro Vancouver Regional District , Fraser Valley Regional District , Whistler, and the remaining portion of 604 not part of an overlay complex)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of British Columbia 1996: split to create 250 2001: partly overlaid by 778 2008: the overlay was extended to all of 604 as well as 250 2013: overlaid by 236 2019: overlaid by 672"
+    },
+    {
+      "code": "605",
+      "location": "South Dakota (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "606",
+      "location": "Kentucky (Ashland, Pikeville, Hazard, Somerset, London , Corbin, Maysville, and much of eastern Kentucky)",
+      "dateEstablished": "1955",
+      "notes": "Split of 502 2000: split to create 859"
+    },
+    {
+      "code": "607",
+      "location": "New York ( Binghamton , Elmira , Cortland , Norwich, Ithaca , and most of south-central New York)",
+      "dateEstablished": "1954",
+      "notes": "Created from parts of 315 and 716"
+    },
+    {
+      "code": "608",
+      "location": "Wisconsin ( Madison , La Crosse , Platteville, Beloit, and most of southwestern Wisconsin)",
+      "dateEstablished": "1955",
+      "notes": "Created from parts of 414 and 715 2023: overlaid by 353"
+    },
+    {
+      "code": "609",
+      "location": "New Jersey ( Trenton , Atlantic City , Princeton , McGuire Air Force Base, Fort Dix, and most of central , south central & southeastern New Jersey)",
+      "dateEstablished": "1956",
+      "notes": "Split of 201 1999: split to create 856 2018: overlaid by 640"
+    },
+    {
+      "code": "610",
+      "location": "Pennsylvania (Chester, Lehigh Valley , Norristown, Reading; parts of southeastern Pennsylvania)",
+      "dateEstablished": "January 8, 1994",
+      "notes": "Used for Canadian TWX service until 1992 Split of 215 1999: overlaid by 484 2022: overlaid by 835"
+    },
+    {
+      "code": "611",
+      "location": "Not assignable; N11 code for repair service for landline telephones, customer service for wireless carriers",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "612",
+      "location": "Minnesota ( Minneapolis , Fort Snelling, St. Anthony, and Richfield)",
+      "dateEstablished": "1947",
+      "notes": "1954: split to create 507 1996: split to create 320 1998: split to create 651 2000: split to create 763 and 952"
+    },
+    {
+      "code": "613",
+      "location": "Ontario ( Ottawa metropolitan area and southeastern Ontario)",
+      "dateEstablished": "1947",
+      "notes": "1953: split to create a part of 519 1957: split to create a part of 705 2010: overlaid by 343 2022: overlaid by 753 871 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "614",
+      "location": "Ohio ( Columbus and Franklin County)",
+      "dateEstablished": "1947",
+      "notes": "1997: split to create 740 2016: overlaid by 380"
+    },
+    {
+      "code": "615",
+      "location": "Tennessee (Northern Middle Tennessee including Nashville [ 10 ] )",
+      "dateEstablished": "1954",
+      "notes": "Split of 901 1995: split to create 423 1997: split to create 931 2015: overlaid by 629"
+    },
+    {
+      "code": "616",
+      "location": "Michigan ( Grand Rapids , Greenville, Holland, Ionia, Zeeland , and most of southwestern Michigan)",
+      "dateEstablished": "1947",
+      "notes": "1961: split to create 906 1999: split to create 231 2002: split to create 269"
+    },
+    {
+      "code": "617",
+      "location": "East-central Massachusetts , including Boston",
+      "dateEstablished": "1947",
+      "notes": "1988: split to create 508 1997: split to create 781 2001: overlaid by 857"
+    },
+    {
+      "code": "618",
+      "location": "Illinois ( Carbondale , Alton, Belleville, Cahokia, Centralia, Edwardsville, Marion, Metropolis , Vandalia , and most of southern Illinois )",
+      "dateEstablished": "1947",
+      "notes": "2023: overlaid by 730"
+    },
+    {
+      "code": "619",
+      "location": "California ( San Diego and suburbs)",
+      "dateEstablished": "1982",
+      "notes": "Split of 714 1997: split to create 760 1999: split to create 858 2017: merged with 858 as an overlay"
+    },
+    {
+      "code": "620",
+      "location": "Kansas (southern Kansas not including the Wichita Metropolitan Area )",
+      "dateEstablished": "February 3, 2001",
+      "notes": "Split of 316"
+    },
+    {
+      "code": "621",
+      "location": "Texas (Houston area)",
+      "dateEstablished": "January 23, 2025",
+      "notes": "Overlaid on 713/281/832/346"
+    },
+    {
+      "code": "622",
+      "location": "Canadian non-geographic",
+      "dateEstablished": "March 23, 2015",
+      "notes": "Overlaid by 633"
+    },
+    {
+      "code": "623",
+      "location": "Arizona ( Phoenix metropolitan area ; primarily the West Valley )",
+      "dateEstablished": "March 1, 1999",
+      "notes": "Created by three-way split of 602 (along with 480 ) 2023: combined with 602 and 480 into an overlay complex for the Phoenix metropolitan area"
+    },
+    {
+      "code": "624",
+      "location": "New York (Buffalo, Niagara Falls, Olean, and parts of western New York)",
+      "dateEstablished": "November 16, 2023",
+      "notes": "overlaid on 716"
+    },
+    {
+      "code": "625",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "626",
+      "location": "California ( San Gabriel Valley )",
+      "dateEstablished": "June 14, 1997",
+      "notes": "Split of 818"
+    },
+    {
+      "code": "627",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Originally assigned as part of a 3-way split of 707 (northwestern California) but was canceled"
+    },
+    {
+      "code": "628",
+      "location": "California ( San Francisco , Daly City, Brisbane, and most of Marin County )",
+      "dateEstablished": "March 21, 2015",
+      "notes": "Overlaid on 415"
+    },
+    {
+      "code": "629",
+      "location": "Tennessee ( Middle Tennessee , including Nashville and surrounding area)",
+      "dateEstablished": "March 28, 2015",
+      "notes": "Overlaid on 615"
+    },
+    {
+      "code": "630",
+      "location": "Illinois (western suburbs of Chicago, including DuPage , central and southern Kane , northern Kendall , far northern Will , and small portions of Cook counties)",
+      "dateEstablished": "August 3, 1996",
+      "notes": "Split of 708 2007: overlaid by 331"
+    },
+    {
+      "code": "631",
+      "location": "New York ( Suffolk County on Long Island )",
+      "dateEstablished": "November 1, 1999",
+      "notes": "Split of 516 2016: overlaid by 934"
+    },
+    {
+      "code": "632",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "633",
+      "location": "Canadian non-geographic",
+      "dateEstablished": "May 15, 2023",
+      "notes": "Overlaid on area code 622 on May 15, 2023"
+    },
+    {
+      "code": "634",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "635",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "636",
+      "location": "Missouri ( St. Charles , Chesterfield, Union, Troy, and parts of east-central Missouri)",
+      "dateEstablished": "May 22, 1999",
+      "notes": "Split of 314"
+    },
+    {
+      "code": "637",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "638",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "639",
+      "location": "Saskatchewan",
+      "dateEstablished": "May 25, 2013",
+      "notes": "Overlaid on 306 ; originally planned as 474 , but was changed to avoid confusion with central office codes [ 3 ] 2021: overlaid by 474"
+    },
+    {
+      "code": "640",
+      "location": "New Jersey ( Trenton , Atlantic City , Princeton , and most of central & southeastern New Jersey)",
+      "dateEstablished": "September 17, 2018",
+      "notes": "Overlaid on 609"
+    },
+    {
+      "code": "641",
+      "location": "Iowa ( Mason City , Oskaloosa, Creston, Pella, Ottumwa, Britt, Clear Lake, Fairfield, and parts of central Iowa)",
+      "dateEstablished": "July 9, 2000",
+      "notes": "Split of 515"
+    },
+    {
+      "code": "642",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "643",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "644",
+      "location": "Not in use; reserved for Canadian non-geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "645",
+      "location": "Florida ( Miami-Dade County and the Florida Keys )",
+      "dateEstablished": "August 4, 2023",
+      "notes": "Overlaid on 305/786"
+    },
+    {
+      "code": "646",
+      "location": "New York ( New York City : Manhattan only, except for Marble Hill )",
+      "dateEstablished": "July 1, 1999",
+      "notes": "Overlaid on 212 and a part of 917 2017: overlaid by 332 Mnemonic : MHN"
+    },
+    {
+      "code": "647",
+      "location": "Ontario ( Toronto )",
+      "dateEstablished": "March 5, 2001",
+      "notes": "Overlaid on 416 2013: overlaid by 437 2025: overlaid by 942 Area code 387 is reserved for the region"
+    },
+    {
+      "code": "648",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "649",
+      "location": "The Turks and Caicos Islands (all)",
+      "dateEstablished": "June 1, 1997",
+      "notes": "Split of 809"
+    },
+    {
+      "code": "650",
+      "location": "California (Daly City, South San Francisco, Palo Alto , Redwood City, Menlo Park, Mountain View, San Mateo, Santa Clara)",
+      "dateEstablished": "August 2, 1997",
+      "notes": "Split of 415"
+    },
+    {
+      "code": "651",
+      "location": "Minnesota ( St. Paul , Eagan , Lindstrom, Red Wing, Hastings, Stillwater, and a part of east-central Minnesota)",
+      "dateEstablished": "July 12, 1998",
+      "notes": "Split of 612"
+    },
+    {
+      "code": "652",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "653",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "654",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "655",
+      "location": "Not in use; reserved for Canadian non-geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "656",
+      "location": "Florida (all of Hillsborough County , including Tampa and its suburbs, MacDill Air Force Base , and Plant City, and also the inland areas of Pasco County and Oldsmar in Pinellas County [ 11 ] )",
+      "dateEstablished": "February 22, 2022",
+      "notes": "Overlaid on 813 [ 12 ]"
+    },
+    {
+      "code": "657",
+      "location": "California (Northern Orange County : Anaheim , Fullerton , Garden Grove, Huntington Beach , Orange, Santa Ana , and portions Newport Beach and Costa Mesa)",
+      "dateEstablished": "September 23, 2008",
+      "notes": "Overlaid on 714"
+    },
+    {
+      "code": "658",
+      "location": "Jamaica (all)",
+      "dateEstablished": "April 30, 2019",
+      "notes": "Overlaid on 876"
+    },
+    {
+      "code": "659",
+      "location": "Alabama ( Birmingham , Tuscaloosa , and parts of western and central Alabama)",
+      "dateEstablished": "November 12, 2019",
+      "notes": "Overlaid on 205 [ 13 ]"
+    },
+    {
+      "code": "660",
+      "location": "Missouri ( Sedalia , Kirksville, Maryville, Mexico, Whiteman Air Force Base , and a part of north-central Missouri)",
+      "dateEstablished": "October 12, 1997",
+      "notes": "Split of 816"
+    },
+    {
+      "code": "661",
+      "location": "California (Northern Los Angeles County , including Lancaster , Palmdale , and Santa Clarita ; and most of Kern County , including Bakersfield , Mojave, and Edwards Air Force Base )",
+      "dateEstablished": "February 13, 1999",
+      "notes": "Split of 805"
+    },
+    {
+      "code": "662",
+      "location": "Mississippi ( Tupelo , Columbus , Corinth, Greenville, Greenwood, Starkville, and most of northern Mississippi)",
+      "dateEstablished": "April 19, 1999",
+      "notes": "Split of 601 2026: overlaid by 471"
+    },
+    {
+      "code": "663",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "664",
+      "location": "Montserrat (all)",
+      "dateEstablished": "July 1, 1996",
+      "notes": "Split of 809 Mnemonic : MOI"
+    },
+    {
+      "code": "665",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "666",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "667",
+      "location": "Maryland (all counties and cities which touch the Chesapeake Bay, the Atlantic Ocean, or Delaware, except for St. Mary's County (in 301))",
+      "dateEstablished": "March 24, 2012",
+      "notes": "Created as an overlay of 410/443"
+    },
+    {
+      "code": "668",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "669",
+      "location": "California (San Jose, Cupertino, Los Altos, Los Altos Hills, Los Gatos, Milpitas, Mountain View, Santa Clara, Sunnyvale, and Silicon Valley)",
+      "dateEstablished": "November 20, 2012",
+      "notes": "Overlaid on 408"
+    },
+    {
+      "code": "670",
+      "location": "Northern Mariana Islands (all)",
+      "dateEstablished": "July 1, 1997",
+      "notes": "Created for membership in NANP 670 was the former country code for the islands"
+    },
+    {
+      "code": "671",
+      "location": "Guam (includes Andersen Air Force Base )",
+      "dateEstablished": "July 1, 1997",
+      "notes": "Created for membership in NANP 671 was the former country code for the island"
+    },
+    {
+      "code": "672",
+      "location": "British Columbia , and the isolated border town of Hyder, Alaska , US",
+      "dateEstablished": "May 4, 2019",
+      "notes": "Overlaid on 604 , 250 , 778 , and 236 [ 14 ] 2025: overlaid with 257"
+    },
+    {
+      "code": "673",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "674",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "675",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "676",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "677",
+      "location": "Not in use; reserved for Canadian non-geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "678",
+      "location": "Georgia ( Metro Atlanta )",
+      "dateEstablished": "January 6, 1998",
+      "notes": "Overlaid on 404 and 770 2010: overlaid by 470"
+    },
+    {
+      "code": "679",
+      "location": "Michigan (Dearborn, the Grosse Pointes, Detroit, and the latter's enclaves of Hamtramck and Highland Park)",
+      "dateEstablished": "November 7, 2025",
+      "notes": "Overlaid on 313"
+    },
+    {
+      "code": "680",
+      "location": "New York ( Syracuse , Utica, Watertown, and north-central New York)",
+      "dateEstablished": "March 11, 2017",
+      "notes": "Overlaid on 315"
+    },
+    {
+      "code": "681",
+      "location": "West Virginia",
+      "dateEstablished": "March 28, 2009",
+      "notes": "Overlaid on 304"
+    },
+    {
+      "code": "682",
+      "location": "Texas (Fort Worth, Arlington, Grand Prairie, Grandview, Weatherford)",
+      "dateEstablished": "October 7, 2000",
+      "notes": "Overlaid on 817"
+    },
+    {
+      "code": "683",
+      "location": "Ontario ( Northeastern Ontario and Central Ontario : Greater Sudbury , Sault Ste. Marie , North Bay , etc.)",
+      "dateEstablished": "June 18, 2022",
+      "notes": "Overlaid on 705/249 460 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "684",
+      "location": "American Samoa (the former country code for this possession and unorganized territory of the United States)",
+      "dateEstablished": "October 2, 2004",
+      "notes": "2004: inclusion in NANP"
+    },
+    {
+      "code": "685",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "686",
+      "location": "Virginia (the Richmond Metropolitan Area , including Petersburg and the Northern Neck and Middle Peninsula )",
+      "dateEstablished": "February 1, 2024",
+      "notes": "Overlaid on 804"
+    },
+    {
+      "code": "687",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "688",
+      "location": "Not in use; reserved for Canadian non-geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "689",
+      "location": "Florida (Orlando, Sanford, St. Cloud, Kissimmee, and a part of east-central Florida)",
+      "dateEstablished": "June 4, 2019",
+      "notes": "Overlaid on 407"
+    },
+    {
+      "code": "690",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "691",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "692",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "693",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "694",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "695",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "696",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "697",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "698",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "699",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "700",
+      "location": "Implemented for carrier internal use",
+      "dateEstablished": "1984",
+      "notes": ""
+    },
+    {
+      "code": "701",
+      "location": "North Dakota (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "702",
+      "location": "Nevada (almost all of Clark County , including all of the Las Vegas Valley , including Henderson and Boulder City )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Nevada 1998: split to create 775 2014: overlaid by 725"
+    },
+    {
+      "code": "703",
+      "location": "Virginia ( Northern Virginia : mostly the suburbs of Washington, D.C. , including Alexandria , Arlington County , Fairfax County , Prince William County , and eastern Loudoun County )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Virginia 1973: split to create 804 1995: split to create 540 2000: overlaid by 571"
+    },
+    {
+      "code": "704",
+      "location": "North Carolina ( Charlotte , Concord, Gastonia, Salisbury, and much of south-central North Carolina)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of North Carolina 1954: split to create 919 1998: split to create 828 2001: overlaid by 980"
+    },
+    {
+      "code": "705",
+      "location": "Ontario ( Northeastern Ontario and Central Ontario : Greater Sudbury , Sault Ste. Marie , North Bay , etc.)",
+      "dateEstablished": "1957",
+      "notes": "Created from parts of 519 and 613 1962: split to create 807 2011: overlaid by 249 2022: overlaid by 683 460 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "706",
+      "location": "Georgia ( Athens , Augusta , Columbus , Calhoun , Dalton , Rome , and much of northwestern, northeastern and eastern Georgia, with an exclave in midwestern Georgia)",
+      "dateEstablished": "May 3, 1992",
+      "notes": "Split of 404 2007: overlaid by 762 Prior to 1990, served portions of Baja California , Mexico One of the few non-contiguous area codes in North America"
+    },
+    {
+      "code": "707",
+      "location": "California ( Vallejo , Crescent City, Eureka, Redwoods National Park , Santa Rosa, Ukiah, and most of northwestern California)",
+      "dateEstablished": "1959",
+      "notes": "Split of 415 2023: overlaid by 369"
+    },
+    {
+      "code": "708",
+      "location": "Illinois (western and southern portions of suburban Cook County and far eastern sections of Will County )",
+      "dateEstablished": "November 11, 1989",
+      "notes": "Split of 312 1996: split twice to create 847 and 630 2022: overlaid by 464"
+    },
+    {
+      "code": "709",
+      "location": "Newfoundland and Labrador (all)",
+      "dateEstablished": "1962",
+      "notes": "Split of 506"
+    },
+    {
+      "code": "710",
+      "location": "US Government special services",
+      "dateEstablished": "1984",
+      "notes": "Used until 1981 for TWX service"
+    },
+    {
+      "code": "711",
+      "location": "Not assignable; N11 code for telecommunications device for the deaf",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "712",
+      "location": "Iowa ( Sioux City , Council Bluffs , Denison, and most of western Iowa)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "713",
+      "location": "Texas ( Houston area) — overlays with 281 , 346 , 621 , and 832",
+      "dateEstablished": "1947",
+      "notes": "1983: split to create 409 1996: split to create 281 713 and 281 were later merged into an overlay 1999: 713 and 281 were further overlaid by 832 2014: overlaid by 346 2025: overlaid by 621"
+    },
+    {
+      "code": "714",
+      "location": "California (Northern Orange County : Anaheim , Fullerton , Garden Grove, Huntington Beach , Orange, Santa Ana , and portions of Newport Beach, Costa Mesa, and Tustin)",
+      "dateEstablished": "1951",
+      "notes": "Split of 213 1982: split to create 619 1992: split to create 909 1998: split to create 949 2008: overlaid by 657"
+    },
+    {
+      "code": "715",
+      "location": "Wisconsin ( Wausau , Eau Claire , Rhinelander, and most of northern Wisconsin)",
+      "dateEstablished": "1947",
+      "notes": "1955: split to create a part of 608 2010: overlaid by 534"
+    },
+    {
+      "code": "716",
+      "location": "New York ( Buffalo , Niagara Falls , Olean, and parts of western New York)",
+      "dateEstablished": "1947",
+      "notes": "1954: split to create a part of 607 2002: split to create 585 2023: overlaid by 624"
+    },
+    {
+      "code": "717",
+      "location": "Pennsylvania ( Harrisburg , Gettysburg , Lancaster , York , and most of south-central Pennsylvania)",
+      "dateEstablished": "1947",
+      "notes": "1998: split to create 570 2017: overlaid by 223"
+    },
+    {
+      "code": "718",
+      "location": "New York ( The Bronx , Brooklyn , Queens , Staten Island , and Marble Hill )",
+      "dateEstablished": "September 1, 1984",
+      "notes": "Split of 212 , and originally comprised only Brooklyn , Queens , and Staten Island 1992: The Bronx split off from 212 to become a part of 718 1992: overlaid by 917 1999: overlaid by 347 2011: overlaid by 929"
+    },
+    {
+      "code": "719",
+      "location": "Colorado ( Colorado Springs , Pueblo , Florence, Leadville, Limon, Trinidad, La Junta, and most of southeastern Colorado)",
+      "dateEstablished": "March 5, 1988",
+      "notes": "Split of 303"
+    },
+    {
+      "code": "720",
+      "location": "Colorado ( Denver , Boulder, Longmont, Aurora, Golden, Limon, Centennial; central Colorado)",
+      "dateEstablished": "June 1, 1998",
+      "notes": "Overlaid on 303 2022: overlaid by 983"
+    },
+    {
+      "code": "721",
+      "location": "Sint Maarten (all)",
+      "dateEstablished": "September 30, 2011",
+      "notes": "Joined the NANP in 2011; previously country code 599 . [ 15 ]"
+    },
+    {
+      "code": "722",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "723",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "724",
+      "location": "Pennsylvania ( Washington , Greensburg , Indiana, New Castle, Uniontown, Butler, and the majority of Southwestern Pennsylvania outside of Pittsburgh's Allegheny County)",
+      "dateEstablished": "February 1, 1998",
+      "notes": "Split of 412 2001: overlaid by 878"
+    },
+    {
+      "code": "725",
+      "location": "Nevada (almost all of Clark County , including all of the Las Vegas Valley , including Henderson , and Boulder City )",
+      "dateEstablished": "June 3, 2014",
+      "notes": "Overlaid on 702"
+    },
+    {
+      "code": "726",
+      "location": "Texas ( San Antonio metropolitan area)",
+      "dateEstablished": "October 23, 2017",
+      "notes": "Overlaid on 210 Mnemonic : SAN Antonio"
+    },
+    {
+      "code": "727",
+      "location": "Florida (all of Pinellas County (except Oldsmar which uses area codes 656 and 813), [ 11 ] including St. Petersburg , Clearwater, Dunedin, Palm Harbor, Tarpon Springs, and the coastal parts of Pasco County )",
+      "dateEstablished": "July 1, 1998",
+      "notes": "Split of 813"
+    },
+    {
+      "code": "728",
+      "location": "Florida ( Palm Beach County , including Palm Beach , West Palm Beach , Boca Raton, Boynton Beach, etc.)",
+      "dateEstablished": "March 10, 2023",
+      "notes": "Overlaid 2023 on 561"
+    },
+    {
+      "code": "729",
+      "location": "Tennessee (two discontiguous portions of East Tennessee in the northeast and in the southeast)",
+      "dateEstablished": "September 5, 2025",
+      "notes": "Overlaid on 423"
+    },
+    {
+      "code": "730",
+      "location": "Illinois ( Carbondale , Alton, Belleville, Cahokia, Centralia, Edwardsville, Marion, Metropolis , Vandalia , and most of southern Illinois )",
+      "dateEstablished": "July 7, 2023",
+      "notes": "Overlaid on 618"
+    },
+    {
+      "code": "731",
+      "location": "Tennessee (most of West Tennessee , excluding Metropolitan Memphis and Shelby County (area code 901), but including Dyersburg , Jackson, Martin, Paris, Union City, and Crockett County )",
+      "dateEstablished": "February 12, 2001",
+      "notes": "Split of 901"
+    },
+    {
+      "code": "732",
+      "location": "New Jersey ( New Brunswick , Lakewood, Neptune, Fort Dix , and most of east-central New Jersey)",
+      "dateEstablished": "June 1, 1997",
+      "notes": "Split of 908 2001: overlaid by 848 Mnemonic : SEA"
+    },
+    {
+      "code": "733",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "734",
+      "location": "Michigan ( Ann Arbor , Hell , Monroe, Plymouth, Romulus , Wayne, Ypsilanti , and the southwestern suburbs of Detroit )",
+      "dateEstablished": "December 13, 1997",
+      "notes": "Split of 313"
+    },
+    {
+      "code": "735",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "736",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "737",
+      "location": "Texas ( Austin and suburbs)",
+      "dateEstablished": "July 1, 2013",
+      "notes": "Overlaid on 512"
+    },
+    {
+      "code": "738",
+      "location": "California (nearly the entire city of Los Angeles outside of the San Fernando Valley and smaller cities and unincorporated areas of Los Angeles County immediately to the south or east)",
+      "dateEstablished": "November 1, 2024",
+      "notes": "Overlaid on 213/323"
+    },
+    {
+      "code": "739",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "740",
+      "location": "Southeastern and central parts of Ohio",
+      "dateEstablished": "December 6, 1997",
+      "notes": "Split of 614 2015: overlaid by 220"
+    },
+    {
+      "code": "741",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "742",
+      "location": "Ontario ( Niagara Falls Region , Hamilton , St. Catharines , suburbs of the Greater Toronto Area , and southeastern Ontario )",
+      "dateEstablished": "October 16, 2021",
+      "notes": "Overlaid on 289/365/905 [ 7 ] 537 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "743",
+      "location": "North Carolina (the Piedmont Triad, Wilkesboro, Roxboro, and most of northwestern North Carolina)",
+      "dateEstablished": "May 23, 2016",
+      "notes": "Overlaid on 336"
+    },
+    {
+      "code": "744",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "745",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "746",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "747",
+      "location": "California (the San Fernando Valley portion of Los Angeles County , including Burbank, Canoga Park, Encino, Glendale, North Hollywood, Northridge, Panorama City, Reseda, San Fernando, Sylmar, Tarzana, Van Nuys, and Woodland Hills)",
+      "dateEstablished": "May 18, 2009",
+      "notes": "Overlaid on 818"
+    },
+    {
+      "code": "748",
+      "location": "Western and northern parts of Colorado",
+      "dateEstablished": "July 7, 2025",
+      "notes": "Overlaid on 970"
+    },
+    {
+      "code": "749",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "750",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "751",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "752",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Originally reserved to overlay 909 , but abandoned by number pooling"
+    },
+    {
+      "code": "753",
+      "location": "Ontario ( Ottawa metropolitan area and southeastern Ontario)",
+      "dateEstablished": "March 26, 2022",
+      "notes": "Overlaid on 613/343 871 reserved as a fourth area code for the region."
+    },
+    {
+      "code": "754",
+      "location": "Florida ( Broward County )",
+      "dateEstablished": "August 1, 2001",
+      "notes": "Overlaid on area code 954"
+    },
+    {
+      "code": "755",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "756",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "757",
+      "location": "Virginia (Part of Hampton Roads and the Eastern Shore of Virginia )",
+      "dateEstablished": "July 1, 1996",
+      "notes": "Split of 804 2022: overlaid by 948"
+    },
+    {
+      "code": "758",
+      "location": "Saint Lucia (all)",
+      "dateEstablished": "July 1, 1996",
+      "notes": "Split of 809 Mnemonic : SLU"
+    },
+    {
+      "code": "759",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "760",
+      "location": "California (most of the desert and mountain portions of the southeastern two-thirds of California)",
+      "dateEstablished": "March 22, 1997",
+      "notes": "Split of 619 This was the first part of North America to have its code changed three times: from 213 to 714 1951: to 619 in 1982, and to 760 in 1997 Was to have originally split off the portion of 760 serving San Diego County to a new 442 area code in late 2008/early 2009; that plan was cancelled 2009: overlaid by 442"
+    },
+    {
+      "code": "761",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "762",
+      "location": "Georgia ( Athens , Augusta , Columbus , Calhoun , Dalton , Rome , and much of northwestern, northeastern and eastern Georgia, with an exclave in midwestern Georgia)",
+      "dateEstablished": "May 16, 2006",
+      "notes": "Overlaid on 706"
+    },
+    {
+      "code": "763",
+      "location": "Minnesota ( Brooklyn Park , Plymouth , Maple Grove, Monticello, Elk River, Fridley, Blaine, and the northwest suburban area of Minneapolis )",
+      "dateEstablished": "February 27, 2000",
+      "notes": "Created by a three-way split of 612 (along with 952 )"
+    },
+    {
+      "code": "764",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Was assigned for numbering relief to 650 (western San Francisco Bay , including San Mateo County ), but this has been suspended indefinitely"
+    },
+    {
+      "code": "765",
+      "location": "Indiana ( Kokomo , Lafayette , Marion, Muncie, Richmond, West Lafayette , and most of central Indiana excluding Indianapolis and immediate suburbs)",
+      "dateEstablished": "February 1, 1997",
+      "notes": "Split of 317"
+    },
+    {
+      "code": "766",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "767",
+      "location": "Commonwealth of Dominica (all)",
+      "dateEstablished": "October 1, 1997",
+      "notes": "Split of 809 Mnemonic : ROS for Roseau , Dominica's largest city"
+    },
+    {
+      "code": "768",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "769",
+      "location": "Mississippi (Jackson, Hattiesburg, Meridian, Natchez, Vicksburg, and most of central Mississippi)",
+      "dateEstablished": "March 14, 2005",
+      "notes": "Overlaid on 601"
+    },
+    {
+      "code": "770",
+      "location": "Georgia ( Marietta , Carrollton , Gainesville , Jonesboro , Lawrenceville , Roswell , Stone Mountain , Snellville , Cartersville , and much of north-central Georgia d metropolitan Atlanta outside of Interstate 285 )",
+      "dateEstablished": "August 1, 1995",
+      "notes": "Split of 404 1998: overlaid by 678 Covers metropolitan areas outside of Atlanta and fully encircles Atlanta's area code 404"
+    },
+    {
+      "code": "771",
+      "location": "Washington, D.C. (all)",
+      "dateEstablished": "November 9, 2021",
+      "notes": "Overlaid on 202"
+    },
+    {
+      "code": "772",
+      "location": "Florida ( Fort Pierce , Port Saint Lucie, Sebastian, Stuart, Vero Beach, all of Indian River County , and Martin County )",
+      "dateEstablished": "February 11, 2002",
+      "notes": "Split of 561"
+    },
+    {
+      "code": "773",
+      "location": "Illinois (City of Chicago , excluding downtown)",
+      "dateEstablished": "October 12, 1996",
+      "notes": "Split of 312 2009: overlaid by 872"
+    },
+    {
+      "code": "774",
+      "location": "Southeastern Massachusetts",
+      "dateEstablished": "May 2, 2001",
+      "notes": "Overlaid on 508"
+    },
+    {
+      "code": "775",
+      "location": "Nevada ( Carson City , Reno , Elko, Ely, Sparks, Winnemucca , Great Basin National Park , Naval Air Station Fallon , and all of Nevada, except for most of Clark County in southernmost Nevada)",
+      "dateEstablished": "December 12, 1998",
+      "notes": "Split of 702"
+    },
+    {
+      "code": "776",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "777",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "778",
+      "location": "British Columbia (all, and the isolated border town of Hyder, Alaska , US)",
+      "dateEstablished": "November 3, 2001",
+      "notes": "Created as a concentrated overlay of 604 Extended in 2008 to cover all of 604 and 250 2013: overlaid with 236 2019: overlaid with 672 2025: overlaid with 257"
+    },
+    {
+      "code": "779",
+      "location": "Illinois (much of northern Illinois outside Chicago and its immediate surrounding suburbs: Rockford and its suburbs, Belvidere, La Salle, Peru, DeKalb, Sycamore, Freeport, Dixon, Sterling, Rock Falls, Ottawa, Morris, Princeton, Mendota, Rochelle, Sandwich, Streator, Pontiac, Kankakee, and some outlying Chicago suburbs such as Harvard, McHenry, Crystal Lake, Woodstock, Plainfield, Joliet, Romeoville, Lockport, New Lenox, Frankfort, Minooka, Channahon, and Shorewood)",
+      "dateEstablished": "March 17, 2007",
+      "notes": "Overlaid on 815"
+    },
+    {
+      "code": "780",
+      "location": "Alberta ( Edmonton , Jasper, Grande Prairie, Peace River, and all of northern Alberta)",
+      "dateEstablished": "May 18, 1999",
+      "notes": "Split of 403 2008: overlaid by 587 2016: overlaid by 825 2022: overlaid by 368 568 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "781",
+      "location": "Massachusetts ( Canton , Hanson , Lincoln , Nahant , Plympton , Revere , Stoughton , Winchester , and east-central Massachusetts)",
+      "dateEstablished": "September 1, 1997",
+      "notes": "Split of 617 2001: overlaid by 339"
+    },
+    {
+      "code": "782",
+      "location": "Nova Scotia and Prince Edward Island",
+      "dateEstablished": "November 30, 2014",
+      "notes": "Overlaid on 902 851 reserved as a third area code for the region."
+    },
+    {
+      "code": "783",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "784",
+      "location": "Saint Vincent and the Grenadines (all)",
+      "dateEstablished": "June 1, 1998",
+      "notes": "Split of 809 Mnemonic : SVG or SVI"
+    },
+    {
+      "code": "785",
+      "location": "Kansas ( Topeka , Salina , Colby, Lawrence , Manhattan , and all of northern and central Kansas not including the Kansas City Metropolitan Area )",
+      "dateEstablished": "July 20, 1997",
+      "notes": "Split of 913"
+    },
+    {
+      "code": "786",
+      "location": "Florida ( Miami-Dade County and the Florida Keys )",
+      "dateEstablished": "March 1, 1998",
+      "notes": "Overlaid on 305 only in Miami-Dade County 2008: overlay extended to the Florida Keys 2023: overlaid with 645 Mnemonic : SUN"
+    },
+    {
+      "code": "787",
+      "location": "Puerto Rico",
+      "dateEstablished": "March 1, 1996",
+      "notes": "Split of 809 2001: overlaid by 939 Mnemonic : PUR or PTR"
+    },
+    {
+      "code": "788",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "789",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "790",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "791",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "792",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "793",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "794",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "795",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "796",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "797",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "798",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "799",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "800",
+      "location": "Toll-free telephone service",
+      "dateEstablished": "1966",
+      "notes": "Created in 1966 See also 822 , 833, 844, 855, 866, 877, 880–887 , 888, and 889"
+    },
+    {
+      "code": "801",
+      "location": "Utah (Counties of Davis , Morgan , Salt Lake , Utah , and Weber along the Wasatch Front , including the cities of Salt Lake City , Ogden , and Provo )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Utah 1997: split to create 435 2009: overlaid by 385"
+    },
+    {
+      "code": "802",
+      "location": "Vermont (all)",
+      "dateEstablished": "1947",
+      "notes": ""
+    },
+    {
+      "code": "803",
+      "location": "South Carolina ( Columbia , Rock Hill, Sumter, Aiken, and most of central South Carolina)",
+      "dateEstablished": "1947",
+      "notes": "Created for all of South Carolina 1995: split to create 864 1998: split twice to create 843 2020: overlaid by 839"
+    },
+    {
+      "code": "804",
+      "location": "Virginia (the Richmond Metropolitan Area , including Petersburg and the Northern Neck and Middle Peninsula )",
+      "dateEstablished": "June 24, 1973",
+      "notes": "Split of 703 1996: split to create 757 2001: split to create 434 2024: overlaid by 686"
+    },
+    {
+      "code": "805",
+      "location": "California ( Ventura , San Luis Obispo , and Santa Barbara Counties)",
+      "dateEstablished": "1957",
+      "notes": "Split of 213 1999: split to create 661 2018: overlaid by 820"
+    },
+    {
+      "code": "806",
+      "location": "Texas ( Lubbock , Amarillo, Canadian, Canyon, Dalhart, and the entire Texas Panhandle )",
+      "dateEstablished": "1957",
+      "notes": "Created from parts of 817 and 915"
+    },
+    {
+      "code": "807",
+      "location": "Ontario ( Northwestern Ontario : Thunder Bay , Kenora, Dryden, Greenstone)",
+      "dateEstablished": "1962",
+      "notes": "Split of 705"
+    },
+    {
+      "code": "808",
+      "location": "Hawaii (all of the Hawaiian Islands to Midway Atoll and major Hawaiian cities including Honolulu , Kailua , Mililani , Haleiwa , Hilo , Kahului , Lihue , etc.; plus Wake Island )",
+      "dateEstablished": "1957",
+      "notes": ""
+    },
+    {
+      "code": "809",
+      "location": "Dominican Republic (all)",
+      "dateEstablished": "1958",
+      "notes": "Originally assigned c. 1958 to Puerto Rico 1995: split to create 441 1996: split to create 787 , 268 , 246 , 664 , 758 , 345 , 242 , and 869 1997: split to create 264 , 876 , 340 , 649 , 868 , 284 , 767 , and 473 1998: split to create 784 By 2000, served the Dominican Republic exclusively 2005: overlaid by 829 2009: overlaid by 849"
+    },
+    {
+      "code": "810",
+      "location": "Michigan (Port Huron, Flint, Lapeer, and the Michigan \"Thumb\")",
+      "dateEstablished": "December 1, 1993",
+      "notes": "Used until 1981 for TWX service Split of 313 1997: split to create 248 2001: split to create 586"
+    },
+    {
+      "code": "811",
+      "location": "Not assignable; N11 code for regional information",
+      "dateEstablished": "",
+      "notes": "In the US, the FCC adopted it as the local underground utility assistance service in 2007 In Canada, the CRTC reserved it for non-urgent telehealth services 2005: though not all provinces and territories have yet adopted it Formerly used for mobile customer service on some carriers (now 611) Formerly used for some local emergency numbers in Jamaica (now 911)"
+    },
+    {
+      "code": "812",
+      "location": "Indiana ( Southern Indiana , including Bloomington , Evansville , Terre Haute , Columbus , Jeffersonville , Lawrenceburg , Madison , and New Albany )",
+      "dateEstablished": "1947",
+      "notes": "2015: overlaid by 930"
+    },
+    {
+      "code": "813",
+      "location": "Florida (all of Hillsborough County , including Tampa and its suburbs, MacDill Air Force Base , and Plant City; and the inland areas of Pasco County and Oldsmar in Pinellas County [ 11 ] )",
+      "dateEstablished": "1953",
+      "notes": "Split of 305 to give Florida more than one area code 1995: split to create 941 1998: split to create 727 2022: overlaid by 656 [ 12 ]"
+    },
+    {
+      "code": "814",
+      "location": "Pennsylvania ( Erie , State College , Altoona, Clearfield, Emporium, Johnsonburg, Johnstown, Meyersdale, Ridgway, Somerset, and most of northwestern and parts of central Pennsylvania)",
+      "dateEstablished": "1947",
+      "notes": "2021: overlaid by 582"
+    },
+    {
+      "code": "815",
+      "location": "Illinois (much of northern Illinois outside Chicago and its immediate surrounding suburbs: Rockford and its suburbs, Belvidere, La Salle, Peru, DeKalb , Sycamore, Freeport, Dixon, Sterling, Rock Falls, Ottawa, Morris, Princeton, Mendota, Rochelle, Sandwich, Streator, Pontiac, Kankakee, and some outlying Chicago suburbs such as Harvard, McHenry, Crystal Lake, Woodstock, Plainfield, Joliet, Romeoville, Lockport, New Lenox, Frankfort, Minooka, Channahon, and Shorewood)",
+      "dateEstablished": "1947",
+      "notes": "1957: split to create a part of 309 2007: overlaid by 779"
+    },
+    {
+      "code": "816",
+      "location": "Missouri ( Kansas City , St Joseph, Independence, Harrisonville, and parts of west-central Missouri)",
+      "dateEstablished": "1947",
+      "notes": "1950: split to create a part of 417 1997: split to create 660 2023: overlaid by 975"
+    },
+    {
+      "code": "817",
+      "location": "Texas ( Fort Worth , Arlington, Grand Prairie, Grandview, Weatherford)",
+      "dateEstablished": "1953",
+      "notes": "Created from parts of 214 and 915 1957: split to create a part of 806 1997: split to create 254 and 940 2000: overlaid by 682"
+    },
+    {
+      "code": "818",
+      "location": "California (the San Fernando Valley portion of Los Angeles County , including Burbank , Canoga Park, Encino, Glendale, North Hollywood, Northridge, Panorama City, Reseda, San Fernando, Sylmar, Tarzana , Van Nuys , and Woodland Hills)",
+      "dateEstablished": "January 7, 1984",
+      "notes": "Split of 213 1997: split to create 626 2009: overlaid by 747"
+    },
+    {
+      "code": "819",
+      "location": "Quebec (Western Québec, except Montréal 514 and surrounding area 450: a large area including Abitibi-Témiscamingue, Estrie, Mauricie, Outaouais, Sherbrooke, and Trois-Rivieres)",
+      "dateEstablished": "1957",
+      "notes": "Split of 514 Originally also covered a part of the Northwest Territories 1997: split to create a part of 867 (the portion of the area code serving the Northwest Territories and Nunavut ) 2012: overlaid by 873 2022: overlaid by 468"
+    },
+    {
+      "code": "820",
+      "location": "California ( Ventura , San Luis Obispo , and Santa Barbara Counties)",
+      "dateEstablished": "June 30, 2018",
+      "notes": "Overlaid on 805"
+    },
+    {
+      "code": "821",
+      "location": "South Carolina ( The Upstate , including Greenville , Spartanburg , Anderson, Clemson, and most of northwestern South Carolina)",
+      "dateEstablished": "August 19, 2024",
+      "notes": "Overlaid on 864"
+    },
+    {
+      "code": "822",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "823",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "824",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "825",
+      "location": "Alberta (all)",
+      "dateEstablished": "April 9, 2016",
+      "notes": "Overlaid on 403 , 780 , and 587 [ 16 ] 2022: overlaid by 368"
+    },
+    {
+      "code": "826",
+      "location": "Virginia ( Fredericksburg , Roanoke , Blacksburg, Harrisonburg, Lexington, Staunton, Winchester, and parts of north-central Virginia)",
+      "dateEstablished": "June 14, 2022",
+      "notes": "Overlaid on 540"
+    },
+    {
+      "code": "827",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "828",
+      "location": "North Carolina ( Asheville , Franklin, Hickory, Murphy, Waynesville, and parts of western North Carolina)",
+      "dateEstablished": "March 22, 1998",
+      "notes": "Split of 704"
+    },
+    {
+      "code": "829",
+      "location": "Dominican Republic (all)",
+      "dateEstablished": "August 1, 2005",
+      "notes": "Overlaid on 809"
+    },
+    {
+      "code": "830",
+      "location": "Texas ( Del Rio , Kerrville , Eagle Pass, Fredericksburg, New Braunfels, and a part of the Rio Grande Valley )",
+      "dateEstablished": "July 7, 1997",
+      "notes": "Split of 210"
+    },
+    {
+      "code": "831",
+      "location": "California ( Monterey County , including Salinas and Monterey ); San Benito County (including Hollister ); and Santa Cruz County (including Santa Cruz and Watsonville )",
+      "dateEstablished": "July 11, 1998",
+      "notes": "Split of 408"
+    },
+    {
+      "code": "832",
+      "location": "Texas ( Houston Metropolitan Area and suburbs)",
+      "dateEstablished": "January 16, 1999",
+      "notes": "Overlaid on 713 and 281 2014: overlaid by 346 2025: overlaid by 621"
+    },
+    {
+      "code": "833",
+      "location": "Toll-free telephone service",
+      "dateEstablished": "June 3, 2017",
+      "notes": "Created [ 17 ]"
+    },
+    {
+      "code": "834",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "835",
+      "location": "Pennsylvania (Chester, Lehigh Valley , Norristown, Reading; parts of southeastern Pennsylvania)",
+      "dateEstablished": "September 2, 2022",
+      "notes": "Overlaid on 610/484"
+    },
+    {
+      "code": "836",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "837",
+      "location": "California ( Redding , Auburn , Chico, Davis, the California shore of Lake Tahoe , Placerville, Susanville, Truckee, Yreka , and most of northeastern California)",
+      "dateEstablished": "January 31, 2025",
+      "notes": "Overlaid on 530 California's 40th area code"
+    },
+    {
+      "code": "838",
+      "location": "New York ( Albany , Schenectady, Plattsburgh, Saranac Lake, Lake George, Westport, and most of northeastern New York)",
+      "dateEstablished": "September 19, 2017",
+      "notes": "Overlaid on 518"
+    },
+    {
+      "code": "839",
+      "location": "South Carolina ( Columbia , Rock Hill, Sumter, Aiken, and most of central South Carolina)",
+      "dateEstablished": "May 26, 2020",
+      "notes": "Overlaid on 803 [ 18 ]"
+    },
+    {
+      "code": "840",
+      "location": "California (southwestern San Bernardino County and a small portion of Los Angeles and Riverside counties, including Fontana , Pomona , Chino Hills , Claremont , Chino , Ontario , and Redlands )",
+      "dateEstablished": "February 23, 2021",
+      "notes": "Overlaid on 909"
+    },
+    {
+      "code": "841",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "842",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "843",
+      "location": "South Carolina ( Charleston , Florence, Hilton Head Island, Myrtle Beach , Charleston Air Force Base , and most of southeastern South Carolina)",
+      "dateEstablished": "March 22, 1998",
+      "notes": "Split of 803 2015: overlaid by 854 Mnemonic : TID es for being along the South Carolina Coast"
+    },
+    {
+      "code": "844",
+      "location": "Toll-free telephone service",
+      "dateEstablished": "December 7, 2013",
+      "notes": "Created"
+    },
+    {
+      "code": "845",
+      "location": "New York ( Dutchess , Orange , Putnam , Rockland , Sullivan , and Ulster counties)",
+      "dateEstablished": "June 5, 2000",
+      "notes": "Created by splitting from 914 2023: overlaid with 329"
+    },
+    {
+      "code": "846",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "847",
+      "location": "Illinois (North and northwest suburbs of Chicago, including Lake , northern Cook , northern Kane , and extreme southeastern McHenry Counties ; includes Evanston, Skokie, Niles, Park Ridge, Des Plaines, Mount Prospect, Arlington Heights, Palatine, Wheeling, Buffalo Grove, Barrington, Elk Grove Village, Schaumburg, Hoffman Estates, Elgin, Carpentersville, Algonquin, Lake in the Hills, Huntley, Hampshire, Cary, Lake Zurich, Fox Lake, Round Lake Beach, Antioch, Gurnee, Waukegan, Zion, Lake Forest, Vernon Hills, Libertyville, Mundelein, Northbrook, Glenview, Deerfield, Highland Park, Wilmette, Winnetka)",
+      "dateEstablished": "January 20, 1996",
+      "notes": "Split of 708 2002: overlaid by 224"
+    },
+    {
+      "code": "848",
+      "location": "New Jersey ( New Brunswick , Lakewood, Neptune, Fort Dix , and most of east-central New Jersey)",
+      "dateEstablished": "December 29, 2001",
+      "notes": "Overlaid on 732"
+    },
+    {
+      "code": "849",
+      "location": "Dominican Republic (all)",
+      "dateEstablished": "July 1, 2009",
+      "notes": "Overlaid on 809 and 829"
+    },
+    {
+      "code": "850",
+      "location": "northwestern Florida ( Appalachicola , Pensacola , Tallahassee , Quincy, Panama City, Naval Air Station Pensacola , Eglin Air Force Base and all of the Florida Panhandle )",
+      "dateEstablished": "June 23, 1997",
+      "notes": "Split of 904 2021: overlaid by 448"
+    },
+    {
+      "code": "851",
+      "location": "Nova Scotia and Prince Edward Island",
+      "dateEstablished": "",
+      "notes": "reserved as a third area code to overlay 902/782 with no set date of implementation"
+    },
+    {
+      "code": "852",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "853",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "854",
+      "location": "South Carolina ( Charleston , Florence, Hilton Head Island, Myrtle Beach , Charleston Air Force Base , and most of southeastern South Carolina)",
+      "dateEstablished": "October 19, 2015",
+      "notes": "Overlaid on 843"
+    },
+    {
+      "code": "855",
+      "location": "Toll-free telephone service",
+      "dateEstablished": "October 9, 2010",
+      "notes": "Created as a further expansion of 800"
+    },
+    {
+      "code": "856",
+      "location": "New Jersey ( Cherry Hill , Camden, Millville, Vineland, and most of southwestern New Jersey)",
+      "dateEstablished": "June 12, 1999",
+      "notes": "Split of 609"
+    },
+    {
+      "code": "857",
+      "location": "East-central Massachusetts , including Boston",
+      "dateEstablished": "May 2, 2001",
+      "notes": "Overlaid on 617"
+    },
+    {
+      "code": "858",
+      "location": "California ( San Diego and suburbs)",
+      "dateEstablished": "June 12, 1999",
+      "notes": "Split of 619 2017: merged with 619 as an overlay"
+    },
+    {
+      "code": "859",
+      "location": "Kentucky ( Lexington , Richmond, Danville, Covington, Florence, and northernmost Kentucky)",
+      "dateEstablished": "April 1, 2000",
+      "notes": "Split of 606 Mnemonic : UKY — the University of Kentucky is in Lexington, the area's biggest city by population"
+    },
+    {
+      "code": "860",
+      "location": "Northern and eastern Connecticut ( Hartford , Bristol, Norwich, and northern and eastern Connecticut)",
+      "dateEstablished": "August 28, 1995",
+      "notes": "Split of 203 2014: overlaid by 959"
+    },
+    {
+      "code": "861",
+      "location": "Illinois ( Peoria , Bloomington , Moline , Rock Island , Galesburg ; west-central Illinois)",
+      "dateEstablished": "February 24, 2023",
+      "notes": "Overlaid on 309"
+    },
+    {
+      "code": "862",
+      "location": "New Jersey (northernmost part)",
+      "dateEstablished": "December 29, 2001",
+      "notes": "Overlaid on 973"
+    },
+    {
+      "code": "863",
+      "location": "Florida ( Lakeland , Bartow , Sebring , Winter Haven in south central Florida)",
+      "dateEstablished": "September 20, 1999",
+      "notes": "Split of 941"
+    },
+    {
+      "code": "864",
+      "location": "South Carolina ( The Upstate , including Greenville , Spartanburg , Anderson, Clemson, and most of northwestern South Carolina)",
+      "dateEstablished": "December 3, 1995",
+      "notes": "Split of 803 2024: overlaid by 821 Mnemonic : UNI versity — 24 colleges and universities reside in this area code, including Anderson University , Bob Jones University , Clemson University , Furman University , Converse College , Wofford College , and University of South Carolina Upstate"
+    },
+    {
+      "code": "865",
+      "location": "Tennessee ( Knoxville , Alcoa, Athens, Clinton, Crossville, Dayton, Gatlinburg, Loudon, Maryville, Newport, Oak Ridge , Oliver Springs, Pigeon Forge , Rockwood, Sweetwater, etc., in east Tennessee )",
+      "dateEstablished": "November 1, 1999",
+      "notes": "Split of 423 Mnemonic : VOL — the University of Tennessee , whose sports teams are the \" Volunteers \", is in Knoxville, the area's biggest city by population"
+    },
+    {
+      "code": "866",
+      "location": "Toll-free telephone service",
+      "dateEstablished": "July 29, 2000",
+      "notes": "Created as a further expansion of 800"
+    },
+    {
+      "code": "867",
+      "location": "The Canadian Territories : Yukon , Northwest Territories , and Nunavut",
+      "dateEstablished": "October 21, 1997",
+      "notes": "Created from parts of 403 and 819 Mnemonic : TOP of the world Mnemonic : 1867 was the year of Canada's confederation (formation; long-distance calls to the 867 area code must begin 1-867)"
+    },
+    {
+      "code": "868",
+      "location": "Trinidad and Tobago (all)",
+      "dateEstablished": "June 1, 1997",
+      "notes": "Split of 809 Mnemonic : TNT"
+    },
+    {
+      "code": "869",
+      "location": "Saint Kitts and Nevis (all)",
+      "dateEstablished": "October 1, 1996",
+      "notes": "Split of 809"
+    },
+    {
+      "code": "870",
+      "location": "Arkansas ( Texarkana , Jonesboro, Pine Bluff, and southern, eastern, and northeastern Arkansas)",
+      "dateEstablished": "April 14, 1997",
+      "notes": "Split of 501 2024: overlaid by 327"
+    },
+    {
+      "code": "871",
+      "location": "Ontario ( Ottawa metropolitan area and southeastern Ontario)",
+      "dateEstablished": "",
+      "notes": "reserved as a fourth area code to overlay 613/343/753 with no set date of implementation"
+    },
+    {
+      "code": "872",
+      "location": "Illinois ( Chicago )",
+      "dateEstablished": "November 7, 2009",
+      "notes": "Overlay for 312 and 773 , entered service on 7 November 2009 [ 19 ] Mnemonic : USA"
+    },
+    {
+      "code": "873",
+      "location": "Quebec (Western Québec, except Montréal 514 and surrounding area 450: a large area including Abitibi-Témiscamingue, Estrie, Mauricie, Outaouais, Sherbrooke, and Trois-Rivières)",
+      "dateEstablished": "September 15, 2012",
+      "notes": "Overlaid on 819 2022: overlaid by 468"
+    },
+    {
+      "code": "874",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "875",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "876",
+      "location": "Jamaica",
+      "dateEstablished": "May 1, 1997",
+      "notes": "Split of 809 2018: overlaid by 658"
+    },
+    {
+      "code": "877",
+      "location": "Toll-free telephone service",
+      "dateEstablished": "April 4, 1998",
+      "notes": "Created"
+    },
+    {
+      "code": "878",
+      "location": "Pennsylvania ( Pittsburgh ) and suburbs",
+      "dateEstablished": "August 17, 2001",
+      "notes": "Overlaid on 412 and 724"
+    },
+    {
+      "code": "879",
+      "location": "Newfoundland and Labrador",
+      "dateEstablished": "February 17, 2024",
+      "notes": "Overlay with 709 parent NPA"
+    },
+    {
+      "code": "880",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": "Legacy use from 1996 to April 2004 for access to toll-free numbers from other NANP countries. Paired with 800, 888, and 877, respectively. [ 20 ]"
+    },
+    {
+      "code": "881",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": "Legacy use from 1996 to April 2004 for access to toll-free numbers from other NANP countries. Paired with 800, 888, and 877, respectively. [ 20 ]"
+    },
+    {
+      "code": "882",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": "Legacy use from 1996 to April 2004 for access to toll-free numbers from other NANP countries. Paired with 800, 888, and 877, respectively. [ 20 ]"
+    },
+    {
+      "code": "883",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "884",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "885",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "886",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "887",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "888",
+      "location": "Toll-free telephone service",
+      "dateEstablished": "March 1, 1996",
+      "notes": "Created"
+    },
+    {
+      "code": "889",
+      "location": "Not in use; available for toll-free assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "890",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "891",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "892",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "893",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "894",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "895",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "896",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "897",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "898",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "899",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "900",
+      "location": "Premium-rate telephone numbers",
+      "dateEstablished": "1971",
+      "notes": ""
+    },
+    {
+      "code": "901",
+      "location": "Tennessee ( Memphis , Covington, Germantown, Somerville, and extreme southwestern Tennessee, mostly in Shelby County )",
+      "dateEstablished": "1947",
+      "notes": "Created for all of Tennessee 1954: split to create 615 2001: split to create 731"
+    },
+    {
+      "code": "902",
+      "location": "Nova Scotia and Prince Edward Island",
+      "dateEstablished": "1947",
+      "notes": "Originally also covered New Brunswick 1955: split to give New Brunswick its own 506 area code Newfoundland was added to the service area when it joined Canada in 1949. When 506 was created, Newfoundland was assigned to the new code along with New Brunswick. In 1962, Newfoundland received its own code, 709 . 2014: overlaid by 782 851 reserved as a third area code for the region."
+    },
+    {
+      "code": "903",
+      "location": "Texas ( Tyler , Sherman, Longview, Marshall, Palestine, Jacksonville, Carthage, and Northeast Texas )",
+      "dateEstablished": "November 4, 1990",
+      "notes": "Prior to October 18, 1980, the area code served Tijuana, Mexico, and adjacent areas bordering the United States Split of 214 2003: overlaid by 430"
+    },
+    {
+      "code": "904",
+      "location": "Florida ( Jacksonville , St. Augustine, Starke, and most of northeastern Florida)",
+      "dateEstablished": "July 11, 1965",
+      "notes": "Split of 305 1995: split to create 352 1997: split to create 850 2001: split to create 386 2024: overlaid by 324"
+    },
+    {
+      "code": "905",
+      "location": "Ontario ( Niagara Falls Region (including St. Catharines ), Hamilton , and Greater Toronto Area , except for Toronto )",
+      "dateEstablished": "October 4, 1993",
+      "notes": "Prior to 1991, was the area code for Mexico City Split of 416 2001: overlaid by 289 2013: overlaid by 365 2021: overlaid by 742 [ 7 ] 537 reserved as a fifth area code for the region."
+    },
+    {
+      "code": "906",
+      "location": "Michigan ( Upper Peninsula : Sault Ste. Marie , Escanaba, Houghton, Iron Mountain, Marquette , Menominee, etc.)",
+      "dateEstablished": "March 19, 1961",
+      "notes": "Split of 616"
+    },
+    {
+      "code": "907",
+      "location": "Alaska (all, except the lone border town of Hyder which uses the BC, Canada area codes of 236, 250, 672, or 778 depending on its assigned number)",
+      "dateEstablished": "1957",
+      "notes": ""
+    },
+    {
+      "code": "908",
+      "location": "New Jersey (Alpha, Washington, Elizabeth, Warren, Plainfield, and west-central New Jersey)",
+      "dateEstablished": "1990",
+      "notes": "Split of 201 1997: split to create 732"
+    },
+    {
+      "code": "909",
+      "location": "California (southwestern San Bernardino County and a small portion of Los Angeles and Riverside Counties , including Fontana , Pomona , Chino Hills , Claremont , Chino , Ontario , and Redlands )",
+      "dateEstablished": "November 14, 1992",
+      "notes": "Split of 714 2004: split to create 951 2021: overlaid by 840"
+    },
+    {
+      "code": "910",
+      "location": "North Carolina ( Fayetteville , Wilmington , Fort Bragg , Seymour Johnson Air Force Base , Jacksonville, Lumberton, and much of southeastern North Carolina)",
+      "dateEstablished": "November 14, 1993",
+      "notes": "Used until 1981 for TWX service Split of 919 1997: split to create 336 2022: overlaid by 472"
+    },
+    {
+      "code": "911",
+      "location": "Not assignable; N11 code for emergency services",
+      "dateEstablished": "1968",
+      "notes": ""
+    },
+    {
+      "code": "912",
+      "location": "Georgia ( Savannah , Statesboro, Vidalia , Waycross, Brunswick, Douglas, and southeastern Georgia)",
+      "dateEstablished": "1954",
+      "notes": "Split of 404 to give Georgia two area codes 2000: split to create 229 and 478"
+    },
+    {
+      "code": "913",
+      "location": "Kansas ( Kansas City, Kansas , Overland Park, Olathe, Lenexa, Leavenworth, Bonner Springs, De Soto, parts of eastern Kansas)",
+      "dateEstablished": "1947",
+      "notes": "1997: split to create 785"
+    },
+    {
+      "code": "914",
+      "location": "New York ( Westchester County )",
+      "dateEstablished": "1947",
+      "notes": "1951: split to create 516 2000: split to create 845"
+    },
+    {
+      "code": "915",
+      "location": "Texas (all of El Paso County and portions of Hudspeth County )",
+      "dateEstablished": "1947",
+      "notes": "1953: split to create a part of 817 1957: split to create a part of 806 2003: split to create 325 and 432"
+    },
+    {
+      "code": "916",
+      "location": "California (the Sacramento Metropolitan Area )",
+      "dateEstablished": "1947",
+      "notes": "Created for northern third of California 1950: remapped to eastern part of northern and central California 1958: split to create 209 1997: split to create 530 2018: overlaid by 279"
+    },
+    {
+      "code": "917",
+      "location": "New York ( New York City : all; mainly cell phones )",
+      "dateEstablished": "1992",
+      "notes": "Overlaid on 212 and 718 1999: parts overlaid by 646 1999: parts overlaid by 347 2011: parts overlaid by 929 2017: parts overlaid by 332"
+    },
+    {
+      "code": "918",
+      "location": "Oklahoma ( Tulsa , Bartlesville, McAlester, Muskogee, Henryetta, and northeastern Oklahoma)",
+      "dateEstablished": "1953",
+      "notes": "Split of 405 and to give Oklahoma two area codes, one centered on Oklahoma City and the other centered on Tulsa 2011: overlaid by 539"
+    },
+    {
+      "code": "919",
+      "location": "North Carolina (the Research Triangle , including Raleigh , the state capital city; Durham , Cary , and Chapel Hill ; and Goldsboro and other parts of north-central North Carolina)",
+      "dateEstablished": "1954",
+      "notes": "Split of 704 to give North Carolina two area codes 1993: split to create 910 1998: split to create 252 2012: overlaid by 984"
+    },
+    {
+      "code": "920",
+      "location": "Wisconsin (Appleton, Sheboygan, Oshkosh, Green Bay , Manitowoc , Marquette, Fond du Lac, and parts of eastern Wisconsin, but not Milwaukee County )",
+      "dateEstablished": "July 26, 1997",
+      "notes": "Split of 414 2023: overlaid by 274"
+    },
+    {
+      "code": "921",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "922",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "923",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "924",
+      "location": "Minnesota ( Rochester , Mankato , Austin , Marshall , Winona , and most of southern Minnesota)",
+      "dateEstablished": "August 30, 2024",
+      "notes": "Overlaid on 507"
+    },
+    {
+      "code": "925",
+      "location": "California (inland regions of the East Bay : Livermore , Concord, Pleasant Hill, Walnut Creek, Martinez, Pleasanton, and Dublin, just east of the hills that ring San Francisco Bay )",
+      "dateEstablished": "March 14, 1998",
+      "notes": "Split of 510"
+    },
+    {
+      "code": "926",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "927",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Was reserved for cellular telephones in 407 , but this has been cancelled"
+    },
+    {
+      "code": "928",
+      "location": "Arizona (except for Phoenix metropolitan area , Tucson metropolitan area , and some areas west and south of Tucson )",
+      "dateEstablished": "June 23, 2001",
+      "notes": "Split of 520"
+    },
+    {
+      "code": "929",
+      "location": "New York ( New York City : The Bronx , Brooklyn , Queens , Staten Island , and Marble Hill )",
+      "dateEstablished": "April 16, 2011",
+      "notes": "Overlaid on 347 , 718 , and a part of 917"
+    },
+    {
+      "code": "930",
+      "location": "Indiana ( Southern Indiana , including Bloomington , Evansville , Terre Haute , Columbus , Jeffersonville , Lawrenceburg , Madison , and New Albany )",
+      "dateEstablished": "March 7, 2015",
+      "notes": "Overlaid on 812"
+    },
+    {
+      "code": "931",
+      "location": "Tennessee (Southern Middle Tennessee ) [ 10 ]",
+      "dateEstablished": "September 15, 1997",
+      "notes": "Split of 615"
+    },
+    {
+      "code": "932",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Once reserved as a third area code for West Virginia , but it was replaced by a 304 -932 exchange area code + exchange number in Charleston"
+    },
+    {
+      "code": "933",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "934",
+      "location": "New York ( Suffolk County on Long Island )",
+      "dateEstablished": "July 16, 2016",
+      "notes": "Overlaid on 631"
+    },
+    {
+      "code": "935",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Assigned for relief in 619 ( San Diego , California), but suspended indefinitely"
+    },
+    {
+      "code": "936",
+      "location": "Texas ( Nacogdoches , Lufkin , Conroe , Huntsville , Center , and Southeast Texas )",
+      "dateEstablished": "February 19, 2000",
+      "notes": "Split of 409"
+    },
+    {
+      "code": "937",
+      "location": "Ohio ( Dayton , Springfield , and southwestern Ohio north and east of the Cincinnati metropolitan area )",
+      "dateEstablished": "September 28, 1996",
+      "notes": "Split of 513 2020: overlaid by 326"
+    },
+    {
+      "code": "938",
+      "location": "Alabama ( Huntsville , Anniston, Cullman, Decatur, Florence, Fort Payne, Gadsden, Madison, Sheffield , Tuscumbia)",
+      "dateEstablished": "July 10, 2010",
+      "notes": "Overlaid on 256"
+    },
+    {
+      "code": "939",
+      "location": "Puerto Rico (all)",
+      "dateEstablished": "September 15, 2001",
+      "notes": "Overlaid on 787"
+    },
+    {
+      "code": "940",
+      "location": "Texas (the area immediately north of the Dallas–Fort Worth metroplex : Denton , Wichita Falls , Decatur, Gainesville, Vernon, etc.)",
+      "dateEstablished": "May 25, 1997",
+      "notes": "Split of 817"
+    },
+    {
+      "code": "941",
+      "location": "Florida (Gulf Coast immediately south of Tampa Bay : all of Manatee County , Sarasota County , and Charlotte County ; includes Bradenton, Port Charlotte, Sarasota , and Punta Gorda)",
+      "dateEstablished": "May 28, 1995",
+      "notes": "Split of 813 1999: split to create 863 2002: split to create 239"
+    },
+    {
+      "code": "942",
+      "location": "Toronto metropolitan area",
+      "dateEstablished": "April 26, 2025[21]",
+      "notes": "Overlaid 416/647/437"
+    },
+    {
+      "code": "943",
+      "location": "Georgia ( Metro Atlanta )",
+      "dateEstablished": "March 15, 2022",
+      "notes": "Overlaid 404, 770, 678, and 470"
+    },
+    {
+      "code": "944",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "945",
+      "location": "Texas ( Dallas–Fort Worth metroplex )",
+      "dateEstablished": "January 15, 2021",
+      "notes": "Overlaid on 214 , 469 , and 972"
+    },
+    {
+      "code": "946",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "947",
+      "location": "Michigan ( Oakland County )",
+      "dateEstablished": "September 7, 2002",
+      "notes": "Overlaid on 248"
+    },
+    {
+      "code": "948",
+      "location": "Virginia (Part of Hampton Roads and the Eastern Shore of Virginia )",
+      "dateEstablished": "May 9, 2022",
+      "notes": "Overlaid on 757"
+    },
+    {
+      "code": "949",
+      "location": "California (Southern Orange County : Irvine , Lake Forest , Mission Viejo , Corona del Mar , San Clemente, Laguna Beach, Dana Point, San Juan Capistrano, Rancho Santa Margarita, and parts of Newport Beach and Costa Mesa)",
+      "dateEstablished": "April 18, 1998",
+      "notes": "Split of 714"
+    },
+    {
+      "code": "950",
+      "location": "not assignable as an area code",
+      "dateEstablished": "",
+      "notes": "Conflicts with the original use of exchange number 950, which was originally used to access competing interexchange carriers . A subscriber would call 950-XXXX to reach a specific carrier, then dial the long-distance destination number. This feature group 'B' has been rendered obsolete by 1010xxx \"dial-around\" feature group 'D', but the exchange remains reserved in each individual area code."
+    },
+    {
+      "code": "951",
+      "location": "California (western Riverside County , including Riverside , Corona , Hemet , Lake Elsinore , Moreno Valley , Murrieta , Temecula , etc.)",
+      "dateEstablished": "July 17, 2004",
+      "notes": "Split of 909"
+    },
+    {
+      "code": "952",
+      "location": "Minnesota ( Bloomington , Eden Prairie , Edina, Minnetonka, Chaska, and the southwest suburban Minneapolis area)",
+      "dateEstablished": "February 27, 2000",
+      "notes": "Created by three-way split of 612 (along with 763 )"
+    },
+    {
+      "code": "953",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "954",
+      "location": "Florida (all of Broward County : Fort Lauderdale , Hollywood, Coral Springs, etc.)",
+      "dateEstablished": "September 11, 1995",
+      "notes": "Split of 305 2002: overlaid by 754"
+    },
+    {
+      "code": "955",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "956",
+      "location": "Texas ( Laredo , Harlingen , Brownsville, McAllen, and southmost Texas)",
+      "dateEstablished": "July 7, 1997",
+      "notes": "Split of 210"
+    },
+    {
+      "code": "957",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "958",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "959",
+      "location": "Northern and eastern Connecticut ( Hartford , Bristol, Norwich, and northern and eastern Connecticut)",
+      "dateEstablished": "August 30, 2014",
+      "notes": "Overlaid on 860"
+    },
+    {
+      "code": "960",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "961",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "962",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "963",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "964",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "965",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "966",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "967",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "968",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "969",
+      "location": "Not in use; reserved in case a block of consecutive numbers is ever needed",
+      "dateEstablished": "",
+      "notes": "966 is an easily recognizable code (ERC)"
+    },
+    {
+      "code": "970",
+      "location": "Colorado ( Grand Junction , Aspen, Durango , Estes Park, Fort Collins, Frisco, Glenwood Springs , Greeley, Purgatory , Steamboat Springs , Telluride , Vail, Rocky Mountain National Park , Dinosaur National Monument , and most of north-central, south-central, and western Colorado)",
+      "dateEstablished": "April 2, 1995",
+      "notes": "Split of 303"
+    },
+    {
+      "code": "971",
+      "location": "Oregon ( Portland , Salem, Hillsboro, Beaverton, and most of northwestern Oregon)",
+      "dateEstablished": "October 1, 2000",
+      "notes": "2000: partially overlaid on 503 ; in 2008, Clatsop County and Tillamook County , originally excluded from the overlay, were added to it"
+    },
+    {
+      "code": "972",
+      "location": "Texas ( Dallas metropolitan area)",
+      "dateEstablished": "September 14, 1996",
+      "notes": "Split of 214 1999: 214 and 972 were merged and overlaid with 469 2021: overlaid by 945"
+    },
+    {
+      "code": "973",
+      "location": "New Jersey ( Newark , Paterson, and most of northeastern New Jersey)",
+      "dateEstablished": "June 1, 1997",
+      "notes": "Split of 201 2001: overlaid by 862"
+    },
+    {
+      "code": "974",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "975",
+      "location": "Missouri (Kansas City, St Joseph, Independence, Harrisonville, and parts of west-central Missouri)",
+      "dateEstablished": "October 13, 2023",
+      "notes": "Overlaid on 816"
+    },
+    {
+      "code": "976",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": "Conflicts with the premium rate services exchange"
+    },
+    {
+      "code": "977",
+      "location": "Not in use; available for non-geographic assignment",
+      "dateEstablished": "",
+      "notes": "Easily recognizable code (ERC)"
+    },
+    {
+      "code": "978",
+      "location": "Northeastern Massachusetts",
+      "dateEstablished": "September 1, 1997",
+      "notes": "Split of 508 2001: overlaid by 351"
+    },
+    {
+      "code": "979",
+      "location": "Texas (Wharton, Bryan, Bay City, College Station , Lake Jackson, La Grange , and southeastern Texas)",
+      "dateEstablished": "February 19, 2000",
+      "notes": "Split of 409"
+    },
+    {
+      "code": "980",
+      "location": "North Carolina ( Charlotte , Concord, Gastonia, Salisbury, and much of south-central North Carolina)",
+      "dateEstablished": "February 10, 2001",
+      "notes": "Overlaid on 704"
+    },
+    {
+      "code": "981",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "982",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "983",
+      "location": "Denver , Colorado",
+      "dateEstablished": "June 17, 2022",
+      "notes": "Overlaid on 303/720"
+    },
+    {
+      "code": "984",
+      "location": "North Carolina (the Research Triangle, including Raleigh, the state capital city; Durham, Cary, and Chapel Hill; and Goldsboro and other parts of north-central North Carolina)",
+      "dateEstablished": "April 30, 2012",
+      "notes": "Overlaid on 919"
+    },
+    {
+      "code": "985",
+      "location": "Louisiana ( Houma , Slidell , and southeastern Louisiana excluding New Orleans )",
+      "dateEstablished": "February 12, 2001",
+      "notes": "Split of 504"
+    },
+    {
+      "code": "986",
+      "location": "Idaho",
+      "dateEstablished": "September 5, 2017",
+      "notes": "Overlaid on 208"
+    },
+    {
+      "code": "987",
+      "location": "Not in use; available for geographic assignment",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "988",
+      "location": "An N11 short code for the Suicide & Crisis Lifeline ; [ 22 ] not assignable as an area code",
+      "dateEstablished": "June 16, 2022",
+      "notes": "Created conflicts in area code regions that allowed seven-digit dialing and had been using numbers beginning in 988; a total of 82 area codes switched to ten-digit dialing as a result. [ 23 ]"
+    },
+    {
+      "code": "989",
+      "location": "Michigan (Alpena, Mt. Pleasant, Bay City , Saginaw , Midland , Owosso, and a part of central Michigan)",
+      "dateEstablished": "April 7, 2001",
+      "notes": "Split of 517"
+    },
+    {
+      "code": "990",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "991",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "992",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "993",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "994",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "995",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "996",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "997",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "998",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    },
+    {
+      "code": "999",
+      "location": "Not in use; reserved for potential North American Numbering Plan expansion",
+      "dateEstablished": "",
+      "notes": ""
+    }
+  ],
+  "states": [
+    {
+      "name": "Alabama",
+      "codes": [
+        "205",
+        "251",
+        "256",
+        "334",
+        "483",
+        "659",
+        "938"
+      ]
+    },
+    {
+      "name": "Alaska",
+      "codes": [
+        "907"
+      ]
+    },
+    {
+      "name": "Arizona",
+      "codes": [
+        "480",
+        "520",
+        "602",
+        "623",
+        "928"
+      ]
+    },
+    {
+      "name": "Arkansas",
+      "codes": [
+        "327",
+        "479",
+        "501",
+        "870"
+      ]
+    },
+    {
+      "name": "California",
+      "codes": [
+        "209",
+        "213",
+        "279",
+        "310",
+        "323",
+        "341",
+        "350",
+        "357",
+        "369",
+        "408",
+        "415",
+        "424",
+        "442",
+        "510",
+        "530",
+        "559",
+        "562",
+        "619",
+        "626",
+        "628",
+        "650",
+        "657",
+        "661",
+        "669",
+        "707",
+        "714",
+        "738",
+        "747",
+        "760",
+        "805",
+        "818",
+        "820",
+        "831",
+        "837",
+        "840",
+        "858",
+        "909",
+        "916",
+        "925",
+        "949",
+        "951"
+      ]
+    },
+    {
+      "name": "Colorado",
+      "codes": [
+        "303",
+        "719",
+        "720",
+        "748",
+        "970",
+        "983"
+      ]
+    },
+    {
+      "name": "Connecticut",
+      "codes": [
+        "203",
+        "475",
+        "860",
+        "959"
+      ]
+    },
+    {
+      "name": "Delaware",
+      "codes": [
+        "302"
+      ]
+    },
+    {
+      "name": "District of Columbia",
+      "codes": [
+        "202",
+        "771"
+      ]
+    },
+    {
+      "name": "Florida",
+      "codes": [
+        "239",
+        "305",
+        "321",
+        "324",
+        "352",
+        "386",
+        "407",
+        "448",
+        "561",
+        "645",
+        "656",
+        "689",
+        "727",
+        "728",
+        "754",
+        "772",
+        "786",
+        "813",
+        "850",
+        "863",
+        "904",
+        "941",
+        "954"
+      ]
+    },
+    {
+      "name": "Georgia",
+      "codes": [
+        "229",
+        "404",
+        "470",
+        "478",
+        "678",
+        "706",
+        "762",
+        "770",
+        "912",
+        "943"
+      ]
+    },
+    {
+      "name": "Hawaii",
+      "codes": [
+        "808"
+      ]
+    },
+    {
+      "name": "Idaho",
+      "codes": [
+        "208",
+        "986"
+      ]
+    },
+    {
+      "name": "Illinois",
+      "codes": [
+        "217",
+        "224",
+        "309",
+        "312",
+        "331",
+        "447",
+        "464",
+        "618",
+        "630",
+        "708",
+        "730",
+        "773",
+        "779",
+        "815",
+        "847",
+        "861",
+        "872"
+      ]
+    },
+    {
+      "name": "Indiana",
+      "codes": [
+        "219",
+        "260",
+        "317",
+        "463",
+        "574",
+        "765",
+        "812",
+        "930"
+      ]
+    },
+    {
+      "name": "Iowa",
+      "codes": [
+        "319",
+        "515",
+        "563",
+        "641",
+        "712"
+      ]
+    },
+    {
+      "name": "Kansas",
+      "codes": [
+        "316",
+        "620",
+        "785",
+        "913"
+      ]
+    },
+    {
+      "name": "Kentucky",
+      "codes": [
+        "270",
+        "364",
+        "502",
+        "606",
+        "859"
+      ]
+    },
+    {
+      "name": "Louisiana",
+      "codes": [
+        "225",
+        "318",
+        "337",
+        "457",
+        "504",
+        "985"
+      ]
+    },
+    {
+      "name": "Maine",
+      "codes": [
+        "207"
+      ]
+    },
+    {
+      "name": "Maryland",
+      "codes": [
+        "227",
+        "240",
+        "301",
+        "410",
+        "443",
+        "667"
+      ]
+    },
+    {
+      "name": "Massachusetts",
+      "codes": [
+        "339",
+        "351",
+        "413",
+        "508",
+        "617",
+        "774",
+        "781",
+        "857",
+        "978"
+      ]
+    },
+    {
+      "name": "Michigan",
+      "codes": [
+        "231",
+        "248",
+        "269",
+        "313",
+        "517",
+        "586",
+        "616",
+        "679",
+        "734",
+        "810",
+        "906",
+        "947",
+        "989"
+      ]
+    },
+    {
+      "name": "Minnesota",
+      "codes": [
+        "218",
+        "320",
+        "507",
+        "612",
+        "651",
+        "763",
+        "924",
+        "952"
+      ]
+    },
+    {
+      "name": "Mississippi",
+      "codes": [
+        "228",
+        "471",
+        "601",
+        "662",
+        "769"
+      ]
+    },
+    {
+      "name": "Missouri",
+      "codes": [
+        "235",
+        "314",
+        "417",
+        "557",
+        "573",
+        "636",
+        "660",
+        "816",
+        "975"
+      ]
+    },
+    {
+      "name": "Montana",
+      "codes": [
+        "406"
+      ]
+    },
+    {
+      "name": "Nebraska",
+      "codes": [
+        "308",
+        "402",
+        "531"
+      ]
+    },
+    {
+      "name": "Nevada",
+      "codes": [
+        "702",
+        "725",
+        "775"
+      ]
+    },
+    {
+      "name": "New Hampshire",
+      "codes": [
+        "603"
+      ]
+    },
+    {
+      "name": "New Jersey",
+      "codes": [
+        "201",
+        "551",
+        "609",
+        "640",
+        "732",
+        "848",
+        "856",
+        "862",
+        "908",
+        "973"
+      ]
+    },
+    {
+      "name": "New Mexico",
+      "codes": [
+        "505",
+        "575"
+      ]
+    },
+    {
+      "name": "New York",
+      "codes": [
+        "212",
+        "315",
+        "329",
+        "332",
+        "347",
+        "363",
+        "516",
+        "518",
+        "585",
+        "607",
+        "624",
+        "631",
+        "646",
+        "680",
+        "716",
+        "718",
+        "838",
+        "845",
+        "914",
+        "917",
+        "929",
+        "934"
+      ]
+    },
+    {
+      "name": "North Carolina",
+      "codes": [
+        "252",
+        "336",
+        "472",
+        "704",
+        "743",
+        "828",
+        "910",
+        "919",
+        "980",
+        "984"
+      ]
+    },
+    {
+      "name": "North Dakota",
+      "codes": [
+        "701"
+      ]
+    },
+    {
+      "name": "Ohio",
+      "codes": [
+        "216",
+        "220",
+        "234",
+        "283",
+        "326",
+        "330",
+        "380",
+        "419",
+        "436",
+        "440",
+        "513",
+        "567",
+        "614",
+        "740",
+        "937"
+      ]
+    },
+    {
+      "name": "Oklahoma",
+      "codes": [
+        "405",
+        "539",
+        "572",
+        "580",
+        "918"
+      ]
+    },
+    {
+      "name": "Oregon",
+      "codes": [
+        "458",
+        "503",
+        "541",
+        "971"
+      ]
+    },
+    {
+      "name": "Pennsylvania",
+      "codes": [
+        "215",
+        "223",
+        "267",
+        "272",
+        "412",
+        "445",
+        "484",
+        "570",
+        "582",
+        "610",
+        "717",
+        "724",
+        "814",
+        "835",
+        "878"
+      ]
+    },
+    {
+      "name": "Rhode Island",
+      "codes": [
+        "401"
+      ]
+    },
+    {
+      "name": "South Carolina",
+      "codes": [
+        "803",
+        "821",
+        "839",
+        "843",
+        "854",
+        "864"
+      ]
+    },
+    {
+      "name": "South Dakota",
+      "codes": [
+        "605"
+      ]
+    },
+    {
+      "name": "Tennessee",
+      "codes": [
+        "423",
+        "615",
+        "629",
+        "729",
+        "731",
+        "865",
+        "901",
+        "931"
+      ]
+    },
+    {
+      "name": "Texas",
+      "codes": [
+        "210",
+        "214",
+        "254",
+        "281",
+        "325",
+        "346",
+        "361",
+        "409",
+        "430",
+        "432",
+        "469",
+        "512",
+        "621",
+        "682",
+        "713",
+        "726",
+        "737",
+        "806",
+        "817",
+        "830",
+        "832",
+        "903",
+        "915",
+        "936",
+        "940",
+        "945",
+        "956",
+        "972",
+        "979"
+      ]
+    },
+    {
+      "name": "Utah",
+      "codes": [
+        "385",
+        "435",
+        "801"
+      ]
+    },
+    {
+      "name": "Vermont",
+      "codes": [
+        "802"
+      ]
+    },
+    {
+      "name": "Virginia",
+      "codes": [
+        "276",
+        "434",
+        "540",
+        "571",
+        "686",
+        "703",
+        "757",
+        "804",
+        "826",
+        "948"
+      ]
+    },
+    {
+      "name": "Washington",
+      "codes": [
+        "206",
+        "253",
+        "360",
+        "425",
+        "509",
+        "564"
+      ]
+    },
+    {
+      "name": "West Virginia",
+      "codes": [
+        "304",
+        "681"
+      ]
+    },
+    {
+      "name": "Wisconsin",
+      "codes": [
+        "262",
+        "274",
+        "353",
+        "414",
+        "534",
+        "608",
+        "715",
+        "920"
+      ]
+    },
+    {
+      "name": "Wyoming",
+      "codes": [
+        "307"
+      ]
+    }
+  ],
+  "provinces": [
+    {
+      "name": "Alberta",
+      "codes": [
+        "368",
+        "403",
+        "568",
+        "587",
+        "780",
+        "825"
+      ]
+    },
+    {
+      "name": "British Columbia",
+      "codes": [
+        "236",
+        "250",
+        "257",
+        "604",
+        "672",
+        "778"
+      ]
+    },
+    {
+      "name": "Manitoba",
+      "codes": [
+        "204",
+        "431",
+        "584"
+      ]
+    },
+    {
+      "name": "New Brunswick",
+      "codes": [
+        "428",
+        "506"
+      ]
+    },
+    {
+      "name": "Newfoundland and Labrador",
+      "codes": [
+        "709",
+        "879"
+      ]
+    },
+    {
+      "name": "Northwest Territories",
+      "codes": [
+        "867"
+      ]
+    },
+    {
+      "name": "Nova Scotia",
+      "codes": [
+        "782",
+        "851",
+        "902"
+      ]
+    },
+    {
+      "name": "Nunavut",
+      "codes": [
+        "867"
+      ]
+    },
+    {
+      "name": "Ontario",
+      "codes": [
+        "226",
+        "249",
+        "289",
+        "343",
+        "365",
+        "382",
+        "387",
+        "416",
+        "437",
+        "460",
+        "519",
+        "537",
+        "548",
+        "613",
+        "647",
+        "683",
+        "705",
+        "742",
+        "753",
+        "807",
+        "905",
+        "942"
+      ]
+    },
+    {
+      "name": "Prince Edward Island",
+      "codes": [
+        "782",
+        "902"
+      ]
+    },
+    {
+      "name": "Quebec",
+      "codes": [
+        "263",
+        "354",
+        "367",
+        "418",
+        "438",
+        "450",
+        "468",
+        "514",
+        "579",
+        "581",
+        "819",
+        "873"
+      ]
+    },
+    {
+      "name": "Saskatchewan",
+      "codes": [
+        "306",
+        "474",
+        "639"
+      ]
+    },
+    {
+      "name": "Yukon",
+      "codes": [
+        "867"
+      ]
+    }
+  ],
+  "nations": [
+    {
+      "name": "Anguilla",
+      "codes": [
+        "264"
+      ]
+    },
+    {
+      "name": "Antigua and Barbuda",
+      "codes": [
+        "268"
+      ]
+    },
+    {
+      "name": "The Bahamas",
+      "codes": [
+        "242"
+      ]
+    },
+    {
+      "name": "Barbados",
+      "codes": [
+        "246"
+      ]
+    },
+    {
+      "name": "Bermuda",
+      "codes": [
+        "441"
+      ]
+    },
+    {
+      "name": "British Virgin Islands",
+      "codes": [
+        "284"
+      ]
+    },
+    {
+      "name": "Cayman Islands",
+      "codes": [
+        "345"
+      ]
+    },
+    {
+      "name": "Dominica",
+      "codes": [
+        "767"
+      ]
+    },
+    {
+      "name": "Dominican Republic",
+      "codes": [
+        "809",
+        "829",
+        "849"
+      ]
+    },
+    {
+      "name": "Grenada",
+      "codes": [
+        "473"
+      ]
+    },
+    {
+      "name": "Jamaica",
+      "codes": [
+        "658",
+        "876"
+      ]
+    },
+    {
+      "name": "Montserrat",
+      "codes": [
+        "664"
+      ]
+    },
+    {
+      "name": "Puerto Rico",
+      "codes": [
+        "787",
+        "939"
+      ]
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "codes": [
+        "869"
+      ]
+    },
+    {
+      "name": "Saint Lucia",
+      "codes": [
+        "758"
+      ]
+    },
+    {
+      "name": "Saint Vincent and the Grenadines",
+      "codes": [
+        "784"
+      ]
+    },
+    {
+      "name": "Sint Maarten",
+      "codes": [
+        "721"
+      ]
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "codes": [
+        "868"
+      ]
+    },
+    {
+      "name": "Turks and Caicos Islands",
+      "codes": [
+        "649"
+      ]
+    },
+    {
+      "name": "U.S. Virgin Islands",
+      "codes": [
+        "340"
+      ]
+    }
+  ]
+}

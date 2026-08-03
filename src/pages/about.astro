@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { AUTHOR_NAME } from '../consts';
+---
+
+<Layout
+	title="About"
+	description="Why DialWick exists and where its area code, ZIP code, and dialing data comes from."
+>
+	<div class="mx-auto max-w-[720px]">
+		<h1 class="text-3xl font-bold text-[var(--ink)] md:text-4xl">About DialWick</h1>
+
+		<div class="mt-7 max-w-[640px] text-[0.9375rem] leading-[1.85] text-[var(--ink)]/70">
+			<p class="mb-4">
+				A phone number's first three digits answer a question a search engine's one-line summary
+				usually skips: not just "where is this," but why that area code exists at all -- which
+				older code it was carved out of, when, and what that split or overlay actually changed for
+				the people who lived through it. DialWick exists to answer both halves.
+			</p>
+			<p class="mb-4">
+				Every area code page draws on the North American Numbering Plan Administrator's assignment
+				history, every ZIP code and county page on USPS/Census-derived postal data, and every
+				dialing guide on current carrier and FCC/ITU-T conventions -- not a single figure is typed
+				in from memory. Each page links its sources at the bottom so you can check the primary
+				record yourself.
+			</p>
+			<p class="mb-4 text-[var(--ink)]">
+				This site is written and edited by {AUTHOR_NAME}.
+			</p>
+			<p class="m-0 text-[var(--ink)]">
+				Questions, corrections, or press inquiries:
+				<a href="mailto:contact@dialwick.com" class="text-[var(--accent-dark)] underline">contact@dialwick.com</a>
+			</p>
+		</div>
+	</div>
+</Layout>

@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/manrope';
+@import '@fontsource-variable/jetbrains-mono';
+
+/*
+ * "Directory, not diary" (2026-08-03 launch design).
+ *
+ * DialWick is a lookup reference, not a narrative content site — the visual
+ * model is a phone directory / index card, not a magazine article. Numbers
+ * (area codes, ZIP codes, dialing codes) render in tabular mono so digits
+ * align like a printed directory column; prose stays in a clean geometric
+ * sans. Navy + brass instead of the matrix's warmer tones elsewhere, to read
+ * as "utility reference" rather than "editorial".
+ */
+:root {
+	--ink: #1a2332;
+	--paper: #f6f4ee;
+	--rule: #ddd6c4;
+	--accent: #b5722f;
+	--accent-dark: #8a5622;
+	--card: #ffffff;
+	--directory: #131a27;
+	--directory-text: #cfd6e3;
+}
+
+body {
+	background-color: var(--paper);
+	color: var(--ink);
+	font-family: 'Manrope Variable', system-ui, -apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif;
+	overflow-x: clip;
+}
+
+.font-mono-num {
+	font-family: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+	font-variant-numeric: tabular-nums;
+}
+
+.rule {
+	margin-inline: calc(50% - 50vw);
+}
+.rule > .rule-inner {
+	margin-inline: auto;
+	max-width: 64rem;
+	padding-inline: 1rem;
+}

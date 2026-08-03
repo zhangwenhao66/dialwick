@@ -1,0 +1,27 @@
+---
+const NAV = [
+	{ label: 'Area Codes', href: '/area-codes/' },
+	{ label: 'ZIP Codes', href: '/zip-codes/' },
+	{ label: 'Counties', href: '/counties/' },
+	{ label: 'International Dialing', href: '/international-dialing/' },
+];
+---
+
+<header class="bg-[var(--directory)]">
+	<div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-4">
+		<a href="/" class="flex items-center gap-2 no-underline">
+			<span class="font-mono-num text-lg font-bold tracking-tight text-[var(--accent)]">#</span>
+			<span class="text-lg font-bold tracking-tight text-white">DialWick</span>
+		</a>
+		<nav class="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+			{NAV.map((item) => (
+				<a
+					href={item.href}
+					class="text-[var(--directory-text)] no-underline hover:text-white hover:underline"
+				>
+					{item.label}
+				</a>
+			))}
+		</nav>
+	</div>
+</header>
