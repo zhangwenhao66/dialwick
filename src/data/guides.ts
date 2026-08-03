@@ -517,7 +517,7 @@ export const guides: Guide[] = [
 		category: 'Area Code Guides',
 		title: "Is There Really Such a Thing as a 'Scam Area Code'?",
 		description:
-			'Short answer: mostly no. Scammers fake your own area code to get you to answer (a tactic the FCC calls "neighbor spoofing"). There is one real exception -- six actual NANP area codes tied to a well-documented "one ring" callback scam.',
+			'Short answer: mostly no. Scammers fake your own area code ("neighbor spoofing"). The one real exception: ten NANP codes tied to the "one ring" scam.',
 		published: '2026-08-03',
 		updated: '2026-08-03',
 		coreSummary:
@@ -531,9 +531,9 @@ export const guides: Guide[] = [
 				],
 			},
 			{
-				heading: "The real exception: the 'one ring' scam and six Caribbean NANP codes",
+				heading: "The real exception: the 'one ring' scam and ten Caribbean NANP codes",
 				body: [
-					"There is one well-documented pattern where specific area codes really are disproportionately tied to a scam, and it works differently from neighbor spoofing. Six Caribbean nations and territories are full members of the North American Numbering Plan, meaning their phone numbers use ordinary-looking 3-digit area codes exactly like a US state does -- nothing in the number format signals that it's actually an international call.",
+					"There is one well-documented pattern where specific area codes really are disproportionately tied to a scam, and it works differently from neighbor spoofing. Eight Caribbean nations and territories are full members of the North American Numbering Plan, meaning their phone numbers use ordinary-looking 3-digit area codes exactly like a US state does -- nothing in the number format signals that it's actually an international call.",
 					'The "one ring" (or "Wangiri") scam exploits this directly: an autodialer places a call, lets it ring once, and hangs up before anyone can answer, hoping curiosity drives the recipient to call back. Calling back connects to an international, often premium-rate number, and the recipient gets charged steep per-minute and connection fees that show up later on their phone bill.',
 				],
 				table: {
@@ -544,6 +544,8 @@ export const guides: Guide[] = [
 						['284', 'British Virgin Islands'],
 						['473', 'Grenada'],
 						['649', 'Turks and Caicos Islands'],
+						['664', 'Montserrat'],
+						['767', 'Dominica'],
 						['809 / 829 / 849', 'Dominican Republic'],
 						['876', 'Jamaica'],
 					],
@@ -560,7 +562,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Are there area codes that are always scams?',
 				answer:
-					'No domestic US area code is inherently a scam -- scammers routinely spoof caller ID to show your own local area code. The one real exception is a small set of Caribbean NANP codes (268, 284, 473, 649, 809/829/849, 876) tied to the documented "one ring" callback scam.',
+					'No domestic US area code is inherently a scam -- scammers routinely spoof caller ID to show your own local area code. The one real exception is a set of Caribbean NANP codes (268, 284, 473, 649, 664, 767, 809/829/849, 876) tied to the documented "one ring" callback scam.',
 				},
 			{
 				question: 'What is "neighbor spoofing"?',
