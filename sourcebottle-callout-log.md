@@ -19,3 +19,4 @@
 - **Deadline**：2026-08-25 17:00
 - **发布状态**：✅ 已提交，跳转 `thankyou.asp`，Pending approval。提交回执 product id = `df863dcb371649274caebafa77b02088`。
 - **上线复核**：⏳ 待下次任务运行时补查。
+- **回复采用**（2026-08-04 补记）：收到 Mike Kruse（刑事辩护律师，Kruse Law Firm 创始人，办理过欺诈类案件）真实回复，讲的是 neighbor spoofing 的真实运作机制和"用旧账单上的号码回拨核实"的建议。已作为佐证引用写入 `scam-area-codes` 正文（引用卡片 + 补充一句实操建议），commit `c4d20a8`，已部署上线核实（`dialwick.com/scam-area-codes/` 含"Michael Kruse"）。
