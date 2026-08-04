@@ -790,7 +790,7 @@ export const guides: Guide[] = [
 		description:
 			'Short answer: mostly no. Scammers fake your own area code ("neighbor spoofing"). The one real exception: ten NANP codes tied to the "one ring" scam.',
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-04',
 		coreSummary:
 			'There is no list of domestic US area codes that scammers "use" -- the FCC and FTC\'s own data shows the opposite: robocallers fake your own local area code on purpose, a tactic called neighbor spoofing, so an unfamiliar 415 number can easily not be from the Bay Area at all. The one real, documented exception is the "one ring" scam, which relies on real North American Numbering Plan area codes assigned to a handful of Caribbean nations and territories, not domestic scam-only codes.',
 		sections: [
@@ -799,6 +799,7 @@ export const guides: Guide[] = [
 				body: [
 					"A caller ID showing your own area code feels trustworthy, which is exactly why robocallers exploit it. The FCC's term for this is neighbor spoofing: the call might genuinely originate anywhere, including overseas, but the caller ID display is deliberately falsified to show a number sharing your area code and even your first few exchange digits. The Truth in Caller ID Act makes this illegal when done with intent to defraud, with penalties up to $10,000 per violation -- but the law hasn't stopped the practice, because the technology to fake caller ID is cheap and widely available to robocall operations.",
 					'Practically, this means "is 213 a scam area code" is the wrong question. Any area code can appear on a spoofed call, including your own, and the number displayed tells you nothing reliable about who is actually calling.',
+					"<div style=\"margin:12px 0;padding:18px 20px;background:#f8fafc;border-left:4px solid #4a5568;border-radius:8px;\"><p style=\"margin:0;font-size:1.05rem;font-style:italic;color:#1e293b;line-height:1.6;\">&ldquo;Neighbor spoofing works because the software behind it lets a caller punch in any number they want, including one that matches your own area code and prefix. Scammers know a familiar-looking number reads as safe, so they mirror it on purpose.&rdquo;</p><p style=\"margin:8px 0 0;font-size:0.8125rem;color:#64748b;\">Michael Kruse, criminal defense lawyer and founder of Kruse Law Firm, whose caseload includes fraud cases</p></div>",
 				],
 			},
 			{
@@ -826,6 +827,7 @@ export const guides: Guide[] = [
 				heading: 'What to actually do about an unfamiliar call',
 				body: [
 					'The FTC\'s standing advice, independent of which area code shows up, is simple and doesn\'t require memorizing any list: don\'t answer calls from numbers you don\'t recognize, and never call back a number that rang once and disconnected. If you do answer and something feels off, hang up rather than staying on the line to "verify" who they are. Review your phone bill for unexpected international or premium charges if you did call back a one-ring number, and report the call to your carrier.',
+					"If a caller claiming to be your bank, a government agency, or a utility asks you to act urgently, hang up and call the organization back using a number from an old bill or statement, not the one that showed up on your screen. Michael Kruse, a criminal defense lawyer whose caseload includes both sides of fraud cases, says that single habit is what actually stops most of these calls from going anywhere -- verifying independently works regardless of how convincing the spoofed number looked.",
 				],
 			},
 		],
