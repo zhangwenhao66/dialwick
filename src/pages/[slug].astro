@@ -5,6 +5,8 @@ import BreadcrumbList from '../../vendor/site-toolkit/packages/schema/src/Breadc
 import FAQPage from '../../vendor/site-toolkit/packages/schema/src/FAQPage.astro';
 import { pickRelatedGuides } from '../../vendor/site-toolkit/packages/related-guides/src/index.ts';
 import { guides, type Guide, type GuideCategory } from '../data/guides';
+import { getDialingGuide } from '../lib/internationalDialing';
+import DialFormatBuilder from '../components/DialFormatBuilder.astro';
 import { AUTHOR_NAME, SITE_ORIGIN } from '../consts';
 
 export function getStaticPaths() {
@@ -32,6 +34,11 @@ const categoryToPath: Record<GuideCategory, string> = {
 	'International Dialing': '/international-dialing/',
 };
 const catPath = categoryToPath[guide.category] ?? '/';
+
+// International-dialing pages get an interactive dial-format tool, driven
+// by the same per-country data (exitCode/countryCode/quirk) already used
+// to write the article -- see src/lib/dialFormatter.ts.
+const dialingGuide = guide.category === 'International Dialing' ? getDialingGuide(guide.slug) : undefined;
 
 const pageUrl = `${SITE_ORIGIN}/${guide.slug}/`;
 const heroImage = `${SITE_ORIGIN}/favicon.svg`;
@@ -86,6 +93,12 @@ function md(text: string): string {
 			<p class="m-0 text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink)]/45">Core summary</p>
 			<p class="mt-2 mb-0 text-[1.05rem] leading-relaxed text-[var(--ink)]">{guide.coreSummary}</p>
 		</div>
+
+		{dialingGuide && (
+			<div class="mt-9">
+				<DialFormatBuilder guide={dialingGuide} />
+			</div>
+		)}
 
 		<article class="mt-9">
 			{guide.sections.map((section) => (
