@@ -1013,4 +1013,91 @@ export const guides: Guide[] = [
 			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
 		],
 	},
+	{
+		slug: 'us-country-code',
+		category: 'International Dialing',
+		title: 'The US Country Code Is +1, and 19 Other Places Share It',
+		description:
+			"+1 isn't unique to the United States -- Canada and 18 Caribbean nations and territories dial out under the same code, and most of them didn't get their own area code until the 1990s.",
+		published: '2026-08-05',
+		updated: '2026-08-05',
+		coreSummary:
+			"The US country code is +1, but +1 alone doesn't tell you a number is American. Twenty places share it under the North American Numbering Plan (NANP): the US and its territories, Canada, and 18 Caribbean nations and territories, from the Bahamas to Trinidad and Tobago. Most of those islands didn't get their own area code until the 1990s -- before that, calls to more than a dozen of them all funneled through one shared area code, 809. The only way to tell a US number from a Bahamian, Jamaican, or Bermudian one dialed under the same +1 is the three-digit area code that follows it.",
+		sections: [
+			{
+				heading: '+1 belongs to 20 places, not just the United States',
+				body: [
+					"NANPA, the organization that assigns every area code used across the US, Canada, and the Caribbean, counts 20 member countries and territories that all dial out under the shared +1 country code: the United States and its territories, Canada, and 18 Caribbean nations and territories, from Anguilla to Turks and Caicos. Nothing about a +1 number's format signals which of those 20 it actually belongs to -- the country code by itself only narrows a call down to North America and the Caribbean, not to a specific country. The three-digit area code that follows +1 is what actually does that work, the same way it does inside the US (see [how US area codes actually work](/how-do-area-codes-work/)).",
+				],
+				table: {
+					caption: 'NANP members outside the US and Canada, and their area code(s)',
+					columns: ['Country/territory', 'Area code(s)'],
+					rows: [
+						['Anguilla', '264'],
+						['Antigua and Barbuda', '268'],
+						['Bahamas', '242'],
+						['Barbados', '246'],
+						['Bermuda', '441'],
+						['British Virgin Islands', '284'],
+						['Cayman Islands', '345'],
+						['Dominica', '767'],
+						['Dominican Republic', '809, 829, 849'],
+						['Grenada', '473'],
+						['Jamaica', '876'],
+						['Montserrat', '664'],
+						['Sint Maarten', '721'],
+						['St. Kitts and Nevis', '869'],
+						['St. Lucia', '758'],
+						['St. Vincent and the Grenadines', '784'],
+						['Trinidad and Tobago', '868'],
+						['Turks and Caicos', '649'],
+					],
+				},
+			},
+			{
+				heading: "Most of that list didn't exist as separate area codes until the 1990s",
+				body: [
+					'Until the mid-1990s, nearly all of the NANP\'s Caribbean members shared a single area code, 809, with no way to tell one island\'s number from another\'s just by looking at it. NANPA split that code apart in stages: Bermuda\'s 441 went first, in 1995, followed by Puerto Rico\'s 787 on March 1, 1996, the Bahamas\' 242 on October 1, 1996, and Barbados\' 246 later that same year. Saint Lucia\'s 758 began permissive dialing in July 1996, Saint Kitts and Nevis\'s 869 that October, and Saint Vincent and the Grenadines didn\'t get its own 784 until June 1998. The Dominican Republic split off from 809 over an even longer stretch, adding overlay codes 829 and then 849 as the original code ran out of numbers to assign.',
+					"Sint Maarten's 721 is the newest addition on the list: it wasn't assigned until 2011, the year after Sint Maarten became its own constituent country within the Kingdom of the Netherlands rather than a district of the old Netherlands Antilles. The numbering plan keeps tracking political geography, not just running out of digits.",
+				],
+			},
+			{
+				heading: 'How to actually dial a US number from abroad',
+				body: [
+					"Calling a US number from outside the NANP works the same way as calling any other +1 destination: dial your own country's international exit code, then 1, then the 10-digit US number (area code plus the 7-digit line). Most of the world dials out with 00 as that exit code -- the US and Canada are two of the few places that use 011 instead, which only matters if you're calling out of North America, not into it. On a mobile phone or most VoIP apps, a leading + does the same job as the exit code and works from almost anywhere.",
+					'A US number written as (415) 555-0142 becomes 00 1 415 555 0142 when dialed from the UK or most of the rest of the world, or +1 415 555 0142 from a mobile.',
+				],
+			},
+			{
+				heading: "A +1 number isn't automatically American, and it isn't automatically safe either",
+				body: [
+					'The shared +1 code has a real practical downside: eight of the Caribbean NANP codes above -- 268, 284, 473, 649, 664, 767, 809/829/849, and 876 -- are the specific area codes tied to the "one ring" scam, where an autodialer calls once and hangs up, hoping the recipient calls back into a premium-rate international line. See [Is There Really Such a Thing as a \'Scam Area Code\'?](/scam-area-codes/) for how that scam works and what the FCC and FTC recommend doing about it.',
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What is the US country code?',
+				answer:
+					"+1 -- but it isn't unique to the United States. Canada and 18 Caribbean nations and territories, from the Bahamas to Trinidad and Tobago, dial out under the same +1 code as part of the North American Numbering Plan.",
+			},
+			{
+				question: 'How do I dial a US phone number from another country?',
+				answer:
+					"Most of the world dials your own country's exit code (00, in most places) before 1, then the full 10-digit US number including the area code. Callers from Canada skip the exit code entirely -- Canada and the US share the same numbering plan, so a Canada-to-US call is just 1 plus the 10-digit number, identical to a domestic long-distance call. A leading + substitutes for the exit code on most mobile phones.",
+			},
+			{
+				question: 'If a phone number starts with +1, is it definitely from the US?',
+				answer:
+					'No. +1 only narrows a number down to one of 20 North American Numbering Plan members -- the US, Canada, or 18 Caribbean nations and territories. The three-digit area code that follows +1 is what actually identifies the country.',
+			},
+		],
+		sources: [
+			{ label: 'NANPA: About the North American Numbering Plan', url: 'https://www.nationalnanpa.com/about_us/abt_nanp.html' },
+			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+			{ label: 'Wikipedia: Area codes 809, 829, and 849', url: 'https://en.wikipedia.org/wiki/Area_codes_809,_829,_and_849' },
+			{ label: 'Wikipedia: Area code 721 (Sint Maarten)', url: 'https://en.wikipedia.org/wiki/Area_code_721' },
+			{ label: 'Wikipedia: Area code 784 (Saint Vincent and the Grenadines)', url: 'https://en.wikipedia.org/wiki/Area_code_784' },
+		],
+	},
 ];
