@@ -440,6 +440,105 @@ export const guides: Guide[] = [
 			{ label: 'ZIP code 60668 organization record (Commonwealth Edison bill-payment ZIP)', url: 'https://www.zip-codes.com/zip-code/60668/zip-code-60668.asp' },
 		],
 	},
+	{
+		slug: 'los-angeles-zip-codes',
+		category: 'ZIP Codes',
+		title: "Los Angeles ZIP Codes: The Full List, and Why Venice, Van Nuys, and San Pedro Aren't On It",
+		description:
+			"Los Angeles has 94 ZIP codes that carry the city's own name -- and dozens more inside its borders that carry a neighborhood's instead, a split rooted in a 1915 water-rights annexation vote.",
+		published: '2026-08-04',
+		updated: '2026-08-04',
+		coreSummary:
+			"USPS assigns 94 ZIP codes with \"Los Angeles\" as the primary place name, all of them inside Los Angeles County -- the same no-cross-county-line pattern this site found in Chicago. But Los Angeles is a much bigger city than that 94-code list suggests: dozens of neighborhoods that are legally part of the City of Los Angeles carry their own separate ZIP place names instead, among them Van Nuys (13 ZIP codes), North Hollywood (11), Santa Monica-adjacent Venice (2), and San Pedro (4). That split isn't a postal accident -- it's the fossil record of how Los Angeles grew. A March 1915 annexation vote brought most of the San Fernando Valley into the city so residents could get fixed water rates from the newly opened Los Angeles Aqueduct; an earlier 1906-09 annexation built a mile-wide \"Shoestring Strip\" connecting the city to a harbor at San Pedro and Wilmington; and a 1926 annexation absorbed a financially struggling Venice. Each place kept its old name at the post office even after joining the city. That's a different situation from Beverly Hills, West Hollywood, Culver City, and Santa Monica, which sit inside LA's borders on a map but were never annexed at all -- they remain fully independent cities today, and their absence from the 94-code list is simply correct.",
+		sections: [
+			{
+				heading: 'All 94 ZIP codes with "Los Angeles" as the primary USPS place name',
+				body: [
+					'USPS lists 94 ZIP codes with "Los Angeles, CA" as the primary place name, and every one of them sits in Los Angeles County -- no cross-county split, the same pattern this site found in [Chicago](/chicago-zip-codes/). Most of the range runs 90001 through 90099, with a handful of higher, non-sequential codes (90134, 90189) mixed in for high-volume recipients rather than delivery areas.',
+					"One of those higher codes has a specific, well-documented story: 90095 belongs to UCLA. The university shared Westwood's 90024 ZIP code until USPS carved out a dedicated campus code on January 1, 1995, along with a new addressing format built around department names and box numbers instead of street addresses -- the same system UCLA mail still uses today.",
+				],
+				table: {
+					caption: 'All 94 ZIP codes with "Los Angeles, CA" as the primary USPS place name (all in Los Angeles County)',
+					columns: ['ZIP'],
+					rows: [
+						['90001'], ['90002'], ['90003'], ['90004'], ['90005'],
+						['90006'], ['90007'], ['90008'], ['90009'], ['90010'],
+						['90011'], ['90012'], ['90013'], ['90014'], ['90015'],
+						['90016'], ['90017'], ['90018'], ['90019'], ['90020'],
+						['90021'], ['90022'], ['90023'], ['90024'], ['90025'],
+						['90026'], ['90027'], ['90028'], ['90029'], ['90030'],
+						['90031'], ['90032'], ['90033'], ['90034'], ['90035'],
+						['90036'], ['90037'], ['90038'], ['90039'], ['90040'],
+						['90041'], ['90042'], ['90043'], ['90044'], ['90045'],
+						['90046'], ['90047'], ['90048'], ['90049'], ['90050'],
+						['90051'], ['90052'], ['90053'], ['90054'], ['90055'],
+						['90056'], ['90057'], ['90058'], ['90059'], ['90060'],
+						['90061'], ['90062'], ['90063'], ['90064'], ['90065'],
+						['90066'], ['90067'], ['90068'], ['90070'], ['90071'],
+						['90072'], ['90073'], ['90074'], ['90075'], ['90076'],
+						['90077'], ['90078'], ['90079'], ['90080'], ['90081'],
+						['90082'], ['90083'], ['90084'], ['90086'], ['90087'],
+						['90088'], ['90089'], ['90091'], ['90093'], ['90095'],
+						['90096'], ['90099'], ['90134'], ['90189'],
+					],
+				},
+			},
+			{
+				heading: "Why Van Nuys, Woodland Hills, and a dozen other LA neighborhoods don't carry the city's name",
+				body: [
+					'Fourteen San Fernando Valley neighborhoods that are legally part of the City of Los Angeles keep their own ZIP place names instead of "Los Angeles": Van Nuys (13 ZIP codes), North Hollywood (11), Northridge (6), Woodland Hills (4), Sherman Oaks (4), Encino (4), Canoga Park (4), Reseda (2), Tarzana (2), Chatsworth (2), Granada Hills (2), Sylmar (2), Sunland (2), and Tujunga (2) -- 60 ZIP codes in all, inside a single city, none of them labeled "Los Angeles."',
+					"That split traces back to a single election. On March 29, 1915, voters approved annexing roughly 170 square miles of the San Fernando Valley into Los Angeles by a lopsided 681-25 margin -- more than doubling the city's land area overnight. The motive was water, not space: the Los Angeles Aqueduct had opened in 1913, and Valley communities wanted the fixed water rates that came with joining the city that owned the aqueduct. Not every Valley town joined on the same vote, either -- Lankershim (renamed North Hollywood in 1927) and Owensmouth (renamed Canoga Park) sat out the 1915 election and were annexed separately, in 1923 and 1917.",
+					"One Valley town never joined at all. San Fernando sat on its own reliable groundwater in the Sylmar Basin rather than a river it had to import, and residents voted to incorporate as an independent city on August 31, 1911 -- by a margin of just eight votes. It remains independent today, a legal island inside the Valley that the table above doesn't cover because it genuinely isn't Los Angeles. Burbank (1911) and Glendale (1906) made the same choice around the same period, for similar reasons of local control over water and utilities, and both remain independent cities bordering the Valley today.",
+				],
+			},
+			{
+				heading: 'The harbor and the Westside: two more annexation waves, two more sets of borrowed names',
+				body: [
+					"San Pedro (4 ZIP codes) and Wilmington (2) tell a similar story from a different direction. In 1906, Los Angeles annexed a strip of land less than a mile wide and 16 miles long -- nicknamed the \"Shoestring Strip\" -- purely to create a contiguous land bridge to the coast, because California law only allowed a city to annex land touching its existing border. The strip reached San Pedro and Wilmington, both harbor towns, which voted to consolidate into Los Angeles three years later, on August 28, 1909. The annexation gave Los Angeles -- a city with no natural harbor of its own -- a working port 20 miles from downtown; the Shoestring Strip itself was renamed Harbor Gateway in 1985.",
+					"Venice (2 ZIP codes) joined LA for a plainer reason two decades later. Developer Abbot Kinney built Venice as a canal-laced seaside resort starting in 1905, but after his death in 1920 the town's roads, water lines, and sewers fell into disrepair faster than its small government could fund fixes. Voters approved annexation to Los Angeles in November 1925 by a margin of 3,130 to 2,215, and the merger took effect in 1926. Los Angeles subsequently paved over most of the original canals -- only a handful survive today -- in a project that took three years and a court battle from canal-front residents to resolve.",
+					"Two more Westside pockets follow the same pattern on a smaller scale: Pacific Palisades (1 ZIP code) and Playa Vista (1), both legally part of Los Angeles, both carrying their own name at the post office instead of the city's.",
+				],
+			},
+			{
+				heading: "The cities that were never annexed -- and correctly aren't on this list",
+				body: [
+					"Beverly Hills, West Hollywood, Culver City, and Santa Monica sit entirely inside the outline of Los Angeles on a map, surrounded on most or all sides by LA neighborhoods. But none of them were ever annexed -- each incorporated as its own independent city, with its own government, its own police department (West Hollywood contracts with the LA County Sheriff instead of LAPD), and, correctly, its own ZIP codes: 90209-90213 for Beverly Hills, 90069 for West Hollywood, 90230-90233 for Culver City, and 90401-90411 for Santa Monica. None of those appear in the \"Los Angeles\" table above, and that's not a postal quirk -- it's the accurate answer.",
+					"That makes Los Angeles close to a mirror image of [Dallas](/dallas-zip-codes/). In Dallas, a legally independent town -- Highland Park -- has its ZIP codes filed under \"Dallas, TX\" anyway, because USPS's place-name database doesn't always track legal boundaries. In Los Angeles, the opposite happens far more often: neighborhoods that did join the city, sometimes over a century ago, kept a name at the post office that isn't the city's. Both are the same underlying fact, read from different directions -- a USPS ZIP-code place name is a mail-routing label, not a legal determination of what city a resident lives in.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What is the main ZIP code for Los Angeles?',
+				answer:
+					"There isn't a single one -- Los Angeles uses 94 ZIP codes carrying its own name (and dozens more under neighborhood names). Los Angeles City Hall, at 200 N Spring St, uses 90012.",
+			},
+			{
+				question: 'Is Beverly Hills part of Los Angeles?',
+				answer:
+					'No. Beverly Hills is a legally independent city with its own government and police department, even though it sits surrounded by Los Angeles neighborhoods. Its ZIP codes (90209-90213) have never been filed under "Los Angeles."',
+			},
+			{
+				question: "Why doesn't Van Nuys show up in the Los Angeles ZIP code list, even though it's part of the city?",
+				answer:
+					"Van Nuys joined Los Angeles in the March 1915 San Fernando Valley annexation, but USPS kept assigning its 13 ZIP codes the neighborhood's own name instead of the city's -- a mail-routing convention, not a sign that Van Nuys is legally separate. North Hollywood, Woodland Hills, Encino, and a dozen other Valley neighborhoods follow the same pattern.",
+			},
+			{
+				question: 'Is Venice, California part of the city of Los Angeles?',
+				answer:
+					"Yes -- Venice was an independent seaside town until financial and infrastructure troubles led voters to approve annexation to Los Angeles in November 1925, effective in 1926. Its two ZIP codes still carry the Venice name rather than Los Angeles's.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Wikipedia: History of the San Fernando Valley', url: 'https://en.wikipedia.org/wiki/History_of_the_San_Fernando_Valley' },
+			{ label: 'Wikipedia: Shoestring annexation', url: 'https://en.wikipedia.org/wiki/Shoestring_annexation' },
+			{ label: 'Wikipedia: Harbor Gateway, Los Angeles', url: 'https://en.wikipedia.org/wiki/Harbor_Gateway,_Los_Angeles' },
+			{ label: 'Wikipedia: Venice, Los Angeles', url: 'https://en.wikipedia.org/wiki/Venice,_Los_Angeles' },
+			{ label: 'Wikipedia: San Fernando, California', url: 'https://en.wikipedia.org/wiki/San_Fernando,_California' },
+			{ label: 'Daily Bruin: UCLA acquired its own ZIP code, 90095', url: 'https://dailybruin.com/1995/01/11/ucla-soon-to-acquire-own-zip-c' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
