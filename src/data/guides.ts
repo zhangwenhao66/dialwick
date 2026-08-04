@@ -66,9 +66,9 @@ export const guides: Guide[] = [
 	{
 		slug: 'atlanta-zip-codes',
 		category: 'ZIP Codes',
-		title: 'Atlanta ZIP Codes: The Full List, and Why Some Say Fulton and Others Say DeKalb',
+		title: 'Atlanta ZIP Codes: The Full List by County',
 		description:
-			"Every ZIP code USPS assigns to Atlanta, Georgia -- which of the two counties each one actually sits in, why several Atlanta suburbs mail-address as their own separate cities, and the one Atlanta ZIP that belongs to the IRS.",
+			"Every ZIP code USPS assigns to Atlanta, Georgia, which county each one sits in, and the one Atlanta ZIP that belongs to the IRS, not a neighborhood.",
 		published: '2026-08-03',
 		updated: '2026-08-03',
 		coreSummary:
@@ -79,9 +79,10 @@ export const guides: Guide[] = [
 				body: [
 					"Atlanta sits mostly in Fulton County, but the city's ZIP codes don't stop at the Fulton line. USPS ZIP boundaries follow mail-delivery routes, not municipal or county borders, and several ZIP codes on Atlanta's north and northeast side -- around Emory, Druid Hills, Chamblee, and the Perimeter -- fall inside DeKalb County even though the mailing address reads \"Atlanta, GA.\"",
 					"Of the 92 ZIP codes USPS lists with Atlanta as the primary place, the county split works out to roughly four Fulton ZIPs for every one DeKalb ZIP. If a piece of mail is addressed to Atlanta, checking the ZIP against the table below is the only reliable way to know which county it's actually in -- the city name on the envelope won't tell you.",
+					"One row deserves a caveat rather than a flat answer: 30339 (Vinings, Cumberland, and Truist Park, home of the Atlanta Braves) is listed here as Fulton because that's what this table's source, GeoNames, assigns it. But most population-weighted ZIP-to-county datasets put the bulk of that ZIP's land and residents in neighboring Cobb County instead, with only a smaller Fulton slice. GeoNames' single-county field can flatten a ZIP that genuinely straddles a line -- 30339 is the one code in this table where that happens.",
 				],
 				table: {
-					caption: 'All 92 ZIP codes with "Atlanta, GA" as the primary USPS place name, by county',
+					caption: 'All 92 ZIP codes with "Atlanta, GA" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-04)',
 					columns: ['ZIP', 'County'],
 					rows: [
 						['30301', 'Fulton'], ['30302', 'Fulton'], ['30303', 'Fulton'], ['30304', 'Fulton'],
@@ -92,7 +93,7 @@ export const guides: Guide[] = [
 						['30321', 'Fulton'], ['30322', 'DeKalb'], ['30324', 'Fulton'], ['30325', 'Fulton'],
 						['30326', 'Fulton'], ['30327', 'Fulton'], ['30328', 'Fulton'], ['30329', 'DeKalb'],
 						['30331', 'Fulton'], ['30332', 'Fulton'], ['30333', 'DeKalb'], ['30334', 'Fulton'],
-						['30336', 'Fulton'], ['30337', 'Fulton'], ['30338', 'Fulton'], ['30339', 'Fulton'],
+						['30336', 'Fulton'], ['30337', 'Fulton'], ['30338', 'DeKalb'], ['30339', 'Fulton'],
 						['30340', 'DeKalb'], ['30341', 'DeKalb'], ['30342', 'Fulton'], ['30343', 'Fulton'],
 						['30344', 'Fulton'], ['30345', 'DeKalb'], ['30346', 'DeKalb'], ['30348', 'Fulton'],
 						['30349', 'Fulton'], ['30350', 'DeKalb'], ['30353', 'Fulton'], ['30354', 'Fulton'],
@@ -119,13 +120,14 @@ export const guides: Guide[] = [
 			{
 				heading: "Why a ZIP is assigned to the IRS, not a neighborhood",
 				body: [
-					"39901 doesn't fit the pattern of the other 91 ZIPs at all -- it's numerically far outside Georgia's normal 30000-31999 block, and it isn't a delivery area anyone lives in. It's a unique ZIP code the USPS assigns to a single large-volume mail recipient: the IRS's Atlanta service center. Other IRS processing centers get the same treatment (Austin, TX uses 73301; Fresno, CA uses 93888) -- when an organization receives enough mail, USPS carves out a ZIP that belongs to it alone, regardless of where that number would otherwise fall on the map.",
+					"39901 doesn't fit the pattern of the other 91 ZIPs at all -- it's numerically far outside Georgia's normal 30000-31999 block, and it isn't a delivery area anyone lives in. It's a unique ZIP code the USPS assigns to a single large-volume mail recipient: the IRS's Atlanta service center. Other IRS processing centers get the same treatment (Austin, TX uses 73301; Fresno, CA uses 93888) -- when an organization receives enough mail, USPS carves out a ZIP that belongs to it alone, regardless of where that number would otherwise fall on the map. Atlanta only has the one; [Chicago carries 28 of these single-recipient ZIPs](/chicago-zip-codes/), nearly a third of its total, reflecting its role as a major aviation and banking hub.",
 				],
 			},
 			{
 				heading: 'Several of Atlanta\'s best-known suburbs are not "Atlanta" ZIPs at all',
 				body: [
 					"Sandy Springs, Dunwoody, and Brookhaven all incorporated as their own independent cities between 2005 and 2012, but ZIP codes don't automatically follow city incorporations -- USPS updates its place-name database on its own schedule, which is why mail to parts of Sandy Springs and Dunwoody sometimes still shows \"Atlanta, GA\" as the recommended city name even though neither is legally part of Atlanta. Conversely, some of the DeKalb ZIPs in the table above (30338, 30350) already show \"Dunwoody\" as an acceptable alternate. This is normal and doesn't affect mail delivery; ZIP boundaries and municipal boundaries are two different systems that were never designed to match.",
+					"That schedule is now actively moving for Sandy Springs specifically: in March 2026, USPS approved the city's request to become the default mailing name -- replacing \"Atlanta\" -- for seven of its ZIP codes (30319, 30327, 30328, 30338, 30339, 30342, and 30350; an eighth Sandy Springs ZIP, 30092, wasn't included). USPS said updating its Address Management System database to reflect the change could take several weeks. As of this table's last GeoNames check (2026-08-04), all seven still carry \"Atlanta\" as their listed place name -- the change hadn't yet propagated to that database -- but readers in those ZIPs should expect \"Sandy Springs\" to start appearing instead.",
 				],
 			},
 		],
@@ -149,6 +151,7 @@ export const guides: Guide[] = [
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'Sandy Springs, GA incorporation history', url: 'https://en.wikipedia.org/wiki/Sandy_Springs,_Georgia' },
+			{ label: 'City of Sandy Springs: USPS to recognize Sandy Springs as default mailing address', url: 'https://www.sandyspringsga.gov/news/usps-recognize-sandy-springs-default-mailing-address/' },
 		],
 	},
 	{
