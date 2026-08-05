@@ -1182,4 +1182,74 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: Area code 784 (Saint Vincent and the Grenadines)', url: 'https://en.wikipedia.org/wiki/Area_code_784' },
 		],
 	},
+	{
+		slug: 'how-to-call-philippines-from-usa',
+		category: 'International Dialing',
+		title: 'How to Call the Philippines From the US (Country Code +63)',
+		description:
+			"Dial 011, then 63, then the area or mobile code with the leading 0 dropped. Manila's landlines quietly gained an eighth digit in a 2019 regulatory migration.",
+		published: '2026-08-06',
+		updated: '2026-08-06',
+		coreSummary:
+			"Dial 011, then 63 (the Philippines' country code), then the area or mobile code with its leading 0 dropped, then the rest of the local number. A Manila landline written domestically as (02) 8123 4567 becomes 011 63 2 8123 4567; a mobile number written as 0917 123 4567 becomes 011 63 917 123 4567. The leading 0 on Philippine area and mobile codes is a domestic trunk prefix -- the same rule that applies across most of the world -- and it's dropped, not replaced, when the +63 country code takes its place.",
+		sections: [
+			{
+				heading: 'Dialing the Philippines: country code 63, step by step',
+				body: [
+					"Calling the Philippines from a US landline: dial 011, then 63, then the area or mobile code with its leading 0 removed, then the remaining digits. From a mobile phone or most VoIP services, a \"+\" takes the place of the 011, so +63 followed by the same digits gets you there just as reliably.",
+				],
+				table: {
+					columns: ['Step', 'What to dial'],
+					rows: [
+						['1. Exit code (landline)', '011'],
+						['1. Exit code (mobile/VoIP)', '+'],
+						['2. Country code', '63'],
+						['3. Area/mobile code', 'drop the leading 0'],
+						['4. Local number', 'remaining digits'],
+					],
+				},
+			},
+			{
+				heading: "Manila's one-digit area code, and the 8-digit landline switch nobody advertised",
+				body: [
+					"Metro Manila's area code is just \"2\" -- written domestically as 02, it's the only single-digit area code left in the Philippines, a legacy of the capital region getting numbered first, before the rest of the country's multi-digit scheme was assigned. Every other Philippine area code runs two to four digits.",
+					"What's easy to miss, including in a lot of older \"how to call the Philippines\" guides still online, is that Metro Manila landlines quietly grew an eighth digit in 2019. The National Telecommunications Commission (NTC) ordered the migration in Memorandum Order No. 10-10-2017, originally set for March 2019 and then pushed to October 6, 2019 to give banks and card issuers time to update their systems. Each carrier inserted its own single \"PTE\" (public telecommunications entity) identifier digit at the front of the old 7-digit number -- Globe's assigned digit was 7, so an existing number like (02) 576-4567 became (02) 7576-4567 overnight, with no change to the area code itself. The area code 02 also covers a handful of towns just outside Metro Manila proper, including parts of Rizal province, San Pedro in Laguna, and Bacoor in Cavite -- calling any of those numbers from the US uses the identical 011 63 2 format.",
+				],
+			},
+			{
+				heading: 'Mobile numbers all start with 9, and the leading 0 is not part of the number',
+				body: [
+					'Philippine mobile numbers are reserved under prefixes starting with 9 -- written domestically with a leading trunk 0, as in 0917 123 4567. That 0 is dialing plan housekeeping, not part of the subscriber\'s actual number, which is why it disappears rather than getting replaced by anything when you call from abroad: 0917 123 4567 becomes 011 63 917 123 4567, an even 10 digits after the country code, matching the area-code rule exactly.',
+				],
+			},
+			{
+				heading: 'Worked examples',
+				body: [
+					"A Metro Manila landline formatted domestically as (02) 8123 4567 becomes 011 63 2 8123 4567 from a US landline, or +63 2 8123 4567 from a mobile. A Philippine mobile number written as 0917 123 4567 becomes 011 63 917 123 4567, or +63 917 123 4567.",
+					"The Philippines shares this exit-code-plus-country-code shape with most international destinations -- see [how to call Mexico from the US](/how-to-call-mexico-from-us/) for a comparison, and [the US country code](/us-country-code/) for the same drop-the-leading-digit logic working in the other direction, into the US instead of out of it (most callers outside North America dial 00, not 011, before the US's own +1).",
+				],
+			},
+		],
+		faq: [
+			{
+				question: "What is the Philippines' country code?",
+				answer: '63.',
+			},
+			{
+				question: 'Do I need to add a PTE digit myself when calling a Metro Manila landline?',
+				answer:
+					"No. The extra digit that Metro Manila landlines gained in the NTC's October 2019 migration (for example, Globe's 7) is already part of the current 8-digit local number -- you dial it as part of step 4, the same as any other digit. There's no separate digit to add on top of what the number's owner gives you.",
+			},
+			{
+				question: 'Can I just dial +63 instead of 011 63?',
+				answer:
+					'Yes -- on a mobile phone or most VoIP apps, holding down "0" or tapping "+" gets you the same result as dialing 011, so +63 917 123 4567 reaches the same number as 011 63 917 123 4567.',
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Telephone numbers in the Philippines', url: 'https://en.wikipedia.org/wiki/Telephone_numbers_in_the_Philippines' },
+			{ label: 'Philippine News Agency: Globe to adopt 8-digit landline numbers starting March 2019', url: 'https://www.pna.gov.ph/articles/1056843' },
+			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+		],
+	},
 ];
