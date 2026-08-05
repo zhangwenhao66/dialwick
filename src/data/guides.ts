@@ -159,11 +159,11 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'New York City ZIP Codes: All 311, by Borough',
 		description:
-			"NYC's five boroughs use 311 ZIP codes between them -- and Queens is the one borough where the ZIP code map doesn't run through neighborhood names most outsiders have never heard of, not the borough name itself.",
+			"NYC's five boroughs use 311 ZIP codes -- and Queens is the only one where the map runs on neighborhood names, not the borough name itself.",
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-06',
 		coreSummary:
-			"New York City's five boroughs together use 311 ZIP codes: 146 in Manhattan (New York County), 79 in Queens, 47 in Brooklyn (Kings County), 25 in the Bronx, and 14 on Staten Island (Richmond County). Manhattan, Brooklyn, the Bronx, and Staten Island ZIPs are all addressed with the borough name; Queens is the outlier -- its ZIPs are addressed by neighborhood (Astoria, Flushing, Jamaica, and 37 others), never \"Queens.\"",
+			"New York City's five boroughs together use 311 ZIP codes: 146 in Manhattan (New York County), 79 in Queens, 47 in Brooklyn (Kings County), 25 in the Bronx, and 14 on Staten Island (Richmond County). Manhattan, Brooklyn, the Bronx, and Staten Island ZIPs are all addressed with the borough name; Queens is the outlier -- its ZIPs are addressed by neighborhood (Astoria, Flushing, Jamaica, and 38 others), never \"Queens.\"",
 		sections: [
 			{
 				heading: 'The five boroughs by ZIP code count',
@@ -185,14 +185,14 @@ export const guides: Guide[] = [
 			{
 				heading: 'Queens is the exception: its ZIP codes never say "Queens"',
 				body: [
-					"Ask for a Brooklyn ZIP code and USPS calls it \"Brooklyn.\" Ask for a Staten Island ZIP and it's \"Staten Island.\" Queens breaks that pattern entirely -- every one of its 79 ZIP codes is addressed by an older, more local place name instead: Astoria, Long Island City, Flushing, Jamaica, Forest Hills, Rockaway Park, and 33 others. \"Queens\" itself never appears as a USPS place name.",
-					"The reason predates the five-borough City of New York itself: Queens was consolidated in 1898 from a patchwork of existing towns and villages that already had their own post offices, and the US Post Office simply kept using those established names rather than replacing them with the new borough name. Brooklyn, by contrast, had already unified its post offices under \"Brooklyn\" before consolidation, so that name stuck.",
+					"Ask for a Brooklyn ZIP code and USPS calls it \"Brooklyn.\" Ask for a Staten Island ZIP and it's \"Staten Island.\" Queens breaks that pattern entirely -- every one of its 79 ZIP codes is addressed by an older, more local place name instead: Astoria, Long Island City, Flushing, Jamaica, Forest Hills, Rockaway Park, and 35 others. \"Queens\" itself never appears as a USPS place name.",
+					"The most commonly cited explanation goes back to 1898: Queens was consolidated that year from a patchwork of existing towns and villages that already had their own post offices, and many of those names stuck instead of being replaced by the new borough name. That's not the full story, though -- Staten Island's five original towns (Castleton, Middletown, Northfield, Southfield, and Westfield) were folded into the city in that very same 1898 merger, yet Staten Island addresses use the single borough name today, not those old town names. And not every Queens place name even predates 1898: Bellerose, for instance, was coined as a new development name in the early 1900s, well after consolidation. Brooklyn, by contrast, had already unified its post offices under \"Brooklyn\" before 1898, so that name stuck there without the same complication.",
 				],
 			},
 			{
 				heading: 'Manhattan, Brooklyn, the Bronx, and Staten Island line up exactly with their counties',
 				body: [
-					"New York City is unusual among major US cities in that each of its boroughs is legally identical to a county -- Manhattan is New York County, Brooklyn is Kings County, the Bronx is Bronx County, and Staten Island is Richmond County. That means every ZIP code in one of these four boroughs sits entirely within a single, named county, with no cross-county splits the way Atlanta (Fulton/DeKalb) or Chicago's near suburbs sometimes have.",
+					"New York City is unusual among major US cities in that each of its boroughs is legally identical to a county -- Manhattan is New York County, Brooklyn is Kings County, the Bronx is Bronx County, and Staten Island is Richmond County. That means every ZIP code in one of these four boroughs sits entirely within a single, named county, with no cross-county splits the way [Atlanta splits between Fulton and DeKalb](/atlanta-zip-codes/) or [Chicago's near suburbs](/chicago-zip-codes/) sometimes have.",
 				],
 			},
 		],
@@ -205,7 +205,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Why don\'t Queens ZIP codes say "Queens"?',
 				answer:
-					"Because Queens was assembled in 1898 from towns and villages that already had their own post offices under their own names -- Astoria, Flushing, Jamaica, and dozens more -- and USPS kept using those local names instead of switching everything to \"Queens.\"",
+					"The most commonly cited reason: Queens was assembled in 1898 from towns and villages that already had their own post offices under their own names -- Astoria, Flushing, Jamaica, and dozens more -- and USPS kept using many of those local names instead of switching everything to \"Queens.\" That's not the whole explanation, though -- Staten Island went through the same 1898 consolidation and didn't keep its old town names, so pre-existing post offices alone don't fully account for the pattern.",
 			},
 			{
 				question: 'What ZIP code range does Manhattan use?',
@@ -215,6 +215,11 @@ export const guides: Guide[] = [
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'History of the boroughs of New York City', url: 'https://en.wikipedia.org/wiki/Boroughs_of_New_York_City' },
+			{
+				label: "New York Genealogical & Biographical Society: the old cities, towns, and villages that formed Greater New York",
+				url: 'https://www.newyorkfamilyhistory.org/knowledgebase/five-borough-city-old-cities-towns-and-villages-came-together-form-greater-new-york',
+			},
+			{ label: 'Wikipedia: Bellerose, Queens', url: 'https://en.wikipedia.org/wiki/Bellerose,_Queens' },
 		],
 	},
 	{
@@ -288,7 +293,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'All 105 ZIP codes USPS assigns to Dallas',
 				body: [
-					"USPS lists 105 ZIP codes with \"Dallas, TX\" as the primary place name -- the exact count [Texas ZIP codes](/texas-zip-codes/) puts second behind Houston's 178 and ahead of San Antonio's 83. Every one of the 105 sits in Dallas County; Dallas doesn't split across a county line the way Atlanta splits between Fulton and DeKalb.",
+					"USPS lists 105 ZIP codes with \"Dallas, TX\" as the primary place name -- the exact count [Texas ZIP codes](/texas-zip-codes/) puts second behind Houston's 178 and ahead of San Antonio's 83. Every one of the 105 sits in Dallas County; Dallas doesn't split across a county line the way Atlanta splits between Fulton and DeKalb -- the same single-county pattern holds for [New York City's five boroughs](/new-york-zip-codes/), each of which lines up exactly with one county too.",
 					"Downtown alone accounts for three of them: 75201, 75202, and 75270 all cover the central business district around Dallas City Hall and the Arts District.",
 				],
 				table: {
