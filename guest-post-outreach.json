@@ -1,0 +1,47 @@
+[
+  {
+    "date": "2026-08-04",
+    "site": "dialwick",
+    "niche_focus": "North American area code + US ZIP code + international dialing reference site (allareacodes/unitedstateszipcodes-style)",
+    "channels_researched": [
+      {
+        "name": "Curlie.org (Open Directory Project successor) — Area Codes category",
+        "url": "https://curlie.org/Reference/Directories/Address_and_Phone_Numbers/Area_Codes/ (suggest form: https://curlie.org/public/suggest?t=reference&cat=Reference/Directories/Address_and_Phone_Numbers/Area_Codes)",
+        "status": "viable — real, free, human-edited directory; submission not completed (sandbox blocked)",
+        "notes": "已核实真实且开放：该分类下现有20个同类站点(All Area Codes/AreaCode.org/CountryCallingCodes.com/LincMad等)，人工编辑、免费、无需登录，表单只需URL/站点标题/25-30词简介/联系邮箱。同一父目录下还有Postal Codes分类(16个站点)同样开放，因DialWick同时覆盖两个主题，按'只应提交一次/单一最相关分类'的官方规则，选择与站名'DialWick'(dial=电话)更契合的Area Codes分类提交。尝试用Browser pane实际填表提交时，curlie.org被沙箱标记为'requires per-action approval'无法执行read_page/screenshot/表单操作，本次未能完成实际提交，已备好可直接粘贴的字段内容留给Owen手动提交（详见actions_taken）。"
+      },
+      {
+        "name": "TheITbase — 'Write for Us (Guest Post) - Tech | Web Design | Telecom'",
+        "url": "https://www.theitbase.com/write-for-us/",
+        "status": "real but poor fit — paid guest-post-farm risk, skipped",
+        "notes": "页面本身真实存在(700+词/admin@theitbase.com投稿邮箱)，但交叉搜索发现该站同时在sitetrail.com、guestpostnow.com等'guest post marketplace'上被公开标价出售外链植入，属于付费卖链接的guest-post farm模式，不是真正的编辑审核博客。为免链接画像风险，未起草pitch、未联系。"
+      },
+      {
+        "name": "TechWadia — 'Telecom Write For Us, Guest Post, Contribute, and Submit Post'",
+        "url": "https://www.techwadia.com/telecom-write-for-us-guest-post/",
+        "status": "real but poor fit — likely same guest-post-farm network, skipped",
+        "notes": "与futuretechexpert.com、theitbase.com、phelixinfosolutions.com几乎逐字相同的模板化'Write for Us'页面(同样500+词门槛、同样泛泛而谈的措辞)，站内还有IoT/电商等不相关行业各自的'Write for Us'页，是典型的批量铺'投稿页'换外链站群特征，与本站追求真实E-E-A-T外链的原则冲突，未起草pitch。"
+      },
+      {
+        "name": "FutureTechExpert — 'Telecom Write for us - Guest Post, Contribute and Submit Post'",
+        "url": "https://www.futuretechexpert.com/telecom-write-for-us-guest-post/",
+        "status": "dead link — 404",
+        "notes": "WebFetch返回404 Not Found，投稿页已失效/域名内容变动，不可用。"
+      },
+      {
+        "name": "Aviva Directory — Business > Technology > Telecommunications",
+        "url": "https://www.avivadirectory.com/Business/Technology/Telecommunications/ (submit: https://www.avivadirectory.com/submit.php)",
+        "status": "real but poor fit — paid listing, skipped",
+        "notes": "确认是真实运营的网站目录，但提交需付费(用于'人工编辑审核'，不退款)，属于付费外链交换范畴，与站点一贯'不做付费买链接'的原则冲突，未提交。"
+      },
+      {
+        "name": "123Relocation.com — 'Submit Your Article to Relo Blog'",
+        "url": "https://123relocation.com/submit-your-article-to-relo-blog/",
+        "status": "unverifiable / poor fit — WebFetch blocked (403), topic fit only tangential",
+        "notes": "抓取返回403无法核实真实投稿细则；即便真实开放，其主题是搬家/置业/房产，跟本站'区号+邮编+国际拨号参考数据'定位关联度较弱(仅ZIP/county话题有一点交叉)，未进一步核实或起草pitch。"
+      }
+    ],
+    "actions_taken": "本轮唯一判定真实开放且主题匹配的渠道是Curlie.org Area Codes分类(免费人工编辑目录，非guest post/pitch类，无需起草邮件)。已备好可直接提交的表单内容：URL=https://dialwick.com/ ，标题='DialWick'，简介(25-30词以内，未使用推广性词汇)='Free North American area code lookup, US ZIP code reference, and international dialing code guide, covering overlays, county boundaries, and calling formats.'，联系邮箱=contact@dialwick.com(若未配置则用0009888@gmail.com)，分类=Reference/Directories/Address_and_Phone_Numbers/Area_Codes。因curlie.org域名在本次沙箱环境被标记'requires per-action approval'，Browser pane工具全部被拒绝执行，未能完成实际填表提交。其余5个渠道（3个telecom guest-post模板页疑似站群/2个付费目录）判定为poor fit或死链，均未采取行动。",
+    "result_summary": "1/6 channels viable (Curlie.org开放目录)，但受限于沙箱对该域名的访问限制未能完成提交，已备好全部字段内容待Owen手动提交或后续会话用不同工具重试。3个telecom/IT 'Write for Us'页面（theitbase/techwadia/futuretechexpert）判定为guest-post站群或死链风险，全部跳过未起草pitch。2个付费目录（Aviva/需核实的123relocation）因涉及付费或主题不符跳过。本利基（电话号码/地理参考数据）确实如预期般缺乏天然guest post社区，符合调研前的预判。"
+  }
+]

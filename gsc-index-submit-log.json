@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-08-04",
+    "action": "submitted",
+    "reason": "trafficsite-gsc-index-requests例行运行，跨天连续游标机制首次运行（本站首次出现在本任务日志）。今日新发布2篇（dallas-zip-codes/chicago-zip-codes），取代理值最高的chicago-zip-codes（URL is not on Google）提交成功。第二轮取dallas-zip-codes（同样未收录）提交成功。",
+    "submitted_urls": [
+      "https://dialwick.com/chicago-zip-codes/",
+      "https://dialwick.com/dallas-zip-codes/"
+    ],
+    "quota_used": "2 of shared account-wide daily quota (8th and 17th requests this run)"
+  },
+  {
+    "date": "2026-08-05",
+    "action": "submitted",
+    "reason": "trafficsite-gsc-index-requests例行运行。今日新发布us-country-code（URL is not on Google）提交成功。第二轮起用build-index-queue.py代理排序逐个检查全部11个候选URL（los-angeles-zip-codes/new-york-zip-codes/texas-area-codes/california-area-codes/texas-zip-codes/atlanta-zip-codes/what-county-is-houston-in/what-county-is-chicago-in/how-to-call-mexico-from-us/how-do-area-codes-work/scam-area-codes），全部已'URL is on Google'（自然收录，未消耗配额），本站第二轮无新提交，游标继续前进不重置。",
+    "submitted_urls": [
+      "https://dialwick.com/us-country-code/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/los-angeles-zip-codes/",
+      "https://dialwick.com/new-york-zip-codes/",
+      "https://dialwick.com/texas-area-codes/",
+      "https://dialwick.com/california-area-codes/",
+      "https://dialwick.com/texas-zip-codes/",
+      "https://dialwick.com/atlanta-zip-codes/",
+      "https://dialwick.com/what-county-is-houston-in/",
+      "https://dialwick.com/what-county-is-chicago-in/",
+      "https://dialwick.com/how-to-call-mexico-from-us/",
+      "https://dialwick.com/how-do-area-codes-work/",
+      "https://dialwick.com/scam-area-codes/"
+    ],
+    "quota_used": "1 request this run (round 1 only; round 2 all candidates pre-checked and already indexed)"
+  }
+]
