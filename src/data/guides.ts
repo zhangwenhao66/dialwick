@@ -444,6 +444,88 @@ export const guides: Guide[] = [
 		],
 	},
 	{
+		slug: 'austin-zip-codes',
+		category: 'ZIP Codes',
+		title: "Austin ZIP Codes: The Full List, Two Counties, and Two That Belong to the IRS",
+		description:
+			"USPS assigns Austin 74 ZIP codes -- 72 in Travis County and 2 in Williamson -- plus two non-geographic codes reserved for the IRS, numbered in a block that looks like it belongs to Puerto Rico.",
+		published: '2026-08-05',
+		updated: '2026-08-05',
+		coreSummary:
+			"USPS assigns 74 ZIP codes with Austin, Texas as the primary place name. 72 sit in Travis County; the other two, 78717 and 78729, are in Williamson County to the northwest, the legacy of 1970s-80s subdivisions the city later annexed. Two more codes on the list, 73301 and 73344, aren't neighborhoods at all -- they're non-geographic ZIP codes reserved for the IRS's Austin submission processing center, numbered in the 733 block used elsewhere for Oklahoma rather than Texas's usual 787 block. That 787 prefix is itself a coincidence worth flagging: it's the same three digits as Puerto Rico's 787 area code, a completely unrelated numbering system (ZIP codes vs. NANP phone numbers) that happens to share Austin's ZIP prefix.",
+		sections: [
+			{
+				heading: 'All 74 ZIP codes USPS assigns to Austin',
+				body: [
+					'USPS lists 74 ZIP codes with "Austin, TX" as the primary place name -- a figure this site\'s [Texas ZIP code overview](/texas-zip-codes/) already cites in its per-city comparison table, putting Austin fifth among Texas cities behind Houston, El Paso, Dallas, and San Antonio. 72 of the 74 sit in Travis County. The other two, 78717 and 78729, sit in Williamson County to the northwest -- covered in the section below.',
+				],
+				table: {
+					caption: 'All 74 ZIP codes with "Austin, TX" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-05)',
+					columns: ['ZIP', 'County'],
+					rows: [
+						['73301', 'Travis'], ['73344', 'Travis'], ['78701', 'Travis'], ['78702', 'Travis'],
+						['78703', 'Travis'], ['78704', 'Travis'], ['78705', 'Travis'], ['78708', 'Travis'],
+						['78709', 'Travis'], ['78710', 'Travis'], ['78711', 'Travis'], ['78712', 'Travis'],
+						['78713', 'Travis'], ['78714', 'Travis'], ['78715', 'Travis'], ['78716', 'Travis'],
+						['78717', 'Williamson'], ['78718', 'Travis'], ['78719', 'Travis'], ['78720', 'Travis'],
+						['78721', 'Travis'], ['78722', 'Travis'], ['78723', 'Travis'], ['78724', 'Travis'],
+						['78725', 'Travis'], ['78726', 'Travis'], ['78727', 'Travis'], ['78728', 'Travis'],
+						['78729', 'Williamson'], ['78730', 'Travis'], ['78731', 'Travis'], ['78732', 'Travis'],
+						['78733', 'Travis'], ['78734', 'Travis'], ['78735', 'Travis'], ['78736', 'Travis'],
+						['78737', 'Travis'], ['78738', 'Travis'], ['78739', 'Travis'], ['78741', 'Travis'],
+						['78742', 'Travis'], ['78744', 'Travis'], ['78745', 'Travis'], ['78746', 'Travis'],
+						['78747', 'Travis'], ['78748', 'Travis'], ['78749', 'Travis'], ['78750', 'Travis'],
+						['78751', 'Travis'], ['78752', 'Travis'], ['78753', 'Travis'], ['78754', 'Travis'],
+						['78755', 'Travis'], ['78756', 'Travis'], ['78757', 'Travis'], ['78758', 'Travis'],
+						['78759', 'Travis'], ['78760', 'Travis'], ['78761', 'Travis'], ['78762', 'Travis'],
+						['78763', 'Travis'], ['78764', 'Travis'], ['78765', 'Travis'], ['78766', 'Travis'],
+						['78767', 'Travis'], ['78768', 'Travis'], ['78769', 'Travis'], ['78772', 'Travis'],
+						['78773', 'Travis'], ['78774', 'Travis'], ['78778', 'Travis'], ['78779', 'Travis'],
+						['78783', 'Travis'], ['78799', 'Travis'],
+					],
+				},
+			},
+			{
+				heading: "Two Austin ZIP codes belong to the IRS, not a neighborhood",
+				body: [
+					"73301 and 73344 stand out from the rest of the list immediately: they don't start with 787 like every other Austin ZIP, and neither corresponds to a residential or commercial delivery area. Both are non-geographic ZIP codes USPS reserves for a single high-volume recipient -- in this case, the IRS's Austin submission processing center, which handles tax return processing, ITIN applications, and taxpayer correspondence for a large multi-state region. 73301 is the better-known of the two; 73344 serves the same IRS campus, in the Walnut Creek Business Park area of Travis County, and carries no population of its own.",
+					"This site's [Atlanta ZIP page](/atlanta-zip-codes/) covers the same pattern -- one IRS-only ZIP, 39901 -- and [Chicago carries 28 similar single-recipient codes](/chicago-zip-codes/) for airports and banks. What makes Austin's pair distinctive is the numbering: 73301 and 73344 sit in the 733 block, the same three-digit prefix range used for northern Oklahoma ZIP codes, rather than Texas's own 787 block that every other Austin ZIP uses. USPS assigns non-geographic codes like these somewhat independently of the surrounding area's normal numbering sequence, which is how an IRS facility physically located in Austin ends up with a ZIP code that looks, on paper, like it belongs three states away.",
+					"The 787 prefix shared by Austin's other 72 ZIP codes is itself worth a note, because it's easy to conflate with something unrelated: 787 is also the area code covering Puerto Rico, in service since March 1, 1996, when it split off the old 809 code as explained on this site's [country code page](/us-country-code/). A ZIP prefix and an area code are two completely separate USPS/NANPA numbering systems that happen to share three digits in this case -- Austin's postal ZIPs and Puerto Rico's telephone area code have no relationship to each other beyond the coincidence.",
+				],
+			},
+			{
+				heading: "Why two Austin ZIP codes are in Williamson County, not Travis",
+				body: [
+					"78717 and 78729 cover Austin's far northwest, an area that developed differently from the rest of the city. Starting in 1973, this section of what's now northwest Austin was organized as Williamson County Municipal Utility District No. 1 -- a special utility district set up to provide water and wastewater service to new subdivisions before the city itself had annexed the land. Home construction in the district began in 1975 and continued through the mid-1980s. The City of Austin didn't fully annex the area until December 31, 2008, under a Strategic Partnership Agreement first signed in 1998 and amended in 2004 -- the annexation itself converted the old MUD into the Anderson Mill Limited District, ratified by a vote of district residents in May 2009. By the time that happened, thousands of houses already existed under Williamson County's jurisdiction rather than the city's own utilities. The Milwood neighborhood nearby followed a similar path as part of the North Austin MUD annexation.",
+					"USPS ZIP boundaries don't automatically shift when a city annexes new territory, which is why 78717 and 78729 still carry an Austin mailing address today even though the underlying county line was set decades before the city limits caught up to it. It's the same category of mismatch this site documents in [Atlanta, where ZIP and county lines don't match either](/atlanta-zip-codes/) -- just a different underlying cause: Atlanta's split traces to Fulton/DeKalb's shared metro history, Austin's traces to utility-district development that predated annexation.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What is the main ZIP code for Austin?',
+				answer:
+					"There isn't a single one -- Austin uses 74 different ZIP codes, 72 of them in Travis County. 78701 covers downtown Austin.",
+			},
+			{
+				question: 'Is Austin in Travis County or Williamson County?',
+				answer:
+					"Mostly Travis -- 72 of Austin's 74 ZIP codes are in Travis County. Two, 78717 and 78729, are in Williamson County to the northwest, covering neighborhoods that were developed under a Williamson County utility district starting in 1973, before the city annexed the area in 2008.",
+			},
+			{
+				question: 'Why do 73301 and 73344 show up as Austin ZIP codes?',
+				answer:
+					"Both are non-geographic ZIP codes USPS reserves for the IRS's Austin submission processing center rather than a residential area. That's why they don't follow Austin's usual 787 prefix -- they sit in the 733 numbering block instead, the same block used for parts of Oklahoma.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'IRS Austin submission processing center address records', url: 'https://www.irs.gov/pub/notices/lp47_english.pdf' },
+			{ label: 'Anderson Mill Limited District: official history (Strategic Partnership Agreement, 2008 annexation)', url: 'https://amld.org/history-of-anderson-mill-limited-district' },
+			{ label: 'Wikipedia: Telephone numbers in Puerto Rico (787 area code in-service history)', url: 'https://en.wikipedia.org/wiki/Telephone_numbers_in_Puerto_Rico' },
+		],
+	},
+	{
 		slug: 'los-angeles-zip-codes',
 		category: 'ZIP Codes',
 		title: "Los Angeles ZIP Codes: The Full List, and Why Venice, Van Nuys, and San Pedro Aren't On It",
