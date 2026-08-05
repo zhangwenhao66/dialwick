@@ -175,3 +175,97 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "follow_up": "Recheck GeoNames.org's admin2 field for ZIPs 30319/30327/30328/30338/30339/30342/30350 in ~4-6 weeks (early-to-mid September 2026) to see whether the March 2026 USPS Sandy Springs default-city change has propagated. If so, update the '92' count and affected rows -- this would then be a routine source-tracking edit, not an escalation, since it would bring the table back into agreement with its own disclosed source."
 }
 ```
+
+## new-york-zip-codes
+
+```json
+{
+  "url_slug": "new-york-zip-codes",
+  "url": "https://dialwick.com/new-york-zip-codes/",
+  "last_audited": "2026-08-06",
+  "published_date": "2026-08-03",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass, strengthened by fix",
+      "detail": "Sources were GeoNames.org + Wikipedia (Boroughs of NYC); added 2 more during this audit (NY Genealogical & Biographical Society consolidation-history article, Wikipedia: Bellerose, Queens) to support the new Staten Island counterexample / Bellerose fact. Specific, named, independently verifiable throughout."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed (2 issues)",
+      "detail": "(a) Queens place-name count: coreSummary said '3 named + 37 others' (=40), body said '6 named + 33 others' (=39) -- the two sentences disagreed with each other, and neither matched the site's own canonical data source. Independent agent re-parsed src/lib/data/zipCounty.json (GeoNames, stateCode=NY, county=Queens) from scratch and got 41 distinct place names, confirmed by a second independent recount in this audit. Both sentences corrected to total 41 (38 others / 35 others respectively). (b) The 'why Queens ZIPs use neighborhood names' causal claim ('The reason... Queens was consolidated in 1898... the US Post Office simply kept using those established names') was stated as a single settled cause. Independent agent WebSearched multiple sources (Gothamist's dedicated piece on this exact question, Wikipedia town-consolidation pages) and found a direct, well-documented counterexample: Staten Island's five towns (Castleton, Middletown, Northfield, Southfield, Westfield) went through the identical 1898 consolidation and do NOT retain their old names today -- undercutting 'consolidated from towns with existing post offices' as a sufficient explanation. Also found some Queens place names (Bellerose) postdate 1898 by over a decade, meaning USPS did not 'simply keep' only pre-existing names. Gothamist's own piece hedges ('the answer... isn't clear') rather than asserting one cause. Rewrote the claim as 'the most commonly cited explanation' and added the Staten Island counterexample + Bellerose fact, with 2 new sources; softened the matching FAQ answer the same way per L-0805-1 (FAQ shouldn't be more absolute than body)."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "Published 2026-08-03, audited 3 days later; no other stale claims found. ZIP counts/ranges independently re-verified against zipCounty.json and matched exactly (146/79/47/25/14=311, all ranges correct) before any other check -- this data was not the source of either confirmed problem."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "WebSearch for NYC ZIP-code-by-borough content shows most competing pages give a much smaller 'headline' ZIP count (commonly ~178, based on residential-only ZIPs) without disclosing methodology, or don't explain the Queens naming anomaly at all. This article's borough-by-county breakdown + the Queens-naming deep dive (now more accurate/complete post-fix) is genuine incremental value, consistent with this site's established differentiation pattern (same as atlanta/dallas/chicago)."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit (Skill seo-audit)",
+      "status": "confirmed problem -> fixed",
+      "detail": "Live page checked via curl+DOM: single H1, 4 H2s, canonical present, 3 JSON-LD blocks (FAQPage/Article/BreadcrumbList) present and consistent. Title tag 55 chars (44-char field + suffix) -- fine. Meta description was 210 chars, confirmed by independent agent (re-fetched live page itself) as exceeding this site's already-established ~150-160 char guideline (2 prior precedent fixes: scam-area-codes, atlanta-zip-codes). Shortened to 138 chars, preserving the core claim (311 total, Queens is the neighborhood-name exception)."
+    },
+    {
+      "dimension": "6. GEO / ai-seo (99-point rubric)",
+      "status": "borderline fail pre-fix (~75/99) -> pass post-fix (~87/99)",
+      "detail": "Manual rubric pass consistent with prior audits' methodology: strong structure (H2s, table, FAQ schema) throughout. Pre-fix weaknesses: zero internal links in either direction (confirmed dimension-9 finding below), an internal self-contradiction (39 vs 40 Queens count), and an overconfident/incomplete causal claim -- these three combined pulled the estimated score below the 80 threshold. Post-fix: added 2 outbound + 1 inbound internal link, added 2 new named sources with specific historical facts (Castleton/Middletown/Northfield/Southfield/Westfield, Bellerose), resolved the internal inconsistency, and added a genuine counterargument/nuance (a signal the rubric rewards under authority/EEAT). Estimated post-fix score ~87/99, comfortably above threshold."
+    },
+    {
+      "dimension": "7. Humanizer backfill",
+      "status": "not applicable to original text / new text checked",
+      "detail": "Published 2026-08-03, same status as atlanta/scam-area-codes (predates or is same-day as this site's humanizer mandate becoming mandatory) -- original text not re-humanized wholesale. The newly-written passages added during this fix (revised history paragraph, FAQ answer, new description, new Dallas sentence) were run through Skill(humanizer) before publishing; no AI-writing tells found. The site's house style already uses ' -- ' (double hyphen) throughout guides.ts as its dash convention, matched in the new text rather than introducing em-dash characters."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "All 4 sources (2 original + 2 added) checked live: GeoNames.org postal-codes index (200), Wikipedia Boroughs of NYC (200), NY Genealogical & Biographical Society consolidation article (200), Wikipedia Bellerose, Queens (200)."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "Independent agent grepped the entire guides.ts and confirmed: (a) new-york-zip-codes had zero manual in-body outbound links anywhere in its content, despite naming Atlanta and Chicago by name in a comparison sentence -- unlike every other sibling ZIP-codes article, which links every such mention (Dallas links Atlanta/Texas, Chicago links Atlanta, Austin links Atlanta twice, LA links Chicago). (b) Zero manual inbound links from any other article -- dallas-zip-codes names 'New York' in its coreSummary without linking it. Fixed: added [Atlanta](/atlanta-zip-codes/) and [Chicago](/chicago-zip-codes/) outbound links in the county-alignment section; added an inbound link from dallas-zip-codes' first body paragraph (coreSummary itself doesn't support markdown links -- verified by checking [slug].astro rendering -- so the link was placed in a body paragraph instead)."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all auto-derive from the same guide object fields; verified post-fix on the live deployed page that Article headline/description reflect the new shortened description. datePublished stayed 2026-08-03; dateModified was bumped to 2026-08-06 (deliberately breaking from the prior 2 audits' precedent of not bumping 'updated' for audit fixes -- this fix is substantially more than a typo correction: it adds 2 new sources and new factual content, so leaving dateModified stale would misrepresent the edit per the general lessons library's L-0805-18 principle that schema should reflect real edit history)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure ZIP-code/borough/postal-history content. No reverse-lookup functionality, no YMYL claims. Naming historical town names (Castleton etc.) and a private developer's naming choice (Bellerose) is standard historical-reference content, not sensitive."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "This article has no hero image, inline image, or diagramSvg field."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "No violence/weapons/drugs/gambling content, no misleading headline, no clickbait layout. ads.txt and required pages not re-checked this run (site-wide, not article-specific; no site-wide changes made)."
+    }
+  ],
+  "actions_taken": [
+    "Fixed Queens place-name count in coreSummary (37 others -> 38 others) and body (33 others -> 35 others), both now correctly totaling 41 per independent recount of the site's own zipCounty.json data source, resolving a coreSummary/body internal inconsistency (was 40 vs 39).",
+    "Rewrote the Queens 1898-consolidation causal explanation from an unqualified single-cause claim to 'the most commonly cited explanation,' adding the Staten Island counterexample (same 1898 consolidation, town names not retained) and the Bellerose fact (name postdates 1898); softened the matching FAQ answer the same way.",
+    "Added 2 new sourced citations: NY Genealogical & Biographical Society (consolidation history), Wikipedia: Bellerose, Queens.",
+    "Added outbound in-body links to /atlanta-zip-codes/ and /chicago-zip-codes/ in the county-alignment section (previously zero outbound links in this article).",
+    "Added an inbound in-body link from dallas-zip-codes' first section body to /new-york-zip-codes/ (previously zero inbound links to this article from any sibling article); confirmed coreSummary fields don't render markdown so the link was placed in a body paragraph instead.",
+    "Shortened meta description from 210 to 138 chars, preserving the core claim.",
+    "Ran Skill(humanizer) on all newly-written passages before publishing; no issues found.",
+    "npm test (64/64 passed) and npm run build (25 pages) both passed after the edit.",
+    "Committed (35b2c7d) and pushed to origin/main; verified live via polling (new description, 38/35-others counts, both new outbound links, and the new dallas-zip-codes inbound link all confirmed present in live HTML); 404.astro still functioning correctly.",
+    "Submitted https://dialwick.com/new-york-zip-codes/ and https://dialwick.com/dallas-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 202); logged to indexnow-submit-log.json.",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish."
+  ],
+  "seo_score": "on-page technical: 1 confirmed issue (meta description length, 210->138 chars) found and fixed; no other technical issues found",
+  "geo_score": "~75/99 pre-fix (borderline, below 80, due to zero internal links + internal inconsistency + overconfident causal claim) -> ~87/99 post-fix (pass)",
+  "escalation": null
+}
+```
