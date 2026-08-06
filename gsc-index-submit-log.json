@@ -30,5 +30,15 @@
       "https://dialwick.com/scam-area-codes/"
     ],
     "quota_used": "1 request this run (round 1 only; round 2 all candidates pre-checked and already indexed)"
+  },
+  {
+    "date": "2026-08-06",
+    "action": "submitted",
+    "reason": "trafficsite-gsc-index-requests例行运行。今日新发布how-to-call-philippines-from-usa（见内容发布日志.md；new-york-zip-codes为同日审计更新非新发布）。第一轮取how-to-call-philippines-from-usa（URL is not on Google）提交成功。第二轮因Chrome扩展断连未能到达本站，队列后续候选本次未检查。",
+    "submitted_urls": [
+      "https://dialwick.com/how-to-call-philippines-from-usa/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 request this run (round 1 only; round 2 not reached due to Chrome extension disconnect)"
   }
 ]
