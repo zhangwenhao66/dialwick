@@ -57,3 +57,34 @@ Owen Zhang
 contact@dialwick.com
 
 **Independent review outcome:** see podcast-pitch-log.md
+
+---
+
+## Pitch 3 — New Jersey State Library, "Telephone & People Directories" ready-reference guide (2026-08-06, resource-suggestion email, not a guest post)
+
+- Page: https://libguides.njstatelib.org/ready_reference/telephone (last updated Jul 6, 2026, actively maintained)
+- Contact used: hhusted@njstatelib.org (the "Report a problem" mailto link on the guide, associated with a "H. Husted" byline on njstatelib.org's own site — full name not confirmed, so the email is addressed generically rather than guessing)
+- Why this page: it already links out to All Area Codes Search (allareacodes.com), AnyWho, and Whitepages for area code/directory lookups — a direct topical match, and a genuinely curated academic reference guide rather than a paid directory or guest-post farm.
+- Fact-checked against `src/data/guides.ts` and the live site: the 213/310/323/818/738 area code split-and-overlay example matches the `california-area-codes` guide content; ZIP code county breakdowns and USPS/Census sourcing match `src/pages/zip-codes/index.astro`; international dialing guides (Mexico, Philippines, US country code) match `src/data/guides.ts`.
+
+**Email:**
+
+Subject: Resource suggestion for your Telephone & People Directories guide
+
+Hi,
+
+I was reading through your Telephone & People Directories ready-reference guide and noticed it links out to All Area Codes Search, AnyWho, and Whitepages for area code and directory lookups. I run a similar reference site, DialWick, and wanted to flag it in case it's useful to add alongside those.
+
+It covers every US and Canadian area code, using the North American Numbering Plan Administrator's assignment history to show which older code each one split or was overlaid from, and when. For example, 213 split into 310, 323, and 818 before 738 overlaid it. There are also city-level ZIP code lookups with county breakdowns from USPS and Census data, plus international dialing guides based on current FCC/ITU-T conventions. Each page links its primary source at the bottom.
+
+Site: https://dialwick.com/
+Area codes: https://dialwick.com/area-codes/
+ZIP codes: https://dialwick.com/zip-codes/
+
+No obligation either way, just thought it might round out the directory section of that guide. Happy to answer any questions about sourcing.
+
+Thanks for maintaining the guide,
+Owen Zhang
+contact@dialwick.com
+
+**Independent review outcome: "can send"** — no duplicate-outreach risk (empty Gmail search for hhusted@njstatelib.org and njstatelib.org, no prior JSON record), every factual claim verified against `src/data/guides.ts` (213/310/323/818/738 area code split history, ZIP county-breakdown sourcing, international dialing FCC/ITU-T references), target page confirmed real via curl with all three cited resources (All Area Codes Search/AnyWho/Whitepages) genuinely present, tone read as a genuine one-off note not a template, no AI-writing tells found. **Sent 2026-08-06** to hhusted@njstatelib.org, Gmail message ID 19fd724590af47cb.
