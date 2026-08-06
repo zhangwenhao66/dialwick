@@ -629,6 +629,83 @@ export const guides: Guide[] = [
 			{ label: 'Daily Bruin: UCLA acquired its own ZIP code, 90095', url: 'https://dailybruin.com/1995/01/11/ucla-soon-to-acquire-own-zip-c' },
 		],
 	},
+	{
+		slug: 'boston-zip-codes',
+		category: 'ZIP Codes',
+		title: "Boston ZIP Codes: The Full List, City Hall's Own Code, and Six Annexed Towns",
+		description:
+			"USPS assigns 36 ZIP codes to \"Boston, MA\" -- but City Hall, a federal building, and six once-independent towns that Boston annexed tell the rest of the story.",
+		published: '2026-08-06',
+		updated: '2026-08-06',
+		coreSummary:
+			"USPS lists 36 ZIP codes with \"Boston\" as the primary place name -- 35 in Suffolk County, plus one, 02212, that this site's source data tags to Middlesex County for reasons no public record explains. A chunk of the 36 aren't neighborhoods at all: 02201 is Boston City Hall's own non-geographic ZIP, and 02203 belongs to the John F. Kennedy Federal Building in Government Center, part of a broader set of institutional \"Unique ZIP Codes\" USPS reserves for large single recipients rather than delivery routes. And the 36-code list understates the city's real footprint, because six towns Boston annexed between 1868 and 1912 -- Roxbury, Dorchester, Charlestown, Brighton, West Roxbury, and Hyde Park -- still carry their pre-annexation names at the post office instead of \"Boston,\" adding 14 more ZIP codes (Jamaica Plain, Roslindale, Allston, Mattapan, and Roxbury Crossing among them) that are legally part of the city but don't say so in the mailing address.",
+		sections: [
+			{
+				heading: 'All 36 ZIP codes with "Boston" as the primary USPS place name',
+				body: [
+					'USPS lists 36 ZIP codes with "Boston, MA" as the primary place name. 35 sit in Suffolk County, the county Boston has anchored since the state\'s founding. The one exception, 02212, is tagged Middlesex County in this table\'s source data -- a discrepancy worth flagging rather than guessing at: it doesn\'t match the Suffolk designation most simplified ZIP directories default to for every Boston code, and no public USPS or county record this site could find explains why this specific non-geographic code carries a different county tag. The table below reports what the source data says rather than silently overriding it.',
+					'Total counts vary by source more than usual for this list. This site\'s own data returns 36, unitedstateszipcodes.org lists 33, and zip-codes.com\'s broader city page lists 50 -- split 32 standard, 9 Unique, and 9 PO Box. The gap isn\'t really a disagreement about which ZIP codes exist; it\'s a difference in scope. Some directories fold in the neighborhood-named ZIPs covered in the section below (which this table excludes, since they carry a different USPS place name), and some count long-retired or rarely-used codes differently.',
+				],
+				table: {
+					caption: 'All 36 ZIP codes with "Boston, MA" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-06)',
+					columns: ['ZIP', 'County'],
+					rows: [
+						['02108', 'Suffolk'], ['02109', 'Suffolk'], ['02110', 'Suffolk'], ['02111', 'Suffolk'],
+						['02112', 'Suffolk'], ['02113', 'Suffolk'], ['02114', 'Suffolk'], ['02115', 'Suffolk'],
+						['02116', 'Suffolk'], ['02117', 'Suffolk'], ['02118', 'Suffolk'], ['02123', 'Suffolk'],
+						['02127', 'Suffolk'], ['02128', 'Suffolk'], ['02133', 'Suffolk'], ['02163', 'Suffolk'],
+						['02196', 'Suffolk'], ['02199', 'Suffolk'], ['02201', 'Suffolk'], ['02203', 'Suffolk'],
+						['02204', 'Suffolk'], ['02205', 'Suffolk'], ['02206', 'Suffolk'], ['02210', 'Suffolk'],
+						['02211', 'Suffolk'], ['02212', 'Middlesex'], ['02215', 'Suffolk'], ['02217', 'Suffolk'],
+						['02222', 'Suffolk'], ['02241', 'Suffolk'], ['02266', 'Suffolk'], ['02283', 'Suffolk'],
+						['02284', 'Suffolk'], ['02293', 'Suffolk'], ['02297', 'Suffolk'], ['02298', 'Suffolk'],
+					],
+				},
+			},
+			{
+				heading: "City Hall, a federal building, and Boston's other non-geographic ZIP codes",
+				body: [
+					'02201 is Boston City Hall\'s own ZIP code -- 1 City Hall Square carries it directly, and city departments each get a four-digit add-on appended to it for faster internal routing. 02203 belongs to the John F. Kennedy Federal Building in Government Center, the twin-tower federal complex that houses the Boston Immigration Court and the EEOC\'s Boston Area Office, among other federal tenants. Neither code covers a residential area or a population; both exist because USPS assigns a dedicated "Unique ZIP Code" to a single institution once its mail volume justifies its own internal distribution system, the same mechanism that gives large universities, hospitals, and federal agencies elsewhere their own codes.',
+					"That pattern repeats across a meaningful share of Boston's list. Of the roughly 50 ZIP codes zip-codes.com's broader Boston city page tracks, it classifies 9 as Unique and another 9 as PO Box-only -- together more than a third of the total, none of them a neighborhood a resident would list as their address. This site's [Atlanta ZIP page](/atlanta-zip-codes/) documents a single such code (39901, the IRS's Atlanta processing center); Boston's list carries close to ten times as many, spread across city government, federal agencies, and large institutional mail recipients rather than concentrated in one.",
+				],
+			},
+			{
+				heading: "Why Dorchester, Roxbury, and four other Boston neighborhoods don't carry the city's name",
+				body: [
+					"Six towns joined the City of Boston between 1868 and 1912, each by its own vote, and none of them lost its name at the post office when it did. Roxbury was annexed January 5, 1868; Dorchester followed January 3, 1870. Charlestown, Brighton, and West Roxbury all joined together after a single October 7, 1873 vote, with the annexation effective January 5, 1874. Hyde Park was the last: residents voted to join on November 7, 1911, and the annexation took effect January 1, 1912. The individual motives varied more than a single explanation can cover. Roxbury's annexation is tied by Boston's own annexation-history accounts to the city's water and sewer systems, infrastructure the smaller town struggled to replicate on its own. Brighton's case ran closer to the opposite direction: in the four years before its 1873 vote, a group of local businessmen known as the \"Brighton Ring\" pushed the town into roughly $1.56 million of infrastructure spending against about $438,000 of revenue -- an eightfold jump in town debt -- then steered 81% of voters toward annexation so Boston would absorb what Brighton owed. Hyde Park's annexation, per the City of Boston Archives' own account, was driven mainly from Boston's side: the town's mills had drawn a wave of immigrant labor by the early 1900s, and the city wanted the tax revenue that growth represented.",
+					"Those six former towns, plus neighborhoods carved out of them afterward, account for 14 ZIP codes today that are legally inside Boston but carry a different USPS place name: Roxbury (02119) and Roxbury Crossing (02120); Dorchester, split across four codes (02121, 02122, 02124, 02125); Mattapan (02126), itself once considered part of Dorchester; Charlestown (02129); Jamaica Plain (02130) and Roslindale (02131), both carved from the old town of West Roxbury; West Roxbury itself (02132); Allston (02134) and Brighton (02135), the same annexed town split into two postal names; and Hyde Park (02136). None of the 14 appears in the 36-code table above, because none of them uses \"Boston\" as its USPS place name -- but a piece of mail addressed to any of them is, legally, addressed to the City of Boston all the same.",
+					"This site's [Los Angeles ZIP page](/los-angeles-zip-codes/) documents the same kind of split, on a larger scale and with a single documented cause: Los Angeles annexed most of the San Fernando Valley in one 1915 vote driven by access to aqueduct water rights, and 14 Valley neighborhoods still carry their pre-annexation names today. Boston's version played out earlier and more piecemeal -- six separate votes over 44 years, each town joining for its own local reasons rather than one shared cause -- but it left the same kind of trace on the ZIP map.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What is the main ZIP code for Boston?',
+				answer:
+					"There isn't a single one -- Boston uses 36 ZIP codes under its own name. Boston City Hall, at 1 City Hall Square, uses 02201.",
+			},
+			{
+				question: 'Is Dorchester part of Boston?',
+				answer:
+					"Yes. Dorchester was an independent town until it was annexed to Boston on January 3, 1870. It's legally part of the city today, but its ZIP codes (02121, 02122, 02124, 02125) still carry the Dorchester name at the post office rather than Boston's.",
+			},
+			{
+				question: 'Why does ZIP code 02212 show up in Middlesex County instead of Suffolk?',
+				answer:
+					"This site's source data (GeoNames) tags 02212 to Middlesex County, unlike every other Boston ZIP code, which sits in Suffolk. No public record explains the discrepancy, and this site reports it rather than overriding it with an assumption.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Contact Boston City Hall -- Boston.gov', url: 'https://www.boston.gov/departments/mayors-office/contact-boston-city-hall' },
+			{ label: 'GSA: John F. Kennedy Federal Building, Boston, MA', url: 'https://www.gsa.gov/about-us/regions/region-1new-england/buildings-and-facilities/massachusetts/john-f-kennedy-federal-building' },
+			{ label: 'USPS PostalPro: Unique ZIP Code Matrix', url: 'https://postalpro.usps.com/node/1481' },
+			{ label: "Boston's Annexed Towns -- Boston Public Library research guide", url: 'https://guides.bpl.org/TownsOfBoston' },
+			{ label: 'Wikipedia: Brighton, Boston (1873 vote / 1874 annexation)', url: 'https://en.wikipedia.org/wiki/Brighton,_Boston' },
+			{ label: "Annexation Embraced: Brighton's 1873 Acceptance of Boston -- local-historian account of the Brighton Ring and town debt", url: 'https://wpmarchione.com/2017/05/19/annexation-embraced-brightons-1873-acceptance-of-boston/' },
+			{ label: 'City of Boston Archives: Celebrating Hyde Park -- Annexation exhibit', url: 'https://cityofbostonarchives.omeka.net/exhibits/show/hydepark/annexation' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
