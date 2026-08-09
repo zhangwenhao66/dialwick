@@ -788,6 +788,94 @@ export const guides: Guide[] = [
 			{ label: 'Nashville, TN ZIP code list -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Nashville/TN/' },
 		],
 	},
+	{
+		slug: 'denver-zip-codes',
+		category: 'ZIP Codes',
+		title: 'Denver ZIP Codes: The Full List, and the 11 That Sit Outside Denver County',
+		description:
+			"Every ZIP code USPS assigns to Denver, Colorado, and why 11 of the 66 fall across the county line in Jefferson or Adams County despite Denver's own 1902 consolidation into a single city-and-county government.",
+		published: '2026-08-10',
+		updated: '2026-08-10',
+		coreSummary:
+			"USPS assigns 66 ZIP codes to \"Denver, CO\" as the primary place name. This site's data ties 55 of them to Denver County -- the consolidated City and County of Denver, created in 1902 -- but the other 11 fall outside it: six in Jefferson County, to the west around Lakewood and Wheat Ridge, and five in Adams County, to the north around Federal Heights and Thornton. Denver having its own consolidated government since 1902 doesn't mean its ZIP footprint stops at that government's border -- USPS delivery routes were drawn around mail carriers' paths, not the county line the state legislature set more than a century ago.",
+		sections: [
+			{
+				heading: 'All 66 ZIP codes USPS assigns to Denver',
+				body: [
+					"Of the 66 ZIP codes with \"Denver, CO\" as the primary USPS place name, this site's source data places 55 in Denver County itself, six in Jefferson County, and five in Adams County. zipcodestogo.com's own Denver city page lists 64 codes for comparison -- close to this site's 66, but not identical, which is typical: independent ZIP directories routinely disagree by a handful of codes depending on whether they count PO-Box-only or otherwise non-standard codes the same way.",
+				],
+				table: {
+					caption: 'All 66 ZIP codes with "Denver, CO" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-10)',
+					columns: ['ZIP', 'County'],
+					rows: [
+						['80201', 'Denver'], ['80202', 'Denver'], ['80203', 'Denver'], ['80204', 'Denver'],
+						['80205', 'Denver'], ['80206', 'Denver'], ['80207', 'Denver'], ['80208', 'Denver'],
+						['80209', 'Denver'], ['80210', 'Denver'], ['80211', 'Denver'], ['80212', 'Denver'],
+						['80214', 'Jefferson'], ['80215', 'Jefferson'], ['80216', 'Denver'], ['80217', 'Denver'],
+						['80218', 'Denver'], ['80219', 'Denver'], ['80220', 'Denver'], ['80221', 'Adams'],
+						['80222', 'Denver'], ['80223', 'Denver'], ['80224', 'Denver'], ['80225', 'Jefferson'],
+						['80226', 'Jefferson'], ['80227', 'Denver'], ['80228', 'Jefferson'], ['80229', 'Adams'],
+						['80230', 'Denver'], ['80231', 'Denver'], ['80232', 'Jefferson'], ['80233', 'Adams'],
+						['80234', 'Adams'], ['80235', 'Denver'], ['80236', 'Denver'], ['80237', 'Denver'],
+						['80238', 'Denver'], ['80239', 'Denver'], ['80243', 'Denver'], ['80244', 'Denver'],
+						['80246', 'Denver'], ['80247', 'Denver'], ['80248', 'Denver'], ['80249', 'Denver'],
+						['80250', 'Denver'], ['80251', 'Denver'], ['80252', 'Denver'], ['80256', 'Denver'],
+						['80257', 'Denver'], ['80259', 'Denver'], ['80260', 'Adams'], ['80261', 'Denver'],
+						['80262', 'Denver'], ['80263', 'Denver'], ['80264', 'Denver'], ['80265', 'Denver'],
+						['80266', 'Denver'], ['80271', 'Denver'], ['80273', 'Denver'], ['80274', 'Denver'],
+						['80281', 'Denver'], ['80290', 'Denver'], ['80291', 'Denver'], ['80293', 'Denver'],
+						['80294', 'Denver'], ['80299', 'Denver'],
+					],
+				},
+			},
+			{
+				heading: 'How Denver became a county unto itself in 1902',
+				body: [
+					"Denver started out inside Arapahoe County, one of the 17 original counties the Colorado General Assembly created on November 1, 1861, with Denver City serving as the county seat. That arrangement lasted forty years. In 1901, the legislature voted to split Arapahoe County three ways: a new, consolidated City and County of Denver; a new Adams County to the north, named for five-time gubernatorial candidate and then-sitting Governor Alva Adams; and the rump of the old county, temporarily renamed South Arapahoe County. A Colorado Supreme Court ruling, follow-up legislation, and a referendum delayed the split from taking effect until November 15, 1902, and South Arapahoe County's name didn't even last a full year -- the legislature changed it back to plain Arapahoe County on April 11, 1903, with its seat relocated to Littleton.",
+					"Jefferson County, the source of this site's other six Denver ZIP codes, wasn't part of that 1902 reorganization at all. It's one of the same 17 counties created alongside the original Arapahoe County back in 1861, sitting immediately to Denver's west with its own county seat at Golden. So the Jefferson County ZIP codes on the list above aren't a product of Denver's consolidation -- they're a reminder that Denver, like Atlanta on this site's own [ZIP list for Atlanta](/atlanta-zip-codes/), simply has USPS delivery routes that cross into a neighboring county that's always been there, regardless of what Denver's own government boundary looks like.",
+				],
+			},
+			{
+				heading: 'Six ZIPs west in Jefferson County, five north in Adams',
+				body: [
+					"The six Jefferson County ZIP codes on Denver's list -- 80214, 80215, 80225, 80226, 80228, and 80232 -- sit in the corridor just west of downtown, an area covered mostly by Lakewood, Jefferson County's largest city, along with slivers of Wheat Ridge and Edgewater. unitedstateszipcodes.org's own boundary data shows 80214 in particular splits across several place names at once -- Lakewood, Edgewater, and Wheat Ridge all draw from it -- which is a reminder that a single \"place\" label on a ZIP code, whether it reads Denver or something else, can mask a boundary that a postal carrier's route crosses more than once.",
+					"The five Adams County ZIP codes -- 80221, 80229, 80233, 80234, and 80260 -- sit north of downtown, in the Federal Heights, Thornton, and Northglenn corridor. 80221 is the one worth a caveat: unitedstateszipcodes.org's boundary data shows it straddling both Adams and Denver counties at once, with Adams holding the larger share. This site's table above, like GeoNames' broader dataset, assigns each ZIP code to a single county, so 80221 shows up here as Adams only -- the same kind of simplification this site flagged on the [Atlanta ZIP list](/atlanta-zip-codes/), where one ZIP straddling Fulton and Cobb counties got flattened into a single row too.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Denver have?',
+				answer:
+					"66, per this site's source data -- 55 in Denver County, six in Jefferson County, and five in Adams County.",
+			},
+			{
+				question: 'What county is Denver in?',
+				answer:
+					"Denver County -- officially the consolidated City and County of Denver, created in 1902 when the Colorado legislature split it off from Arapahoe County. But not every ZIP code addressed to Denver actually sits inside that county; 11 of the 66 on this site's list fall in neighboring Jefferson or Adams County instead.",
+			},
+			{
+				question: 'Why do some Denver ZIP codes fall in Jefferson County?',
+				answer:
+					"Jefferson County has bordered Denver since 1861, decades before Denver became its own consolidated city-county in 1902. USPS draws ZIP boundaries around mail-delivery routes, not government lines, so six ZIP codes addressed to Denver -- covering parts of Lakewood, Wheat Ridge, and Edgewater -- actually sit across that older county line.",
+			},
+			{
+				question: 'Is ZIP code 80221 in Denver or Federal Heights?',
+				answer:
+					"Both names are USPS-acceptable for 80221, and unitedstateszipcodes.org's boundary data shows the code physically straddling Adams and Denver counties. This site's table, which follows GeoNames' single-county assignment, lists it under Adams County, where most of the ZIP's area falls.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Denver -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Denver' },
+			{ label: 'Adams County, Colorado -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Adams_County,_Colorado' },
+			{ label: 'South Arapahoe County, Colorado -- Wikipedia', url: 'https://en.wikipedia.org/wiki/South_Arapahoe_County,_Colorado' },
+			{ label: 'Jefferson County, Colorado -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Jefferson_County,_Colorado' },
+			{ label: 'ZIP Code 80221 -- unitedstateszipcodes.org', url: 'https://www.unitedstateszipcodes.org/80221/' },
+			{ label: 'ZIP Code 80214 -- unitedstateszipcodes.org', url: 'https://www.unitedstateszipcodes.org/80214/' },
+			{ label: 'Denver, CO ZIP code list -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Denver/CO/' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
