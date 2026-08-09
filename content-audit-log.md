@@ -366,7 +366,7 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
     "Added 4 new sourced citations to the sources array (2 Census Bureau QuickFacts, 2 Wikipedia).",
     "Bumped 'updated' from 2026-08-03 to 2026-08-09 (published field was already present, no backfill needed) given the substantive nature of the fix.",
     "npm test (64/64 passed) and npm run build (27 pages) both passed after the edit.",
-    "Committed and pushed to origin/main; verified live via polling.",
+    "Committed (d634d3e) and pushed to origin/main; verified live via polling.",
     "Submitted https://dialwick.com/texas-zip-codes/ via tools/submit-indexnow.mjs; logged to indexnow-submit-log.json.",
     "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish."
   ],
