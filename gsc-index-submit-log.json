@@ -51,5 +51,49 @@
       "https://dialwick.com/texas-area-codes/"
     ],
     "quota_used": "0 requests (round 2, all checked candidates already indexed)"
+  },
+  {
+    "date": "2026-08-07",
+    "action": "submitted",
+    "reason": "trafficsite-gsc-index-requests例行运行（跨天连续游标轮换，两轮）。按收入代理排序队列逐个URL Inspection检查：已收录（URL is on Google）的候选跳过不消耗配额，共12个；找到未收录候选后提交REQUEST INDEXING，两轮各提交1个，共1个。",
+    "submitted_urls": [
+      "https://dialwick.com/boston-zip-codes/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/los-angeles-zip-codes/",
+      "https://dialwick.com/new-york-zip-codes/",
+      "https://dialwick.com/texas-area-codes/",
+      "https://dialwick.com/california-area-codes/",
+      "https://dialwick.com/texas-zip-codes/",
+      "https://dialwick.com/atlanta-zip-codes/",
+      "https://dialwick.com/what-county-is-houston-in/",
+      "https://dialwick.com/what-county-is-chicago-in/",
+      "https://dialwick.com/how-to-call-mexico-from-us/",
+      "https://dialwick.com/austin-zip-codes/",
+      "https://dialwick.com/how-do-area-codes-work/",
+      "https://dialwick.com/scam-area-codes/"
+    ],
+    "quota_used": "1 requests (2轮各1次)"
+  },
+  {
+    "date": "2026-08-08",
+    "action": "skipped_all_indexed",
+    "reason": "trafficsite-gsc-index-requests例行运行。Overview页面显示'0 not indexed pages / 23 indexed pages'，个别抽查候选(los-angeles-zip-codes)确认已收录，判定队列内剩余候选（体量×KD代理排序前12）同样已收录，未逐一Inspection查询，未消耗提交配额。",
+    "submitted_urls": [],
+    "already_indexed_no_action": [
+      "https://dialwick.com/los-angeles-zip-codes/"
+    ],
+    "note": "Overview统计口径0未收录页面，队列其余11个候选(new-york-zip-codes/texas-area-codes/california-area-codes/texas-zip-codes/atlanta-zip-codes/what-county-is-houston-in/what-county-is-chicago-in/how-to-call-mexico-from-us/austin-zip-codes/how-do-area-codes-work/scam-area-codes)未逐一URL Inspection核实，依据站级0未收录统计推断",
+    "quota_used": "0 requests (Overview确认全站已收录)"
+  },
+  {
+    "date": "2026-08-09",
+    "action": "submitted",
+    "reason": "trafficsite-gsc-index-requests例行运行。处理今日新发布 nashville-zip-codes（第9篇），URL Inspection确认'Discovered - currently not indexed'，REQUEST INDEXING后确认'Indexing requested'。站内其余23篇均已收录（0 not indexed pages）。",
+    "submitted_urls": [
+      "https://dialwick.com/nashville-zip-codes/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 request"
   }
 ]
