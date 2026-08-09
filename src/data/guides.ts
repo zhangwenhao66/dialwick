@@ -706,6 +706,83 @@ export const guides: Guide[] = [
 			{ label: 'City of Boston Archives: Celebrating Hyde Park -- Annexation exhibit', url: 'https://cityofbostonarchives.omeka.net/exhibits/show/hydepark/annexation' },
 		],
 	},
+	{
+		slug: 'nashville-zip-codes',
+		category: 'ZIP Codes',
+		title: "Nashville ZIP Codes: The Full List, and Why Metro's Satellite Cities Share It",
+		description:
+			"USPS assigns 39 ZIP codes to Nashville, all in Davidson County -- home to the first true city-county merger in the US, and five satellite cities without a ZIP of their own.",
+		published: '2026-08-09',
+		updated: '2026-08-09',
+		coreSummary:
+			'USPS assigns 39 ZIP codes to "Nashville, TN" as the primary place name, and this site\'s source data ties every one of them to Davidson County -- no split, no exception. That\'s not a coincidence of geography. Nashville and Davidson County merged into a single Metropolitan Government on April 1, 1963, after voters approved consolidation on June 28, 1962, having rejected an earlier version of the same plan in 1958. The 1963 charter let six incorporated communities -- Berry Hill, Belle Meade, Oak Hill, Forest Hills, Goodlettsville, and Lakewood -- keep their own city governments, police departments, and zoning inside the new Metro structure. Only one of them, Goodlettsville, also kept a ZIP code of its own. This site\'s data shows the other surviving satellite cities file under "Nashville" the same as every other Davidson County address, and Lakewood, which dissolved its charter in 2011, never had a distinct ZIP to begin with.',
+		sections: [
+			{
+				heading: 'All 39 ZIP codes USPS assigns to Nashville',
+				body: [
+					'Every ZIP code with "Nashville, TN" as its primary USPS place name sits in Davidson County, per this site\'s source data -- a clean 39-for-39 split with no cross-county outlier like the one this site flagged on the [Boston ZIP list](/boston-zip-codes/). An independent lookup returns the same total: zipcodestogo.com\'s own Nashville page also lists 39 codes for Davidson County, a useful cross-check given how much these totals tend to drift between directories that scope the list differently.',
+				],
+				table: {
+					caption: 'All 39 ZIP codes with "Nashville, TN" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-09)',
+					columns: ['ZIP', 'County'],
+					rows: [
+						['37201', 'Davidson'], ['37202', 'Davidson'], ['37203', 'Davidson'], ['37204', 'Davidson'],
+						['37205', 'Davidson'], ['37206', 'Davidson'], ['37207', 'Davidson'], ['37208', 'Davidson'],
+						['37209', 'Davidson'], ['37210', 'Davidson'], ['37211', 'Davidson'], ['37212', 'Davidson'],
+						['37213', 'Davidson'], ['37214', 'Davidson'], ['37215', 'Davidson'], ['37216', 'Davidson'],
+						['37217', 'Davidson'], ['37218', 'Davidson'], ['37219', 'Davidson'], ['37220', 'Davidson'],
+						['37221', 'Davidson'], ['37222', 'Davidson'], ['37224', 'Davidson'], ['37227', 'Davidson'],
+						['37228', 'Davidson'], ['37229', 'Davidson'], ['37230', 'Davidson'], ['37232', 'Davidson'],
+						['37234', 'Davidson'], ['37235', 'Davidson'], ['37236', 'Davidson'], ['37238', 'Davidson'],
+						['37240', 'Davidson'], ['37241', 'Davidson'], ['37242', 'Davidson'], ['37243', 'Davidson'],
+						['37244', 'Davidson'], ['37246', 'Davidson'], ['37250', 'Davidson'],
+					],
+				},
+			},
+			{
+				heading: 'Why every single one lands in Davidson County',
+				body: [
+					"Nashville tried to consolidate with Davidson County once before it worked. Voters rejected a charter to merge the city and county governments in 1958, even though it had the backing of both Nashville newspapers, then-Mayor Ben West, and County Judge Beverly Briley. Nashville responded by annexing roughly 82,000 residents from the surrounding county and imposing a $10 \"wheel tax\" on every car that regularly used city streets -- a levy suburban residents nicknamed the \"green sticker tax\" and resented enough that it revived the push for a real merger instead of piecemeal annexation. A second charter commission wrote a new plan, this one splitting the county into an Urban Services District and a General Services District with different tax levels depending on which city services a resident actually received. Voters approved it on June 28, 1962, and the Metropolitan Government of Nashville and Davidson County was sworn in on April 1, 1963, with Beverly Briley as its first mayor. Nashville's own government history page calls it the first city in the country to achieve true consolidation, as opposed to partial mergers other cities had already tried; roughly fourteen consolidated city-county governments exist in the US today, and each one, per that same account, used Nashville's 1962 charter as a model.",
+					"That history is what makes the 39-for-39 Davidson County count more than a coincidence. This site's [Chicago county page](/what-county-is-chicago-in/) documents another major city that sits entirely inside a single county, but Cook County was simply drawn wide enough to hold Chicago and 135 other municipalities alongside it -- Chicago's city government and Cook County's government are still two separate governments. Nashville's single-county footprint is structural rather than incidental: since 1963, the city government and the county government have been the same government, so there's no county line left inside Nashville's limits to split a ZIP code across.",
+				],
+			},
+			{
+				heading: 'Six communities kept a government of their own -- only one kept a ZIP code',
+				body: [
+					'The 1963 charter didn\'t erase every local government inside the new Metro structure. Six incorporated communities -- Berry Hill, Belle Meade, Oak Hill, Forest Hills, Goodlettsville, and Lakewood -- were allowed to keep their own charters, city councils, police departments, and zoning rules rather than folding into Metro entirely. Lakewood\'s charter didn\'t survive: after nearly five decades as a self-governing "satellite city," residents voted to dissolve it on August 5, 2010, by a single vote, 400 to 399. The city sued over alleged voting irregularities, a Davidson County Chancery Court judge ordered a new election, and on March 15, 2011, residents voted again, 458 to 447, to fold into Metro for good. Its old ZIP code, 37138, was never actually its own in postal terms -- this site\'s data ties that code to the neighboring Old Hickory place name, not Lakewood.',
+					'The four satellite cities still standing today tell a more consistent story. This site\'s data shows none of Berry Hill, Belle Meade, Oak Hill, or Forest Hills carries its own ZIP place name -- addresses in all four read "Nashville, TN," identical to the rest of Davidson County, even though each city still runs its own city hall and police force decades after 1963. Goodlettsville is the exception, with two ZIP codes of its own, 37070 and 37072. Geography plausibly plays a role: Goodlettsville\'s own city government describes itself as straddling the Davidson-Sumner county line, with the larger share of its land area in Sumner County even though most of its population lives on the Davidson County side. This site\'s source data ties both Goodlettsville ZIP codes to Davidson County rather than splitting them the way it splits, for instance, [Boston\'s 02212](/boston-zip-codes/) into a different county from the rest of that city\'s list -- one more reminder that a single ZIP database\'s county tag doesn\'t always capture every line a city actually crosses on the ground.',
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Nashville have?',
+				answer: "39, and every one of them sits in Davidson County -- the same county Nashville's city government merged with in 1963.",
+			},
+			{
+				question: 'What county is Nashville in?',
+				answer:
+					"Davidson County. Since April 1, 1963, Nashville and Davidson County have shared a single consolidated government, so the city limits and the county line are effectively the same boundary.",
+			},
+			{
+				question: 'Is Belle Meade part of Nashville?',
+				answer:
+					"It's part of the Metropolitan Government of Nashville and Davidson County, but it kept its own city charter, police department, and zoning when Metro formed in 1963. It doesn't have its own ZIP code -- mail addressed there reads \"Nashville, TN\" the same as the rest of the county.",
+			},
+			{
+				question: "Why does Goodlettsville have its own ZIP codes instead of using Nashville's?",
+				answer:
+					"Goodlettsville is one of six communities that kept its own city charter inside Metro Nashville-Davidson County in 1963, and it also straddles the Davidson-Sumner county line -- a combination the other three surviving satellite cities (Berry Hill, Belle Meade, Oak Hill, Forest Hills) don't share, and none of them has its own ZIP code.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'History of Metropolitan Nashville Government -- Nashville.gov', url: 'https://www.nashville.gov/departments/government/history-metro' },
+			{ label: 'Lakewood, Tennessee -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Lakewood,_Tennessee' },
+			{ label: 'Location -- Goodlettsville, TN official website', url: 'https://www.goodlettsville.gov/2007/Location' },
+			{ label: 'Nashville, TN ZIP code list -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Nashville/TN/' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
