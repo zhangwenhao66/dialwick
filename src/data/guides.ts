@@ -229,9 +229,9 @@ export const guides: Guide[] = [
 		description:
 			"Texas doesn't have one ZIP code system, it has a range spanning 73301 to 88595 -- and which major city has the most ZIP codes isn't the one with the most people.",
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-09',
 		coreSummary:
-			"Texas uses roughly 2,600 ZIP codes spread across 52 distinct three-digit prefixes, running from 73301 in the north (a Texas-adjacent IRS ZIP shared with Oklahoma's numbering block) to 88595 near El Paso in the far west. No single ZIP covers a whole city -- Houston alone uses 178 of them, more than any other Texas city despite Houston and San Antonio being close in population.",
+			"Texas uses roughly 2,600 ZIP codes spread across 52 distinct three-digit prefixes, running from 73301 in the north (a Texas-adjacent IRS ZIP shared with Oklahoma's numbering block) to 88595 near El Paso in the far west. No single ZIP covers a whole city -- Houston alone uses 178 of them, more than any other Texas city. The real surprise is further down the list: El Paso has fewer than half of San Antonio's population but nearly twice its ZIP code count.",
 		sections: [
 			{
 				heading: "Texas ZIP codes run from the 733 prefix to the 885 prefix",
@@ -243,6 +243,7 @@ export const guides: Guide[] = [
 				heading: 'ZIP code count by major city',
 				body: [
 					"City population and ZIP code count don't move together in a straight line -- a city's ZIP count depends more on its physical footprint and how spread out its delivery routes are than on how many people live there.",
+					"Dallas and Austin each get a deeper breakdown elsewhere on this site: [Dallas's ZIP list](/dallas-zip-codes/) includes four codes that actually belong to a legally independent town Dallas could never annex, and [Austin's ZIP breakdown](/austin-zip-codes/) shows how its 74 codes split across two counties.",
 				],
 				table: {
 					caption: 'ZIP codes per major Texas city (USPS-assigned place name)',
@@ -260,7 +261,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Why El Paso has more ZIP codes than San Antonio, despite being smaller',
 				body: [
-					"San Antonio has roughly 40% more residents than El Paso, yet El Paso is assigned nearly twice as many ZIP codes. El Paso's geography -- a long, narrow city hemmed in by the Franklin Mountains and the Rio Grande, with a border-crossing economy that generates its own dense commercial mail routes -- produces more, smaller delivery zones than San Antonio's more compact urban core does. ZIP codes are drawn around mail-carrier routes, not population evenly divided across a city.",
+					"San Antonio has more than double El Paso's population -- roughly 1.5 million versus 680,000, per Census Bureau estimates -- yet El Paso is assigned nearly twice as many ZIP codes. The more commonly cited reason isn't El Paso's location so much as its footprint: at roughly 248 square miles, El Paso is one of the largest Texas cities by land area, and its territory includes Fort Bliss, one of the US Army's largest posts, whose facilities carry their own separate ZIP codes. ZIP codes are drawn around mail-carrier routes and delivery volume, not population evenly divided across a city, so a large, sprawling service area anchored by a major military installation produces more, smaller zones than San Antonio's more compact urban core does.",
 				],
 			},
 		],
@@ -272,11 +273,15 @@ export const guides: Guide[] = [
 			{
 				question: 'Which Texas city has the most ZIP codes?',
 				answer:
-					"Houston, with 178 -- more than El Paso (137), Dallas (105), San Antonio (83), Austin (74), or Fort Worth (56), even though Houston isn't proportionally that much larger in population than several of those cities.",
+					"Houston, with 178 -- well ahead of El Paso (137), Dallas (105), San Antonio (83), Austin (74), and Fort Worth (56). Houston is also Texas's most populous city, so its ZIP lead isn't the surprising part; the bigger anomaly is farther down the list, where El Paso outranks the much larger San Antonio.",
 			},
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'US Census Bureau QuickFacts: San Antonio city, Texas', url: 'https://www.census.gov/quickfacts/fact/table/sanantoniocitytexas/PST045224' },
+			{ label: 'US Census Bureau QuickFacts: El Paso city, Texas', url: 'https://www.census.gov/quickfacts/fact/table/elpasocitytexas/PST045224' },
+			{ label: 'Wikipedia: El Paso, Texas', url: 'https://en.wikipedia.org/wiki/El_Paso,_Texas' },
+			{ label: 'Wikipedia: Fort Bliss', url: 'https://en.wikipedia.org/wiki/Fort_Bliss' },
 		],
 	},
 	{

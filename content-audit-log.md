@@ -269,3 +269,109 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "escalation": null
 }
 ```
+
+## texas-zip-codes
+
+```json
+{
+  "url_slug": "texas-zip-codes",
+  "url": "https://dialwick.com/texas-zip-codes/",
+  "last_audited": "2026-08-09",
+  "published_date": "2026-08-03",
+  "diagnostic_checklist": [
+    "1. Do the total-ZIP-count (2,600), 52-prefix, 733-885 range, and per-city counts (Houston 178/El Paso 137/Dallas 105/San Antonio 83/Austin 74/Fort Worth 56) match the site's own canonical zipCounty.json (GeoNames) data?",
+    "2. Is 'San Antonio has roughly 40% more residents than El Paso' accurate against real population data?",
+    "3. Is coreSummary's 'Houston and San Antonio being close in population' accurate?",
+    "4. Is the causal explanation for El Paso's high ZIP count (Franklin Mountains/narrow city/border-crossing economy) a real, sourced explanation or invented reasoning for a numeric gap (matches lesson L-0806-14 pattern)?",
+    "5. Does this article have any manual in-body internal links in either direction (matches the zero-outbound-links pattern already found and fixed twice on this site, in atlanta-zip-codes and new-york-zip-codes)?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass, strengthened by fix",
+      "detail": "Source was GeoNames.org (CC BY 4.0) only, a single-source article compared to sibling articles' 2-4 sources. Added 4 new sources during this audit (US Census Bureau QuickFacts for San Antonio and El Paso, Wikipedia: El Paso Texas, Wikipedia: Fort Bliss) to support the corrected population and land-area/Fort Bliss facts."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed (3 issues, all independently confirmed)",
+      "detail": "(a) coreSummary/section-3 body claimed 'San Antonio has roughly 40% more residents than El Paso.' Independent agent WebSearched Census Bureau QuickFacts (2024 estimates: San Antonio 1,526,656; El Paso 681,723) and found San Antonio has ~124% more residents (more than double, ~2.24x), not 40% -- confirmed problem, off by a factor of ~2.8-3x. Cross-checked against 2020 Census (San Antonio 1,434,625 vs El Paso 678,815, ~111% more) with the same conclusion. (b) coreSummary claimed Houston and San Antonio are 'close in population.' Independent agent found Houston (~2.3-2.39M) is ~57-58% larger than San Antonio (~1.46-1.53M) -- not close by any normal usage; confirmed problem. (c) The causal explanation for El Paso's high ZIP count ('a long, narrow city hemmed in by the Franklin Mountains and the Rio Grande, with a border-crossing economy that generates its own dense commercial mail routes') had no corroboration anywhere. Independent agent searched multiple angles (general explanation, Fort Bliss/military angle, direct El Paso vs San Antonio comparisons, the specific Franklin Mountains/Rio Grande/border-economy narrative) and found this exact narrative in zero sources. What IS documented: El Paso's large land area (~248 sq mi, one of the largest Texas cities by area) and Fort Bliss (a major Army post carrying its own ZIP codes) -- both independently corroborated via WebSearch (EBSCO Research Starters, Wikipedia). Confirmed as an invented/unsupported causal narrative -- matches lesson library L-0806-14 pattern exactly (inventing an unsourced 'reason' for a head-to-head numeric gap). A parallel FAQ answer ('Houston...isn't proportionally that much larger in population than several of those cities') repeated the same flawed population-comparison logic (Houston is actually 56-250% larger than every other city in the table) and was fixed alongside the confirmed core-summary finding, not independently re-verified as a separate agent call since it's the same underlying error already confirmed."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "GeoNames ZIP data retrieved 2026-08-03, only 6 days old, all counts independently re-verified against zipCounty.json and matched exactly (2,600 total, 52 prefixes, 733-885 range, all 6 per-city counts) -- this canonical data was not the source of any confirmed problem; all 3 confirmed problems were in the population-comparison / causal-explanation prose layered on top of correct data."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass, strengthened by fix",
+      "detail": "WebSearch for Texas ZIP code content shows competitors (zipcodestogo.com, whereig.com, etc.) list flat per-city ZIP counts or full ZIP lists without any population-vs-ZIP-count analysis. This article's 'ZIP count doesn't track population' framing is genuine incremental value vs. the SERP's plain listicles -- and now that the population numbers are corrected, the real gap (El Paso has fewer than half of San Antonio's population but nearly twice its ZIP count) is a stronger, more accurate hook than the original wrong '40% more' framing."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit (Skill seo-audit)",
+      "status": "pass, no action needed",
+      "detail": "Live page checked via curl+DOM: single H1, 4 H2s, canonical present, 3 JSON-LD blocks (FAQPage/Article/BreadcrumbList) present and consistent. Title tag 69 chars total (58-char field + suffix) -- consistent with this site's established precedent of not escalating titles in this range (scam-area-codes left a 70-char title as-is for the same reason). Meta description 161 chars raw -- 1 char over this site's established ~160-char guideline but far short of the 200+ char problems fixed in prior audits; left as-is per 'don't manufacture problems' principle (SKILL hard rule 10)."
+    },
+    {
+      "dimension": "6. GEO / ai-seo (99-point rubric)",
+      "status": "borderline fail pre-fix (~72-76/99) -> pass post-fix (~86/99)",
+      "detail": "Manual rubric pass consistent with prior audits' methodology. Pre-fix weaknesses: single-source EEAT, zero internal links in either direction (see dimension 9), two wrong population comparisons, and an invented/unsourced causal claim -- comparable to new-york-zip-codes' pre-fix profile (~75/99) which had a similar combination of zero-links + factual error + overconfident causal claim. Post-fix: added 4 new sourced citations, 2 new outbound in-body links, corrected both population comparisons with cited real figures, replaced the invented causal narrative with the actually-documented explanation (land area + Fort Bliss). Estimated post-fix score ~86/99, comfortably above the 80 threshold."
+    },
+    {
+      "dimension": "7. Humanizer / avoid-ai-writing backfill",
+      "status": "not applicable to original text / new text checked",
+      "detail": "Published 2026-08-03, predates or is same-day as this site's humanizer mandate (launch-day batch, same status as scam-area-codes/atlanta-zip-codes). Manual read of original text found no AI-writing tells (uses site's ' -- ' double-hyphen convention, no vague attribution, no rule-of-three padding). All newly-written replacement passages (coreSummary sentence, section 2 link sentence, section 3 rewrite, FAQ answer) read in the same fact-dense, specific-numbers style as the surrounding text; no AI-writing tells introduced."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "GeoNames.org postal-codes index: HTTP 200. Two new Wikipedia sources (El Paso, Texas; Fort Bliss): both HTTP 200. Two new Census.gov QuickFacts URLs return HTTP 403 to curl -- consistent with this site's already-documented standard bot-blocking behavior (same pattern as the FCC pages in the scam-area-codes audit), not link rot; confirmed live and current via the independent fact-check agents' successful WebSearch access to the same QuickFacts data."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "grep of guides.ts confirmed texas-zip-codes had zero manual in-body outbound links despite mentioning Dallas and Austin by name (both of which have their own sibling guide articles) -- the same zero-outbound-links pattern already found and fixed in atlanta-zip-codes and new-york-zip-codes audits. Inbound: 2 manual links already existed from dallas-zip-codes and austin-zip-codes (not an orphan). Fixed: added 2 new outbound in-body links in section 2 ('ZIP code count by major city'), pointing to /dallas-zip-codes/ and /austin-zip-codes/, both verified accurate against those articles' actual content (Highland Park's 4 annexation-resistant ZIPs; Austin's 72/2 Travis/Williamson County split) before adding."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all auto-derive from the same guide object fields (title, description, coreSummary, faq); verified post-fix on the live deployed page that all three reflect the corrected text. datePublished stayed 2026-08-03; dateModified bumped to 2026-08-09 since this fix is substantially more than a typo correction (3 confirmed factual corrections + 4 new sources + 2 new internal links), consistent with the new-york-zip-codes precedent for when to bump 'updated' (L-0805-18 principle)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure ZIP-code/city/military-installation-as-geography content. No reverse-lookup functionality, no YMYL claims. Naming Fort Bliss as a large Army post is standard factual/geographic reference content, not sensitive."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "This article has no hero image, inline image, or diagramSvg field."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "No violence/weapons/drugs/gambling content, no misleading headline, no clickbait layout. Site-wide ads.txt/required pages not re-checked this run (no site-wide changes made this audit)."
+    }
+  ],
+  "independent_confirmations": [
+    "Agent 1 (population comparison, San Antonio vs El Paso): CONFIRMED PROBLEM -- actual gap ~111-124% more, not ~40%.",
+    "Agent 2 (population comparison, Houston vs San Antonio 'close in population'): CONFIRMED PROBLEM -- actual gap ~57-58%, not close.",
+    "Agent 3 (causal explanation for El Paso's ZIP count): CONFIRMED PROBLEM -- no source corroborates the Franklin Mountains/border-economy narrative; documented factors are land area and Fort Bliss instead."
+  ],
+  "actions_taken": [
+    "Corrected 'San Antonio has roughly 40% more residents than El Paso' to 'San Antonio has more than double El Paso's population -- roughly 1.5 million versus 680,000, per Census Bureau estimates' in section 3 body, citing 2 new Census QuickFacts sources.",
+    "Corrected coreSummary's 'despite Houston and San Antonio being close in population' (false) to a sentence pointing at the actually-true anomaly: 'El Paso has fewer than half of San Antonio's population but nearly twice its ZIP code count.'",
+    "Replaced the unsourced Franklin Mountains/border-economy causal narrative with the documented explanation (El Paso's ~248 sq mi land area, one of the largest in Texas, plus Fort Bliss, a major Army post carrying its own ZIP codes), citing 2 new Wikipedia sources.",
+    "Fixed the parallel FAQ answer that repeated the same flawed Houston population-comparison logic, replacing it with an accurate framing that points to the corrected El Paso/San Antonio anomaly instead.",
+    "Added 2 new outbound in-body links (/dallas-zip-codes/, /austin-zip-codes/) in section 2, fixing a confirmed zero-outbound-links gap (same pattern as 2 prior audits on this site).",
+    "Added 4 new sourced citations to the sources array (2 Census Bureau QuickFacts, 2 Wikipedia).",
+    "Bumped 'updated' from 2026-08-03 to 2026-08-09 (published field was already present, no backfill needed) given the substantive nature of the fix.",
+    "npm test (64/64 passed) and npm run build (27 pages) both passed after the edit.",
+    "Committed and pushed to origin/main; verified live via polling.",
+    "Submitted https://dialwick.com/texas-zip-codes/ via tools/submit-indexnow.mjs; logged to indexnow-submit-log.json.",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish."
+  ],
+  "seo_score": "on-page technical: no confirmed issues (meta description 161 chars is 1 char over guideline, not escalated per precedent)",
+  "geo_score": "~72-76/99 pre-fix (borderline, below 80, due to single-source EEAT + zero internal links + 2 wrong population comparisons + 1 invented causal claim) -> ~86/99 post-fix (pass)",
+  "escalation": null
+}
+```
