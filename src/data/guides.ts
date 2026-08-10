@@ -1274,6 +1274,76 @@ export const guides: Guide[] = [
 			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
 		],
 	},
+	{
+		slug: 'chicago-area-code',
+		category: 'Area Code Guides',
+		title: 'Chicago Area Codes: 312, 773, 872, and How 312 Became an Island',
+		description:
+			"312 used to cover all of Chicago and its suburbs. Two splits and an overlay later, it's an enclave -- one area code entirely surrounded by another, 773, inside the same city.",
+		published: '2026-08-10',
+		updated: '2026-08-10',
+		coreSummary:
+			'Chicago runs on three overlaid area codes today -- 312, 773, and 872 -- all serving the exact same footprint inside city limits. 312 started in 1947 as the single code for the whole Chicago area, including the suburbs. A 1989 split carved off the suburbs into 708, and a second split in 1996 carved off every Chicago neighborhood outside downtown into 773, leaving 312 an enclave: a small area code entirely encircled by 773 rather than bordering a different region. 872 overlaid both in 2009 once splitting the city a third time stopped being a workable option.',
+		sections: [
+			{
+				heading: "Chicago's three area codes",
+				body: [
+					"All three of the area codes below cover the identical geographic footprint -- the [City of Chicago](/chicago-zip-codes/), inside [Cook County](/what-county-is-chicago-in/). Which one a given phone number carries depends only on when it was assigned, not on where in the city its owner lives or works.",
+				],
+				table: {
+					caption: "Chicago's area codes",
+					columns: ['Area code', 'Coverage', 'In service since'],
+					rows: [
+						['312', 'Downtown Chicago and the Loop', '1947 (original)'],
+						['773', 'City of Chicago, outside downtown', 'October 12, 1996'],
+						['872', 'Overlay covering both 312 and 773', 'November 7, 2009'],
+					],
+				},
+			},
+			{
+				heading: 'Two splits turned the original 312 into an island',
+				body: [
+					"312 was one of the original 86 area codes AT&T assigned in 1947, and at the time it covered the entire Chicago metropolitan area -- the city itself plus the surrounding suburbs that would later get their own codes. Chicago's growth forced two separate splits off that original footprint. The first, on November 11, 1989, drew a line around the city limits and handed every suburban number a new code, 708, while every number still inside Chicago kept 312.",
+					"The second split, on October 12, 1996, cut through the city itself rather than separating city from suburb again -- a rarer move in US area code history. Chicago outside downtown and the Loop moved to a new code, 773, while the downtown core kept 312. That left 312 as what telecom planners call an enclave area code: a small numbering plan area completely surrounded by a single other area code (773) rather than bordering several different regions the way a typical split-off code does.",
+					"By 2008, population and cell phone growth meant even two codes covering the same city weren't enough new numbers. Rather than attempting a third geographic split -- which would have meant redrawing lines through an already-small downtown core -- Illinois regulators added 872 in 2009 as an overlay across the combined footprint of both 312 and 773. Anyone who already had a 312 or 773 number kept it; only new numbers assigned after November 7, 2009 got 872. The [difference between a split and an overlay](/how-do-area-codes-work/) is the same distinction that shaped [Detroit's newest area code, 679](/michigan-area-codes/).",
+				],
+			},
+			{
+				heading: 'The Chicago suburbs run their own separate overlay pairs',
+				body: [
+					"The area codes bordering Chicago -- 847/224 to the north and northwest, 630/331 to the west, 708/464 to the south and west, and 815/779 further out -- are separate numbering plan areas, not part of the city's own 312/773/872 overlay. 708 itself, the code split off Chicago in 1989, later needed its own overlay: 464 was added on top of it in 2022 for the same reason 872 was added downtown, more subscribers than the original code had numbers left to assign.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does Chicago have?',
+				answer:
+					'Three: 312 (the original, from 1947), 773 (added in 1996), and 872 (an overlay added in 2009). All three cover the same area within city limits.',
+			},
+			{
+				question: "What's the difference between 312 and 773?",
+				answer:
+					"312 covers downtown Chicago and the Loop; 773 covers the rest of the city. Both have been in service since the 1996 split and neither is being phased out -- which number you have depends on when it was assigned, not where you live today.",
+			},
+			{
+				question: 'Why is 312 called an enclave area code?',
+				answer:
+					"Because it's a small numbering plan area entirely surrounded by a single other code, 773, rather than bordering several different regions the way most split-off area codes do. That happened because Chicago's second split (1996) cut through the city itself instead of separating city from suburb.",
+			},
+			{
+				question: 'Do I need to dial 10 digits for a local Chicago call?',
+				answer:
+					"Yes. Once an overlay (872, in this case) shares a footprint with existing codes, the North American Numbering Plan requires area code plus number for every local call, not just long-distance ones.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Area code 312', url: 'https://en.wikipedia.org/wiki/Area_code_312' },
+			{ label: 'Wikipedia: Area code 773', url: 'https://en.wikipedia.org/wiki/Area_code_773' },
+			{ label: 'Wikipedia: Area code 872', url: 'https://en.wikipedia.org/wiki/Area_code_872' },
+			{ label: 'Wikipedia: Area codes 708 and 464', url: 'https://en.wikipedia.org/wiki/Area_codes_708_and_464' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Counties
