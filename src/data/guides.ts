@@ -1052,6 +1052,92 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
+	{
+		slug: 'michigan-area-codes',
+		category: 'Area Code Lists',
+		title: "Every Michigan Area Code, and the Split Tree Behind Detroit's Newest",
+		description:
+			"Michigan has 13 area codes today, seven descended from Detroit's original 313 -- here's the full list, plus the split-and-overlay chain behind each one, including the newest, 679.",
+		published: '2026-08-10',
+		updated: '2026-08-10',
+		coreSummary:
+			'Michigan started with three area codes in the original 1947 numbering plan -- 313 for Detroit, 517 for Lansing, and 616 for Grand Rapids -- and has split and overlaid its way to 13 today. Detroit\'s 313 alone accounts for seven of them, most recently 679, which began serving new phone lines on November 7, 2025, a month after 10-digit local dialing became mandatory across the Detroit metro.',
+		sections: [
+			{
+				heading: 'All 13 Michigan area codes',
+				body: [
+					"Michigan's 13 area codes trace back to just three original codes assigned when the North American Numbering Plan launched in 1947. Seven descend from Detroit's 313 alone; the rest split off from Grand Rapids's 616 or Lansing's 517, as the table below shows -- see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in practice.",
+				],
+				table: {
+					caption: 'All 13 Michigan area codes',
+					columns: ['Area code', 'Region', 'In service since'],
+					rows: [
+						['231', 'Northwestern Michigan: Traverse City, Muskegon, Ludington, Petoskey', 'Jun 5, 1999'],
+						["248", "Oakland County, Detroit's northern suburbs", 'May 10, 1997'],
+						['269', 'Southwestern Michigan: Kalamazoo, Battle Creek, Benton Harbor', 'Jul 13, 2002'],
+						['313', 'Detroit, Dearborn, the Grosse Pointes, Hamtramck', '1947 (original)'],
+						['517', 'Lansing, Jackson, and south-central Michigan', '1947 (original)'],
+						["586", "Macomb County, Detroit's northeastern suburbs", 'Sep 22, 2001'],
+						['616', 'Grand Rapids, Holland, and southwestern Michigan', '1947 (original)'],
+						['679', 'Detroit metro area (overlay on 313)', 'Nov 7, 2025'],
+						["734", "Ann Arbor, Ypsilanti, and Detroit's western suburbs", 'Dec 13, 1997'],
+						['810', "Flint, Port Huron, and Michigan's Thumb", 'Dec 1, 1993'],
+						['906', 'Upper Peninsula: Marquette, Sault Ste. Marie, Escanaba', 'Mar 19, 1961'],
+						['947', 'Oakland County (overlay on 248)', 'Sep 7, 2002'],
+						['989', 'Bay City, Saginaw, Alpena, and central Michigan', 'Apr 7, 2001'],
+					],
+				},
+			},
+			{
+				heading: "Detroit's 313 grew into seven of Michigan's 13 codes",
+				body: [
+					"313 covered the entire Detroit metro area on its own from 1947 until 1993, when the state split off 810 to cover Flint, Port Huron, and the rural Thumb region northeast of the city. 810 was itself split twice more within a decade -- 248 broke off in 1997 to cover Oakland County, and 586 followed in 2001 for Macomb County -- before Oakland County ran out of numbers under 248 alone and got a second, overlaid code, 947, in 2002. Detroit's other direct split, 734, peeled off Ann Arbor and Ypsilanti in 1997.",
+					"313 itself kept its original Detroit-Dearborn-Grosse Pointes footprint the whole time, and by the early 2020s was projected to run out of available numbers again -- this time without room left to split off a new geographic area. Michigan's regulator chose an overlay instead: 679 was reserved for the same territory 313 already covered, and went into service for new lines on November 7, 2025. Between the two of them, the seven codes descended from 313 -- 313, 810, 248, 586, 947, 734, and 679 -- now account for just over half of the state's total.",
+					"One metro area's original code eventually accounting for the majority of its state's total isn't unique to Michigan -- [California's own area code history](/california-area-codes/) shows the same pattern at a larger scale, where Los Angeles alone traces through six generations of splits and overlays back to a single 1947 code, 213.",
+				],
+			},
+			{
+				heading: "Grand Rapids and Lansing split off the rest",
+				body: [
+					"616 covered Grand Rapids and the rest of southwestern Michigan from 1947 until 1961, when the Upper Peninsula split off as 906 -- geographically Michigan's largest area code by far, despite covering one of its smallest populations. 616 split twice more after that: 231 broke off the northwestern Lower Peninsula (Traverse City, Muskegon) in 1999, and 269 took Kalamazoo and Battle Creek in 2002, leaving 616 itself with just the immediate Grand Rapids area.",
+					"517 has had the quietest history of Michigan's three originals: it covered Lansing and the south-central part of the state from 1947 and split only once, handing Bay City, Saginaw, and Alpena to the new 989 code in 2001. Unlike 313 and 248, neither 517 nor 616 has needed an overlay yet -- both still run on a single area code today.",
+				],
+			},
+			{
+				heading: "679 is under a year old, and it changed how Detroit dials",
+				body: [
+					"The Michigan Public Service Commission set 679 in motion after an early-2020s projection put 313's number exhaustion in the third quarter of 2025 -- the estimate that triggered the overlay case. That exhaustion date has since been pushed back: thousands-block number pooling and other conservation measures extended 313's runway, and the commission's own 2025 filings put the current projected exhaustion date in late 2027. The overlay itself went ahead on its original schedule regardless. Because 313 already covered a fully built-out urban area with no adjacent territory left to split off, the commission chose an overlay rather than a geographic split -- meaning existing 313 numbers stayed exactly as they were, and new phone lines in the same area became eligible to receive 679 numbers once the overlay went into service.",
+					"The overlay came with a dialing change that arrived before the new area code itself did: starting April 7, 2025, callers within the 313 area were asked to begin practicing 10-digit dialing, and it became mandatory for all local calls on October 7, 2025 -- a full month before 679 numbers were actually assigned, starting November 7, 2025. That sequencing is standard for NANPA-coordinated overlays: the dialing change has to be in place first, or a new 10-digit number and an old 7-digit one in the same area code could collide.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does Michigan have?',
+				answer: '13 as of 2026, up from the three Michigan started with in the original 1947 numbering plan (313, 517, and 616).',
+			},
+			{
+				question: "What is Michigan's newest area code?",
+				answer:
+					'679, an overlay on Detroit\'s 313 that began receiving new phone line assignments on November 7, 2025.',
+			},
+			{
+				question: 'Do I need to dial 10 digits for local calls in Michigan?',
+				answer:
+					'It depends on the area code. 10-digit dialing is mandatory in the two overlaid regions -- 313/679 (Detroit metro, mandatory since October 7, 2025) and 248/947 (Oakland County) -- because two area codes share the same territory there. Michigan\'s other nine area codes are not currently overlaid and still allow 7-digit local dialing.',
+			},
+			{
+				question: "What was Michigan's original area code?",
+				answer:
+					"Michigan launched with three in 1947: 313 for Detroit, 517 for Lansing, and 616 for Grand Rapids.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Michigan Public Service Commission: 313/679 Area Code Relief Options and FAQ', url: 'https://www.michigan.gov/mpsc/-/media/Project/Websites/mpsc/regulatory/telecom/313-679/Area-Code-Relief-Options-and-FAQ.pdf' },
+			{ label: 'NANPA: 10-Digit Dialing Required in the Michigan 313 Area Code', url: 'https://www.nanpa.com/sites/default/files/2025-09/MI_313-679_MandatoryDialingPressRelease.pdf' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Guides
