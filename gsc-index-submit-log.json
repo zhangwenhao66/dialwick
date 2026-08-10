@@ -95,5 +95,18 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 request"
+  },
+  {
+    "date": "2026-08-10",
+    "action": "submitted",
+    "reason": "trafficsite-gsc-index-requests例行运行，本次游标终点站。今日两篇新发布，denver-zip-codes查询确认'Discovered - currently not indexed'，REQUEST INDEXING后确认'Indexing requested'。michigan-area-codes本轮时间/配额限制未及查询，留待下次运行优先处理。",
+    "submitted_urls": [
+      "https://dialwick.com/denver-zip-codes/"
+    ],
+    "already_indexed_no_action": [],
+    "not_checked_this_run": [
+      "https://dialwick.com/michigan-area-codes/"
+    ],
+    "quota_used": "1 request"
   }
 ]
