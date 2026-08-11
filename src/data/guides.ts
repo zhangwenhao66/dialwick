@@ -1279,7 +1279,7 @@ export const guides: Guide[] = [
 		category: 'Area Code Guides',
 		title: 'Chicago Area Codes: 312, 773, 872, and How 312 Became an Island',
 		description:
-			"312 used to cover all of Chicago and its suburbs. Two splits and an overlay later, it's an enclave -- one area code entirely surrounded by another, 773, inside the same city.",
+			"312 used to cover all of Chicago and its suburbs. Two splits and an overlay later, it's an enclave -- surrounded by 773, inside the same city.",
 		published: '2026-08-10',
 		updated: '2026-08-10',
 		coreSummary:
