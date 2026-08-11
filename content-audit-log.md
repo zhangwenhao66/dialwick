@@ -375,3 +375,101 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "escalation": null
 }
 ```
+
+## chicago-area-code
+
+```json
+{
+  "url_slug": "chicago-area-code",
+  "url": "https://dialwick.com/chicago-area-code/",
+  "last_audited": "2026-08-11",
+  "published_date": "2026-08-10",
+  "diagnostic_checklist": [
+    "1. Was 312 one of the original 86 area codes AT&T assigned in 1947, covering the entire Chicago metropolitan area including suburbs?",
+    "2. Did the first split (312 -> 708 for the suburbs) happen on November 11, 1989?",
+    "3. Did the second split (773 carved out of 312, downtown-vs-rest-of-city) happen on October 12, 1996, and is 312 accurately described as an 'enclave' area code (surrounded entirely by 773)?",
+    "4. Did the 872 overlay across the combined 312/773 footprint go into service on November 7, 2009?",
+    "5. Was 464 added as an overlay on 708 in 2022, for the same number-exhaustion reason as 872?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "4 distinct, specific Wikipedia sources (one per area code: 312, 773, 872, plus 708-and-464), each independently corroborated via WebSearch against third-party sources (ooma, mycountrymobile, allareacodes, Illinois Commerce Commission press materials). Not vague/generic; every claim traces to a named, checkable source."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "pass, all 5 checklist items independently verified",
+      "detail": "(1) 312 confirmed as one of the original 86 NANP area codes from 1947, originally covering the whole Chicago metro area including suburbs -- matches Wikipedia and multiple third-party sources. (2) 708 split from 312 on November 11, 1989 -- confirmed by Wikipedia (Area codes 708 and 464) and 3+ independent sources. (3) 773 split date: found a genuine primary-source inconsistency -- the Area code 312 Wikipedia page states October 11, 1996 while the Area code 773 Wikipedia page (more directly relevant to the event) and the overwhelming majority of third-party sources (checked via WebSearch, including allareacodes.com, letsdial.com, npnr.org) state October 12, 1996. DialWick's article uses October 12 -- verified as the correct/majority date, not a DialWick error. Noted for future reference in case other DialWick articles cite the 312 Wikipedia page's date. The 'enclave' framing is directly corroborated by the 312 Wikipedia article's own text: 'It made the area code an enclave code, similar to area code 514 in Montreal and area code 210 in San Antonio.' (4) 872 overlay effective November 7, 2009 -- confirmed by Illinois Commerce Commission press materials and Wikipedia. (5) 464 overlay on 708 -- confirmed effective January 21, 2022 per ICC press release and Chicago Sun-Times; DialWick's 'added...in 2022' phrasing is accurate (approved in 1999, implemented in 2022). No factual errors found in any of the 5 load-bearing claims."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "Published/updated 2026-08-10, audited one day later. No newer information supersedes any claim in the article."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "WebSearch for 'Chicago area code 312 773 872 explained' shows the SERP dominated by VOIP-provider marketing pages (Ooma, Dialpad, MyCountryMobile, Convirza) that give the basic facts but do not explain the 'enclave' concept, do not give specific split/overlay dates, and do not cross-reference the broader NANP split-vs-overlay pattern. DialWick's article's specific dates, 'enclave' terminology explanation, and internal cross-link to Michigan's analogous 679 overlay are genuine incremental value versus the SERP."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit (Skill seo-audit)",
+      "status": "confirmed problem -> fixed (description); pass, not escalated (title)",
+      "detail": "Live page checked via curl+DOM: single H1, 4 H2s (incl. FAQ), canonical present, JSON-LD present (FAQPage/Article/WebPage/Person/BreadcrumbList). Meta description was 174 chars raw -- independent agent confirmed via pixel-width estimate (~1030-1110px vs. Google's ~920px desktop / ~680px mobile budgets) that this exceeds safe-display limits on both desktop and especially mobile. Fixed: shortened to 142 chars, preserving the core claim. Title field is 63 chars (74 with ' | DialWick' suffix) -- consistent with this site's established precedent of not escalating titles in the 65-75 char range (scam-area-codes left 70 chars, texas-zip-codes left 69 chars, both as-is); not escalated."
+    },
+    {
+      "dimension": "6. GEO / ai-seo (99-point rubric)",
+      "status": "pass, ~86/99, no fix needed",
+      "detail": "Manual rubric pass: strong structure (H2s, table, 4-item FAQ with schema), 4 named authoritative sources, specific dated statistics throughout (5 different dates), 4 outbound in-body internal links already present at publish time (chicago-zip-codes, what-county-is-chicago-in, how-do-area-codes-work, michigan-area-codes) -- notably better than several prior-audited articles that needed outbound-link fixes. Weaker on verbatim quoted material (paraphrase only) and first-party statistics, consistent with every other article on this site. No confirmed GEO-blocking issue found; the meta-description fix does not affect this score materially."
+    },
+    {
+      "dimension": "7. Humanizer / avoid-ai-writing backfill",
+      "status": "pass, checked (published 2026-08-10, post-dates the 2026-08-07 avoid-ai-writing mandate, so this check was mandatory not optional)",
+      "detail": "Ran Skill(humanizer) and Skill(avoid-ai-writing) in detect mode against the full article text. No AI-writing tells found: no AI-vocabulary words (delve, tapestry, robust, leverage, etc.), no rule-of-three padding, no promotional language, no vague attribution (the 'what telecom planners call an enclave area code' phrasing is a legitimate descriptive term, not weasel-word hedging), no curly quotes, no chatbot artifacts, no copula-avoidance clustering. Site's established ' -- ' double-hyphen dash convention used consistently (not flagged, per established sitewide exemption). Sentence length varies reasonably. No fix needed."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "All 4 cited Wikipedia sources (Area code 312, Area code 773, Area code 872, Area codes 708 and 464) return HTTP 200."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "4 manual outbound in-body links already present (chicago-zip-codes, what-county-is-chicago-in, how-do-area-codes-work, michigan-area-codes). Zero manual inbound in-body links from other articles (grep of guides.ts found only the self-reference at the entry's own slug line), but this article's category (Area Code Guides) has exactly 3 members (how-do-area-codes-work, scam-area-codes, chicago-area-code), which is <=6, so the automated related-guides rotation shows all 3 to each other mutually. Verified live via curl: both how-do-area-codes-work and scam-area-codes' rendered HTML contain an href to /chicago-area-code/. Not a long-term orphan."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList/Person JSON-LD all auto-derive from the same guide object fields; live page confirmed post-fix that Article/WebPage description reflects the new shortened text. No prior edits existed before this audit."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure area-code/telecom-history content (splits, overlays, dates). No reverse-lookup functionality, no scam/YMYL-sensitive claims, no named-entity risk."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "This article has no hero image, inline image, or diagramSvg field -- consistent with this site's established no-images pattern across all audited articles."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt resolves correctly and points to pub-5245502795720653 (google.com, pub-5245502795720653, DIRECT, f08c47fec0942fa0). /privacy/ page reachable (HTTP 200, contains AdSense client tag). No misleading claims, no scam-content sensationalism (this article doesn't touch scam content), no clickbait layout."
+    }
+  ],
+  "independent_confirmations": [
+    "Agent 1 (meta description length / SERP truncation risk): CONFIRMED -- independently recomputed the 174-char count, then estimated pixel width (~1030-1110px) against Google's ~920px desktop / ~680px mobile display budgets and found it exceeds both, more so on mobile."
+  ],
+  "actions_taken": [
+    "Shortened meta description from 174 to 142 chars ('312 used to cover all of Chicago and its suburbs. Two splits and an overlay later, it's an enclave -- surrounded by 773, inside the same city.'), preserving the core claim, per independent agent's CONFIRMED finding.",
+    "npm test (64/64 passed) and npm run build (30 pages) both passed after the edit.",
+    "Committed (3dc25e9) and pushed to origin/main; verified live via polling (new description confirmed present in live HTML within 85s of push).",
+    "Submitted https://dialwick.com/chicago-area-code/ via tools/submit-indexnow.mjs (Bing 200, Yandex 202); logged to indexnow-submit-log.json.",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish (committed 897b2bb)."
+  ],
+  "seo_score": "on-page technical: 1 confirmed issue (meta description length, 174->142 chars) found and fixed; title (74 chars w/ suffix) reviewed and not escalated per site precedent",
+  "geo_score": "~86/99 both before and after fix (pass; the fix was a technical-SEO-only change, not a content/structure change, so the GEO estimate is unaffected)",
+  "escalation": null
+}
+```
