@@ -877,6 +877,113 @@ export const guides: Guide[] = [
 		],
 	},
 
+	{
+		slug: 'houston-zip-codes',
+		category: 'ZIP Codes',
+		title: "Houston ZIP Codes: The Full List, and the Independent City Filed Under Houston's Name",
+		description:
+			"Houston has 178 ZIP codes in two postal blocks -- and one of them, 77005, belongs to a city that has never joined Houston, while its equally independent neighbor Bellaire got a ZIP name of its own instead.",
+		published: '2026-08-11',
+		updated: '2026-08-11',
+		coreSummary:
+			'USPS assigns 178 ZIP codes to "Houston, TX" as the primary place name, and this site\'s source data puts every one of them in Harris County -- no cross-county split, unlike this site\'s Atlanta or Denver lists. They split into two blocks: 98 codes in the 770xx range, covering the delivery routes that carry most of the city\'s residential and business mail, and 80 in the 772xx range, a mix mostly made up of PO boxes and single-recipient codes assigned to government offices and other high-volume mailers. One 770xx code, 77005, belongs to West University Place, an independent city that has never joined Houston -- yet its next-door neighbor Bellaire, just as independent, was given a ZIP place name of its own (77401) instead of Houston\'s. On the other side of that inconsistency sits Independence Heights, Texas\'s first incorporated Black city, which actually did vote to join Houston in 1928 and carries Houston\'s name today for the far less surprising reason that it really is part of the city.',
+		sections: [
+			{
+				heading: 'All 178 ZIP codes with "Houston, TX" as the primary USPS place name',
+				body: [
+					'Every one of the 178 ZIP codes USPS assigns to "Houston, TX" sits in Harris County, per this site\'s source data -- there\'s no county split here the way there is on this site\'s [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists. A separate tally from zip-codes.com breaks the same 178 codes down by delivery type: 97 standard codes tied to carrier routes, 75 PO Box codes, and 6 unique codes reserved for single high-volume recipients, one example being the City of Houston\'s own municipal mailing address at P.O. Box 1562, ZIP 77251.',
+					"That delivery-type split lines up closely with a pattern visible in the raw ZIP numbers themselves: 98 codes fall in the contiguous 770xx block (77001 through 77099), which covers most of the city's residential and business delivery routes, while the other 80 sit in a separate, far less contiguous 772xx block (77201 through 77299) -- the same range where most of the PO Box and unique codes live. It's the same convention this site found behind two outlier Los Angeles codes, 90095 and 90134: cities with enough mail volume get extra, non-sequential codes carved out for specific high-volume recipients rather than geography.",
+				],
+				table: {
+					caption: 'All 178 ZIP codes with "Houston, TX" as the primary USPS place name (per GeoNames.org, checked 2026-08-11)',
+					columns: ['ZIP'],
+					rows: [
+						['77001'], ['77002'], ['77003'], ['77004'], ['77005'],
+						['77006'], ['77007'], ['77008'], ['77009'], ['77010'],
+						['77011'], ['77012'], ['77013'], ['77014'], ['77015'],
+						['77016'], ['77017'], ['77018'], ['77019'], ['77020'],
+						['77021'], ['77022'], ['77023'], ['77024'], ['77025'],
+						['77026'], ['77027'], ['77028'], ['77029'], ['77030'],
+						['77031'], ['77032'], ['77033'], ['77034'], ['77035'],
+						['77036'], ['77037'], ['77038'], ['77039'], ['77040'],
+						['77041'], ['77042'], ['77043'], ['77044'], ['77045'],
+						['77046'], ['77047'], ['77048'], ['77049'], ['77050'],
+						['77051'], ['77052'], ['77053'], ['77054'], ['77055'],
+						['77056'], ['77057'], ['77058'], ['77059'], ['77060'],
+						['77061'], ['77062'], ['77063'], ['77064'], ['77065'],
+						['77066'], ['77067'], ['77068'], ['77069'], ['77070'],
+						['77071'], ['77072'], ['77073'], ['77074'], ['77075'],
+						['77076'], ['77077'], ['77078'], ['77079'], ['77080'],
+						['77081'], ['77082'], ['77083'], ['77084'], ['77085'],
+						['77086'], ['77087'], ['77088'], ['77089'], ['77090'],
+						['77091'], ['77092'], ['77093'], ['77094'], ['77095'],
+						['77096'], ['77098'], ['77099'], ['77201'], ['77202'],
+						['77203'], ['77204'], ['77205'], ['77206'], ['77207'],
+						['77208'], ['77209'], ['77210'], ['77212'], ['77213'],
+						['77215'], ['77216'], ['77217'], ['77218'], ['77219'],
+						['77220'], ['77221'], ['77222'], ['77223'], ['77224'],
+						['77225'], ['77226'], ['77227'], ['77228'], ['77229'],
+						['77230'], ['77231'], ['77233'], ['77234'], ['77235'],
+						['77236'], ['77237'], ['77238'], ['77240'], ['77241'],
+						['77242'], ['77243'], ['77244'], ['77245'], ['77248'],
+						['77249'], ['77251'], ['77252'], ['77253'], ['77254'],
+						['77255'], ['77256'], ['77257'], ['77258'], ['77259'],
+						['77261'], ['77262'], ['77263'], ['77265'], ['77266'],
+						['77267'], ['77268'], ['77269'], ['77270'], ['77271'],
+						['77272'], ['77273'], ['77274'], ['77275'], ['77277'],
+						['77279'], ['77280'], ['77282'], ['77284'], ['77287'],
+						['77288'], ['77289'], ['77290'], ['77291'], ['77292'],
+						['77293'], ['77297'], ['77299'],
+					],
+				},
+			},
+			{
+				heading: "West University Place: an independent city that shows up on Houston's own list",
+				body: [
+					'ZIP 77005 -- one of the 178 in the table above -- belongs to West University Place, a city with its own government, its own police department, and its own city hall that has never joined Houston at all. West University Place incorporated in 1925 and adopted a home-rule, council-manager charter in 1940; Houston annexed the unincorporated land around it over the following decades but left the incorporated city itself alone, the same way it later grew around Bellaire and Southside Place. Today West University Place sits entirely inside Houston\'s outline on a map, at about two square miles, bordered on its remaining sides by Bellaire and Southside Place.',
+					"That makes 77005 an inconsistency, not a mistake, once you look at Bellaire next door: Bellaire is just as independent as West University Place -- Houston annexed the land around it too, completing the encirclement on December 31, 1948, and Bellaire responded the following April by adopting its own home-rule charter -- yet USPS gave Bellaire a ZIP place name of its own, 77401 (and 77402), rather than filing it under Houston. Two neighboring cities, both fully surrounded, both never annexed, and only one of them carries the surrounding city's name at the post office. It's a version of the same disconnect this site found in [Dallas](/dallas-zip-codes/), where a legally independent town, Highland Park, has its ZIP codes filed under Dallas's name anyway -- a reminder that a USPS place name tracks mail routing, not incorporation records.",
+				],
+			},
+			{
+				heading: 'Independence Heights: the one neighborhood on this list that actually did join Houston',
+				body: [
+					"Two of the 178 codes above, 77018 and 77022, cover Independence Heights, a neighborhood in north Houston bounded roughly by Tidwell Road, Yale Street, Loop 610, and Airline Drive. Its history runs in the opposite direction from West University Place's: Independence Heights incorporated on January 25, 1915, becoming the first Black-governed municipality in Texas, with attorney George O. Burgess elected its first mayor over a population of around 600. Over the next decade the city built its own shell-paved streets, plank sidewalks, and a municipal water system, and by the late 1920s it was home to roughly 40 Black-owned businesses -- grocery stores, a lumber company, law offices, and more.",
+					"Unlike Bellaire and West University Place, Independence Heights didn't hold out. Facing money problems the small city struggled to solve on its own, residents voted in November 1928 to dissolve their own incorporation specifically so they could become part of Houston, and the annexation took effect on December 26, 1929. The city services residents hoped annexation would bring were slow to arrive, but the ZIP codes covering the old townsite, 77018 and 77022, carry Houston's name today for the most straightforward reason on this whole list: the neighborhood actually voted to become part of Houston, and did.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Houston have?',
+				answer:
+					"178, all in Harris County per this site's source data. A separate breakdown from zip-codes.com splits that total into 97 standard delivery-route codes, 75 PO Box codes, and 6 unique codes reserved for single high-volume recipients.",
+			},
+			{
+				question: 'Is West University Place part of the city of Houston?',
+				answer:
+					"No. West University Place has run its own city council and police force since it incorporated in 1925 and has never been annexed by Houston. Its ZIP code, 77005, is nonetheless filed under Houston's name -- a USPS mail-routing convention, not a legal boundary.",
+			},
+			{
+				question: "Why does Bellaire have its own ZIP code but West University Place doesn't?",
+				answer:
+					"Both are independent cities fully surrounded by Houston, but USPS treated them differently: Bellaire was assigned its own place name, 77401, while West University Place's ZIP, 77005, carries Houston's name instead. There's no annexation-status difference between the two cities that explains the split -- it comes down to how USPS's place-name database happened to be set up.",
+			},
+			{
+				question: 'What is Independence Heights, and is it part of Houston?',
+				answer:
+					"Independence Heights was Texas's first incorporated Black municipality, established in 1915 in what's now north Houston. Residents voted to dissolve the city and join Houston in November 1928, and the annexation took effect on December 26, 1929. Its ZIP codes today, 77018 and 77022, carry Houston's name because the neighborhood really did become part of the city.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Houston, Texas ZIP codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/tx-houston.asp' },
+			{ label: 'West University Place, Texas -- Wikipedia', url: 'https://en.wikipedia.org/wiki/West_University_Place,_Texas' },
+			{ label: 'History of Bellaire, Texas -- Wikipedia', url: 'https://en.wikipedia.org/wiki/History_of_Bellaire,_Texas' },
+			{ label: 'Independence Heights -- Texas State Historical Association', url: 'https://www.tshaonline.org/handbook/entries/independence-heights-tx' },
+			{ label: 'Independence Heights, Houston -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Independence_Heights,_Houston' },
+		],
+	},
+
 	// ---------------------------------------------------------------------
 	// Area Code Lists
 	// ---------------------------------------------------------------------
