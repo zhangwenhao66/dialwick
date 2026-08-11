@@ -1070,9 +1070,9 @@ export const guides: Guide[] = [
 	{
 		slug: 'california-area-codes',
 		category: 'Area Code Lists',
-		title: "Every California Area Code, and the Family Tree Behind Los Angeles's Six",
+		title: "All 41 California Area Codes, Plus the Family Tree Behind LA's Six",
 		description:
-			"California has 41 area codes today, more than any other state -- and Los Angeles alone traces back through six generations of splits and overlays to a single 1947 code, 213.",
+			"Every one of California's 41 area codes, mapped to its region and the year it went into service -- plus how Los Angeles alone split and overlaid its way from a single 1947 code, 213, to six today.",
 		published: '2026-08-03',
 		updated: '2026-08-03',
 		coreSummary:
@@ -1489,8 +1489,9 @@ export const guides: Guide[] = [
 		],
 		faq: [
 			{
-				question: 'Is Chicago in Cook County?',
-				answer: "Yes, entirely -- all of Chicago's ZIP codes are inside Cook County, with no split into a neighboring county.",
+				question: 'What county is Chicago in?',
+				answer:
+					"Chicago is entirely inside Cook County -- all 84 of the city's ZIP codes fall within it, with no split into a neighboring county.",
 			},
 			{
 				question: 'What is the county seat of Cook County?',
