@@ -983,6 +983,93 @@ export const guides: Guide[] = [
 			{ label: 'Independence Heights, Houston -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Independence_Heights,_Houston' },
 		],
 	},
+	{
+		slug: 'las-vegas-zip-codes',
+		category: 'ZIP Codes',
+		title: "Las Vegas ZIP Codes: The Full List, and the Strip That Isn't Really in the City",
+		description:
+			"Las Vegas has 77 ZIP codes -- and the Strip's own code, 89109, is split between Paradise and Winchester, two unincorporated towns Clark County created to keep the resort corridor out of the city's tax base.",
+		published: '2026-08-11',
+		updated: '2026-08-11',
+		coreSummary:
+			'USPS assigns 77 ZIP codes to "Las Vegas, NV" as the primary place name, and this site\'s source data puts every one of them in Clark County -- no cross-county split like this site\'s Atlanta or Denver lists. The best-known of the 77, 89109, isn\'t mostly inside the city of Las Vegas at all: a city-data.com boundary breakdown puts 53.44% of that ZIP in Paradise, 42.03% in Winchester, and only 4.53% in the City of Las Vegas proper. Paradise and Winchester are both unincorporated Clark County towns that grew out of a 1950 fight over the Strip\'s tax base -- county commissioners created the original township of Paradise on December 8, 1950, after casino operators lobbied to keep the resort corridor out of the city\'s reach, then reorganized it in 1951 into two towns along school-district lines, one of which took the name Winchester in 1953. Neither town has ever been part of the City of Las Vegas, and neither has its own ZIP place name -- so their ZIP codes, including the Strip\'s, are filed under "Las Vegas" anyway.',
+		sections: [
+			{
+				heading: 'All 77 ZIP codes with "Las Vegas, NV" as the primary USPS place name',
+				body: [
+					"USPS assigns 77 ZIP codes to \"Las Vegas, NV\" as the primary place name, and every one of them sits in Clark County according to this site's source data -- there's no county split here the way there is on this site's [Atlanta](/atlanta-zip-codes/) or [Denver](/denver-zip-codes/) lists. Clark County is the only county Las Vegas touches, so a county breakdown wouldn't tell you anything useful about this city's ZIP map.",
+					"All 77 fall inside a single contiguous block, 89101 through 89199. That's different from [Houston](/houston-zip-codes/), which splits its ZIP codes into two separate ranges, 770xx and 772xx, with the second block reserved mostly for PO Boxes and high-volume mailers -- Las Vegas's codes here don't carry that same split.",
+				],
+				table: {
+					caption: 'All 77 ZIP codes with "Las Vegas, NV" as the primary USPS place name (per GeoNames.org, checked 2026-08-11)',
+					columns: ['ZIP'],
+					rows: [
+						['89101'], ['89102'], ['89103'], ['89104'], ['89105'],
+						['89106'], ['89107'], ['89108'], ['89109'], ['89110'],
+						['89111'], ['89112'], ['89113'], ['89114'], ['89115'],
+						['89116'], ['89117'], ['89118'], ['89119'], ['89120'],
+						['89121'], ['89122'], ['89123'], ['89124'], ['89125'],
+						['89126'], ['89127'], ['89128'], ['89129'], ['89130'],
+						['89131'], ['89132'], ['89133'], ['89134'], ['89135'],
+						['89136'], ['89137'], ['89138'], ['89139'], ['89140'],
+						['89141'], ['89142'], ['89143'], ['89144'], ['89145'],
+						['89146'], ['89147'], ['89148'], ['89149'], ['89150'],
+						['89151'], ['89152'], ['89153'], ['89154'], ['89155'],
+						['89156'], ['89157'], ['89158'], ['89159'], ['89160'],
+						['89161'], ['89162'], ['89164'], ['89165'], ['89166'],
+						['89169'], ['89170'], ['89173'], ['89177'], ['89178'],
+						['89179'], ['89180'], ['89183'], ['89185'], ['89193'],
+						['89195'], ['89199'],
+					],
+				},
+			},
+			{
+				heading: 'Paradise: the town casino operators invented to keep the Strip out of city hall',
+				body: [
+					"The most recognizable ZIP code on the list above, 89109, is the address for most of the Las Vegas Strip -- and most of that ZIP code isn't actually inside the city of Las Vegas. A boundary breakdown from city-data.com splits 89109 three ways: 53.44% in Paradise, 42.03% in Winchester, and just 4.53% in the City of Las Vegas itself. Both Paradise and Winchester are unincorporated Clark County towns that have never been annexed by, or become part of, the City of Las Vegas.",
+					"Paradise exists because of a fight over tax revenue. In 1950, Las Vegas mayor Ernie Cragin pushed to annex the then-unincorporated Strip so the city could tax the casinos being built along it. A group of casino operators, led by the Flamingo's Gus Greenbaum, lobbied the Clark County Commission for township status instead -- a designation that would keep the Strip under county government and out of the city's reach. The commission created Paradise on December 8, 1950, and its first town board was made up of five casino managers, with Greenbaum as chair.",
+					"Paradise's population was 191,238 at the 2020 census. Beyond the Strip, the town also contains Harry Reid International Airport and the University of Nevada, Las Vegas -- none of it part of the city whose name shows up on the mail.",
+				],
+			},
+			{
+				heading: 'Winchester: the sibling town with the same origin story',
+				body: [
+					"Winchester exists because of a legal snag in Paradise's original boundary: it crossed into two separate school districts, which Nevada law didn't allow. To fix that, the county reorganized Paradise in 1951 into two towns, one covering the section inside the Las Vegas school district and the other covering the section inside the Paradise school district. In October 1953, the first of those two took the name Winchester and the second kept the name Paradise. Both towns are still governed today by the Clark County Commission, each with its own town advisory board, and neither has ever been part of the city of Las Vegas. Winchester's 2020 census population was 36,403.",
+					"Neither Paradise nor Winchester has its own ZIP place name. ZIP codes inside both towns -- including 89109, the Strip's own code -- are filed under \"Las Vegas\" because that's the mailing city USPS assigns them, not because the towns are part of the city. It's the same kind of mismatch this site found in [Houston](/houston-zip-codes/), where ZIP 77005 carries Houston's name despite belonging to the fully independent city of West University Place -- except in Las Vegas's case, it's the entire world-famous resort corridor filed under a city that has never governed it.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Las Vegas have?',
+				answer:
+					"77, per USPS's place-name assignment, and all 77 sit in Clark County according to this site's source data.",
+			},
+			{
+				question: 'Is the Las Vegas Strip actually inside the city of Las Vegas?',
+				answer:
+					"No, mostly. ZIP code 89109, the Strip's main code, splits 53.44% into Paradise, 42.03% into Winchester, and only 4.53% into the City of Las Vegas itself, per a city-data.com boundary breakdown. Both Paradise and Winchester are unincorporated Clark County towns that have never been annexed by the City of Las Vegas.",
+			},
+			{
+				question: "Why does the Strip's ZIP code say \"Las Vegas\" if it's not in the city?",
+				answer:
+					"Because USPS assigns each ZIP code a mailing-city name for postal routing, not for legal jurisdiction. Neither Paradise nor Winchester has its own separate ZIP place name, so ZIP codes inside both towns, including the Strip's 89109, are filed under \"Las Vegas\" even though the towns have run their own affairs since the early 1950s.",
+			},
+			{
+				question: 'What is Paradise, Nevada?',
+				answer:
+					"Paradise is an unincorporated Clark County town created on December 8, 1950, after a group of casino operators lobbied the county for township status to keep the Las Vegas Strip out of the city's tax base. Its first town board was made up of five casino managers. It's governed by the Clark County Commission, not the City of Las Vegas, and its 2020 census population was 191,238.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Paradise, Nevada -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Paradise,_Nevada' },
+			{ label: 'Winchester, Nevada -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Winchester,_Nevada' },
+			{ label: 'Where is Paradise in Las Vegas? -- Las Vegas Review-Journal', url: 'https://www.reviewjournal.com/local/local-las-vegas/the-origins-of-paradise-in-las-vegas-3174948/' },
+			{ label: 'Las Vegas vs. Clark County: there are differences between living in city limits and unincorporated county land -- Las Vegas Sun', url: 'https://lasvegassun.com/news/2019/jul/12/las-vegas-vs-clark-county-there-are-differences-be/' },
+			{ label: 'ZIP code 89109 city breakdown -- city-data.com', url: 'https://www.city-data.com/zips/89109.html' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
