@@ -1160,16 +1160,16 @@ export const guides: Guide[] = [
 		category: 'Area Code Lists',
 		title: 'Every Texas Area Code, and the Overlay Stack Behind Each Metro',
 		description:
-			"Texas has 29 area codes today. Dallas alone accounts for four of them stacked on top of each other -- here's the full list, plus which codes overlay which in Houston, San Antonio, Austin, and Fort Worth.",
+			"Texas has 29 area codes today. Dallas alone stacks four on the same footprint -- the full list, plus how Houston, San Antonio, and Austin overlay theirs too.",
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-12',
 		coreSummary:
-			'Texas has grown from two original 1947 area codes (214 for the north, 512 for the south) to 29 today. Dallas-Fort Worth alone now runs on five overlaid codes (214/469/972/945 for Dallas, plus 817/682 for Fort Worth); Houston runs on five as well (713/281/832/346/621). No Texas metro still uses a single, un-overlaid area code.',
+			"Texas has grown from four original 1947 area codes (214, 512, 713, and 915) to 29 today. Dallas alone now runs on four overlaid codes (214/469/972/945); add Fort Worth's own 817/682 pair and the wider metroplex runs on six area codes total. Houston runs on five overlaid codes (713/281/832/346/621). Smaller metros like Waco, Corpus Christi, Abilene, Lubbock, and Laredo still get by on a single, un-overlaid code -- it's only the state's four largest metros that have run out of room.",
 		sections: [
 			{
 				heading: 'All 29 Texas area codes',
 				body: [
-					"Texas started with just two area codes in the original 1947 numbering plan -- 214 for the northern half of the state (including Dallas and Fort Worth) and 512 for the southern half (including Austin, San Antonio, and Houston). Every other Texas code on this list is a descendant of one of those two, created either by splitting off a region or by overlaying an existing area with a second code once the original ran out of numbers.",
+					"Texas started with four area codes in the original 1947 numbering plan -- 214 for the northeast (Dallas and Fort Worth), 512 for south-central Texas (Austin and San Antonio), 713 for the southeast (Houston), and 915 for the west (El Paso and part of Hudspeth County). Every other Texas code on this list is a descendant of one of those four, created either by splitting off a region or by [overlaying](/how-do-area-codes-work/) an existing area with a second code once the original ran out of numbers.",
 				],
 				table: {
 					caption: 'All 29 Texas area codes',
@@ -1208,17 +1208,17 @@ export const guides: Guide[] = [
 				},
 			},
 			{
-				heading: 'Dallas and Houston each run on a five-code overlay stack',
+				heading: 'Dallas runs a four-code overlay stack; Houston runs a five-code one',
 				body: [
 					"214 was Dallas's only area code from 1947 until 1990, when it split off 903 to cover northeast Texas. By 1996, 214 itself had run out of numbers again -- but instead of splitting Dallas geographically a second time, the state overlaid the same footprint with 972, then added 469 as a third overlay in 1999, and 945 as a fourth in 2021. All four codes -- 214, 469, 972, and 945 -- now serve the exact same Dallas metro area simultaneously; which one a given phone gets is essentially random.",
-					"Houston followed an almost identical pattern: 713 was the original 1947 code, split to create 281 in 1996, which was itself overlaid rather than split again -- first by 832 in 1999, then 346 in 2014, then 621 in 2025. Fort Worth (817, overlaid by 682 in 2000) and San Antonio (210, overlaid by 726 in 2017) each run a smaller two-code version of the same pattern; only Austin (512, overlaid by 737) has managed with just two codes so far.",
+					"[Houston](/houston-zip-codes/) followed an almost identical pattern: 713 was the original 1947 code, split to create 281 in 1996, which was itself overlaid rather than split again -- first by 832 in 1999, then 346 in 2014, then 621 in 2025. Fort Worth (817, overlaid by 682 in 2000) and San Antonio (210, overlaid by 726 in 2017) each run a smaller two-code version of the same pattern; only Austin (512, overlaid by 737) has managed with just two codes so far.",
 				],
 			},
 		],
 		faq: [
 			{
 				question: 'How many area codes does Texas have?',
-				answer: '29 as of 2026, up from the two Texas started with in the original 1947 numbering plan (214 and 512).',
+				answer: '29 as of 2026, up from the four Texas started with in the original 1947 numbering plan (214, 512, 713, and 915).',
 			},
 			{
 				question: 'What area codes does Dallas use?',
@@ -1233,6 +1233,7 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Original North American area codes', url: 'https://en.wikipedia.org/wiki/Original_North_American_area_codes' },
 		],
 	},
 	{
