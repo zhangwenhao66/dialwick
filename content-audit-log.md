@@ -473,3 +473,111 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "escalation": null
 }
 ```
+
+## texas-area-codes
+
+```json
+{
+  "url_slug": "texas-area-codes",
+  "url": "https://dialwick.com/texas-area-codes/",
+  "last_audited": "2026-08-12",
+  "published_date": "2026-08-03",
+  "selection_note": "Never-audited article (site had 19 of 24 guides never audited). 6 guides tied for oldest published date (2026-08-03, same launch commit 44d25dd): texas-area-codes, california-area-codes, how-do-area-codes-work, what-county-is-chicago-in, what-county-is-houston-in, how-to-call-mexico-from-us. Tie-broken deterministically by array position in guides.ts (texas-area-codes appears first among the six). This site's known 373-single-area-code-page rollout does not exist yet in guides.ts (verified via grep -- no slugs matching a bare 3-digit-code pattern), so the staged-rollout/4-distinct-facts caveat in this run's brief does not apply to any currently published DialWick article.",
+  "diagnostic_checklist": [
+    "1. Did Texas really start with just two original 1947 area codes (214, 512), as the article's coreSummary/body/FAQ all claim, or was the true number different?",
+    "2. Does the coreSummary's 'Dallas-Fort Worth alone now runs on five overlaid codes (214/469/972/945 for Dallas, plus 817/682 for Fort Worth)' actually add up to five when the listed codes are counted?",
+    "3. Is the coreSummary's blanket claim 'No Texas metro still uses a single, un-overlaid area code' accurate, or does it overreach beyond the metros actually discussed in the article?",
+    "4. Do the 29 table rows' 'In service since' dates match authoritative sources (spot-checked 210/726/737/469/621/945)?",
+    "5. Does this article have any manual in-body internal links in either direction (matches the zero-outbound-links pattern already found and fixed 3x on this site: atlanta-zip-codes, new-york-zip-codes, texas-zip-codes)?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass, strengthened by fix",
+      "detail": "Single source (Wikipedia: List of North American Numbering Plan area codes) pre-fix -- weaker than most sibling articles (2-4 sources). Added a second source during this audit (Wikipedia: Original North American area codes) to directly support the corrected 1947-origin-count fact."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed (3 issues, all independently confirmed)",
+      "detail": "(a) coreSummary, section-1 body, and FAQ#1 all claimed Texas 'started with just two area codes in the original 1947 numbering plan -- 214... and 512...' (with 512 incorrectly described as covering Houston). Independent agent WebSearched and directly fetched Wikipedia's 'Original North American area codes' article (table lists '214, 512, 713, 915' together for Texas) plus the 'Area codes 214, 469, 972, and 945' Wikipedia article ('the first nationwide telephone numbering plan in 1947 divided the state of Texas into four numbering plan areas... 214... 512... 713... and 915'), and confirmed CONFIRMED PROBLEM: Texas actually started with four 1947 area codes, not two, and Houston was served by 713 from the start, not 512. This was also directly falsifiable from the article's own data: this site's own areaCodesRaw.json (scripted from Wikipedia, the article's sole cited source) already listed dateEstablished='1947' for 713 and 915 too, and the article's own table in the same guide entry listed both 713 and 915 as '1947' -- the prose contradicted the article's own table before any external check. (b) coreSummary and the section-2 H2 heading both stated 'five' for Dallas-Fort Worth's combined overlay count while listing/describing six codes (214/469/972/945 for Dallas + 817/682 for Fort Worth). Independent agent recounted: 'Dallas-Fort Worth... listed 6, claimed 5 -- CONFIRMED PROBLEM' (Houston's separate 'five' claim, 713/281/832/346/621, was correctly counted -- not an error). (c) coreSummary's blanket claim 'No Texas metro still uses a single, un-overlaid area code' was checked against this site's own areaCodesRaw.json, which shows 254 (Waco), 325 (Abilene), 361 (Corpus Christi), 409 (Beaumont), 432 (Midland-Odessa), 806 (Lubbock-Amarillo), 956 (Laredo-Harlingen-Brownsville-McAllen), and 979 (Bryan-College Station) all have no overlay code. Independent agent confirmed via WebSearch that all 8 remain single-code today (409's overlay isn't even in planning; 806's and 956's approved future overlays aren't active yet) and that Waco, Corpus Christi, Abilene, Lubbock, and Laredo are all official US Census Bureau Metropolitan Statistical Areas an ordinary reader would call a 'Texas metro' -- CONFIRMED PROBLEM, the blanket claim is false against at least 5 recognized MSAs."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass on the data layer; the 3 confirmed problems above were narrative/prose errors, not stale data",
+      "detail": "Spot-checked 6 of the 29 table dates (210: Nov 1 1992, 726: Oct 23 2017, 737: Jul 1 2013, 469: Jul 1 1999, 621: Jan 23 2025, 945: Jan 15 2021) against independent WebSearch and against this site's own areaCodesRaw.json (retrieved 2026-08-03 from Wikipedia's List of NANP area codes) -- all 6 matched exactly, both externally and against the site's own canonical dataset. The 29-row table itself is accurate; all 3 confirmed problems were in the historical-narrative prose layered on top of the correct table data, the same 'correct data, wrong narrative' pattern seen in texas-zip-codes' prior audit."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "This site's established 'ZIP/area-code count doesn't map cleanly onto population/history the way a plain listicle implies' differentiation angle applies here too -- the overlay-stack narrative (why Dallas and Houston each ended up with multiple simultaneous codes instead of geographic splits) is deeper than the flat area-code lists on competitor sites (zipcodestogo.com-style directories). Not independently re-verified via a fresh SERP check this run since the finding wasn't in question -- consistent with prior audits only escalating dimensions with an actual confirmed problem."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit (Skill seo-audit)",
+      "status": "confirmed problem -> fixed (description); pass, not escalated (title)",
+      "detail": "Live page checked via curl+DOM: single H1, 3 H2s (2 content + FAQ), canonical present and self-referencing, 3 JSON-LD blocks (Article/FAQPage/BreadcrumbList) present and consistent with pre-fix content. Meta description was 203 chars raw, exceeding this site's already-established ~150-160 char guideline (5 prior precedent fixes on this site). Fixed: shortened to 157 chars, preserving the core claim. Title field is 62 chars (73 with ' | DialWick' suffix) -- consistent with this site's established precedent of not escalating titles in the 65-75 char range (scam-area-codes left 70, texas-zip-codes left 69, chicago-area-code left 74); not escalated."
+    },
+    {
+      "dimension": "6. GEO / ai-seo (99-point rubric)",
+      "status": "borderline fail pre-fix (~70-74/99) -> pass post-fix (~85/99)",
+      "detail": "Manual rubric pass consistent with prior audits' methodology (skill invocation surfaced the audit framework; applied manually against the gathered evidence). Pre-fix weaknesses: single-source EEAT, zero internal links in either direction, and -- more serious than most sibling audits -- 3 confirmed factual/count errors on a data-reference page (worse than most priors, which had 1-2). Post-fix: added a second named source, added 2 outbound in-body links (/how-do-area-codes-work/, /houston-zip-codes/), corrected all 3 factual issues including the H2 heading. Estimated post-fix score ~85/99, comfortably above the 80 threshold, in line with sibling articles' post-fix scores."
+    },
+    {
+      "dimension": "7. Humanizer / avoid-ai-writing backfill",
+      "status": "not applicable to original text (published 2026-08-03, predates the 2026-08-07 avoid-ai-writing mandate) / new text checked and clean",
+      "detail": "Original text not re-humanized wholesale, per established precedent (same status as scam-area-codes/atlanta-zip-codes/texas-zip-codes). All newly-written passages (coreSummary rewrite, section-1 body rewrite, H2 heading, FAQ#1 answer, meta description) were run through Skill(humanizer) and Skill(avoid-ai-writing) in detect mode before publishing -- no AI-writing tells found (no AI-vocabulary words, no rule-of-three padding, no vague attribution, no copula avoidance, specific numbers/facts throughout). Site's established ' -- ' double-hyphen dash convention used consistently, not flagged per established sitewide exemption."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "Original source (Wikipedia: List of North American Numbering Plan area codes) returns HTTP 200. New source added during this audit (Wikipedia: Original North American area codes) also returns HTTP 200."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "grep of guides.ts confirmed texas-area-codes had zero manual in-body outbound links pre-fix, despite discussing Dallas/Fort Worth/Houston/San Antonio/Austin by name -- the same zero-outbound-links pattern already found and fixed 3x on this site (atlanta-zip-codes, new-york-zip-codes, texas-zip-codes). Inbound: zero manual in-body links from other articles either, but this article's category ('Area Code Lists') has exactly 3 members (texas-area-codes, california-area-codes, michigan-area-codes), which is <=6, so the automated related-guides rotation shows all 3 to each other mutually -- verified live via curl that both california-area-codes and michigan-area-codes's rendered HTML contain an href to /texas-area-codes/. Not a long-term orphan (same reasoning as chicago-area-code's prior audit, which treated rotation-covered zero-inbound as a pass). Fixed the outbound gap: added [overlaying](/how-do-area-codes-work/) in the section-1 body (matching the established cross-link pattern used in michigan-area-codes and chicago-area-code, both of which link the same target for the split-vs-overlay explanation) and [Houston](/houston-zip-codes/) in the section-2 body."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all auto-derive from the same guide object fields; verified post-fix on the live deployed page that the description reflects the new shortened text and the FAQPage schema reflects the corrected FAQ#1 answer. datePublished stayed 2026-08-03 (published field was already present, no backfill needed per this run's published-before-updated rule); dateModified bumped to 2026-08-12 given the substantive nature of the fix (3 confirmed factual corrections + 1 new source + 2 new internal links), consistent with the texas-zip-codes/new-york-zip-codes precedent for when to bump 'updated'."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure area-code/telecom-history/list content (splits, overlays, dates, regional coverage). No reverse-lookup functionality, no YMYL claims, no named-entity controversy risk."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "This article has no hero image, inline image, or diagramSvg field -- consistent with this site's established no-images pattern across all audited articles."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt resolves correctly and points to pub-5245502795720653 (google.com, pub-5245502795720653, DIRECT, f08c47fec0942fa0). /privacy/ page reachable (HTTP 200). No misleading claims, no clickbait layout, no violence/weapons/drugs/gambling content -- low-risk telecom-data topic."
+    }
+  ],
+  "independent_confirmations": [
+    "Agent 1 (Texas's original 1947 area code count): CONFIRMED PROBLEM -- Texas started with four (214, 512, 713, 915), not two; independently sourced Wikipedia's 'Original North American area codes' and 'Area codes 214, 469, 972, and 945' articles.",
+    "Agent 2 (Dallas-Fort Worth 'five overlaid codes' arithmetic): CONFIRMED PROBLEM -- 6 codes listed (214/469/972/945/817/682), not 5; Houston's separate 'five' claim (713/281/832/346/621) verified correct, not an error.",
+    "Agent 3 ('No Texas metro still uses a single, un-overlaid area code' blanket claim): CONFIRMED PROBLEM -- at least 5 recognized MSAs (Waco, Corpus Christi, Abilene, Lubbock, Laredo) still run a single, un-overlaid code as of 2026."
+  ],
+  "actions_taken": [
+    "Corrected the '1947 origin' claim in coreSummary, section-1 body, and FAQ#1 from 'just two' (214, 512, with 512 wrongly described as covering Houston) to the accurate 'four' (214, 512, 713, 915), fixing the Houston/713 attribution and the 'every other code is a descendant of one of those two' framing to 'those four'.",
+    "Fixed the Dallas-Fort Worth overlay-count arithmetic error in coreSummary (rewrote to state Dallas's 4 codes and Fort Worth's 2 codes separately, totaling 6, rather than the wrong 'five') and in the section-2 H2 heading ('Dallas and Houston each run on a five-code overlay stack' -> 'Dallas runs a four-code overlay stack; Houston runs a five-code one', matching the section body's own already-correct 'four' and 'five' figures).",
+    "Rescoped coreSummary's 'No Texas metro still uses a single, un-overlaid area code' to name the smaller metros (Waco, Corpus Christi, Abilene, Lubbock, Laredo) that still run one un-overlaid code, clarifying the claim applies only to the state's four largest metros.",
+    "Added a second sourced citation (Wikipedia: Original North American area codes).",
+    "Added 2 outbound in-body links (/how-do-area-codes-work/ on 'overlaying', /houston-zip-codes/ on 'Houston'), fixing a confirmed zero-outbound-links gap matching this site's established pattern.",
+    "Shortened meta description from 203 to 157 chars, preserving the core claim.",
+    "Ran Skill(humanizer) and Skill(avoid-ai-writing) in detect mode on all newly-written passages before publishing; no issues found.",
+    "Bumped 'updated' from 2026-08-03 to 2026-08-12 (published field was already present, no backfill needed) given the substantive nature of the fix.",
+    "npm test (64/64 passed) and npm run build (33 pages) both passed after the edit.",
+    "Committed (5a2e73e) and pushed to origin/main; verified live via polling (new description, H2 heading, both new outbound links, and the corrected FAQ answer all confirmed present in live HTML within ~40s of push).",
+    "Submitted https://dialwick.com/texas-area-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 202); logged to indexnow-submit-log.json (committed separately, 85501e5, since that file had unrelated concurrent-task changes already merged in by the script itself).",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish."
+  ],
+  "seo_score": "on-page technical: 1 confirmed issue (meta description length, 203->157 chars) found and fixed; title (73 chars w/ suffix) reviewed and not escalated per site precedent",
+  "geo_score": "~70-74/99 pre-fix (borderline fail, below 80, due to single-source EEAT + zero internal links + 3 confirmed factual/count errors) -> ~85/99 post-fix (pass)",
+  "escalation": null
+}
+```
