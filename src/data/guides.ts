@@ -1070,6 +1070,87 @@ export const guides: Guide[] = [
 			{ label: 'ZIP code 89109 city breakdown -- city-data.com', url: 'https://www.city-data.com/zips/89109.html' },
 		],
 	},
+	{
+		slug: 'sacramento-zip-codes',
+		category: 'ZIP Codes',
+		title: 'Sacramento ZIP Codes: The Full List, and the 59 That Never Reach a House',
+		description:
+			"Sacramento has 100 ZIP codes, but 59 sit in a block state agencies use for tax filings and other high-volume mail -- only 41 actually cover the city's homes and businesses.",
+		published: '2026-08-12',
+		updated: '2026-08-12',
+		coreSummary:
+			'USPS assigns 100 ZIP codes to "Sacramento, CA" as the primary place name, all in Sacramento County per this site\'s source data -- no cross-county split like this site\'s Atlanta or Denver lists. They split into two ranges: 41 codes in the 958xx block, covering the city\'s actual residential and business delivery routes, and 59 in the 942xx block, reserved for high-volume state government correspondence rather than home delivery -- among them the California Franchise Tax Board\'s separate PO Box codes for personal returns without payment (94240), personal returns with payment (94267), and business returns (94257). The split traces back to February 1854, when the state legislature voted to move California\'s capital to Sacramento from Benicia. A separate zip-codes.com breakdown of the same city, compiled at a different time, puts the total at 99 and classifies it as 29 standard delivery codes, 61 unique high-volume codes, and 9 PO Box codes -- close to, but not an exact match for, this site\'s own count.',
+		sections: [
+			{
+				heading: 'All 100 ZIP codes with "Sacramento, CA" as the primary USPS place name',
+				body: [
+					"Sacramento County is the only county in this table, unlike this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists, which each split across county lines. zip-codes.com runs its own count of Sacramento's ZIP codes and lands on 99, one short of the 100 pulled from this site's GeoNames-based source data -- the two counts were compiled at different times and won't necessarily line up exactly. Where zip-codes.com does add useful detail is delivery type: it classifies 29 of the codes as standard routes tied to carriers, 61 as unique codes tied to a single high-volume recipient, and 9 as PO Boxes.",
+					"That delivery-type split lines up with a pattern visible in the raw ZIP numbers themselves: 41 codes fall in the 958xx block (95811 through 95899), which covers most of the city's actual residential and business delivery routes, while the other 59 sit in a separate 942xx block (94203 through 94299) reserved for state government correspondence -- similar to the way this site found [Houston](/houston-zip-codes/) splitting into a residential 770xx block and a PO-Box-heavy 772xx block, though Sacramento's non-residential share is proportionally larger.",
+				],
+				table: {
+					caption: 'All 100 ZIP codes with "Sacramento, CA" as the primary USPS place name (per GeoNames.org, checked 2026-08-12)',
+					columns: ['ZIP'],
+					rows: [
+						['94203'], ['94204'], ['94205'], ['94206'], ['94207'],
+						['94208'], ['94209'], ['94211'], ['94229'], ['94230'],
+						['94232'], ['94234'], ['94235'], ['94236'], ['94237'],
+						['94239'], ['94240'], ['94244'], ['94245'], ['94247'],
+						['94248'], ['94249'], ['94250'], ['94252'], ['94254'],
+						['94256'], ['94257'], ['94258'], ['94259'], ['94261'],
+						['94262'], ['94263'], ['94267'], ['94268'], ['94269'],
+						['94271'], ['94273'], ['94274'], ['94277'], ['94278'],
+						['94279'], ['94280'], ['94282'], ['94283'], ['94284'],
+						['94285'], ['94286'], ['94287'], ['94288'], ['94289'],
+						['94290'], ['94291'], ['94293'], ['94294'], ['94295'],
+						['94296'], ['94297'], ['94298'], ['94299'], ['95811'],
+						['95812'], ['95813'], ['95814'], ['95815'], ['95816'],
+						['95817'], ['95818'], ['95819'], ['95820'], ['95821'],
+						['95822'], ['95823'], ['95824'], ['95825'], ['95826'],
+						['95827'], ['95828'], ['95829'], ['95830'], ['95831'],
+						['95832'], ['95833'], ['95834'], ['95835'], ['95836'],
+						['95837'], ['95838'], ['95840'], ['95841'], ['95842'],
+						['95851'], ['95852'], ['95853'], ['95860'], ['95864'],
+						['95865'], ['95866'], ['95867'], ['95894'], ['95899'],
+					],
+				},
+			},
+			{
+				heading: "Why 59 of Sacramento's 100 ZIP codes never deliver mail to a house",
+				body: [
+					"The 942xx block exists because Sacramento is California's seat of government, not because the city itself is unusually large -- its population, about 525,000, is smaller than San Francisco's (roughly 830,000) or San Jose's (roughly 990,000), both of which get by with far fewer non-residential codes. The state legislature voted to move the capital to Sacramento from Benicia in February 1854, and the growth of state government in the city since then is what eventually pushed USPS to carve out dedicated codes for departments that receive far more mail than any single street address could sort through on its own.",
+					"The California Franchise Tax Board's own mailing-address page shows exactly how that plays out: personal income tax returns filed without a payment go to PO Box 942840, Sacramento, CA 94240; the same returns filed with a payment go to a different code, 94267; and business tax returns go to yet another, 94257. None of those three codes corresponds to a street address a resident could visit -- each one exists to sort incoming tax mail by return type before it's even opened, a level of postal subdivision a typical U.S. city never needs.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Sacramento have?',
+				answer:
+					"100, per this site's GeoNames-based source data. A separate zip-codes.com tally puts the number at 99 and classifies them as 29 standard delivery codes, 61 unique high-volume codes, and 9 PO Box codes.",
+			},
+			{
+				question: 'Why does Sacramento have so many ZIP codes for its population?',
+				answer:
+					"Most of the total isn't for residents at all: 59 of Sacramento's 100 ZIP codes fall in the 942xx block, which USPS reserves for high-volume state government correspondence rather than home delivery. Only 41 codes, in the 958xx block, cover the city's actual neighborhoods.",
+			},
+			{
+				question: 'What ZIP code do I use to mail a California state tax return?',
+				answer:
+					"It depends on the form and whether a payment is included. The Franchise Tax Board lists separate ZIP codes for each combination -- personal returns without payment go to 94240, personal returns with payment go to 94267, and business returns go to 94257 -- each a dedicated PO Box, not a street address.",
+			},
+			{
+				question: "When did Sacramento become California's capital?",
+				answer:
+					'February 1854, when the state legislature voted to move the capital there from Benicia.',
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Sacramento, CA ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-sacramento.asp' },
+			{ label: 'Franchise Tax Board: Mailing addresses', url: 'https://www.ftb.ca.gov/help/contact/mailing-addresses.html' },
+			{ label: 'California State Capitol -- Wikipedia', url: 'https://en.wikipedia.org/wiki/California_State_Capitol' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
