@@ -1622,6 +1622,108 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: Area codes 708 and 464', url: 'https://en.wikipedia.org/wiki/Area_codes_708_and_464' },
 		],
 	},
+	{
+		slug: 'nyc-area-code',
+		category: 'Area Code Guides',
+		title: 'New York City Area Codes: All Eight, Plus the Manhattan Block Wired Into the Bronx',
+		description:
+			"NYC runs on eight area codes split into two separate overlay stacks -- one for Manhattan, one for the other four boroughs -- except for the Manhattan neighborhood that uses neither.",
+		published: '2026-08-12',
+		updated: '2026-08-12',
+		coreSummary:
+			"New York City is served by eight area codes: 212, 646, and 332 cover Manhattan; 718, 347, 929, and the newly activated 465 cover the Bronx, Brooklyn, Queens, and Staten Island; and 917, added in 1992, is the one code that overlays all five boroughs at once. The two four-borough groups exist because the city's numbering plan split only once, in 1984, dividing Manhattan from everywhere else -- every area code added since has overlaid one side of that line, never both. One neighborhood breaks the pattern: Marble Hill, legally part of Manhattan, dials on the outer-borough codes instead, because its phone lines run through a Bronx switching center.",
+		sections: [
+			{
+				heading: "New York City's eight area codes, and which side of the 1984 line each one sits on",
+				body: [
+					'New York City had a single area code, 212, from the start of the North American Numbering Plan in 1947 until 1984. Every code added since belongs to one of two separate overlay stacks -- Manhattan\'s or the outer boroughs\' -- with a single exception that crosses both.',
+				],
+				table: {
+					caption: "NYC's area codes and which boroughs each one covers",
+					columns: ['Area code', 'Boroughs served', 'In service since'],
+					rows: [
+						['212', 'Manhattan (except Marble Hill)', '1947 (original)'],
+						['718', 'The Bronx, Brooklyn, Queens, Staten Island, and Marble Hill', 'September 1, 1984'],
+						['917', 'All five boroughs', 'February 4, 1992'],
+						['646', 'Manhattan (except Marble Hill)', 'July 1, 1999'],
+						['347', 'The Bronx, Brooklyn, Queens, Staten Island, and Marble Hill', 'October 1, 1999'],
+						['929', 'The Bronx, Brooklyn, Queens, Staten Island, and Marble Hill', 'April 16, 2011'],
+						['332', 'Manhattan (except Marble Hill)', 'June 10, 2017'],
+						['465', 'The Bronx, Brooklyn, Queens, Staten Island, and Marble Hill', 'June 18, 2026'],
+					],
+				},
+			},
+			{
+				heading: 'The 1984 split, and why the Bronx changed sides eight years later',
+				body: [
+					"By the early 1980s New York City was working through phone numbers faster than any other US region -- fax lines, dedicated business lines, second household lines, and the first pagers and car phones were all drawing from the same 212 pool. New York Telephone asked state regulators to divide the city, and on September 1, 1984, area code 718 went into service for Brooklyn, Queens, and Staten Island. Manhattan kept 212, and so, at first, did the Bronx.",
+					"That arrangement didn't last. On July 1, 1992, the Bronx moved from 212 to 718, aligning it with the other three outer boroughs and leaving 212 as Manhattan's alone. The switch drew objections from Bronx residents and businesses reluctant to give up a code that had become cultural shorthand for New York -- the same resistance outer-borough lawmakers had raised eight years earlier over the original split. It's the only geographic realignment New York City's phone system has gone through; every area code added afterward has overlaid an existing footprint rather than redrawing a boundary, the same shift from splits to overlays that later reshaped [Chicago's numbering plan](/chicago-area-code/) and [Detroit's](/michigan-area-codes/).",
+				],
+			},
+			{
+				heading: '917 is the one code that crosses the Manhattan/outer-borough line',
+				body: [
+					"917 went into service February 4, 1992, as the first overlay area code in North American Numbering Plan history -- a template every overlay since, in New York and elsewhere, has followed. Regulators created it specifically to absorb the city's fast-growing pager and early cell phone market, moving that traffic off 212 and 718 rather than splitting either code's geographic footprint again. The FCC later ruled that reserving an area code for one type of service was not allowed, but by then 917 numbers had already spread across ordinary landlines too.",
+					"What makes 917 structurally different from every other NYC code is its footprint: instead of belonging to the Manhattan stack (212, 646, 332) or the outer-borough stack (718, 347, 929, 465), it was assigned across all five boroughs from day one. No area code added to New York City since 1992 has repeated that -- 646 and 332 stayed inside Manhattan's line, and 347, 929, and 465 all stayed inside the outer boroughs'.",
+				],
+			},
+			{
+				heading: "Marble Hill: legally Manhattan, dials like the Bronx",
+				body: [
+					"Marble Hill is a small residential neighborhood at Manhattan's northern tip, and it's the reason every table above needs the words \"except Marble Hill\" or \"and Marble Hill.\" The neighborhood is still legally part of the Borough of Manhattan and New York County, but its area codes are 718, 347, 929, and 465 -- the outer-borough set -- not 212, 646, or 332.",
+					"The split traces back to the Harlem River Ship Canal, cut through Manhattan's northern tip in 1895 to connect the Harlem and Hudson Rivers for shipping traffic. The new canal severed Marble Hill from the rest of Manhattan Island, turning it briefly into its own island bounded by the canal on one side and the old, unfilled Harlem River channel on the other. In 1914, that old channel was filled in, physically joining Marble Hill to the Bronx mainland while its legal status as part of Manhattan never changed. Its phone lines were run through a Bronx switching center, and when the Bronx moved to 718 in 1992, Marble Hill's numbers went with it. Residents petitioned to keep 212 at the time; rewiring the neighborhood into a Manhattan switching center instead was judged too costly, and the outer-borough assignment has stuck through every overlay added since.",
+				],
+			},
+			{
+				heading: '465 activated in June 2026, the newest addition to either stack',
+				body: [
+					"New York's Public Service Commission authorized 465 as an overlay on the outer-borough stack -- 347, 718, and 929 -- once regulators projected that group would run out of assignable numbers. New numbers under 465 began going into service June 18, 2026; it's projected to supply roughly 11 more years of numbers for the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill.",
+					"465 changes nothing for anyone who already has a number on 212, 718, 917, 646, 347, 929, or 332 -- existing numbers, including their area codes, stay exactly as they are. It only affects new lines ordered in the outer-borough footprint from that date forward, and 10-digit dialing, already required citywide since 917 first overlaid 212 and 718 in 1992, doesn't change either.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does New York City have?',
+				answer:
+					"Eight: 212, 646, and 332 cover Manhattan; 718, 347, 929, and 465 cover the Bronx, Brooklyn, Queens, and Staten Island; and 917 covers all five boroughs at once.",
+			},
+			{
+				question: "What's the difference between 212 and 718?",
+				answer:
+					'212 is Manhattan\'s original 1947 area code. 718 was created September 1, 1984 for Brooklyn, Queens, and Staten Island, and the Bronx moved from 212 to 718 on July 1, 1992. That 1984 split is the only geographic realignment New York City\'s numbering plan has gone through -- every code added since has overlaid an existing footprint instead.',
+			},
+			{
+				question: 'Why does Marble Hill use 718 instead of 212, even though it\'s legally part of Manhattan?',
+				answer:
+					"Marble Hill was cut off from the rest of Manhattan Island by the Harlem River Ship Canal in 1895, then physically joined to the Bronx mainland by landfill in 1914, while remaining legally part of the Borough of Manhattan. Its phone lines run through a Bronx switching center, so when the Bronx moved to area code 718 in 1992, Marble Hill's numbers moved with it -- and it has stayed on the outer-borough side of every overlay added since (347, 929, and 465).",
+			},
+			{
+				question: 'Do I need to dial 10 digits for a local NYC call?',
+				answer:
+					'Yes. Ten-digit dialing (area code plus number) has been required for every local call in New York City since 917 first overlaid 212 and 718 in February 1992 -- true for all eight of today\'s codes, including the newly added 465.',
+			},
+			{
+				question: "What is 465, New York's newest area code?",
+				answer:
+					"465 is an overlay added to the outer-borough stack -- 347, 718, and 929 -- covering the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill. New numbers started using it June 18, 2026; it doesn't change any number that already exists.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Area codes 212, 646, and 332', url: 'https://en.wikipedia.org/wiki/Area_codes_212,_646,_and_332' },
+			{
+				label: 'Wikipedia: Area codes 718, 347, 929, and 465',
+				url: 'https://en.wikipedia.org/wiki/Area_codes_718,_347,_929,_and_465',
+			},
+			{ label: 'Wikipedia: Area code 917', url: 'https://en.wikipedia.org/wiki/Area_code_917' },
+			{ label: 'Wikipedia: Overlay complex', url: 'https://en.wikipedia.org/wiki/Overlay_complex' },
+			{
+				label: 'New York State Department of Public Service: additional NYC area code activated',
+				url: 'https://dps.ny.gov/news/additional-new-york-city-area-code-activated-accommodate-future-demand',
+			},
+			{ label: 'Wikipedia: Marble Hill, Manhattan', url: 'https://en.wikipedia.org/wiki/Marble_Hill,_Manhattan' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Counties
