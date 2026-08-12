@@ -118,5 +118,15 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 request"
+  },
+  {
+    "date": "2026-08-12",
+    "action": "submitted",
+    "reason": "游标第9站。今日新发布sacramento-zip-codes（第15篇，单区号页解禁前继续走ZIP角度补充覆盖）URL Inspection显示未收录（URL is unknown to Google），REQUEST INDEXING后确认'Indexing requested'。",
+    "submitted_urls": [
+      "https://dialwick.com/sacramento-zip-codes/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 request"
   }
 ]
