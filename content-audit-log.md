@@ -581,3 +581,95 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "escalation": null
 }
 ```
+
+## how-do-area-codes-work
+
+```json
+{
+  "url_slug": "how-do-area-codes-work",
+  "url": "https://dialwick.com/how-do-area-codes-work/",
+  "last_audited": "2026-08-13",
+  "published_date": "2026-08-03",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Cites Wikipedia's 'List of North American Numbering Plan area codes' and 'Area codes 212, 646, and 332' by name; claims are specific (rotary-dial pull counts, exact split years/codes) rather than generic."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed",
+      "detail": "Article claimed 'Manhattan is the extreme example: 212 (1947) was overlaid by 917 (1992), then 646 (1999), then 332 (2017) -- four area codes now serve the exact same borough at once.' Independent verification agent (WebSearch, Wikipedia 'Area codes 212, 646, and 332' primary source plus callmama.com/sipnex.ca/mycountrymobile.com/212areacode.com) confirmed REFUTED: 917 is a citywide overlay covering all five NYC boroughs (introduced 1992 as NANP's first-ever overlay, originally for cellular/pager numbers), not a Manhattan-only overlay like 212/646/332. Wikipedia's own article phrases it as 917 being layered on top of BOTH the Manhattan complex (212/646/332) and the outer-borough complex (718/347/929/465) -- 917's footprint is strictly larger than Manhattan, so 'four area codes now serve the exact same borough' overstates 917's geographic specificity. All other checked claims (1947 rotary-dial pull-count assignment rule, multi-code-state middle-digit-1 vs single-code-state middle-digit-0 rule, LA's 213 split five times 1951/1957/1984/1991/1998 into 714/805/818/310/323, El Paso 915 Mountain-Time-in-Texas example) independently verified accurate via WebSearch against Wikipedia/lincmad.com/CPUC sources."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "confirmed stale field -> fixed",
+      "detail": "updated field was still 2026-08-03 (publish day) despite the substantive factual fix; bumped to 2026-08-13. published field was already present (no git-history backfill needed per the pre-fix mandatory check)."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass -- strong",
+      "detail": "WebSearch for 'how do area codes work explained overlay split' shows the SERP (T-Mobile, AreaCodeAtlas, Wikipedia's own 'Area code split' page, mass.gov) covers the split/overlay mechanic but not the 1947 rotary-dial-pull-count assignment history, the middle-digit-1-vs-0 fossil rule, or LA's specific five-way split timeline -- DialWick's article provides genuine incremental depth, not a Wikipedia rehash."
+    },
+    {
+      "dimension": "5. SEO technical",
+      "status": "pass",
+      "detail": "Title 'How US Area Codes Actually Work' (32 chars) and description (186 chars raw / within normal site range) reasonable. Single H1 via layout, 4 H2 sections, self-authored inline SVG diagram (NPA_DIAGRAM) with no external image dependency."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~82-85/99 estimate",
+      "detail": "coreSummary gives a direct, complete answer; FAQPage schema present (3 Q&As); named authoritative sources; self-authored SVG diagram checked for label/rect overlap (none found, all three boxes non-overlapping with room to spare) and numeric consistency with body text (NPA-NXX-XXXX format matches). 4 confirmed inbound links from other articles (texas-area-codes, michigan-area-codes, chicago-area-code, us-country-code), all with bridging sentences independently re-read against this article's actual content and found accurate (no L-0805-4-style broken analogy)."
+    },
+    {
+      "dimension": "7. Humanizer/avoid-ai-writing backfill",
+      "status": "pass, no rewrite needed",
+      "detail": "published 2026-08-03, predates avoid-ai-writing's 2026-08-07 introduction. Full-article check: zero literal em-dash (U+2014) characters found anywhere in guides.ts (site uses ' -- ' double-hyphen house style throughout, 348 instances site-wide); no promotional language, rule-of-three padding, vague attribution, or inflated-symbolism patterns found on manual read of all 4 sections + FAQ. No rewrite needed."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "Both cited Wikipedia sources ('List of North American Numbering Plan area codes' and 'Area codes 212, 646, and 332') confirmed live and current via browser navigation during this audit."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "4 inbound manual anchor links found (texas-area-codes, michigan-area-codes, chicago-area-code, us-country-code). Each bridging sentence re-checked against this article's actual content (per L-0805-4) and found accurate -- no broken analogies or misattributed claims."
+    },
+    {
+      "dimension": "10. Schema data consistency",
+      "status": "pass",
+      "detail": "No prior schema drift; the one content edit (917 sentence rewrite) does not touch any structured-data-adjacent field (title/description/FAQ unchanged), so no schema desync introduced."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Purely technical telecom-numbering topic; no persons/events/groups referenced that could develop new controversy."
+    },
+    {
+      "dimension": "12. Image availability/copyright",
+      "status": "pass, not applicable",
+      "detail": "Article uses a self-authored inline SVG diagram (NPA_DIAGRAM constant), not an external/licensed image -- no copyright or link-rot risk."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "Low-risk telecom-numbering topic; no weapons/drugs/gambling/violence content, no misleading claims post-fix."
+    }
+  ],
+  "independent_confirmations": [
+    "Agent 1 (917 area code 'exact same borough' claim): REFUTED as written -- 917 is a citywide overlay covering all five NYC boroughs, not a Manhattan-only overlay matching 212/646/332's footprint. Verified via Wikipedia 'Area codes 212, 646, and 332' primary source plus 4 independent secondary sources."
+  ],
+  "actions_taken": [
+    "Rewrote the Manhattan-overlay sentence in section 3 ('Split vs. overlay') to correctly distinguish the three Manhattan-exclusive codes (212/646/332) from 917's citywide (all five boroughs) scope, while preserving the accurate underlying point that a Manhattan phone number can carry any of four area codes.",
+    "Bumped 'updated' from 2026-08-03 to 2026-08-13 (published field pre-existing, no backfill needed).",
+    "npm run build (35 pages) passed after the edit.",
+    "Committed (658d39a) and pushed to origin/main; verified live via polling (corrected 'Manhattan-only footprint' text confirmed present in live HTML within ~30s of push).",
+    "Submitted https://dialwick.com/how-do-area-codes-work/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200).",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish."
+  ],
+  "seo_score": "no technical SEO issues found or changed",
+  "geo_score": "~82-85/99 both pre- and post-fix (the 917 correction is a factual-precision fix, not a structural/GEO-scoring change)",
+  "escalation": null
+}
+```
