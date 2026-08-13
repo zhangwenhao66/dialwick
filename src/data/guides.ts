@@ -1151,6 +1151,93 @@ export const guides: Guide[] = [
 			{ label: 'California State Capitol -- Wikipedia', url: 'https://en.wikipedia.org/wiki/California_State_Capitol' },
 		],
 	},
+	{
+		slug: 'san-diego-zip-codes',
+		category: 'ZIP Codes',
+		title: 'San Diego ZIP Codes: The Full List, and the Three That Belong to a Military Base',
+		description:
+			"San Diego has 76 ZIP codes, and every one sits inside San Diego County -- no split like this site's Denver or Atlanta lists. Three of them, though, belong to a Navy or Marine base instead of a neighborhood.",
+		published: '2026-08-13',
+		updated: '2026-08-13',
+		coreSummary:
+			"USPS assigns 76 ZIP codes to \"San Diego, CA\" as the primary place name, and every one of them sits inside San Diego County, per this site's GeoNames-based source data -- unlike this site's Denver or Atlanta lists, where the ZIP footprint spills across a county line, San Diego's stays on one side of it. The count itself is not settled: zip-codes.com puts the city at 81 ZIP codes, and other directories land anywhere from 75 to 95 depending on how PO-Box-only and single-recipient codes get classified. Three of the 76 on this site's list do not belong to any neighborhood at all. 92136 is Naval Base San Diego on 32nd Street, the Pacific Fleet's main surface-ship homeport. 92140 is Marine Corps Recruit Depot San Diego, where West Coast recruits have trained since 1923. And 92145 is Marine Corps Air Station Miramar, the Navy base that sent its Topgun fighter school to Nevada in 1996 and its own ownership to the Marine Corps a year later.",
+		sections: [
+			{
+				heading: 'All 76 ZIP codes with "San Diego, CA" as the primary USPS place name',
+				body: [
+					"Every one of the 76 falls inside San Diego County -- the same pattern this site found in [Sacramento](/sacramento-zip-codes/), and a contrast to [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/), where the ZIP list crosses into a neighboring county. Directories disagree on the total more than they disagree on the county, though: zip-codes.com counts 81 ZIP codes for San Diego, five above the 76 this site pulls from GeoNames, and other trackers range from 75 to 95 depending on whether they fold PO-Box-only and single-recipient codes into the total or list them separately.",
+					"San Diego also dials on two area codes, 619 and 858, both covered in more detail on this site's [California area code list](/california-area-codes/).",
+				],
+				table: {
+					caption: 'All 76 ZIP codes with "San Diego, CA" as the primary USPS place name (per GeoNames.org, checked 2026-08-13)',
+					columns: ['ZIP'],
+					rows: [
+						['92101'], ['92102'], ['92103'], ['92104'], ['92105'],
+						['92106'], ['92107'], ['92108'], ['92109'], ['92110'],
+						['92111'], ['92112'], ['92113'], ['92114'], ['92115'],
+						['92116'], ['92117'], ['92119'], ['92120'], ['92121'],
+						['92122'], ['92123'], ['92124'], ['92126'], ['92127'],
+						['92128'], ['92129'], ['92130'], ['92131'], ['92132'],
+						['92134'], ['92135'], ['92136'], ['92137'], ['92138'],
+						['92139'], ['92140'], ['92142'], ['92145'], ['92147'],
+						['92149'], ['92150'], ['92152'], ['92153'], ['92154'],
+						['92155'], ['92158'], ['92159'], ['92160'], ['92161'],
+						['92163'], ['92165'], ['92166'], ['92167'], ['92168'],
+						['92169'], ['92170'], ['92171'], ['92172'], ['92174'],
+						['92175'], ['92176'], ['92177'], ['92179'], ['92182'],
+						['92186'], ['92187'], ['92190'], ['92191'], ['92192'],
+						['92193'], ['92195'], ['92196'], ['92197'], ['92198'],
+						['92199'],
+					],
+				},
+			},
+			{
+				heading: 'Why the number sequence skips Coronado and San Ysidro',
+				body: [
+					"The gaps in that sequence -- no 92118, 92143, 92173, or 92178 -- are not missing data. All four fall inside San Diego County too, but USPS assigns them to Coronado (92118 and 92178) and San Ysidro (92143 and 92173) instead of to San Diego itself, even though both places sit within a few miles of downtown. Coronado is its own incorporated city, connected to San Diego by a bridge and a narrow spit of land called the Silver Strand, and has never been part of San Diego's municipal government.",
+					"San Ysidro's case is different: it has been a neighborhood inside the City of San Diego since 1957, when the city annexed the South Bay communities of Palm City, Otay, and San Ysidro to secure a more reliable water supply. Annexation folded San Ysidro into San Diego's city limits, but USPS never merged its ZIP codes into San Diego's own -- 92143 and 92173 still carry San Ysidro's name today, nearly seventy years later, a reminder that a place can lose its city government and keep its postal identity anyway.",
+				],
+			},
+			{
+				heading: 'Three ZIP codes that belong to a base, not a neighborhood',
+				body: [
+					"92136 belongs to Naval Base San Diego, the installation along 32nd Street that serves as the Pacific Fleet's principal homeport for surface ships -- destroyers, cruisers, and amphibious vessels tie up along its piers rather than at any of the commercial waterfront a few miles north. 92140 belongs to Marine Corps Recruit Depot San Diego, the Marine Corps' West Coast boot camp; the Corps moved its recruit training there from Mare Island, near Vallejo, in 1923, and the depot's Spanish Colonial Revival buildings, designed by architect Bertram Goodhue, are now on the National Register of Historic Places.",
+					"92145 belongs to Marine Corps Air Station Miramar, a base with a split identity of its own. The Navy ran it for decades as \"Fightertown,\" home to F-14 squadrons and the Navy Fighter Weapons School known as Topgun -- until the summer of 1996, when Topgun's need for more training airspace than Miramar could offer sent it north to Naval Air Station Fallon, Nevada, where it still operates today. The base itself followed a similar path a year later: after the Marine Corps lost its own Southern California air stations at El Toro and Tustin to closure, it took over Miramar from the Navy on October 1, 1997, and the field has flown Marine Corps colors ever since.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does San Diego have?',
+				answer:
+					"76, per this site's GeoNames-based source data. zip-codes.com puts the city at 81, and other directories range from 75 to 95 depending on how they classify PO-Box-only and single-recipient codes.",
+			},
+			{
+				question: 'What county is San Diego in?',
+				answer:
+					"San Diego County, and unlike this site's Denver or Atlanta ZIP lists, all 76 ZIP codes USPS assigns to San Diego stay inside that one county -- none spill across a county line.",
+			},
+			{
+				question: 'Which San Diego ZIP codes belong to a military base?',
+				answer:
+					"Three do: 92136 is Naval Base San Diego on 32nd Street, 92140 is Marine Corps Recruit Depot San Diego, and 92145 is Marine Corps Air Station Miramar. None of the three corresponds to a civilian neighborhood.",
+			},
+			{
+				question: "Why isn't Coronado's ZIP code included in San Diego's list?",
+				answer:
+					"Coronado is its own incorporated city, not a San Diego neighborhood, so USPS assigns it separate ZIP codes -- 92118 and 92178 -- even though it sits directly across San Diego Bay and shares a land connection with the city via the Silver Strand.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'San Diego, CA ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-san-diego.asp' },
+			{ label: 'Naval Base San Diego -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Naval_Base_San_Diego' },
+			{ label: 'Marine Corps Recruit Depot San Diego -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Marine_Corps_Recruit_Depot_San_Diego' },
+			{ label: 'Marine Corps Air Station Miramar -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Marine_Corps_Air_Station_Miramar' },
+			{ label: 'San Ysidro, San Diego -- Wikipedia', url: 'https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego,_California' },
+			{ label: 'Coronado, California -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Coronado,_California' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
