@@ -1238,6 +1238,78 @@ export const guides: Guide[] = [
 			{ label: 'Coronado, California -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Coronado,_California' },
 		],
 	},
+	{
+		slug: 'zip-code-shows-wrong-city',
+		category: 'ZIP Codes',
+		title: 'Why Does My ZIP Code Show the Wrong City?',
+		description:
+			'USPS assigns every ZIP code one official "preferred place name," tied to the post office that services it, not the town the address sits in. That mismatch is documented nationwide, and it recently derailed a Colorado real estate listing.',
+		published: '2026-08-13',
+		updated: '2026-08-13',
+		coreSummary:
+			"Every USPS ZIP code has exactly one official \"preferred place name\" on file -- the city that shows up on the last line of the address -- and USPS assigns it based on which post office services the delivery route, not which town, city, or county the address legally sits in. That distinction is why a property can be physically located in one town while its ZIP code's preferred name reads as a different one entirely, sometimes across a county line. USPS has a formal process for correcting a preferred name, and cities have petitioned to change one, but the mismatch itself is common enough to have its own paper trail -- and it recently changed how a Colorado real estate listing showed up online.",
+		sections: [
+			{
+				heading: "A ZIP code's city name comes from a post office, not a map",
+				body: [
+					'USPS\'s Publication 28 addressing standards define what the postal service calls the "last line" of an address -- city, state, and ZIP -- and every five-digit ZIP has one preferred city name attached to it in USPS\'s own address-matching database. That name is set administratively, based on the post office that historically handled delivery for the area, not by checking a municipal boundary, a county line, or a map of where residents consider themselves to live.',
+					"Most of the time nobody notices, because the post office that serves an area and the town people call home are the same place. The mismatch shows up when they aren't: a subdivision built between two towns, a rural stretch where one post office covers ground that technically belongs to a neighboring county, or a ZIP boundary drawn decades ago that never got redrawn as the area around it grew. This site has already documented a version of the same underlying fact in [Los Angeles](/los-angeles-zip-codes/), where dozens of neighborhoods that are legally part of the city still carry a different name at the post office. A ZIP code's place name is a routing label USPS assigns for its own delivery logistics, not a ruling on what city an address legally belongs to -- the same gap that makes an [area code](/how-do-area-codes-work/) a poor stand-in for a timezone.",
+				],
+			},
+			{
+				heading: 'A Colorado listing that read as an entirely different town',
+				body: [
+					"Anne-Britt Ostlund, an agent with Mountain Rose Realty, ran into this on a listing at 456 Ridge Road -- a property that sits in Ouray County and should read as Ridgway, Colorado, Ouray County's largest town. Instead, the ZIP code covering that address carries Montrose as its USPS preferred place name -- the seat of neighboring Montrose County. The two towns sit close enough together that a shared ZIP delivery route makes sense on a map. On the ground, they're two separate towns in two separate counties, with buyers who don't overlap.",
+					"<div style=\"margin:12px 0;padding:18px 20px;background:#f8fafc;border-left:4px solid #4a5568;border-radius:8px;\"><p style=\"margin:0;font-size:1.05rem;font-style:italic;color:#1e293b;line-height:1.6;\">&ldquo;Those are two ENTIRELY different markets and buyer types and it's caused havoc on Zillow and other websites, I even got a call from the local MLS trying to tell me I have the home in the wrong town!&rdquo;</p><p style=\"margin:8px 0 0;font-size:0.8125rem;color:#64748b;\">Anne-Britt Ostlund, Mountain Rose Realty</p></div>",
+					"Zillow and most other listing sites don't independently verify what town a property sits in -- they pull the city from the address's ZIP code, and that means they inherit whatever name USPS has on file for that ZIP, correct or not. A listing rooted in a mountain-town market can end up displayed under a neighboring valley town's name instead, to buyers who search by location and to a local MLS that flagged the listing as possibly misfiled before realizing the address itself was never wrong -- the ZIP code's label was.",
+				],
+			},
+			{
+				heading: 'The same mismatch has turned up from Virginia to Georgia',
+				body: [
+					"ZIP 20152 covers South Riding, Virginia, a Loudoun County community of roughly 37,000 people, but USPS's preferred place name for that ZIP is Chantilly, the next town over -- South Riding is accepted only as an alternate. Oakland, California, has the same problem in reverse: part of ZIP 94608 sits inside Oakland's city limits, but USPS's preferred name for that whole ZIP is Emeryville, the smaller city next door.",
+					"Alameda County ran a formal \"Community Identity Project\" specifically because of how often this comes up for unincorporated communities: if you live in an unincorporated area near a mid-size city, the county found, your mailing address probably carries that city's name even though you don't live within its borders, pay its taxes, or vote in its elections. Sandy Springs, Georgia, spent years pushing back against the reverse version of the same problem -- its ZIP codes carried \"Atlanta\" as the preferred name even after Sandy Springs incorporated as its own city in 2005 -- and won USPS approval in March 2026 to make Sandy Springs the default name instead. Sandy Springs shows the mismatch is fixable, just not automatically and not quickly.",
+				],
+			},
+			{
+				heading: "What actually fixes it, and what doesn't",
+				body: [
+					"USPS has a formal process for this, laid out in a 2016 Management Instruction on the ZIP Code Boundary Review Process. A city, community group, or individual can request a preferred-name change by submitting it in writing to the district manager for the area, either directly or through a local postmaster who forwards it along. The district manager is required to respond within 60 days. For a full boundary or name change covering a whole ZIP code -- the kind of request Sandy Springs made -- USPS requires a survey of affected addresses, with at least half returned and at least half of those in favor, before it will act. Appeals go to USPS's Manager of Rural Delivery in Washington, D.C.",
+					"For an individual property, mail delivery usually isn't the problem: USPS's address-matching system already accepts a range of alternate city names for a given ZIP, which is why \"South Riding, VA 20152\" delivers fine even though Chantilly is the official preferred name. What doesn't get fixed by that leniency is how third-party platforms display the address. Zillow, an MLS, a shipping carrier's rate lookup, or a GPS system typically defaults to the single preferred name on file, not whichever alternate a homeowner or agent prefers. Short of a formal USPS petition, the practical move for a real estate listing is to spell out the correct town and county explicitly in the listing description and public records, and be ready to explain the mismatch the first time a buyer, another agent, or an MLS reviewer flags it as if it were an error -- because on paper, at a glance, it looks like one.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'Why does Zillow show the wrong city for my property?',
+				answer:
+					"Zillow and most other real estate sites pull the city name from an address's ZIP code, which reflects USPS's single \"preferred place name\" for that ZIP, not necessarily the town the property physically sits in. If the ZIP's servicing post office is based in a different, neighboring town, listing sites will typically display that name instead, even when it puts the property in the wrong real estate market on the page.",
+			},
+			{
+				question: "Can I get USPS to change a ZIP code's preferred city name?",
+				answer:
+					"Yes, but it's a formal process, not a quick correction. A written request goes to the USPS district manager for the area, either directly or through a local postmaster, who must respond within 60 days. A full ZIP-wide name change additionally requires a survey of affected addresses, with at least half returned and at least half in favor. Sandy Springs, Georgia, used this process to get its own name approved in place of \"Atlanta\" in March 2026, after years of trying.",
+			},
+			{
+				question: "Does a ZIP code's city name affect my school district or property taxes?",
+				answer:
+					"No. A ZIP code is a USPS mail-routing label with no legal standing -- school district assignment, tax jurisdiction, and voting districts are set independently by cities, counties, and school boards, and none of them follow ZIP code lines.",
+			},
+			{
+				question: "Will my mail still get delivered if I use the town's own name instead of the ZIP's preferred name?",
+				answer:
+					"Usually, yes. USPS's address-matching system accepts a range of alternate city names for a given ZIP code -- it's why South Riding, VA addresses (ZIP 20152) deliver correctly even though Chantilly is the official preferred name on file. It isn't guaranteed for every ZIP, though, and accepting an alternate for delivery doesn't change what name a third-party site like Zillow or an MLS displays.",
+			},
+		],
+		sources: [
+			{ label: 'USPS Postal Explorer, Publication 28: Last Line of the Address', url: 'https://pe.usps.com/text/pub28/28c2_006.htm' },
+			{ label: 'CRS via EveryCRSReport: Postal Primer -- ZIP Codes and Boundary Review Process', url: 'https://www.everycrsreport.com/reports/IF12132.html' },
+			{ label: 'Rough Draft Atlanta: Sandy Springs wins USPS approval for city name on mailing addresses', url: 'https://roughdraftatlanta.com/2026/03/11/sandy-springs-zip-code-review/' },
+			{ label: 'Alameda County Community Identity Project', url: 'https://www.acgov.org/cda/USPSproject/solutions-action.htm' },
+			{ label: 'UnitedStatesZipCodes.org: ZIP Code 20152 (South Riding / Chantilly, VA)', url: 'https://www.unitedstateszipcodes.org/20152/' },
+			{ label: 'UnitedStatesZipCodes.org: ZIP Code 94608 (Emeryville / Oakland, CA)', url: 'https://www.unitedstateszipcodes.org/94608/' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
