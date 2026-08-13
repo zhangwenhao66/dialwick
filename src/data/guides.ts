@@ -1310,6 +1310,128 @@ export const guides: Guide[] = [
 			{ label: 'UnitedStatesZipCodes.org: ZIP Code 94608 (Emeryville / Oakland, CA)', url: 'https://www.unitedstateszipcodes.org/94608/' },
 		],
 	},
+	{
+		slug: 'kansas-city-zip-codes',
+		category: 'ZIP Codes',
+		title: 'Kansas City ZIP Codes: Two Cities, Two States, Two Separate Lists',
+		description:
+			"Kansas City is really two cities in two states, and USPS treats them as separate places. Every ZIP for Kansas City, Missouri (71, three counties) and Kansas City, Kansas (15, one county) -- and why the split happened.",
+		published: '2026-08-13',
+		updated: '2026-08-13',
+		coreSummary:
+			"There are two Kansas Citys, and USPS assigns each one its own separate set of ZIP codes. Kansas City, Missouri carries 71 ZIP codes with \"Kansas City\" as the primary USPS place name, spread across three counties -- Jackson (48), Clay (14), and Platte (9). Kansas City, Kansas carries 15, all inside a single county, Wyandotte. Missouri's Kansas City incorporated first, in 1853; towns on the Kansas side of the state line incorporated their own Kansas City nearly two decades later, in 1872, and that city took its current shape in 1886, when five of those towns consolidated into one municipality. A search for \"kansas city zip code\" could mean either one, and the two ZIP lists don't overlap at all.",
+		sections: [
+			{
+				heading: 'Two cities named Kansas City, on two sides of a state line',
+				body: [
+					"Most cities that share a name are nowhere near each other. Kansas City is the exception: there's a Kansas City in Missouri and a Kansas City in Kansas, sitting directly across a state line from one another, close enough that a single road -- State Line Road -- runs along the border between them for miles. USPS treats them as two entirely separate places, each with its own ZIP code range, its own county assignments, and its own city government.",
+					"Kansas City, Missouri is the larger of the two by a wide margin: 71 ZIP codes, all starting with 641, spread across three counties. Kansas City, Kansas is smaller: 15 ZIP codes, all starting with 66, all inside one county. Neither list borrows from the other -- but a web search for \"kansas city zip code\" doesn't specify which city the searcher means, which is the reason this page covers both.",
+				],
+			},
+			{
+				heading: "Kansas City, Missouri's 71 ZIP codes, across three counties",
+				body: [
+					"Kansas City, Missouri's ZIP codes split unevenly across three counties: 48 sit in Jackson County, home to the city's original downtown and most of its historic neighborhoods; 14 sit in Clay County, north of the Missouri River; and 9 sit in Platte County, in the city's northwest corner near Kansas City International Airport. That pattern likely reflects how the city grew over the twentieth century: blocked from expanding west by the Kansas state line, Kansas City annexed land north across the Missouri River into Clay and Platte instead, first into Clay in the 1940s and later into Platte by the early 1960s.",
+				],
+				table: {
+					caption: 'All 71 ZIP codes with "Kansas City, MO" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-13)',
+					columns: ['ZIP', 'County'],
+					rows: [
+						['64101', 'Jackson'], ['64102', 'Jackson'], ['64105', 'Jackson'], ['64106', 'Jackson'],
+						['64108', 'Jackson'], ['64109', 'Jackson'], ['64110', 'Jackson'], ['64111', 'Jackson'],
+						['64112', 'Jackson'], ['64113', 'Jackson'], ['64114', 'Jackson'], ['64116', 'Clay'],
+						['64117', 'Clay'], ['64118', 'Clay'], ['64119', 'Clay'], ['64120', 'Jackson'],
+						['64121', 'Jackson'], ['64123', 'Jackson'], ['64124', 'Jackson'], ['64125', 'Jackson'],
+						['64126', 'Jackson'], ['64127', 'Jackson'], ['64128', 'Jackson'], ['64129', 'Jackson'],
+						['64130', 'Jackson'], ['64131', 'Jackson'], ['64132', 'Jackson'], ['64133', 'Jackson'],
+						['64134', 'Jackson'], ['64136', 'Jackson'], ['64137', 'Jackson'], ['64138', 'Jackson'],
+						['64139', 'Jackson'], ['64141', 'Jackson'], ['64144', 'Clay'], ['64145', 'Jackson'],
+						['64146', 'Jackson'], ['64147', 'Jackson'], ['64148', 'Jackson'], ['64149', 'Jackson'],
+						['64151', 'Platte'], ['64152', 'Platte'], ['64153', 'Platte'], ['64154', 'Platte'],
+						['64155', 'Clay'], ['64156', 'Clay'], ['64157', 'Clay'], ['64158', 'Clay'],
+						['64161', 'Clay'], ['64162', 'Clay'], ['64163', 'Platte'], ['64164', 'Platte'],
+						['64165', 'Clay'], ['64166', 'Clay'], ['64167', 'Clay'], ['64168', 'Platte'],
+						['64170', 'Jackson'], ['64171', 'Jackson'], ['64179', 'Jackson'], ['64180', 'Jackson'],
+						['64184', 'Jackson'], ['64187', 'Jackson'], ['64188', 'Jackson'], ['64190', 'Platte'],
+						['64191', 'Jackson'], ['64195', 'Platte'], ['64196', 'Jackson'], ['64197', 'Jackson'],
+						['64198', 'Jackson'], ['64199', 'Jackson'], ['64999', 'Jackson'],
+					],
+				},
+			},
+			{
+				heading: "Kansas City, Kansas's 15 ZIP codes, all in one county",
+				body: [
+					"Kansas City, Kansas has a simpler footprint: all 15 of its ZIP codes sit inside Wyandotte County, and have since 1997, when the city and county merged into a single government (more on that below). There's no annexation-driven spread into a second county the way there is on the Missouri side -- Wyandotte County's own boundary is close to Kansas City, Kansas's boundary too, aside from a couple of smaller cities inside the county, Bonner Springs and Edwardsville, which keep separate ZIP codes of their own.",
+				],
+				table: {
+					caption: 'All 15 ZIP codes with "Kansas City, KS" as the primary USPS place name (per GeoNames.org, checked 2026-08-13)',
+					columns: ['ZIP'],
+					rows: [
+						['66101'], ['66102'], ['66103'], ['66104'], ['66105'],
+						['66106'], ['66109'], ['66110'], ['66111'], ['66112'],
+						['66115'], ['66117'], ['66118'], ['66119'], ['66160'],
+					],
+				},
+			},
+			{
+				heading: 'Why there are two Kansas Citys in the first place',
+				body: [
+					'Missouri\'s Kansas City came first. What became the city began as a river landing platted by a group of investors, including John McCoy, in 1838, and Missouri formally incorporated it as the "City of Kansas" on March 28, 1853 -- named for the Kansas River, not the state, which didn\'t exist yet. Kansas wasn\'t admitted to the Union until 1861.',
+					'Once Kansas became a state, towns on its side of the border started growing too, and in 1872 several of them incorporated as "Kansas City, Kansas," borrowing the name of the already-successful Missouri city next door. That first version didn\'t last as a single city -- the Kansas City, Kansas that exists today dates to March 1886, when the governor of Kansas consolidated five separate towns (Wyandotte, old Kansas City, Armourdale, Armstrong, and Riverview) into one municipality, under a state law that allowed adjoining towns to merge once their combined population cleared a 15,000-resident threshold.',
+				],
+			},
+			{
+				heading: 'The government that merged the Kansas city with its county',
+				body: [
+					"Kansas City, Kansas took one more structural step that Kansas City, Missouri never did: on April 1, 1997, voters in Wyandotte County approved a charter merging the city government with the county government into a single body, the Unified Government of Wyandotte County and Kansas City, Kansas, which took effect that October. The merger followed years of civic trouble in the county, including persistent rumors of patronage and corruption among local officials, and was pitched to voters as a way to cut duplicated bureaucracy and rebuild the county's economic prospects.",
+					"That's the structural reason Kansas City, Kansas's ZIP codes map so closely onto a single county: since 1997, the city and Wyandotte County have effectively run as one government. Kansas City, Missouri has no equivalent merger with Jackson, Clay, or Platte County -- it remains a city government layered on top of three separate county governments, part of why its own ZIP footprint spreads across all three.",
+				],
+			},
+			{
+				heading: 'Different area codes too',
+				body: [
+					"The two cities also dial on separate [area codes](/how-do-area-codes-work/): Kansas City, Missouri uses 816, one of the original area codes assigned nationwide in 1947, later overlaid by 975 in 2023. Kansas City, Kansas uses 913, also original to 1947, which gave up part of its territory to a new area code, 785, in 1997 -- the same year Wyandotte County and Kansas City, Kansas merged their governments.",
+					"State Line Road itself carries the border for much of its length: on the stretch running south from Chester Avenue, northbound traffic runs through Missouri and southbound traffic runs through Kansas, switching states without the road ever turning.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Kansas City have?',
+				answer:
+					"It depends which Kansas City. Kansas City, Missouri has 71 ZIP codes with \"Kansas City\" as the primary USPS place name; Kansas City, Kansas has 15. The two lists are entirely separate.",
+			},
+			{
+				question: 'What county is Kansas City, Missouri in?',
+				answer:
+					"Kansas City, Missouri spans three counties: Jackson (48 of its 71 ZIP codes), Clay (14), and Platte (9). Jackson County contains the city's original downtown and most of its historic core.",
+			},
+			{
+				question: 'What county is Kansas City, Kansas in?',
+				answer:
+					"Wyandotte County, entirely. Since 1997, Kansas City, Kansas and Wyandotte County have run under a single Unified Government, which is why the city's ZIP codes and the county's boundary line up so closely.",
+			},
+			{
+				question: 'Why are there two cities called Kansas City?',
+				answer:
+					"Missouri's Kansas City incorporated first, in 1853, named for the Kansas River. Once Kansas became a state in 1861, towns on the Kansas side of the state line grew too, and several of them consolidated in 1886 into a second city that borrowed the name: Kansas City, Kansas.",
+			},
+			{
+				question: 'Do Kansas City, Missouri and Kansas City, Kansas use the same area code?',
+				answer:
+					'No. Kansas City, Missouri uses 816 (overlaid by 975 in 2023); Kansas City, Kansas uses 913. Both were among the original area codes assigned in 1947.',
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Wikipedia: Kansas City, Missouri', url: 'https://en.wikipedia.org/wiki/Kansas_City,_Missouri' },
+			{ label: 'Wikipedia: Kansas City, Kansas', url: 'https://en.wikipedia.org/wiki/Kansas_City,_Kansas' },
+			{ label: 'KC History (Missouri Valley Special Collections): Why is there a Kansas City in both Kansas and Missouri?', url: 'https://kchistory.org/faq/why-there-kansas-city-both-kansas-and-missouri' },
+			{ label: 'KCUR: How KCK And Wyandotte County Unified During Troubled Times', url: 'https://www.kcur.org/community/2015-03-06/how-kck-and-wyandotte-county-unified-during-troubled-times' },
+			{ label: 'Wikipedia: State Line Road', url: 'https://en.wikipedia.org/wiki/State_Line_Road' },
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
