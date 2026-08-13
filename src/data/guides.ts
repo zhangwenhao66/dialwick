@@ -1512,7 +1512,7 @@ export const guides: Guide[] = [
 		description:
 			'A US phone number has three parts, not one. Here is what each part actually identifies, why New York got 212 specifically, and the real difference between a "split" and an "overlay."',
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-13',
 		coreSummary:
 			"A North American phone number is 10 digits split into three parts: a 3-digit area code (NPA), a 3-digit exchange (NXX), and a 4-digit subscriber number. Area codes were originally handed out based on rotary-dial efficiency, not geography -- the busiest cities got the codes that took the least time to dial. When an area runs out of numbers today, the fix is either a split (dividing the region and giving half a new code) or an overlay (adding a second code on top of the same region) -- and since the late 1990s, nearly every fix has been an overlay.",
 		sections: [
@@ -1534,7 +1534,7 @@ export const guides: Guide[] = [
 				heading: 'Split vs. overlay: two different fixes for the same problem',
 				body: [
 					"An area code eventually runs out of available NXX exchange blocks as an area's population and phone/device count grow. Historically, the fix was a split: draw a line through the region, keep the old code on one side, and assign a brand-new code to the other. Los Angeles's original 213 was split this way five separate times between 1951 and 1998, each time handing off a geographic slice to a new code (714, 805, 818, 310, 323).",
-					"Splits have a real cost: everyone on the losing side of the line has to change their number's area code, and businesses have to reprint everything. Starting in the 1990s, the industry mostly switched to overlays instead -- instead of dividing the region, a second area code is layered on top of the exact same geographic footprint, and only new phone numbers get assigned to it. Existing numbers never change, but everyone in an overlay area has to dial all 10 digits (area code included) for every call, even a next-door neighbor. Manhattan is the extreme example: 212 (1947) was overlaid by 917 (1992), then 646 (1999), then 332 (2017) -- four area codes now serve the exact same borough at once.",
+					"Splits have a real cost: everyone on the losing side of the line has to change their number's area code, and businesses have to reprint everything. Starting in the 1990s, the industry mostly switched to overlays instead -- instead of dividing the region, a second area code is layered on top of the exact same geographic footprint, and only new phone numbers get assigned to it. Existing numbers never change, but everyone in an overlay area has to dial all 10 digits (area code included) for every call, even a next-door neighbor. Manhattan is the extreme example: 212 (1947) was overlaid by 646 (1999) and then 332 (2017), both layered on that same Manhattan-only footprint, plus 917 (1992), a citywide overlay that covers all five boroughs and reaches Manhattan too -- so a Manhattan phone number today can carry any of four different area codes, even though only three of them (212, 646, 332) are Manhattan-exclusive.",
 				],
 			},
 			{
