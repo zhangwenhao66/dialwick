@@ -32,3 +32,4 @@
 - **发布状态**：✅ 已提交，跳转到 thankyou.asp，提示 "Pending approval..."。提交回执 product id = `f422ca0769fe85528bc77e76a0d35b05`。
 - **上线复核**：⏳ 待补做（当天提交，通常需要1-2天过审）。
 - **备注**：本次是08-04登录失效连续三次导致周二排期落空后的补做。
+- **回复采用**（2026-08-13补记）：收到两条真实回复。①Anne-Britt Ostlund（Mountain Rose Realty房产经纪人）提供具体真实案例——科罗拉多州Ouray County一处房源（456 Ridge Road）应显示为Ridgway但USPS preferred place name却是邻县county seat Montrose，导致Zillow等网站显示错误城市、当地MLS致电质疑房源信息填错，作为主案例写入新文章`zip-code-shows-wrong-city`（因站内此前无任何一篇覆盖该通用现象，未塞进`los-angeles-zip-codes`而是新建独立页），commit `c3620d6`，已部署上线核实，已回信致谢。②Deepak Shukla（d.shukla@pearllemonpress.com，署名"Pearl Lemon Properties"）回复内容为泛泛建议，未采用——该邮箱已确认是Pearl Lemon Group在流量站矩阵/seo-geo-trinity多个站不同主题SourceBottle call-out下反复以匹配主题的"Pearl Lemon X"子品牌名义回复的规模化引用农场模式（此前至少5-6次跨主题出现），今后遇到同一邮箱回复默认视为低可信度/通用填充内容，不作为独家专家引语来源。
