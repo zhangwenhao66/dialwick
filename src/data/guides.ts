@@ -2101,6 +2101,111 @@ export const guides: Guide[] = [
 	},
 
 	// ---------------------------------------------------------------------
+	// Area Codes
+	// ---------------------------------------------------------------------
+	{
+		slug: '213-area-code',
+		category: 'Area Codes',
+		title: "213 Area Code: LA's Original 1947 Number, Now Tripled Up With 323 and 738",
+		description:
+			"213 was one of California's original three area codes in 1947 and split off five new codes over five decades -- now it's merged into a three-way overlay with 323 and 738 covering downtown LA and 19 surrounding cities.",
+		published: '2026-08-17',
+		updated: '2026-08-17',
+		coreSummary:
+			"Area code 213 has covered downtown Los Angeles and a ring of neighboring cities since 1947, when it was one of California's original three area codes. Los Angeles's growth split it off five separate times between 1951 and 1998 -- handing off 714, 805, 818, 310, and finally 323 -- before regulators reversed course in 2017 and merged 213 back together with 323 into a single overlay, then layered on a third code, 738, in November 2024. All three now serve the exact same footprint: downtown LA plus cities including Beverly Hills, Pasadena, Glendale, Inglewood, and West Hollywood, entirely on Pacific Time.",
+		sections: [
+			{
+				heading: 'Which cities 213 actually covers',
+				body: [
+					"California's telecom regulator, the CPUC, defines the 213/323/738 numbering plan area as downtown Los Angeles plus a ring of independent cities and unincorporated Los Angeles County land around it: Alhambra, Bell, Bell Gardens, Beverly Hills, Commerce, Cudahy, Glendale, Hawthorne, Huntington Park, Inglewood, Lynwood, Maywood, Montebello, Monterey Park, Pasadena, Rosemead, South Gate, South Pasadena, Vernon, and West Hollywood.",
+					"Every incorporated city on that list, and the city of Los Angeles itself, sits inside Los Angeles County -- there's no county split to track here, the way there is for some metro areas this site has covered. All of it runs on Pacific Time, so unlike a number assigned in a border town such as El Paso, a 213 number carries no time-zone ambiguity.",
+				],
+			},
+			{
+				heading: 'How one 1947 code became three',
+				body: [
+					"213 launched in 1947 as one of California's original three area codes, alongside 415 for the north and 916 for the Sacramento area, and originally covered the entire southern third of the state. Los Angeles's population and phone-line growth forced five splits over the following half-century: 714 broke off for Orange County in 1951, 805 for the central coast in 1957, 818 for the San Fernando Valley in 1984, 310 for the southwestern coastline on November 2, 1991, and 323 for the rest of central LA on June 13, 1998. Each split followed the same underlying driver as area code splits everywhere: fax lines, pagers, second household lines, and eventually cell phones ate into the pool of available exchange blocks faster than regulators could plan for. Los Angeles's growth pushed 213 through five separate splits -- more than any other original California area code. San Francisco's 415 split four times before switching to overlays, and Sacramento's 916 never split at all; see the full rundown on [California's 41 area codes](/california-area-codes/).",
+					"Splitting stopped being the fix after that. In 2017, the CPUC eliminated the boundary between 213 and 323, merging them into a single overlay complex where either code can be assigned anywhere in the shared territory and every call requires all 10 digits. NANPA projected the combined 213/323 pool would run out of assignable numbers by June 2025, so the CPUC approved a third overlay, area code 738, on March 16, 2023; new numbers under 738 started going into service November 1, 2024. Existing 213 and 323 numbers didn't change -- 738 only affects numbers issued from that date forward.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 213 created in 1947, splits off 323 in 1998, merges with 323 into one overlay in 2017, and gains a third overlay, 738, in 2024">
+	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="80" cy="95" r="9" fill="#131a27"/>
+	<text x="80" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1947</text>
+	<text x="80" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">213 begins as</text>
+	<text x="80" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">one of CA's</text>
+	<text x="80" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">first 3 codes</text>
+	<circle cx="290" cy="95" r="9" fill="#b5722f"/>
+	<text x="290" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1998</text>
+	<text x="290" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Fifth and last</text>
+	<text x="290" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">split: 323</text>
+	<text x="290" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">breaks off</text>
+	<circle cx="460" cy="95" r="9" fill="#131a27"/>
+	<text x="460" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2017</text>
+	<text x="460" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">213 and 323</text>
+	<text x="460" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">merge into</text>
+	<text x="460" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">one overlay</text>
+	<circle cx="610" cy="95" r="9" fill="#b5722f"/>
+	<text x="610" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2024</text>
+	<text x="610" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">738 layers on</text>
+	<text x="610" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">as third overlay</text>
+</svg>`,
+			},
+			{
+				heading: 'Why the hip-hop group 213 named itself after this code',
+				body: [
+					"213 shows up outside telecom too: Snoop Dogg, Warren G, and Nate Dogg named their group 213 after the area code that covered their hometown, Long Beach, when the group formed in 1992 -- paying homage to the way an earlier Oakland rap group had named itself 415 after its own area code. Long Beach was still inside 213's original footprint at the time; it split off onto area code 562 on January 25, 1997, a code that doesn't overlap the downtown-LA territory 213 covers today. The group kept the name through their only studio album in 2004 and up to Nate Dogg's death in 2011, long after Long Beach itself had stopped dialing 213.",
+				],
+			},
+			{
+				heading: "The scam LA's utility keeps warning 213 customers about",
+				body: [
+					"The FCC's general caller-ID warning applies to any area code, including 213: scammers routinely use what the FCC calls neighbor spoofing to fake a local-looking number, covered in more detail on [is there really a 'scam area code'](/scam-area-codes/). What's specific to greater Los Angeles is a scam the city-run Los Angeles Department of Water and Power has repeatedly and publicly warned its customers about: callers impersonating LADWP staff, claiming a customer's water or power will be shut off within minutes unless they pay immediately over the phone, often demanding a prepaid card, a cash-app transfer, or a cash pickup.",
+					"LADWP's own scam-alert page states plainly that its representatives never call demanding immediate payment by phone and that the utility has never asked a customer to pay through a cash app or prepaid card. It tells anyone who gets a call like this to hang up and call 1-800-DIAL-DWP (1-800-342-5397) directly to verify before paying anything, and it directs victims to also file a complaint with the Federal Trade Commission.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What cities does the 213 area code cover?',
+				answer:
+					'Downtown Los Angeles and a ring of neighboring cities and unincorporated Los Angeles County territory, per the CPUC: Alhambra, Bell, Bell Gardens, Beverly Hills, Commerce, Cudahy, Glendale, Hawthorne, Huntington Park, Inglewood, Lynwood, Maywood, Montebello, Monterey Park, Pasadena, Rosemead, South Gate, South Pasadena, Vernon, and West Hollywood.',
+			},
+			{
+				question: 'Is 213 the same area as 323 and 738?',
+				answer:
+					'Yes. All three cover the exact same numbering plan area -- 213 and 323 were merged into one overlay in 2017, and 738 was added on top of both in November 2024. A number issued today could carry any of the three codes with no difference in the territory it covers.',
+			},
+			{
+				question: 'Why did 213 stop splitting and start overlaying?',
+				answer:
+					"A split forces everyone on the new side of the boundary to change their area code; an overlay adds a second code to the same footprint and leaves every existing number untouched. The industry shifted to overlays nationwide starting in the 1990s for that reason -- 213's last split was in 1998 (323), and both expansions since (2017's merge, 2024's 738) have been overlays instead.",
+			},
+			{
+				question: "Where does the hip-hop group 213's name come from?",
+				answer:
+					"Snoop Dogg, Warren G, and Nate Dogg named their group after area code 213, which covered their hometown of Long Beach when they formed the group in 1992. Long Beach moved to area code 562 in 1997, so the group's name references territory it no longer technically sits in.",
+			},
+			{
+				question: 'Is a call showing a 213 number always really coming from Los Angeles?',
+				answer:
+					"No. Caller ID can be faked through a tactic the FCC calls neighbor spoofing, where a scammer displays a number in your own area code -- including 213 -- regardless of where the call actually originates. A 213 number on caller ID doesn't by itself guarantee an LA-based caller.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'CPUC: 213/323/738 Area Codes', url: 'https://www.cpuc.ca.gov/213_323_areacodes' },
+			{
+				label: 'CPUC: New 738 Area Code Coming to the 213-323 Region',
+				url: 'https://www.cpuc.ca.gov/news-and-updates/all-news/new-738-area-code-coming-to-the-213-323-region',
+			},
+			{ label: 'Wikipedia: Area codes 213, 323, and 738', url: 'https://en.wikipedia.org/wiki/Area_codes_213,_323,_and_738' },
+			{ label: 'Wikipedia: 213 (group)', url: 'https://en.wikipedia.org/wiki/213_(group)' },
+			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+			{ label: 'LADWP: Scam Alert', url: 'https://www.ladwp.com/account/report-problem/scam-alert' },
+		],
+	},
+
+	// ---------------------------------------------------------------------
 	// Counties
 	// ---------------------------------------------------------------------
 	{
