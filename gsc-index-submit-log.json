@@ -137,5 +137,17 @@
       "https://dialwick.com/san-diego-zip-codes/"
     ],
     "quota_used": "1 of shared account-wide daily quota (9th request this run)"
+  },
+  {
+    "date": "2026-08-16",
+    "action": "skipped_all_indexed",
+    "reason": "按队列脚本代理排序检查候选：kansas-city-zip-codes（08-13新发布）、los-angeles-zip-codes、nyc-area-code均已收录。站点自身Page indexing报告显示'0 not indexed, 26 indexed, Good job! No issues detected'，确认当前无未收录页面可提交，跳过不消耗配额。",
+    "submitted_urls": [],
+    "already_indexed_no_action": [
+      "https://dialwick.com/kansas-city-zip-codes/",
+      "https://dialwick.com/los-angeles-zip-codes/",
+      "https://dialwick.com/nyc-area-code/"
+    ],
+    "quota_used": "0 (skipped, no unindexed candidate found)"
   }
 ]
