@@ -1432,6 +1432,100 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
+	{
+		slug: 'richmond-va-zip-codes',
+		category: 'ZIP Codes',
+		title: "Richmond, VA ZIP Codes: All 39, and How a City in No County Spills Into Two",
+		description:
+			"Richmond is one of Virginia's 38 independent cities -- legally part of no county at all. Its ZIP codes don't honor that line: the full 39-code list, and why 10 of them are filed under Chesterfield or Henrico instead.",
+		published: '2026-08-16',
+		updated: '2026-08-16',
+		coreSummary:
+			"USPS assigns 39 ZIP codes with Richmond as the primary place name, but Richmond itself is one of Virginia's 38 independent cities -- since the state's Constitution of 1869-70 took effect in 1870, Virginia's cities have sat outside every county, equal in legal standing to a county rather than nested inside one. Twenty-nine of those 39 ZIP codes fall inside the City of Richmond proper. The other 10 spill into the two counties that surround it, five each into Henrico and Chesterfield, because USPS draws ZIP boundaries around mail-delivery routes rather than municipal lines. A search for \"richmond zip code\" can also mean an entirely different place: Richmond County, Virginia, a rural county on the Northern Neck more than 50 miles away that has no connection to the city at all.",
+		sections: [
+			{
+				heading: "All 39 ZIP codes, and the three jurisdictions behind them",
+				body: [
+					"Of the 39 ZIP codes USPS lists with Richmond as the primary place name, 29 sit inside the City of Richmond's own boundary. The remaining 10 are split evenly: five fall in Henrico County, which wraps around Richmond's north and east side, and five fall in Chesterfield County, to the south and southwest. Every ZIP in this table carries \"Richmond, VA\" on the mailing address regardless of which of the three it's actually in -- the jurisdiction column below is the only way to tell them apart.",
+				],
+				table: {
+					caption: 'All 39 ZIP codes with "Richmond, VA" as the primary USPS place name, by jurisdiction (per GeoNames.org, checked 2026-08-16)',
+					columns: ['ZIP', 'Jurisdiction'],
+					rows: [
+						['23173', 'City of Richmond'], ['23218', 'City of Richmond'], ['23219', 'City of Richmond'],
+						['23220', 'City of Richmond'], ['23221', 'City of Richmond'], ['23222', 'City of Richmond'],
+						['23223', 'City of Richmond'], ['23224', 'City of Richmond'], ['23225', 'City of Richmond'],
+						['23226', 'Henrico'], ['23227', 'Henrico'], ['23230', 'Henrico'],
+						['23232', 'City of Richmond'], ['23234', 'Chesterfield'], ['23235', 'Chesterfield'],
+						['23236', 'Chesterfield'], ['23237', 'Chesterfield'], ['23241', 'City of Richmond'],
+						['23249', 'City of Richmond'], ['23250', 'Henrico'], ['23260', 'City of Richmond'],
+						['23261', 'City of Richmond'], ['23269', 'City of Richmond'], ['23274', 'City of Richmond'],
+						['23276', 'City of Richmond'], ['23278', 'City of Richmond'], ['23279', 'City of Richmond'],
+						['23282', 'City of Richmond'], ['23284', 'City of Richmond'], ['23285', 'City of Richmond'],
+						['23286', 'City of Richmond'], ['23289', 'Henrico'], ['23290', 'City of Richmond'],
+						['23291', 'City of Richmond'], ['23292', 'City of Richmond'], ['23293', 'City of Richmond'],
+						['23295', 'City of Richmond'], ['23297', 'Chesterfield'], ['23298', 'City of Richmond'],
+					],
+				},
+			},
+			{
+				heading: "Richmond is legally in no county at all",
+				body: [
+					"That \"City of Richmond\" jurisdiction in the table above isn't shorthand for a county -- it's the real answer. Richmond is one of Virginia's 38 independent cities, a status that means the city sits entirely outside county government, equal in legal standing to a county rather than a municipality inside one. Virginia's cities were first split from their surrounding counties by the state's Constitution of 1869-70, which took effect in 1870 upon Virginia's readmission to the Union during Reconstruction; the 1902 and current 1971 constitutions carried the arrangement forward. An independent city runs its own schools, courts, and roads without a county layer above it, and its residents don't belong to any county for any legal purpose.",
+					"Virginia's 38 independent cities account for nearly all of this kind of jurisdiction in the entire country -- only three other American cities work the same way: Baltimore, Maryland (separated from Baltimore County in 1851); St. Louis, Missouri (voters approved separation from St. Louis County in an 1876 referendum, formalized in 1877); and Carson City, Nevada (consolidated with the former Ormsby County in 1969). Every other city in the United States, no matter how large, sits inside at least one county.",
+				],
+			},
+			{
+				heading: "Why 10 of Richmond's ZIP codes land in a county anyway",
+				body: [
+					"USPS draws ZIP code boundaries around mail-delivery routes, not around municipal or county lines, and it doesn't make an exception for a city that happens to be its own jurisdiction. The 10 ZIP codes assigned to Henrico or Chesterfield in the table above physically extend past Richmond's city limits into the neighboring county, but the post office handling that route still uses \"Richmond\" as the address's place name -- the same mismatch this site has already documented for [Atlanta](/atlanta-zip-codes/), where a fifth of the city's ZIP codes carry an Atlanta address while sitting in DeKalb County rather than Fulton.",
+					"Richmond's version is a sharper case than Atlanta's. Atlanta's home county (Fulton) and its overflow county (DeKalb) are both ordinary counties, so swapping one for the other doesn't change the basic kind of government involved. Richmond's home jurisdiction isn't a county to begin with, which makes those 10 ZIP codes the only Richmond-addressed ones that touch county government at all.",
+				],
+			},
+			{
+				heading: "Two Richmonds, and two different phone numbers",
+				body: [
+					"A search for \"Richmond, Virginia\" can also turn up Richmond County, Virginia, a rural county of roughly 9,000 people on the Northern Neck, more than 50 miles northeast of the city with no shared government or boundary. Richmond County's seat is the town of Warsaw; the county was formed in 1692, 178 years before the city gained independent status in 1870, and the two share a name purely by coincidence of colonial-era naming, not by any administrative link. This site has documented an identical naming coincidence before: New York City's [Staten Island is legally Richmond County](/new-york-zip-codes/), a completely separate use of the same name in a completely different state.",
+					"Phone numbers don't separate the two Richmonds the way ZIP codes do. Richmond, the independent city, dials on [area code](/how-do-area-codes-work/) 804, in service since it split from 703 in 1973 and overlaid by 686 in February 2024 once the region ran out of new numbers under 804 alone. Richmond County sits inside that same 804/686 footprint too, since the area code covers the wider Richmond metro region, Petersburg, and the Northern Neck together.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Richmond, VA have?',
+				answer:
+					"USPS lists 39 ZIP codes with Richmond as the primary place name. Twenty-nine sit inside the City of Richmond itself; the other 10 fall in the two surrounding counties, five in Henrico and five in Chesterfield.",
+			},
+			{
+				question: 'What county is Richmond, Virginia in?',
+				answer:
+					"None. Richmond is one of Virginia's 38 independent cities, a status that places it outside county government entirely -- legally equal to a county rather than located inside one. Ten of its 39 ZIP codes do extend into the two counties that border it, Henrico and Chesterfield, but the city proper isn't part of either.",
+			},
+			{
+				question: "Why do some Richmond ZIP codes belong to Henrico or Chesterfield County?",
+				answer:
+					"USPS draws ZIP code boundaries around mail-delivery routes rather than municipal or county lines. Ten of Richmond's 39 ZIP codes physically extend past the city's boundary into Henrico or Chesterfield County, but the post office still lists \"Richmond\" as the address's place name for all 39.",
+			},
+			{
+				question: 'Is Richmond County the same place as the city of Richmond?',
+				answer:
+					"No. Richmond County is a separate, rural county on Virginia's Northern Neck, more than 50 miles from the city, with its own county seat (Warsaw) and no shared government. The two share a name from colonial-era naming, not from any administrative connection -- the same kind of coincidence that makes New York City's Staten Island legally \"Richmond County\" in an unrelated state.",
+			},
+			{
+				question: 'What area code does Richmond, VA use?',
+				answer:
+					"804, in service since 1973, when it split off from area code 703. The region was overlaid with a second code, 686, in February 2024 once demand for new numbers under 804 alone ran out.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Wikipedia: List of cities and counties in Virginia', url: 'https://en.wikipedia.org/wiki/List_of_cities_and_counties_in_Virginia' },
+			{ label: 'VirginiaPlaces.org: Independent Cities, Separate From Counties In Virginia', url: 'http://www.virginiaplaces.org/vacities/independentcities.html' },
+			{ label: 'WRIC ABC 8News: What are independent cities and why is Virginia the U.S. state with the most?', url: 'https://www.wric.com/news/virginia-news/what-are-independent-cities-and-why-is-virginia-the-u-s-state-with-the-most/' },
+			{ label: 'Wikipedia: Richmond County, Virginia', url: 'https://en.wikipedia.org/wiki/Richmond_County,_Virginia' },
+			{ label: 'Wikipedia: Area codes 804 and 686', url: 'https://en.wikipedia.org/wiki/Area_codes_804_and_686' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Lists
