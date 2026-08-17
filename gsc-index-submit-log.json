@@ -161,5 +161,18 @@
       "https://dialwick.com/new-york-zip-codes/"
     ],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-17",
+    "action": "submitted",
+    "reason": "今日新发布两篇（213-area-code本站首篇单区号页；phoenix-zip-codes 19:00时段）+内容质量审计更新california-area-codes。URL Inspection确认213-area-code与california-area-codes均已'URL is on Google'（已收录），phoenix-zip-codes为'URL is not on Google'，REQUEST INDEXING提交成功确认'Indexing requested'。",
+    "submitted_urls": [
+      "https://dialwick.com/phoenix-zip-codes/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/213-area-code/",
+      "https://dialwick.com/california-area-codes/"
+    ],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
