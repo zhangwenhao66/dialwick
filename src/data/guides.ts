@@ -1614,13 +1614,13 @@ export const guides: Guide[] = [
 	{
 		slug: 'california-area-codes',
 		category: 'Area Code Lists',
-		title: "All 41 California Area Codes, Plus the Family Tree Behind LA's Six",
+		title: "All 41 California Area Codes, Plus the Family Tree Behind LA's Seven",
 		description:
-			"Every one of California's 41 area codes, mapped to its region and the year it went into service -- plus how Los Angeles alone split and overlaid its way from a single 1947 code, 213, to six today.",
+			"All 41 California area codes, mapped to region and year in service -- plus how LA split and overlaid its way from one 1947 code, 213, to seven today.",
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-17',
 		coreSummary:
-			"California started with three area codes in 1947 -- 213 (southern California), 415 (northern California), and 916 (the Sacramento area, added slightly later that year) -- and now has 41, more than any other US state. Los Angeles alone has split and overlaid its way from 213 to six area codes covering the same general metro area today.",
+			"California started with three area codes in 1947 -- 213 (southern California), 415 (northern California), and 916 (the Sacramento area, added slightly later that year) -- and now has 41, more than any other US state. Los Angeles alone has split and overlaid its way from 213 to seven area codes covering the same general metro area today.",
 		sections: [
 			{
 				heading: 'All 41 California area codes',
@@ -1676,10 +1676,10 @@ export const guides: Guide[] = [
 				},
 			},
 			{
-				heading: 'Los Angeles: from one code in 1947 to six today',
+				heading: 'Los Angeles: from one code in 1947 to seven today',
 				body: [
-					"213 covered the entire southern third of California when it launched in 1947. Los Angeles's own growth forced five splits off of 213 over the following decades -- 714 (1951, Orange County), 805 (1957, the central coast), 818 (1984, the San Fernando Valley), 310 (1991, the southwestern coast), and 323 (1998, the rest of central LA) -- before the pattern shifted from splitting to overlaying: 424 stacked onto 310 in 2006, 747 onto 818 in 2009, and, after 213 and 323 were formally merged back into a single overlay complex in 2017, a sixth code, 738, was added on top of that combined area in November 2024.",
-					"San Francisco followed a similar but smaller path: 415 (1947) split off 408 and 707 in 1959, then 510 and 650 in the early 1990s, before finally being overlaid by 628 in 2015 once splitting stopped being an option. Sacramento took the simplest route of any major California metro -- one split-free run on 916 from 1947 all the way to 2018, when 279 was added as an overlay.",
+					"213 covered the entire southern third of California when it launched in 1947. Los Angeles's own growth forced five splits off of 213 over the following decades -- 714 (1951, Orange County), 805 (1957, the central coast), 818 (1984, the San Fernando Valley), 310 (1991, the southwestern coast), and 323 (1998, the rest of central LA) -- before the pattern shifted from splitting to overlaying: 424 stacked onto 310 in 2006, 747 onto 818 in 2009, and, after 213 and 323 were formally merged back into a single overlay complex in 2017, a seventh code, 738, was added on top of that combined area in November 2024.",
+					"San Francisco followed a similar but smaller path: 415 (1947) split off 408 and 707 in 1959, then 510 in 1991 and 650 in 1997, before finally being overlaid by 628 in 2015 once splitting stopped being an option. Sacramento's 916 split once too -- 530 broke off in 1997 to cover Redding, Chico, and Lake Tahoe -- before 279 was added as an overlay on what remained of 916 in 2018; see this site's [Sacramento ZIP code list](/sacramento-zip-codes/) for how that same county lines up on the postal side.",
 				],
 			},
 		],
@@ -1691,7 +1691,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What area codes does Los Angeles use?',
 				answer:
-					'213, 323, 310, 424, 818, 747, and 738 all currently overlay parts of the greater LA area -- all descendants of the single area code, 213, that covered the entire southern third of California in 1947.',
+					'213, 323, 310, 424, 818, 747, and 738 -- seven in all -- currently overlay parts of the [greater LA area](/los-angeles-zip-codes/), all descendants of the single area code, 213, that covered the entire southern third of California in 1947.',
 			},
 			{
 				question: 'What was the very first California area code?',
@@ -1701,6 +1701,8 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 213, 323, and 738', url: 'https://en.wikipedia.org/wiki/Area_codes_213,_323,_and_738' },
+			{ label: 'Wikipedia: Area codes 916 and 279', url: 'https://en.wikipedia.org/wiki/Area_codes_916_and_279' },
 		],
 	},
 	{
@@ -1710,7 +1712,7 @@ export const guides: Guide[] = [
 		description:
 			"Michigan has 13 area codes today, seven descended from Detroit's original 313 -- here's the full list, plus the split-and-overlay chain behind each one, including the newest, 679.",
 		published: '2026-08-10',
-		updated: '2026-08-10',
+		updated: '2026-08-17',
 		coreSummary:
 			'Michigan started with three area codes in the original 1947 numbering plan -- 313 for Detroit, 517 for Lansing, and 616 for Grand Rapids -- and has split and overlaid its way to 13 today. Detroit\'s 313 alone accounts for seven of them, most recently 679, which began serving new phone lines on November 7, 2025, a month after 10-digit local dialing became mandatory across the Detroit metro.',
 		sections: [
@@ -1744,7 +1746,7 @@ export const guides: Guide[] = [
 				body: [
 					"313 covered the entire Detroit metro area on its own from 1947 until 1993, when the state split off 810 to cover Flint, Port Huron, and the rural Thumb region northeast of the city. 810 was itself split twice more within a decade -- 248 broke off in 1997 to cover Oakland County, and 586 followed in 2001 for Macomb County -- before Oakland County ran out of numbers under 248 alone and got a second, overlaid code, 947, in 2002. Detroit's other direct split, 734, peeled off Ann Arbor and Ypsilanti in 1997.",
 					"313 itself kept its original Detroit-Dearborn-Grosse Pointes footprint the whole time, and by the early 2020s was projected to run out of available numbers again -- this time without room left to split off a new geographic area. Michigan's regulator chose an overlay instead: 679 was reserved for the same territory 313 already covered, and went into service for new lines on November 7, 2025. Between the two of them, the seven codes descended from 313 -- 313, 810, 248, 586, 947, 734, and 679 -- now account for just over half of the state's total.",
-					"One metro area's original code eventually accounting for the majority of its state's total isn't unique to Michigan -- [California's own area code history](/california-area-codes/) shows the same pattern at a larger scale, where Los Angeles alone traces through six generations of splits and overlays back to a single 1947 code, 213.",
+					"One metro area's original code eventually accounting for the majority of its state's total isn't unique to Michigan -- [California's own area code history](/california-area-codes/) shows the same pattern at a larger scale, where Los Angeles alone now runs on seven area codes, all descended from a single 1947 code, 213.",
 				],
 			},
 			{
@@ -2124,7 +2126,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'How one 1947 code became three',
 				body: [
-					"213 launched in 1947 as one of California's original three area codes, alongside 415 for the north and 916 for the Sacramento area, and originally covered the entire southern third of the state. Los Angeles's population and phone-line growth forced five splits over the following half-century: 714 broke off for Orange County in 1951, 805 for the central coast in 1957, 818 for the San Fernando Valley in 1984, 310 for the southwestern coastline on November 2, 1991, and 323 for the rest of central LA on June 13, 1998. Each split followed the same underlying driver as area code splits everywhere: fax lines, pagers, second household lines, and eventually cell phones ate into the pool of available exchange blocks faster than regulators could plan for. Los Angeles's growth pushed 213 through five separate splits -- more than any other original California area code. San Francisco's 415 split four times before switching to overlays, and Sacramento's 916 never split at all; see the full rundown on [California's 41 area codes](/california-area-codes/).",
+					"213 launched in 1947 as one of California's original three area codes, alongside 415 for the north and 916 for the Sacramento area, and originally covered the entire southern third of the state. Los Angeles's population and phone-line growth forced five splits over the following half-century: 714 broke off for Orange County in 1951, 805 for the central coast in 1957, 818 for the San Fernando Valley in 1984, 310 for the southwestern coastline on November 2, 1991, and 323 for the rest of central LA on June 13, 1998. Each split followed the same underlying driver as area code splits everywhere: fax lines, pagers, second household lines, and eventually cell phones ate into the pool of available exchange blocks faster than regulators could plan for. Los Angeles's growth pushed 213 through five separate splits -- more than any other original California area code. San Francisco's 415 split four times before switching to overlays, and Sacramento's 916 split just once, in 1997; see the full rundown on [California's 41 area codes](/california-area-codes/).",
 					"Splitting stopped being the fix after that. In 2017, the CPUC eliminated the boundary between 213 and 323, merging them into a single overlay complex where either code can be assigned anywhere in the shared territory and every call requires all 10 digits. NANPA projected the combined 213/323 pool would run out of assignable numbers by June 2025, so the CPUC approved a third overlay, area code 738, on March 16, 2023; new numbers under 738 started going into service November 1, 2024. Existing 213 and 323 numbers didn't change -- 738 only affects numbers issued from that date forward.",
 				],
 				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 213 created in 1947, splits off 323 in 1998, merges with 323 into one overlay in 2017, and gains a third overlay, 738, in 2024">
