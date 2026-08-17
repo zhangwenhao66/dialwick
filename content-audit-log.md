@@ -781,3 +781,87 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "escalation": null
 }
 ```
+
+## how-to-call-mexico-from-us
+
+```json
+{
+  "url_slug": "how-to-call-mexico-from-us",
+  "url": "https://dialwick.com/how-to-call-mexico-from-us/",
+  "last_audited": "2026-08-17",
+  "published_date": "2026-08-03",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Interactive 'Format your own Mexico number' dial-format-builder tool adds genuine utility beyond static text; single external source (FCC tip sheet) is a general international-dialing guide, not a document that specifically covers Mexico's 2019 reform -- a mild citation-scope gap, not escalated to a confirmed finding since the underlying fact is independently well-corroborated (see dimension 2)."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> NOT a real problem, no fix needed",
+      "detail": "Suspected the article's framing ('Mexico's telecom regulator eliminated all of that in the 2019 reform: every Mexican number, landline or mobile, is now dialed the same simple way') conflates two distinct events -- IFT's Aug 3, 2019 domestic dialing-plan reform (removing 01/044/045 prefixes for calls made WITHIN Mexico) vs. the separate elimination of the international 'extra 1 after +52 for mobile' convention, which Wikipedia's 'Telephone numbers in Mexico' article dates to 'as of 2020' rather than Aug 2019. Spawned an independent fresh-context verification agent. It traced the claim to primary sources: IFT's own Comunicado 34/2019 (domestic scope only) plus Twilio's dated regulatory-compliance notice ('Beginning on August 3, 2019, international dialing from phone numbers outside of Mexico to mobile phone numbers... will no longer require a 1 prefix... The Mexican Telecommunications Regulator eliminated the requirement'), corroborated by multiple contemporary telecom sources -- all placing the international-dialing change on the SAME Aug 3, 2019 date as a direct knock-on effect of the same reform. Wikipedia's 'as of 2020' is non-committal phrasing citing a generic FCC page, not a dated contradicting source. Verdict: NOT-SUPPORTED, article's framing is accurate. No fix made."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "published 2026-08-03, audited 2026-08-17 (~2 weeks). Content describes a completed 2019 regulatory reform, not something requiring frequent updates; still current."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "WebSearch for 'how to call Mexico from the US dialing guide 2026' surfaces a SERP dominated by generic VoIP/calling-service blogspam (recharge.com, mycountrymobile.com, yollacalls.com, phonecall.app) that state the current format without explaining the historical 01/044/045 prefix system or why older guides are wrong. DialWick's article + interactive dial-format-builder tool (accepts a user's local-format number and formats it correctly, with country-specific validation) is a genuine incremental value vs. the SERP."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "pass",
+      "detail": "Live page checked via curl: single H1, clean H2 hierarchy (5 H2s incl. the interactive tool), canonical present, Article/BreadcrumbList/FAQPage schema all present. Ran independent_site scripts/check_seo_field_stats.py: title 44 chars (z=-1.14), description 182 chars (z=-0.09) -- both well within this site's own distribution (n=32, description mean=184.5), not outliers despite exceeding generic 155-char guidance."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~78-82/99 (estimated manual pass, not full 99-point run)",
+      "detail": "Strong structure (H2s, table, FAQPage schema, interactive tool), named-authority citation (FCC), professional terminology (NANP-adjacent, exit code vs. country code distinction), 2 internal cross-links (inbound from how-to-call-philippines-from-usa, outbound to us-country-code implicitly via category sidebar). Slightly light on verbatim quoted material and only 1 external source -- comfortably above the 80-point bar given the interactive tool's added utility."
+    },
+    {
+      "dimension": "7. Early-content humanizer/avoid-ai-writing backfill",
+      "status": "pass",
+      "detail": "published 2026-08-03, predates avoid-ai-writing becoming mandatory (2026-08-07) -- re-ran Skill(avoid-ai-writing) in detect mode. No AI-writing tells found (no vague attribution, no filler/hedging, no rule-of-three padding, no template phrases, no promotional language). The article's double-hyphen '--' dashes (5 instances across ~400 words, technically over the skill's generic em-dash density threshold) are this site's own established, deliberate house convention for dashes -- explicitly reviewed and NOT flagged as an AI tell in this same site's prior scam-area-codes audit ('no obvious AI-writing tells (double-hyphen dashes instead of em-dash...)'). Treated as accepted site convention per that precedent, not re-flagged; fixing it in only this one article while leaving the same convention in all other ~31 guides would create inconsistency, not resolve a real problem."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "FCC tip sheet URL (fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet) returns HTTP 403 to curl/scripted fetches -- consistent with this site's own prior finding (scam-area-codes audit) that FCC pages return 403 to bots (Akamai-style blocking) while remaining live and indexed. Confirmed live via WebSearch results referencing the same URL. Not link rot."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "Inbound link from how-to-call-philippines-from-usa ('for a comparison'); the bridging sentence's factual claim (both countries share the exit-code-plus-country-code shape) is accurate, no L-0805-4-style unchecked claim about this article's content. Outbound: 'More in International Dialing' sidebar on the live page reciprocally links to us-country-code and how-to-call-philippines-from-usa (International Dialing category has only 3 guides, all reciprocally linked since <=6 threshold)."
+    },
+    {
+      "dimension": "10. Schema data consistency",
+      "status": "not applicable",
+      "detail": "No prior content edits exist for this article to check schema drift against; first audit."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "not applicable",
+      "detail": "Neutral technical-reference topic (dialing format), no people/events/groups referenced that could accrue new controversy."
+    },
+    {
+      "dimension": "12. Image availability/copyright",
+      "status": "not applicable",
+      "detail": "Article has no imageCredit/image fields -- text + interactive tool only."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "No violence, weapons, drugs, or gambling content; no misleading/clickbait framing; site-wide ads.txt/privacy/terms already verified in prior work (流量站清单.md AdSense section)."
+    }
+  ],
+  "actions_taken": [
+    "No code changes made. The one specific factual concern investigated (2019 vs. 2020 date conflation for the international 'extra 1' dialing convention) was independently verified and found NOT to be an error -- IFT + Twilio primary/quasi-primary sources confirm the international convention change happened on the same Aug 3, 2019 date as the domestic reform, not a separate 2020 event. Wikipedia's 'as of 2020' phrasing was the weaker, non-committal source."
+  ],
+  "seo_score": "no change (already compliant, verified via check_seo_field_stats.py)",
+  "geo_score": "~78-82/99 (estimated, no fix needed so no re-score)",
+  "escalation": null
+}
+```
