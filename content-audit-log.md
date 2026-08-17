@@ -673,3 +673,111 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "escalation": null
 }
 ```
+
+## california-area-codes
+
+```json
+{
+  "url_slug": "california-area-codes",
+  "url": "https://dialwick.com/california-area-codes/",
+  "last_audited": "2026-08-17",
+  "published_date": "2026-08-03",
+  "selection_note": "31 guides total, only 7 previously audited (24 never-audited). 4 never-audited guides tied for oldest published date (2026-08-03): california-area-codes, what-county-is-chicago-in, what-county-is-houston-in, how-to-call-mexico-from-us. Tie-broken by array position in guides.ts (established texas-area-codes precedent) -- california-area-codes appears first among the four.",
+  "diagnostic_checklist": [
+    "1. Does the article's title/coreSummary count of LA-area-area-codes ('six') match its own FAQ, which names seven (213/323/310/424/818/747/738)?",
+    "2. Do the 1947-origin codes (213, 415, 916) and the LA split/overlay timeline (714/1951, 805/1957, 818/1984, 310/1991, 323/1998, 424 overlay/2006, 747 overlay/2009, 213/323 merge/2017, 738/Nov2024) check out against Wikipedia/CPUC?",
+    "3. Does the body's claim that Sacramento's 916 was 'split-free... 1947 to 2018' match the article's own table, which lists area code 530 (no overlay tag) in service since Nov 1, 1997?",
+    "4. Does grouping '510 and 650' under 'the early 1990s' match the article's own table dates for those two codes?",
+    "5. Does this article have any manual in-body outbound links (matches the zero-outbound-links pattern already found/fixed 4x on this site)?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass, strengthened by fix",
+      "detail": "Single source (Wikipedia: List of NANP area codes) pre-fix -- same single-source pattern as texas-area-codes/scam-area-codes at first audit. Added 2 new sources during this audit (Wikipedia: Area codes 213, 323, and 738; Wikipedia: Area codes 916 and 279) to support the corrected LA-count and Sacramento-split facts."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed (3 issues, all independently confirmed by fresh-context verification agents); 1 checked claim left unchanged (evidence inconclusive, not confirmed either way)",
+      "detail": "(a) Title ('...LA's Six'), coreSummary, section-2 heading ('...to six today'), and section-2 body ('a sixth code, 738, was added') all claimed LA currently has six area codes, while the article's own FAQ answer already listed seven (213, 323, 310, 424, 818, 747, 738). Independent agent WebSearched Wikipedia's 'Area codes 213, 323, and 738' plus CPUC's official '213/323/738 Area Codes' notice and 4 news sources (ABC7 LA, LAmag, etc.), CONFIRMED: 738 (activated Nov 1, 2024) is a real, currently-serving third overlay on the 213/323 complex, not a proposal -- the accurate count is seven, and the article's 'six' claim directly contradicted its own FAQ. Fixed all 4 occurrences in this article. Full-text search (per L-0804-6) found the same LA-count claim echoed in 2 other articles: 213-area-code (via a bridging sentence about California's original codes) and michigan-area-codes (a cross-site bridging sentence, '...traces through six generations...'); both fixed for consistency. (b) Section-2 body claimed 'Sacramento took the simplest route... one split-free run on 916 from 1947 all the way to 2018,' directly contradicting the article's own table, which lists area code 530 (Redding/Chico/Lake Tahoe) in service since Nov 1, 1997 with no overlay annotation -- the same pattern used for every other genuine split in the table. Independent agent WebSearched Wikipedia's 'Area codes 916 and 279' plus CPUC's official 916/279 page, CONFIRMED: 916 was split in 1997 to create 530 (and earlier, in 1959, to create 707); the 279 overlay in 2018 did not change 916's boundaries at all. The identical 'Sacramento's 916 never split at all' claim was found verbatim in 213-area-code (a bridging sentence added the same day this audit's other fix landed, 2026-08-17); both fixed. (c) Section-2 body grouped '510 and 650 in the early 1990s,' but the article's own table lists 510 in service Sep 2, 1991 and 650 in service Aug 2, 1997 -- six years apart, not both 'early 1990s.' Independent agent WebSearched Wikipedia's 'Area codes 510 and 341' and 'Area code 650,' CONFIRMED both dates and the imprecision of the grouping. Rewrote with exact years. (d) A fourth candidate claim -- coreSummary's parenthetical that 916 'was added slightly later that year' than 213/415 in 1947 -- was checked via WebSearch but returned mixed/inconclusive evidence (some sources say all three were assigned the same date in 1947, others give differing month-level detail); this was NOT independently confirmed as an error, so per the audit protocol's 'only act on CONFIRMED findings' rule, it was left unchanged rather than edited on a hunch."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "confirmed stale field -> fixed",
+      "detail": "published field was already present (2026-08-03), no git-history backfill needed. updated field was still 2026-08-03 despite the 3 substantive factual fixes; bumped to 2026-08-17, consistent with this site's established precedent (texas-zip-codes, new-york-zip-codes, texas-area-codes) of bumping 'updated' for substantive fixes but not for meta-description-only fixes. The 2 cross-referenced articles (213-area-code, published/updated same-day 2026-08-17 already; michigan-area-codes, published 2026-08-10) both had their own factual-content edits -- 213-area-code needed no further bump (already today), michigan-area-codes' updated bumped from 2026-08-10 to 2026-08-17."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "This site's established 'code count doesn't map cleanly onto a plain listicle' differentiation angle applies -- SERP competitors (zipcodestogo.com-style directories, allareacodes.com) list flat area-code tables without a split/overlay 'family tree' narrative or a methodology note. Not independently re-verified via a fresh SERP check this run (matches the established precedent of only escalating dimensions with an actual confirmed problem); the fix strengthens this angle since the corrected LA count (seven) and Sacramento split history are now internally consistent, more accurate than most third-party area-code directories, which is the differentiation claim itself."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit (Skill seo-audit)",
+      "status": "confirmed problem -> fixed (description); pass, not escalated (title)",
+      "detail": "Live page checked via curl+DOM: single H1, 4 H2s (incl. FAQ), canonical present, 3 JSON-LD blocks (Article/FAQPage/BreadcrumbList) present and consistent pre-fix. Meta description was 196 chars raw, exceeding this site's already-established ~150-160 char guideline (multiple prior precedent fixes). Fixed: shortened to 149 chars, preserving the core claim and updating 'six' to 'seven.' Title field is 68 chars (79 with ' | DialWick' suffix) -- within this site's established precedent range of not escalating titles up to ~90 chars (chicago-area-code left 74, texas-area-codes left 73, atlanta-zip-codes' original 90 was the only one ever escalated); not escalated."
+    },
+    {
+      "dimension": "6. GEO / ai-seo (99-point rubric)",
+      "status": "borderline fail pre-fix (~72-76/99) -> pass post-fix (~85-87/99)",
+      "detail": "Manual rubric pass consistent with prior audits' methodology (skill invocation surfaced the current framework; applied manually against gathered evidence). Pre-fix weaknesses: single-source EEAT, zero outbound in-body links, and 3 confirmed factual/internal-contradiction errors (worse than most sibling audits, comparable to texas-area-codes' 3-error profile). Post-fix: added 2 named sources, added 2 outbound in-body links (/sacramento-zip-codes/, /los-angeles-zip-codes/), corrected all 3 factual issues including their duplicate occurrences in 2 other articles. Estimated post-fix score ~85-87/99, comfortably above the 80 threshold and in line with sibling articles' post-fix scores."
+    },
+    {
+      "dimension": "7. Humanizer / avoid-ai-writing backfill",
+      "status": "not applicable to original text (published 2026-08-03, predates the 2026-08-07 avoid-ai-writing mandate) / new text checked and clean",
+      "detail": "Original text not re-humanized wholesale, per established precedent. All newly-written/edited passages (title, description, coreSummary edit, section-2 heading, section-2 body rewrite, FAQ answer edit, and the 2 cross-referenced articles' edits) were checked against Skill(humanizer) and Skill(avoid-ai-writing) in detect mode -- no AI-writing tells found (no AI-vocabulary words, no rule-of-three padding, no vague attribution, no copula avoidance clustering). Site's established ' -- ' double-hyphen dash convention used consistently in the new text, not flagged per established sitewide exemption."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "Original source (Wikipedia: List of NANP area codes) returns HTTP 200. Both new sources added during this audit (Wikipedia: Area codes 213, 323, and 738; Wikipedia: Area codes 916 and 279) also return HTTP 200."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "grep of guides.ts confirmed california-area-codes had zero manual in-body outbound links pre-fix -- the same zero-outbound-links pattern already found and fixed 4x on this site (atlanta-zip-codes, new-york-zip-codes, texas-zip-codes, texas-area-codes). Inbound: 3 manual links already existed from san-diego-zip-codes, michigan-area-codes, and 213-area-code (not an orphan); category 'Area Code Lists' also has <=6 members so the automated rotation covers it too. Fixed the outbound gap: added [Sacramento ZIP code list](/sacramento-zip-codes/) in the rewritten section-2 body paragraph and [greater LA area](/los-angeles-zip-codes/) in the FAQ answer (confirmed via [slug].astro that FAQ answers render through the same md() markdown helper as section bodies, so the link renders correctly)."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all auto-derive from the same guide object fields; verified post-fix on the live deployed page that title/description/FAQ answer all reflect the corrected text. datePublished stayed 2026-08-03; dateModified bumped to 2026-08-17 given the substantive nature of the fix."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure area-code/telecom-history/list content (splits, overlays, dates, regional coverage). No reverse-lookup functionality, no YMYL claims, no named-entity controversy risk."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "This article has no hero image, inline image, or diagramSvg field -- consistent with this site's established no-images pattern across all audited articles."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt resolves correctly and points to pub-5245502795720653 (google.com, pub-5245502795720653, DIRECT, f08c47fec0942fa0). /privacy/ and /about/ pages both reachable (HTTP 200). No misleading claims, no clickbait layout, no violence/weapons/drugs/gambling content -- low-risk telecom/geography topic. No close-call/gray-area findings requiring escalation."
+    }
+  ],
+  "independent_confirmations": [
+    "Agent 1 (LA area code count, 'six' vs seven): CONFIRMED PROBLEM -- 738 is a real, currently-active third overlay on the 213/323 complex (activated Nov 1, 2024); true count is seven, contradicting the article's own FAQ and title/coreSummary.",
+    "Agent 2 (Sacramento 916 'split-free... 1947 to 2018' claim): CONFIRMED PROBLEM -- 916 was split in 1997 to create area code 530, directly contradicting the article's own table entry for 530 and external sources (Wikipedia, CPUC).",
+    "Agent 3 (San Francisco '510 and 650 in the early 1990s' grouping): CONFIRMED PROBLEM -- 510 (1991) and 650 (1997) are six years apart per the article's own table and Wikipedia; grouping both under 'early 1990s' is imprecise/wrong."
+  ],
+  "actions_taken": [
+    "Fixed the LA area-code-count contradiction (title, coreSummary, section-2 heading, section-2 body) from 'six' to 'seven,' matching the FAQ's existing correct list of 7 codes; also fixed the same claim's 2 duplicate occurrences in 213-area-code and michigan-area-codes.",
+    "Rewrote the San Francisco/Sacramento paragraph: fixed the imprecise '510 and 650 in the early 1990s' grouping to exact years (1991, 1997), and replaced the false 'split-free... 1947 to 2018' Sacramento claim with the accurate history (916 split once, in 1997, creating 530, before the 279 overlay in 2018); also fixed the duplicate Sacramento claim in 213-area-code.",
+    "Added 2 new sourced citations (Wikipedia: Area codes 213, 323, and 738; Wikipedia: Area codes 916 and 279).",
+    "Added 2 outbound in-body links (/sacramento-zip-codes/ in the rewritten section-2 body, /los-angeles-zip-codes/ in the FAQ answer), fixing a confirmed zero-outbound-links gap matching this site's established recurring pattern.",
+    "Shortened meta description from 196 to 149 chars, incorporating the corrected 'seven' count.",
+    "Left one investigated-but-unconfirmed claim unchanged (916 'added slightly later' than 213/415 in 1947) since WebSearch evidence was mixed/inconclusive and no independent CONFIRMED finding was obtained.",
+    "Ran Skill(humanizer) and Skill(avoid-ai-writing) in detect mode on all newly-written/edited passages across all 3 touched articles; no issues found.",
+    "Bumped 'updated' from 2026-08-03 to 2026-08-17 for california-area-codes and from 2026-08-10 to 2026-08-17 for michigan-area-codes (213-area-code needed no bump, already dated 2026-08-17 same-day).",
+    "npm test (64/64 passed) and npm run build (40 pages) both passed after the edit.",
+    "Committed (27d6e05) and pushed to origin/main; verified live via polling (9 attempts, ~54s) that all 3 touched pages reflect the fixes; both new internal-link targets return HTTP 200.",
+    "Submitted https://dialwick.com/california-area-codes/, https://dialwick.com/213-area-code/, https://dialwick.com/michigan-area-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200).",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish."
+  ],
+  "seo_score": "on-page technical: 1 confirmed issue (meta description length, 196->149 chars) found and fixed; title (79 chars w/ suffix) reviewed and not escalated per site precedent",
+  "geo_score": "~72-76/99 pre-fix (borderline fail, below 80, due to single-source EEAT + zero internal links + 3 confirmed factual/internal-contradiction errors) -> ~85-87/99 post-fix (pass)",
+  "escalation": null
+}
+```
