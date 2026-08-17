@@ -2521,4 +2521,91 @@ export const guides: Guide[] = [
 			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
 		],
 	},
+	{
+		slug: 'phoenix-zip-codes',
+		category: 'ZIP Codes',
+		title: 'Phoenix ZIP Codes: All 77, and Why the List Never Crosses a County Line',
+		description:
+			"Phoenix has 77 ZIP codes, all inside Maricopa County -- not because the city stayed small, but because it annexed nearly 500 square miles since 1950, faster than its ZIP list ever needed to reach a second county.",
+		published: '2026-08-17',
+		updated: '2026-08-17',
+		coreSummary:
+			"USPS assigns 77 ZIP codes to \"Phoenix, AZ\" as the primary place name, and every one of them sits inside Maricopa County, per this site's GeoNames-based source data -- the same single-county pattern this site found in San Diego and Sacramento, unlike Denver or Atlanta, where the list crosses into a second county entirely. zip-codes.com counts a smaller total, 71 ZIP codes, and other directories land closer to 74 or 75, a gap that traces back to how each one handles overlapping postal boundaries and PO-Box-only codes rather than to any real dispute about the county line. Phoenix's single-county footprint isn't a small-city coincidence -- the city added roughly 95 square miles through annexation in the 1950s alone, on its way from 17.1 square miles in 1950 to 517.9 square miles today, more land area than New York City, Los Angeles, or Chicago each cover individually. Two of the 77 ZIP codes on this site's list don't belong to a neighborhood at all: 85001 is a PO-Box-only code for the downtown business core, and 85034 belongs to Phoenix Sky Harbor International Airport.",
+		sections: [
+			{
+				heading: 'All 77 ZIP codes with "Phoenix, AZ" as the primary USPS place name',
+				body: [
+					"Every one of the 77 falls inside Maricopa County -- the same pattern this site found in [Sacramento](/sacramento-zip-codes/) and [San Diego](/san-diego-zip-codes/), and a contrast to [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/), where the ZIP list crosses into a neighboring county. What varies between sources isn't the county, it's the count: zip-codes.com lists 71 ZIP codes for Phoenix, six short of the 77 GeoNames assigns, and other trackers settle around 74 or 75 -- differences that come down to whether overlapping postal boundaries and PO-Box-only codes get folded into the total or listed separately.",
+					"Phoenix also dials on three area codes -- 602, 623, and 480 -- and all three now overlay the entire metro area rather than serving separate zones, a history covered in the FAQ below.",
+				],
+				table: {
+					caption: 'All 77 ZIP codes with "Phoenix, AZ" as the primary USPS place name (per GeoNames.org, checked 2026-08-17)',
+					columns: ['ZIP'],
+					rows: [
+						['85001'], ['85002'], ['85003'], ['85004'], ['85005'],
+						['85006'], ['85007'], ['85008'], ['85009'], ['85010'],
+						['85011'], ['85012'], ['85013'], ['85014'], ['85015'],
+						['85016'], ['85017'], ['85018'], ['85019'], ['85020'],
+						['85021'], ['85022'], ['85023'], ['85024'], ['85025'],
+						['85026'], ['85027'], ['85028'], ['85029'], ['85030'],
+						['85031'], ['85032'], ['85033'], ['85034'], ['85035'],
+						['85036'], ['85037'], ['85038'], ['85039'], ['85040'],
+						['85041'], ['85042'], ['85043'], ['85044'], ['85045'],
+						['85046'], ['85048'], ['85050'], ['85051'], ['85053'],
+						['85054'], ['85060'], ['85061'], ['85062'], ['85063'],
+						['85064'], ['85065'], ['85066'], ['85067'], ['85068'],
+						['85069'], ['85070'], ['85071'], ['85072'], ['85073'],
+						['85074'], ['85075'], ['85076'], ['85078'], ['85079'],
+						['85080'], ['85082'], ['85083'], ['85085'], ['85086'],
+						['85097'], ['85098'],
+					],
+				},
+			},
+			{
+				heading: "How a 17-square-mile town grew into a footprint bigger than New York City's",
+				body: [
+					"Phoenix's single-county ZIP list isn't a sign of a small city. The city's own published history puts its 1950 footprint at 17.1 square miles and its population at 106,000 -- close to the Census Bureau's count of 106,818 that year. Over the following decade the city added about 95 square miles through annexation -- including Maryvale and large sections of south Phoenix in 1959. Growth on that scale kept going for decades: Phoenix covered around 470 square miles by the early 2000s and stands at 517.9 square miles today, more land area than New York City, Los Angeles, or Chicago each cover individually.",
+					"Cities racing to expand in that era often annexed narrow, contiguous strips of land just to keep a neighboring town from claiming the same ground first, then filled in the territory behind those strips later. Phoenix used that strategy through the 1950s and 1960s as it and its neighbors -- Scottsdale, Tempe, Glendale, Mesa -- pushed into the same stretch of desert at the same time. The reason none of that growth ever pushed a Phoenix ZIP code into a second county is simpler than it looks: Maricopa County itself covers 9,224 square miles, more than seventeen times the land Phoenix occupies today. There's a lot of county left for the city to grow into before its ZIP list would ever need to follow Denver's or Atlanta's cross-county pattern.",
+				],
+			},
+			{
+				heading: "Two ZIP codes that don't belong to any neighborhood",
+				body: [
+					"85001 is downtown Phoenix's original ZIP code, assigned when USPS rolled out five-digit ZIP codes nationwide on July 1, 1963. It's the only one on this list that isn't a neighborhood: a PO-Box-only code covering the Copper Square and Central City business core, with no residential population of its own. The Arizona State Capitol and Wesley Bolin Memorial Plaza, the state's outdoor war memorial, sit two ZIP codes over at 85007, not inside 85001.",
+					"85034 belongs to Phoenix Sky Harbor International Airport rather than any neighborhood -- the airport sits close enough to downtown that its runways fall inside the same numbered sequence as the rest of central Phoenix, rather than off in a separate suburban code the way many US airports are.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Phoenix have?',
+				answer:
+					"This site's GeoNames-based source data counts 77. That's higher than zip-codes.com's count of 71, and higher than the 74 or 75 other directories tend to report -- the gap comes from how each tracker classifies PO-Box-only and overlapping postal codes, not from any disagreement about which ZIP codes belong to Phoenix in the first place.",
+			},
+			{
+				question: 'What county is Phoenix in?',
+				answer:
+					"Maricopa County, and every one of the 77 ZIP codes USPS assigns to Phoenix stays inside that single county. Despite Phoenix covering more land than New York City, Los Angeles, or Chicago individually, Maricopa County itself is large enough -- 9,224 square miles -- that the city's ZIP list has never needed to cross into a second county.",
+			},
+			{
+				question: 'Why is ZIP code 85001 a PO box only?',
+				answer:
+					"85001 is downtown Phoenix's original ZIP code, assigned in 1963 when USPS introduced five-digit codes nationwide. It now covers the Copper Square and Central City business core -- office towers and government buildings rather than housing -- so USPS classifies it as a PO-Box-only code with no residential population of its own.",
+			},
+			{
+				question: 'What area codes does Phoenix use?',
+				answer:
+					"602, 623, and 480. Arizona had only one area code, 602, from 1947 until 1995, when the state split off 520 for Tucson and the rest of the state; 602 was then split three ways in 1999, creating 480 for the East Valley and 623 for the West Valley alongside a shrunken 602 for the urban core. In 2023, regulators recombined 602, 623, and 480 into a single overlay covering the whole Phoenix metro area, so any of the three can now show up on a new phone number anywhere in the region.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Phoenix, AZ ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/az-phoenix.asp' },
+			{ label: 'ZIP Code 85001 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/85001/zip-code-85001.asp' },
+			{ label: 'City of Phoenix: City History', url: 'https://www.phoenix.gov/administration/departments/communications/history-facts/city-history.html' },
+			{ label: 'Phoenix, Arizona -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Phoenix,_Arizona' },
+			{ label: 'Maricopa County, Arizona -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Maricopa_County,_Arizona' },
+			{ label: 'Phoenix Sky Harbor International Airport -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport' },
+		],
+	},
 ];
