@@ -2321,16 +2321,16 @@ export const guides: Guide[] = [
 		category: 'Counties',
 		title: 'What County Is Chicago In?',
 		description:
-			"Chicago is entirely inside Cook County -- all 84 of its ZIP codes, no split with a neighboring county. Cook is the second-most-populous county in the US, and it's losing that spot to Houston's Harris County.",
+			"All 84 of Chicago's ZIP codes sit inside Cook County -- only the city's O'Hare strip dips into DuPage. Cook is the second-most-populous US county, and it's growing again, not losing ground to Harris County.",
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-18',
 		coreSummary:
-			"Chicago is entirely within Cook County, Illinois -- every one of the 84 ZIP codes USPS assigns to Chicago sits in Cook County, with no cross-county split. Cook County was established in 1831, has Chicago as its seat, and contains 135 separate incorporated municipalities beyond Chicago itself. It's the second-most-populous county in the US at roughly 5.18 million people, but it's the only one of the top three that's shrinking -- Harris County, Texas (Houston) is projected to overtake it.",
+			"Every one of the 84 ZIP codes USPS assigns to Chicago sits in Cook County, Illinois -- the only exception is the city's own municipal boundary, which picked up a small, uninhabited strip of DuPage County when Chicago annexed O'Hare Airport in 1956. Cook County was established in 1831, has Chicago as its seat, and contains 135 separate incorporated municipalities beyond Chicago itself. It's the second-most-populous county in the US at roughly 5.19 million people, and it has been growing again since 2023 after losing residents earlier in the decade -- Harris County, Texas (Houston) is the fastest-growing large county nationally and has narrowed the gap, though it still trails Cook by roughly 150,000 people.",
 		sections: [
 			{
 				heading: 'Chicago is entirely inside Cook County',
 				body: [
-					"Unlike Atlanta (split between Fulton and DeKalb) or several other major US cities, Chicago doesn't straddle a county line. All 84 ZIP codes with Chicago as their primary USPS place name sit inside Cook County, Illinois, and Cook County has been Chicago's home county since the county's creation in 1831 by the Illinois state legislature -- the 54th county established in the state.",
+					"All 84 ZIP codes with Chicago as their primary USPS place name sit inside Cook County, Illinois (see the [full Chicago ZIP code list](/chicago-zip-codes/)), and Cook County has been Chicago's home county since the county's creation in 1831 by the Illinois state legislature -- the 54th county established in the state. The one asterisk is the city's own municipal boundary, not its ZIP codes: when Chicago annexed O'Hare Airport in 1956, the deal pulled in a small, uninhabited strip on the airport's southwest edge that actually sits in DuPage County. It's a narrower crossing than [Atlanta's split between Fulton and DeKalb](/atlanta-zip-codes/) -- no Chicago ZIP code or resident is affected, just airport land -- but it means \"Chicago never crosses a county line\" isn't quite literally true.",
 				],
 			},
 			{
@@ -2340,9 +2340,9 @@ export const guides: Guide[] = [
 				],
 			},
 			{
-				heading: "Cook County is the second-largest US county by population, and shrinking",
+				heading: "Cook County is the second-largest US county by population, and growing again",
 				body: [
-					'Cook County\'s population of roughly 5.18 million makes it the second-most-populous county in the country, behind only Los Angeles County, California. But Cook is the only county in the national top three that\'s losing population -- it\'s down about 81,000 residents since 2020, while third-place Harris County, Texas (Houston\'s home county) added roughly 106,000 residents in a single recent year and is on track to pass Cook County for the number-two spot.',
+					'Cook County\'s population of roughly 5.19 million makes it the second-most-populous county in the country, behind only Los Angeles County, California. Cook lost residents through the pandemic years, bottoming out at about 5.13 million in 2022, but it has grown every year since -- the Census Bureau\'s most recent estimate (July 2025) puts the county about 84,000 below its 2020 count, not still falling. [Harris County, Texas](/what-county-is-houston-in/) (Houston\'s home county) has been the fastest-growing large county in the US, adding roughly 106,000 residents in a single year (2023 to 2024), and it has narrowed the distance to Cook -- but Cook still led by about 150,000 people as of the latest count, and whether Harris eventually overtakes it is not yet a settled trend.',
 				],
 			},
 		],
@@ -2350,7 +2350,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What county is Chicago in?',
 				answer:
-					"Chicago is entirely inside Cook County -- all 84 of the city's ZIP codes fall within it, with no split into a neighboring county.",
+					"Chicago's ZIP codes are entirely inside Cook County -- all 84 of the city's ZIP codes fall within it, with no split into a neighboring county. (The city's own boundary does dip into a small, uninhabited corner of DuPage County at O'Hare Airport, but that sliver isn't part of any Chicago ZIP code.)",
 			},
 			{
 				question: 'What is the county seat of Cook County?',
@@ -2365,7 +2365,8 @@ export const guides: Guide[] = [
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'Cook County, Illinois -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Cook_County,_Illinois' },
-			{ label: 'US Census Bureau: counties that have topped one million population', url: 'https://www.census.gov/library/stories/2025/03/million-person-counties.html' },
+			{ label: "O'Hare, Chicago -- Wikipedia (community area straddling Cook and DuPage counties)", url: 'https://en.wikipedia.org/wiki/O%27Hare,_Chicago' },
+			{ label: 'US Census Bureau: Vintage 2025 population estimates for counties (April 2020 to July 2025)', url: 'https://www.census.gov/newsroom/press-releases/2026/2025-popest-metro-micro-counties.html' },
 		],
 	},
 	{
@@ -2373,11 +2374,11 @@ export const guides: Guide[] = [
 		category: 'Counties',
 		title: 'What County Is Houston In?',
 		description:
-			"Houston is entirely inside Harris County, its address labeled that way for every one of the city's 178 ZIP codes -- and Harris County is about to overtake Chicago's Cook County as the second most populous county in the US.",
+			"Houston is entirely inside Harris County, spanning all 178 of the city's ZIP codes -- and Harris has been the fastest-growing large county in the US, closing the gap on Chicago's Cook County.",
 		published: '2026-08-03',
-		updated: '2026-08-03',
+		updated: '2026-08-18',
 		coreSummary:
-			"Houston is entirely within Harris County, Texas -- every one of the 178 ZIP codes USPS assigns to Houston sits in Harris County. Harris County was founded in December 1836, with Houston named its county seat that same month. It's currently the third-most-populous county in the US at roughly 5.01 million people and is growing faster than any other county in the country -- on track to overtake Cook County, Illinois (Chicago) for second place nationally.",
+			"Houston is entirely within Harris County, Texas -- every one of the 178 ZIP codes USPS assigns to Houston sits in Harris County. Harris County was founded in December 1836, with Houston named its county seat that same month. It's currently the third-most-populous county in the US at roughly 5.05 million people and is growing faster than any other large county in the country -- narrowing the gap with Cook County, Illinois (Chicago), though Cook still held a lead of roughly 150,000 people as of the latest Census Bureau estimate.",
 		sections: [
 			{
 				heading: 'Houston is entirely inside Harris County',
@@ -2386,9 +2387,9 @@ export const guides: Guide[] = [
 				],
 			},
 			{
-				heading: 'Harris County is about to become the second-largest county in the US',
+				heading: 'Harris County is closing in on the second-largest spot in the US',
 				body: [
-					"Harris County's population of roughly 5.01 million currently ranks third nationally, behind Los Angeles County, California and Cook County, Illinois (Chicago). But Harris County added about 106,000 residents in a single recent 12-month period -- more than any other county in the country -- while Cook County lost population over the same stretch. On current trends, Harris is projected to pass Cook and become the second-most-populous county in the US, a shift that would end Cook County's decades-long hold on that spot.",
+					"Harris County's population of roughly 5.05 million currently ranks third nationally, behind Los Angeles County, California and Cook County, Illinois (Chicago). Harris County added about 106,000 residents in a single 12-month period (2023 to 2024) -- more than any other county in the country -- and it has kept growing faster than Cook County since, even though Cook itself returned to growth after a pandemic-era dip rather than continuing to shrink. Harris still trailed Cook by roughly 150,000 people as of the Census Bureau's most recent estimate (July 2025); whether that gap closes further is not yet a settled trend.",
 				],
 			},
 		],
@@ -2410,6 +2411,7 @@ export const guides: Guide[] = [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'Harris County, Texas -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Harris_County,_Texas' },
 			{ label: 'Axios Houston: Harris County poised to become 2nd most populous county', url: 'https://www.axios.com/local/houston/2025/03/13/harris-county-second-largest-county-by-population-houston-migration-boom' },
+			{ label: 'US Census Bureau: Vintage 2025 population estimates for counties (April 2020 to July 2025)', url: 'https://www.census.gov/newsroom/press-releases/2026/2025-popest-metro-micro-counties.html' },
 		],
 	},
 
