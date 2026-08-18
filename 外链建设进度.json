@@ -17,6 +17,13 @@
       "question_url": "https://www.quora.com/How-do-area-codes-work-for-a-phone-number",
       "answer_url": "https://www.quora.com/How-do-area-codes-work-for-a-phone-number/answer/Owen-Zhang-161",
       "date": "2026-08-16"
+    },
+    {
+      "target_page": "202-area-code",
+      "question_url": "https://www.quora.com/Where-is-area-code-202-in-the-United-States",
+      "answer_url": "https://www.quora.com/Where-is-area-code-202-in-the-United-States/answer/Owen-Zhang-161",
+      "date": "2026-08-18",
+      "notes": "发布时该问题0答案（2条折叠垃圾答案不计）。以站内202-area-code文章骨架撰写（202自1947年North American Numbering Plan启用起覆盖整个华盛顿特区，74年无分裂，2021年11月9日首个overlay 771上线；边界自1846-47年弗吉尼亚部分归还后再未变动，无可兼并郊区导致从未有分裂线可画；约69万人共享61平方英里；202因联邦色彩强烈成为诈骗电话冒充政府机构的常用前缀）。过humanizer+avoid-ai-writing双重检查，现场删除两处Tier1 AI高频词'actually'。用Add Link功能插入真实超链接，发布前/后均用javascript_tool核实DOM为真实<a href>。"
     }
   ],
   "reddit": []
