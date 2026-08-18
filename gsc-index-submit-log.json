@@ -174,5 +174,15 @@
       "https://dialwick.com/california-area-codes/"
     ],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-18",
+    "action": "submitted",
+    "reason": "今日新发布第24篇202-area-code，URL Inspection确认'URL is not on Google'，REQUEST INDEXING提交成功确认'Indexing requested'。",
+    "submitted_urls": [
+      "https://dialwick.com/202-area-code/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
