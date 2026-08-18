@@ -2815,4 +2815,97 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
+	{
+		slug: 'fresno-zip-codes',
+		category: 'ZIP Codes',
+		title: "Fresno ZIP Codes: The Full List, and Why Two-Thirds Aren't Delivery Routes",
+		description:
+			"All 58 ZIP codes USPS assigns to Fresno, California -- entirely inside Fresno County -- plus the 2010 split that created 93737 and the two ZIPs tied to an IRS tax-processing center that closed in 2021.",
+		published: '2026-08-18',
+		updated: '2026-08-18',
+		coreSummary:
+			"USPS assigns 58 ZIP codes to Fresno, California, and unlike this site's Atlanta, Denver, or Cincinnati lists, every one of them sits inside a single county -- Fresno County, no split across a line. zip-codes.com's own delivery-type breakdown for the city puts only 19 of the 58 on standard residential and business routes; the other 39 split into 28 PO Box codes and 11 unique codes reserved for single high-volume recipients, outnumbering the standard codes by roughly two to one. Two of those unique codes, 93844 and 93888, aren't Fresno neighborhoods at all -- zip-codes.com tags both as IRS Service Center addresses, tracing back to a paper tax-return processing center the IRS permanently closed in Fresno at the end of September 2021. And one of the 58, 93737, didn't exist before July 2010, when USPS carved it out of a crowded 93727 to keep mail moving on the city's east side.",
+		sections: [
+			{
+				heading: 'All 58 ZIP codes USPS assigns to Fresno',
+				body: [
+					"Every one of the 58 ZIP codes USPS assigns to \"Fresno, CA\" as the primary place name sits inside Fresno County, per this site's source data -- there's no county split here the way there is on this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists. What the county-level view hides is how few of those 58 codes actually correspond to a residential mail route: zip-codes.com's own delivery-type tally for the city counts 19 standard codes, 28 PO Box codes, and 11 unique codes assigned to single high-volume recipients -- meaning the codes that aren't tied to an ordinary carrier route outnumber the ones that are, by roughly two to one.",
+				],
+				table: {
+					caption: 'All 58 ZIP codes with "Fresno, CA" as the primary USPS place name (per GeoNames.org, checked 2026-08-18)',
+					columns: ['ZIP'],
+					rows: [
+						['93650'], ['93701'], ['93702'], ['93703'], ['93704'],
+						['93705'], ['93706'], ['93707'], ['93708'], ['93709'],
+						['93710'], ['93711'], ['93712'], ['93714'], ['93715'],
+						['93716'], ['93717'], ['93718'], ['93720'], ['93721'],
+						['93722'], ['93723'], ['93724'], ['93725'], ['93726'],
+						['93727'], ['93728'], ['93729'], ['93730'], ['93737'],
+						['93740'], ['93741'], ['93744'], ['93745'], ['93747'],
+						['93750'], ['93755'], ['93760'], ['93761'], ['93764'],
+						['93765'], ['93771'], ['93772'], ['93773'], ['93774'],
+						['93775'], ['93776'], ['93777'], ['93778'], ['93779'],
+						['93786'], ['93790'], ['93791'], ['93792'], ['93793'],
+						['93794'], ['93844'], ['93888'],
+					],
+				},
+			},
+			{
+				heading: 'The 2010 split that created 93737',
+				body: [
+					"93737 is the newest code on the list above, and it exists because of a specific, documented USPS decision rather than a gradual boundary drift. The Postal Service's Sacramento District announced in mid-2010 that the 93727 ZIP, on Fresno's east side, had grown crowded enough to justify carving out a piece of it as its own code. The split took effect July 1, 2010, and only affected around 1,200 customers on the east side of Temperance Avenue, who received notice by mail that spring; the same Sunnyside postal station on East Olive Avenue kept handling their delivery afterward; only the ZIP printed on the envelope changed.",
+					"That's a narrower kind of change than the splits and overlays this site has documented at the area-code level -- see the [California area codes list](/california-area-codes/) for how Fresno's own area code, 559, split off a larger numbering plan area in 1998 -- but it follows the same underlying logic: when growth outpaces what a single code can carry efficiently, the agency responsible draws a new line rather than letting the old one strain indefinitely.",
+				],
+			},
+			{
+				heading: "93844 and 93888: two ZIPs tied to an IRS center that closed in 2021",
+				body: [
+					"93844 and 93888 both stand out from the rest of the table above -- neither is a delivery area anyone lives in, and zip-codes.com tags both as IRS Service Center codes among the 11 unique codes in its tally. They trace back to a paper tax-return processing center the IRS operated at Butler and Peach avenues on Fresno's east side -- inside the same 93727 ZIP this article's earlier section covers -- which employed roughly 3,000 people at its 2016 peak before the agency wound the site down and closed it permanently at the end of September 2021, as electronic filing displaced most paper returns. Taxpayers in the states the Fresno center used to serve -- Alaska, California, Hawaii, Ohio, and Washington -- now mail paper returns to the IRS's Ogden, Utah processing center instead, but the two Fresno ZIP codes remain in USPS's own database regardless.",
+					"This site's own [Atlanta ZIP list](/atlanta-zip-codes/) already flags the same single-recipient pattern for Atlanta's 39901 and Austin's 73301, and for [Chicago's 28 single-recipient codes](/chicago-zip-codes/) -- when an organization receives enough mail, USPS carves out a ZIP that belongs to it alone, wherever that number happens to fall in the numbering sequence. Fresno's pair is a reminder that a unique ZIP can keep existing in that database even after the facility it was built for has shut down.",
+				],
+			},
+			{
+				heading: "From 209 to 559 to 357: Fresno's area codes, one of them barely a year old",
+				body: [
+					"Fresno's phone numbers trace back to 209, which itself split off from 916 -- one of California's three original 1947 area codes -- in 1958, decades before Fresno had a code of its own to call. Fresno kept 209 for four more decades before the region split off its own code, 559, in November 1998, the same year several other fast-growing California metros split off codes of their own. 559 stayed Fresno's only code for more than 26 years, longer than 213 lasted before Los Angeles's first split in 1951, before regulators added an overlay, 357, on March 26, 2025 -- among the newest area codes in the state, per Wikipedia's tracking of the numbering plan.",
+					"That overlay means new phone numbers in the Fresno area now carry 357 rather than 559, while existing 559 numbers keep working exactly as before -- the same overlay pattern this site's [California area codes list](/california-area-codes/) documents elsewhere in the state. San Francisco added its own overlay, 628, back in 2015, and Sacramento added 279 in 2018, both years ahead of Fresno's turn. Los Angeles's most recent overlay, 738, is the one that came close: it landed November 1, 2024, less than five months before 357 arrived in Fresno.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Fresno have?',
+				answer:
+					"58, all inside Fresno County per this site's source data. zip-codes.com's delivery-type breakdown for the city counts 19 as standard routes, 28 as PO Box codes, and 11 as unique codes reserved for single high-volume recipients.",
+			},
+			{
+				question: 'What county is Fresno, CA in?',
+				answer:
+					"Fresno County. Unlike this site's Atlanta, Denver, or Cincinnati ZIP lists, none of Fresno's 58 ZIP codes cross into a neighboring county.",
+			},
+			{
+				question: 'Why does Fresno have a ZIP code 93737?',
+				answer:
+					"USPS created 93737 on July 1, 2010, splitting it off from the increasingly crowded 93727 on Fresno's east side. About 1,200 customers on the east side of Temperance Avenue had their ZIP code changed; their mail kept moving through the same Sunnyside postal station as before.",
+			},
+			{
+				question: 'What is ZIP code 93888 used for?',
+				answer:
+					"93888, along with a second unique code, 93844, is tagged an IRS Service Center address by zip-codes.com rather than a residential neighborhood. Both trace back to the paper tax-return processing center the IRS operated at Butler and Peach avenues on Fresno's east side, which closed permanently at the end of September 2021; taxpayers who used to file there now mail returns to Ogden, Utah instead. This site's Atlanta and Chicago ZIP lists document the same USPS convention for other IRS and government mail centers.",
+			},
+			{
+				question: 'What area code does Fresno use?',
+				answer:
+					"559, in service since November 1998 when it split off from 209. A newer overlay code, 357, was added on top of the same area on March 26, 2025, so new phone numbers there now carry 357 while existing 559 numbers are unaffected.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'All ZIP Codes, Map and Demographics of Fresno, CA -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-fresno.asp' },
+			{ label: 'USPS: ZIP Code change for Fresno, CA 93727 (2010 news release)', url: 'https://about.usps.com/news/state-releases/ca/2010/ca_2010_0622.htm' },
+			{ label: 'IRS IR-2021-185: New mailing address for some Western states as Fresno, California, paper tax return processing center closes', url: 'https://www.irs.gov/newsroom/new-mailing-address-for-some-western-states-as-fresno-california-paper-tax-return-processing-center-closes' },
+			{ label: 'Area codes 559 and 357 -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Area_codes_559_and_357' },
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+		],
+	},
 ];
