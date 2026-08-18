@@ -2,23 +2,25 @@
   "https://dialwick.com/scam-area-codes/": {
     "submitted_date": "2026-08-03",
     "verified_status": "pending",
-    "last_checked_date": "2026-08-11",
+    "last_checked_date": "2026-08-17",
     "verified_method": "bwt_url_inspection",
-    "last_submitted_date": "2026-08-11"
+    "last_submitted_date": "2026-08-11",
+    "note": "discovered 03 Aug 2026, 账龄恰好14天, 逼近阈值, 下次运行大概率转stale"
   },
   "https://dialwick.com/atlanta-zip-codes/": {
     "submitted_date": "2026-08-03",
     "verified_status": "pending",
     "last_submitted_date": "2026-08-04",
-    "last_checked_date": "2026-08-16",
+    "last_checked_date": "2026-08-17",
     "verified_method": "bwt_url_inspection",
-    "note": "Discovered but not crawled, discovered 03 Aug 2026, age 13 days as of 08-16 check, approaching stale threshold"
+    "note": "discovered 03 Aug 2026, 账龄恰好14天, 逼近阈值, 下次运行大概率转stale"
   },
   "https://dialwick.com/new-york-zip-codes/": {
     "submitted_date": "2026-08-03",
     "verified_status": "pending",
-    "last_checked_date": "2026-08-11",
-    "verified_method": "bwt_url_inspection"
+    "last_checked_date": "2026-08-17",
+    "verified_method": "bwt_url_inspection",
+    "note": "discovered 03 Aug 2026, 账龄恰好14天, 逼近阈值, 下次运行大概率转stale"
   },
   "https://dialwick.com/texas-zip-codes/": {
     "submitted_date": "2026-08-09",
@@ -28,17 +30,17 @@
   "https://dialwick.com/texas-area-codes/": {
     "submitted_date": "2026-08-03",
     "verified_status": "pending",
-    "last_checked_date": "2026-08-16",
+    "last_checked_date": "2026-08-17",
     "verified_method": "bwt_url_inspection",
     "last_submitted_date": "2026-08-12",
-    "note": "Discovered but not crawled, discovered 03 Aug 2026, age 13 days as of 08-16 check, approaching stale threshold"
+    "note": "discovered 03 Aug 2026, 账龄恰好14天, 逼近阈值, 下次运行大概率转stale"
   },
   "https://dialwick.com/california-area-codes/": {
     "submitted_date": "2026-08-03",
     "verified_status": "pending",
-    "last_checked_date": "2026-08-16",
+    "last_checked_date": "2026-08-17",
     "verified_method": "bwt_url_inspection",
-    "note": "Discovered but not crawled, discovered 03 Aug 2026, age 13 days as of 08-16 check, approaching stale threshold",
+    "note": "discovered 03 Aug 2026, 账龄恰好14天, 逼近阈值, 下次运行大概率转stale",
     "last_submitted_date": "2026-08-17"
   },
   "https://dialwick.com/how-do-area-codes-work/": {
@@ -193,6 +195,11 @@
   "https://dialwick.com/cincinnati-zip-codes/": {
     "submitted_date": "2026-08-17",
     "last_submitted_date": "2026-08-17",
+    "verified_status": "pending"
+  },
+  "https://dialwick.com/202-area-code/": {
+    "submitted_date": "2026-08-18",
+    "last_submitted_date": "2026-08-18",
     "verified_status": "pending"
   }
 }
