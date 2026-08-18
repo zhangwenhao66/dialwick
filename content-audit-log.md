@@ -865,3 +865,94 @@ First-ever audit run for this site (2026-08-03). Format per `trafficsite-content
   "escalation": null
 }
 ```
+
+## what-county-is-chicago-in
+
+First-ever audit for this article (had never been picked in prior runs -- previously listed in `selection_note` as tied-for-oldest but not selected). Full 13-dimension pass per the current `trafficsite-content-quality-audit` methodology, with 3 independent-agent-confirmed findings and 1 duplicate error found and synced on the sibling article `what-county-is-houston-in`.
+
+```json
+{
+  "url_slug": "what-county-is-chicago-in",
+  "url": "https://dialwick.com/what-county-is-chicago-in/",
+  "last_audited": "2026-08-18",
+  "published_date": "2026-08-03",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "3 named authoritative sources (GeoNames postal code database, Wikipedia Cook County article, US Census Bureau) with specific, dated statistics (84 ZIP codes, 1831 founding/54th county, 135 municipalities, ~5.19M population) -- stronger than several previously-audited single-source articles on this site."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "2 confirmed problems -> fixed",
+      "detail": "(a) 'Chicago doesn't straddle a county line' / 'entirely within Cook County... no cross-county split' was an overgeneralization: independent agent confirmed via Wikipedia ('Chicago' and 'O'Hare, Chicago' articles) that the city's own municipal boundary picked up a small, uninhabited DuPage County strip when it annexed O'Hare Airport in 1956 -- the O'Hare community area is the only one of Chicago's 77 community areas that crosses outside Cook County. The narrower ZIP-code claim itself was separately verified accurate against this site's own src/lib/data/zipCounty.json (all 84 Chicago-primary ZIPs, including 60666 which covers O'Hare, are GeoNames-assigned to Cook County -- the same single-county flattening this site already caveats for Atlanta's 30339 and Denver's 80221). Fixed by adding a caveat that preserves the accurate ZIP claim while correcting the broader boundary claim. (b) 'Cook is the only county in the top three that's losing population... down about 81,000 since 2020... Harris County added roughly 106,000... on track to pass Cook' was outdated and its only cited source (a March 2025 census.gov story) does not contain either number or the 'overtake' claim. Independent agent fetched the Census Bureau's Vintage 2025 county population estimates (released March 2026, predating this article's data) directly: Cook County grew every year from 2022 to 2025 (5,127,866 -> 5,142,853 -> 5,188,791 -> 5,194,625) and led Harris County (5,045,026) by ~150,000 as of the latest count -- it is not currently 'losing population.' Fixed description/coreSummary/section-3 heading+body with the corrected trend and cited the actual Vintage 2025 press release. The identical stale claim was found duplicated in the sibling article what-county-is-houston-in (discovered while adding an outbound link to it) and synced with the same correction per this site's own house rule that a fixed error must be checked for duplicates elsewhere."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "confirmed problem -> fixed",
+      "detail": "published 2026-08-03 was correctly present (no published-field backfill needed). updated bumped to 2026-08-18 to reflect this audit's corrections. See dimension 2(b) -- the population-trend section was 1+ year stale relative to the newest official Census Bureau release available before this article's own publish date."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "WebSearch for 'what county is chicago in' shows a SERP dominated by Wikipedia's Cook County article and government sites -- none synthesize the ZIP-code granularity, 135-municipality count, and population-trend detail this article does. Once corrected, the new O'Hare/DuPage caveat is a genuine differentiator most simple answer pages omit (though Wikipedia's own O'Hare-specific pages do document the underlying fact, so no 'nobody covers this' claim was made in the copy itself, per L-0805-3)."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit (Skill seo-audit)",
+      "status": "pass; 1 self-introduced regression caught and fixed before commit",
+      "detail": "Live page checked via curl+DOM: single H1, 4 H2s, canonical present, 3 JSON-LD blocks (Article/BreadcrumbList/FAQPage) present and consistent. Title (37 chars incl. suffix) is the shortest on the site but matches its category sibling what-county-is-houston-in exactly (also 37) -- treated as a deliberate 'Counties' category convention, not flagged. Description was 207 chars pre-fix (z=0.82 against this site's own description-length distribution, n=34, mean=185, sd=26.6) -- within normal range, not flagged. During the fix, the first draft of the corrected description ballooned to 256 chars (z=2.66, a new outlier); caught by re-measuring the rebuilt dist/ output before committing and trimmed to 206 chars (z=0.78). Applied the same length check to what-county-is-houston-in's edited description (258->191 chars) since it was edited in the same pass."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85-88/99 (estimated manual pass, no full 99-point run) after fixes; pre-fix estimate ~72-76/99",
+      "detail": "Strong structure (H2s, FAQPage schema, 3 named sources), fresh publish date, self-contained FAQ/section answers. Pre-fix, the population-trend inaccuracy was a real citability risk (an AI system citing this page would repeat a false 'Cook is losing to Harris' claim) and zero outbound links weakened the internal-authority signal. Post-fix: trend corrected, caveat added, 3 outbound links added -- comfortably above the 80 bar."
+    },
+    {
+      "dimension": "7. Early-content humanizer/avoid-ai-writing backfill",
+      "status": "pass",
+      "detail": "published 2026-08-03, predates avoid-ai-writing becoming mandatory (2026-08-07). Re-scanned original text in detect mode: no AI-writing tells found (no vague attribution, no filler, no rule-of-three padding, no promotional language); the site's established double-hyphen ' -- ' dash convention is an accepted house style per prior audits, not re-flagged. All newly written replacement text (description/coreSummary/section bodies/FAQ, both this article and the Houston sibling) was manually written in the same plain, factual register and re-scanned against the same pattern list -- clean."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "All 4 sources (GeoNames, Wikipedia Cook County, Wikipedia O'Hare-Chicago [newly added], Census Bureau Vintage 2025 press release [newly added, replacing a now-superseded census.gov story]) return HTTP 200 to curl. The Census Vintage 2025 press release was independently confirmed to contain the exact figures now cited in the article (Cook 5,279,010/5,188,791/5,194,625; Harris 4,730,408/4,996,331/5,045,026)."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "Independent agent confirmed via grep of guides.ts: this article had zero manual outbound in-body links despite naming 'Atlanta' and 'Harris County, Texas (Houston's home county)' by name, both of which have real sibling articles (atlanta-zip-codes, what-county-is-houston-in). This is the identical pattern already found and fixed 5 times on this site (atlanta-zip-codes, new-york-zip-codes, texas-zip-codes, texas-area-codes, california-area-codes). Fixed: added 3 outbound links (/chicago-zip-codes/, /atlanta-zip-codes/, /what-county-is-houston-in/). Inbound: not an orphan -- 3 existing manual links from chicago-zip-codes, nashville-zip-codes, and chicago-area-code, plus the automated related-guides rotation (Counties category has only 2 members, so what-county-is-houston-in shows reciprocally)."
+    },
+    {
+      "dimension": "10. Schema data consistency",
+      "status": "not applicable",
+      "detail": "First audit for this article; no prior edits to check drift against. Post-fix JSON-LD verified: datePublished unchanged (2026-08-03T00:00:00+00:00), dateModified correctly bumped (2026-08-18T00:00:00+00:00)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Neutral geography/demographics reference topic; no people, groups, or events referenced that could accrue new controversy."
+    },
+    {
+      "dimension": "12. Image availability/copyright",
+      "status": "not applicable",
+      "detail": "Article has no image/heroImage fields -- this site's Guide schema does not support them (text + optional inline SVG only, per guides.ts's GuideSection.diagramSvg comment: 'no stock photos or AI-generated realistic imagery on this site'). No images to check."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "Neutral encyclopedic content, no violence/weapons/drugs/gambling, no clickbait framing. ads.txt live at dialwick.com/ads.txt correctly points to pub-5245502795720653; /privacy/, /about/, /terms/ all return 200."
+    }
+  ],
+  "actions_taken": [
+    "Fixed the 'Chicago never crosses a county line' overgeneralization by adding a caveat about the O'Hare Airport / DuPage County annexation strip (1956), while preserving the independently-verified-accurate ZIP-code-level claim (all 84 Chicago-primary ZIPs are Cook County per this site's own zipCounty.json).",
+    "Corrected the outdated Cook County population-decline / Harris County overtake narrative in description, coreSummary, and section-3 heading+body, using the Census Bureau's Vintage 2025 county estimates (the most current official data available before this article's publish date). Replaced the superseded census.gov source with the Vintage 2025 press release; added a Wikipedia O'Hare source.",
+    "Added 3 outbound in-body links (/chicago-zip-codes/, /atlanta-zip-codes/, /what-county-is-houston-in/), fixing a confirmed zero-outbound-links gap matching this site's established recurring pattern (5th+ occurrence -- see note below).",
+    "Synced the identical population-trend correction to the sibling article what-county-is-houston-in (description, coreSummary, section-2 heading+body, +1 new source), where the same stale claim was found duplicated while adding the cross-link. This was a targeted duplicate-error fix only, not a full 13-dimension audit of that article.",
+    "Caught and fixed a self-introduced description-length regression (207->256 chars) before committing, by re-measuring the rebuilt dist/ output against this site's own description-length distribution.",
+    "updated bumped to 2026-08-18 on both articles; published left unchanged (2026-08-03) on both."
+  ],
+  "seo_score": "no material change pre/post beyond the self-caught description-length regression (fixed before commit); title/description both within this site's own established distribution",
+  "geo_score": "~85-88/99 estimated post-fix (up from ~72-76/99 pre-fix, estimated manual pass, no full 99-point run)",
+  "escalation": "The zero-outbound-in-body-links pattern has now been found and fixed 6 times on this site (atlanta-zip-codes, new-york-zip-codes, texas-zip-codes, texas-area-codes, california-area-codes, and this article) -- well past the 独立站/内容通用教训库.md 's own '复发>=2次须升级' threshold for converting a recurring finding into a mechanical pre-publish check. Not escalated by this audit run (out of scope -- would require editing the dialwick-content-publishing scheduled task's SKILL.md); flagged here for Owen or a future run to action."
+}
+```
