@@ -2206,6 +2206,112 @@ export const guides: Guide[] = [
 			{ label: 'LADWP: Scam Alert', url: 'https://www.ladwp.com/account/report-problem/scam-alert' },
 		],
 	},
+	{
+		slug: '202-area-code',
+		category: 'Area Codes',
+		title: "202 Area Code: Washington, D.C.'s Original 1947 Number, Overlaid by 771 in 2021",
+		description:
+			"DC's 202 ran as the district's only area code for 74 years before its first overlay, 771, arrived in 2021 -- not because Washington was quiet, but because its boundary hasn't moved since 1846-47.",
+		published: '2026-08-18',
+		updated: '2026-08-18',
+		coreSummary:
+			"Area code 202 has covered the entire District of Columbia, all on Eastern Time, since the North American Numbering Plan began in 1947. Unlike Los Angeles's 213, which split apart five times as its metro area grew, 202 never split at all -- Washington's federal boundary hasn't moved since Congress returned land to Virginia in 1846-47, leaving no annexable suburb for a numbering-plan line to run through. 202 covered all of DC alone until NANPA approved the district's first overlay, area code 771, which went into service November 9, 2021, as the original code's supply of assignable numbers neared exhaustion. That 74-year run made 202 one of the longest-lived single-code numbering plan areas among original 1947 codes serving a major metro area, and its unmistakable federal association has made it a favorite for callers spoofing government agencies.",
+		sections: [
+			{
+				heading: 'All of Washington, D.C. -- and nothing else',
+				body: [
+					"202 covers the District of Columbia in its entirety: no incorporated cities inside it to carve into a separate code, no counties to divide it (DC isn't part of any state and has none), and no suburbs beyond its own fixed boundary. That's structurally different from every other area code this site has covered -- Los Angeles's 213 shares its footprint with a ring of independent cities, and most metro-area codes stop at city or county lines, but 202, and its 2021 overlay 771, stop exactly where the federal district itself does.",
+					"All of it runs on Eastern Time, with none of the border ambiguity a numbering-plan area split across a state line can carry. Ten-digit dialing, standard wherever an overlay exists, has been required for every local call in DC since the permissive dialing period for 771 ended on October 9, 2021.",
+				],
+			},
+			{
+				heading: 'Why 202 went 74 years without a split',
+				body: [
+					"Washington's federal district was established by the Residence Act of 1790 and originally measured ten miles square, spanning land ceded by both Maryland and Virginia. Congress passed the retrocession act returning the Virginia portion to that state in 1846, and Virginia's legislature completed the handover in March 1847, shrinking the district to roughly the 61 square miles of land it holds today -- and that boundary hasn't shifted since. Congress alone holds the constitutional authority to redraw it, and no such redrawing, and no annexation by neighboring Maryland or Virginia, has happened in the nearly 180 years since.",
+					"That fixed footprint is why 202 never split the way most growing area codes do. A split works by drawing a new line through a numbering-plan area and handing one side to a fresh code -- California's 213 did it five times as Los Angeles annexed and grew, most recently spinning off 323 in 1998, see [213's own splitting history](/213-area-code/). DC had no annexable land on either side of a potential line; the district's boundary and its area code's boundary have always been the same fixed shape. 202 isn't literally alone in never splitting -- roughly two dozen other original 1947 codes got through without one too, mostly single-code, comparatively low-population states like Maine's 207 or the Dakotas' 701 and 605. What sets 202 apart from that group is that Washington is neither quiet nor sparsely populated: roughly 690,000 people share about 61 square miles of land, a dense capital city that simply had nowhere to grow a second code until an overlay became the only option.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 160" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 202 begins in 1947 as Washington, D.C.'s only area code, and its first overlay, 771, goes into service in 2021, 74 years later">
+	<line x1="60" y1="80" x2="620" y2="80" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="100" cy="80" r="9" fill="#131a27"/>
+	<text x="100" y="50" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1947</text>
+	<text x="100" y="107" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">202 begins as</text>
+	<text x="100" y="123" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">DC's only code</text>
+	<text x="340" y="55" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui" opacity="0.7">74 years, zero splits</text>
+	<circle cx="580" cy="80" r="9" fill="#b5722f"/>
+	<text x="580" y="50" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2021</text>
+	<text x="580" y="107" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">First overlay,</text>
+	<text x="580" y="123" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">771, activates</text>
+</svg>`,
+			},
+			{
+				heading: "771: DC's first overlay, added right before 202 ran out",
+				body: [
+					"NANPA projected in 2020 that 202 would exhaust its supply of assignable numbers by late 2022, and approved area code 771 as DC's first overlay that October. Unlike a split, an overlay doesn't reassign any existing number -- 771 simply shares the same district-wide footprint as 202, and every new line ordered after the changeover can be issued either code. A permissive dialing period ran from April 10 to October 9, 2021, letting residents place local calls with either seven or ten digits while carriers reprogrammed their systems; the first central-office codes under 771 went into service November 8 and 9, 2021, and ten-digit dialing became mandatory for every local call in the district from that point on.",
+					"Nothing changed for anyone already holding a 202 number -- the overlay only affects lines assigned from November 2021 forward. It's a far later first overlay than most major-metro codes get: New York's 212 got its first overlay, 917, in 1992, just 45 years after 212 began. 202 went 74.",
+				],
+			},
+			{
+				heading: 'Why scammers spoof 202 specifically',
+				body: [
+					"Caller ID spoofing works because a scammer can display almost any number they want, described in more detail on [is there really a 'scam area code'?](/scam-area-codes/) Most spoofing tries to match your own local area code, a tactic the FCC calls neighbor spoofing. Calls faking 202 work differently: they aren't trying to look local to the person receiving them, they're borrowing the area code's association with the federal government to sound like an official call from Washington, regardless of where the recipient actually lives.",
+					"The FTC's 2025 fraud data shows this kind of impersonation growing fast: the agency logged more than a million imposter-scam reports for the year, with reported losses up nearly 20% to $3.5 billion, and reports specifically naming a government-agency impersonator up 40% year over year. The FCC's own spoofing guidance names two common motives: making a call look local, and making it look like it's coming from a company or government agency the recipient already trusts. A 202 caller ID fits the second motive by default, since Washington is where most of the federal agencies people worry about being contacted by are actually based.",
+				],
+			},
+			{
+				heading: "'The 202': how DC's own press once used the area code as a brand",
+				body: [
+					"Area code numbers don't usually become names for anything beyond themselves, but 202 was an exception in Washington's own political media for years. The Washington Post built a family of newsletters around the number: The Early 202 covered national politics, The Technology 202 covered tech policy, and The Cybersecurity 202 covered cybersecurity policy -- each one using \"202\" as shorthand for Washington's political and policy establishment rather than spelling out the city's name, the same way Los Angeles's 213 became a name a hip-hop group borrowed from its own hometown code.",
+					"The branding didn't last. The Cybersecurity 202 published its final edition in December 2023, and in May 2024 the Post renamed The Early 202 and The Technology 202 to The Early Brief and The Tech Brief, dropping the area-code name entirely. It's still the closest thing DC's numbering plan ever had to the kind of local-culture callback that shows up around other area codes -- just one that, unlike Los Angeles's rap-group namesake, didn't stick around.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does Washington, D.C. have?',
+				answer:
+					"Two: 202, the district's original 1947 area code, and 771, added as an overlay on November 9, 2021. Both cover the same footprint -- all of the District of Columbia -- and existing 202 numbers didn't change when 771 was introduced.",
+			},
+			{
+				question: 'Why did it take so long for DC to get a second area code?',
+				answer:
+					"Because Washington's boundary hasn't moved since 1846, when Congress returned the Virginia portion of the original federal district to that state. Most area codes eventually split by drawing a new line through growing suburban land, the way California's 213 split five times; DC had no annexable land on either side of any such line, so 202 covered the entire fixed district alone until an overlay, 771, became the only option in 2021.",
+			},
+			{
+				question: 'Do I need to dial 10 digits for a local call in DC?',
+				answer:
+					'Yes. Ten-digit dialing became mandatory for every local call in the district once the permissive dialing period for 771 ended on October 9, 2021.',
+			},
+			{
+				question: 'Is a call showing a 202 number really from Washington?',
+				answer:
+					"Not necessarily. The FCC's spoofing guidance names faking a government agency's number as a common motive precisely because 202 reads as official -- a scammer can display any number they choose regardless of where the call actually originates.",
+			},
+			{
+				question: "Did Washington Post newsletters ever use '202' in their names?",
+				answer:
+					'Yes, for years: The Early 202, The Technology 202, and The Cybersecurity 202 all borrowed DC\'s own area code as shorthand for Washington\'s political and policy world. The Cybersecurity 202 published its final edition in December 2023, and the Post renamed the other two -- to The Early Brief and The Tech Brief -- in May 2024.',
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 202 and 771', url: 'https://en.wikipedia.org/wiki/Area_codes_202_and_771' },
+			{ label: 'Wikipedia: District of Columbia retrocession', url: 'https://en.wikipedia.org/wiki/District_of_Columbia_retrocession' },
+			{
+				label: 'U.S. Census Bureau QuickFacts: District of Columbia',
+				url: 'https://www.census.gov/quickfacts/fact/table/DC/PST045225',
+			},
+			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+			{
+				label: 'FTC Consumer Advice: New Trends in Reports of Imposter Scams',
+				url: 'https://consumer.ftc.gov/consumer-alerts/2026/05/new-trends-reports-imposter-scams',
+			},
+			{
+				label: 'Digiday: The Washington Post adds AI-generated audio to three newsletters (202-to-Brief rename)',
+				url: 'https://digiday.com/media/the-washington-post-adds-ai-generated-audio-to-three-newsletters/',
+			},
+			{ label: 'The Washington Post: The Cybersecurity 202 (final archive)', url: 'https://www.washingtonpost.com/politics/the-202-newsletters/the-cybersecurity-202/' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Counties
