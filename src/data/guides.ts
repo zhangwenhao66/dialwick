@@ -2101,6 +2101,96 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: Marble Hill, Manhattan', url: 'https://en.wikipedia.org/wiki/Marble_Hill,_Manhattan' },
 		],
 	},
+	{
+		slug: 'atlanta-area-code',
+		category: 'Area Code Guides',
+		title: 'Atlanta Area Codes: 404, 770, 678, 470, 943, and the Two That Stopped Taking New Numbers',
+		description:
+			"Atlanta runs on five area codes today. Two of them, 404 and 678, ran out of prefixes to hand out years ago -- existing numbers still work, but nobody gets a new one.",
+		published: '2026-08-19',
+		updated: '2026-08-19',
+		coreSummary:
+			"Metro Atlanta is served by five area codes -- 404, 770, 678, 470, and 943 -- but only three of them, 770, 470, and 943, can still be handed out to new phone lines. 404, the original code covering all of Georgia in 1947, and 678, its first overlay from 1998, both ran through every available prefix years ago; existing 404 and 678 numbers keep working forever, but the North American Numbering Plan Administrator (NANPA) stopped assigning new ones from those two codes once they were exhausted. Georgia's numbering plan split geographically only once, drawing a line at the Interstate 285 perimeter in 1995 -- every code added since has overlaid both sides of that line at once rather than drawing a new one.",
+		sections: [
+			{
+				heading: "Atlanta's five area codes",
+				body: [
+					"470 and 943 cover the entire combined footprint of 404, 770, and 678 -- there's no way to tell which of the five an Atlanta number carries just by knowing what part of the metro its owner lives in. Assignment depends only on when the line was activated.",
+				],
+				table: {
+					caption: "Atlanta's area codes and whether each still issues new numbers",
+					columns: ['Area code', 'Coverage', 'In service since', 'Still issuing new numbers?'],
+					rows: [
+						['404', 'Georgia (statewide in 1947; Atlanta inside the I-285 perimeter today)', '1947 (original)', 'No -- exhausted October 2013'],
+						['770', 'Metro Atlanta outside the I-285 perimeter', 'August 1, 1995', 'Yes'],
+						['678', 'Overlay on 404 and 770', 'January 6, 1998', 'No -- exhausted'],
+						['470', 'Overlay on 404, 770, and 678', 'February 26, 2010', 'Yes'],
+						['943', 'Overlay on 404, 770, 678, and 470', 'March 15, 2022', 'Yes'],
+					],
+				},
+			},
+			{
+				heading: 'Three splits carved Georgia down to just metro Atlanta',
+				body: [
+					"404 was one of the [original 86 area codes](/how-do-area-codes-work/) the North American Numbering Plan assigned in 1947, and it started out covering the entire state of Georgia -- not just Atlanta. Three splits over the next 48 years narrowed it down to roughly its present footprint. The first, on July 1, 1954, cut off the southern half of the state as area code 912, leaving 404 running from the Tennessee and North Carolina lines south to Columbus and Augusta.",
+					"That boundary held for 38 years. On May 3, 1992, regulators split off nearly everything outside the immediate Atlanta area as area code 706, shrinking 404 to roughly the metro region. The third and final geographic split came just three years later: on August 1, 1995, 404 was divided along the Interstate 285 perimeter highway, with everything outside it becoming area code 770. That 1995 line is the last one Georgia's numbering plan has ever drawn -- every area code assigned to metro Atlanta since has been an overlay across an existing footprint, not a new geographic boundary.",
+				],
+			},
+			{
+				heading: 'Three overlays in 24 years, each covering more ground than the last',
+				body: [
+					"678 went into service January 6, 1998, as an overlay spanning both 404 and 770 at once -- the first time a single new Atlanta code crossed the 1995 perimeter line instead of respecting it. That set the pattern every later addition followed. 470 arrived February 26, 2010, overlaying all three existing codes (404, 678, and 770); NANPA's senior director at the time described it publicly as intended primarily for downtown Atlanta and the surrounding area, though like every other overlay it was assignable anywhere in the combined footprint.",
+					"By October 2020, exhaustion analyses were projecting that the four-code combination would run out of assignable prefixes by the second quarter of 2023. The Georgia Public Service Commission approved a fifth code that month, and NANPA assigned 943; it went into service March 15, 2022, overlaying 404, 770, 678, and 470 simultaneously. The new code's footprint reaches well beyond Atlanta's city limits -- it covers the same PSC-defined region as the four codes before it, including Alpharetta, Duluth, Dunwoody, East Point, Forest Park, Gainesville, Griffin, Lawrenceville, Mableton, Marietta, Peachtree City, Roswell, Sandy Springs, Smyrna, and Tucker. The same shift from geographic splits to stacked overlays, once a region runs out of room to redraw lines, shaped [Chicago's numbering plan](/chicago-area-code/) and New York City's outer-borough codes.",
+				],
+			},
+			{
+				heading: '404 and 678 still work -- they just can\'t be assigned to anyone new',
+				body: [
+					"\"Exhausted\" describes the supply of unassigned central office prefixes within a code, not the code itself. Every 404 and 678 number already in service keeps working exactly as before; nothing about exhaustion forces a number to change. What exhaustion means in practice is that phone carriers can no longer request new blocks of numbers from either code -- when a carrier needs numbers for new customers in the Atlanta overlay region, NANPA assigns them from 770, 470, or 943 instead, the three codes that still have prefixes left to give out.",
+					"404's exhaustion is documented precisely: every central office prefix in the code had been assigned to a service provider by October 2013, with 678 following not long after. 470 was added in 2010, three years before 404 actually ran dry, because overlay codes are typically requested years ahead of the projected exhaustion date rather than after it arrives -- the same lead time regulators later gave 943 when they approved it in October 2020 for a shortfall not projected until the second quarter of 2023.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does Atlanta have?',
+				answer:
+					'Five: 404 (1947, the original), 770 (1995), 678 (1998), 470 (2010), and 943 (2022). All five cover overlapping territory in and around metro Atlanta.',
+			},
+			{
+				question: 'Can I still get a new phone number with a 404 or 678 area code?',
+				answer:
+					"No. Both codes ran through every available central office prefix -- 404 by October 2013, 678 not long after -- so NANPA no longer assigns new numbers from either one. Existing 404 and 678 numbers are unaffected and keep working; new lines in the Atlanta overlay region are assigned 770, 470, or 943 instead.",
+			},
+			{
+				question: "What's the difference between 404 and 770?",
+				answer:
+					"404 is Atlanta's original 1947 area code, narrowed by two earlier splits (912 in 1954, 706 in 1992) to roughly the metro region and then split again on August 1, 1995 along the Interstate 285 perimeter. 770 is what that 1995 split created: everything outside the perimeter. It's the only geographic line Atlanta's numbering plan has ever drawn -- 678, 470, and 943 all overlay both sides of it rather than adding a new boundary.",
+			},
+			{
+				question: 'Do I need to dial 10 digits for a local Atlanta call?',
+				answer:
+					'Yes. Once 678 overlaid both 404 and 770 in 1998, the North American Numbering Plan required area code plus number for every local call in the combined footprint, not just long-distance ones -- the same rule that applies in every other overlay region.',
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Area code 404', url: 'https://en.wikipedia.org/wiki/Area_code_404' },
+			{ label: 'Wikipedia: Area code 770', url: 'https://en.wikipedia.org/wiki/Area_code_770' },
+			{ label: 'Wikipedia: Area codes 678, 470, and 943', url: 'https://en.wikipedia.org/wiki/Area_codes_678,_470,_and_943' },
+			{
+				label: 'Georgia Public Service Commission: media advisory, Atlanta metro area to get fifth area code',
+				url: 'https://psc.ga.gov/site/assets/files/5599/media_advisory_943_area_code_annoucement.pdf',
+			},
+			{
+				label: 'Georgia Public Service Commission: news release, new 943 area code coming to the 404/470/678/770 region',
+				url: 'https://psc.ga.gov/site/assets/files/6678/news_release_area_code_march_8_2022.pdf',
+			},
+			{
+				label: 'Atlanta Journal-Constitution: No more 404, 678 area codes given in Atlanta',
+				url: 'https://www.ajc.com/news/more-404-678-area-codes-given-atlanta/9SH1szLvrf3e6S7H2aiPZP/',
+			},
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Codes
