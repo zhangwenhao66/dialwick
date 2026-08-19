@@ -2312,6 +2312,108 @@ export const guides: Guide[] = [
 			{ label: 'The Washington Post: The Cybersecurity 202 (final archive)', url: 'https://www.washingtonpost.com/politics/the-202-newsletters/the-cybersecurity-202/' },
 		],
 	},
+	{
+		slug: '646-area-code',
+		category: 'Area Codes',
+		title: "646 Area Code: Manhattan's First 212 Overlay, and the Status Line It Created",
+		description:
+			"646 went live July 1, 1999, as Manhattan's first overlay on 212 -- approved so far ahead of launch that a Seinfeld episode joked about it more than a year before a single 646 number existed.",
+		published: '2026-08-19',
+		updated: '2026-08-19',
+		coreSummary:
+			"Area code 646 has covered Manhattan, aside from Marble Hill, since July 1, 1999, when it went into service as the borough's first overlay -- a second area code layered onto 212's existing footprint rather than a new line drawn through it. New York's Public Service Commission approved the overlay on December 10, 1997, a year and a half before it actually launched, which is why a Seinfeld episode that aired April 30, 1998 could already build a plotline around Elaine getting stuck with a 646 number more than a year before a single 646 number was in service. A third overlay, 332, joined the same Manhattan footprint in 2017. What sets 646 apart from ordinary overlay history is what it became culturally: for over two decades, it's been the area code marking a caller as someone who didn't get in on 212 in time, and New Yorkers have paid real money to trade up out of it.",
+		sections: [
+			{
+				heading: 'Manhattan, minus one neighborhood',
+				body: [
+					"646 covers the borough of Manhattan and nothing else, sharing its exact footprint with 212 and 332 -- the full rundown of how those three fit together, plus the four area codes that cover the rest of New York City, is on [this site's NYC area code guide](/nyc-area-code/). The one exception inside Manhattan's own legal boundary is Marble Hill, a neighborhood physically attached to the Bronx since a 1914 landfill project, which dials on the outer-borough codes (718, 347, 929) instead.",
+					"All of it runs on Eastern Time, and 10-digit dialing has been required for every local call in the 212/646/917 complex since 917 first overlaid the borough in 1992 -- true for 646 from the day it launched.",
+				],
+			},
+			{
+				heading: 'Approved in 1997, activated in 1999 -- and written into a sitcom before it existed',
+				body: [
+					"By the mid-1990s, 212's original supply of exchange blocks was running down fast enough that the New York Public Service Commission approved a new overlay for the Manhattan numbering plan area on December 10, 1997. The overlay itself, area code 646, didn't actually enter service until July 1, 1999 -- a year and a half gap between regulatory approval and the code going live, a lead time consistent with how NANPA relief planning has staged this site's other Manhattan-area overlays.",
+					"That gap produced a genuine oddity: Seinfeld's \"The Maid\" aired April 30, 1998, more than a year before 646 existed as a working area code. In the episode, Elaine gives up her 212 number and is assigned a 646 one instead; when she hands it to a prospective date, he asks about the unfamiliar area code, then crumples the number and walks off. The joke worked because 646 was already public knowledge from the 1997 PSC order, even though nobody could have actually dialed one yet when the episode filmed in March 1998. 646 finally went live 14 months later, and it's been Manhattan's second area code ever since -- joined by a third overlay, 332, on the same footprint on June 10, 2017.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 160" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: New York regulators approve the 646 overlay in December 1997, a Seinfeld episode airs referencing it in April 1998, and 646 actually goes into service in July 1999">
+	<line x1="55" y1="80" x2="625" y2="80" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="95" cy="80" r="9" fill="#131a27"/>
+	<text x="95" y="50" text-anchor="middle" fill="#1a2332" font-size="13" font-weight="700" font-family="ui-sans-serif, system-ui">Dec 1997</text>
+	<text x="95" y="107" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">PSC approves</text>
+	<text x="95" y="123" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">the 646 overlay</text>
+	<circle cx="340" cy="80" r="9" fill="#b5722f"/>
+	<text x="340" y="50" text-anchor="middle" fill="#1a2332" font-size="13" font-weight="700" font-family="ui-sans-serif, system-ui">Apr 1998</text>
+	<text x="340" y="107" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Seinfeld airs "The</text>
+	<text x="340" y="123" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Maid" -- no 646 exists yet</text>
+	<circle cx="580" cy="80" r="9" fill="#131a27"/>
+	<text x="580" y="50" text-anchor="middle" fill="#1a2332" font-size="13" font-weight="700" font-family="ui-sans-serif, system-ui">Jul 1999</text>
+	<text x="580" y="107" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">646 actually</text>
+	<text x="580" y="123" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">goes live</text>
+</svg>`,
+			},
+			{
+				heading: "How 646 became the 'other' Manhattan code",
+				body: [
+					"212's exchange blocks were effectively used up by 2009, and the major carriers' general inventory of 212 numbers has stayed depleted since 2010 -- anyone getting a new Manhattan landline or cell line today is almost always handed 646 or 332 instead, per Wikipedia's account of the overlay complex. A 2023 Gothamist report on the rare 212 numbers occasionally cycling back into circulation captured how far New Yorkers have gone to avoid landing on 646 in the first place: David Day, who's run the resale site 212areacode.com since 2009, told the outlet he's sold tens of thousands of 212 numbers, with law firms and hedge funds among his regular buyers because, in his words, a 212 number \"gives them some kind of credibility... established status in Manhattan,\" while a caller ID showing a newer overlay code like 929 reads as \"a relatively new business.\" One buyer he quoted, Willy Gil, bought a 212 number off eBay for $20 specifically to avoid that read, saying he feels he has \"part of the culture of NYC you cannot get anymore.\"",
+					"The same Gothamist piece traces the hierarchy back to the Seinfeld episode above, noting the show's writers built an entire plotline -- \"if you can't prove your NYC bona fides, you shall be spit out and rejected by this city\" -- around a 646 caller ID costing Elaine a date. It also cites the New York Times once calling 212 \"the only acceptable area code for a Manhattanite\" and the Wall Street Journal comparing a 212 number to a rent-controlled apartment. 212 got its own real anthem out of the rivalry too: Azealia Banks' breakout single \"212,\" released December 6, 2011, is named after the area code of the Harlem neighborhood where she grew up -- 646 has never had a comparable song built around it.",
+				],
+			},
+			{
+				heading: 'The credibility 646 and 212 carry is exactly what debt-collection scammers borrow',
+				body: [
+					"The FCC's general caller-ID warning applies to any area code: scammers use a tactic the agency calls neighbor spoofing to fake a number that looks local or trustworthy, covered in more detail on [is there really a 'scam area code'?](/scam-area-codes/) The Manhattan-number prestige documented above cuts both ways -- the same credibility that makes law firms and hedge funds pay for a 212 or 646 number is exactly what a spoofed New York caller ID is built to borrow.",
+					"In March 2025, the FTC won a federal court order freezing the assets of a phantom debt-collection operation that ran under names including Blackstone Legal Group, Capital Legal Services, and Quest Legal Group, according to the agency's own press release. The operators called and mailed consumers claiming they owed a debt to a payday lender and threatened arrest, wage garnishment, and lawsuits if they didn't pay immediately -- debts the FTC's complaint says never existed. The scheme violated the FTC's rule against impersonating a government agency or business specifically by borrowing names and credibility that made the calls sound like a real law firm, the same dynamic that makes a Manhattan area code worth faking in the first place.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What area does the 646 area code cover?',
+				answer:
+					"The borough of Manhattan, aside from Marble Hill, which uses the outer-borough codes (718, 347, 929) instead. 646 shares its exact Manhattan footprint with 212 and 332.",
+			},
+			{
+				question: 'When did area code 646 start?',
+				answer:
+					"646 went into service July 1, 1999, as Manhattan's first overlay on 212. The New York Public Service Commission had approved the overlay a year and a half earlier, on December 10, 1997.",
+			},
+			{
+				question: "Did a Seinfeld episode really reference 646 before it existed?",
+				answer:
+					'Yes. "The Maid" aired April 30, 1998, and its plot has Elaine getting assigned a 646 number after giving up her 212 -- but 646 didn\'t actually go into service until July 1, 1999, more than a year later. The area code was already public from the 1997 PSC approval, even though no 646 number could be dialed yet when the episode aired.',
+			},
+			{
+				question: 'Is 212 really harder to get than 646?',
+				answer:
+					"Yes -- the major carriers' general inventory of 212 numbers has been depleted since 2010, so new Manhattan lines are almost always issued 646 or 332 instead. A small number of 212 numbers do cycle back into circulation when an existing line goes dormant, but they're uncommon enough that a resale market for them has existed since at least 2009.",
+			},
+			{
+				question: 'Is a call showing a 646 number always really coming from Manhattan?',
+				answer:
+					"No. Caller ID can be faked through neighbor spoofing, a tactic the FCC has documented, where a scammer displays a number in an area code chosen to look local or credible -- including 646 -- regardless of where the call actually originates.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 212, 646, and 332', url: 'https://en.wikipedia.org/wiki/Area_codes_212,_646,_and_332' },
+			{
+				label: 'New York State Public Service Commission: Order Approving Overlay of the 212 Area Code Region (Case 15-C-0168, citing the December 10, 1997 order)',
+				url: 'https://documents.dps.ny.gov/public/Common/ViewDoc.aspx?DocRefId=%7B025D2931-3A7A-4437-A37B-0E64D3A3693C%7D&DocTitle=Ordering+Approving+Overlay+of+the+212+Area+Code+Region',
+			},
+			{ label: 'Wikipedia: The Maid (Seinfeld)', url: 'https://en.wikipedia.org/wiki/The_Maid_(Seinfeld)' },
+			{
+				label: "Gothamist: Calling all New Yorkers: A few numbers with the 212 area code are back in circulation (Feb. 25, 2023)",
+				url: 'https://gothamist.com/arts-entertainment/calling-all-new-yorkers-a-few-numbers-with-the-212-area-code-are-back-in-circulation',
+			},
+			{ label: 'Wikipedia: 212 (song)', url: 'https://en.wikipedia.org/wiki/212_(song)' },
+			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+			{
+				label: 'FTC: Court order halts phantom debt collection scheme (Blackstone Legal Group and affiliates, March 2025)',
+				url: 'https://www.ftc.gov/news-events/news/press-releases/2025/03/ftc-action-leads-court-order-halting-phantom-debt-collection-scheme-took-millions-consumers',
+			},
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Counties
