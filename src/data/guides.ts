@@ -2727,12 +2727,6 @@ export const guides: Guide[] = [
 					'The shared +1 code has a real practical downside: eight of the Caribbean NANP codes above -- 268, 284, 473, 649, 664, 767, 809/829/849, and 876 -- are the specific area codes tied to the "one ring" scam, where an autodialer calls once and hangs up, hoping the recipient calls back into a premium-rate international line. See [Is There Really Such a Thing as a \'Scam Area Code\'?](/scam-area-codes/) for how that scam works and what the FCC and FTC recommend doing about it.',
 				],
 			},
-			{
-				heading: 'The mix-up shows up in shipping and verification systems too, not just scam calls',
-				body: [
-					"Jean-Christophe Thery, founder of MusaArtGallery, an art gallery that ships to more than 20 countries and coordinates delivery across FedEx, UPS, DHL, and USPS, has run into this NANP overlap on the operations side rather than the scam side. \"Assuming a +1 is US can break SMS verification or carrier routing,\" he says. \"We solved this by always requesting numbers in full international format and validating country via the customer's shipping address before sending time-sensitive codes.\" In practice, a customer's +1 number that actually belonged to a Caribbean NANP member, not the US, caused failed delivery notifications and delayed shipment confirmations until his team confirmed the correct country and resent the messages through a different carrier.",
-				],
-			},
 		],
 		faq: [
 			{
