@@ -184,5 +184,15 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-19",
+    "action": "submitted",
+    "reason": "无今日新发布。Pages报告显示未索引仅剩1个'Crawled - currently not indexed'（Google端决策，非排队等待，Affected pages波动归零），站点已接近满收录（37/38+）。改用build-index-queue.py优先级队列候选646-area-code，URL Inspection确认'URL is not on Google'（unknown to Google），REQUEST INDEXING提交成功确认'Indexing requested'。",
+    "submitted_urls": [
+      "https://dialwick.com/646-area-code/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
