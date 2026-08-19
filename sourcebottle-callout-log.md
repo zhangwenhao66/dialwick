@@ -44,3 +44,4 @@
 - **Deadline**：2026-09-14 17:00（鼠标真实点击日历控件选中）。
 - **发布状态**：✅ 已提交，跳转到 thankyou.asp，提示 "Pending approval..."。提交回执 product id = `e6f05eb98d5f184a690ae7745386eba2`。
 - **上线复核**：⏳ 待下次任务运行时补查。
+- **回复使用情况**：✅ 08-19收到Jean-Christophe Thery（MusaArtGallery创始人）回复，真实案例（+1号码误判导致短信验证/物流通知失败）已插入`us-country-code`一文新增章节，已build/test/deploy/IndexNow提交，已回信致谢。
