@@ -956,3 +956,94 @@ First-ever audit for this article (had never been picked in prior runs -- previo
   "escalation": "The zero-outbound-in-body-links pattern has now been found and fixed 6 times on this site (atlanta-zip-codes, new-york-zip-codes, texas-zip-codes, texas-area-codes, california-area-codes, and this article) -- well past the 独立站/内容通用教训库.md 's own '复发>=2次须升级' threshold for converting a recurring finding into a mechanical pre-publish check. Not escalated by this audit run (out of scope -- would require editing the dialwick-content-publishing scheduled task's SKILL.md); flagged here for Owen or a future run to action."
 }
 ```
+
+## what-county-is-houston-in
+
+First full 13-dimension audit for this article (published 2026-08-03; had only received a targeted duplicate-error sync during the `what-county-is-chicago-in` audit on 2026-08-18, not a full audit -- see that entry above). 2 confirmed findings, both independently verified by separate background agents before fixing.
+
+```json
+{
+  "url_slug": "what-county-is-houston-in",
+  "url": "https://dialwick.com/what-county-is-houston-in/",
+  "last_audited": "2026-08-20",
+  "published_date": "2026-08-03",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "4 named authoritative sources (GeoNames postal code database, Wikipedia Harris County article, Axios Houston, US Census Bureau Vintage 2025 release) with specific dated statistics (178 ZIP codes, Dec 22 1836 founding, 5.05M population, 106,000/year growth, 150,000-person gap to Cook County)."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "1 confirmed problem -> fixed; core population-trend claim (previously fixed 2026-08-18) re-verified accurate",
+      "detail": "(a) CONFIRMED and fixed: description/coreSummary/section-1 heading/FAQ-1 all stated 'Houston is entirely inside Harris County' / 'no cross-county split' as an unqualified city-level claim. Independent agent confirmed via Wikipedia's 'Houston' article infobox (which lists the city's counties as Harris, Fort Bend, AND Montgomery) and the 'Fort Bend County, Texas' article (which states Houston is that county's largest city by population, i.e. real residents, not empty land) that the City of Houston's actual municipal boundary extends into small annexed parts of Fort Bend and Montgomery counties -- structurally identical to the O'Hare/DuPage overgeneralization already fixed on the sibling article what-county-is-chicago-in on 2026-08-18 (see that entry above), except Houston's case involves populated annexed areas in two counties rather than one uninhabited airport strip. The narrower, specific claim -- all 178 USPS-Houston-primary-place-name ZIP codes sit in Harris County -- was independently re-verified as accurate by querying this site's own src/lib/data/zipCounty.json directly (178/178 rows show county='Harris'). Fixed by adding a caveat (distinct wording from the Chicago article's 'one asterisk' phrasing, to avoid the cross-sibling template-reuse pattern in this site's own 内容通用教训库.md L-0804-11) that preserves the accurate ZIP claim while correcting the city-limits claim, across description/coreSummary/section-1 body/FAQ-1. (b) The population-trend claim (Cook County growing again since 2023, ~150,000-person lead over Harris, sourced to the Census Bureau's Vintage 2025 release) was already corrected during the 2026-08-18 what-county-is-chicago-in audit's duplicate-sync fix; re-checked this run against the same Vintage 2025 source and found still accurate and current as of 2026-08-20 -- no further changes needed."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "published 2026-08-03 correctly unchanged. updated was already 2026-08-18 from the prior partial sync; bumped to 2026-08-20 to reflect this run's substantive content changes. Population-trend data (Vintage 2025) remains the most current official release; no newer Census Bureau county estimate exists as of this audit."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "Live SERP check via dataforseo_query.py serp for 'what county is houston in' (9,900/mo search volume, KD43, per this site's own keywords.db from initial 2026-08-03 research) shows the current top organic results are harriscountytx.gov, Wikipedia (Houston + Harris County as separate pages), visithoustontexas.com, a bare ZIP-list aggregator (ciclt.net), maps.apple.com, tshaonline.org, haaonline.org, and hcoed.harriscountytx.gov -- none combine the specific 178-ZIP-code-count + population-race-vs-Cook-County angle this article does, so the differentiation is genuine, not redundant with the SERP leaders. Note: dialwick.com does not currently appear in this SERP's top ~10 (article is ~2.5 weeks old against a KD43 term dominated by .gov/Wikipedia authority) -- a ranking/timing observation, not a content-quality defect."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "pass",
+      "detail": "Live page checked via curl+DOM: single H1, 2 content H2s + FAQ H2, self-referencing canonical, 3 JSON-LD blocks (Article/BreadcrumbList/FAQPage, 3-item FAQ) consistent with guides.ts. Title 37 chars (matches its Counties-category sibling's established convention). Description was 191 chars pre-fix; this run's edited description measured 203 chars against this site's own live description-length distribution (n=34, mean=184.9, sd=24.5) -> z=0.74, within normal range, no regression."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85-88/99 estimated post-fix (up from ~78-80/99 pre-fix, manual estimate, no full 99-point run)",
+      "detail": "robots.txt confirmed allowing GPTBot/ChatGPT-User/ClaudeBot/Claude-Web/PerplexityBot/Google-Extended. Strong structure (FAQPage schema, 4 named sources, self-contained FAQ answers, dateModified fresh as of this audit). Pre-fix, the unqualified 'entirely inside Harris County' claim was a real citability risk (an AI answer engine citing this page verbatim would state something Wikipedia's own infobox contradicts) and zero outbound in-body links weakened internal-authority signal. Post-fix: caveat added, 2 outbound links added -- comfortably above the 80 bar."
+    },
+    {
+      "dimension": "7. Early-content humanizer/avoid-ai-writing backfill",
+      "status": "pass",
+      "detail": "published 2026-08-03, predates avoid-ai-writing's 2026-08-07 mandatory adoption. Re-scanned original prose in detect mode: no AI-writing tells found; the site's established double-hyphen ' -- ' dash convention is accepted house style per prior audits, not re-flagged. All newly written replacement text (description/coreSummary/section-1 body/FAQ-1) was deliberately worded differently from the sibling Chicago article's near-identical 'one asterisk' phrasing (to avoid a self-introduced L-0804-11 template-reuse issue) and re-scanned -- clean."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass (1 non-blocking note)",
+      "detail": "GeoNames, Wikipedia Harris County, and the Census Vintage 2025 press release all return HTTP 200 to curl. The Axios source returns 403 to curl/scripted UAs (confirmed this is Axios's own bot-blocking, not link rot -- WebSearch independently confirmed the article is live, indexed, and its content -- 106,000 residents added, ~173,000-person gap as of the article's own March 2025 vintage -- matches what this DialWick article cites). New Wikipedia 'Houston' source (added this run for the municipal-boundary fact) also returns 200."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "Independent agent confirmed via direct read of guides.ts: this article had zero manual outbound in-body links despite its own prose naming 'Los Angeles County, California' and 'Cook County, Illinois (Chicago)' by name, plus discussing Houston's own ZIP codes extensively -- all three have real sibling articles on this site (los-angeles-zip-codes, what-county-is-chicago-in, houston-zip-codes). This is the 7th occurrence of this site's established recurring zero-outbound-links pattern (previously fixed on atlanta-zip-codes, new-york-zip-codes, texas-zip-codes, texas-area-codes, california-area-codes, what-county-is-chicago-in). Fixed: added 2 outbound links (/houston-zip-codes/ in section 1, anchored on the article's own '178 ZIP codes' claim; /what-county-is-chicago-in/ in section 2, anchored on the 'Cook County, Illinois (Chicago)' mention). Per the independent agent's recommendation, did not force a link for the Los Angeles mention -- it appears only as a population-rank comparison with no ZIP-code context, so linking to los-angeles-zip-codes there would be a topical mismatch; no better-fitting LA sibling page exists on this site. Inbound: not an orphan -- what-county-is-chicago-in already links here both via a manual in-body link and the automated related-guides rotation (Counties category has only 2 members)."
+    },
+    {
+      "dimension": "10. Schema data consistency",
+      "status": "pass",
+      "detail": "Post-fix JSON-LD verified in dist/ output: datePublished unchanged (2026-08-03T00:00:00+00:00), dateModified correctly bumped (2026-08-20T00:00:00+00:00). FAQPage mainEntity count (3) matches guides.ts faq[] array."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Neutral geography/demographics reference topic; no people, groups, or events that could accrue new controversy."
+    },
+    {
+      "dimension": "12. Image availability/copyright",
+      "status": "not applicable",
+      "detail": "This site's Guide schema has no image/heroImage fields (text + optional inline SVG only). No images to check."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "Neutral encyclopedic content, no restricted categories, no clickbait framing. ads.txt at dialwick.com/ads.txt correctly points to pub-5245502795720653; /privacy/, /about/, /terms/ all return 200."
+    }
+  ],
+  "actions_taken": [
+    "Fixed the 'Houston is entirely inside Harris County' / 'no cross-county split' overgeneralization by adding a caveat (worded distinctly from the sibling Chicago article's fix to avoid template reuse) across description, coreSummary, section-1 body, and FAQ-1, noting the City of Houston's actual municipal boundary extends into small annexed parts of Fort Bend and Montgomery counties, while preserving the independently-verified-accurate 178-ZIP-codes-in-Harris-County claim.",
+    "Added a new Wikipedia 'Houston' source documenting the multi-county municipal boundary.",
+    "Added 2 outbound in-body links (/houston-zip-codes/, /what-county-is-chicago-in/), fixing a confirmed zero-outbound-links gap -- this site's 7th occurrence of this recurring pattern (see escalation below).",
+    "Re-verified (not re-fixed) the population-trend claim corrected during the 2026-08-18 what-county-is-chicago-in duplicate-sync -- still accurate against the Vintage 2025 Census release, no change needed.",
+    "updated bumped to 2026-08-20; published left unchanged (2026-08-03).",
+    "Appended a 7th-occurrence recurrence note to 独立站/内容通用教训库.md L-0804-2 (absolutist single-county-boundary claims lacking counter-example checks), flagging a new sub-pattern: two sibling articles that explicitly cross-link and name each other still each independently missed the other's identical structural defect."
+  ],
+  "seo_score": "no material change beyond the description length staying within this site's own established distribution (191->203 chars, z=0.74)",
+  "geo_score": "~85-88/99 estimated post-fix (up from ~78-80/99 pre-fix, manual estimate, no full 99-point run)",
+  "escalation": "The zero-outbound-in-body-links pattern has now been found and fixed 7 times on this site (atlanta-zip-codes, new-york-zip-codes, texas-zip-codes, texas-area-codes, california-area-codes, what-county-is-chicago-in, and this article) -- well past the 独立站/内容通用教训库.md 's own '复发>=2次须升级' threshold. Not escalated by this audit run (out of scope -- would require editing the dialwick-content-publishing scheduled task's SKILL.md); flagged here again for Owen or a future run to action. No independent-verification-agent hangs occurred this run -- both spawned agents completed normally (17.6s and 28.8s respectively), well under the watchdog's 15-20 minute threshold."
+}
+```
