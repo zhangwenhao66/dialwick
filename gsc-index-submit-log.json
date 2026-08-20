@@ -194,5 +194,15 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-20",
+    "action": "submitted",
+    "reason": "今日新发布929-area-code（第28篇，dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。同日dialwick-content-quality-audit更新what-county-is-houston-in为既有页非新页面，未重复处理。",
+    "submitted_urls": [
+      "https://dialwick.com/929-area-code/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
