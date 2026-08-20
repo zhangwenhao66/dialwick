@@ -2566,29 +2566,29 @@ export const guides: Guide[] = [
 		category: 'Counties',
 		title: 'What County Is Houston In?',
 		description:
-			"Houston is entirely inside Harris County, spanning all 178 of the city's ZIP codes -- and Harris has been the fastest-growing large county in the US, closing the gap on Chicago's Cook County.",
+			"Houston's 178 ZIP codes sit entirely inside Harris County -- only small annexed strips of the city itself dip into Fort Bend and Montgomery. Harris is closing the population gap on Chicago's Cook County.",
 		published: '2026-08-03',
-		updated: '2026-08-18',
+		updated: '2026-08-20',
 		coreSummary:
-			"Houston is entirely within Harris County, Texas -- every one of the 178 ZIP codes USPS assigns to Houston sits in Harris County. Harris County was founded in December 1836, with Houston named its county seat that same month. It's currently the third-most-populous county in the US at roughly 5.05 million people and is growing faster than any other large county in the country -- narrowing the gap with Cook County, Illinois (Chicago), though Cook still held a lead of roughly 150,000 people as of the latest Census Bureau estimate.",
+			"Every one of the 178 ZIP codes USPS assigns to Houston sits in Harris County, Texas. Houston's actual city limits are a little wider than that: annexation over the decades has pulled small pieces of the city into Fort Bend and Montgomery counties too. Harris County itself was founded in December 1836, with Houston named its county seat that same month. It's currently the third-most-populous county in the US at roughly 5.05 million people and is growing faster than any other large county in the country -- narrowing the gap with Cook County, Illinois (Chicago), though Cook still held a lead of roughly 150,000 people as of the latest Census Bureau estimate.",
 		sections: [
 			{
 				heading: 'Houston is entirely inside Harris County',
 				body: [
-					"Every one of the 178 ZIP codes USPS lists with Houston as the primary place name sits inside Harris County, Texas -- no cross-county split the way some major US cities have. Harris County was founded on December 22, 1836, and organized the following March; Houston was named the county seat that same December, and has held the role ever since. The county takes its name from John Richardson Harris, who founded the town of Harrisburg on Buffalo Bayou a decade earlier, in 1826.",
+					"Every one of the 178 ZIP codes USPS lists with Houston as the primary place name sits inside Harris County, Texas (see the [full Houston ZIP code list](/houston-zip-codes/)) -- no cross-county split at the ZIP level the way some major US cities have. That distinction only holds at the ZIP-code level, though. Houston's actual city limits are wider: annexation over the decades pulled small slices of southwest and northeast Houston into Fort Bend and Montgomery counties, so the city itself crosses county lines even though none of its ZIP codes do. Harris County was founded on December 22, 1836, and organized the following March; Houston was named the county seat that same December, and has held the role ever since. The county takes its name from John Richardson Harris, who founded the town of Harrisburg on Buffalo Bayou a decade earlier, in 1826.",
 				],
 			},
 			{
 				heading: 'Harris County is closing in on the second-largest spot in the US',
 				body: [
-					"Harris County's population of roughly 5.05 million currently ranks third nationally, behind Los Angeles County, California and Cook County, Illinois (Chicago). Harris County added about 106,000 residents in a single 12-month period (2023 to 2024) -- more than any other county in the country -- and it has kept growing faster than Cook County since, even though Cook itself returned to growth after a pandemic-era dip rather than continuing to shrink. Harris still trailed Cook by roughly 150,000 people as of the Census Bureau's most recent estimate (July 2025); whether that gap closes further is not yet a settled trend.",
+					"Harris County's population of roughly 5.05 million currently ranks third nationally, behind Los Angeles County, California and [Cook County, Illinois (Chicago)](/what-county-is-chicago-in/). Harris County added about 106,000 residents in a single 12-month period (2023 to 2024) -- more than any other county in the country -- and it has kept growing faster than Cook County since, even though Cook itself returned to growth after a pandemic-era dip rather than continuing to shrink. Harris still trailed Cook by roughly 150,000 people as of the Census Bureau's most recent estimate (July 2025); whether that gap closes further is not yet a settled trend.",
 				],
 			},
 		],
 		faq: [
 			{
 				question: 'Is Houston in Harris County?',
-				answer: "Yes, entirely -- every Houston ZIP code sits inside Harris County, with no split into a neighboring county.",
+				answer: "Yes, for ZIP codes -- every one sits inside Harris County. Houston's actual city limits are slightly wider, though: annexation has pulled small pieces of the city into Fort Bend and Montgomery counties over the years, just not any area with a Houston-named ZIP code.",
 			},
 			{
 				question: 'When was Harris County founded?',
@@ -2602,6 +2602,7 @@ export const guides: Guide[] = [
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'Harris County, Texas -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Harris_County,_Texas' },
+			{ label: 'Houston -- Wikipedia (municipal boundary spans Harris, Fort Bend, and Montgomery counties)', url: 'https://en.wikipedia.org/wiki/Houston' },
 			{ label: 'Axios Houston: Harris County poised to become 2nd most populous county', url: 'https://www.axios.com/local/houston/2025/03/13/harris-county-second-largest-county-by-population-houston-migration-boom' },
 			{ label: 'US Census Bureau: Vintage 2025 population estimates for counties (April 2020 to July 2025)', url: 'https://www.census.gov/newsroom/press-releases/2026/2025-popest-metro-micro-counties.html' },
 		],
