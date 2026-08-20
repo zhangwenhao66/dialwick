@@ -137,7 +137,7 @@ export const dialingGuides: DialingGuide[] = [
 		format: '011 + 61 + area code (drop the 0) + local number',
 		example: '011 61 2 9374 4000',
 		quirk:
-			"Sydney and the whole of New South Wales share area code 02; drop the 0 when dialing from the US, leaving 011 61 2. Australian mobile numbers (04xx) follow the same rule -- drop the 0, keep the rest.",
+			"Sydney's area code, 02, covers the whole Central East region -- the ACT and most of New South Wales, plus a small slice of Victoria -- but not every NSW address: a handful of border areas, like Broken Hill, fall under a different region's code instead. Drop the 0 when dialing from the US, leaving 011 61 2. Australian mobile numbers (04xx) follow the same rule -- drop the 0, keep the rest.",
 	},
 ];
 

@@ -2936,6 +2936,94 @@ export const guides: Guide[] = [
 		],
 	},
 	{
+		slug: 'how-to-call-australia-from-us',
+		category: 'International Dialing',
+		title: 'How to Call Australia From the US (Country Code +61)',
+		description:
+			"Dial 011, then 61, then the area code with its leading 0 dropped -- one of just four area codes that cover the entire country, the last survivors of a renumbering that retired dozens of others.",
+		published: '2026-08-20',
+		updated: '2026-08-20',
+		coreSummary:
+			"Dial 011, then 61 (Australia's country code), then the area code with its leading 0 dropped, then the local number. Australia's landlines run on just four area codes for the whole country -- 02 for Sydney and the Central East region, 03 for Melbourne and the South-east (Tasmania included), 07 for Brisbane and the rest of Queensland, and 08 for Adelaide, Perth, and the Northern Territory -- the survivors of a 1994-1998 renumbering that retired dozens of smaller codes, including a four-digit exception unique to Kangaroo Island. Mobile numbers, written domestically as 04xx, follow the identical drop-the-0 rule as landlines.",
+		sections: [
+			{
+				heading: 'Dialing Australia: country code 61, step by step',
+				body: [
+					"Calling Australia from a US landline: dial 011, then 61, then the area code with its leading 0 dropped, then the rest of the local number. From a mobile phone or most VoIP services, a \"+\" takes the place of the 011, so +61 followed by the same digits works just as reliably.",
+				],
+				table: {
+					columns: ['Step', 'What to dial'],
+					rows: [
+						['1. Exit code (landline)', '011'],
+						['1. Exit code (mobile/VoIP)', '+'],
+						['2. Country code', '61'],
+						['3. Area code', 'drop the leading 0'],
+						['4. Local number', 'remaining digits'],
+					],
+				},
+			},
+			{
+				heading: 'From dozens of area codes to four: the 1994-1998 renumbering',
+				body: [
+					"Before the mid-1990s, Australia's phone numbers looked nothing like today's system. By 1994 the country had six two-digit area codes for its capitals -- 02 (Sydney), 03 (Melbourne), 06 (Canberra), 07 (Brisbane), 08 (Adelaide), and 09 (Perth) -- plus 48 three-digit codes covering everywhere from Hobart to mid-west Western Australia, and one lone four-digit holdout: Kangaroo Island's 0848, which had never been folded into a larger code.",
+					"Regulators spent 1994 through 1998 collapsing that whole patchwork into the four regional codes still in use today, lengthening every local number by a digit or two along the way and rolling the process out area by area to avoid two different subscribers ending up with the same number mid-transition. The first conversion landed in the Sydney suburb of Mona Vale on 25 July 1994; the last happened more than three years later, on 10 November 1997, when Queensland's 070, 071, 076, 077, and 079 codes all folded into the modern (07) 4yxx xxxx format. In most cases the old area code got absorbed straight into the new local number -- Canberra's (06) 2xx xxxx became (02) 62xx xxxx, and the Northern Territory's (089) xx xxxx became (08) 89xx xxxx. Sydney and Melbourne, the two largest exchanges, needed a different fix: both added a leading 9 to existing numbers instead. Tasmania lost its own area code entirely, absorbed into Melbourne's 03 range despite being a separate state, and Queensland ended up splitting its numbers across three internal ranges (07 3... for Brisbane, 07 5... for the Gold and Sunshine Coasts, 07 4... for the rest). Until the changeover officially ended on 1 March 1999, callers had to dial the full area code even for calls within their own -- purely to stop numbers from clashing while the changes were still rolling out, a rule that's long gone even though some older guides still repeat it.",
+				],
+				table: {
+					caption: "Australia's four area codes today",
+					columns: ['Area code', 'Region covered'],
+					rows: [
+						['02', 'Sydney, the ACT, and most of New South Wales'],
+						['03', 'Melbourne, Tasmania, and the rest of Victoria'],
+						['07', 'Brisbane and the rest of Queensland'],
+						['08', 'Adelaide, Perth, and the Northern Territory'],
+					],
+				},
+			},
+			{
+				heading: 'Mobile numbers, and the 1300/1800 numbers that country code 61 alone won\'t reach',
+				body: [
+					"Mobile numbers sit outside the four regional codes entirely, under a single national prefix, 04, written domestically as 04xx xxx xxx. That prefix wasn't always this open: before November 1998, only the 040x and 041x ranges existed as mobile numbers, freed up from what had been New South Wales's regional area codes during the same renumbering described above. Mobile number portability arrived later still, on 25 September 2001 -- before that date, a mobile number's middle digits reliably identified which carrier issued it, which is no longer true today.",
+					'Some Australian numbers don\'t use the four-region system at all. Numbers starting with 13, 1300, or 1800 are local-rate and toll-free lines that route over a separate domestic network, and they carry no leading 0 to drop -- Wikipedia\'s numbering-plan overview notes that 13xx and 1300 numbers can be dialed directly after the country code with nothing removed. What that overview doesn\'t promise is that the call will actually connect: multiple Australian telecom providers describe reaching a 1300, 1800, or 13 number from outside the country as inconsistent, since completion depends on whether the calling carrier has an agreement to route into that domestic network at all. A business that wants overseas customers to be able to reach it reliably will usually publish an ordinary geographic number -- 02, 03, 07, or 08 -- specifically to sidestep that gap.',
+				],
+			},
+			{
+				heading: 'Worked examples',
+				body: [
+					'A Sydney landline written domestically as (02) 9374 4000 becomes 011 61 2 9374 4000 from a US landline, or +61 2 9374 4000 from a mobile. A mobile number written as 0412 345 678 becomes 011 61 412 345 678, or +61 412 345 678.',
+					"Australia's four-code system is an outlier -- see [the US country code](/us-country-code/) for the opposite extreme, where a single country code covers 20 different NANP members, or [how US area codes actually work](/how-do-area-codes-work/) for a numbering plan that assigns hundreds of area codes across one country instead of four for an entire continent.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: "What is Australia's country code?",
+				answer: '61.',
+			},
+			{
+				question: 'How many area codes does Australia have?',
+				answer:
+					'Just four geographic codes -- 02, 03, 07, and 08 -- cover the entire country. They\'re what survived a 1994-1998 renumbering that retired dozens of smaller two- and three-digit codes, plus a four-digit exception unique to Kangaroo Island.',
+			},
+			{
+				question: 'Can I call an Australian 1800 or 1300 number from the US?',
+				answer:
+					"Not reliably. Those local-rate and toll-free numbers route over Australia's domestic network rather than the four regional area codes, and Australian telecom providers describe overseas reachability as inconsistent and dependent on the calling carrier. If one won't connect, look for the business's ordinary geographic-area-code number instead.",
+			},
+			{
+				question: 'Can I just dial +61 instead of 011 61?',
+				answer:
+					'Yes -- on a mobile phone or most VoIP services, a "+" substitutes for the 011 exit code and works identically, so +61 2 9374 4000 reaches the same number as 011 61 2 9374 4000.',
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Former Australian dialling codes', url: 'https://en.wikipedia.org/wiki/Former_Australian_dialling_codes' },
+			{ label: 'Wikipedia: Telephone numbers in Australia', url: 'https://en.wikipedia.org/wiki/Telephone_numbers_in_Australia' },
+			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+			{ label: 'Alltel: How to Call a 1800 Number From Overseas', url: 'https://www.alltel.com.au/blog/call-1800-number-overseas' },
+			{ label: '1300 Numbers Australia: What You Need to Know About Calling a 1300 Number From Overseas', url: 'https://www.1300numbersaustralia.com.au/what-you-need-to-know-about-calling-a-1300-number-from-overseas' },
+		],
+	},
+	{
 		slug: 'phoenix-zip-codes',
 		category: 'ZIP Codes',
 		title: 'Phoenix ZIP Codes: All 77, and Why the List Never Crosses a County Line',
