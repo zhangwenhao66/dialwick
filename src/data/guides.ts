@@ -2196,6 +2196,117 @@ export const guides: Guide[] = [
 	// Area Codes
 	// ---------------------------------------------------------------------
 	{
+		slug: 'miami-area-code',
+		category: 'Area Code Guides',
+		title: 'Miami Area Codes: 305, 786, 645, and the 1947 Code That Once Covered All of Florida',
+		description:
+			"Miami-Dade and the Florida Keys share three overlapping area codes today. 305 is the original, dating to 1947 -- back when it covered the entire state of Florida, not just Miami.",
+		published: '2026-08-20',
+		updated: '2026-08-20',
+		coreSummary:
+			"Miami-Dade County and the Florida Keys are served by three overlapping area codes today -- 305, 786, and 645 -- but only 305 dates back to 1947, when it was one of the original 86 area codes assigned nationwide and covered the entire state of Florida. Four splits over the following decades peeled the rest of the state away: 813 for the Tampa Bay area in 1953, 904 for north Florida in 1965, 407 for the east coast and Orlando in 1988, and 954 for Broward County in 1995. Once Miami-Dade had nowhere left to split, Florida switched to overlays instead -- 786 arrived in 1998, and 645 followed in 2023, both stacked on the same territory as 305 rather than drawing a new line.",
+		sections: [
+			{
+				heading: "Miami's three overlapping area codes",
+				body: [
+					"All three of the area codes below cover the identical registered territory: Miami-Dade County plus the Florida Keys portion of Monroe County (mainland Monroe County, on the peninsula, uses a separate code, 239). Which of the three a given number carries comes down entirely to when the line was activated, not which part of that territory its owner lives in.",
+				],
+				table: {
+					caption: "Miami's area codes and when each went into service",
+					columns: ['Area code', 'Coverage', 'In service since', 'Still assignable?'],
+					rows: [
+						['305', 'Miami-Dade County and the Florida Keys (originally all of Florida)', '1947 (original)', 'Yes'],
+						['786', 'Overlay on 305', 'March 1, 1998', 'Yes'],
+						['645', 'Overlay on 305 and 786', 'August 4, 2023', 'Yes'],
+					],
+				},
+			},
+			{
+				heading: 'From all of Florida to three overlaid codes on one county',
+				body: [
+					"305 was one of the 86 original area codes the newly formed North American Numbering Plan assigned in 1947, and back then it covered the entire state of Florida, not just Miami. Growth pulled the state apart from 305 four separate times over the next 48 years. The west coast, from the Tampa Bay area south, split off as 813 in 1953 -- the area was served mostly by General Telephone (GTE) rather than AT&T at the time, so the split ran along a company boundary as well as a geographic one. North Florida, from the Panhandle down to Jacksonville, followed in 1965, moving to 904 with permissive dialing starting July 6 and mandatory dialing beginning January 1, 1966. The east coast from Palm Beach County north through Brevard County, plus the Orlando metro area, split off as 407 on April 16, 1988. The last geographic split came on September 11, 1995, when Broward County was carved out as 954, narrowing 305 down to roughly its footprint today: Miami-Dade County and the Florida Keys.",
+					"Regulators predicted the 954 split would delay 305's exhaustion but not prevent it, and they were right -- growth from cell phones and pagers pushed the reconfigured 305 close to running out of numbers again within two years. Rather than split Miami-Dade a fifth time, Florida installed 786 as an overlay on March 1, 1998, the state's first overlay complex; it initially covered only Miami-Dade County before later extending across the rest of 305's territory, including the Keys. That same pattern held when a third code became necessary: the Florida Public Service Commission approved 645 in February 2022, and it went into service August 4, 2023 -- ahead of the combined exhaustion of 305 and 786's assignable prefixes, which regulators had projected would otherwise land sometime that same year. The shift from splitting a growing region to stacking overlays on top of it, once there's no more geography left to divide, is the same shift that shaped [Atlanta's numbering plan](/atlanta-area-code/) once 404 ran out of room to split again -- see [how area codes actually work](/how-do-area-codes-work/) for the split-versus-overlay distinction itself.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 305 begins in 1947 covering all of Florida, its last split (954) happens in 1995, its first overlay (786) arrives in 1998, and a third overlay (645) arrives in 2023">
+	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="80" cy="95" r="9" fill="#131a27"/>
+	<text x="80" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1947</text>
+	<text x="80" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">305 covers</text>
+	<text x="80" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">all of</text>
+	<text x="80" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Florida</text>
+	<circle cx="290" cy="95" r="9" fill="#b5722f"/>
+	<text x="290" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1995</text>
+	<text x="290" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Last split:</text>
+	<text x="290" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">954 breaks</text>
+	<text x="290" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">off Broward</text>
+	<circle cx="460" cy="95" r="9" fill="#131a27"/>
+	<text x="460" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1998</text>
+	<text x="460" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">786 overlays</text>
+	<text x="460" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">305 instead</text>
+	<text x="460" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">of splitting it</text>
+	<circle cx="610" cy="95" r="9" fill="#b5722f"/>
+	<text x="610" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2023</text>
+	<text x="610" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">645 layers on</text>
+	<text x="610" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">as a third</text>
+	<text x="610" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">overlay</text>
+</svg>`,
+			},
+			{
+				heading: "'Mr. 305' and the market for old Miami numbers",
+				body: [
+					"Miami's attachment to 305 runs deeper than most cities' relationship with their own area code. Miami native Armando Christian Perez built his entire stage persona around it, going by Pitbull and \"Mr. 305\" since early in his career, and 305-branded tattoos are common enough locally that Miami-Dade natives have their own catchphrase for it: \"305 'til I die.\"",
+					"That attachment created an actual resale market. Ed Mance, who runs PhoneNumberGuy.com buying up old business phone numbers in bulk and reselling them, told the Washington Post that 305 is one of his best sellers, trailing only Los Angeles's 310 and New York's 212 -- and he typically prices these secondhand numbers between $299 and $799. The irony, according to Miami New Times' reporting, is that 305 hasn't actually been a guarantee for new registrations in decades: register a new line in Miami-Dade today and you're more likely to end up with 786, or now 645, than the code the city built its identity around.",
+				],
+			},
+			{
+				heading: 'The AI voicemail scam FPL is warning Miami customers about',
+				body: [
+					"Florida Power & Light -- the utility serving most of Miami-Dade -- has been warning customers since May 2026 about a wave of AI-generated scam voicemails impersonating its billing department. One recorded message opens: \"The state of Florida has recently changed its efficiency standards. Your house has been flagged for an energy compliance review.\" Another, using a fabricated employee name, says: \"Hey it's Will from Florida Power and Light compliance department... you can get up to $3,000 dollars in energy rebates and possibly a new air conditioner at no cost\" if the customer calls back immediately.",
+					"None of it is real, and it's a different threat from the caller-ID spoofing covered in [is there really a 'scam area code'?](/scam-area-codes/) -- this scam doesn't fake a phone number at all, it fakes an entire voicemail from a fictional employee. FPL says the calls are engineered to extract personal information and payment once a customer dials the number left in the voicemail. The company's actual policy rules out everything the scam relies on: FPL states it will never ask a customer to pay outside its own authorized payment channels, and it will never show up at a home or business, or otherwise demand, payment through a prepaid card, cryptocurrency, or services like Zelle, Cash App, or Venmo to avoid disconnection. If an account is genuinely past due, FPL's own process is to leave a prerecorded message and send a letter asking the customer to call FPL -- not the reverse. Anyone who gets one of these calls should hang up and dial the number printed on an actual FPL bill, not the one left in the voicemail.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does Miami have?',
+				answer:
+					"Three: 305 (1947, the original), 786 (1998), and 645 (2023). All three cover the identical Miami-Dade County and Florida Keys footprint -- which code a number carries depends only on when it was assigned.",
+			},
+			{
+				question: 'Can I still get a phone number with a 305 area code?',
+				answer:
+					"Technically yes -- 305 hasn't run out of assignable numbers -- but in practice most newly registered lines in Miami-Dade are handed 786 or 645 today rather than 305.",
+			},
+			{
+				question: 'Why is Miami nicknamed "the 305"?',
+				answer:
+					'After its original 1947 area code. Miami native Pitbull built his stage persona around the nickname "Mr. 305," and local tattoos and the phrase "305 \'til I die" reflect the same attachment to the code.',
+			},
+			{
+				question: 'Do I need to dial 10 digits for a local Miami call?',
+				answer:
+					"Yes. Once 786 overlaid 305 in 1998, the combined numbering plan area required area code plus number for every local call -- the standard rule in any overlay region, including Miami's.",
+			},
+			{
+				question: "What's the FPL phone scam Miami-area customers should know about?",
+				answer:
+					'Since May 2026, AI-generated voicemails have impersonated FPL\'s "compliance department," claiming a home was flagged for an "energy compliance review" and dangling up to $3,000 in rebates or a free air conditioner to get customers to call back and hand over payment or personal information. FPL never demands payment this way -- the real company only contacts past-due accounts by prerecorded message and letter, and never asks for the payment methods (prepaid cards, cryptocurrency, Zelle, Cash App, Venmo) the scam relies on.',
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Area codes 305, 786, and 645', url: 'https://en.wikipedia.org/wiki/Area_codes_305,_786,_and_645' },
+			{
+				label: 'Miami New Times: 305 Is One of the Most In-Demand Area Codes in the Country',
+				url: 'https://www.miaminewtimes.com/news/305-is-one-of-the-most-in-demand-area-codes-in-the-country-7580164/',
+			},
+			{
+				label: 'Local10/WPLG: FPL warns of rise in AI-generated scam calls targeting customers',
+				url: 'https://www.local10.com/news/local/2026/05/16/fpl-warns-of-rise-in-ai-generated-scam-calls-targeting-customers/',
+			},
+			{ label: 'FPL: Protect Yourself from Scams, Fraud and Impostors', url: 'https://www.fpl.com/landing/protect.html' },
+		],
+	},
+	{
 		slug: '213-area-code',
 		category: 'Area Codes',
 		title: "213 Area Code: LA's Original 1947 Number, Now Tripled Up With 323 and 738",
