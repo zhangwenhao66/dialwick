@@ -3102,4 +3102,115 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
+	{
+		slug: '929-area-code',
+		category: 'Area Codes',
+		title: "929 Area Code: New York City's Third Overlay, and Its 24-Million-Number Cushion",
+		description:
+			"929 went live in 2011 as the third area code layered onto the same outer-borough footprint as 718 and 347 -- adding enough technical capacity for roughly 24 million numbers to a population the Census put at 6.6 million.",
+		published: '2026-08-20',
+		updated: '2026-08-20',
+		coreSummary:
+			"Area code 929 has overlaid the same New York City territory as 718 and 347 since April 16, 2011: the Bronx, Brooklyn, Queens, and Staten Island, plus the Marble Hill section of Manhattan, all on Eastern Time. It was the third overlay to touch that outer-borough footprint, after 917 in 1992 and 347 in 1999, approved by the state Public Service Commission in December 2009 and phased in through 2010 and early 2011 on a fixed NANPA schedule, down to a dedicated test number carriers used to confirm their networks were ready. Stacking a third area code onto one footprint pushed its technical capacity just under 24 million assignable numbers for a population the 2010 Census counted at roughly 6.6 million -- headroom that looked enormous in 2011 and still wasn't enough to avoid a fourth code, 465, arriving in 2026.",
+		sections: [
+			{
+				heading: 'Where 929 actually reaches',
+				body: [
+					"929 covers exactly the same ground as 718 and 347: the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill, the Manhattan neighborhood whose phone lines run through a Bronx switching center rather than a Manhattan one -- the full story of how that neighborhood ended up on the outer-borough side is on this site's [citywide rundown of all eight New York area codes](/nyc-area-code/). All of it runs on Eastern Time, and every local call across that territory has required ten-digit dialing since 917, New York's first overlay, made it mandatory back in 1992.",
+					"929 doesn't have a single block, business district, or ZIP code that belongs to it alone. Every address it reaches already carries 718 or 347 too; which of the three codes a given phone number gets assigned depends on which prefix a carrier still has room in, not on geography.",
+				],
+			},
+			{
+				heading: 'How a third overlay got approved on a fixed schedule',
+				body: [
+					"On December 16, 2009, the New York Public Service Commission approved an all-services overlay as the relief method for the 718/347 numbering plan area, in Case 09-C-0058. NANPA's own implementation letter, published February 9, 2010, laid out a fixed rollout: carriers began network preparation on July 16, 2010, could start ordering central office codes under the new area code from October 16, 2010, and April 16, 2011 became the earliest activation date -- 929's actual in-service date. A dedicated test number, 929-222-9901, stayed live from December 14, 2010, through July 11, 2011, so every carrier could confirm it was routing calls to the new code correctly before the changeover.",
+					"Layering a third area code onto one territory is mostly arithmetic. NANPA allots up to 792 usable central office codes to each area code, each carrying 10,000 individual numbers -- a maximum of 7.92 million numbers per code. Three codes sharing the same ground, 718, 347, and 929, works out to just under 24 million technically assignable numbers for a territory the 2010 Census put at about 6.6 million residents across the four boroughs. That kind of overhead is standard industry practice, not a New York quirk -- carriers reserve blocks of numbers they never assign, and a single business account can tie up thousands of unused digits -- but the surplus still didn't last as long as the math implied. By April 2024, NANPA was already projecting the shared 347/718/917/929 pool would run out of central office codes by the end of 2026; slower demand pushed that estimate to the third quarter of 2027 by September 2025, but the state's Public Service Commission had already approved a fourth code, 465, in January 2025 rather than wait to find out. It went into service June 18, 2026 -- see this site's [citywide page](/nyc-area-code/) for the full story of that overlay.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 718 created in 1984, overlaid by 347 in 1999, overlaid again by 929 in 2011, and overlaid a fourth time by 465 in 2026">
+	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="80" cy="95" r="9" fill="#131a27"/>
+	<text x="80" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1984</text>
+	<text x="80" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">718 splits</text>
+	<text x="80" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">from 212</text>
+	<circle cx="290" cy="95" r="9" fill="#b5722f"/>
+	<text x="290" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1999</text>
+	<text x="290" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">347 overlays</text>
+	<text x="290" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">718</text>
+	<circle cx="460" cy="95" r="9" fill="#131a27"/>
+	<text x="460" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2011</text>
+	<text x="460" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">929 overlays</text>
+	<text x="460" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">both</text>
+	<circle cx="610" cy="95" r="9" fill="#b5722f"/>
+	<text x="610" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2026</text>
+	<text x="610" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">465 adds</text>
+	<text x="610" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">a fourth</text>
+</svg>`,
+			},
+			{
+				heading: 'A palindrome, twenty rotary clicks, and a plumbing hotline',
+				body: [
+					"New York's own newspaper of record couldn't resist needling the new code when it arrived. The New York Times' City Room blog marked 929's April 16, 2011, launch by pointing out that the number is a palindrome, spells \"WAX\" on a keypad, and would cost anyone still dialing on a rotary phone nine plus two plus nine, or twenty clicks -- more than any other New York City area code carried at the time.",
+					"929 picked up a second, unrelated moment in pop culture twelve years later. Ahead of the Super Bowl LVII broadcast in February 2023, Universal and Illumination launched a promotional website for \"Super Mario Bros. Plumbing,\" the fictional Brooklyn business run by Mario and Luigi in that year's movie, complete with a working phone number -- 929-556-2746, or 929-55-MARIO -- that played a recorded in-character voicemail. It wasn't a real listing, just a marketing stunt tied to that spring's film release, but the number stayed live through the promotional run, handing a decade-old outer-borough overlay code an unlikely cameo.",
+				],
+			},
+			{
+				heading: 'Four codes, one target: why spoofing works the same across all of them',
+				body: [
+					"Caller ID spoofing lets a scammer display almost any number they choose, a tactic the FCC calls neighbor spoofing, covered in more detail on this site's [scam area codes page](/scam-area-codes/). In most of the country that means picking a number in the target's own area code to look local. New York's outer boroughs work differently: 718, 347, and 929 cover the identical four-borough footprint, and 917 -- assigned across all five boroughs, Manhattan included -- reads just as local layered on top of it. A spoofed call showing any of those four codes looks native to the same roughly 6.6 million residents, without needing to guess which specific one a recipient's own phone actually carries.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What areas does the 929 area code cover?',
+				answer:
+					"The same territory as 718 and 347: the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill, the part of Manhattan that dials on outer-borough codes. All of it is on Eastern Time.",
+			},
+			{
+				question: 'Is 929 a new area code or does it replace 718?',
+				answer:
+					"It's an overlay, not a replacement. 929 went into service April 16, 2011, layered onto the exact same territory as 718 and 347 -- no existing 718 or 347 number changed, and which of the three codes a given phone number carries has nothing to do with which borough it's in.",
+			},
+			{
+				question: 'How many phone numbers can 718, 347, and 929 support combined?',
+				answer:
+					"Up to about 24 million. NANPA allots a maximum of 7.92 million numbers to each area code (792 usable prefixes times 10,000 lines apiece); three overlaid codes sharing one footprint multiplies that to just under 24 million, for a population the 2010 Census counted at roughly 6.6 million across the four boroughs.",
+			},
+			{
+				question: 'Why did New York need a fourth code, 465, if 929 already added so much capacity?',
+				answer:
+					"Demand outpaced even that surplus. NANPA projected in April 2024 that the shared 347/718/917/929 pool would run out of central office codes by late 2026; the state Public Service Commission approved a fourth overlay, 465, in January 2025 rather than wait for that deadline, and it went into service June 18, 2026.",
+			},
+			{
+				question: "What was the \"929-55-MARIO\" phone number about?",
+				answer:
+					"A 2023 marketing campaign for that year's Super Mario Bros. movie. Universal and Illumination built a fake plumbing-business website for Mario and Luigi ahead of the Super Bowl LVII broadcast, complete with a working 929 number, 929-556-2746, that played a recorded in-character voicemail. It was never a real business listing.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 718, 347, 929, and 465', url: 'https://en.wikipedia.org/wiki/Area_codes_718,_347,_929,_and_465' },
+			{
+				label: 'NANPA Planning Letter 402: NPA 929 to Overlay NPA 718/347 (New York)',
+				url: 'https://web.archive.org/web/20250304104823/https://www.nanpa.com/sites/default/files/planning_letters/PL-402.pdf',
+			},
+			{
+				label: 'NANPA: Area Code Relief Planning Frequently Asked Questions (numbering capacity)',
+				url: 'https://www.nanpa.com/sites/default/files/2024-10/AreaCodeReliefPlanningFAQs_0.pdf',
+			},
+			{
+				label: 'NYC Department of City Planning: Total Population, New York City & Boroughs, 1900 to 2010',
+				url: 'https://www.nyc.gov/assets/planning/download/pdf/data-maps/nyc-population/historical-population/nyc_total_pop_1900-2010.pdf',
+			},
+			{
+				label: 'The New York Times, City Room: "Say Hello to 929" by Andy Newman (April 15, 2011)',
+				url: 'https://web.archive.org/web/20180405215117/https://cityroom.blogs.nytimes.com/2011/04/15/say-hello-to-929/?_r=0',
+			},
+			{
+				label: 'Variety: The Super Mario Bros. Movie Reveals Plumbing Website and Commercial (Feb. 12, 2023)',
+				url: 'https://variety.com/2023/film/news/super-mario-bros-movie-plumbing-website-commercial-trailer-1235520802/',
+			},
+			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+		],
+	},
 ];
