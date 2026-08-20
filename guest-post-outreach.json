@@ -134,5 +134,74 @@
         ],
         "actions_taken": "Drafted, humanized, and independently reviewed one resource-suggestion pitch to the UB Libraries Area Code Information guide. IMPORTANT SEND INCIDENT: the first gmail_send.py send attempt raised a client-side exception (socks.ProxyConnectionError / RemoteDisconnected on the Gmail API response) that looked like a failed send, so it was retried once. A post-send gmail_send.py list --query \"to:ltaddeo@buffalo.edu\" check afterward showed BOTH attempts actually reached Gmail and were sent successfully 18 seconds apart (message IDs 1a0094177077e079 and 1a00941be0a7b689) — the first request had already succeeded server-side before the local connection to Gmail's API dropped, so the client-side error was misleading and the retry produced a duplicate send. Both copies are identical in content (same subject, same body). No further action was taken to suppress this since sent mail cannot be recalled from the recipient's inbox; documenting it here rather than hiding it, per this project's do-not-hide-problems rule. Lesson for future rounds: after ANY gmail_send.py exception, run the dedup list --query check BEFORE retrying, not just before the first send, since Gmail API sends can succeed server-side even when the client-side response fails.",
         "result_summary": "1/1 new channel researched this round was viable and sent (duplicate send incident noted above, content otherwise correct). Backlog: no pending drafted-but-unsent pitches remain for dialwick after this round."
+    },
+    {
+        "date": "2026-08-20",
+        "site": "dialwick",
+        "niche_focus": "North American area code + US ZIP code + international dialing reference site",
+        "verification_pass": {
+            "description": "First-ever pass verifying prior rounds' sent/submitted pitches against live results, per updated task instructions. Checked the two oldest unverified entries (both dated 2026-08-06, both older than the 2026-08-10 cutoff).",
+            "checked": [
+                {
+                    "channel": "New Jersey State Library, \"Telephone & People Directories\" ready-reference guide (resource-suggestion email sent 2026-08-06 to hhusted@njstatelib.org)",
+                    "verified_status": "still_pending",
+                    "evidence": "curl -sL of https://libguides.njstatelib.org/ready_reference/telephone on 2026-08-20 (14 days after send) shows the page live and unchanged: still lists only AnyWho, Whitepages, and allareacodes.com as telephone/area-code resources, dialwick.com not present. gmail_send.py list --query \"from:hhusted@njstatelib.org OR from:njstatelib.org\" returned zero results (no reply, positive or negative). dataforseo_query.py backlinks dialwick.com returned 0 backlinks total, confirming no link exists regardless of page-content changes not yet re-crawled. Classified still_pending rather than declined since library guide updates often take longer than 2 weeks and no rejection signal was received."
+                },
+                {
+                    "channel": "Curlie.org (Open Directory Project successor), Area Codes category (site suggestion submitted 2026-08-06, confirmed via screenshot of \"Suggestion Received\" confirmation page)",
+                    "verified_status": "still_pending",
+                    "evidence": "curl -sL of https://curlie.org/Reference/Directories/Address_and_Phone_Numbers/Area_Codes/ on 2026-08-20 (14 days after submission) shows the category page live and unchanged: AllAreaCodes.com, AreaCode.org, CountryCallingCodes.com, LincMad, etc. still listed, dialwick.com not present. dataforseo_query.py backlinks dialwick.com confirms 0 backlinks. Classified still_pending, not declined — Curlie/ODP volunteer editorial review is widely known to take weeks to months, and there is no rejection notice (Curlie doesn't send one either way)."
+                }
+            ],
+            "backlink_check": "python3 dataforseo_query.py backlinks dialwick.com returned 0 total backlinks as of 2026-08-20 (raw response: research-db/direct-api-log/20260820T124413Z_backlinks_dialwick-com_de3dd40c.json). No verified_live_backlink_confirmed or verified_live_backlink_nofollow classifications possible yet for any prior-round channel."
+        },
+        "backlog_check": "Read full JSON history. No entry found with a status matching \"viable — pitch drafted, not sent\" from a prior round (all non-sent entries were explicitly skipped for poor fit, dead links, or paid placement, not drafted-and-parked). No backlog to action this round.",
+        "gsc_context": "python3 gsc_query.py dialwick (last 28 days, 2026-07-20 to 2026-08-17) usable. Priority topics by position 5-40 with meaningful impressions: california-area-codes (query \"california area code\" at position 12.5, 154 impressions, page overall 690 impressions/28 days but 0 clicks), atlanta-zip-codes (position 23.4-24.3, 568 impressions, +182 week-over-week, strongest riser), what-county-is-chicago-in (position 17.2-27.5, 489 impressions -- already used as the pitch topic in the 2026-08-16 round, not reused), richmond-va-zip-codes (position 6.4, newly appearing, +88 WoW). atlanta-zip-codes was selected as this round's pitch topic: strong growth, not yet used in any prior pitch, and a good topical match for a ZIP-code-specific (not area-code-specific) target page.",
+        "channels_researched": [
+            {
+                "name": "Michigan State University Libraries, \"Fast Facts: ZIP Codes\" LibGuide",
+                "url": "https://libguides.lib.msu.edu/c.php?g=95684&p=624553",
+                "status": "viable -- drafted, contact blocked, escalated to Owen",
+                "notes": "Genuine, currently maintained (page footer: \"Last Updated: Aug 14, 2026,\" 6 days before this research round) academic library ready-reference guide. Thin and topically matched: lists only Canada Post and USPS ZIP+4 lookup tools, neither of which answers \"what ZIP codes exist for this city\" or \"which county is a ZIP in\" -- the gap DialWick's city ZIP guides fill. No contact could be verified: lib.msu.edu/contact/askalib and lib.msu.edu/rds/askus are JS-only chat/form widgets with no static mailto; lib.msu.edu/about/ref/ is blocked outright by Incapsula bot protection when fetched via curl (\"Request unsuccessful. Incapsula incident ID...\"). No named guide-owner box on the LibGuide page itself. Per project rule against fabricating contact details, no email was guessed. Full pitch text drafted and humanized (see outreach-drafts.md Pitch 7), escalated to Owen to either find a working contact in a real browser or submit via the live chat himself."
+            },
+            {
+                "name": "Bryant & Stratton College Library, \"Zip & Postal Codes\" Ready Reference guide",
+                "url": "https://bryantstratton.libguides.com/readyreference/ZipPostalCodes",
+                "status": "dead -- entire guide deleted",
+                "notes": "Found via WebSearch as a plausible ZIP-code-specific library guide, but curl returns a LibGuides 404 (\"The requested page could not be found... because the page has been deleted\") for both this URL and the parent /readyreference guide home. The whole Ready Reference guide appears to have been retired or migrated off this subdomain. Not actionable."
+            },
+            {
+                "name": "Los Angeles Public Library, \"Telephone & Reverse Directories\" web resources page (plus its parent \"Directories\" hub)",
+                "url": "https://www.lapl.org/collections-resources/web-resources/telephone-reverse-directories",
+                "status": "dead -- entire web-resources section retired",
+                "notes": "curl returns \"Page Not Found\" for both the specific telephone-directories page and its parent hub (https://www.lapl.org/collections-resources/web-resources/directories, also 404). Wayback Machine confirms the page existed as recently as April 2025 (snapshot dated 2025-04-17) but LAPL appears to have restructured its site and dropped this section entirely since then, not merely broken one link on an otherwise-live page. Not a broken-link-replacement opportunity since there is no live page to email about; not actionable."
+            },
+            {
+                "name": "Christopher Newport University, \"Tools\" E-Reference LibGuide tab",
+                "url": "https://cnu.libguides.com/e-ref/tools",
+                "status": "real but poor fit -- wrong content type, skipped",
+                "notes": "Page is live and current but covers citation generators, productivity tools, and calculators (BibMe, Zotero, Evernote, Gliffy), not phone/ZIP/postal reference material at all. No topical match, not pitched."
+            },
+            {
+                "name": "USGenWeb Project, \"Helpful Links\" page",
+                "url": "https://www.usgenweb.org/research/links.html",
+                "status": "real but poor fit -- topical mismatch, skipped",
+                "notes": "Live and recently updated (\"updated by the Advisory Board 2025 Oct\") nonprofit genealogy links directory, but its content is exclusively archives/libraries/ethnicity-focused genealogical record sources (National Archives, Library of Congress, HathiTrust, Find A Grave, etc.), not modern geographic/phone reference tools. A county-lookup framing was considered but the page's actual audience wants historical records, not current ZIP/area code boundaries. Not pitched."
+            },
+            {
+                "name": "AARP robocall/scam-area-code editorial content and state Attorney General consumer-protection pages",
+                "url": "n/a (multiple, e.g. https://www.aarp.org/money/scams-fraud/fcc-takes-more-steps-to-reduce-robocalls/)",
+                "status": "poor fit -- editorial content not a resource list, skipped",
+                "notes": "AARP publishes its own robocall/area-code-spoofing articles rather than maintaining a curated external resource-links page, and is too large an organization for a cold outreach pitch to realistically result in a link addition. State AG consumer-protection pages found via search were general complaint-filing portals (DoNotCall.gov, FTC), not curated resource lists with room for a new entry. Not pursued."
+            },
+            {
+                "name": "Various telecom \"Write for Us\" guest-post pages (telecomcircle.com, triotechdigital.com, bloggingcoffe.com, and repeats of theitbase.com/techwadia.com from the 2026-08-04 round)",
+                "url": "n/a (multiple)",
+                "status": "repeat of already-disqualified guest-post-farm pattern, skipped",
+                "notes": "WebSearch for telecom-adjacent guest-post opportunities kept surfacing the same guest-post-marketplace pattern already ruled out in the 2026-08-04 round (generic 500-700 word minimums, broad unrelated topic scope, farm-like structure). No new evidence changed that judgment; not re-investigated in depth."
+            }
+        ],
+        "actions_taken": "Verified two prior-round sent/submitted channels against live evidence (both still_pending, no backlinks, no replies). Confirmed no drafted-but-unsent backlog existed. Pulled GSC data and selected atlanta-zip-codes as this round's featured topic (strongest riser, not yet used in a pitch). Researched library ZIP/area-code reference guides, genealogy portals, and consumer-protection/AARP content for new resource-page opportunities; found one genuinely viable and topically matched new channel (MSU Libraries Fast Facts: ZIP Codes), drafted and humanized a full pitch for it (outreach-drafts.md Pitch 7), but could not find any verifiable contact address for MSU Libraries via curl (JS-only chat widgets, Incapsula-blocked reference page) and declined to fabricate one. Escalated to Owen in 独立站/待Owen处理事项.md. Gmail dedup check for @msu.edu / lib.msu.edu returned empty.",
+        "result_summary": "0 new emails sent this round (1 genuinely viable channel found and drafted, blocked on contact discovery, escalated to Owen). Both verified prior-round channels (NJ State Library email, Curlie.org directory submission) remain still_pending 14 days out, with 0 total backlinks confirmed via DataForSEO -- consistent with this niche's persistently thin guest-post/resource-page ecosystem noted in every prior round. No backlog existed. Library-guide-type resource pages continue to be the only channel type in this niche judged genuinely viable (2/2 successful sends in prior rounds), but this round also surfaced that the vein is thinning: two of four newly found library guides had been entirely deleted/retired since being indexed, and a third was topically mismatched despite matching on keywords."
     }
 ]

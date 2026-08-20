@@ -184,3 +184,30 @@ Owen Zhang
 contact@dialwick.com
 
 **Independent review outcome:** first draft returned PROBLEM (see above: wrong page name, "Community Links" vs actual "Local Links"). Corrected and re-submitted to the same reviewer agent, which independently re-curled https://gondtc.com/resources/, confirmed the "LOCAL LINKS" heading and the allareacodes.com link with anchor text "North Dakota Area Codes" match the corrected email exactly, and returned **"CAN SEND"**. **Sent 2026-08-16** to support@gondtc.com, Gmail message ID `1a0094d3c4a8630d`.
+
+---
+
+## Pitch 7 — Michigan State University Libraries, "Fast Facts: ZIP Codes" LibGuide (2026-08-20, resource-suggestion email, not a guest post — DRAFTED ONLY, NOT SENT, see note below)
+
+- Page: https://libguides.lib.msu.edu/c.php?g=95684&p=624553 (part of the "Fast Facts" ready-reference LibGuide, under the "Directories" / "ZIP Codes" tabs; confirmed live and current via curl 2026-08-20 — page footer shows "Last Updated: Aug 14, 2026," six days before this research round)
+- Why this page: genuine, actively maintained academic library reference guide, topically exact-match, and thin: it lists exactly two external tools (Canada Post's postal-code-by-address lookup and USPS's ZIP+4 lookup), both of which only answer "what ZIP code is this address," not "what ZIP codes exist for this city" or "which county is a given ZIP in" — the gap DialWick's city ZIP-code guides fill. GSC context: `atlanta-zip-codes` is DialWick's top-performing ZIP page by impressions this period (568 impressions/28 days, position 23.4-24.3, +182 week-over-week per `python3 gsc_query.py dialwick`), so it was used as the concrete example over other city pages.
+- Fact-checked against `src/data/guides.ts` (`atlanta-zip-codes` entry, published 2026-08-03): USPS assigns 92 ZIP codes with Atlanta as the primary place name; roughly four Fulton County ZIPs for every one DeKalb County ZIP; 39901 is a unique ZIP assigned to the IRS's Atlanta service center rather than a residential area, source cited on the page is GeoNames.org.
+- **NOT SENT — no verifiable contact address found.** Every general MSU Libraries contact channel found this round (`https://lib.msu.edu/contact/askalib`, `https://lib.msu.edu/rds/askus`, `https://lib.msu.edu/about/ref/`) is either a JS-rendered chat/form widget with no static mailto in the page source, or blocked outright by MSU's Incapsula bot protection when fetched via curl (`https://lib.msu.edu/about/ref/` returned "Request unsuccessful. Incapsula incident ID..."). The LibGuide page itself has no named guide-owner box and its "Report a problem" link routes to the same JS-only `askus` form. Per this project's hard rule against fabricating contact details, no email address was guessed or invented. Escalated to Owen (see `独立站/待Owen处理事项.md`) — a real person in a real browser can likely reach the chat widget or find a current reference-desk email in under a minute, which automated curl cannot do here (Incapsula specifically targets non-browser traffic). Gmail dedup check (`list --query "to:@msu.edu OR to:lib.msu.edu"`) returned empty, confirming no prior contact.
+
+**Email (ready to send once Owen supplies a working contact address or submits it himself via the live chat):**
+
+Subject: A resource for your Fast Facts: ZIP Codes page
+
+Hi there,
+
+I ran across your ZIP Codes page under Fast Facts (https://libguides.lib.msu.edu/c.php?g=95684&p=624553) while looking through library reference guides that cover postal codes. Right now it lists the Canada Post and USPS ZIP+4 tools. Both handle address-to-ZIP lookups well. Neither answers a question people ask just as often: which ZIP codes exist for a given US city, and which county each one sits in.
+
+We built a set of city ZIP code guides at DialWick for exactly that. The Atlanta one (https://dialwick.com/atlanta-zip-codes/) lists all 92 ZIP codes USPS assigns to Atlanta, GA, sorts them by county (roughly four in Fulton for every one in DeKalb), and flags the one ZIP, 39901, that isn't a residential area at all. It's a unique code the USPS assigned to the IRS's Atlanta service center.
+
+Happy to have it added alongside your existing ZIP code tools if it's a fit. Either way, the guide looks well kept up. The August 14 update date beats most reference pages I run into.
+
+Owen Zhang
+DialWick
+contact@dialwick.com
+
+**Review note:** run through `humanizer` and `avoid-ai-writing` before this entry was written (em dash in the first draft's second paragraph removed, sentence lengths varied, no flagged AI vocabulary). No independent reviewer sub-agent was used this round since the email cannot be sent yet — re-run the same review checklist (dedup, fact-check against guides.ts, target-page liveness, tone, AI-tell scan) once Owen has a real contact address, before actually sending.
