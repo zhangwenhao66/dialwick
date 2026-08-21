@@ -3516,4 +3516,92 @@ export const guides: Guide[] = [
 			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
 		],
 	},
+	{
+		slug: 'huntsville-zip-codes',
+		category: 'ZIP Codes',
+		title: "Huntsville, AL ZIP Codes: All 24, and the 7 That Aren't Neighborhoods",
+		description:
+			"All 24 ZIP codes USPS assigns to Huntsville, AL -- including the 7 reserved for single addresses like a credit union and a university, and one that sits mostly on Redstone Arsenal.",
+		published: '2026-08-21',
+		updated: '2026-08-21',
+		coreSummary:
+			"USPS assigns 24 ZIP codes to Huntsville, Alabama, and per this site's GeoNames-based source data, every one sits inside a single county -- Madison -- the same pattern this site has already documented for Fresno's 58 codes. What the flat county view hides is how few of Huntsville's 24 codes serve an ordinary carrier route: zip-codes.com's own delivery-type tally for the city counts 11 standard codes, 7 unique codes reserved for a single high-volume address, and 6 PO Box codes -- meaning fewer than half are the kind of code a residential mail carrier actually walks. Two of those 7 unique codes are on the public record for a specific tenant: 35893 belongs to Redstone Federal Credit Union, Alabama's largest credit union, and 35899 belongs to the University of Alabama in Huntsville. A third code on the list, 35808, carries the Huntsville place name in USPS and GeoNames records but sits mostly on Redstone Arsenal, the Army post that hosts NASA's Marshall Space Flight Center.",
+		sections: [
+			{
+				heading: 'All 24 ZIP codes, and why fewer than half are standard delivery routes',
+				body: [
+					"Madison County holds all 24 of the ZIP codes USPS assigns to \"Huntsville, AL,\" per this site's source data -- a cleaner map than [Atlanta's](/atlanta-zip-codes/) or [Denver's](/denver-zip-codes/) county-straddling lists, and one Huntsville shares with [Fresno](/fresno-zip-codes/). Counting by county alone hides how the codes actually function, though: split by delivery type, zip-codes.com's tally puts only 11 of Huntsville's 24 on standard carrier routes, against 7 reserved for a single high-volume address and 6 assigned to PO boxes -- a smaller standard-route share than Fresno manages with 19 out of 58, despite Huntsville's list running well under half Fresno's length.",
+				],
+				table: {
+					caption: 'All 24 ZIP codes with "Huntsville, AL" as the primary USPS place name (per GeoNames.org, checked 2026-08-21)',
+					columns: ['ZIP'],
+					rows: [
+						['35801'], ['35802'], ['35803'], ['35804'], ['35805'],
+						['35806'], ['35807'], ['35808'], ['35809'], ['35810'],
+						['35811'], ['35812'], ['35813'], ['35814'], ['35815'],
+						['35816'], ['35824'], ['35893'], ['35894'], ['35895'],
+						['35896'], ['35897'], ['35898'], ['35899'],
+					],
+				},
+			},
+			{
+				heading: 'Two of the 7 unique codes belong to a credit union and a university',
+				body: [
+					"Unique ZIP codes exist for a single organization or address large enough to justify its own code, rather than sharing one with its surrounding neighborhood -- and Huntsville's public record identifies two by name. 35893 is assigned to Redstone Federal Credit Union at 220 Wynn Drive, Alabama's largest credit union and one of the 20 largest federal credit unions in the country by membership. 35899 belongs to the University of Alabama in Huntsville, which anchors Cummings Research Park -- the second-largest research park in the United States and the fourth-largest in the world by size. Because unique codes like these are administrative rather than residential, the Census Bureau doesn't publish population figures for either one, unlike the standard codes on the same list.",
+					"The other 5 unique codes on Huntsville's list aren't identified by a single named tenant in public postal directories the way 35893 and 35899 are, so this page doesn't guess at who holds them.",
+				],
+			},
+			{
+				heading: "35808 carries Huntsville's name but sits mostly on an Army post",
+				body: [
+					"35808 is the one code on this list that blurs the line between city and federal installation. USPS and GeoNames both file it under \"Huntsville, AL,\" and it's the code this site's source data returns for the city -- but independent ZIP-boundary trackers city-data.com and zipdatamaps.com both describe its actual footprint as centered on Redstone Arsenal, the Army post that hosts the Army's Aviation and Missile Command, the Missile Defense Agency, and NASA's Marshall Space Flight Center. The arsenal's own post office, at 3710 Aerobee Road, operates under that same 35808 code.",
+					"That's a different kind of blurred line than the one on this site's [Cincinnati list](/cincinnati-zip-codes/), where a defunct IRS processing center got its own dedicated code -- 35808 is an active federal installation folded into a city's ordinary ZIP list rather than carved out as an obviously administrative code like 35893 or 35899.",
+				],
+			},
+			{
+				heading: "256 split from 205 in 1998, then added an overlay 12 years later",
+				body: [
+					"Huntsville's [area code](/how-do-area-codes-work/), 256, didn't exist before March 23, 1998, when regulators split it off from 205, which had covered the entire state of Alabama since the North American Numbering Plan assigned area codes nationwide in 1947. 256 took the northern and northeastern part of the state -- Huntsville, Decatur, Florence, and Gadsden -- while 205 kept Birmingham and the rest; a permissive dialing period let callers use either code through September 28, 1998, while phone systems, pagers, and fax machines were reprogrammed.",
+					"No second split followed 256's creation. What came next, on July 10, 2010, was an overlay: 938, layered onto the same 256 footprint rather than carving out a new slice of territory, so a new Huntsville-area number can land on either code while every number already dialing 256 stays put. Twelve years passed between the split and that overlay -- roughly the interval this site's [Toronto-area page](/437-area-code/) records between each of that region's own overlay additions, and a small fraction of the 74 years [Washington, D.C.](/202-area-code/) waited for its first one.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Huntsville, Alabama have?',
+				answer:
+					"24, per this site's GeoNames-based source data and matching zip-codes.com's independent count. All 24 sit inside Madison County.",
+			},
+			{
+				question: 'What county is Huntsville, Alabama in?',
+				answer:
+					'Madison County. Unlike several other cities on this site, all 24 of Huntsville\'s ZIP codes fall inside a single county -- there\'s no split across a county line.',
+			},
+			{
+				question: "What is Huntsville's area code?",
+				answer:
+					'256, created March 23, 1998, when it split off from 205, which had covered the whole state since 1947. An overlay code, 938, was added July 10, 2010, covering the same territory, so both can now be assigned to new numbers in the region.',
+			},
+			{
+				question: 'Is Redstone Arsenal part of a Huntsville ZIP code?',
+				answer:
+					"Yes -- 35808 carries the Huntsville place name in USPS and GeoNames records, but independent ZIP-boundary trackers describe its footprint as centered on Redstone Arsenal, the Army post that hosts NASA's Marshall Space Flight Center and the Missile Defense Agency.",
+			},
+			{
+				question: "Why do some Huntsville ZIP codes have no population data?",
+				answer:
+					"Seven of the 24 are unique ZIP codes, reserved for a single high-volume address rather than a residential area, so the Census Bureau doesn't publish population figures for them. Two are identified by name in public postal records: 35893 for Redstone Federal Credit Union and 35899 for the University of Alabama in Huntsville.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'All ZIP Codes, Map and Demographics of Huntsville, AL -- zip-codes.com', url: 'https://www.zip-codes.com/city/al-huntsville.asp' },
+			{ label: 'Huntsville, AL ZIP Code List -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Huntsville/AL/' },
+			{ label: 'ZIP Code 35893 (Redstone Federal Credit Union) -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/35893/zip-code-35893.asp' },
+			{ label: '35808 Zip Code (Redstone Arsenal, Alabama) Profile -- city-data.com', url: 'https://www.city-data.com/zips/35808.html' },
+			{ label: 'Redstone Arsenal Alabama ZIP Code Map -- zipdatamaps.com', url: 'https://www.zipdatamaps.com/en/us/zip-maps/al/cdp/borders/redstone-arsenal-zip-code-map' },
+			{ label: 'Wikipedia: Area codes 256 and 938', url: 'https://en.wikipedia.org/wiki/Area_codes_256_and_938' },
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+		],
+	},
 ];
