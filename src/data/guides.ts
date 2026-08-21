@@ -2311,24 +2311,24 @@ export const guides: Guide[] = [
 		category: 'Area Codes',
 		title: "213 Area Code: LA's Original 1947 Number, Now Tripled Up With 323 and 738",
 		description:
-			"213 was one of California's original three area codes in 1947 and split off five new codes over five decades -- now it's merged into a three-way overlay with 323 and 738 covering downtown LA and 19 surrounding cities.",
+			"213 was one of California's original 1947 area codes. It now shares a three-way overlay with 323 and 738, covering downtown LA and 19 surrounding cities.",
 		published: '2026-08-17',
-		updated: '2026-08-17',
+		updated: '2026-08-21',
 		coreSummary:
-			"Area code 213 has covered downtown Los Angeles and a ring of neighboring cities since 1947, when it was one of California's original three area codes. Los Angeles's growth split it off five separate times between 1951 and 1998 -- handing off 714, 805, 818, 310, and finally 323 -- before regulators reversed course in 2017 and merged 213 back together with 323 into a single overlay, then layered on a third code, 738, in November 2024. All three now serve the exact same footprint: downtown LA plus cities including Beverly Hills, Pasadena, Glendale, Inglewood, and West Hollywood, entirely on Pacific Time.",
+			"Area code 213 has covered downtown Los Angeles and a ring of neighboring cities since 1947, when it was one of California's original three area codes. Los Angeles's growth split it off five separate times between 1951 and 1998, handing off 714, 805, 818, 310, and finally 323, before regulators reversed course in 2017 and merged 213 back together with 323 into a single overlay, then layered on a third code, 738, in November 2024. All three now serve the exact same footprint: downtown LA plus cities including Beverly Hills, Pasadena, Glendale, Inglewood, and West Hollywood, entirely on Pacific Time.",
 		sections: [
 			{
 				heading: 'Which cities 213 actually covers',
 				body: [
 					"California's telecom regulator, the CPUC, defines the 213/323/738 numbering plan area as downtown Los Angeles plus a ring of independent cities and unincorporated Los Angeles County land around it: Alhambra, Bell, Bell Gardens, Beverly Hills, Commerce, Cudahy, Glendale, Hawthorne, Huntington Park, Inglewood, Lynwood, Maywood, Montebello, Monterey Park, Pasadena, Rosemead, South Gate, South Pasadena, Vernon, and West Hollywood.",
-					"Every incorporated city on that list, and the city of Los Angeles itself, sits inside Los Angeles County -- there's no county split to track here, the way there is for some metro areas this site has covered. All of it runs on Pacific Time, so unlike a number assigned in a border town such as El Paso, a 213 number carries no time-zone ambiguity.",
+					"Every incorporated city on that list, and the city of Los Angeles itself, sits inside Los Angeles County, so there's no county split to track here, the way there is for some metro areas this site has covered. All of it runs on Pacific Time, so unlike a number assigned in a border town such as El Paso, a 213 number carries no time-zone ambiguity.",
 				],
 			},
 			{
 				heading: 'How one 1947 code became three',
 				body: [
-					"213 launched in 1947 as one of California's original three area codes, alongside 415 for the north and 916 for the Sacramento area, and originally covered the entire southern third of the state. Los Angeles's population and phone-line growth forced five splits over the following half-century: 714 broke off for Orange County in 1951, 805 for the central coast in 1957, 818 for the San Fernando Valley in 1984, 310 for the southwestern coastline on November 2, 1991, and 323 for the rest of central LA on June 13, 1998. Each split followed the same underlying driver as area code splits everywhere: fax lines, pagers, second household lines, and eventually cell phones ate into the pool of available exchange blocks faster than regulators could plan for. Los Angeles's growth pushed 213 through five separate splits -- more than any other original California area code. San Francisco's 415 split four times before switching to overlays, and Sacramento's 916 split just once, in 1997; see the full rundown on [California's 41 area codes](/california-area-codes/).",
-					"Splitting stopped being the fix after that. In 2017, the CPUC eliminated the boundary between 213 and 323, merging them into a single overlay complex where either code can be assigned anywhere in the shared territory and every call requires all 10 digits. NANPA projected the combined 213/323 pool would run out of assignable numbers by June 2025, so the CPUC approved a third overlay, area code 738, on March 16, 2023; new numbers under 738 started going into service November 1, 2024. Existing 213 and 323 numbers didn't change -- 738 only affects numbers issued from that date forward.",
+					"213 launched in 1947 as one of California's original three area codes, alongside 415 for the north and 916 for the Sacramento area, and originally covered the entire southern third of the state. Los Angeles's population and phone-line growth forced five splits over the following half-century: 714 broke off in 1951 for the rest of Southern California, stretching from San Diego to the Nevada and Arizona borders (that territory itself later split three more times, down to the Orange County footprint 714 covers today), then 805 for the central coast in 1957, 818 for the San Fernando Valley in 1984, 310 for the southwestern coastline on November 2, 1991, and 323 for the rest of central LA on June 13, 1998. Each split followed the same underlying driver as area code splits everywhere: fax lines, pagers, second household lines, and eventually cell phones ate into the pool of available exchange blocks faster than regulators could plan for. Los Angeles's growth pushed 213 through five separate splits, more than any other original California area code. San Francisco's 415 split four times before switching to overlays, and Sacramento's 916 split just once, in 1997; see the full rundown on [California's 41 area codes](/california-area-codes/).",
+					"Splitting stopped being the fix after that. In 2017, the CPUC eliminated the boundary between 213 and 323, merging them into a single overlay complex where either code can be assigned anywhere in the shared territory and every call requires all 10 digits. NANPA projected the combined 213/323 pool would run out of assignable numbers by June 2025, so the CPUC approved a third overlay, area code 738, on March 16, 2023; new numbers under 738 started going into service November 1, 2024. Existing 213 and 323 numbers didn't change: 738 only affects numbers issued from that date forward.",
 				],
 				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 213 created in 1947, splits off 323 in 1998, merges with 323 into one overlay in 2017, and gains a third overlay, 738, in 2024">
 	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
@@ -2356,7 +2356,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Why the hip-hop group 213 named itself after this code',
 				body: [
-					"213 shows up outside telecom too: Snoop Dogg, Warren G, and Nate Dogg named their group 213 after the area code that covered their hometown, Long Beach, when the group formed in 1992 -- paying homage to the way an earlier Oakland rap group had named itself 415 after its own area code. Long Beach was still inside 213's original footprint at the time; it split off onto area code 562 on January 25, 1997, a code that doesn't overlap the downtown-LA territory 213 covers today. The group kept the name through their only studio album in 2004 and up to Nate Dogg's death in 2011, long after Long Beach itself had stopped dialing 213.",
+					"213 shows up outside telecom too: Snoop Dogg, Warren G, and Nate Dogg named their group 213 after the area code that had covered their hometown, Long Beach, paying homage to the way an earlier Oakland rap group had named itself 415 after its own area code. The naming was already a step behind the numbering plan by the time the group formed in 1992: Long Beach had moved from 213 to the newly created 310 back on November 2, 1991, and it would move again, from 310 to area code 562, on January 25, 1997, a code that doesn't overlap the downtown-LA territory 213 covers today. The group kept the name through their only studio album in 2004 and up to Nate Dogg's death in 2011, long after Long Beach itself had stopped dialing either 213 or 310.",
 				],
 			},
 			{
@@ -2376,22 +2376,22 @@ export const guides: Guide[] = [
 			{
 				question: 'Is 213 the same area as 323 and 738?',
 				answer:
-					'Yes. All three cover the exact same numbering plan area -- 213 and 323 were merged into one overlay in 2017, and 738 was added on top of both in November 2024. A number issued today could carry any of the three codes with no difference in the territory it covers.',
+					'Yes. All three cover the exact same numbering plan area: 213 and 323 were merged into one overlay in 2017, and 738 was added on top of both in November 2024. A number issued today could carry any of the three codes with no difference in the territory it covers.',
 			},
 			{
 				question: 'Why did 213 stop splitting and start overlaying?',
 				answer:
-					"A split forces everyone on the new side of the boundary to change their area code; an overlay adds a second code to the same footprint and leaves every existing number untouched. The industry shifted to overlays nationwide starting in the 1990s for that reason -- 213's last split was in 1998 (323), and both expansions since (2017's merge, 2024's 738) have been overlays instead.",
+					"A split forces everyone on the new side of the boundary to change their area code; an overlay adds a second code to the same footprint and leaves every existing number untouched. The industry shifted to overlays nationwide starting in the 1990s for that reason: 213's last split was in 1998 (323), and both expansions since (2017's merge, 2024's 738) have been overlays instead.",
 			},
 			{
 				question: "Where does the hip-hop group 213's name come from?",
 				answer:
-					"Snoop Dogg, Warren G, and Nate Dogg named their group after area code 213, which covered their hometown of Long Beach when they formed the group in 1992. Long Beach moved to area code 562 in 1997, so the group's name references territory it no longer technically sits in.",
+					"Snoop Dogg, Warren G, and Nate Dogg named their group after area code 213, which had covered their hometown of Long Beach. By the time they formed the group in 1992, Long Beach had already moved to the newer area code 310 (in a 1991 split), and it moved again to 562 in 1997, so the group's name references territory it hadn't technically sat in for years even when the group was new.",
 			},
 			{
 				question: 'Is a call showing a 213 number always really coming from Los Angeles?',
 				answer:
-					"No. Caller ID can be faked through a tactic the FCC calls neighbor spoofing, where a scammer displays a number in your own area code -- including 213 -- regardless of where the call actually originates. A 213 number on caller ID doesn't by itself guarantee an LA-based caller.",
+					"No. Caller ID can be faked through a tactic the FCC calls neighbor spoofing, where a scammer displays a number in your own area code, including 213, regardless of where the call actually originates. A 213 number on caller ID doesn't by itself guarantee an LA-based caller.",
 			},
 		],
 		sources: [

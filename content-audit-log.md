@@ -1047,3 +1047,72 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "escalation": "The zero-outbound-in-body-links pattern has now been found and fixed 7 times on this site (atlanta-zip-codes, new-york-zip-codes, texas-zip-codes, texas-area-codes, california-area-codes, what-county-is-chicago-in, and this article) -- well past the 独立站/内容通用教训库.md 's own '复发>=2次须升级' threshold. Not escalated by this audit run (out of scope -- would require editing the dialwick-content-publishing scheduled task's SKILL.md); flagged here again for Owen or a future run to action. No independent-verification-agent hangs occurred this run -- both spawned agents completed normally (17.6s and 28.8s respectively), well under the watchdog's 15-20 minute threshold."
 }
 ```
+
+```json
+{
+  "url_slug": "213-area-code",
+  "last_audited": "2026-08-21",
+  "published_date": "2026-08-17",
+  "checklist": [
+    "Is the '213 covers only downtown LA + 19 cities, no county split' framing accurate (per this site's established known risk: this is one of the 5 never-audited single-area-code template pages)?",
+    "Are the five historical split dates/destinations (714/805/818/310/323) and the 2017 merge + 2024 738 overlay dates correct?",
+    "Is the 213-group hip-hop naming history (Long Beach, 1992, 562 in 1997) accurate?",
+    "Are all 7 external sources still live?",
+    "Site-wide em-dash-equivalent scan: this site's prior audits have only ever grepped for the Unicode em dash (—), never for other dash-like constructions"
+  ],
+  "findings": [
+    {
+      "dimension": "Fact-check: area code split history",
+      "status": "found and fixed 2 factual errors, independently confirmed",
+      "detail": "(1) The article said '714 broke off for Orange County in 1951.' Independent research (agent + WebSearch cross-check) confirmed 714's actual 1951 territory was a vast swath of Southern California from San Diego to the Nevada/Arizona borders -- it only narrowed to today's Orange County footprint after three further splits (619 in 1982, 909 in 1992, 949 in 1998). Retroactively describing the 1951 split using a boundary that didn't exist until 47 years later was judged a real inaccuracy, not an acceptable simplification (the other four splits in the same sentence are each described by their actual original territory, so this one broke the pattern). Rewritten to state the true 1951 destination and note the later narrowing. (2) The hip-hop-group section said 'Long Beach was still inside 213's original footprint at the time [1992]' and that it 'split off onto area code 562' -- implying a direct 213-to-562 transition. Independent research confirmed Long Beach actually moved from 213 to the newly created 310 on November 2, 1991 (a full year before the group formed), and only moved from 310 to 562 in 1997. The article skipped the intermediate 310 step and misstated which code covered Long Beach when the group formed. Both the body section and the matching FAQ answer were rewritten to state the correct two-step history."
+    },
+    {
+      "dimension": "Fact-check: remaining claims",
+      "status": "pass",
+      "detail": "2017 CPUC boundary elimination (213/323 merge), 738 approval date (March 16, 2023) and service-start date (November 1, 2024), NANPA's June 2025 exhaustion projection, and the 213-group's formation year (1992) and lineage (inspired by Oakland's 415 group) were all independently WebSearch-verified against CPUC press releases and Wikipedia and matched the article exactly."
+    },
+    {
+      "dimension": "External source link rot",
+      "status": "pass",
+      "detail": "All 7 sources curl-verified live (200) with a real browser UA. fcc.gov/consumers/guides/spoofing returned 403 to curl across 3 retries; WebSearch independently confirmed the page is live and indexed with matching content (neighbor-spoofing definition), so this is bot-blocking, not link rot."
+    },
+    {
+      "dimension": "SEO technical audit",
+      "status": "found and fixed 1 issue",
+      "detail": "Meta description was 217 characters, well past Google's ~155-160 char practical display threshold (57 chars over -- worse than a same-day CalcBadger finding of 186 chars). It would truncate mid-word ('...three-way overlay with 32'). Trimmed to 153 chars, split into two clean sentences, no loss of key facts (738, 323, downtown LA, 19 cities all retained). Title (84 chars), canonical, single H1, 5 H2s, and schema (Article/FAQPage/BreadcrumbList/Person/WebPage) were all otherwise healthy."
+    },
+    {
+      "dimension": "AI-writing tell: NEW discovery -- ASCII ' -- ' as an undetected em-dash substitute (this audit's headline finding)",
+      "status": "confirmed and fixed on this article; site-wide scope discovered and flagged, NOT fixed site-wide (out of scope for a single-article audit)",
+      "detail": "A grep for the Unicode em dash (—) on this article returned zero hits, consistent with every prior DialWick audit's 'clean' verdict on this dimension. But the article contained 9 instances of a literal ASCII double-hyphen surrounded by spaces (' -- '), used in the exact same 'trailing punchy clause' role a real em dash fills (e.g. \"pushed 213 through five separate splits -- more than any other original California area code\"). A site-wide grep found this pattern in ALL 42 of DialWick's published articles, 627 total instances, with essentially zero occurrence (0-3, almost certainly incidental) on any of the other 9 sites in the matrix. An independent agent judged this a genuine, confirmed AI-writing tell equivalent to the em-dash rule, not a defensible typographic-style choice: the density (~1 per 85 words) and its near-uniform replication across all 42 independently-generated articles is a signature of a single generation process, not organic human stylistic variation. This means every prior DialWick content-quality audit's em-dash check was a **false negative** -- the AI-writing pattern was never actually absent from this site, the scan just used the wrong search string. Fixed the 9 instances in this article (rewritten to periods/colons/commas, matching the remedy already used site-wide for real em dashes). The other 41 articles / ~618 remaining instances are NOT fixed by this run -- fixing them all would be far outside the scope of a single-article audit's 'targeted fix only' rule. Recommending in the final report that Owen consider a dedicated DialWick-wide remediation pass (analogous to the WageLark SVG em-dash scanner precedent) and that this site's own zero-tolerance dash scan be updated to also grep for ' -- ' going forward, not just —/–."
+    },
+    {
+      "dimension": "Internal link health",
+      "status": "pass",
+      "detail": "Article links out to /california-area-codes/ and /scam-area-codes/ (2 outbound in-body links -- does not repeat this site's separately-tracked 'zero outbound links' recurring defect noted in the entry above). Category 'Area Codes' has well over 6 siblings so the site's related-guides rotation window applies normally; not investigated further as an orphan-page risk since outbound linking confirms this page is actively part of the site's link graph, not isolated."
+    },
+    {
+      "dimension": "Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage(5 Q&A)/BreadcrumbList/WebPage/Person schema all present and matched guides.ts content on live-page inspection."
+    },
+    {
+      "dimension": "AdSense policy compliance",
+      "status": "pass",
+      "detail": "The LADWP scam-warning section is a neutral, factual public-safety notice (matches LADWP's own official alert page verbatim in substance), not sensationalized or clickbait-framed. No restricted categories. ads.txt/privacy/about/terms all reachable (site-wide baseline, unchanged)."
+    }
+  ],
+  "independent_verification": "Two agents spawned. First verified both factual-error candidates (714/1951 territory, Long Beach/213-group timeline) with fresh WebSearch research against CPUC/Wikipedia primary-ish sources -- both CONFIRMED as real errors. Second judged whether the site-wide ' -- ' pattern should be treated as equivalent to the em-dash AI-writing rule -- CONFIRMED yes, with reasoning distinguishing it from legitimate low-density human double-hyphen conventions. Both completed normally within 1-2 minutes, no watchdog escalation needed.",
+  "actions_taken": [
+    "Fixed 2 factual errors (714's actual 1951 territory; Long Beach's real 213->310->562 sequence) across coreSummary, 2 section bodies, and 2 FAQ answers.",
+    "Trimmed meta description from 217 to 153 characters.",
+    "Rewrote all 9 instances of narrative ' -- ' (in description/coreSummary/section bodies/FAQ) to periods/colons/commas; verified 0 remaining via grep on both source and build output.",
+    "updated bumped to 2026-08-21 (published field already existed as '2026-08-17', no git-history backfill needed).",
+    "npm test 64/64 passed, npm run build 51 pages succeeded, 0 errors.",
+    "Site-wide grep confirmed the ' -- ' pattern exists in all 42 DialWick articles (627 total instances) and is essentially absent (0-3, incidental) elsewhere in the 10-site matrix -- flagged as a major new escalation item, not remediated beyond this one article (out of scope for a single-article audit)."
+  ],
+  "seo_score": "meta description fixed (217->153 chars); everything else already healthy",
+  "geo_score": "not re-scored with a full 99-point run; factual corrections and dash cleanup should not have reduced extractability",
+  "escalation": "MAJOR, project-wide: this session discovered that DialWick's 42 published articles collectively contain 627 instances of ' -- ' (ASCII double-hyphen) used as an undetected em-dash-equivalent AI-writing tell, confirmed by independent agent judgment as functionally identical to the Unicode em-dash pattern this project has been scanning for and fixing across all other sites since L-0810-4. Every prior DialWick content-quality audit's 'em dash: pass' verdict was a false negative because those scans only grepped for —, never for ' -- '. This is analogous in scale to the WageLark SVG em-dash discovery (L-0810-4, 8th recurrence) that triggered a dedicated scanner script -- but larger (627 vs. 146 instances) and concentrated entirely on one site. Recommending to Owen: (1) a dedicated DialWick-wide remediation task/session to clean up the remaining ~618 instances rather than relying on this audit task's ~1-article-per-run cadence (which would take well over a year to reach every article organically), and (2) updating whatever grep pattern this project's various content-quality-audit and content-publishing tasks use for 'zero em dash' checks to also match ' -- ' (and possibly other dash-like ASCII substitutions), not just —/–, since this false-negative mode could in principle recur on any site."
+}
+```
