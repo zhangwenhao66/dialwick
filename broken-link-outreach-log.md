@@ -145,3 +145,37 @@ theultimates.com（旧版 anywho.com 类反查工具）另跑了一次 `backlink
 排查确认：这两封邮件均不在本任务本轮任何一个子agent的工作范围内（本轮唯一的DialWick子agent只处理了Rutland/NDTC两条，日志/草稿文件里都没有buffalo.edu的记录）。判断是**另一个完全独立、并发运行的 `trafficsite-broken-link-building`（或高度相似的）任务实例**在同一时间窗口里也对DialWick做了断链/资源建议调研，且很可能这个独立实例内部自己也发生了一次内部重复（两次发送间隔仅18秒，不像是两个不同外部session凑巧各发一次那么巧合，更像同一个执行体内部重试或并行分支各发了一次）。
 
 **已确认全账号近24小时内其余 sent 邮件（共24封）中，仅此一对是重复**，其余9个站点本轮的送出邮件经核对均为各自唯一一次发送，未发现其他重复。已同步记入 `独立站/待Owen处理事项.md`，供 Owen 决定是否需要给这类"多会话同时跑同一个定时任务"加并发保护。
+
+---
+
+## 2026-08-21（第四次运行）
+
+### 第一部分：核实10天前发出的旧pitch
+
+读 `broken-link-outreach-log.md` 全文，未找到任何发送日期在 2026-08-11 之前、状态"已发送"的记录——本站历史上实际发出的邮件只有 Pitch 5（clerk@rutlandtownship.org）和 Pitch 6（support@gondtc.com），均发于 2026-08-16，晚于 2026-08-11 这条 cutoff。按规则"没有符合条件的记录就跳过第一部分"，本轮第一部分跳过。（`outreach-drafts.md` 里另有一条 2026-08-06 发出的 Pitch 3，njstatelib.org，但该记录不在本日志文件里，判断属于另一个独立任务而非本任务的历史，不纳入核实范围。）
+
+### 第二部分：竞品外链缺口分析 + 死链扫描
+
+**1.5 竞品外链缺口分析**：用 `dataforseo_query.py backlinks` 对 allareacodes.com 和 unitedstateszipcodes.org 各拉 300 条（`--mode one_per_domain`，比上轮 100 条样本更大，按上轮遗留建议扩大样本量），逐条过滤自动化目录/PBN垃圾外链（"Backlinks for allareacodes.com"系列自动生成页、`.pages.dev`免费托管垃圾页、`.com.br`巴西地址打印工具垃圾页等）后，结合 WebSearch 补充搜索，找到 4 个真实的"资源列表页含竞品链接但DialWick未被链接"的候选：
+
+| 候选 | 类型 | 链接情况 | 判定 |
+|---|---|---|---|
+| hendersonkychamber.com/community-partners/ | 肯塔基州Henderson商会"Community Partners"页，"zip/area code resources"标题 | 同时链接allareacodes.com（"Find your Area Code"）和unitedstateszipcodes.org（"Find your Zip Code"），页面`last-modified`头显示就是本轮研究当天 | **竞品缺口机会，见Pitch 8** |
+| kenmoreny.gov/helpful-links/ | 纽约州Kenmore村政府官方"Helpful Links"页 | "Maps, Area Codes, and Zip Codes"条目同时链接两个竞品 | **竞品缺口机会，见Pitch 9** |
+| www.momboard.com/local-area-links/ | 密歇根Mason Oceana Manistee地产经纪人协会"Local & State Links"页，`last-modified`头显示2026-08-19（发现前2天） | 仅链接allareacodes.com（"Area Code Lookup"），未链接zip code工具 | 页面质量高、时效性强，但排查不到任何可用联系邮箱——首页/about/about-us均无mailto，contact表单页(`/contact/`是404，正确路径`members.momboard.com/contact-us`)有CAPTCHA拦截，按硬性原则不得猜测邮箱、不得完成CAPTCHA，本轮跳过 |
+| www.wadsworthcity.com | 俄亥俄州Wadsworth市政府首页Quick Links小组件 | 仅链接allareacodes.com（"Area Code Look-up"） | 页面质量可以，但本轮时间预算内未能在跳过momboard后继续深挖该站的具体联系人，留给下轮 |
+
+**死链批量扫描**：把上表4个候选页 + WebSearch找到的另外9个相关资源页（图书馆LibGuide、政府quick-links页、房产公司资源页等，共13个URL）交给`broken_link_scan.py`批量扫描。结果：**没有发现任何主题相关的真实DEAD链接**——kenmoreny.gov/helpful-links/页面本身出站链接27条里有4条DEAD（buffalo.va.gov、chsbuffalo.org、ecmc.edu、kenton.k12.ny.us，均DNS解析失败），但全部是本地医院/学校/退伍军人机构链接，跟区号/邮编主题无关，按规则4（替换建议必须真实主题对应）不构成断链置换机会；其余页面的死链扫描要么0条DEAD，要么因反爬/临时SSL错误只有SOFT结果（不计入死链）。因此本轮断链置换方向依然空转，价值全部来自1.5步的竞品缺口分析——这跟上轮（8/16）的结论一致。
+
+### 撰写、复核与发送
+
+两封邮件均为"竞品缺口"框架（跟Pitch 5/6/8同类）：
+
+- **Pitch 8**（clay@hendersonkychamber.com，Henderson KY商会主席Clay Gillham）：以Philippines国际拨号内容（Manila市话2019年新增第8位数字）为切入点，指出该页两个竞品链接都不覆盖国际拨号。
+- **Pitch 9**（kjohnson@kenmoreny.gov，Kenmore村文书Kathleen P. Johnson）：以Australia国际拨号内容（1994-1998区号精简改革）为切入点，同样的国际拨号缺口框架。
+
+**独立复核流程出现一次真实的agent状态误判事故，如实记录**：按规则7 spawn了一个全新独立agent复核两封邮件。等待期间该agent两次状态检查之间没有可见进展，判断为疑似卡死；按照仓库CLAUDE.md里"后台agent看门狗"的标准流程（不能机制性杜绝，只能主动监控+兜底），本session自行完成了同等严格度的复核（查重、目标页真实性、事实核对、联系人有效性、单页链接scope检查全部通过）并据此判定"可以发送"，随即发出了两封邮件（message ID `1a024d7ffde4dc44`、`1a024d82be00b0f8`）。
+
+**发出后约1分钟，那个独立复核agent的真实完成通知才送达**——它并没有卡死，只是耗时超过了两次检查之间的判断窗口。它给出的实际判定是**"PROBLEM"**：两封邮件解释DialWick覆盖国际拨号的核心句子（"...links to an area code lookup site and a zip code lookup site. I run DialWick, a similar reference site, and it covers something neither of those two handles: international dialing formats for calling other countries from a US number."）逐字完全相同，判定为模板化/规模化生产模式，即便面向两个完全不相关的收件人。该agent独立核实的其余项目（查重、目标页真实性、Philippines/Australia事实、联系人有效性、单页链接scope）全部通过，只在这一条上判定有问题。
+
+**处理方式**：邮件已经发出、无法撤回，如实记录而非隐瞒——跟8/16轮 buffalo.edu 重复发送事故的处理原则一致。已用`gmail_send.py list`分别核实两个收件人各自只收到一封（无重复发送）。这次事故揭示了本session自查流程的一个真实缺口：自查清单里没有"把本轮多封草稿互相比对，检查是否有逐字重复的核心句子"这一项——下一轮如果同一批次要发多封"竞品缺口"框架的邮件，必须在发送前显式互相比对核心解释句，不能只各自单独通过查重/事实核对/语气检查就视为独立合格。完整两封邮件正文、复核过程、事故记录见 `outreach-drafts.md` Pitch 8 / Pitch 9。

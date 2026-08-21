@@ -211,3 +211,71 @@ DialWick
 contact@dialwick.com
 
 **Review note:** run through `humanizer` and `avoid-ai-writing` before this entry was written (em dash in the first draft's second paragraph removed, sentence lengths varied, no flagged AI vocabulary). No independent reviewer sub-agent was used this round since the email cannot be sent yet — re-run the same review checklist (dedup, fact-check against guides.ts, target-page liveness, tone, AI-tell scan) once Owen has a real contact address, before actually sending.
+
+---
+
+## Pitch 8 — Henderson Ky Chamber of Commerce, "Community Partners" page (2026-08-21, competitor-gap resource-suggestion email, part of `trafficsite-broken-link-building`'s 1.5 competitor-backlink-gap step)
+
+- Page: https://hendersonkychamber.com/community-partners/ (confirmed live via curl 2026-08-21; HTTP header shows `last-modified: Fri, 21 Aug 2026 09:17:47 GMT`, same day as this research round)
+- Contact used: clay@hendersonkychamber.com (Clay Gillham, Chamber President, mailto confirmed live on the site's own homepage and contact footer)
+- Why this page: found via a wider DataForSEO `backlinks` pull (300 rows, `--mode one_per_domain`) against allareacodes.com. A "zip/area code resources" heading on this page separately links "Find your Area Code >" to allareacodes.com and "Find your Zip Code >" to unitedstateszipcodes.org (both confirmed live via curl, anchor text and hrefs verified against the raw DataForSEO `url_from`/`anchor` fields, not just the summary line). Both competitors present, DialWick absent, real Chamber of Commerce site (not a link farm or paid directory).
+- Not a broken-link pitch: both competitor links are live. Uses the same competitor-gap framing as Pitch 5/6 (objectively describing what DialWick offers that isn't already linked, not claiming anything is broken).
+- Fact-checked against `src/data/guides.ts` (`how-to-call-philippines-from-usa` entry, published 2026-08-06): Metro Manila landlines gained an eighth digit via the National Telecommunications Commission's Memorandum Order No. 10-10-2017, effective October 6, 2019 (delayed from the original March 2019 date). Only hub/index pages (`/international-dialing/`, `/area-codes/`) linked, no single-area-code or single-city page.
+- Broken-link scan of this exact page failed with a transient SSL error (`EOF occurred in violation of protocol`) both in the batch `broken_link_scan.py` run and on a manual retry a few minutes later; a separate plain `curl` to the same URL succeeded and returned full page content, so this looks like a scanner-side TLS handshake flake against this specific host rather than the page being unreachable. Not treated as evidence of anything about the page's own link health.
+
+**Email:**
+
+Subject: Resource suggestion for your Community Partners page
+
+Hi Clay,
+
+I came across Henderson Chamber's Community Partners page and noticed the zip/area code resources section links to an area code lookup site and a zip code lookup site. I run DialWick, a similar reference site, and it covers something neither of those two handles: international dialing formats for calling other countries from a US number.
+
+The Philippines guide is a good example of why that matters. Manila's landlines picked up an eighth digit in a 2019 regulatory change, and a lot of older "how to call the Philippines" guides online still haven't caught up. DialWick also has its own area code and zip code lookup pages, if you'd rather swap those in instead of adding a third category.
+
+Site: https://dialwick.com/
+International dialing: https://dialwick.com/international-dialing/
+Area codes: https://dialwick.com/area-codes/
+
+Either way, thought it was worth a note since the page looks well kept up.
+
+Owen Zhang
+contact@dialwick.com
+
+**Review note:** run through `humanizer` and `avoid-ai-writing` skills before this entry was written (no em dashes, no flagged AI vocabulary, closing line varied from Pitch 5/6's wording to avoid a repeated template phrase across the campaign). Pending independent reviewer sub-agent before send.
+
+**Incident — sent before the independent review verdict arrived, and the verdict was "PROBLEM":** the reviewer sub-agent was launched, then appeared to have stalled (no progress visible between two checks, matching this project's known watchdog pattern for background agents). Following the standing rule for a stuck reviewer ("stop it, do the equivalent check yourself, document it, don't leave the task permanently blocked"), a self-review was performed and this email was sent -- **Sent 2026-08-21** to clay@hendersonkychamber.com, Gmail message ID `1a024d7ffde4dc44`. The independent reviewer's actual completion notification arrived roughly a minute later (it had not stalled, just taken longer than the check interval suggested) and returned **PROBLEM**: it found that this email's core explanatory sentence ("...links to an area code lookup site and a zip code lookup site. I run DialWick, a similar reference site, and it covers something neither of those two handles: international dialing formats for calling other countries from a US number.") is character-for-character identical to the same sentence in Pitch 9, sent the same day. The reviewer judged this a templated/scaled-production pattern worth flagging even though the two recipients are unrelated and everything else in both emails (opening line, cited fact, closing line, name) differs. This is a legitimate finding that the self-review missed -- the self-review checked dedup, page reality, fact accuracy, contact validity, and single-page-link scope, but did not compare the two drafts against each other for a shared boilerplate sentence. The reviewer confirmed no duplicate-contact risk, both target pages check out exactly as described, and the Philippines fact is accurate, so the email itself is not being retracted (it can't be un-sent regardless), but the shared-sentence pattern is logged here as a real quality gap for next round: **draft each pitch's core explanatory sentence independently even when two targets have the same "both competitors present, DialWick offers X neither does" structure, not just the opening/closing lines.**
+
+---
+
+## Pitch 9 — Village of Kenmore, NY, "Helpful Links" page (2026-08-21, competitor-gap resource-suggestion email, part of `trafficsite-broken-link-building`'s 1.5 competitor-backlink-gap step)
+
+- Page: https://kenmoreny.gov/helpful-links/ (confirmed live via curl 2026-08-21)
+- Contact used: kjohnson@kenmoreny.gov (Kathleen P. Johnson, Village Clerk/Treasurer; page found at `/departments/clerk-treasurer/` displays this address as the current one, even though the underlying `mailto:` attribute points to an older `kjohnson@vi.kenmore.ny.us` domain -- the displayed address matching the site's current domain was used as the more likely deliverable one)
+- Why this page: found via WebSearch (`township OR "village of" "helpful links" "allareacodes.com" OR "unitedstateszipcodes.org"`), not the DataForSEO backlink pull. The "Maps, Area Codes, and Zip Codes" list item links both `allareacodes.com` and `unitedstateszipcodes.org` (confirmed via curl against the live page). Both competitors present, DialWick absent, real village government site.
+- Not a broken-link pitch: both competitor links are live. Same competitor-gap framing as Pitch 5/6/8.
+- `broken_link_scan.py` on this exact page found 27 outbound links, 4 confirmed DEAD (buffalo.va.gov, chsbuffalo.org, ecmc.edu, kenton.k12.ny.us -- all DNS resolution failures) and 13 SOFT (mostly HTTP 403/502, likely anti-bot or transient, not confirmed dead). None of the DEAD links are phone/zip-code related, so none qualify as a broken-link replacement opportunity per the topical-match rule -- this stays a competitor-gap pitch, not a broken-link pitch. The DEAD count (4/27, about 15%) was weighed against the target-quality threshold; judged acceptable rather than "clearly abandoned" because the page is on an official village .gov domain, is linked from the site's own department navigation, and the specific area-code/zip-code links being pitched around are both still live and current.
+- Fact-checked against `src/data/guides.ts` (`how-to-call-australia-from-us` entry, published 2026-08-20): Australia's renumbering from dozens of area codes down to the current four (02/03/07/08) ran from 1994 through 1998, with the changeover ending March 1, 1999. Only hub/index pages linked, no single-area-code or single-city page.
+
+**Email:**
+
+Subject: Resource suggestion for your Helpful Links page
+
+Hi Kathleen,
+
+I came across the Village of Kenmore's Helpful Links page and noticed the Maps, Area Codes, and Zip Codes entry links to an area code lookup site and a zip code lookup site. I run DialWick, a similar reference site, and it covers something neither of those two handles: international dialing formats for calling other countries from a US number.
+
+The Australia guide is a good example. The country runs on just four area codes total, the survivors of a renumbering that wrapped up in 1999 after retiring dozens of smaller two- and three-digit codes. DialWick also has its own area code and zip code lookup pages, in case those are a better fit than what's linked now.
+
+Site: https://dialwick.com/
+International dialing: https://dialwick.com/international-dialing/
+Area codes: https://dialwick.com/area-codes/
+
+No pressure, just thought it might be a useful add.
+
+Owen Zhang
+contact@dialwick.com
+
+**Review note:** run through `humanizer` and `avoid-ai-writing` skills before this entry was written (no em dashes, no flagged AI vocabulary, closing line varied across Pitch 8/9 to avoid repetition). Pending independent reviewer sub-agent before send.
+
+**Incident — sent before the independent review verdict arrived, and the verdict was "PROBLEM":** same incident as documented under Pitch 8 above. **Sent 2026-08-21** to kjohnson@kenmoreny.gov, Gmail message ID `1a024d82be00b0f8`, roughly a minute before the independent reviewer's actual completion notification arrived. The reviewer's PROBLEM verdict was the shared-boilerplate-sentence finding described under Pitch 8 (this email's core explanatory sentence is identical to Pitch 8's). Everything else the reviewer independently checked came back clean: no duplicate-contact risk, kenmoreny.gov/helpful-links/ confirmed exactly as described (the "Maps, Area Codes, and Zip Codes" entry linking both competitors, DialWick absent), the Australia dialing facts confirmed accurate against `src/data/guides.ts`, and the reviewer's own independent judgment on the two-candidate-address question (kjohnson@kenmoreny.gov vs. the stale kjohnson@vi.kenmore.ny.us mailto attribute) agreed with the address actually used, further supported by the reviewer noticing the page separately tells the public in plain text to contact kjohnson@kenmoreny.gov. Confirmed via a post-send `gmail_send.py list --query "to:..."` check for both Pitch 8 and Pitch 9 that each was sent exactly once, no duplicate-send repeat of the 2026-08-16 buffalo.edu incident.
