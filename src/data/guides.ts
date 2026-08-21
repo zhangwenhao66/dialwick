@@ -3604,4 +3604,107 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
+	{
+		slug: 'indianapolis-zip-codes',
+		category: 'ZIP Codes',
+		title: 'Indianapolis ZIP Codes: All 63, and the Four Cities Unigov Never Absorbed',
+		description:
+			"Indianapolis's 63 ZIP codes mostly sit in Marion County -- the result of a 1970 city-county merger that absorbed almost everything except four cities that still run their own police, fire, and mayor's office today.",
+		published: '2026-08-21',
+		updated: '2026-08-21',
+		coreSummary:
+			"USPS assigns 63 ZIP codes to \"Indianapolis, IN\" as the primary place name, and this site's source data ties 59 of them to Marion County -- a direct result of Unigov, the 1970 law that merged the governments of Indianapolis and Marion County into one. Unlike Nashville's [1963 merger with Davidson County](/nashville-zip-codes/), which went to a public referendum, Unigov was passed by the Indiana General Assembly with no county-wide vote at all, and it deliberately left four municipalities out: Beech Grove, Lawrence, and Southport kept their own mayors, and the town of Speedway kept its own council, along with all four keeping independent police and fire departments. Only one of the four, Beech Grove, also kept a ZIP code of its own, 46107; addresses in Lawrence, Southport, and Speedway still read \"Indianapolis, IN\" like the rest of Marion County. This site's data assigns the remaining four ZIP codes on the list, 46262, 46280, 46288, and 46290, to Hamilton County instead of Marion -- though a cross-check against zip-codes.com's own per-ZIP lookups agrees on only two of those four, a reminder that even directories built specifically to track ZIP-to-county boundaries don't always agree with each other.",
+		sections: [
+			{
+				heading: 'All 63 ZIP codes with "Indianapolis, IN" as the primary USPS place name',
+				body: [
+					'Fifty-nine of the 63 sit in Marion County, per this site\'s source data. The other four are marked below, alongside a note on where independent sources disagree with that assignment.',
+				],
+				table: {
+					caption: 'All 63 ZIP codes with "Indianapolis, IN" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-21)',
+					columns: ['ZIP', 'County'],
+					rows: [
+						['46201', 'Marion'], ['46202', 'Marion'], ['46203', 'Marion'], ['46204', 'Marion'], ['46205', 'Marion'],
+						['46206', 'Marion'], ['46207', 'Marion'], ['46208', 'Marion'], ['46209', 'Marion'], ['46211', 'Marion'],
+						['46213', 'Marion'], ['46214', 'Marion'], ['46216', 'Marion'], ['46217', 'Marion'], ['46218', 'Marion'],
+						['46219', 'Marion'], ['46220', 'Marion'], ['46221', 'Marion'], ['46222', 'Marion'], ['46224', 'Marion'],
+						['46225', 'Marion'], ['46226', 'Marion'], ['46227', 'Marion'], ['46228', 'Marion'], ['46229', 'Marion'],
+						['46230', 'Marion'], ['46231', 'Marion'], ['46234', 'Marion'], ['46235', 'Marion'], ['46236', 'Marion'],
+						['46237', 'Marion'], ['46239', 'Marion'], ['46240', 'Marion'], ['46241', 'Marion'], ['46242', 'Marion'],
+						['46244', 'Marion'], ['46247', 'Marion'], ['46249', 'Marion'], ['46250', 'Marion'], ['46251', 'Marion'],
+						['46253', 'Marion'], ['46254', 'Marion'], ['46255', 'Marion'], ['46256', 'Marion'], ['46259', 'Marion'],
+						['46260', 'Marion'], ['46262', 'Hamilton'], ['46266', 'Marion'], ['46268', 'Marion'], ['46274', 'Marion'],
+						['46275', 'Marion'], ['46277', 'Marion'], ['46278', 'Marion'], ['46280', 'Hamilton'], ['46282', 'Marion'],
+						['46283', 'Marion'], ['46285', 'Marion'], ['46288', 'Hamilton'], ['46290', 'Hamilton'], ['46291', 'Marion'],
+						['46295', 'Marion'], ['46296', 'Marion'], ['46298', 'Marion'],
+					],
+				},
+			},
+			{
+				heading: 'Two of the four "Hamilton County" codes don\'t hold up under a second lookup',
+				body: [
+					"A direct check against zip-codes.com's own per-ZIP pages confirms this site's Hamilton County assignment for two of the four: 46280 covers part of Carmel, an incorporated Hamilton County suburb, and 46290 is a low-population business and PO box code that zip-codes.com also places in Hamilton. For the other two, the same source disagrees outright -- its pages for both 46262 and 46288 list Marion County, not Hamilton, contradicting this site's own GeoNames-derived data. Neither ZIP code has enough independent coverage to settle which directory has it right, so this site is naming the disagreement rather than picking a side: readers who need a Hamilton-vs-Marion answer for 46262 or 46288 specifically should treat both counties as contested until a primary source, like Marion or Hamilton County's own GIS parcel lookup, resolves it.",
+					"That disagreement is a smaller-scale version of the same lesson this site's [Cincinnati ZIP list](/cincinnati-zip-codes/) and [Huntsville ZIP list](/huntsville-zip-codes/) already document: a ZIP code's county tag and a city's mailing address don't always trace back to the same boundary, and different directories built from different source files can land on different answers for the exact same five digits.",
+				],
+			},
+			{
+				heading: 'Marion County became Indianapolis in 1970 -- almost all of it',
+				body: [
+					"The reason 59 of 63 Indianapolis ZIP codes sit in Marion County isn't incidental. On January 1, 1970, the Indiana General Assembly merged the government of the City of Indianapolis with the government of Marion County under a law known locally as Unigov, championed by then-mayor (and later U.S. Senator) Richard Lugar. Unlike [Nashville's 1963 merger with Davidson County](/nashville-zip-codes/), which required voters to approve a charter at the ballot box -- and which they rejected once, in 1958, before passing it in 1962 -- Unigov never went to a county-wide referendum at all. State legislators wrote and passed it directly.",
+					"To get the law through, its authors carved out an exception: the cities of Beech Grove, Lawrence, and Southport, plus the town of Speedway, stayed outside the Consolidated City. Each kept its own police department, school system, and fire service on pre-Unigov borders; Beech Grove, Lawrence, and Southport also kept their own elected mayors, while Speedway, organized as a town rather than a city, kept its own town council instead. Residents of all four still pay county-wide taxes and vote both for their own local government and for the mayor of Indianapolis and a district seat on the City-County Council -- a double layer of representation that doesn't exist anywhere in Nashville's fully merged Davidson County.",
+				],
+			},
+			{
+				heading: "Only one of the four excluded cities kept its own ZIP code",
+				body: [
+					"Beech Grove -- a roughly 2.5-square-mile city entirely surrounded by Indianapolis on all sides -- is the only one of the four excluded municipalities with a ZIP code of its own, 46107, distinct from the Indianapolis list above. Lawrence, Southport, and Speedway all use \"Indianapolis, IN\" as their USPS mailing address despite running independent city or town governments; Speedway's own post office, at 6110 W. 25th Street, still files under ZIP code 46224 and the city name \"Indianapolis\" on its own listing.",
+					"That's close to the mirror image of what this site found in Nashville, where four of the five satellite cities still standing lack their own ZIP and the one exception, Goodlettsville, plausibly kept its ZIP because it physically straddles a county line rather than because of any political independence. In Indianapolis, ZIP code assignment and self-government turn out to be almost entirely unrelated: three cities kept their own mayors and police forces for over fifty years and still share a ZIP list with the city that surrounds them.",
+				],
+			},
+			{
+				heading: "317 held alone for almost 70 years before Indianapolis got a second area code",
+				body: [
+					"Indianapolis has carried [area code](/how-do-area-codes-work/) 317 since 1947, one of the original codes assigned nationwide, and it briefly covered a much larger footprint before Gary and northern Indiana split off into 219 the following year and central Indiana outside the immediate metro split off into 765 in 1997. What came next wasn't a third split -- it was an overlay, the same growth response this site has documented for [Atlanta](/atlanta-area-code/): on March 15, 2016, regulators activated 463 across the identical nine-county footprint 317 already covered, so new numbers in the region draw from either code instead of any territory changing hands. On a phone keypad, 463 spells out \"IND,\" the same three letters as Indianapolis's airport code. Ten-digit dialing became mandatory that October, after regulators pushed the original September deadline back a month at the request of security alarm companies whose equipment still relied on seven-digit dialing.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Indianapolis have?',
+				answer:
+					"63, per this site's GeoNames-based source data. Fifty-nine sit in Marion County; the other four are split between confirmed and disputed Hamilton County assignments, detailed above.",
+			},
+			{
+				question: 'What county is Indianapolis in?',
+				answer:
+					"Mostly Marion County -- the result of Unigov, a 1970 state law that merged the governments of Indianapolis and Marion County. Four municipalities, Beech Grove, Lawrence, Southport, and Speedway, were excluded from the merger and still run their own local governments today.",
+			},
+			{
+				question: 'Is Beech Grove part of Indianapolis?',
+				answer:
+					"It's surrounded by Indianapolis and its residents vote for the Indianapolis mayor, but Beech Grove kept its own mayor, police department, and school system when Unigov merged the rest of Marion County in 1970. It's also the only one of the four excluded cities with its own ZIP code, 46107.",
+			},
+			{
+				question: "Why does Carmel share a ZIP code with Indianapolis?",
+				answer:
+					"ZIP code 46280 is addressed as \"Indianapolis, IN\" by USPS despite covering part of Carmel, an incorporated Hamilton County suburb -- one of several cases nationally where a ZIP code's mailing-address city and its actual jurisdiction don't match.",
+			},
+			{
+				question: "What is Indianapolis's area code?",
+				answer:
+					"317, assigned in 1947. It held the entire nine-county Indianapolis region alone until March 15, 2016, when regulators added an overlay code, 463, so both can now be assigned to new numbers in the same area.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'ZIP Code 46262 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46262/zip-code-46262.asp' },
+			{ label: 'ZIP Code 46288 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46288/zip-code-46288.asp' },
+			{ label: 'ZIP Code 46280 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46280/zip-code-46280.asp' },
+			{ label: 'ZIP Code 46290 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46290/zip-code-46290.asp' },
+			{ label: 'Excluded Cities -- Encyclopedia of Indianapolis', url: 'https://indyencyclopedia.org/excluded-cities/' },
+			{ label: 'Unigov -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Unigov' },
+			{ label: 'Area codes 317 and 463 -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Area_codes_317_and_463' },
+			{ label: 'Speedway, Indiana post office listing -- USPS store locator', url: 'https://www.postallocations.com/in/indianapolis/speedway' },
+		],
+	},
 ];
