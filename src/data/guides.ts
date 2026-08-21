@@ -2615,6 +2615,109 @@ export const guides: Guide[] = [
 			},
 		],
 	},
+	{
+		slug: '437-area-code',
+		category: 'Area Codes',
+		title: "437 Area Code: Toronto's 2013 Overlay, Now One of Four Codes Sharing the Same City",
+		description:
+			"437 overlaid Toronto's 416 in 2013, and a third overlay, 942, joined the same footprint in April 2025 -- CRTC records show Toronto stacking area codes faster than almost any other numbering plan area in the NANP.",
+		published: '2026-08-21',
+		updated: '2026-08-21',
+		coreSummary:
+			"Area code 437 has covered the City of Toronto since March 25, 2013, when it overlaid the existing 416 and 647 codes rather than splitting off a piece of the city's territory. It shares that exact footprint with 416 (Toronto's original 1947 code), 647 (Canada's first overlay, added in 2001), and 942, a third overlay the CRTC activated April 26, 2025 after relief-planning forecasts moved Toronto's projected number-exhaustion date up from 2025 to April 2026. A fifth code, 387, is already reserved for whenever the region needs it next. That's a faster overlay cadence than most other major North American cities have needed -- Washington, D.C. went 74 years before its first overlay, while Toronto has added a new code roughly every 12 years since 2001, driven by a single dense rate centre that has never been allowed to split.",
+		sections: [
+			{
+				heading: 'Just the city of Toronto -- not the suburbs around it',
+				body: [
+					"437 covers exactly the same territory as 416, 647, and 942: the City of Toronto's single rate centre, the amalgamated \"megacity\" created in 1998 out of six former municipalities -- old Toronto, East York, Etobicoke, North York, Scarborough, and York. All four codes share that one footprint; none of them crosses into a separate numbering plan area the way a metro split across a state or county line does.",
+					"The whole region sits in the Eastern Time Zone, with no DST carve-out. The Greater Toronto Area's outer suburbs -- Mississauga, Brampton, Markham, and the rest of the Golden Horseshoe -- run on a completely separate four-code stack: 905, 289, 365, and 742, with a fifth code, 537, already reserved for that region too. A call from Mississauga into downtown Toronto crosses between two entirely different numbering plan areas, even though it's a local call either way.",
+				],
+			},
+			{
+				heading: 'From one code in 1947 to four by 2025',
+				body: [
+					"416 was assigned in 1947 as one of the original 86 North American area codes, covering all of southern Ontario including the Golden Horseshoe -- Ontario and Quebec were the only two provinces handed more than one area code when the numbering plan launched that year. Growth pared the territory down twice before Toronto ever got a second code: a 1953 split sent the Kitchener area off to a new code, 519, and an October 1993 split drew a tighter line around Metro Toronto alone, handing the rest of the Golden Horseshoe -- Mississauga, Brampton, Hamilton, the Niagara Peninsula -- to a brand-new code, 905. (Wikipedia's two area-code articles covering this region don't even agree on the exact day that split took effect, landing anywhere from October 2 to October 11, 1993 -- the month itself is the only part every source lines up on.)",
+					"When Metro Toronto's six constituent municipalities amalgamated into a single \"megacity\" in 1998, 416 became the only Canadian area code serving just one rate centre and one city outright. That density is what forced every expansion afterward to be an overlay instead of another split: 647 arrived March 5, 2001 as Canada's first-ever overlay area code, 437 followed March 25, 2013, and 942 went into service April 26, 2025 -- with 387 already reserved for whenever the region needs a fifth. Where a growing US metro like Los Angeles kept splitting off entirely new codes (see [213's five splits](/213-area-code/)), Toronto stopped splitting after 1993 and has stacked every subsequent code onto the same city instead.",
+				],
+				diagramSvg: `<svg viewBox="0 0 700 190" width="100%" style="max-width:700px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 416 begins in 1947, first overlay 647 arrives in 2001, second overlay 437 arrives in 2013, and third overlay 942 arrives in 2025">
+	<line x1="55" y1="95" x2="645" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="85" cy="95" r="9" fill="#131a27"/>
+	<text x="85" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1947</text>
+	<text x="85" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">416 begins as</text>
+	<text x="85" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Toronto's only</text>
+	<text x="85" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">area code</text>
+	<circle cx="290" cy="95" r="9" fill="#b5722f"/>
+	<text x="290" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2001</text>
+	<text x="290" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">647 overlays --</text>
+	<text x="290" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Canada's first</text>
+	<circle cx="470" cy="95" r="9" fill="#b5722f"/>
+	<text x="470" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2013</text>
+	<text x="470" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">437 overlays</text>
+	<text x="470" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">on 416/647</text>
+	<circle cx="620" cy="95" r="9" fill="#131a27"/>
+	<text x="620" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2025</text>
+	<text x="620" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">942 overlays</text>
+	<text x="620" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">all three</text>
+</svg>`,
+			},
+			{
+				heading: 'Why regulators added a fourth code within 12 years of the third',
+				body: [
+					"The CRTC approved 942 in Telecom Decision CRTC 2023-135, issued May 10, 2023. The relief-planning forecast behind that decision had already shifted once: a 2020 exhaust analysis first projected the 416/647/437 complex would run out of assignable numbers in 2025, and a revised September 2022 forecast pushed that date to April 2026. The commission approved 942 to arrive a year ahead of that revised deadline instead of waiting for the complex to actually run dry.",
+					"NANPA allots a maximum of 7.92 million numbers to each area code (792 usable prefixes times 10,000 lines apiece), so adding 437 as a third overlay pushed the 416/647/437 stack's combined technical capacity to roughly 24 million numbers for a city of about 2.5 million people -- and that stack still needed reinforcement within about a decade. Toronto's overlay cadence has settled into a tight rhythm since 647 broke the pattern in 2001: 12 years to 437, another 12 to 942. That's a far faster clip than [Washington, D.C. saw before its own first overlay](/202-area-code/) -- 202 covered the entire district alone for 74 years before 771 arrived in 2021. Toronto's single, dense rate centre burns through number blocks at a pace most other NANP metros don't match.",
+				],
+			},
+			{
+				heading: '416 carries the same weight Manhattan\'s 212 does',
+				body: [
+					"Some Toronto callers have paid a premium for a genuine 416 number specifically because it reads as an established, long-running local business rather than a new entrant -- close to the status economy [this site has documented around Manhattan's 212 and 646](/646-area-code/). The city has its own shorthand for the divide: Torontonians call the city itself \"the 416\" and its residents \"416ers,\" while the suburban ring across the 905 stack gets called \"the 905\" and its residents \"905ers.\" 647 doesn't carry the same geographic weight -- it disproportionately serves mobile phones and voice-over-IP lines rather than the fixed Bell landlines that anchor a 416 number to a specific address.",
+					"The number shows up in Toronto's culture beyond telecom trivia too. Drake has a tattoo of \"416\" on his ribs marking Toronto as his birthplace, and his 2016 album Views is named for both the 416 and 647 codes, with cover art of him sitting atop the CN Tower. Rapper Maestro Fresh Wes released \"416/905 (TO Party Anthem)\" in 1998, and food chain Pizza Pizza trademarked its own 416 phone number, 967-1111, in 1994, after running it in radio jingles since the 1970s.",
+				],
+			},
+			{
+				heading: 'Toronto numbers get spoofed the same way any other area code does',
+				body: [
+					"The CRTC's own guidance on caller ID spoofing describes a tactic it calls \"neighbouring,\" where a scammer alters the caller ID to match the first six digits of the recipient's own number, making the call look like it's coming from someone nearby -- a 416, 647, 437, or 942 number included. The commission's advice is blunt: caller ID is a convenience feature, not a verification tool, and it warns against relying on it to confirm who's actually calling. Anyone who gets a suspicious call is directed to report it to the Canadian Anti-Fraud Centre, a service jointly run by the RCMP, the Ontario Provincial Police, and the Competition Bureau -- covered in more general terms on [this site's rundown of area-code-based scam claims](/scam-area-codes/).",
+					"To fight the underlying spoofing problem rather than just warn about it, CRTC required Canadian carriers to implement STIR/SHAKEN, a call-authentication framework that lets phone networks flag a call as verified or suspicious before it reaches the recipient. The commission's own timeline for that mandate slipped twice -- an initial expectation of March 2019 stretched to September 2020, then again to a final deadline of November 30, 2021, set in Compliance and Enforcement Decision CRTC 2021-123 -- before it became a hard requirement for every carrier's IP-based network, with no exemption even for small telecom providers. It doesn't stop every spoofed call from getting through, but it gives carriers a technical basis for flagging calls that fake a Toronto number without originating anywhere near it.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What area does the 437 area code cover?',
+				answer:
+					"The City of Toronto -- the same single rate centre shared by 416, 647, and 942. It doesn't extend into the surrounding Greater Toronto Area suburbs, which use a separate 905/289/365/742 stack.",
+			},
+			{
+				question: 'How many area codes does Toronto have?',
+				answer:
+					"Four as of 2025: 416 (1947), 647 (2001), 437 (2013), and 942 (2025). A fifth code, 387, is already reserved for the region's next overlay.",
+			},
+			{
+				question: 'Why did Toronto need a new area code so soon after 437?',
+				answer:
+					"CRTC's relief-planning forecasts kept moving up. A 2020 analysis projected the 416/647/437 complex would exhaust its number supply in 2025; a revised September 2022 forecast pushed that to April 2026. CRTC approved 942 in Telecom Decision 2023-135 and activated it April 26, 2025, about a year ahead of the revised exhaustion date.",
+			},
+			{
+				question: 'Does it matter which of Toronto\'s four area codes a number has?',
+				answer:
+					"Socially, yes, by reputation if not by function. A genuine 416 number carries a premium as a marker of an established local business -- close to the status dynamic documented around Manhattan's 212 code -- while 647 disproportionately serves mobile and VoIP lines rather than fixed local numbers.",
+			},
+			{
+				question: 'Is a call showing a 437 number always really from Toronto?',
+				answer:
+					"No. The CRTC's own spoofing guidance describes \"neighbouring,\" where scammers alter caller ID to mimic a local number's first six digits -- a tactic that works on any of Toronto's four area codes and doesn't require the call to originate anywhere near the city.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 416, 647, 437, and 942', url: 'https://en.wikipedia.org/wiki/Area_codes_416,_647,_437,_and_942' },
+			{ label: 'CRTC: Telecom Decision CRTC 2023-135', url: 'https://crtc.gc.ca/eng/archive/2023/2023-135.htm' },
+			{ label: 'CBC: New 942 area code to begin rolling out in Toronto this weekend', url: 'https://www.cbc.ca/lite/story/1.7516271' },
+			{ label: 'CRTC: Caller ID Spoofing', url: 'https://crtc.gc.ca/eng/phone/telemarketing/identit.htm' },
+			{ label: 'CRTC: Compliance and Enforcement Decision CRTC 2021-123 (STIR/SHAKEN mandate)', url: 'https://crtc.gc.ca/eng/archive/2021/2021-123.htm' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Counties
