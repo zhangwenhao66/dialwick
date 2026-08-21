@@ -24,6 +24,13 @@
       "answer_url": "https://www.quora.com/Where-is-area-code-202-in-the-United-States/answer/Owen-Zhang-161",
       "date": "2026-08-18",
       "notes": "发布时该问题0答案（2条折叠垃圾答案不计）。以站内202-area-code文章骨架撰写（202自1947年North American Numbering Plan启用起覆盖整个华盛顿特区，74年无分裂，2021年11月9日首个overlay 771上线；边界自1846-47年弗吉尼亚部分归还后再未变动，无可兼并郊区导致从未有分裂线可画；约69万人共享61平方英里；202因联邦色彩强烈成为诈骗电话冒充政府机构的常用前缀）。过humanizer+avoid-ai-writing双重检查，现场删除两处Tier1 AI高频词'actually'。用Add Link功能插入真实超链接，发布前/后均用javascript_tool核实DOM为真实<a href>。"
+    },
+    {
+      "date": "2026-08-21",
+      "target_page": "https://dialwick.com/miami-area-code/",
+      "question_url": "https://www.quora.com/Where-is-area-code-305/answer/Owen-Zhang-161",
+      "question_title": "Where is area code 305?",
+      "notes": "发布时该问题仅1个真实答案(Monte Howard,7年前，Bell System退休交通分析师)+2条折叠答案不计，讲清楚了1947-1995历次split历史但止步于786 overlay(1998)，没有提到2023年新增的第二个overlay 645，判定为真实内容空白值得补充，按SKILL.md放宽标准使用，回答中明确点名回应该答案(先肯定其历史部分准确，再补第三章)。以站内文章骨架撰写(305/786/645三个overlay覆盖同一片Miami-Dade+Florida Keys领土；786于1998年3月1日上线，佛州第一个overlay，起初只覆盖Miami-Dade后扩展到Keys；645由Florida Public Service Commission于2022年2月批准，2023年8月4日正式上线，抢在监管者预测的305+786同年号码耗尽之前；三个区号的区别只取决于线路激活时间而非用户实际居住位置)。已过humanizer+avoid-ai-writing双重检查(无破折号、无AI高频词、无vague endorsement)。用Quora Add Link功能(Cmd+K)插入真实超链接,锚文本here,指向miami-area-code页面,全程只填URL字段。已直接发布成功(非Space类问题),发布前用javascript_tool核实编辑器DOM中该span确实是class=\"span link\"(非link_pending),发布后再次核实渲染页面DOM中确实是<a href>真实超链接指向https://dialwick.com/miami-area-code/,锚文本为here。"
     }
   ],
   "reddit": []
