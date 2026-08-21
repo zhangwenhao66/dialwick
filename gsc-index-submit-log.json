@@ -204,5 +204,15 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-21",
+    "action": "submitted",
+    "reason": "今日新发布437-area-code（第31篇，dialwick-content-publishing任务，13:00档，本站首篇非美国区号）。URL Inspection确认URL is not on Google/Discovered-currently not indexed，REQUEST INDEXING提交成功确认Indexing requested。",
+    "submitted_urls": [
+      "https://dialwick.com/437-area-code/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
