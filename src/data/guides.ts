@@ -1680,6 +1680,7 @@ export const guides: Guide[] = [
 				body: [
 					"213 covered the entire southern third of California when it launched in 1947. Los Angeles's own growth forced five splits off of 213 over the following decades -- 714 (1951, Orange County), 805 (1957, the central coast), 818 (1984, the San Fernando Valley), 310 (1991, the southwestern coast), and 323 (1998, the rest of central LA) -- before the pattern shifted from splitting to overlaying: 424 stacked onto 310 in 2006, 747 onto 818 in 2009, and, after 213 and 323 were formally merged back into a single overlay complex in 2017, a seventh code, 738, was added on top of that combined area in November 2024.",
 					"San Francisco followed a similar but smaller path: 415 (1947) split off 408 and 707 in 1959, then 510 in 1991 and 650 in 1997, before finally being overlaid by 628 in 2015 once splitting stopped being an option. Sacramento's 916 split once too -- 530 broke off in 1997 to cover Redding, Chico, and Lake Tahoe -- before 279 was added as an overlay on what remained of 916 in 2018; see this site's [Sacramento ZIP code list](/sacramento-zip-codes/) for how that same county lines up on the postal side.",
+					"949's 1998 split from 714 shows the same relief pattern on a smaller scale, and it left one loose end: a strip of Irvine still dials on 714 instead. See this site's [Irvine ZIP code list](/irvine-zip-codes/) for exactly where that boundary falls.",
 				],
 			},
 		],
@@ -3806,6 +3807,106 @@ export const guides: Guide[] = [
 				url: 'https://www.cbsnews.com/texas/news/dallas-water-utilities-scam-alert/',
 			},
 			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+		],
+	},
+	{
+		slug: 'irvine-zip-codes',
+		category: 'ZIP Codes',
+		title: "Irvine, CA ZIP Codes: The Full List, and the $1 Land Sale That Started the City",
+		description:
+			"All 13 ZIP codes USPS assigns to Irvine, California, entirely inside Orange County, plus the 1960 sale that created UC Irvine and the Northpark strip that still dials on 714 instead of 949.",
+		published: '2026-08-22',
+		updated: '2026-08-22',
+		coreSummary:
+			"USPS assigns 13 ZIP codes to Irvine, California, and every one of them sits inside Orange County. What sets this list apart from this site's other single-county ZIP pages is the order events happened in: the Irvine Company transferred 1,000 acres of its cattle ranch to the University of California for one dollar in September 1960, UC Irvine opened for classes in 1965, and the city built up around that campus wasn't incorporated until December 28, 1971, six years later. One of the 13 codes, 92697, belongs to the campus itself rather than any neighborhood, and zip-codes.com's delivery-type tally classifies it \"Unique,\" alongside 9 standard routes and 3 PO Box codes. Not all of Irvine dials on the area code most people associate with the city, either: Wikipedia's service-area note for 949 carves out a strip of Northpark Irvine that still runs on 714.",
+		sections: [
+			{
+				heading: "One ZIP code with no neighborhood at all",
+				body: [
+					"92697 doesn't cover a street or a subdivision. It's the campus of the University of California, Irvine, and zip-codes.com's delivery-type classification tags it \"Unique\" rather than standard or PO Box: one recipient, not a residential route. That code is one of 13 that carry \"Irvine, CA\" as their USPS place name, per GeoNames; the rest split into 9 ordinary delivery routes and three PO Box-only codes, 92616, 92619, and 92623, and every single one of the 13 falls inside one county, Orange.",
+					"A fourteenth code, 92650, turns up as a fourth PO Box entry on zip-codes.com's Irvine city page. It doesn't carry \"Irvine, CA\" as its primary place name in the GeoNames dataset this table draws from, so it's left off the 13 below.",
+				],
+				table: {
+					caption: 'All 13 ZIP codes with "Irvine, CA" as the primary USPS place name (per GeoNames.org, checked 2026-08-22)',
+					columns: ['ZIP'],
+					rows: [
+						['92602'], ['92603'], ['92604'], ['92606'], ['92612'],
+						['92614'], ['92616'], ['92617'], ['92618'], ['92619'],
+						['92620'], ['92623'], ['92697'],
+					],
+				},
+			},
+			{
+				heading: 'The land the university bought for a dollar',
+				body: [
+					"Irvine's 13 ZIP codes cover ground that was still a working cattle and citrus ranch, roughly 93,000 acres known as the Irvine Ranch, within living memory of people who once worked it. UC president Clark Kerr picked the site in 1959 from a list of candidate parcels architect William Pereira had scouted the year before. In September 1960 the Irvine Company transferred title on 1,000 acres to the university, and UC Irvine's own institutional history records that the company charged one dollar for it because a company charter barred donating property outright to a public entity, so a token sale satisfied the rule instead. President Lyndon B. Johnson dedicated the land in 1964, telling the assembled crowd: \"California is not just talking about education. You are doing something about it.\" UC Irvine opened for classes on October 4, 1965, with 1,589 students.",
+					"The city around that campus hadn't been built yet. Pereira and Irvine Company planners drew up a master plan for a community of 50,000 people radiating outward from the university, and the first phases of five founding villages, Turtle Rock, University Park, Westpark, El Camino Real, and Walnut, were finished by 1970. Residents of those villages voted to incorporate on December 28, 1971, choosing a city substantially larger than Pereira's original blueprint called for, according to Wikipedia's account of that vote. By then the campus the city is named around had already been operating for six years.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: Irvine Company transfers land to UC for one dollar in 1960, UC Irvine opens for classes in 1965, and the city of Irvine incorporates in 1971">
+	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="90" cy="95" r="9" fill="#131a27"/>
+	<text x="90" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1960</text>
+	<text x="90" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Ranch land sold</text>
+	<text x="90" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">to UC for $1</text>
+	<circle cx="360" cy="95" r="9" fill="#b5722f"/>
+	<text x="360" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1965</text>
+	<text x="360" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">UC Irvine opens,</text>
+	<text x="360" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">1,589 students</text>
+	<circle cx="610" cy="95" r="9" fill="#131a27"/>
+	<text x="610" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1971</text>
+	<text x="610" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">City of Irvine</text>
+	<text x="610" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">incorporates</text>
+</svg>`,
+			},
+			{
+				heading: 'What the campus ZIP code does to a population count',
+				body: [
+					"Because 92697 carries no residential route, it complicates any estimate of Irvine's population built purely from ZIP-level data. Summing the residents zip-codes.com counts across the city's other 12 codes comes to roughly 307,670, short of the 318,629 Wikipedia cites for the city overall as of mid-2025. A single-institution code like 92697 simply doesn't carry a population figure the way a standard route does, so a ZIP-by-ZIP tally will always undercount a city that has one.",
+					"The remaining 12 codes split into 9 standard routes, ordinary neighborhood delivery, and 3 PO Box codes: 92616, 92619, and 92623. None of the three is tied to one large recipient the way 92697 is; they simply separate box-only mail from street delivery within a given area.",
+				],
+			},
+			{
+				heading: "The Irvine block that isn't on 949",
+				body: [
+					"949 has covered Southern Orange County, Irvine included, since splitting off from 714 on April 18, 1998, the same split this site's [California area codes list](/california-area-codes/) tracks alongside the rest of the state's numbering history. Wikipedia's service-area note for 949 carves out one exception inside Irvine: a strip of the Northpark neighborhood, running from the north side of Culver Drive at Interstate 5 to Jamboree Road, that still dials on 714.",
+					"714 predates 949 by nearly half a century. It split off from California's original 213 in 1951, decades before Irvine existed as a city, and it later picked up an overlay, 657, on September 23, 2008. The area-code field on zip-codes.com's per-ZIP pages for Irvine reflects that same boundary blur: 11 of the city's 13 codes list 949 alongside 714, 657, or both, and only two, 92602 and 92604, show 949 by itself. See this site's [rundown of how area codes actually work](/how-do-area-codes-work/) for why a numbering-plan boundary and a city's edge rarely line up exactly.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Irvine, CA have?',
+				answer:
+					"13, per this site's GeoNames-sourced dataset, all inside Orange County. zip-codes.com's delivery-type tally splits those into 9 standard routes, 3 PO Box codes, and one code tagged \"Unique,\" 92697, reserved for UC Irvine. A fourth PO Box code, 92650, also shows up on zip-codes.com's Irvine city page but isn't part of this site's core 13-code dataset.",
+			},
+			{
+				question: 'What county is Irvine, California in?',
+				answer: "Orange County. All 13 of the city's ZIP codes fall inside it; there is no county split on this list.",
+			},
+			{
+				question: 'When was the city of Irvine incorporated?',
+				answer:
+					"December 28, 1971, six years after UC Irvine, the university the city grew up around, opened for classes in October 1965. The Irvine Company had transferred the university's 1,000-acre campus site for one dollar back in September 1960.",
+			},
+			{
+				question: 'What ZIP code is UC Irvine?',
+				answer:
+					"92697. It's the only one of Irvine's 13 ZIP codes assigned to a single institution rather than a stretch of streets, which is also why it doesn't carry a residential population figure in zip-codes.com's tally.",
+			},
+			{
+				question: 'Does all of Irvine use area code 949?',
+				answer:
+					"Nearly all of it, but not quite. 949 has served Southern Orange County since splitting from 714 in 1998, but Wikipedia notes that a strip of the Northpark neighborhood, from Culver Drive at Interstate 5 to Jamboree Road, still dials on 714 instead.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'All ZIP Codes, Map and Demographics of Irvine, CA -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-irvine.asp' },
+			{ label: 'Wikipedia: Irvine, California', url: 'https://en.wikipedia.org/wiki/Irvine,_California' },
+			{ label: 'Wikipedia: University of California, Irvine', url: 'https://en.wikipedia.org/wiki/University_of_California,_Irvine' },
+			{ label: 'UC Irvine 60th Anniversary: Pre-1965 Archives (Irvine Company land transfer, $1 sale)', url: 'https://uci.edu/60th/pre-1965.php' },
+			{ label: 'Wikipedia: Area code 949', url: 'https://en.wikipedia.org/wiki/Area_code_949' },
+			{ label: 'Wikipedia: Area codes 714 and 657', url: 'https://en.wikipedia.org/wiki/Area_codes_714_and_657' },
 		],
 	},
 ];
