@@ -3707,4 +3707,105 @@ export const guides: Guide[] = [
 			{ label: 'Speedway, Indiana post office listing -- USPS store locator', url: 'https://www.postallocations.com/in/indianapolis/speedway' },
 		],
 	},
+	{
+		slug: '214-area-code',
+		category: 'Area Codes',
+		title: "214 Area Code: Dallas's 1947 Original, Erased Back Into an Overlay in 1999",
+		description:
+			"214 has covered Dallas since 1947. After three splits shrank it, regulators reversed course in 1999, erasing a boundary to remerge 214 with 972 under a shared overlay with 469.",
+		published: '2026-08-22',
+		updated: '2026-08-22',
+		coreSummary:
+			"Area code 214 has covered the city of Dallas since 1947, when it was one of only four area codes assigned to the entire state of Texas. Three splits shrank its footprint over the following half-century, handing off 817 in 1953, 903 in 1990, and 972 in 1996. But when 972 itself neared exhaustion within a few years, Texas regulators didn't split it again. On July 1, 1999, they erased the boundary between 214 and 972 entirely, merging both into a single overlay with a third code, 469, stacked on top. A fourth, 945, followed in 2021. All four now share the same footprint: Dallas plus eight surrounding counties, entirely on Central Time.",
+		sections: [
+			{
+				heading: 'The counties 214 shares with three other codes',
+				body: [
+					"The 214/469/972/945 overlay covers Collin, Dallas, Denton, Ellis, Johnson, Kaufman, Navarro, and Rockwall counties, plus the eastern edge of Tarrant County: suburbs including Arlington, Bedford, Euless, Grapevine, Southlake, and Colleyville. Those Tarrant County towns sit closer to Dallas's numbering plan than to Fort Worth's, so they draw new numbers from 214, 469, 972, or 945 instead of Fort Worth's own overlay pair, 817 and 682, even though Tarrant County is otherwise Fort Worth's territory.",
+					"One landmark splits the difference in the opposite direction: Dallas/Fort Worth International Airport, despite its name and location well inside the shared four-code region, is served specifically by 972 rather than any of the other three. All of it runs on Central Time, so unlike a numbering plan area straddling a time-zone line, a Dallas-area code carries no built-in ambiguity about when a business is actually open.",
+				],
+			},
+			{
+				heading: 'Four splits in fifty years, from one code covering a quarter of Texas',
+				body: [
+					"When the North American Numbering Plan launched in 1947, the entire state of Texas held only four area codes: 214 for the northeast, 512 for south-central Texas, 713 for the southeast, and 915 for the northwest and west. 214's original territory ran from a line just west of Dallas all the way to Waco and the Arkansas and Louisiana borders, far bigger than the compact Dallas-only footprint it holds today.",
+					"In 1953, Fort Worth and Tarrant County broke off as area code 817, drawn mainly from the eastern half of 915 with a further sliver of 214's western edge folded in. That configuration held for 37 years. Then the pace picked up: 1990 split off the eastern portion of the state as area code 903, and by 1996 the Dallas-Fort Worth Metroplex's growth (cell phones, fax lines, pagers) forced a third split, sending everything outside the city of Dallas and Dallas County itself off to a new code, 972.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 214 covers all of northeast Texas in 1947, splits off 817 in 1953 and 972 in 1996, merges with 972 into one overlay with 469 in 1999, and gains a fourth overlay, 945, in 2021">
+	<line x1="45" y1="95" x2="635" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="75" cy="95" r="9" fill="#131a27"/>
+	<text x="75" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1947</text>
+	<text x="75" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">214 covers NE</text>
+	<text x="75" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Texas, Dallas</text>
+	<text x="75" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">to the AR/LA line</text>
+	<circle cx="245" cy="95" r="9" fill="#b5722f"/>
+	<text x="245" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1953-96</text>
+	<text x="245" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Three splits:</text>
+	<text x="245" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">817, 903, then</text>
+	<text x="245" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">972 break off</text>
+	<circle cx="440" cy="95" r="9" fill="#131a27"/>
+	<text x="440" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1999</text>
+	<text x="440" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">214 and 972</text>
+	<text x="440" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">re-merge, 469</text>
+	<text x="440" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">overlays both</text>
+	<circle cx="610" cy="95" r="9" fill="#b5722f"/>
+	<text x="610" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2021</text>
+	<text x="610" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">945 joins as</text>
+	<text x="610" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">a fourth</text>
+	<text x="610" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">overlay</text>
+</svg>`,
+			},
+			{
+				heading: "1999: the boundary regulators erased instead of splitting again",
+				body: [
+					"972 barely had breathing room. Within a few years of its 1996 launch, both 214 and 972 were again approaching exhaustion, driven by the same Metroplex growth that had forced the two previous splits. Rather than draw a fourth boundary through the region, Texas regulators tried something none of [this site's other Texas area codes](/texas-area-codes/) have: on July 1, 1999, they erased the line between 214 and 972 entirely, converting both into a shared overlay covering the combined territory, and added a third code, 469, on top of it. Ten-digit dialing became mandatory for every local call in the region from that point on.",
+					"That reversal makes Dallas the earlier of two places on this site where regulators un-split a boundary instead of drawing a new one. [Los Angeles did the same thing](/213-area-code/) with 213 and 323 in 2017, folding a 1998 split back into a shared overlay. Dallas got there first, by eighteen years. Every other overlay this site has covered ([Manhattan's 646](/646-area-code/), Toronto's 647 and 437) simply added a new code on top of an existing boundary; only Dallas and Los Angeles have gone the extra step of dissolving a split first. The reunified 214/972/469 stack gave the region roughly 23 million assignable phone numbers across the combined three codes, and even that wasn't the end. On January 15, 2021, the Public Utility Commission of Texas activated a fourth overlay, 945, after which new-number requests in the region could start drawing from it too.",
+				],
+			},
+			{
+				heading: "The scam that borrows Dallas Water Utilities' real phone number",
+				body: [
+					"The FCC's general caller-ID warning applies to any area code, including 214: scammers use a tactic the agency calls neighbor spoofing to fake a number that looks local, covered in more detail on [is there really a 'scam area code'?](/scam-area-codes/) Dallas has its own documented version of that trick. The Dallas Police Department's Financial Investigations Unit has warned residents about fraudsters spoofing Dallas Water Utilities' actual main line, 214-651-1441, on caller ID, then telling existing DWU customers their water service will be shut off unless they pay immediately.",
+					"DPD's guidance for anyone who gets a call like this: don't pay over the phone. It directs victims to email a complaint to the department's forgery unit or call 214-671-3543 to report it, or to visit the nearest police substation in person if email isn't an option. It's the same advice this site has seen utilities in other area codes give about a strikingly similar scam script.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What counties does the 214 area code cover?',
+				answer:
+					"Collin, Dallas, Denton, Ellis, Johnson, Kaufman, Navarro, and Rockwall counties, plus a slice of eastern Tarrant County covering suburbs including Arlington, Bedford, Euless, Grapevine, Southlake, and Colleyville. All of it shares the same footprint with area codes 469, 972, and 945.",
+			},
+			{
+				question: 'Why did 214 and 972 merge back together instead of splitting again in 1999?',
+				answer:
+					"Both codes were nearing exhaustion again just a few years after 972 split off from 214 in 1996. Instead of drawing a fourth boundary, Texas regulators erased the 214/972 line on July 1, 1999, converting both into a shared overlay and adding a third code, 469, on top, avoiding the disruption of forcing another set of customers to change their area code.",
+			},
+			{
+				question: 'Is 214 the same area as 469, 972, and 945?',
+				answer:
+					'Yes. All four cover the identical footprint: Dallas and the eight counties and partial county listed above. A new number requested anywhere in that region today could be assigned any of the four codes, with no difference in territory.',
+			},
+			{
+				question: 'Why do some Fort Worth-area suburbs use a Dallas area code?',
+				answer:
+					"Towns in eastern Tarrant County, including Arlington, Bedford, Euless, Grapevine, Southlake, and Colleyville, sit closer to Dallas's numbering plan area than to Fort Worth's, so new numbers there draw from 214, 469, 972, or 945 rather than Fort Worth's own overlay pair, 817 and 682, even though the county itself is otherwise Fort Worth's territory.",
+			},
+			{
+				question: 'Is a call showing a 214 number always really coming from Dallas?',
+				answer:
+					"No. Caller ID can be faked through neighbor spoofing, documented by the FCC, where a scammer displays a local-looking number regardless of where the call originates. Dallas police have specifically warned about this being used to impersonate Dallas Water Utilities' real phone line to threaten customers with a fake service shutoff.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 214, 469, 972, and 945', url: 'https://en.wikipedia.org/wiki/Area_codes_214,_469,_972,_and_945' },
+			{ label: 'Wikipedia: Area codes 817 and 682', url: 'https://en.wikipedia.org/wiki/Area_codes_817_and_682' },
+			{
+				label: 'CBS News Texas: Police warn about Dallas Water Utilities spoofing scam',
+				url: 'https://www.cbsnews.com/texas/news/dallas-water-utilities-scam-alert/',
+			},
+			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+		],
+	},
 ];
