@@ -1116,3 +1116,96 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "escalation": "MAJOR, project-wide: this session discovered that DialWick's 42 published articles collectively contain 627 instances of ' -- ' (ASCII double-hyphen) used as an undetected em-dash-equivalent AI-writing tell, confirmed by independent agent judgment as functionally identical to the Unicode em-dash pattern this project has been scanning for and fixing across all other sites since L-0810-4. Every prior DialWick content-quality audit's 'em dash: pass' verdict was a false negative because those scans only grepped for —, never for ' -- '. This is analogous in scale to the WageLark SVG em-dash discovery (L-0810-4, 8th recurrence) that triggered a dedicated scanner script -- but larger (627 vs. 146 instances) and concentrated entirely on one site. Recommending to Owen: (1) a dedicated DialWick-wide remediation task/session to clean up the remaining ~618 instances rather than relying on this audit task's ~1-article-per-run cadence (which would take well over a year to reach every article organically), and (2) updating whatever grep pattern this project's various content-quality-audit and content-publishing tasks use for 'zero em dash' checks to also match ' -- ' (and possibly other dash-like ASCII substitutions), not just —/–, since this false-negative mode could in principle recur on any site."
 }
 ```
+
+## dallas-zip-codes
+
+```json
+{
+  "url_slug": "dallas-zip-codes",
+  "url": "https://dialwick.com/dallas-zip-codes/",
+  "last_audited": "2026-08-22",
+  "published_date": "2026-08-04",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Sources are GeoNames.org (CC BY 4.0) plus 3 named Wikipedia articles (Highland Park TX, University Park TX, Downtown Dallas); a 4th Wikipedia source (Dallas itself) added during this audit. Specific, named, independently verifiable, consistent with this site's established EEAT bar."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed",
+      "detail": "Article claimed 'Dallas doesn't split across a county line the way Atlanta splits between Fulton and DeKalb.' This is the same recurring absolute-boundary-claim pattern as what-county-is-chicago-in (O'Hare/DuPage) and what-county-is-houston-in (Fort Bend/Montgomery) -- see 内容通用教训库.md L-0804-2, now its 8th recorded recurrence (3rd on DialWick). Independent agent WebSearch confirmed Wikipedia's own Dallas infobox lists the city's municipal boundary as spanning Dallas, Collin, Denton, Kaufman, and Rockwall counties -- 5 counties, more than Atlanta's 2, meaning the comparison direction in the article was backwards. The narrower ZIP-code-level claim (all 105 'Dallas, TX' place-name ZIPs sit in Dallas County, including the 2 DFW-airport ZIPs 75261/75262) was independently re-verified against the site's own src/lib/data/zipCounty.json and found accurate -- only the broader city-boundary generalization was wrong. Also re-verified as accurate and unchanged: Highland Park incorporation (Nov 29 1913 vote, 1915 charter, 1919-1945 annexation fight), University Park incorporation (April 24 1924) and 1945 annexation vote (53%-47%), Park Cities 2010 combined population (31,632), and the 105-ZIP / 4-Highland-Park-ZIP counts -- all confirmed via WebSearch against independent sources (hptx.org, uptexas.org, Wikipedia) with no discrepancies found."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass, no stale data found",
+      "detail": "published 2026-08-04; no material data changes identified (incorporation dates, ZIP assignments, and population figures are static historical/administrative facts, not the kind of figure that drifts like the Cook/Harris county population-race pattern seen elsewhere in this log). updated bumped to 2026-08-22 for the substantive factual fix, consistent with this site's 'bump for substantive fixes, not for meta-only fixes' precedent."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass, strong",
+      "detail": "dataforseo_query.py serp for 'dallas zip codes' shows the real SERP (12 elements) dominated by GIS map tools (maxleaman.com, mapbusinessonline.com, gisgeography.com), a Zillow ZIP listing, an ArcGIS county GIS hub page, and a Quora thread -- none mention Highland Park, the never-annexed-enclave narrative, or any historical angle. The article's Highland Park/University Park annexation-fight framing is genuine incremental value versus a SERP of plain ZIP-list/map tools."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "confirmed problem -> fixed",
+      "detail": "Live page checked via curl+DOM: single H1, canonical present, 3 JSON-LD blocks (Article/BreadcrumbList/FAQPage) present and internally consistent. Title was 105 chars incl. ' | DialWick' suffix (94-char field) and meta description was 222 chars, both confirmed by independent agent as real truncation-risk problems against 2026 SERP guidance (~50-60 char title / ~150-160 char description). Fixed: title shortened to 41 chars (52 with suffix, matching the already-fixed atlanta-zip-codes' 'X ZIP Codes: The Full List by County' pattern), description shortened to 151 chars."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85/99 both before and after fix",
+      "detail": "Manual rubric pass (ai-seo skill's Structure/Authority/Presence pillars, consistent with this log's established scoring convention for this site): strong structure (coreSummary answer-first, 4 H2s, 105-row data table, 3-item FAQ), decent authority (GeoNames + now 4 Wikipedia citations, specific dates/percentages/population figures throughout), already had 3 outbound in-body links pre-fix (better than several sibling articles' pre-fix zero-link state) plus 3 inbound links from sibling articles. Main pre-existing weakness (unchanged by this fix): no directly quoted named-expert material. The fix improved factual accuracy and fluency (removed 14 AI-writing dash tells) without altering structure, so the score is unchanged at ~85/99, comfortably above the 80 threshold both before and after."
+    },
+    {
+      "dimension": "7. Humanizer/avoid-ai-writing backfill",
+      "status": "confirmed problem -> fixed",
+      "detail": "published 2026-08-04 predates the 2026-08-07 avoid-ai-writing mandate. Scan found 14 instances of ' -- ' (ASCII double-hyphen dash substitute) across description(1)/coreSummary(2)/section-1-body(2)/section-2-body(2)/section-3-body(2)/section-4-body(1)/FAQ(4) -- consistent with this site's already-escalated, project-wide 627-instance ' -- ' finding logged under 213-area-code above (this is a continuation of that known systemic issue, not a new discovery). Independent agent recounted the same 14 and assessed the prose as otherwise clean (fact-dense, specific dates/entities, no vague attribution, no rule-of-three padding) -- a single mechanical defect, not broader AI-sounding structure. All 14 rewritten to periods/colons/parentheses per house convention (no Unicode em dash introduced); verified 0 remaining via grep on both source and the live deployed page."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "All 4 pre-existing sources (GeoNames.org postal-codes index, Wikipedia: Highland Park TX, Wikipedia: University Park TX, Wikipedia: Downtown Dallas) returned HTTP 200 via curl. The newly added 5th source (Wikipedia: Dallas) also confirmed live during the fact-check."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "Inbound: 3 manual in-body links already existed from texas-zip-codes, los-angeles-zip-codes, and houston-zip-codes (grep-confirmed). Outbound: 3 manual in-body links already existed pre-fix (texas-zip-codes, atlanta-zip-codes, new-york-zip-codes), and the fixed passage preserved links to atlanta-zip-codes and new-york-zip-codes. ZIP Codes category has well over 6 members so the related-guides rotation window applies normally, confirmed present in the live page's link list."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all auto-derive from the same guide object fields; verified post-fix on the live deployed page that Article headline/description reflect the new shortened title/description and dateModified correctly shows 2026-08-22."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure ZIP-code/annexation-history/administrative-boundary content. No reverse-number-lookup functionality or claims. Naming Highland Park/University Park's independence history is standard, well-documented municipal history, not a sensitive claim about any group."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this guide entry."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt correctly points to pub-5245502795720653 (verified live). robots.txt has explicit AI-crawler Allow rules (GPTBot/ChatGPT-User/ClaudeBot/Claude-Web/PerplexityBot/Google-Extended), consistent site-wide baseline. No reverse-lookup, no diagnostically restricted content; article stays within the site's stated YMYL/privacy red line."
+    }
+  ],
+  "independent_verification": "3 agents spawned in parallel, one per confirmed-candidate finding (county-split factual claim, title/meta length, dash-pattern count). All 3 completed in under 30 seconds each with no watchdog escalation needed. County-split claim: CONFIRMED (Wikipedia Dallas infobox + TSHA both independently list Collin/Denton/Kaufman/Rockwall). Title/meta length: CONFIRMED (live curl re-fetch matched the claimed character counts exactly, well past any pixel-width tolerance). Dash pattern: CONFIRMED (independent grep-based recount matched 14 exactly; assessed as an isolated mechanical defect, not broader AI-sounding prose).",
+  "actions_taken": [
+    "Corrected the false claim that Dallas 'doesn't split across a county line' -- rewrote to distinguish the accurate ZIP-level claim (all 105 Dallas-named ZIPs sit in Dallas County) from the city's actual municipal boundary, which spans Dallas, Collin, Denton, Kaufman, and Rockwall counties. Removed the incorrect 'unlike Atlanta' comparison from coreSummary. Added a new Wikipedia:Dallas source citation.",
+    "Shortened title from 94 to 41 characters (52 with ' | DialWick' suffix) and meta description from 222 to 151 characters.",
+    "Rewrote all 14 instances of ' -- ' (description/coreSummary/4 section bodies/3 FAQ answers) to periods/colons/parentheses; verified 0 remaining via grep on source and live deployed page.",
+    "updated bumped from 2026-08-04 to 2026-08-22 for the substantive factual fix (published field already existed, no git-history backfill needed).",
+    "npm test 64/64 passed, npm run build 54 pages succeeded, 0 errors.",
+    "Committed (2ef396d) and pushed to origin/main; verified live via polling (Rockwall text + new title/description confirmed live within ~45s of push).",
+    "Submitted https://dialwick.com/dallas-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200); logged to indexnow-submit-log.json.",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Appended an 8th recurrence line to 内容通用教训库.md L-0804-2 (3rd DialWick occurrence: Chicago, Houston, now Dallas)."
+  ],
+  "seo_score": "on-page technical: 2 confirmed issues (title length, meta description length) found and fixed; no other technical issues found",
+  "geo_score": "~85/99 both before and after (pass, comfortably above the 80 threshold; structure unchanged, accuracy and fluency improved)",
+  "escalation": null
+}
+```
