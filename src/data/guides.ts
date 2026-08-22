@@ -287,18 +287,18 @@ export const guides: Guide[] = [
 	{
 		slug: 'dallas-zip-codes',
 		category: 'ZIP Codes',
-		title: 'Dallas ZIP Codes: The Full List, Including Four That Belong to a Town Dallas Could Never Annex',
+		title: 'Dallas ZIP Codes: The Full List by County',
 		description:
-			"Every ZIP code USPS assigns to Dallas, Texas, sits in a single county -- but four of them actually belong to a 2.2-square-mile town that has stayed legally independent of Dallas since 1915, and voted down annexation twice.",
+			"Every ZIP code USPS assigns to Dallas sits in Dallas County, but four belong to Highland Park, a 2.2-square-mile town independent of Dallas since 1915.",
 		published: '2026-08-04',
-		updated: '2026-08-04',
+		updated: '2026-08-22',
 		coreSummary:
-			"USPS assigns 105 ZIP codes with Dallas as the primary place name, and unlike Atlanta or New York, every one of them sits in a single county: Dallas County. But four of those 105 -- 75205, 75209, 75219, and 75225 -- don't actually belong to the city of Dallas. They're the ZIP codes of Highland Park, a legally independent town that Dallas tried to annex for more than 25 years and never managed to.",
+			"USPS assigns 105 ZIP codes with Dallas as the primary place name, and every one of them sits in a single county: Dallas County (the city's actual limits are wider than its ZIP-code footprint, more on that below). But four of those 105 (75205, 75209, 75219, and 75225) don't actually belong to the city of Dallas. They're the ZIP codes of Highland Park, a legally independent town that Dallas tried to annex for more than 25 years and never managed to.",
 		sections: [
 			{
 				heading: 'All 105 ZIP codes USPS assigns to Dallas',
 				body: [
-					"USPS lists 105 ZIP codes with \"Dallas, TX\" as the primary place name -- the exact count [Texas ZIP codes](/texas-zip-codes/) puts second behind Houston's 178 and ahead of San Antonio's 83. Every one of the 105 sits in Dallas County; Dallas doesn't split across a county line the way Atlanta splits between Fulton and DeKalb -- the same single-county pattern holds for [New York City's five boroughs](/new-york-zip-codes/), each of which lines up exactly with one county too.",
+					"USPS lists 105 ZIP codes with \"Dallas, TX\" as the primary place name (the exact count [Texas ZIP codes](/texas-zip-codes/) puts second behind Houston's 178 and ahead of San Antonio's 83). Every one of the 105 sits in Dallas County, the same single-county pattern [New York City's five boroughs](/new-york-zip-codes/) show, each lining up exactly with one county. That pattern only holds at the ZIP-code level, though: Dallas's actual city limits are wider than its ZIP-code footprint, and annexation over the decades has pulled slices of the city into Collin, Denton, Kaufman, and Rockwall counties too, a wider spread than [Atlanta's two-county split between Fulton and DeKalb](/atlanta-zip-codes/), even though none of that shows up in a Dallas-named ZIP code.",
 					"Downtown alone accounts for three of them: 75201, 75202, and 75270 all cover the central business district around Dallas City Hall and the Arts District.",
 				],
 				table: {
@@ -332,38 +332,38 @@ export const guides: Guide[] = [
 			{
 				heading: "Four of Dallas's ZIP codes actually belong to Highland Park",
 				body: [
-					"Highland Park voted to incorporate on November 29, 1913, and the town's charter was granted in 1915. It sits about four miles from downtown Dallas, bordered by Dallas on three sides and by its sister town, University Park, on the fourth. Dallas began trying to annex Highland Park in 1919, and the fight dragged on until 1945 -- Highland Park's leaders resisted every attempt, and the town never gave in. After failing to take Highland Park directly, Dallas annexed the land surrounding it instead, turning the 2.2-square-mile town into what's often described as an island city completely encircled by a larger one.",
-					"Highland Park's ZIP codes are 75205, 75209, 75219, and 75225 -- all four appear in the table above under \"Dallas, TX,\" because that's the place name USPS's postal database assigns to that stretch of ZIP-code territory, not because the town is part of the city.",
+					"Highland Park voted to incorporate on November 29, 1913, and the town's charter was granted in 1915. It sits about four miles from downtown Dallas, bordered by Dallas on three sides and by its sister town, University Park, on the fourth. Dallas began trying to annex Highland Park in 1919, and the fight dragged on until 1945. Highland Park's leaders resisted every attempt, and the town never gave in. After failing to take Highland Park directly, Dallas annexed the land surrounding it instead, turning the 2.2-square-mile town into what's often described as an island city completely encircled by a larger one.",
+					"Highland Park's ZIP codes are 75205, 75209, 75219, and 75225. All four appear in the table above under \"Dallas, TX,\" because that's the place name USPS's postal database assigns to that stretch of ZIP-code territory, not because the town is part of the city.",
 				],
 			},
 			{
 				heading: 'University Park fought the same fight, and shares the enclave',
 				body: [
-					"University Park, which grew up around Southern Methodist University after SMU opened in 1915, incorporated on April 24, 1924 -- residents had first tried to get annexed into Highland Park or Dallas, and both turned the request down over the cost of extending services. Two decades later, when Dallas came looking to annex the now-established suburb, University Park voters said no again: in the largest turnout the town had seen to that point, residents rejected annexation by a 53%-to-47% margin in 1945.",
-					"Highland Park and University Park together are known as the Park Cities -- two separate governments, two separate police departments, and a shared school district (Highland Park ISD) that predates both cities' modern boundaries. As of the 2010 census, the Park Cities had a combined population of 31,632.",
+					"University Park, which grew up around Southern Methodist University after SMU opened in 1915, incorporated on April 24, 1924. Residents had first tried to get annexed into Highland Park or Dallas, and both turned the request down over the cost of extending services. Two decades later, when Dallas came looking to annex the now-established suburb, University Park voters said no again: in the largest turnout the town had seen to that point, residents rejected annexation by a 53%-to-47% margin in 1945.",
+					"Highland Park and University Park together are known as the Park Cities: two separate governments, two separate police departments, and a shared school district (Highland Park ISD) that predates both cities' modern boundaries. As of the 2010 census, the Park Cities had a combined population of 31,632.",
 				],
 			},
 			{
 				heading: 'Why USPS still calls their mail "Dallas, TX"',
 				body: [
-					"A ZIP code's primary place name is a USPS mail-routing label, not a legal boundary -- the same distinction that puts several independent [Atlanta-area suburbs](/atlanta-zip-codes/) under an \"Atlanta, GA\" ZIP. USPS updates its place-name database on its own schedule, largely independent of when a city incorporates or where its limits actually sit, so Highland Park and University Park residents can hold their own driver's licenses, pay property taxes to their own city hall, and still get mail addressed to \"Dallas, TX 75205.\"",
+					"A ZIP code's primary place name is a USPS mail-routing label, not a legal boundary: the same distinction that puts several independent [Atlanta-area suburbs](/atlanta-zip-codes/) under an \"Atlanta, GA\" ZIP. USPS updates its place-name database on its own schedule, largely independent of when a city incorporates or where its limits actually sit, so Highland Park and University Park residents can hold their own driver's licenses, pay property taxes to their own city hall, and still get mail addressed to \"Dallas, TX 75205.\"",
 				],
 			},
 		],
 		faq: [
 			{
 				question: 'What is the main ZIP code for Dallas?',
-				answer: "There isn't a single one -- Dallas uses 105 ZIP codes. Downtown alone spans three of them: 75201, 75202, and 75270.",
+				answer: "There isn't a single one. Dallas uses 105 ZIP codes, and downtown alone spans three of them: 75201, 75202, and 75270.",
 			},
 			{
 				question: 'Is Highland Park, Texas part of Dallas?',
 				answer:
-					"No. Highland Park is a legally independent town that has never been part of the city of Dallas -- it incorporated in 1915 and successfully resisted Dallas annexation attempts from 1919 to 1945.",
+					"No. Highland Park is a legally independent town that has never been part of the city of Dallas. It incorporated in 1915 and successfully resisted Dallas annexation attempts from 1919 to 1945.",
 			},
 			{
 				question: 'Why do Highland Park\'s ZIP codes say "Dallas, TX"?',
 				answer:
-					'Because USPS ZIP-code place names are a mail-routing convention, not a legal designation. Highland Park\'s four ZIP codes -- 75205, 75209, 75219, and 75225 -- are filed under "Dallas, TX" in USPS\'s postal database even though the town has its own government, police department, and school district.',
+					'Because USPS ZIP-code place names are a mail-routing convention, not a legal designation. Highland Park\'s four ZIP codes (75205, 75209, 75219, and 75225) are filed under "Dallas, TX" in USPS\'s postal database even though the town has its own government, police department, and school district.',
 			},
 		],
 		sources: [
@@ -371,6 +371,7 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: Highland Park, Texas', url: 'https://en.wikipedia.org/wiki/Highland_Park,_Texas' },
 			{ label: 'Wikipedia: University Park, Texas', url: 'https://en.wikipedia.org/wiki/University_Park,_Texas' },
 			{ label: 'Wikipedia: Downtown Dallas', url: 'https://en.wikipedia.org/wiki/Downtown_Dallas' },
+			{ label: 'Wikipedia: Dallas (municipal boundary spans Dallas, Collin, Denton, Kaufman, and Rockwall counties)', url: 'https://en.wikipedia.org/wiki/Dallas' },
 		],
 	},
 	{
