@@ -2357,7 +2357,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Why the hip-hop group 213 named itself after this code',
 				body: [
-					"213 shows up outside telecom too: Snoop Dogg, Warren G, and Nate Dogg named their group 213 after the area code that had covered their hometown, Long Beach, paying homage to the way an earlier Oakland rap group had named itself 415 after its own area code. The naming was already a step behind the numbering plan by the time the group formed in 1992: Long Beach had moved from 213 to the newly created 310 back on November 2, 1991, and it would move again, from 310 to area code 562, on January 25, 1997, a code that doesn't overlap the downtown-LA territory 213 covers today. The group kept the name through their only studio album in 2004 and up to Nate Dogg's death in 2011, long after Long Beach itself had stopped dialing either 213 or 310.",
+					"213 shows up outside telecom too: Snoop Dogg, Warren G, and Nate Dogg named their group 213 after the area code that had covered their hometown, Long Beach, paying homage to the way an earlier Oakland rap group had named itself 415 after its own area code. The naming was already a step behind the numbering plan by the time the group formed in 1992: Long Beach had moved from 213 to the newly created 310 back on November 2, 1991, and it would move again, from 310 to area code 562, on January 25, 1997, a code that doesn't overlap the downtown-LA territory 213 covers today. The group kept the name through their only studio album in 2004 and up to Nate Dogg's death in 2011, long after Long Beach itself had stopped dialing either 213 or 310. See this site's [full list of Long Beach ZIP codes](/long-beach-zip-codes/) for more on the city itself, including why it runs its own health department instead of routing through Los Angeles County.",
 				],
 			},
 			{
@@ -3907,6 +3907,92 @@ export const guides: Guide[] = [
 			{ label: 'UC Irvine 60th Anniversary: Pre-1965 Archives (Irvine Company land transfer, $1 sale)', url: 'https://uci.edu/60th/pre-1965.php' },
 			{ label: 'Wikipedia: Area code 949', url: 'https://en.wikipedia.org/wiki/Area_code_949' },
 			{ label: 'Wikipedia: Area codes 714 and 657', url: 'https://en.wikipedia.org/wiki/Area_codes_714_and_657' },
+		],
+	},
+	{
+		slug: 'long-beach-zip-codes',
+		category: 'ZIP Codes',
+		title: "Long Beach, CA ZIP Codes: The Full List, From a City That Isn't a County Seat",
+		description:
+			"All 27 ZIP codes GeoNames assigns to Long Beach, California, why the city runs its own health department instead of routing through Los Angeles County, and which codes have almost no residents at all.",
+		published: '2026-08-22',
+		updated: '2026-08-22',
+		coreSummary:
+			"Long Beach is the largest city in California that isn't a county seat, according to Wikipedia's profile of the city: with roughly 450,469 residents as of 2025, it outsizes plenty of California cities that do sit at the head of a county, yet Los Angeles, twenty miles up the coast, holds that title for the county Long Beach belongs to. GeoNames assigns 27 ZIP codes to Long Beach, and this site's data confirms every one of them falls inside Los Angeles County. But size and status split again at the health department: Long Beach runs its own, one of only four city-operated health departments left in California, alongside Berkeley, Pasadena, and the small industrial city of Vernon, rather than leaving that job to the county the way most of its neighboring cities do. Of the 27 ZIP codes, zip-codes.com's delivery-type lookup classifies six as \"Unique,\" reserved for a single institution rather than a residential route, and one of those, 90840, is the campus of California State University, Long Beach.",
+		sections: [
+			{
+				heading: '27 ZIP codes, one county, and a city bigger than most county seats',
+				body: [
+					"Los Angeles holds the title of seat for Los Angeles County; Long Beach never has, despite outgrowing plenty of actual county seats along the way. Wikipedia puts Long Beach's 2025 population at roughly 450,469, good for 44th nationally and 7th in California, and that same profile calls it the largest city in the state that isn't a county seat at all. GeoNames' postal-code dataset still ties Long Beach to that same county on paper: all 27 ZIP codes assigned to the city fall inside Los Angeles County, with no split the way some other cities on this site's lists have.",
+					"Three of those 27 codes, 90834, 90835, and 90899, returned no individual record when checked against zip-codes.com's lookup tool on August 22, 2026, unlike the other 24, which all resolve. The remaining 24 split by delivery type into 14 standard residential routes, 4 PO Box-only codes (90801, 90809, 90832, and 90853), and 6 codes zip-codes.com classifies \"Unique,\" set aside for a single business, government office, or institution rather than a stretch of streets.",
+				],
+				table: {
+					caption: 'The 24 Long Beach ZIP codes with a resolvable zip-codes.com record, by delivery type (checked 2026-08-22)',
+					columns: ['Type', 'ZIP codes'],
+					rows: [
+						['Standard', '90802, 90803, 90804, 90805, 90806, 90807, 90808, 90810, 90813, 90814, 90815, 90822, 90831, 90833'],
+						['PO Box', '90801, 90809, 90832, 90853'],
+						['Unique', '90840, 90842, 90844, 90846, 90847, 90848'],
+					],
+				},
+			},
+			{
+				heading: "The county job Long Beach doesn't hand off",
+				body: [
+					"All 27 of those ZIP codes carry the same county on this site's records, Los Angeles, but Long Beach doesn't route every civic function through that county the way its neighbors do. The city's health department page states that Long Beach runs its own department, separate from the county; Berkeley's local news outlet, Berkeleyside, counts Long Beach among three California cities that do this, alongside Berkeley itself and Pasadena, though a fourth, the small industrial city of Vernon, also operates one, according to that city's government website. For a city whose ZIP codes all report to Los Angeles County on paper, that's one civic function Long Beach never outsourced.",
+					"The department the city describes runs more than 500 employees across nine locations on an annual budget near $117 million, according to that same city page, funded mostly through federal, state, and county pass-through dollars rather than city general funds alone.",
+				],
+			},
+			{
+				heading: 'A campus ZIP code with a population of 8',
+				body: [
+					"90840 carries California State University, Long Beach entirely by itself. zip-codes.com's records show a total population of 8 for that code, not a typo, since a single campus doesn't generate the kind of residential count a neighborhood-wide ZIP does, and the lookup service groups it with the handful of codes reserved for one organization instead of a stretch of streets, the category this article's table above labels \"Unique.\"",
+					"Five more codes, 90842, 90844, 90846, 90847, and 90848, carry that same \"Unique\" label on zip-codes.com, but the lookup tool doesn't publish which single business or office each one serves, only that USPS treats each as a single mail recipient, not a stretch of addresses. 90822 sits close to that pattern without officially joining it: zip-codes.com classifies it \"Standard,\" yet its total population comes back at 54, and the Department of Veterans Affairs' website lists that code as home to the VA Long Beach Healthcare System, including the Tibor Rubin VA Medical Center.",
+				],
+			},
+			{
+				heading: 'An area code inherited twice over',
+				body: [
+					"Long Beach dials on 562, a code this site's area-code records date to January 25, 1997, when it split off from 310. That earlier code, 310, is itself a split, carved out of 213 on November 2, 1991. This site's [rundown of the 213 area code's overlay history](/213-area-code/) covers that same chain of splits in more depth, including why a hip-hop group named itself after 213 years after Long Beach itself had already moved to 310. For the state's full numbering history beyond just Long Beach, see this site's [California area codes list](/california-area-codes/); for how Los Angeles's ZIP codes compare, see the [full Los Angeles ZIP code list](/los-angeles-zip-codes/).",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Long Beach, CA have?',
+				answer:
+					"27, per GeoNames, all inside Los Angeles County. Of those, 24 resolve to an individual record on zip-codes.com: 14 standard residential routes, 4 PO Box-only codes, and 6 codes classified \"Unique\" for single institutions. Three codes, 90834, 90835, and 90899, returned no record on zip-codes.com as of August 22, 2026.",
+			},
+			{
+				question: 'Is Long Beach the county seat of Los Angeles County?',
+				answer:
+					"No. Los Angeles holds that title, even though Long Beach, per Wikipedia, is the largest city in California that isn't a county seat at all, with roughly 450,469 residents as of 2025.",
+			},
+			{
+				question: 'Does Long Beach have its own health department?',
+				answer:
+					"Yes. The city's health department page describes Long Beach as running its own department rather than relying on the county; Berkeleyside counts three cities that do this, Long Beach, Berkeley, and Pasadena, though a fourth, the industrial city of Vernon, also runs one. That's separate from the Los Angeles County health department that covers most other cities in the county.",
+			},
+			{
+				question: 'What ZIP code is California State University, Long Beach?',
+				answer:
+					"90840. zip-codes.com classifies it \"Unique,\" the tier reserved for a single institution rather than a residential route, and its own population count for that code comes back at 8.",
+			},
+			{
+				question: 'What area code does Long Beach, CA use?',
+				answer:
+					"562, which split off from 310 on January 25, 1997. 310 itself had split from 213 on November 2, 1991, so Long Beach's current code is two splits removed from the area code that once covered all of central Los Angeles.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Wikipedia: Long Beach, California', url: 'https://en.wikipedia.org/wiki/Long_Beach,_California' },
+			{ label: 'City of Long Beach: Health Department', url: 'https://www.longbeach.gov/health/' },
+			{ label: 'Berkeleyside: Why does Berkeley have its own public health department?', url: 'https://www.berkeleyside.org/2020/04/15/berkeley-is-unusual-in-having-its-own-public-health-division-how-does-that-work-during-a-pandemic' },
+			{ label: 'City of Vernon: Health and Environmental Control Department', url: 'https://www.cityofvernonca.gov/government/health' },
+			{ label: 'ZIP Code 90840 Info -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/90840/zip-code-90840.asp' },
+			{ label: 'ZIP Code 90822 Info -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/90822/zip-code-90822.asp' },
+			{ label: 'VA Long Beach Healthcare System -- Contact Us', url: 'https://www.va.gov/long-beach-health-care/contact-us/' },
 		],
 	},
 ];
