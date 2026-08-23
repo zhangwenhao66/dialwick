@@ -381,14 +381,14 @@ export const guides: Guide[] = [
 		description:
 			"Every Chicago ZIP code sits in Cook County -- but a third aren't neighborhoods. They're dedicated codes for O'Hare, downtown banks, and an electric utility.",
 		published: '2026-08-04',
-		updated: '2026-08-04',
+		updated: '2026-08-23',
 		coreSummary:
-			"USPS assigns 84 ZIP codes with Chicago as the primary place name, and every one sits in Cook County -- Chicago's ZIP map, unlike Atlanta's, never crosses a county line. But 28 of those 84 don't correspond to a neighborhood: they're unique ZIP codes USPS carves out for single high-volume mail recipients. O'Hare International Airport holds one, 60666, a single PO Box zone shared by roughly 112 airport businesses. The code right next to it in this list, 60668, isn't O'Hare's at all -- it belongs to Commonwealth Edison, Chicago's electric utility. Two more of the 28 belong to downtown banks: 60673 and 60670 route JPMorgan Chase's mail, and 60697 belongs to Bank of America by way of Continental Illinois National Bank, the Chicago bank whose 1984 collapse coined the phrase \"too big to fail.\"",
+			"USPS assigns 84 ZIP codes with Chicago as the primary place name, and every one sits in Cook County -- the city's own municipal boundary is the one exception, picking up a small, uninhabited strip of DuPage County when Chicago annexed O'Hare Airport in 1956, though no ZIP code or resident is affected. But 28 of those 84 don't correspond to a neighborhood: they're unique ZIP codes USPS carves out for single high-volume mail recipients. O'Hare International Airport holds one, 60666, a single PO Box zone shared by roughly 112 airport businesses. The code right next to it in this list, 60668, isn't O'Hare's at all -- it belongs to Commonwealth Edison, Chicago's electric utility. Two more of the 28 belong to downtown banks: 60673 and 60670 route JPMorgan Chase's mail, and 60697 belongs to Bank of America by way of Continental Illinois National Bank, the Chicago bank whose 1984 collapse coined the phrase \"too big to fail.\"",
 		sections: [
 			{
 				heading: 'All 84 ZIP codes USPS assigns to Chicago -- and all of them sit in one county',
 				body: [
-					"USPS lists 84 ZIP codes with \"Chicago, IL\" as the primary place name. Every single one falls inside Cook County -- Chicago doesn't split across a county line the way [Atlanta splits between Fulton and DeKalb](/atlanta-zip-codes/), or the way several other major metros do. That's consistent with the finding on this site's [Chicago county page](/what-county-is-chicago-in/): Cook County has been Chicago's home county since 1831, and the city has never grown past its edges.",
+					"USPS lists 84 ZIP codes with \"Chicago, IL\" as the primary place name. Every single one falls inside Cook County, which has been Chicago's home county since 1831. That pattern holds at the ZIP-code level; it isn't quite true of the city's full municipal boundary, though -- this site's [Chicago county page](/what-county-is-chicago-in/) covers the one exception, a small, uninhabited strip of DuPage County the city picked up when it annexed O'Hare Airport in 1956.",
 					"Of the 84, 56 cover residential and mixed-use neighborhoods, clustered in the familiar 60601-60661 range. The other 28 are unique ZIP codes assigned to a single organization rather than a delivery area -- covered below.",
 				],
 				table: {
@@ -433,7 +433,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Chicago in Cook County?',
 				answer:
-					"Yes, entirely -- all 84 of Chicago's ZIP codes sit inside Cook County, with no cross-county split. See this site's full write-up on Chicago and Cook County.",
+					"Yes, for ZIP codes -- all 84 of Chicago's ZIP codes sit inside Cook County. The city's own boundary does dip into a small, uninhabited corner of DuPage County at O'Hare Airport, but that sliver isn't part of any Chicago ZIP code. See this site's full write-up on Chicago and Cook County.",
 			},
 			{
 				question: 'Why does O\'Hare Airport have its own ZIP code?',
@@ -452,6 +452,7 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: Continental Illinois', url: 'https://en.wikipedia.org/wiki/Continental_Illinois' },
 			{ label: "United Cargo ORD station information (confirms 60666 as O'Hare's shared cargo/business ZIP)", url: 'https://www.unitedcargo.com/en/us/learn/station-information/ORD' },
 			{ label: 'ZIP code 60668 organization record (Commonwealth Edison bill-payment ZIP)', url: 'https://www.zip-codes.com/zip-code/60668/zip-code-60668.asp' },
+			{ label: "Wikipedia: O'Hare, Chicago (community area straddling Cook and DuPage counties)", url: 'https://en.wikipedia.org/wiki/O%27Hare,_Chicago' },
 		],
 	},
 	{
