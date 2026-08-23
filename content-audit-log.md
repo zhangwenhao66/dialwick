@@ -1209,3 +1209,96 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "escalation": null
 }
 ```
+
+## chicago-zip-codes
+
+```json
+{
+  "url_slug": "chicago-zip-codes",
+  "url": "https://dialwick.com/chicago-zip-codes/",
+  "last_audited": "2026-08-23",
+  "published_date": "2026-08-04",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "GeoNames.org (CC BY 4.0), Federal Reserve History, Wikipedia: Continental Illinois, United Cargo ORD station info, zip-codes.com 60668 record -- specific, named, independently verifiable sources; a 6th (Wikipedia: O'Hare, Chicago) added during this audit."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed",
+      "detail": "coreSummary claimed \"Chicago's ZIP map, unlike Atlanta's, never crosses a county line\"; section 1 body claimed \"Chicago doesn't split across a county line the way Atlanta splits between Fulton and DeKalb\"; FAQ answer claimed \"Yes, entirely...with no cross-county split.\" This is the same absolute-boundary-claim pattern as L-0804-2 (already found on this site in what-county-is-chicago-in, what-county-is-houston-in, dallas-zip-codes -- this is the 4th DialWick occurrence, 10th overall). First independent-verification pass, given both sentences together, returned NOT-CONFIRMED (agent read the section-1 sentence as scoped to the same ZIP-level context as the coreSummary sentence). Second pass, isolating the section-1 sentence alone (subject 'Chicago', compared directly against Atlanta's real municipal county split) returned CONFIRMED: Wikipedia's 'O'Hare, Chicago' article confirms the O'Hare community area (annexed 1956) is the one Chicago community area that extends outside Cook County, with its western/southwest edge in DuPage County -- a real exception to an unqualified 'Chicago never crosses a county line' claim. The narrower ZIP-level claim (all 84 'Chicago, IL' primary-place-name ZIPs sit in Cook County, including O'Hare's own 60666) was independently re-verified against this site's own zipCounty.json and found accurate -- only the broader city-boundary generalization was wrong. Also independently re-verified via WebSearch as accurate and unchanged: the O'Hare 60666 PO-Box-zone/112-airport-business claim, ComEd's 60668, JPMorgan Chase's 60673/60670, Bank of America/Continental Illinois's 60697, the 1984 collapse and 'too big to fail' phrase origin, and BankAmerica's 1994 acquisition -- no other fabrication found."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass, no stale data found",
+      "detail": "published 2026-08-04; ZIP-to-county assignments and 20th-century bank/utility history are static facts, not the kind of figure that drifts. updated bumped to 2026-08-23 for the substantive factual fix."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass, strong",
+      "detail": "Live WebSearch for 'chicago zip codes list' shows the SERP dominated by plain ZIP-lookup/map sites (zipcodestogo.com, zip-codes.com, zipdatamaps.com) that list ZIPs with no narrative; zipcodestogo.com independently confirms the same 84-ZIP count, corroborating this site's GeoNames-derived figure. The article's '28 of 84 aren't neighborhoods, here's who they really are' angle (O'Hare, ComEd, JPMorgan Chase, Bank of America/Continental Illinois) is genuine incremental value versus a SERP of bare ZIP lists."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "pass",
+      "detail": "Live page checked via curl+DOM: single H1, canonical present, Article/BreadcrumbList/FAQPage/WebPage/Person JSON-LD all present and internally consistent, author Person schema present. Title is 89 chars incl. ' | DialWick' suffix -- long relative to the 50-60 ideal, but consistent with this site's established title convention (avg 78 chars across 47 articles; 10 other articles are longer, up to 101 chars) -- not treated as a defect unique to this article per the 'don't manufacture problems' precedent. Meta description was 156 chars (within the 150-160 target); the dash-cleanup fix (dimension 7) changed it to 154 chars, still in range."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85-88/99 both before and after fix",
+      "detail": "Manual rubric pass (Structure/Authority/Presence pillars): strong structure (coreSummary answer-first, 2 H2s, 84-row data table, 4-item FAQ), solid authority (6 named sources, specific dates/dollar figures/entity names throughout: $7.5B rescue, 1984, 1994, 112 businesses), robots.txt allows all major AI crawlers (GPTBot/ChatGPT-User/ClaudeBot/Claude-Web/PerplexityBot/Google-Extended), author attribution via Person schema. Well-linked (7+ inbound references from sibling articles, 2 outbound to what-county-is-chicago-in and atlanta-zip-codes). Weakness (unchanged by this fix): no directly quoted named-expert material. The fixes improved factual accuracy and fluency without changing structure, so the score is unchanged at ~85-88/99, comfortably above the 80 threshold both before and after."
+    },
+    {
+      "dimension": "7. Humanizer/avoid-ai-writing backfill",
+      "status": "confirmed problem -> fixed",
+      "detail": "published 2026-08-04 predates the 2026-08-07 avoid-ai-writing mandate. Skill(humanizer)/Skill(avoid-ai-writing) detect-mode scan of coreSummary + both section bodies found no vague attribution, no rule-of-three padding, no promotional language, no copula-avoidance issues -- prose is fact-dense with specific named entities and dates. The one real finding was 19 instances of ' -- ' (ASCII double-hyphen dash substitute) across description(1)/coreSummary(3)/section-1(3)/section-2(6)/FAQ(6) -- consistent with this site's already-escalated, project-wide 627-instance ' -- ' finding logged under 213-area-code (continuation of that known systemic issue, not a new discovery; dallas-zip-codes already fixed its own 14 instances the same way). Independent agent, given an isolated question about whether high-density ' -- ' sentence-joining is functionally equivalent to em-dash overuse as an AI-writing tell, returned CONFIRMED (~1 per 47 words vs. the ~1/1,000-word guideline). All 19 rewritten to periods/colons/parentheses per house convention (no Unicode em dash introduced); verified 0 remaining via grep on source and 0 in rendered build output (regex-stripped-tag scan of dist/chicago-zip-codes/index.html)."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "All 5 pre-existing sources (GeoNames.org, Federal Reserve History, Wikipedia: Continental Illinois, United Cargo ORD, zip-codes.com 60668) confirmed reachable via curl (200; one initial 000 with an alternate UA+redirect combo was a false alarm, resolved 200 on a plain HEAD request). The newly added 6th source (Wikipedia: O'Hare, Chicago) also confirmed live."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass",
+      "detail": "grep of guides.ts confirms bidirectional linking: chicago-zip-codes links out to what-county-is-chicago-in and atlanta-zip-codes; what-county-is-chicago-in links back in; also referenced from chicago-area-code, new-york-zip-codes, austin-zip-codes, los-angeles-zip-codes, and fresno-zip-codes. Not an orphan; well-integrated into the site's Chicago/Counties/ZIP-code cluster."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/BreadcrumbList/FAQPage/WebPage/Person JSON-LD all present on the live page and consistent with visible content (4 FAQ Q&As match the schema's 4 Question/Answer pairs)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure ZIP-code/annexation-history/bank-history content. No reverse-lookup functionality or claims. No sensitive claims about any group."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this guide entry."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt resolves correctly to pub-5245502795720653 (verified live). robots.txt has explicit AI-crawler Allow rules. No reverse-lookup, no misleading claims beyond the factual issue already fixed under dimension 2."
+    }
+  ],
+  "independent_verification": "4 agents spawned. County-line claim: 1st pass (both sentences given together) returned NOT-CONFIRMED; 2nd pass (isolating the section-1 sentence alone, subject 'Chicago' vs. Atlanta's real municipal split) returned CONFIRMED -- the evidence-framing mattered, logged as a methodology lesson in 内容通用教训库.md. Dash-pattern finding: CONFIRMED (same reasoning pattern as the 213-area-code/dallas-zip-codes precedent, re-verified independently rather than assumed). All 3 completed runs finished in under 10 seconds each; no watchdog escalation needed.",
+  "actions_taken": [
+    "Corrected the false claim that Chicago 'never crosses a county line' / 'no cross-county split' in coreSummary, section 1 body, and the FAQ answer -- rewrote to distinguish the accurate ZIP-level claim (all 84 Chicago-named ZIPs sit in Cook County) from the city's actual municipal boundary, which picked up a small, uninhabited DuPage County strip via the 1956 O'Hare annexation. Removed the 'unlike Atlanta' comparison. Added a new Wikipedia: O'Hare, Chicago source citation.",
+    "Rewrote all 19 instances of ' -- ' (description/coreSummary/2 section headings/2 section bodies/4 FAQ answers) to periods/colons/parentheses; verified 0 remaining via grep on source and on rendered build output.",
+    "updated bumped from 2026-08-04 to 2026-08-23 for the substantive fixes (published field already existed, no backfill needed).",
+    "npm test 64/64 passed, npm run build 56 pages succeeded, both times, across both commits.",
+    "Committed in 2 stages (65ac72e county-line fix, a468296 dash cleanup) and pushed to origin/main; verified live via polling both times.",
+    "Submitted https://dialwick.com/chicago-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200); logged to indexnow-submit-log.json.",
+    "Ran seo_drift.py baseline before edits and compare after: only expected WARNING-level diffs (meta description text change, schema content change matching the edits) -- no unintended CRITICAL findings.",
+    "Appended a dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Appended a 10th recurrence line to 内容通用教训库.md L-0804-2 (4th DialWick occurrence: Chicago county page, Houston county page, Dallas ZIP page, now Chicago ZIP page -- the 2nd case of two sister articles about the same city both carrying this bug), plus a standalone independent-verification-methodology note about evidence framing affecting agent judgment."
+  ],
+  "seo_score": "no material change (title/description already within or near this site's established norms; description shortened by 2 chars as a side effect of the dash cleanup, still in range)",
+  "geo_score": "~85-88/99 both before and after (pass, comfortably above the 80 threshold; structure unchanged, accuracy and fluency improved)",
+  "escalation": null
+}
+```
