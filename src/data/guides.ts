@@ -4101,4 +4101,118 @@ export const guides: Guide[] = [
 			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
 		],
 	},
+	{
+		slug: 'las-vegas-area-code',
+		category: 'Area Code Guides',
+		title: 'Las Vegas Area Codes: 702, 725, and the Split That Sent the Rest of Nevada to 775',
+		description:
+			"Las Vegas runs on two area codes today, 702 and 725 -- but 702 alone covered the entire state of Nevada for more than 50 years before growth split off everywhere outside Clark County.",
+		published: '2026-08-23',
+		updated: '2026-08-23',
+		coreSummary:
+			"Two area codes serve Las Vegas and the rest of Clark County today, 702 and 725 -- but 702 alone once covered the entire state of Nevada for more than 50 years, from its 1947 assignment until December 12, 1998, when the state's growth forced a geographic split. Everything outside almost all of Clark County -- Reno, Carson City, Elko, Ely, Sparks, and Winnemucca among them -- moved to the new area code 775, while 702 narrowed down to the Las Vegas Valley, Henderson, and Boulder City. Las Vegas never split its own metro area again; once 702 itself started running low on numbers, regulators overlaid it with a second code, 725, on June 3, 2014, rather than dividing the valley a second time.",
+		sections: [
+			{
+				heading: "Las Vegas's two area codes",
+				body: [
+					"Both codes cover the identical registered territory today -- almost all of Clark County, including the Las Vegas Valley, Henderson, and Boulder City. Which one a given Las Vegas number carries depends only on when the line was activated, not which part of the valley its owner lives in.",
+				],
+				table: {
+					caption: "Las Vegas's area codes and when each went into service",
+					columns: ['Area code', 'Coverage', 'In service since', 'Still assignable?'],
+					rows: [
+						['702', 'Almost all of Clark County (originally all of Nevada)', '1947 (original)', 'Yes'],
+						['725', 'Overlay on 702, same footprint', 'June 3, 2014', 'Yes'],
+					],
+				},
+			},
+			{
+				heading: 'From covering the entire state to just Clark County',
+				body: [
+					"702 was one of the original area codes the newly formed North American Numbering Plan assigned in 1947, and unlike California, which started with three codes, or Texas, which started with four, Nevada's population at the time was small enough that a single code handled the entire state for more than five decades.",
+					"That changed as Nevada's growth accelerated through the 1980s and 1990s, driven largely by Las Vegas's own expansion as a resort and convention destination. [Atlanta](/atlanta-area-code/) and the [Los Angeles metro](/california-area-codes/) each absorbed that kind of growth through a series of smaller splits; Nevada's regulators drew just one line instead. On December 12, 1998, everything outside almost all of Clark County moved to the new area code 775, leaving 702 to cover the Las Vegas Valley, Henderson, and Boulder City on its own.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 702 begins in 1947 covering all of Nevada, splits off 775 in 1998, and gets its first overlay, 725, in 2014">
+	<line x1="60" y1="95" x2="620" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="100" cy="95" r="9" fill="#131a27"/>
+	<text x="100" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1947</text>
+	<text x="100" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">702 covers</text>
+	<text x="100" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">all of</text>
+	<text x="100" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">Nevada</text>
+	<circle cx="350" cy="95" r="9" fill="#b5722f"/>
+	<text x="350" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1998</text>
+	<text x="350" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">775 splits</text>
+	<text x="350" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">off the rest</text>
+	<text x="350" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">of the state</text>
+	<circle cx="590" cy="95" r="9" fill="#131a27"/>
+	<text x="590" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2014</text>
+	<text x="590" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">725 overlays</text>
+	<text x="590" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">702 instead</text>
+	<text x="590" y="154" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">of splitting it</text>
+</svg>`,
+			},
+			{
+				heading: '725 arrived as an overlay, not a second split',
+				body: [
+					"By the early 2010s, growth inside 702's narrowed Clark County footprint was again eating through the code's supply of central office prefixes. Rather than split the valley a second time -- which would have forced some existing Las Vegas numbers to change area codes -- regulators added 725 as an overlay on June 3, 2014, stacking a second code across the identical territory 702 already covered. Every existing 702 number kept working exactly as before; new lines opened after that date could be assigned either 702 or 725, depending on which prefixes were still available.",
+					"The 10-digit dialing requirement that comes with any overlay applies here too: since 725 went live in 2014, every local call inside the Las Vegas Valley needs the area code plus the seven-digit number, even calling next door -- the same rule this site's [overview of how area codes work](/how-do-area-codes-work/) covers for overlay regions generally.",
+				],
+			},
+			{
+				heading: "'The 702': how an area code became a Vegas brand",
+				body: [
+					"Las Vegas is the only major city inside 702's footprint, and decades of tourism marketing and hometown pride have turned the three digits into shorthand for the city itself -- \"the 702\" shows up on merchandise, in song lyrics, and in local business names across the valley much the way [\"the 305\" does for Miami](/miami-area-code/). The American R&B vocal group 702, active through the late 1990s and early 2000s, took its name directly from the area code, years before most Las Vegas residents thought of 725 as anything but a local number too.",
+				],
+			},
+			{
+				heading: 'A 2026 scam alert Las Vegas utility customers should know about',
+				body: [
+					"NV Energy, the utility serving most of Clark County including Las Vegas, issued an official alert on July 3, 2026, warning customers about scammers buying sponsored search-engine ads that impersonate the company. The fake ads surface phone numbers that connect callers to imposters attempting to collect account details, obtain payment information, or set up service under NV Energy's name. That's a different tactic from the caller-ID spoofing covered in [is there really a 'scam area code'?](/scam-area-codes/): this scam depends on someone searching for NV Energy's number and clicking the wrong result, not on receiving an unsolicited call.",
+					"NV Energy's guidance is to skip the search results entirely and go straight to the company's own website, nvenergy.com, or its verified Southern Nevada number, 702-402-5555.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does Las Vegas have?',
+				answer:
+					'Two: 702, the original code assigned in 1947, and 725, an overlay added June 3, 2014. Both cover the identical Clark County/Las Vegas Valley footprint.',
+			},
+			{
+				question: 'Did 702 used to cover all of Nevada?',
+				answer:
+					'Yes. 702 was Nevada\'s only area code from 1947 until December 12, 1998, when everything outside almost all of Clark County split off as area code 775, narrowing 702 down to the Las Vegas Valley, Henderson, and Boulder City.',
+			},
+			{
+				question: 'What area code covers Reno and the rest of Nevada?',
+				answer:
+					'775, which split off from 702 on December 12, 1998. It covers Reno, Carson City, Elko, Ely, Sparks, Winnemucca, and the rest of Nevada outside almost all of Clark County.',
+			},
+			{
+				question: 'Do I need to dial 10 digits for a local Las Vegas call?',
+				answer:
+					'Yes. Once 725 overlaid 702 on June 3, 2014, the combined numbering plan area required area code plus number for every local call -- the standard rule in any overlay region.',
+			},
+			{
+				question: 'Is there a current phone scam targeting Las Vegas NV Energy customers?',
+				answer:
+					"Yes. NV Energy issued an alert on July 3, 2026 about scammers buying sponsored search ads that impersonate the utility and connect callers to imposters seeking account or payment details. NV Energy directs customers to its own website or verified phone number instead of numbers found through search ads.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 702 and 725', url: 'https://en.wikipedia.org/wiki/Area_codes_702_and_725' },
+			{ label: 'Wikipedia: Area code 775', url: 'https://en.wikipedia.org/wiki/Area_code_775' },
+			{ label: 'Wikipedia: 702 (group)', url: 'https://en.wikipedia.org/wiki/702_(group)' },
+			{
+				label: 'NV Energy: news release, NV Energy Issues Alert for New Phone Scam',
+				url: 'https://cdx.nvenergy.com/about-nvenergy/news/news-releases/nv-energy-issues-alert-for-new-phone-scam/',
+			},
+			{
+				label: 'Fox5 Vegas: NV Energy warns Las Vegas customers of July 4th weekend phone scam',
+				url: 'https://www.fox5vegas.com/2026/07/03/nv-energy-warns-las-vegas-customers-july-4th-weekend-phone-scam/',
+			},
+			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+		],
+	},
 ];
