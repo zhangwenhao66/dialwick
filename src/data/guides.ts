@@ -379,17 +379,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Chicago ZIP Codes: The Full List, and the 28 That Aren't a Neighborhood at All",
 		description:
-			"Every Chicago ZIP code sits in Cook County -- but a third aren't neighborhoods. They're dedicated codes for O'Hare, downtown banks, and an electric utility.",
+			"Every Chicago ZIP code sits in Cook County, but a third aren't neighborhoods. They're dedicated codes for O'Hare, downtown banks, and an electric utility.",
 		published: '2026-08-04',
 		updated: '2026-08-23',
 		coreSummary:
-			"USPS assigns 84 ZIP codes with Chicago as the primary place name, and every one sits in Cook County -- the city's own municipal boundary is the one exception, picking up a small, uninhabited strip of DuPage County when Chicago annexed O'Hare Airport in 1956, though no ZIP code or resident is affected. But 28 of those 84 don't correspond to a neighborhood: they're unique ZIP codes USPS carves out for single high-volume mail recipients. O'Hare International Airport holds one, 60666, a single PO Box zone shared by roughly 112 airport businesses. The code right next to it in this list, 60668, isn't O'Hare's at all -- it belongs to Commonwealth Edison, Chicago's electric utility. Two more of the 28 belong to downtown banks: 60673 and 60670 route JPMorgan Chase's mail, and 60697 belongs to Bank of America by way of Continental Illinois National Bank, the Chicago bank whose 1984 collapse coined the phrase \"too big to fail.\"",
+			"USPS assigns 84 ZIP codes with Chicago as the primary place name, and every one sits in Cook County. The city's own municipal boundary is the one exception: it picked up a small, uninhabited strip of DuPage County when Chicago annexed O'Hare Airport in 1956, though no ZIP code or resident is affected. But 28 of those 84 don't correspond to a neighborhood: they're unique ZIP codes USPS carves out for single high-volume mail recipients. O'Hare International Airport holds one, 60666, a single PO Box zone shared by roughly 112 airport businesses. The code right next to it in this list, 60668, isn't O'Hare's at all: it belongs to Commonwealth Edison, Chicago's electric utility. Two more of the 28 belong to downtown banks: 60673 and 60670 route JPMorgan Chase's mail, and 60697 belongs to Bank of America by way of Continental Illinois National Bank, the Chicago bank whose 1984 collapse coined the phrase \"too big to fail.\"",
 		sections: [
 			{
-				heading: 'All 84 ZIP codes USPS assigns to Chicago -- and all of them sit in one county',
+				heading: 'All 84 ZIP codes USPS assigns to Chicago, and all of them sit in one county',
 				body: [
-					"USPS lists 84 ZIP codes with \"Chicago, IL\" as the primary place name. Every single one falls inside Cook County, which has been Chicago's home county since 1831. That pattern holds at the ZIP-code level; it isn't quite true of the city's full municipal boundary, though -- this site's [Chicago county page](/what-county-is-chicago-in/) covers the one exception, a small, uninhabited strip of DuPage County the city picked up when it annexed O'Hare Airport in 1956.",
-					"Of the 84, 56 cover residential and mixed-use neighborhoods, clustered in the familiar 60601-60661 range. The other 28 are unique ZIP codes assigned to a single organization rather than a delivery area -- covered below.",
+					"USPS lists 84 ZIP codes with \"Chicago, IL\" as the primary place name. Every single one falls inside Cook County, which has been Chicago's home county since 1831. That pattern holds at the ZIP-code level; it isn't quite true of the city's full municipal boundary, though: this site's [Chicago county page](/what-county-is-chicago-in/) covers the one exception, a small, uninhabited strip of DuPage County the city picked up when it annexed O'Hare Airport in 1956.",
+					"Of the 84, 56 cover residential and mixed-use neighborhoods, clustered in the familiar 60601-60661 range. The other 28 are unique ZIP codes assigned to a single organization rather than a delivery area, covered below.",
 				],
 				table: {
 					caption: 'All 84 ZIP codes with "Chicago, IL" as the primary USPS place name (all in Cook County)',
@@ -416,11 +416,11 @@ export const guides: Guide[] = [
 				},
 			},
 			{
-				heading: "28 of Chicago's ZIP codes aren't neighborhoods -- they belong to a single recipient",
+				heading: "28 of Chicago's ZIP codes aren't neighborhoods: they belong to a single recipient",
 				body: [
-					"USPS occasionally assigns a ZIP code to one organization instead of a geographic area, when that organization's mail volume is high enough to justify routing it separately from the surrounding neighborhood. This site's [Atlanta ZIP page](/atlanta-zip-codes/) covers one example -- the IRS's Atlanta service center holds a unique ZIP of its own. Chicago has 28 of them, nearly a third of its total, reflecting the city's role as a major aviation and banking hub.",
-					"O'Hare International Airport holds one: 60666 is a single PO Box zone -- 25 boxes serving roughly 112 airport businesses across the airfield, from cargo handlers like United Cargo and Korean Air Cargo to airline offices, customs, and other airport tenants -- rather than a code split by function. The ZIP right next to it in this list, 60668, isn't O'Hare's at all: it belongs to Commonwealth Edison, Chicago's electric utility, as a dedicated code for routing customer bill-payment mail -- a reminder that two ZIP codes sitting next to each other in a sequence don't necessarily share an owner. Downtown, several major banks have their own dedicated codes for high-volume mail processing. JPMorgan Chase's Chicago mail-processing center uses 60673 (and an associated code, 60670); the designation was added to postal records in October 2008, during Chase's expansion in the aftermath of the 2008 financial crisis. 60697 belongs to Bank of America, but the ZIP's history runs back further: it originally routed mail for Continental Illinois National Bank, which was the seventh-largest bank in the US when a 1984 run on deposits forced the FDIC to step in with a $7.5 billion rescue package -- the bailout that gave banking regulation the phrase \"too big to fail\" before the term became familiar again in 2008. BankAmerica acquired what remained of Continental Illinois a decade later, in 1994.",
-					"The remaining unverified codes in the list above -- 60664, 60669, 60674, 60675, 60677, 60678, 60680-60682, 60684-60691, 60693-60696, 60699, and 60701 -- follow the same pattern: USPS-assigned codes for single large-volume recipients or non-residential postal zones rather than delivery areas, though this site hasn't independently verified which specific organization holds each one.",
+					"USPS occasionally assigns a ZIP code to one organization instead of a geographic area, when that organization's mail volume is high enough to justify routing it separately from the surrounding neighborhood. This site's [Atlanta ZIP page](/atlanta-zip-codes/) covers one example: the IRS's Atlanta service center holds a unique ZIP of its own. Chicago has 28 of them, nearly a third of its total, reflecting the city's role as a major aviation and banking hub.",
+					"O'Hare International Airport holds one: 60666 is a single PO Box zone (25 boxes serving roughly 112 airport businesses across the airfield, from cargo handlers like United Cargo and Korean Air Cargo to airline offices, customs, and other airport tenants) rather than a code split by function. The ZIP right next to it in this list, 60668, isn't O'Hare's at all: it belongs to Commonwealth Edison, Chicago's electric utility, as a dedicated code for routing customer bill-payment mail. That's a reminder that two ZIP codes sitting next to each other in a sequence don't necessarily share an owner. Downtown, several major banks have their own dedicated codes for high-volume mail processing. JPMorgan Chase's Chicago mail-processing center uses 60673 (and an associated code, 60670); the designation was added to postal records in October 2008, during Chase's expansion in the aftermath of the 2008 financial crisis. 60697 belongs to Bank of America, but the ZIP's history runs back further: it originally routed mail for Continental Illinois National Bank, which was the seventh-largest bank in the US when a 1984 run on deposits forced the FDIC to step in with a $7.5 billion rescue package, the bailout that gave banking regulation the phrase \"too big to fail\" before the term became familiar again in 2008. BankAmerica acquired what remained of Continental Illinois a decade later, in 1994.",
+					"The remaining unverified codes in the list above (60664, 60669, 60674, 60675, 60677, 60678, 60680-60682, 60684-60691, 60693-60696, 60699, and 60701) follow the same pattern: USPS-assigned codes for single large-volume recipients or non-residential postal zones rather than delivery areas, though this site hasn't independently verified which specific organization holds each one.",
 				],
 			},
 		],
@@ -428,22 +428,22 @@ export const guides: Guide[] = [
 			{
 				question: 'What is the main ZIP code for Chicago?',
 				answer:
-					"There isn't a single one -- Chicago uses 84 ZIP codes, all within Cook County. 60601 covers part of the Loop, the city's downtown core.",
+					"There isn't a single one. Chicago uses 84 ZIP codes, all within Cook County. 60601 covers part of the Loop, the city's downtown core.",
 			},
 			{
 				question: 'Is Chicago in Cook County?',
 				answer:
-					"Yes, for ZIP codes -- all 84 of Chicago's ZIP codes sit inside Cook County. The city's own boundary does dip into a small, uninhabited corner of DuPage County at O'Hare Airport, but that sliver isn't part of any Chicago ZIP code. See this site's full write-up on Chicago and Cook County.",
+					"Yes, for ZIP codes: all 84 of Chicago's ZIP codes sit inside Cook County. The city's own boundary does dip into a small, uninhabited corner of DuPage County at O'Hare Airport, but that sliver isn't part of any Chicago ZIP code. See this site's full write-up on Chicago and Cook County.",
 			},
 			{
 				question: 'Why does O\'Hare Airport have its own ZIP code?',
 				answer:
-					"O'Hare's mail volume is high enough that USPS routes it through a single dedicated PO Box zone, 60666, shared by roughly 112 airport businesses -- cargo handlers, airline offices, and other airport tenants alike. The nearby code 60668 is easy to mistake for a second O'Hare code, but it actually belongs to Commonwealth Edison, Chicago's electric utility.",
+					"O'Hare's mail volume is high enough that USPS routes it through a single dedicated PO Box zone, 60666, shared by roughly 112 airport businesses (cargo handlers, airline offices, and other airport tenants alike). The nearby code 60668 is easy to mistake for a second O'Hare code, but it actually belongs to Commonwealth Edison, Chicago's electric utility.",
 			},
 			{
 				question: 'Why is 60697 listed as a Chicago ZIP code with no population?',
 				answer:
-					"It's a unique ZIP code USPS assigned to a single bank recipient rather than a residential area. It currently belongs to Bank of America, but the code's history traces back to Continental Illinois National Bank -- once the seventh-largest bank in the US -- before its 1984 failure and 1994 acquisition by BankAmerica.",
+					"It's a unique ZIP code USPS assigned to a single bank recipient rather than a residential area. It currently belongs to Bank of America, but the code's history traces back to Continental Illinois National Bank (once the seventh-largest bank in the US) before its 1984 failure and 1994 acquisition by BankAmerica.",
 			},
 		],
 		sources: [
