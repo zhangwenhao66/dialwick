@@ -1588,7 +1588,7 @@ export const guides: Guide[] = [
 				heading: 'Dallas runs a four-code overlay stack; Houston runs a five-code one',
 				body: [
 					"214 was Dallas's only area code from 1947 until 1990, when it split off 903 to cover northeast Texas. By 1996, 214 itself had run out of numbers again -- but instead of splitting Dallas geographically a second time, the state overlaid the same footprint with 972, then added 469 as a third overlay in 1999, and 945 as a fourth in 2021. All four codes -- 214, 469, 972, and 945 -- now serve the exact same Dallas metro area simultaneously; which one a given phone gets is essentially random.",
-					"[Houston](/houston-zip-codes/) followed an almost identical pattern: 713 was the original 1947 code, split to create 281 in 1996, which was itself overlaid rather than split again -- first by 832 in 1999, then 346 in 2014, then 621 in 2025. Fort Worth (817, overlaid by 682 in 2000) and San Antonio (210, overlaid by 726 in 2017) each run a smaller two-code version of the same pattern; only Austin (512, overlaid by 737) has managed with just two codes so far.",
+					"[Houston](/houston-zip-codes/) followed an almost identical pattern: 713 was the original 1947 code, split to create 281 in 1996, which was itself overlaid rather than split again -- first by 832 in 1999, then 346 in 2014, then 621 in 2025. Fort Worth (817, overlaid by 682 in 2000) and San Antonio (210, overlaid by 726 in 2017) each run a smaller two-code version of the same pattern; only Austin (512, overlaid by 737) has managed with just two codes so far. 806, Lubbock and Amarillo's code since 1957, hasn't needed a second code at all -- see this site's [Lubbock ZIP code list](/lubbock-zip-codes/) for how little pressure that code is still under.",
 				],
 			},
 		],
@@ -4214,6 +4214,101 @@ export const guides: Guide[] = [
 				url: 'https://www.fox5vegas.com/2026/07/03/nv-energy-warns-las-vegas-customers-july-4th-weekend-phone-scam/',
 			},
 			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
+		],
+	},
+	{
+		slug: 'lubbock-zip-codes',
+		category: 'ZIP Codes',
+		title: "Lubbock ZIP Codes: All 26, and the Campus That Isn't the Unique One",
+		description:
+			"Every ZIP code USPS assigns to Lubbock, Texas, all inside Lubbock County, plus which of the three unique ones actually belongs to Texas Tech, and the area code that's gone unsplit since 1957.",
+		published: '2026-08-23',
+		updated: '2026-08-23',
+		coreSummary:
+			"USPS assigns 26 ZIP codes to Lubbock, Texas, and every one of them sits inside Lubbock County, where Lubbock has been the county seat since 1891. zip-codes.com's own delivery-type count for the city puts 16 on standard routes, 7 as PO Box-only codes, and 3 as unique codes tied to a single organization apiece -- and the university whose name is stamped across the city doesn't hold one of those three the way most people would guess. Texas Tech's main campus ZIP, 79409, is classified Standard; the unique slot instead goes to Texas Tech's own medical school two miles east, the city government's own PO box, and a private marketing firm. One more ZIP on the list, 79401, marks the downtown blocks an F5 tornado tore through on the night of May 11, 1970, killing 26 people and contributing to how meteorologists still measure tornado damage today. And running under all 26 ZIPs is a single area code, 806, that has covered the Texas Panhandle since 1957 without ever being split or overlaid -- the only one of the six area codes serving Texas before 1983 that's never needed relief.",
+		sections: [
+			{
+				heading: 'All 26 ZIP codes, and how few are ordinary delivery routes',
+				body: [
+					"Every one of the 26 ZIP codes USPS assigns to \"Lubbock, TX\" as the primary place name sits inside Lubbock County, per this site's source data, which simplifies things compared with the multi-county sprawl on this site's [Atlanta](/atlanta-zip-codes/) or [Chicago](/chicago-zip-codes/) lists -- Lubbock has been the seat of that single county since 1891, so there's no courthouse ambiguity layered on top of the ZIP map either.",
+					"What the county-level view hides is how few of those 26 codes correspond to an ordinary delivery route. zip-codes.com's own breakdown for the city counts 16 standard codes, 7 PO Box-only codes, and 3 unique codes reserved for a single organization apiece -- meaning fewer than two-thirds of Lubbock's ZIP codes are the kind that covers more than one address.",
+				],
+				table: {
+					caption: 'All 26 ZIP codes with "Lubbock, TX" as the primary USPS place name, by delivery type (zip-codes.com, checked 2026-08-23)',
+					columns: ['ZIP', 'Type'],
+					rows: [
+						['79401', 'Standard'], ['79402', 'Standard'], ['79403', 'Standard'], ['79404', 'Standard'],
+						['79406', 'Standard'], ['79407', 'Standard'], ['79408', 'PO Box'], ['79409', 'Standard'],
+						['79410', 'Standard'], ['79411', 'Standard'], ['79412', 'Standard'], ['79413', 'Standard'],
+						['79414', 'Standard'], ['79415', 'Standard'], ['79416', 'Standard'], ['79423', 'Standard'],
+						['79424', 'Standard'], ['79430', 'Unique'], ['79452', 'PO Box'], ['79453', 'PO Box'],
+						['79457', 'Unique'], ['79464', 'PO Box'], ['79490', 'PO Box'], ['79491', 'Unique'],
+						['79493', 'PO Box'], ['79499', 'PO Box'],
+					],
+				},
+			},
+			{
+				heading: "The three unique ZIPs, and the campus that isn't one of them",
+				body: [
+					"Lubbock's three unique ZIP codes each belong to a single organization, per zip-codes.com's own classification: 79430 is Texas Tech University Health Sciences Center's School of Medicine, at 3601 4th Street, which opened as Texas Tech University School of Medicine in 1969; 79457 is the City of Lubbock's own mailing address, PO Box 2000, confirmed on the Texas Municipal League's directory of city officials; and 79491 is tagged \"United Marketing of Texas\" in that same dataset.",
+					"What that list leaves out is easy to assume wrong. 79409, the ZIP anchoring Texas Tech University's main campus itself (the classrooms, the football stadium, student housing), doesn't carry the unique designation at all. zip-codes.com classifies it as Standard, the same category as an ordinary residential block, even though its own population count for that ZIP is zero. The unique label in this site's data isn't a reward for institutional size; it marks a ZIP built around a single recipient rather than a delivery route with more than one address on it, and a university's main campus, however large its footprint, still reads as one Standard-type delivery area.",
+				],
+			},
+			{
+				heading: "79401 and the tornado that changed how damage gets measured",
+				body: [
+					"79401 covers downtown Lubbock, including the 20-story Metro Tower at 1220 Broadway, known when it opened in 1955 as the Great Plains Life Building, then the tallest building in the city. On the night of May 11, 1970, an F5 tornado tore through that same stretch of downtown as part of an 8.5-mile path that killed 26 people, according to Wikipedia's sourced account of the storm; NOAA's Storm Prediction Center lists it as the 24th F5 or EF5 tornado recorded in the United States since 1950.",
+					"The Great Plains Life Building itself took heavy damage and sat vacant for years before reopening as residential lofts in 1975 -- Wikipedia's entry on the building notes it's the second-tallest building on record to survive a direct F5 hit, behind only the ALICO Building in Waco. The broader damage survey Ted Fujita conducted across the city afterward, matching wind-speed estimates to specific patterns of structural failure, fed into the Fujita Scale he introduced the following year -- the same F-scale this site uses elsewhere to describe tornado intensity.",
+				],
+			},
+			{
+				heading: "806: the one Texas area code that's never needed relief",
+				body: [
+					"Area code 806 has covered Lubbock, Amarillo, and the rest of the [Texas Panhandle](/texas-area-codes/) since 1957, when it was flash-cut out of 915 and picked up a small piece of 817 along the way. Texas had six area codes in service by 1983: 214, 512, 713, 817, 915, and 806. Every one of the other five has since been split, overlaid, or both; 214 alone has spawned four additional codes since 1953. 806 hasn't. Checked against this site's own records for all six of those original codes, the pattern holds: five separate histories of splits and overlays after 1983, and one, 806, with nothing recorded past its 1957 creation.",
+					"NANPA's own numbering data backs that up going forward, not just backward. The agency's 2025 annual report lists 806 with no overlay complex at all, still N/A in its own overlay-tracking table, and just 156 of a forecast 312 number blocks assigned, roughly half the code's practical capacity. NANPA's latest projection puts exhaustion at the first quarter of 2032, five quarters later than the agency's prior forecast, meaning the pressure on 806 eased rather than mounted between the two reports.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Lubbock have?',
+				answer:
+					"26, all inside Lubbock County per this site's source data. zip-codes.com's delivery-type breakdown counts 16 as standard routes, 7 as PO Box-only codes, and 3 as unique codes tied to a single organization each.",
+			},
+			{
+				question: 'What county is Lubbock, TX in?',
+				answer:
+					"Lubbock County, where Lubbock has served as the county seat since 1891. None of the city's 26 ZIP codes cross into a neighboring county, per this site's source data.",
+			},
+			{
+				question: 'Does Texas Tech University have its own unique ZIP code?',
+				answer:
+					"Not the one most people would guess. 79409, the ZIP covering Texas Tech's main campus, is classified Standard, the same category as an ordinary delivery route. The unique designation instead goes to Texas Tech's medical school (79430), the City of Lubbock's own PO box (79457), and a private marketing firm (79491).",
+			},
+			{
+				question: "What happened in Lubbock's 1970 tornado?",
+				answer:
+					"An F5 tornado struck downtown Lubbock, ZIP code 79401, on the night of May 11, 1970, killing 26 people along an 8.5-mile path, one of only 24 F5 or EF5 tornadoes NOAA's Storm Prediction Center has recorded nationwide since 1950. The damage survey afterward, conducted by meteorologist Ted Fujita, fed into the Fujita Scale he introduced the following year.",
+			},
+			{
+				question: 'What area code does Lubbock use?',
+				answer:
+					"806, in service since 1957. It's the only one of the six area codes Texas had by 1983 that's never been split or overlaid; NANPA's 2025 data shows it still carries no overlay and has roughly half its number blocks assigned.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'All ZIP Codes, Map and Demographics of Lubbock, TX -- zip-codes.com', url: 'https://www.zip-codes.com/city/tx-lubbock.asp' },
+			{ label: 'Wikipedia: Lubbock, Texas', url: 'https://en.wikipedia.org/wiki/Lubbock,_Texas' },
+			{ label: 'Wikipedia: Lubbock tornado', url: 'https://en.wikipedia.org/wiki/Lubbock_tornado' },
+			{ label: 'Wikipedia: Metro Tower (Lubbock)', url: 'https://en.wikipedia.org/wiki/Metro_Tower_(Lubbock)' },
+			{ label: 'NOAA Storm Prediction Center: F5 and EF5 Tornadoes of the United States, 1950-present', url: 'https://www.spc.noaa.gov/faq/tornado/f5torns.html' },
+			{ label: 'Wikipedia: Area code 806', url: 'https://en.wikipedia.org/wiki/Area_code_806' },
+			{
+				label: 'NANPA 2025 Annual Report',
+				url: 'https://www.nanpa.com/sites/default/files/2026-03/2025_NANPA_AnnualReport_FINAL.pdf',
+			},
+			{ label: 'Texas Municipal League: City of Lubbock officials directory', url: 'https://directory.tml.org/profile/city/851' },
 		],
 	},
 ];
