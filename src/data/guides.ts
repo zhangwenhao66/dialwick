@@ -2450,7 +2450,7 @@ export const guides: Guide[] = [
 				heading: "771: DC's first overlay, added right before 202 ran out",
 				body: [
 					"NANPA projected in 2020 that 202 would exhaust its supply of assignable numbers by late 2022, and approved area code 771 as DC's first overlay that October. Unlike a split, an overlay doesn't reassign any existing number -- 771 simply shares the same district-wide footprint as 202, and every new line ordered after the changeover can be issued either code. A permissive dialing period ran from April 10 to October 9, 2021, letting residents place local calls with either seven or ten digits while carriers reprogrammed their systems; the first central-office codes under 771 went into service November 8 and 9, 2021, and ten-digit dialing became mandatory for every local call in the district from that point on.",
-					"Nothing changed for anyone already holding a 202 number -- the overlay only affects lines assigned from November 2021 forward. It's a far later first overlay than most major-metro codes get: New York's 212 got its first overlay, 917, in 1992, just 45 years after 212 began. 202 went 74.",
+					"Nothing changed for anyone already holding a 202 number -- the overlay only affects lines assigned from November 2021 forward. It's a far later first overlay than most major-metro codes get: New York's 212 got its first overlay, 917, in 1992, just 45 years after 212 began. 202 went 74. Seattle's [206 held out even longer](/206-area-code/), not overlaid until 2025, though in that case regulators had a fix drafted years earlier and chose to shelve it.",
 				],
 			},
 			{
@@ -3994,6 +3994,111 @@ export const guides: Guide[] = [
 			{ label: 'ZIP Code 90840 Info -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/90840/zip-code-90840.asp' },
 			{ label: 'ZIP Code 90822 Info -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/90822/zip-code-90822.asp' },
 			{ label: 'VA Long Beach Healthcare System -- Contact Us', url: 'https://www.va.gov/long-beach-health-care/contact-us/' },
+		],
+	},
+	{
+		slug: '206-area-code',
+		category: 'Area Codes',
+		title: "206 Area Code: Seattle's Overlay Was Shelved in 2001, Then Arrived in 2025",
+		description:
+			'206 covered Seattle alone with no overlay from 1997 to 2025. Regulators drafted the fix back in 2000, then suspended it for sixteen years when the shortage eased on its own.',
+		published: '2026-08-23',
+		updated: '2026-08-23',
+		coreSummary:
+			"Area code 206 has covered Seattle since 1947, when it launched as the sole area code for the entire state of Washington. Three splits between 1957 and 1997 shrank its territory down to Seattle and a ring of close-in suburbs, but for 78 years, 206 never shared that territory with a second code. That changed on June 10, 2025, when 564, an overlay already serving the neighboring 360 numbering plan area, expanded onto 206 as well. The overlay wasn't a quick fix: Washington's own utilities commission first drafted a relief plan for 206 back in May 2000, then suspended the whole effort a year later when demand eased, leaving it dormant for sixteen years before regulators picked it back up.",
+		sections: [
+			{
+				heading: "Seattle, its closest suburbs, and one island in a different county",
+				body: [
+					"Per Wikipedia's service-area description, 206 covers the city of Seattle plus its innermost suburbs: Shoreline and Lake Forest Park directly to the north, Mercer Island out in Lake Washington, Vashon Island in Puget Sound, and stretches of the metro area between Des Moines and Woodway. Most of that territory sits in King County, the same county as Seattle itself, but not all of it does. Bainbridge Island, also part of the 206 numbering plan area per that same Wikipedia entry, carries the ZIP code 98110, which this site's own ZIP-to-county records list under Kitsap County, not King. A phone number's area code follows the numbering plan area it was assigned to, not a county line, which is how a King County-based code ends up reaching across Puget Sound into a second county.",
+					"All of it, King County and the Kitsap County sliver alike, runs on Pacific Time, so a 206 number carries no time-zone ambiguity the way a border-town code sometimes does.",
+				],
+			},
+			{
+				heading: 'Three splits in fifty years, and the exurbs that fought their way back',
+				body: [
+					"206 was one of the original area codes the newly created North American numbering plan assigned in 1947, and it covered the entire state of Washington from the start. That lasted only a decade: in 1957, the eastern two-thirds of the state split off as area code 509, a flash-cut divide that roughly followed the Cascade Range. What remained, covering all of western Washington, held without another split for 38 years, Wikipedia's own account of the code's history notes, even as the region's population kept growing through the back half of the twentieth century.",
+					"By the early 1990s, cell phones, pagers, and fax machines had pushed 206 back toward exhaustion, and on January 15, 1995, most of its territory outside the Seattle and Tacoma areas split off into a new area code, 360. That split didn't hold as drawn: residents in Seattle's exurbs objected to losing their 206 numbers, and the carrier serving the region at the time, US West (now part of Lumen Technologies), returned those exchanges to 206 shortly afterward. The cities of Des Moines and Woodway ended up divided between the two area codes as part of that reversal, not because of any new municipal boundary, but because the capacity of the local switching centers wouldn't allow a clean, full return.",
+					"Bringing those exurbs back into 206 meant the code was still running short on room, and a three-way split followed on April 25, 1997: the southern portion, including Tacoma, became area code 253, and the northern portion, including Everett and the Eastside cities of Bellevue and Redmond, became 425. What was left, Seattle and its closest-in suburbs, is the same footprint 206 still covers today.",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 206 covers all of Washington in 1947, splits off 509 in 1957, splits again into 253 and 425 in 1997, and finally gets its first overlay, 564, in 2025">
+	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="80" cy="95" r="9" fill="#131a27"/>
+	<text x="80" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1947</text>
+	<text x="80" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">206 begins as</text>
+	<text x="80" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">all of Washington</text>
+	<circle cx="270" cy="95" r="9" fill="#b5722f"/>
+	<text x="270" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1957</text>
+	<text x="270" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">509 splits off</text>
+	<text x="270" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">the state's east</text>
+	<circle cx="460" cy="95" r="9" fill="#b5722f"/>
+	<text x="460" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1997</text>
+	<text x="460" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">253 and 425</text>
+	<text x="460" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">split off, final territory</text>
+	<circle cx="610" cy="95" r="9" fill="#131a27"/>
+	<text x="610" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">2025</text>
+	<text x="610" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">564 finally</text>
+	<text x="610" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">overlays 206</text>
+</svg>`,
+			},
+			{
+				heading: 'The overlay that Washington regulators shelved for sixteen years',
+				body: [
+					"564 wasn't a fast fix once regulators finally activated it, and it wasn't originally built for 206 at all. Planners first proposed the code in 1999 to relieve 360 alone, with an in-service date set for August 1, 2000. In May 2000, the Washington Utilities and Transportation Commission widened that plan on its own initiative, folding in the entire Seattle metro, 206, 253, and 425, on the expectation that those codes would need relief soon too.",
+					"That expectation didn't hold up. By the summer of 2000 the extra codes weren't judged urgent, and on August 22, 2001, the WUTC announced that the broader shortage had eased, crediting more efficient reuse of existing number blocks (a practice called number pooling) along with a slowdown in the telecom sector overall. The commission suspended the entire 564 rollout, effective for at least a year, and then didn't revisit it in any serious way for well over a decade: a WUTC estimate from March 2014 still projected 360 as the first Western Washington code likely to run out, in 2018, with the rest, 206 included, not expected to exhaust before 2025.",
+					"564 was finally switched on August 28, 2017, but only over 360, the single numbering plan area it had originally been proposed for eighteen years earlier. 206 itself didn't get folded back in until the WUTC approved that expansion on June 15, 2023, with the overlay going live June 10, 2025, twenty-five years after Seattle's own numbers were first, briefly, written into the same relief plan back in May 2000. The commission's standing plan still names 253 and 425 as future candidates for that same 564 overlay whenever either code nears exhaustion, but per NANPA's own analysis, neither is close to that point yet.",
+					"This site's guide to [Washington, D.C.'s 202](/202-area-code/) covers the only other original 1947 code here that went anywhere near this long without an overlay: 74 years, until 771 arrived in 2021. 206 beat that by four years, and not because Seattle's growth was slower. Regulators had the fix ready in 2000 and chose to shelve it.",
+				],
+			},
+			{
+				heading: "The utility scam that borrows Seattle's own area code",
+				body: [
+					"Any caller ID can be faked, and 206 is no exception: the FCC calls this neighbor spoofing, where a scammer picks a number that looks local to whoever's picking up, a pattern this site breaks down further on [is there really a 'scam area code'?](/scam-area-codes/) What's specific to Seattle is a scam the city-owned utility, Seattle City Light, warns its own customers about directly: callers claiming to be from the utility, demanding immediate payment over the phone to avoid having power shut off.",
+					"Seattle City Light's own scams page states the policy plainly: \"We will not call customers and demand immediate payment or financial information.\" The page goes further, saying the utility will never call, email, or visit a customer's home demanding immediate payment to avoid a shutoff, and that anyone who falls behind on a bill receives at least two written notices before disconnection ever starts. Customers who get a call like that are told to hang up and call the utility directly at (206) 684-3000 to check their account status before paying anything.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What cities and islands does the 206 area code cover?',
+				answer:
+					"Seattle plus its closest-in suburbs: Shoreline, Lake Forest Park, Mercer Island, Vashon Island, Bainbridge Island, and stretches of the metro area between Des Moines and Woodway, per Wikipedia's account of the numbering plan area.",
+			},
+			{
+				question: "When did 206 get its first overlay, and why did it take so long?",
+				answer:
+					"564 went live on 206 on June 10, 2025, 78 years after 206 began in 1947. Regulators had actually drafted a relief plan covering 206 back in May 2000, but suspended it in 2001 when the shortage eased faster than projected, and didn't revisit expanding it onto 206 until 2023.",
+			},
+			{
+				question: 'Did the 564 overlay serve a different area code before it reached Seattle?',
+				answer:
+					"Yes. 564 was proposed in 1999 to relieve 360, the area code covering most of western Washington outside Seattle and Tacoma, and it went into service over 360 alone on August 28, 2017. It didn't expand onto 206 until June 10, 2025, nearly eight years later.",
+			},
+			{
+				question: 'Is every part of the 206 area code in King County?',
+				answer:
+					"No. Most of it is, including Seattle, Shoreline, Lake Forest Park, Mercer Island, and Vashon Island, but Bainbridge Island, also inside the 206 numbering plan area, sits in Kitsap County per this site's own ZIP-to-county records.",
+			},
+			{
+				question: 'Is a call showing a 206 number really coming from Seattle?',
+				answer:
+					"Not necessarily. Caller ID can be faked through neighbor spoofing, and Seattle City Light has specifically warned customers about callers impersonating the utility and demanding immediate payment over the phone. The utility says it will never do that and directs anyone suspicious to call (206) 684-3000 to verify.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area code 206', url: 'https://en.wikipedia.org/wiki/Area_code_206' },
+			{ label: 'Wikipedia: Area code 564', url: 'https://en.wikipedia.org/wiki/Area_code_564' },
+			{
+				label: 'Washington UTC: 564 Area Code Overlay (Docket UT-230108, June 15, 2023 order; June 10, 2025 in-service date)',
+				url: 'https://www.utc.wa.gov/regulated-industries/utilities/telecommunications/washington-state-area-codes-and-numbering-issues/564-area-code-overlay',
+			},
+			{
+				label: 'NANPA: WA 206-564 Area Code Overlay, Final Phase (Docket Nos. UT-230108 and UT-143787, June 2, 2025)',
+				url: 'https://www.nanpa.com/sites/default/files/2025-06/WA_206-564_AreaCodeOverlayFinalPhase.pdf',
+			},
+			{ label: 'Seattle City Light: Scams', url: 'https://www.seattle.gov/city-light/start-or-stop-service/scams' },
+			{ label: 'FCC: Caller ID Spoofing', url: 'https://www.fcc.gov/consumers/guides/spoofing' },
 		],
 	},
 ];
