@@ -1302,3 +1302,95 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "escalation": null
 }
 ```
+
+## los-angeles-zip-codes
+
+```json
+{
+  "url_slug": "los-angeles-zip-codes",
+  "url": "https://dialwick.com/los-angeles-zip-codes/",
+  "last_audited": "2026-08-24",
+  "published_date": "2026-08-04",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "GeoNames.org (CC BY 4.0), 5 Wikipedia articles (History of the San Fernando Valley, Shoestring annexation, Harbor Gateway, Venice Los Angeles, San Fernando California), and a 1995 Daily Bruin article -- 7 specific, named, independently verifiable sources for a long, detailed article."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "pass, no fabrication found",
+      "detail": "7 of the article's most load-bearing historical/numeric claims independently verified via WebSearch, all CONFIRMED accurate: (1) March 29, 1915 San Fernando Valley annexation vote, 681-25 margin, ~108,732 acres (~170 sq mi, matches the article's figure); (2) San Fernando incorporated Aug 31, 1911 by an 8-vote margin; (3) Venice annexation vote Nov 1925, 3,130-2,215, effective 1926; (4) UCLA's 90095 ZIP code took effect Jan 1, 1995, split from 90024; (5) San Pedro/Wilmington consolidated into LA Aug 28, 1909, following the 1906 Shoestring Strip annexation; (6) Lankershim annexed to LA Dec 1923, renamed North Hollywood 1927; (7) Owensmouth annexed Feb 1917, later renamed Canoga Park. Also independently confirmed the article's core geographic claim (the City of Los Angeles sits entirely within LA County, unlike Chicago's O'Hare/DuPage exception found in the chicago-zip-codes audit) -- this article's ZIP-level 'no cross-county split' claim is correctly scoped and does not repeat the L-0804-2 absolute-boundary-claim pattern. The 94-ZIP table itself was independently recounted programmatically (94 rows, matches). No factual issues found."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "published 2026-08-04; all claims are static historical/administrative facts (annexation votes, ZIP assignment dates), not the kind of figure that drifts. No new overlay/split activity affecting Los Angeles ZIP codes since publish. updated bumped to 2026-08-24 for the dash cleanup."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass, strong",
+      "detail": "The article's differentiator (documenting exactly which LA-area neighborhoods carry non-'Los Angeles' ZIP names, tracing each to a specific annexation event with vote counts and dates, and explicitly listing the never-annexed independent cities) is genuine narrative depth beyond a bare ZIP list -- consistent with the standard this site has established on sibling ZIP-code articles."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "pass",
+      "detail": "Live page checked via curl+DOM: single H1, self-referencing canonical, Article/BreadcrumbList/FAQPage JSON-LD present (Article includes nested WebPage mainEntityOfPage + Person author), 4 FAQ entries matching FAQPage schema. Title 101 chars, description 189 chars -- both within this site's established distribution (site-wide description avg 183.9 chars across 50 articles, 30/50 over 180 chars; title lengths up to 101 chars seen elsewhere), not treated as defects per the L-0805-2 precedent (compare to sibling articles' actual distribution, not a generic character-count rule)."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85-88/99 both before and after",
+      "detail": "Manual rubric pass (Structure/Authority/Presence): strong structure (216-word answer-first coreSummary, 4 H2 sections, 94-row data table, 4-item FAQ), solid authority (7 named sources, specific vote counts/dates/acreage throughout), robots.txt allows all major AI crawlers, author attribution via Person schema, well-linked internally (4 inbound references). Weakness (unchanged by this fix): no directly quoted named-expert material. Fixes improved fluency without changing structure, so score is unchanged, comfortably above the 80 threshold."
+    },
+    {
+      "dimension": "7. Humanizer/avoid-ai-writing backfill",
+      "status": "confirmed problem -> fixed",
+      "detail": "published 2026-08-04 predates the 2026-08-07 avoid-ai-writing mandate. Skill(humanizer)/Skill(avoid-ai-writing)-style scan found essentially no AI vocabulary tells (grepped the full text against the Tier 1/2 word lists: only 1x 'genuinely' and 1x 'effective', both contextually normal, far below any density threshold). The one real, substantial finding: 25 instances of ' -- ' (ASCII double-hyphen dash substitute) across description/coreSummary/4 section bodies/1 section heading/3 FAQ answers -- a density of ~1 per 96 words, consistent with this site's already-established, repeatedly-confirmed systemic L-0821-4 pattern (this is the site's 6th documented recurrence of this exact issue, following 213-area-code, 214-area-code, scottsdale-zip-codes, and 2 cross-site gamma/delta variants). Independently verified CONFIRMED before fixing. All 25 rewritten to periods/colons/parentheses per house convention (no Unicode em dash introduced); verified 0 remaining via grep on source and 0 in rendered build output."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "6 of 7 sources confirmed reachable via curl (200): GeoNames, 5 Wikipedia articles. The 7th (Daily Bruin, dailybruin.com/1995/01/11/...) returned 403 via curl with response headers showing 'cf-mitigated: challenge' / 'server: cloudflare' -- a Cloudflare anti-bot challenge signature, not an origin dead-link/404 state. Independently verified via 2 fresh WebSearch queries that returned the exact URL live with matching title and substantive excerpted content (quotes from UCLA Mail Services Director Edward Meyers) -- CONFIRMED as a live, bot-protected page, not a broken link. No action needed (per the known curl/WebFetch JS-rendering blind-spot pattern, L-0809-8)."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass",
+      "detail": "grep of guides.ts confirms this article outlinks to /chicago-zip-codes/ and /dallas-zip-codes/ in prose, and is itself linked from 4 sibling articles (boston-zip-codes, zip-code-shows-wrong-city, california-area-codes, long-beach-zip-codes) with 4 distinct, non-repetitive anchor phrases ('Los Angeles ZIP page', 'Los Angeles', 'greater LA area', 'full Los Angeles ZIP code list'). Not an orphan."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/BreadcrumbList/FAQPage JSON-LD all present on the live page and consistent with visible content: Article headline/description match title/description fields, 4 FAQ Q&As match the FAQPage schema's 4 Question/Answer pairs, BreadcrumbList matches the ZIP Codes category hierarchy."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure ZIP-code/annexation-history content. No reverse-lookup functionality or claims. No sensitive claims about any group; scam-number-pattern concern (site-specific risk area) is not applicable to this article's topic."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this guide entry."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt resolves correctly to pub-5245502795720653 (verified live). robots.txt has explicit AI-crawler Allow rules. /privacy/ and /about/ both return 200. No reverse-lookup, no scam/fraud content on this article (not applicable to its topic), no misleading claims."
+    }
+  ],
+  "independent_verification": "2 agents spawned. Dash-pattern finding: CONFIRMED (agent read lines 541-639 directly, confirmed all 25 instances function as genuine em-dash substitutes, not hyphenated compounds or numeric ranges). Daily Bruin link-rot finding: CONFIRMED as a live Cloudflare-protected page, not a dead link (agent ran 2 independent fresh WebSearch queries that surfaced live, matching content). Both agents completed in under 20 seconds each; no watchdog escalation needed.",
+  "actions_taken": [
+    "Rewrote all 25 instances of ' -- ' (description/coreSummary/4 section bodies/1 heading/3 FAQ answers) to periods/colons/parentheses; verified 0 remaining via grep on source and on rendered build output (regex-stripped-tag scan of dist/los-angeles-zip-codes/index.html).",
+    "updated bumped from 2026-08-04 to 2026-08-24 for the substantive fix (published field already existed, no backfill needed).",
+    "npm test 64/64 passed, npm run build 59 pages succeeded.",
+    "Committed (60e6b30) and pushed to origin/main; verified live via repeated polling (dateModified confirmed 2026-08-24T00:00:00+00:00, 0 dash instances in rendered HTML across 3 consecutive fetches).",
+    "Submitted https://dialwick.com/los-angeles-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200); logged to indexnow-submit-log.json.",
+    "Ran seo_drift.py baseline before edits and compare after: only expected WARNING-level diff (schema content changed, matching the dash-cleanup edits) and an informational H2-count note (5->5, no real change) -- no unintended CRITICAL findings.",
+    "Appended a dated entry to 内容发布日志.md marking this as a content-quality-audit update.",
+    "Appended a 6th recurrence line to 内容通用教训库.md L-0821-4 (los-angeles-zip-codes, 25 instances, 7 independently-verified-accurate historical claims noted alongside the dash finding)."
+  ],
+  "seo_score": "no material change (title/description already within this site's established norms; no SEO technical issues found)",
+  "geo_score": "~85-88/99 both before and after (pass, comfortably above the 80 threshold; structure unchanged, accuracy and fluency improved)",
+  "escalation": null
+}
+```
