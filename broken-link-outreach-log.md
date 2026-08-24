@@ -179,3 +179,26 @@ theultimates.com（旧版 anywho.com 类反查工具）另跑了一次 `backlink
 **发出后约1分钟，那个独立复核agent的真实完成通知才送达**——它并没有卡死，只是耗时超过了两次检查之间的判断窗口。它给出的实际判定是**"PROBLEM"**：两封邮件解释DialWick覆盖国际拨号的核心句子（"...links to an area code lookup site and a zip code lookup site. I run DialWick, a similar reference site, and it covers something neither of those two handles: international dialing formats for calling other countries from a US number."）逐字完全相同，判定为模板化/规模化生产模式，即便面向两个完全不相关的收件人。该agent独立核实的其余项目（查重、目标页真实性、Philippines/Australia事实、联系人有效性、单页链接scope）全部通过，只在这一条上判定有问题。
 
 **处理方式**：邮件已经发出、无法撤回，如实记录而非隐瞒——跟8/16轮 buffalo.edu 重复发送事故的处理原则一致。已用`gmail_send.py list`分别核实两个收件人各自只收到一封（无重复发送）。这次事故揭示了本session自查流程的一个真实缺口：自查清单里没有"把本轮多封草稿互相比对，检查是否有逐字重复的核心句子"这一项——下一轮如果同一批次要发多封"竞品缺口"框架的邮件，必须在发送前显式互相比对核心解释句，不能只各自单独通过查重/事实核对/语气检查就视为独立合格。完整两封邮件正文、复核过程、事故记录见 `outreach-drafts.md` Pitch 8 / Pitch 9。
+
+---
+
+## 2026-08-24（第五次运行，第二部分）
+
+### 第一部分
+
+已由上层会话统一核实：本站所有已发送pitch最早在8/16，距今仅8天不满10天，无需验证，跳过。
+
+### 第二部分：新机会
+
+延续8/21遗留的Wadsworth候选（俄亥俄州Wadsworth市政府首页Quick Links小组件，仅链allareacodes.com未链zip工具），本轮完成：`dataforseo_query.py backlinks`重新确认该行仍存在；curl获取原始HTML确认Quick Links小组件结构（7项，仅"Area Code Look-up"链competitor）；`/directory.aspx`确认City Hall部门公开邮箱`info@wadsworthcity.org`；`broken_link_scan.py`对该页13条出站链接扫描确认0 DEAD（非伪装断链pitch，纯竞品缺口框架）。
+
+邮件选用Mexico 2019拨号改革事实（与Pitch 8的Philippines、Pitch 9的Australia均不同，刻意避免核心解释句重复——这是8/21事故后新增的自查项）。过`Skill(humanizer)`+`Skill(avoid-ai-writing)`（删去2处双连字符"--"作为em dash替代品）。
+
+**独立复核**：spawn全新独立agent，八项逐一独立核实（查重/目标页面真实性/联系人有效性/事实核对guides.ts数据/DialWick链接均可访问/未推荐单区号页/语气与Pitch 8/9差异化程度/断链话术框定准确性），判定**"CAN SEND"**。
+
+**已发送**：`gmail_send.py send --from dialwick`，收件人`info@wadsworthcity.org`，Message ID `1a033f2c25aa6de9`。
+
+### 遗留待办
+
+1. `www.momboard.com/local-area-links/`（密歇根房产经纪人协会，页面质量高但CAPTCHA拦截联系表单）继续跳过，不再尝试。
+2. 本轮竞品缺口分析方向（政府/商会quick-links页）已连续三轮验证有效（Pitch 5/6/8/9/10），可继续沿这个方向找新候选。
