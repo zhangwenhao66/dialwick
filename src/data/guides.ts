@@ -3173,7 +3173,7 @@ export const guides: Guide[] = [
 				heading: "How a 17-square-mile town grew into a footprint bigger than New York City's",
 				body: [
 					"Phoenix's single-county ZIP list isn't a sign of a small city. The city's own published history puts its 1950 footprint at 17.1 square miles and its population at 106,000 -- close to the Census Bureau's count of 106,818 that year. Over the following decade the city added about 95 square miles through annexation -- including Maryvale and large sections of south Phoenix in 1959. Growth on that scale kept going for decades: Phoenix covered around 470 square miles by the early 2000s and stands at 517.9 square miles today, more land area than New York City, Los Angeles, or Chicago each cover individually.",
-					"Cities racing to expand in that era often annexed narrow, contiguous strips of land just to keep a neighboring town from claiming the same ground first, then filled in the territory behind those strips later. Phoenix used that strategy through the 1950s and 1960s as it and its neighbors -- Scottsdale, Tempe, Glendale, Mesa -- pushed into the same stretch of desert at the same time. The reason none of that growth ever pushed a Phoenix ZIP code into a second county is simpler than it looks: Maricopa County itself covers 9,224 square miles, more than seventeen times the land Phoenix occupies today. There's a lot of county left for the city to grow into before its ZIP list would ever need to follow Denver's or Atlanta's cross-county pattern.",
+					"Cities racing to expand in that era often annexed narrow, contiguous strips of land just to keep a neighboring town from claiming the same ground first, then filled in the territory behind those strips later. Phoenix used that strategy through the 1950s and 1960s as it and its neighbors -- [Scottsdale](/scottsdale-zip-codes/), Tempe, Glendale, Mesa -- pushed into the same stretch of desert at the same time. The reason none of that growth ever pushed a Phoenix ZIP code into a second county is simpler than it looks: Maricopa County itself covers 9,224 square miles, more than seventeen times the land Phoenix occupies today. There's a lot of county left for the city to grow into before its ZIP list would ever need to follow Denver's or Atlanta's cross-county pattern.",
 				],
 			},
 			{
@@ -4434,6 +4434,100 @@ export const guides: Guide[] = [
 				label: 'PG&E Corporation: Scammers are Targeting PG&E Customers at an Alarming Rate (2025 press release)',
 				url: 'https://investor.pgecorp.com/news-events/press-releases/press-release-details/2025/Scammers-are-Targeting-PGE-Customers-at-an-Alarming-Rate-Heres-What-You-Need-to-Know-to-Not-Fall-Victim/default.aspx',
 			},
+		],
+	},
+	{
+		slug: 'scottsdale-zip-codes',
+		category: 'ZIP Codes',
+		title: "Scottsdale, AZ ZIP Codes: The Real 15, and the One With a Phoenix Address",
+		description:
+			"USPS assigns 15 ZIP codes to Scottsdale, all inside Maricopa County, plus the one real estate agents call the 'Magic Zip Code' because it mails from Scottsdale while most of its homes sit inside Phoenix.",
+		published: '2026-08-24',
+		updated: '2026-08-24',
+		coreSummary:
+			"USPS assigns 15 ZIP codes to Scottsdale, Arizona as their primary place name, per this site's GeoNames-based source data, and every one sits inside a single county, Maricopa: the same single-county pattern this site has found in [Phoenix](/phoenix-zip-codes/) and [Irvine](/irvine-zip-codes/). zip-codes.com's Scottsdale city page counts 20, five more than GeoNames assigns; the gap traces to five ZIP codes zip-codes.com folds into its Scottsdale total whose GeoNames primary place name actually belongs to a neighboring town: 85253 (Paradise Valley), 85263 (Rio Verde), 85264 (Fort McDowell), and both 85268 and 85269 (Fountain Hills). Of the 15 that genuinely carry \"Scottsdale, AZ,\" four are P.O. Box-only codes with no residential population on zip-codes.com's delivery-type count (85252, 85261, 85267, and 85271), and the busiest is 85254, a ZIP code local real estate agents have nicknamed the \"Magic Zip Code\": its mail carries Scottsdale's name, but most of the homes inside its boundary sit across the line in Phoenix's city limits.",
+		sections: [
+			{
+				heading: 'All 15 ZIP codes with "Scottsdale, AZ" as the primary USPS place name',
+				body: [
+					"Every one of the 15 falls inside Maricopa County, the same pattern this site found in [Phoenix](/phoenix-zip-codes/) and [Irvine](/irvine-zip-codes/), and Scottsdale never needed to reach a second county to grow: Maricopa covers 9,224 square miles, and Scottsdale itself only about 185.",
+					"zip-codes.com's city page lists 20 ZIP codes under Scottsdale, five more than the 15 GeoNames assigns \"Scottsdale, AZ\" as a primary place name. Checking each of those five against this site's county-lookup data shows why: GeoNames files 85253 under Paradise Valley, 85263 under Rio Verde, 85264 under Fort McDowell, and both 85268 and 85269 under Fountain Hills, four separate towns whose mail routes run close enough to Scottsdale's that a directory built around delivery routing, rather than USPS's primary-place field, folds them into the same list.",
+					"Four of the 15 are P.O. Box-only codes with no residential population at all, per zip-codes.com's delivery-type classification: 85252, 85261, 85267, and 85271. The other 11 are standard residential and business routes, and the most populous is 85254, with roughly 46,000 residents on zip-codes.com's count, narrowly ahead of 85255 at roughly 45,000.",
+				],
+				table: {
+					caption: 'All 15 ZIP codes with "Scottsdale, AZ" as the primary USPS place name (per GeoNames.org, checked 2026-08-24)',
+					columns: ['ZIP', 'Type (per zip-codes.com)'],
+					rows: [
+						['85250', 'Standard'],
+						['85251', 'Standard'],
+						['85252', 'P.O. Box'],
+						['85254', 'Standard'],
+						['85255', 'Standard'],
+						['85256', 'Standard'],
+						['85257', 'Standard'],
+						['85258', 'Standard'],
+						['85259', 'Standard'],
+						['85260', 'Standard'],
+						['85261', 'P.O. Box'],
+						['85262', 'Standard'],
+						['85266', 'Standard'],
+						['85267', 'P.O. Box'],
+						['85271', 'P.O. Box'],
+					],
+				},
+			},
+			{
+				heading: 'The "Magic Zip Code" that mails from one city and mostly sits in another',
+				body: [
+					"85254 stretches from Shea Boulevard on the south to the Central Arizona Project canal on the north, bounded by Tatum Boulevard on the west and Scottsdale Road on the east. Multiple Scottsdale-area real estate sources describe the same split inside that boundary: most of the homes (estimates from local agents put the share at roughly 85 to 90 percent) sit within Phoenix's city limits, not Scottsdale's, even though their mail carries \"Scottsdale, AZ 85254\" as the address. That mailing designation matches what this site's GeoNames-based data assigns 85254 as its primary place name, Scottsdale, despite the underlying land belonging mostly to Phoenix.",
+					"One piece of the area holds steady no matter which city's line a given house falls on: schools. The whole ZIP code is zoned to the Paradise Valley Unified School District, a district real estate agents in the area frequently cite as a draw, regardless of whether a given address's municipal services come from Phoenix or Scottsdale. That combination, a Scottsdale mailing address, a school district both cities' residents compete to get into, and (for the roughly 85 to 90 percent of the ZIP code inside Phoenix) Phoenix's generally lower property tax rate, is what local agents mean when they call 85254 the \"magic\" one.",
+				],
+			},
+			{
+				heading: "From Old Town's grid to the McDowell Sonoran Preserve",
+				body: [
+					"85251 is Old Town Scottsdale's ZIP code: the walkable grid around Scottsdale Fashion Square, the art-gallery district on Main Street, and the entertainment corridor that gives the city its downtown identity. It's the third-busiest ZIP code on this list, at roughly 40,000 residents on zip-codes.com's count, behind 85254 and 85255.",
+					"At the opposite end of the city, 85255, 85262, and 85266 all border the McDowell Sonoran Preserve, a protected open-space area the Scottsdale City Council formally established with Resolution No. 4103 on October 3, 1994. That \"Day One\" dedication covered three parcels totaling 4.5 square miles, 2,860 acres: roughly 891 acres near 120th Street and Bell Road, about 689 acres near 136th Street and Thunderbird Road, and a third parcel of roughly two square miles along the city's eastern border north of Union Hills Drive. Mayor Herb Drinkwater led council members on a horseback ride through the land ahead of the outdoor dedication. The preserve has since grown to more than 30,500 acres, about 47 square miles, funded by two separate tax measures Scottsdale voters approved to buy the land outright rather than leave it open to development, making it the largest municipally owned urban preserve in the country. But bordering the preserve doesn't mean sparsely populated across the board: 85255 also contains large master-planned communities, including DC Ranch and Grayhawk, which is why it's the city's second-busiest ZIP code despite backing up to protected desert. 85262 and 85266, further into the preserve's footprint, run closer to what the desert-corridor label suggests: roughly 13,000 and 12,000 residents respectively, a fraction of 85255's count on the same border.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many ZIP codes does Scottsdale have?',
+				answer:
+					"This site's GeoNames-based source data counts 15. zip-codes.com's Scottsdale city page counts 20, but five of those carry a different town as their GeoNames primary place name (Paradise Valley, Rio Verde, Fort McDowell, and Fountain Hills, twice) rather than Scottsdale itself.",
+			},
+			{
+				question: "What is Scottsdale's \"Magic Zip Code\"?",
+				answer:
+					"85254. It mails under a Scottsdale address, but most of the homes inside its boundary, roughly 85 to 90 percent per local real estate estimates, actually sit within Phoenix's city limits. The whole ZIP code is zoned to the Paradise Valley Unified School District regardless of which city's line a given address falls on, which is the combination real estate agents mean when they call it \"magic.\"",
+			},
+			{
+				question: 'What county is Scottsdale in?',
+				answer:
+					"Maricopa County, and all 15 ZIP codes USPS assigns to Scottsdale as a primary place name stay inside that single county. The city, at roughly 185 square miles, has never come close to needing a second one.",
+			},
+			{
+				question: 'What area codes does Scottsdale use?',
+				answer:
+					"480, 602, and 623, the same three that cover the whole Phoenix metro area since a 2023 overlay recombined them. 602 served the whole state until 1995, when Arizona split off 520 for Tucson and the rest of the state; 602 itself split three ways in 1999, creating 480 for the East Valley (Scottsdale's side of the metro) and 623 for the West Valley. See [Phoenix's area code history](/phoenix-zip-codes/) for the full timeline.",
+			},
+			{
+				question: 'What is the McDowell Sonoran Preserve?',
+				answer:
+					"A protected desert open-space area bordering north Scottsdale's 85255, 85262, and 85266 ZIP codes. The Scottsdale City Council dedicated its first three parcels, 2,860 acres total, on October 3, 1994, and Scottsdale voters twice approved dedicated tax funding to keep buying land rather than let it go to development. It now covers more than 30,500 acres, about 47 square miles, making it the largest municipally owned urban preserve in the United States.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'Scottsdale, AZ ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/az-scottsdale.asp' },
+			{ label: 'Is Kierland Really in Scottsdale? The 85254 Zip Explained -- Best Arizona Home Finder', url: 'https://www.bestarizonahomefinder.com/blog/is-kierland-really-in-scottsdale-85254-magic-zip-code/' },
+			{ label: 'ZIP Code 85254 Boundary Map -- ZipMap.net', url: 'https://zipmap.net/zips/85254.htm' },
+			{ label: 'McDowell Sonoran Preserve -- City of Scottsdale', url: 'https://www.scottsdaleaz.gov/preserve' },
+			{ label: 'Fast Facts About the McDowell Sonoran Conservancy', url: 'https://www.mcdowellsonoran.org/fast-facts-about-the-mcdowell-sonoran-conservancy/' },
+			{ label: 'Scottsdale celebrates McDowell Sonoran Preserve -- Daily Independent (yourvalley.net)', url: 'https://www.yourvalley.net/stories/scottsdale-celebrates-mcdowell-sonoran-preserve,100365' },
+			{ label: 'Wikipedia: McDowell Sonoran Preserve', url: 'https://en.wikipedia.org/wiki/McDowell_Sonoran_Preserve' },
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
 ];
