@@ -1681,7 +1681,7 @@ export const guides: Guide[] = [
 				heading: 'Los Angeles: from one code in 1947 to seven today',
 				body: [
 					"213 covered the entire southern third of California when it launched in 1947. Los Angeles's own growth forced five splits off of 213 over the following decades -- 714 (1951, Orange County), 805 (1957, the central coast), 818 (1984, the San Fernando Valley), 310 (1991, the southwestern coast), and 323 (1998, the rest of central LA) -- before the pattern shifted from splitting to overlaying: 424 stacked onto 310 in 2006, 747 onto 818 in 2009, and, after 213 and 323 were formally merged back into a single overlay complex in 2017, a seventh code, 738, was added on top of that combined area in November 2024.",
-					"San Francisco followed a similar but smaller path: 415 (1947) split off 408 and 707 in 1959, then 510 in 1991 and 650 in 1997, before finally being overlaid by 628 in 2015 once splitting stopped being an option. Sacramento's 916 split once too -- 530 broke off in 1997 to cover Redding, Chico, and Lake Tahoe -- before 279 was added as an overlay on what remained of 916 in 2018; see this site's [Sacramento ZIP code list](/sacramento-zip-codes/) for how that same county lines up on the postal side.",
+					"San Francisco followed a similar but smaller path: 415 (1947) split off 408 and 707 in 1959, then 510 in 1991 and 650 in 1997, before finally being overlaid by 628 in 2015 once splitting stopped being an option. Sacramento's 916 split twice -- 209 broke off first in 1958 to cover Stockton, Modesto, and Merced, then 530 followed in 1997 for Redding, Chico, and Lake Tahoe -- before 279 was added as an overlay on what remained of 916 in 2018; see this site's [Sacramento ZIP code list](/sacramento-zip-codes/) for how that same county lines up on the postal side, or [209's own page](/209-area-code/) for why that code didn't get its own overlay until 2022, thirteen months after regulators had already forced it into 10-digit dialing.",
 					"949's 1998 split from 714 shows the same relief pattern on a smaller scale, and it left one loose end: a strip of Irvine still dials on 714 instead. See this site's [Irvine ZIP code list](/irvine-zip-codes/) for exactly where that boundary falls.",
 				],
 			},
@@ -4309,6 +4309,131 @@ export const guides: Guide[] = [
 				url: 'https://www.nanpa.com/sites/default/files/2026-03/2025_NANPA_AnnualReport_FINAL.pdf',
 			},
 			{ label: 'Texas Municipal League: City of Lubbock officials directory', url: 'https://directory.tml.org/profile/city/851' },
+		],
+	},
+	{
+		slug: '209-area-code',
+		category: 'Area Codes',
+		title: '209 Area Code: Ten-Digit Dialing Landed a Year Before the Overlay Did',
+		description:
+			'209 covers Stockton, Modesto, Merced, and 13 counties reaching into Yosemite National Park. It went to 10-digit dialing in 2021 for a reason that had nothing to do with its 2022 overlay.',
+		published: '2026-08-24',
+		updated: '2026-08-24',
+		coreSummary:
+			"Area code 209 has covered California's northern San Joaquin Valley -- Stockton, Modesto, and Merced -- since 1958, when it split off from area code 916. Forty years later, on November 14, 1998, the southern half of 209's own territory broke away in turn to form area code 559, leaving 209 with the footprint it holds today: seven counties in full and parts of six more, stretching from the edge of the Bay Area to a slice of Yosemite National Park itself. What sets 209's numbering history apart from every other area code this site has covered is the order its two most recent milestones landed in. Ten-digit dialing became mandatory across the region on October 24, 2021, more than a year before 209 had a second area code to justify it -- the trigger wasn't number exhaustion but a central-office prefix, 988, that regulators nationwide reassigned as the dialing code for the 988 Suicide & Crisis Lifeline. The overlay that kind of dialing change is usually paired with, 350, didn't actually launch until November 28, 2022.",
+		sections: [
+			{
+				heading: "Thirteen counties, from the edge of the Bay Area to Yosemite's front gate",
+				body: [
+					"The California Public Utilities Commission's own service-area listing for the 209/350 numbering plan area names seven counties as fully inside it -- Amador, Calaveras, Mariposa, Merced, San Joaquin, Stanislaus, and Tuolumne -- plus portions of six more: Alameda, Alpine, El Dorado, Fresno, Madera, and Sacramento. Thirteen counties in total, running from the eastern fringe of the Bay Area, across the flat agricultural floor of the San Joaquin Valley, and up into the Sierra Nevada foothills.",
+					"Stockton, Modesto, Tracy, Lodi, and Manteca anchor the valley-floor end of that range, but Wikipedia's own list of towns inside the 209/350 numbering plan area runs further than the valley: Sonora and Columbia in the Gold Country foothills, Kirkwood ski resort in Alpine County, and Yosemite National Park itself. The Yosemite Mariposa County Tourism Bureau's own office line, (209) 742-4567, is as concrete a confirmation as any that a national park shares a phone map with warehouse country 150 miles away.",
+				],
+				table: {
+					caption: 'The 209/350 numbering plan area by county (California Public Utilities Commission)',
+					columns: ['County', 'Coverage'],
+					rows: [
+						['Amador', 'Full'],
+						['Calaveras', 'Full'],
+						['Mariposa', 'Full'],
+						['Merced', 'Full'],
+						['San Joaquin', 'Full'],
+						['Stanislaus', 'Full'],
+						['Tuolumne', 'Full'],
+						['Alameda', 'Partial'],
+						['Alpine', 'Partial'],
+						['El Dorado', 'Partial'],
+						['Fresno', 'Partial'],
+						['Madera', 'Partial'],
+						['Sacramento', 'Partial'],
+					],
+				},
+			},
+			{
+				heading: 'From two-thirds of a Sacramento-anchored code to a fraction of that',
+				body: [
+					"When the North American Numbering Plan launched in 1947, a single code, 916, covered the northern third of California -- the entire region from the Oregon border down through the Sierra foothills and the Sacramento Valley. That territory didn't stay in one piece for long. In 1958, the southern portion of it, running from the Sacramento suburbs down through Stockton, Modesto, and Merced, split off as a new code, 209, while 916 kept the rest of the north, including Redding and Chico, until a further split of its own in 1997.",
+					"209 itself has split just once since. On November 14, 1998, the southern half of its own territory, Fresno and the rest of the San Joaquin Valley's agricultural core, broke away as area code 559. (The CPUC's own general area-code page gives a different account of both of those milestones, listing 415 as 209's parent code and 1997 as the year 559 split off. This site follows Wikipedia's dedicated article on the 209/350 numbering plan area instead, which lines up with this site's own numbering registry -- both trace 209 back to 916, not 415, and date the 559 split to November 14, 1998.) What's followed since hasn't been another split: growth inside 209's remaining footprint forced a mandatory move to 10-digit dialing on October 24, 2021, and an overlay, 350, thirteen months later on November 28, 2022, approved by the CPUC's Decision 22-05-018 the previous May. For how that same 1958 split and 1998 split-off fit into the rest of the state's numbering history, see this site's [California area codes list](/california-area-codes/).",
+				],
+				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 209 splits off 916 in 1958, splits off 559 in 1998, moves to mandatory ten-digit dialing in October 2021, and gains its first overlay, 350, in November 2022">
+	<line x1="45" y1="95" x2="635" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
+	<circle cx="80" cy="95" r="9" fill="#131a27"/>
+	<text x="80" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1958</text>
+	<text x="80" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">209 splits</text>
+	<text x="80" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">off 916</text>
+	<circle cx="270" cy="95" r="9" fill="#b5722f"/>
+	<text x="270" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">1998</text>
+	<text x="270" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">559 splits</text>
+	<text x="270" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">off 209</text>
+	<circle cx="460" cy="95" r="9" fill="#131a27"/>
+	<text x="460" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">Oct 2021</text>
+	<text x="460" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">10-digit dialing</text>
+	<text x="460" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">forced by 988</text>
+	<circle cx="620" cy="95" r="9" fill="#b5722f"/>
+	<text x="620" y="65" text-anchor="middle" fill="#1a2332" font-size="14" font-weight="700" font-family="ui-sans-serif, system-ui">Nov 2022</text>
+	<text x="620" y="122" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">350 overlay</text>
+	<text x="620" y="138" text-anchor="middle" fill="#1a2332" font-size="12" font-family="ui-sans-serif, system-ui">finally arrives</text>
+</svg>`,
+			},
+			{
+				heading: '10-digit dialing beat the overlay to the region by thirteen months',
+				body: [
+					"Every other overlay this site has covered arrived with 10-digit dialing attached to it, the same rollout on the same date. 209 broke that pattern. Local calls across the region required an area code starting October 24, 2021, more than a year before 350 gave the numbering plan area a second code at all.",
+					"The reason traces back to a single central-office prefix. In July 2020, the FCC designated 988 as the nationwide three-digit dialing code for the 988 Suicide & Crisis Lifeline. That created a conflict everywhere a phone company had already assigned ordinary seven-digit numbers starting with the prefix 988 inside an area code that still allowed seven-digit local dialing: dialing 988 could no longer reliably tell a switch whether a caller meant the crisis line or a neighbor's phone number. 209 was one of the numbering plan areas carrying that conflict, and its regulators resolved it the only way the FCC's rule allowed, by requiring the area code on every local call, independent of whether a second area code existed yet to justify it. A local newspaper serving Tuolumne County, one of the seven counties fully inside 209, covered the change as it happened that October, confirming the same October 24 date and the same 988 rationale that Wikipedia's own account of the numbering plan area records.",
+				],
+			},
+			{
+				heading: "The utility map inside 209 doesn't match the phone map either",
+				body: [
+					"209's territory doesn't map onto a single utility company any more than it maps onto a single county's borders. Pacific Gas and Electric supplies gas and electric service across most of the region, including Stockton and Merced, but Modesto and Turlock draw their electric power from their own municipal utilities instead, the Modesto Irrigation District and Turlock Irrigation District. MID has supplied retail electric service to the greater Modesto area since 1923, per its own published history, 35 years before area code 209 itself existed, and the city of Modesto's own directory of outside utilities lists MID, TID, and PG&E as three separate providers, not one.",
+					"PG&E's own reach across the rest of 209 still makes it the utility most residents in the region deal with, which is why a 2025 scam warning from the company applies broadly here. PG&E reported customers losing more than $190,000 to scammers during 2025 in a press release the company issued that June, describing callers who impersonate PG&E and threaten immediate service disconnection unless a customer pays on the spot, typically demanding a prepaid debit card, a gift card, cryptocurrency, or a mobile payment app like Zelle or Venmo. PG&E's own guidance: the company never sends a single disconnection notice within one hour of an actual shutoff, and never asks for payment through any of those methods. Customers who want to confirm a call is genuine can hang up and call PG&E's own line, 1-833-500-SCAM, instead of the number that just rang them. See this site's [overview of what's really behind a suspicious area code](/scam-area-codes/) for how neighbor spoofing, a different tactic, works elsewhere.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'What counties does the 209 area code cover?',
+				answer:
+					"Seven in full -- Amador, Calaveras, Mariposa, Merced, San Joaquin, Stanislaus, and Tuolumne -- plus parts of six more: Alameda, Alpine, El Dorado, Fresno, Madera, and Sacramento, per the California Public Utilities Commission's own service-area listing. That's 13 counties total, covering Stockton, Modesto, Merced, and towns up into the Sierra foothills.",
+			},
+			{
+				question: 'Why did 209 need 10-digit dialing before it had an overlay?',
+				answer:
+					"Because of a central-office prefix, not a shortage of area codes. Regulators nationwide designated 988 as the dialing code for the 988 Suicide & Crisis Lifeline in 2020, creating a conflict in any area code, including 209, that still had ordinary phone numbers assigned starting with 988 and still allowed seven-digit local dialing. 209 moved to mandatory 10-digit dialing on October 24, 2021, more than a year before its actual overlay, 350, launched.",
+			},
+			{
+				question: 'When did the 350 overlay start covering the 209 area?',
+				answer:
+					'November 28, 2022, under California Public Utilities Commission Decision 22-05-018, approved the previous May. New phone numbers requested in the 209 region after that date could be assigned either 209 or 350, depending on which prefixes carriers still had available.',
+			},
+			{
+				question: 'Does area code 209 cover Yosemite National Park?',
+				answer:
+					"Yes. Wikipedia's list of towns inside the 209/350 numbering plan area names Yosemite National Park directly, alongside Gold Country towns like Sonora and the Kirkwood ski resort in Alpine County. The Yosemite Mariposa County Tourism Bureau's own office number, (209) 742-4567, carries the area code.",
+			},
+			{
+				question: 'Is there a current phone scam targeting 209 area code customers?',
+				answer:
+					"Yes, from PG&E, the utility serving most of the region. PG&E reported customers losing more than $190,000 to scammers during 2025 in a company press release, describing callers who impersonate PG&E and threaten immediate disconnection unless paid instantly via a prepaid card, gift card, cryptocurrency, or app like Zelle or Venmo. PG&E says it never sends a single shutoff notice within an hour of an actual disconnection and never demands those payment methods; customers can verify a call by phoning the company's own line, 1-833-500-SCAM.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 209 and 350', url: 'https://en.wikipedia.org/wiki/Area_codes_209_and_350' },
+			{
+				label: 'California Public Utilities Commission: 209 Area Code (Decision 22-05-018)',
+				url: 'https://www.cpuc.ca.gov/industries-and-topics/internet-and-phone/area-codes-and-numbering/209-area-code',
+			},
+			{
+				label: 'The Union Democrat: Mandatory 1+10-digit dialing begins Sunday for local calls in the 209 area code',
+				url: 'https://www.uniondemocrat.com/news/article_a5ae51e4-3372-11ec-9023-c75a0ff88e4a.html',
+			},
+			{ label: 'Yosemite Mariposa County Tourism Bureau: Contact Us', url: 'https://www.yosemite.com/about-tourism-bureau/contact-us/' },
+			{ label: 'Wikipedia: Modesto Irrigation District', url: 'https://en.wikipedia.org/wiki/Modesto_Irrigation_District' },
+			{ label: 'City of Modesto: Outside Utilities Links', url: 'https://www.modestogov.com/1932/Outside-Utilities-Links' },
+			{
+				label: 'PG&E Corporation: Scammers are Targeting PG&E Customers at an Alarming Rate (2025 press release)',
+				url: 'https://investor.pgecorp.com/news-events/press-releases/press-release-details/2025/Scammers-are-Targeting-PGE-Customers-at-an-Alarming-Rate-Heres-What-You-Need-to-Know-to-Not-Fall-Victim/default.aspx',
+			},
 		],
 	},
 ];
