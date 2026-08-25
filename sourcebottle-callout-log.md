@@ -45,3 +45,14 @@
 - **发布状态**：✅ 已提交，跳转到 thankyou.asp，提示 "Pending approval..."。提交回执 product id = `e6f05eb98d5f184a690ae7745386eba2`。
 - **上线复核**：⏳ 待下次任务运行时补查。
 - **回复使用情况**：✅ 08-19收到Jean-Christophe Thery（MusaArtGallery创始人）回复，真实案例（+1号码误判导致短信验证/物流通知失败）已插入`us-country-code`一文新增章节，已build/test/deploy/IndexNow提交，已回信致谢。
+
+### 2026-08-25（周二，正常排期）— DialWick（dialwick.com）
+
+- **问题标题**：Process servers, court clerks, and permit officials: has an annexed city address been filed in the wrong county over a ZIP code assumption?
+- **角度**：绑定`what-county-is-houston-in`一文讲的真实边界情况——休斯顿178个ZIP编码全部落在Harris County，但城市实际边界因历史上的兼并（annexation）拓展到了Fort Bend和Montgomery两县的小块区域。征集process server/法院书记员/许可证审批人员举出真实案例——某个被兼并进城市但ZIP编码指向另一个县的地址，导致法律文书送达、许可证申请或陪审员传票寄错了县。与此前问过的诈骗区号角度（08-04）、ZIP编码与社区名不符角度（08-12）、+1国码国际误判角度（08-18）均不重叠，这次聚焦县级司法/行政管辖权层面的错配。
+- **绑定文章**：DialWick `what-county-is-houston-in`（What County Is Houston In?）。
+- **分类标签**：Topics = General + Property；Countries = United States（县级行政区划是美国特有制度，仅限美国）。
+- **表单设置**：Job title = Content Creator；Organisation = DialWick；Contact = Email；Unpaid；Email address 和 Contact email 均填 `contact@dialwick.com`。
+- **Deadline**：2026-09-23 17:00（鼠标真实点击日历控件选中）。
+- **发布状态**：✅ 已提交，跳转到 thankyou.asp，提示 "Pending approval..."。提交回执 product id = `6f512df6c1fb2fad8b28aade464e0983`。
+- **上线复核**：⏳ 待下次任务运行时补查。

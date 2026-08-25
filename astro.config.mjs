@@ -8,6 +8,7 @@ import { sitemapConfig } from './vendor/site-toolkit/packages/sitemap-config/src
 
 // https://astro.build/config
 export default defineConfig({
+
 	site: 'https://dialwick.com',
 	integrations: [sitemap(sitemapConfig())],
 	build: {
