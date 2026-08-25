@@ -25,7 +25,10 @@
   "https://dialwick.com/texas-zip-codes/": {
     "submitted_date": "2026-08-09",
     "last_submitted_date": "2026-08-09",
-    "verified_status": "pending"
+    "verified_status": "verified_indexed",
+    "last_checked_date": "2026-08-25",
+    "verified_method": "bwt_url_inspection",
+    "verify_note": "Indexed successfully, No SEO/GEO issues found"
   },
   "https://dialwick.com/texas-area-codes/": {
     "submitted_date": "2026-08-03",
@@ -129,23 +132,33 @@
     "last_submitted_date": "2026-08-06",
     "verified_status": "pending",
     "note": "Discovered but not crawled, discovered date shows sentinel anomaly '01 Jan 2006', cannot determine true age; distinct crawl message variant ('was discovered but has not been crawled yet' with troubleshooting bullets, not the usual 'has some issues' text)",
-    "last_checked_date": "2026-08-23",
-    "verified_method": "bwt_url_inspection"
+    "last_checked_date": "2026-08-25",
+    "verified_method": "bwt_url_inspection",
+    "verify_note": "哨兵异常持续(discovered 01 Jan 2006), 无法判定真实账龄"
   },
   "https://dialwick.com/nashville-zip-codes/": {
     "submitted_date": "2026-08-09",
     "last_submitted_date": "2026-08-09",
-    "verified_status": "pending"
+    "verified_status": "pending",
+    "last_checked_date": "2026-08-25",
+    "verified_method": "bwt_url_inspection",
+    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄"
   },
   "https://dialwick.com/denver-zip-codes/": {
     "submitted_date": "2026-08-09",
     "last_submitted_date": "2026-08-09",
-    "verified_status": "pending"
+    "verified_status": "pending",
+    "last_checked_date": "2026-08-25",
+    "verified_method": "bwt_url_inspection",
+    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄"
   },
   "https://dialwick.com/michigan-area-codes/": {
     "submitted_date": "2026-08-10",
     "last_submitted_date": "2026-08-17",
-    "verified_status": "pending"
+    "verified_status": "pending",
+    "last_checked_date": "2026-08-25",
+    "verified_method": "bwt_url_inspection",
+    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄"
   },
   "https://dialwick.com/chicago-area-code/": {
     "submitted_date": "2026-08-10",
