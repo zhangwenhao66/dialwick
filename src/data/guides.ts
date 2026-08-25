@@ -3676,4 +3676,57 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
+	{
+		slug: 'what-county-is-san-antonio-in',
+		category: 'Counties',
+		title: 'What County Is San Antonio In?',
+		description:
+			"82 of San Antonio's 83 ZIP codes sit in Bexar County, Texas; the other reaches into Comal County next door. Bexar itself once covered nearly all of West Texas, before 128 of today's counties were carved out of it.",
+		published: '2026-08-25',
+		updated: '2026-08-25',
+		coreSummary:
+			"82 of the 83 ZIP codes USPS assigns to San Antonio sit inside Bexar County, Texas. The exception is 78266, a ZIP in the far northeast that San Antonio shares with the small cities of Garden Ridge and Selma, which belongs to Comal County instead. Bexar County was created on December 20, 1836, with San Antonio named its county seat the same day, and it's named for San Antonio de Béxar, the Spanish colonial municipality that governed the area starting in 1731, not for a person the way most Texas counties are. At its founding, Bexar stretched across almost the entire western half of the Republic of Texas; the state began carving new counties out of that territory in 1860, and 128 of Texas's present-day counties trace back to it. What's left today, at 1,248 square miles, is still Texas's fourth-most-populous county, with roughly 2.16 million residents as of the latest Census Bureau estimate, up from just over 2 million at the 2020 census.",
+		sections: [
+			{
+				heading: "San Antonio's one ZIP code that isn't in Bexar County",
+				body: [
+					"USPS lists 83 ZIP codes with San Antonio as the primary place name, fourth-most of any Texas city behind Houston, El Paso, and Dallas, as this site's [Texas ZIP code overview](/texas-zip-codes/) breaks down. 82 of those 83 sit inside Bexar County. The one exception is 78266, a ZIP in San Antonio's far northeast corner that also covers the small cities of Garden Ridge and Selma; most of that ZIP falls in Comal County, the county just northeast of Bexar that's home to New Braunfels. That's a real border crossing showing up right in a San Antonio ZIP code, a step further than what [Houston](/what-county-is-houston-in/) and [Dallas](/dallas-zip-codes/) have, where annexation has pulled the actual city limits into neighboring counties without any of it touching a ZIP code.",
+				],
+			},
+			{
+				heading: "Bexar County's territory once reached toward Wyoming",
+				body: [
+					"Bexar County predates Texas independence by name. It takes its name from San Antonio de Béxar, the municipality Spain established at the site in 1731 after 16 families of Canary Islanders, 56 settlers in all, arrived and set up next to the mission system already there. When the Republic of Texas organized Bexar as a county on December 20, 1836, with San Antonio as its seat, the county covered almost the entire western half of the republic, including disputed territory stretching through eastern New Mexico and north toward Wyoming. That footprint didn't last. Texas began partitioning Bexar's territory in 1860, and by the time the process wrapped up, 128 of the state's 254 counties had been carved out of the original county, according to the Texas State Historical Association's Handbook of Texas. What's left, at 1,248 square miles, still ranks as Texas's fourth-largest county by population today, behind [Harris County](/what-county-is-houston-in/) (Houston's home county), Dallas, and Tarrant (Fort Worth). The Census Bureau's latest estimate puts Bexar at roughly 2.16 million residents, up from just over 2 million at the 2020 census.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'Is San Antonio in Bexar County?',
+				answer:
+					"Yes, for 82 of its 83 ZIP codes. The exception is 78266, a ZIP in the far northeast shared with Garden Ridge and Selma, which sits in Comal County instead.",
+			},
+			{
+				question: 'When was Bexar County founded?',
+				answer: 'December 20, 1836, with San Antonio named as its county seat the same day.',
+			},
+			{
+				question: 'Why is it called Bexar County?',
+				answer:
+					"It's named for San Antonio de Béxar, the Spanish colonial municipality founded at the site in 1731, not for a person the way most other Texas counties are. Harris County, for comparison, is named for John Richardson Harris.",
+			},
+			{
+				question: 'Is Bexar the largest county in Texas?',
+				answer: "No. It's the fourth-largest by population, behind Harris (Houston), Dallas, and Tarrant (Fort Worth) counties.",
+			},
+		],
+		sources: [
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'History of Bexar County -- Bexar County, TX official website', url: 'https://www.bexar.org/2985/History-of-Bexar-County' },
+			{ label: 'Handbook of Texas: Bexar County -- Texas State Historical Association', url: 'https://www.tshaonline.org/handbook/entries/bexar-county' },
+			{ label: 'Wikipedia: Bexar County, Texas', url: 'https://en.wikipedia.org/wiki/Bexar_County,_Texas' },
+			{ label: 'US Census Bureau QuickFacts: Bexar County, Texas', url: 'https://www.census.gov/quickfacts/fact/table/bexarcountytexas/PST045224' },
+			{ label: 'USAFacts: Bexar County, Texas population data', url: 'https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/texas/county/bexar-county/' },
+		],
+	},
 ];
