@@ -2479,7 +2479,7 @@ export const guides: Guide[] = [
 		description:
 			"+1 isn't unique to the United States -- Canada and 18 Caribbean nations and territories dial out under the same code, and most of them didn't get their own area code until the 1990s.",
 		published: '2026-08-05',
-		updated: '2026-08-05',
+		updated: '2026-08-25',
 		coreSummary:
 			"The US country code is +1, but +1 alone doesn't tell you a number is American. Twenty places share it under the North American Numbering Plan (NANP): the US and its territories, Canada, and 18 Caribbean nations and territories, from the Bahamas to Trinidad and Tobago. Most of those islands didn't get their own area code until the 1990s -- before that, calls to more than a dozen of them all funneled through one shared area code, 809. The only way to tell a US number from a Bahamian, Jamaican, or Bermudian one dialed under the same +1 is the three-digit area code that follows it.",
 		sections: [
@@ -2516,7 +2516,7 @@ export const guides: Guide[] = [
 			{
 				heading: "Most of that list didn't exist as separate area codes until the 1990s",
 				body: [
-					'Until the mid-1990s, nearly all of the NANP\'s Caribbean members shared a single area code, 809, with no way to tell one island\'s number from another\'s just by looking at it. NANPA split that code apart in stages: Bermuda\'s 441 went first, in 1995, followed by Puerto Rico\'s 787 on March 1, 1996, the Bahamas\' 242 on October 1, 1996, and Barbados\' 246 later that same year. Saint Lucia\'s 758 began permissive dialing in July 1996, Saint Kitts and Nevis\'s 869 that October, and Saint Vincent and the Grenadines didn\'t get its own 784 until June 1998. The Dominican Republic split off from 809 over an even longer stretch, adding overlay codes 829 and then 849 as the original code ran out of numbers to assign.',
+					'Until the mid-1990s, nearly all of the NANP\'s Caribbean members shared a single area code, 809, with no way to tell one island\'s number from another\'s just by looking at it. NANPA split that code apart in stages: Bermuda\'s 441 went first, in 1995, followed by Puerto Rico\'s 787 on March 1, 1996, Barbados\' 246 on July 1, 1996, and the Bahamas\' 242 later that same year, on October 1. Saint Lucia\'s 758 began permissive dialing in July 1996 as well, Saint Kitts and Nevis\'s 869 that October, and Saint Vincent and the Grenadines didn\'t get its own 784 until June 1998. The Dominican Republic split off from 809 over an even longer stretch, adding overlay codes 829 and then 849 as the original code ran out of numbers to assign.',
 					"Sint Maarten's 721 is the newest addition on the list: it wasn't assigned until 2011, the year after Sint Maarten became its own constituent country within the Kingdom of the Netherlands rather than a district of the old Netherlands Antilles. The numbering plan keeps tracking political geography, not just running out of digits.",
 				],
 			},
@@ -2557,8 +2557,9 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: Area codes 809, 829, and 849', url: 'https://en.wikipedia.org/wiki/Area_codes_809,_829,_and_849' },
 			{ label: 'Wikipedia: Area code 721 (Sint Maarten)', url: 'https://en.wikipedia.org/wiki/Area_code_721' },
 			{ label: 'Wikipedia: Area code 784 (Saint Vincent and the Grenadines)', url: 'https://en.wikipedia.org/wiki/Area_code_784' },
-		],
-	},
+			{ label: 'Wikipedia: Area code 246 (Barbados)', url: 'https://en.wikipedia.org/wiki/Area_code_246' },
+			],
+		},
 	{
 		slug: 'how-to-call-philippines-from-usa',
 		category: 'International Dialing',
