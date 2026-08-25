@@ -1394,3 +1394,95 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "escalation": null
 }
 ```
+
+## us-country-code
+
+```json
+{
+  "url_slug": "us-country-code",
+  "url": "https://dialwick.com/us-country-code/",
+  "last_audited": "2026-08-25",
+  "published_date": "2026-08-05",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "5 named, independently verifiable sources: NANPA's own official 'About the NANP' page, FCC international-dialing guide, and 3 specific Wikipedia articles (Area codes 809/829/849, Area code 721, Area code 784), plus a 4th Wikipedia source added during this audit (Area code 246). Not vague/generic attribution."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed (1 finding); everything else independently verified accurate",
+      "detail": "Unique verification priorities for this article: (a) the '20 NANP members' claim and the specific 18-territory/area-code table; (b) the historical area-code-split dates in the 1990s; (c) the Sint Maarten 721/2011 claim and its causal link to 2010 constituent-country status; (d) internal consistency with this site's own scam-area-codes article's corrected 10-code one-ring-scam list; (e) whether the Puerto Rico 787 mention double-counts Puerto Rico outside the '18 Caribbean nations and territories' bucket. Results: (a) CONFIRMED ACCURATE -- fetched NANPA's own official page (nanpa.com/about) directly, which lists exactly 20 members (US+territories, Canada, and 18 named Caribbean/Atlantic entities) matching the article's table row-for-row, including area codes. (b) ONE ERROR FOUND: the article stated 'the Bahamas' 242 on October 1, 1996, and Barbados' 246 later that same year' -- backwards. Independently verified via Wikipedia's Area code 246 article ('in effect from 1 July 1996') and a corroborating second source (allareacodes.com, 'put into service on July 1, 1996') that Barbados' 246 actually took effect 3 months BEFORE the Bahamas' 242 (October 1, 1996), not after. All other dates in the same paragraph (Bermuda 441 in 1995, Puerto Rico 787 March 1 1996, Saint Lucia 758 and Saint Kitts/Nevis 869 in mid-to-late 1996, Saint Vincent 784 June 1998, Dominican Republic overlay order 829-then-849) independently confirmed accurate via WebSearch + direct Wikipedia API fetches. (c) CONFIRMED ACCURATE -- Wikipedia's 'Area codes in the Caribbean' overview confirms Sint Maarten joined the NANP effective 30 September 2011, following the Netherlands Antilles' dissolution in October 2010; the article's 'wasn't assigned until 2011, the year after... became its own constituent country' framing matches. (d) CONFIRMED CONSISTENT -- this article's one-ring-scam cross-reference already lists the corrected 10-code set (268, 284, 473, 649, 664, 767, 809/829/849, 876), matching this site's own scam-area-codes audit finding; no internal contradiction. (e) CONFIRMED NOT AN ISSUE -- the Puerto Rico/787 mention appears only in the historical-context sentence about the 809 split, not in the 18-item Caribbean table itself; the article does not double-count Puerto Rico as a 19th/20th separate entity outside 'the US and its territories.'"
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "published 2026-08-04 [sic 2026-08-05]; all claims are static historical/administrative facts (NANPA membership, area-code split dates), not the kind of figure that drifts day to day. No new NANP membership or split activity since publish. updated bumped to 2026-08-25 for the substantive date-sequencing fix (published field already exists on this entry, so no L-0809-1-style datePublished fallback risk)."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass, strong",
+      "detail": "Live SERP check (dataforseo_query.py serp \"us country code\") shows the organic results dominated by bare-fact answer sites (instarem, countrycode.org, att.com, rebtel, talk360, xe.com, a Columbia University reference page, Wikipedia's country-code list, a Facebook thread) that stop at 'the US country code is +1' with no mention of the other 19 NANP members or the 1990s area-code-split history. DialWick's article's core framing -- '+1 belongs to 20 places, not just the US,' with the full 18-territory table and specific historical dates -- is genuine incremental depth versus the SERP, not a rehash."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "pass",
+      "detail": "Live page checked via curl+DOM: single H1, self-referencing canonical, no meta robots block, 2 JSON-LD blocks (FAQPage with 3 Q&A pairs; Article with nested WebPage/Person). Title field 55 chars (66 with ' | DialWick' suffix), meta description 182 chars -- both within this site's already-established distribution across sibling articles (per L-0805-2 precedent: compare to actual sitewide distribution, not a generic character cap), not treated as defects."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85-88/99 both before and after",
+      "detail": "Manual rubric pass against the ai-seo skill's Structure/Authority/Presence framework: strong structure (216-word answer-first coreSummary, 4 H2 sections, 1 data table, 3-item FAQ), strong authority (5 named sources including a direct NANPA primary-source citation, dense specific numbers/dates throughout -- exactly the 'cite sources + add statistics' combination the skill's cited Princeton GEO research flags as the highest-impact pairing), solid presence (robots.txt explicitly allows GPTBot/ChatGPT-User/ClaudeBot/Claude-Web/PerplexityBot/Google-Extended, Person-schema author attribution, 3 inbound + 2 outbound internal links). Weakness (unchanged by this fix): no directly quoted named-expert material. Fix improved factual accuracy and fluency without changing structure, so score is unchanged, comfortably above the 80-point threshold."
+    },
+    {
+      "dimension": "7. Humanizer/avoid-ai-writing backfill",
+      "status": "pass, no re-humanization needed",
+      "detail": "published 2026-08-05, predates the 2026-08-07 avoid-ai-writing mandate. Grepped full article text against common AI-vocabulary/vague-attribution/rule-of-three word lists: no matches found. 9 instances of this site's established ASCII double-hyphen ' -- ' dash convention (L-0821-4 precedent: accepted sitewide house style, not flagged; fixing only this one article would create inconsistency, not resolve a real problem). No em dash, no vague attribution, no filler phrases, no promotional language. The one new sentence added during this audit's fix (Barbados/Bahamas date correction) was written in the same fact-dense, specific-numbers style as the surrounding text and independently re-checked against the same word lists -- no new AI-writing tells introduced."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "5 of 6 cited sources (post-fix) return HTTP 200 to curl: 3 Wikipedia articles (809/829/849, 721, 784) plus the newly-added Area code 246 article, all 200. FCC tip-sheet URL returns 403 to curl -- consistent with this site's already-documented Akamai-style bot-blocking pattern (same behavior confirmed on this site's FCC citations in the scam-area-codes and texas-zip-codes audits), confirmed live via WebSearch results showing current, matching content. NANPA's own page (nationalnanpa.com/about_us/abt_nanp.html) returned a curl-level SSL_ERROR_SYSCALL (connection-layer, not an HTTP error) in this sandboxed environment, but was independently confirmed live and current via WebSearch (returned as a top result with matching title, and its content -- the exact 20-member list -- was fetched and quoted successfully from the sibling nanpa.com/about page, which is the same organization's current primary domain). Not treated as link rot; consistent with the known curl/proxy blind-spot pattern (L-0809-8-adjacent)."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "grep of guides.ts confirms 3 inbound in-body links from other articles with 3 distinct anchor phrases ('this site's country code page', 'the US country code' x2), from austin-zip-codes-line, how-to-call-philippines-from-usa, and how-to-call-australia-from-us. The article itself links out to /how-do-area-codes-work/ and /scam-area-codes/ (2 outbound in-body links). Category 'International Dialing' has 3 members (us-country-code, how-to-call-philippines-from-usa, how-to-call-australia-from-us), <=6, so the automated related-guides rotation shows all 3 to each other mutually -- verified live via curl that the sibling pages' rendered HTML links back to /us-country-code/."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "FAQPage/Article/BreadcrumbList (via nested WebPage) JSON-LD all present on the live page and consistent with content, verified both pre-fix (baseline) and post-fix (live poll): Article headline/description match title/description fields, 3 FAQ Q&As match the FAQPage schema's 3 Question/Answer pairs. seo_drift.py compare after the fix reported only an expected WARNING-level 'schema content changed' diff (matching the intended date-sequence edit), no CRITICAL findings (canonical, noindex, H1, title, HTTP status all unchanged)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "One-ring-scam mention is a single cross-reference sentence pointing to this site's own scam-area-codes article (already reviewed and accepted in that article's own audit as standard, government-sourced framing, not a blanket accusation against the named nations) rather than a full re-litigation of the topic here. No reverse-number-lookup functionality/claims, no calculator, consistent with the site's stated YMYL/privacy red line. Puerto Rico double-counting concern (priority e above) checked and confirmed not present."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this guide entry -- nothing to validate."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt resolves correctly to pub-5245502795720653 (verified live, HTTP 200). robots.txt has explicit AI-crawler Allow rules (GPTBot/ChatGPT-User/ClaudeBot/Claude-Web/PerplexityBot/Google-Extended) alongside the default Allow-all. /privacy/ and /about/ both return 200. No reverse-lookup, scam, or fraud content on this article itself (only a brief, sourced cross-reference to the dedicated scam-area-codes page), no misleading claims."
+    }
+  ],
+  "independent_verification": "1 problem was found requiring independent verification (the Barbados/Bahamas date-sequencing error); everything else in dimension 2 was a direct primary-source confirmation (NANPA's own official member list, Wikipedia API fetches for each specific date) rather than a 'problem' needing a second opinion. 1 agent spawned with only the specific claim + supporting evidence (not this audit's overall judgment): independently re-researched via fresh WebSearch queries and reached the same conclusion -- CONFIRMED PROBLEM, Barbados' 246 (effective July 1, 1996) chronologically precedes the Bahamas' 242 (effective October 1, 1996), so the article's 'Barbados... later that same year [than the Bahamas]' framing was backwards. Agent completed in ~22 seconds; no watchdog/stuck-agent escalation needed.",
+  "actions_taken": [
+    "Reordered and corrected the Barbados/Bahamas 809-split date sentence: 'the Bahamas' 242 on October 1, 1996, and Barbados' 246 later that same year' -> 'Barbados' 246 on July 1, 1996, and the Bahamas' 242 later that same year, on October 1', preserving the surrounding sentence's style and the following sentence's already-correct Saint Lucia/Saint Kitts/Saint Vincent ordering.",
+    "Added a supporting source citation (Wikipedia: Area code 246, Barbados) for the newly-added specific date.",
+    "updated bumped from 2026-08-05 to 2026-08-25 for the substantive factual fix (published field already existed, no backfill needed).",
+    "npm test 64/64 passed, npm run build 52 pages succeeded.",
+    "Ran seo_drift.py baseline before the edit and compare after: only the expected WARNING-level 'schema content changed' diff, no CRITICAL findings.",
+    "Committed (51aa3d4) and pushed to origin/main; polled the live URL (this site has no CF deploy hook, relies on git auto-deploy) with cache-busting query params until the new text was confirmed present.",
+    "Submitted https://dialwick.com/us-country-code/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200); logged to indexnow-submit-log.json.",
+    "Appended a dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish."
+  ],
+  "seo_score": "no material change (title/description already within this site's established norms; no SEO technical issues found)",
+  "geo_score": "~85-88/99 both before and after (pass, comfortably above the 80 threshold; structure unchanged, accuracy and fluency improved)",
+  "escalation": null
+}
+```
