@@ -1902,6 +1902,12 @@ export const guides: Guide[] = [
 				},
 			},
 			{
+				heading: 'It is not just a scam risk, businesses assume wrong too',
+				body: [
+					'Sebastian Garrido, digital marketing manager at travel agency Vibe Adventures, said a customer number starting with +1 809 once got treated as a routine US contact until his team noticed the calls and texts were not landing the way a domestic number\'s should. The area code belongs to the Dominican Republic, not the United States, and nothing about the +1 prefix flags that on its own. For a travel company, the same mix-up can affect SMS verification, support routing, billing, or which country a traveler\'s number gets logged under, so the area code is worth checking against a list like the one above rather than assumed from the prefix alone.',
+				],
+			},
+			{
 				heading: 'What to actually do about an unfamiliar call',
 				body: [
 					'The FTC\'s standing advice, independent of which area code shows up, is simple and doesn\'t require memorizing any list: don\'t answer calls from numbers you don\'t recognize, and never call back a number that rang once and disconnected. If you do answer and something feels off, hang up rather than staying on the line to "verify" who they are. Review your phone bill for unexpected international or premium charges if you did call back a one-ring number, and report the call to your carrier.',
