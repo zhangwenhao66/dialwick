@@ -244,5 +244,15 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-26",
+    "action": "submitted",
+    "reason": "今日无新发布（页型集中度闸门禁用模板页，非模板候选词已耗尽）。改用build-index-queue.py队列取代理值最高候选miami-area-code，URL Inspection确认未收录，REQUEST INDEXING提交成功。",
+    "submitted_urls": [
+      "https://dialwick.com/miami-area-code/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": 1
   }
 ]
