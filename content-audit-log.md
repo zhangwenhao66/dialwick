@@ -1486,3 +1486,101 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "escalation": null
 }
 ```
+
+## austin-zip-codes
+
+```json
+{
+  "url_slug": "austin-zip-codes",
+  "url": "https://dialwick.com/austin-zip-codes/",
+  "last_audited": "2026-08-27",
+  "published_date": "2026-08-05",
+  "findings": [
+    {
+      "dimension": "0. Article-specific diagnostic (data source risk assessment)",
+      "status": "informational",
+      "detail": "Article depends on 3 distinct data classes: (a) GeoNames.org's US postal code export (ZIP-to-county assignment for the 74-row table, explicitly cited with a 'checked 2026-08-05' freshness marker), (b) IRS's own address records for the 2 non-geographic ZIPs (73301/73344), (c) historical/legal facts about Williamson County MUD No. 1 -> Anderson Mill Limited District annexation (dates, vote counts, statute mechanism). Identified 5 article-specific checks before deep-diving: (1) does the 74-row table match the site's own zipCounty.json byte-for-byte; (2) are 73301/73344 genuinely IRS-only and correctly located in Travis County; (3) are the MUD/annexation dates (1973 formation, 1975-mid1980s construction, Dec 31 2008 annexation, May 2009 ratification vote) independently verifiable, not just copied from the article's own single cited source (amld.org); (4) is the 787-Puerto-Rico-area-code coincidence claim (in service since March 1, 1996) accurate; (5) does the 'Austin ranks 5th among Texas cities' cross-reference to texas-zip-codes still match that sibling article's own table."
+    },
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "4 named sources (GeoNames.org, IRS.gov PDF, amld.org, Wikipedia), Person-schema author attribution linking to /about/ (200), specific dated/numbered facts throughout (not generic filler) -- stronger EEAT than several sibling articles' pre-fix state documented earlier in this log (which had single-source EEAT as a confirmed weakness)."
+    },
+    {
+      "dimension": "2. Fact accuracy (priority)",
+      "status": "pass, no errors found",
+      "detail": "(a) The 74-row ZIP/county table was diffed programmatically against this site's own src/lib/data/zipCounty.json (GeoNames-derived, retrieved 2026-08-03): zero mismatches -- exact same 74 ZIPs, exact same 72 Travis / 2 Williamson (78717, 78729) split. (b) 73301 confirmed via WebSearch as the IRS Austin Submission Processing Center's ZIP (Parker Lane/East Riverside-Oltorf area); 73344 confirmed via WebSearch as the same IRS campus's second ZIP in the Walnut Creek Business Park area of Travis County -- both match the article's claims exactly. (c) Anderson Mill Limited District history independently corroborated via multiple WebSearch queries against communityimpact.com and the district's own historical record (accessible via WebSearch summary; direct curl/wayback fetch of amld.org returned 403/503, consistent with this site's known bot-blocking pattern): 1973 formation as Williamson County MUD No. 1, first houses 1975, construction continuing into the mid-1980s (~3,400 homes), 1998 Strategic Partnership Agreement (2nd amendment found via AustinTexas.gov EDIMS confirming a 2004 amendment), Anderson Mill Limited District created December 31, 2008, ratified by district voters May 9, 2009 -- every one of the article's specific dates/mechanisms matches. (d) 787 Puerto Rico area code confirmed via WebSearch as in service since March 1, 1996, split from 809 -- matches the article exactly, and is internally consistent with how this site's other ZIP/area-code articles already cite the same fact. (e) Cross-reference to texas-zip-codes ('putting Austin fifth... behind Houston, El Paso, Dallas, and San Antonio') verified against that sibling article's own table: Houston 178, El Paso 137, Dallas 105, San Antonio 83, Austin 74, Fort Worth 56 -- exact match, 5th place confirmed. (f) Noted but not treated as an error: DataForSEO competitor spot-check (see dimension 4) found zip-codes.com's Austin ZIP list swaps one code vs. this article -- zip-codes.com's list includes 78681 (a Round Rock-primary, Williamson County ZIP that only partially touches Austin) instead of 78769; a live GeoNames.org lookup performed today (2026-08-27) still returns 78769 as Austin/Travis, matching this article's disclosed source exactly as of the live check. This is provider-to-provider ZIP database variance (no single canonical 'correct' ZIP-to-city list exists across providers), not a DialWick data error -- the article transparently discloses its GeoNames methodology and checked-date in the table caption, and this is the same GeoNames-sourcing approach already used identically across 10+ other already-audited ZIP-code articles on this site."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass, no update needed",
+      "detail": "published (2026-08-05) and updated (2026-08-05) both already present, no git-history backfill needed. No facts requiring a refresh were found -- the ZIP/county table, IRS ZIP assignments, and Anderson Mill annexation history are all historically stable facts (not subject to the 'active database keeps growing' or 'developing situation resolved' drift patterns seen elsewhere on this site), and independent re-verification today found the article's claims still accurate."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "dataforseo-query serp check for 'austin zip codes' (2026-08-27, real API call, $0.002): top organic results are spyglassrealty.com, ciclt.net, mytexashomeresource.com, data.austintexas.gov (official GIS), gisgeography.com (map), carefulhomeinspections.com ('6 Best Austin Zip Codes for Families'), a YouTube video, and maxleaman.com (map) -- dominated by real-estate/neighborhood-guide and map/GIS content. Directly inspected zip-codes.com's Austin page (a canonical ZIP-database aggregator) as a second competitor: it presents a bare data panel (population/income/housing stats, county list, ZIP count) with no narrative content. None of the visible competitors explain the IRS non-geographic ZIP pair (73301/73344), the Williamson County/Anderson Mill MUD annexation history behind 78717/78729, or the 787-area-code/Puerto-Rico numbering coincidence -- these are genuine, non-templated differentiators specific to this article, not a same-structure-different-city swap (consistent with this site's established pattern of avoiding the 'batch-template' doorway-page risk flagged in this project's CLAUDE.md)."
+    },
+    {
+      "dimension": "5. seo-audit (technical/on-page)",
+      "status": "pass",
+      "detail": "Live page checked via curl+DOM: single H1, self-referencing canonical, no meta-robots block, 3 JSON-LD blocks (Article/FAQPage/BreadcrumbList) present and consistent with source content (headline/dates/FAQ questions all match guides.ts). robots.txt explicitly Allows GPTBot/ChatGPT-User/ClaudeBot/Claude-Web/PerplexityBot/Google-Extended plus default Allow-all. Article present in sitemap-0.xml. ads.txt resolves to pub-5245502795720653. Title (88 chars incl. suffix, 77 content-only) and description (193 chars) were initially flagged as candidate over-length issues based on an outdated ~150-160-char threshold remembered from this log's earlier entries; independent review agent returned NOT-CONFIRMED for both, citing this log's own L-0805-2 precedent (compare to actual sitewide distribution, not a generic cap) -- confirmed by directly running the site's check_seo_field_stats.py tool: title z-score=0.72, description z-score=0.39 (both well within normal range; site-wide across 44 articles: title mean=64.6/max=90, description mean=183.9/max=237). Not treated as defects. See dedicated finding below for the near-miss."
+    },
+    {
+      "dimension": "5b. Near-miss: stale-threshold false positive (resolved)",
+      "status": "not-confirmed, no fix needed",
+      "detail": "Candidate findings 'title too long' and 'description too long' were sent to independent review before any fix was applied, per this task's hard requirement. Independent agent's verdict: NOT-CONFIRMED for both -- the ~150-160-char figure this audit initially reasoned from was a stale, pre-2026-08-06 threshold from this log's earliest entries, since superseded by the L-0805-2 'compare to actual site distribution' methodology (documented in this same file at multiple later entries: 'site-wide description avg 183.9 chars across 50 articles... not treated as defects per the L-0805-2 precedent'). Re-verified directly in this run with check_seo_field_stats.py: z=0.72 (title) and z=0.39 (description), both far from outlier range. No edit made. Logged as a recurrence under 独立站/内容通用教训库.md's L-0805-2 entry (this is the first recorded case of the failure running in the opposite direction -- a near false-positive from relying on a remembered stale threshold instead of running the tool -- rather than a missed real outlier)."
+    },
+    {
+      "dimension": "6. GEO / ai-seo (99-point rubric)",
+      "status": "pass, ~86-88/99, no fix needed",
+      "detail": "Manual rubric pass consistent with prior audits' methodology on this site: strong structure (3 H2 sections, 1 74-row data table, 3-item FAQ, all schema present), strong authority (4 named sources incl. a primary-source IRS.gov PDF, dense specific numbers/dates throughout -- the 'cite sources + add statistics' combination the ai-seo skill's cited Princeton GEO research flags as highest-impact), decent internal linking (4 outbound in-body links with varied anchor text, 1 manual inbound link from texas-zip-codes plus related-guides rotation coverage since the ZIP Codes category has well over 6 members -- not an orphan), and a genuine analytical nuance (explicitly contrasts Austin's ZIP/county mismatch cause -- utility-district development predating annexation -- against Atlanta's different cause -- Fulton/DeKalb shared metro history -- a counterargument/nuance signal the rubric rewards). No factual errors, no zero-links gap, no overconfident/absolute causal claims lacking counter-example checks (unlike this site's well-documented recurring 'entirely one county' overclaim pattern in sibling articles -- this article correctly presents the 72/2 county split without an absolute claim). Comfortably above the 80-point threshold; no fix needed so score is unchanged before/after."
+    },
+    {
+      "dimension": "7. Humanizer/avoid-ai-writing backfill",
+      "status": "pass, no re-humanization needed",
+      "detail": "published 2026-08-05, predates the 2026-08-07 avoid-ai-writing mandate. Ran Skill(humanizer) and Skill(avoid-ai-writing) in detect mode against the full coreSummary/section-body/FAQ text: no AI-vocabulary words, no rule-of-three padding, no vague attribution, no promotional language, no copula avoidance, no filler/hedging chains, no inline-header bullet lists, no em/en dashes (site's established ' -- ' double-hyphen convention used consistently, per established sitewide exemption). Sentence and paragraph lengths vary naturally. Only minor stylistic note (not a P0/P1 issue, no fix applied): the phrases 'worth flagging' and 'worth a note' each appear once -- a mild instance of the 'worth [verb]ing' pattern, but both are followed immediately by a specific, substantive reason (not a vague/generic endorsement), so not flagged as a genuine AI tell."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "3 of 4 cited sources return HTTP 200 to curl: GeoNames.org postal-codes index, IRS.gov PDF (lp47_english.pdf), Wikipedia (Telephone numbers in Puerto Rico). amld.org returns 403 to curl and 503 via the Wayback Machine gateway in this sandboxed environment -- consistent with this site's already-documented Akamai-style bot-blocking pattern (same behavior seen on FCC/NANPA citations in prior audits on this site); independently confirmed live and current via WebSearch, which returned matching content (1973 MUD formation, Dec 31 2008 annexation, May 9 2009 ratification vote) sourced to amld.org itself in the search summary. Not treated as link rot."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "Article has 4 manual outbound in-body links (texas-zip-codes, atlanta-zip-codes x2, chicago-zip-codes, us-country-code), all verified rendering on the live page with varied anchor text. Inbound: 1 manual in-body link from texas-zip-codes ('Austin's ZIP breakdown'), confirmed via grep; category 'ZIP Codes' has well over 6 members so the automated related-guides rotation also surfaces this article (confirmed live: boston/denver/houston/las-vegas/nashville/los-angeles-zip-codes all appear as related-guides links on the live page). Observation, not an actionable finding for this article: grep of guides.ts found 2 sibling articles (atlanta-zip-codes, texas-area-codes) that name-check 'Austin' by name (e.g. 'Austin, TX uses 73301' and Austin's 512/737 area codes) without linking to /austin-zip-codes/ -- this is the site's well-documented, already-escalated-to-Owen zero/missing-outbound-links pattern appearing in the reverse direction (other articles not linking to this one). Not fixed here per established site precedent that this class of fix requires editing the citing article, out of scope for a single-article audit; flagged for a future run or SKILL.md-level fix, consistent with how this same recurring pattern was already flagged (unactioned) in this log 2 prior times."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all present on the live page. Article schema's datePublished/dateModified (both 2026-08-05T00:00:00+00:00) match the published/updated fields exactly. FAQPage's 3 Question/Answer pairs match the FAQ array in guides.ts verbatim (question text checked). No inconsistency found."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "No scam/fraud/phishing content, no YMYL medical/legal/financial advice, no reverse-lookup functionality. Purely factual ZIP-code/county/tax-agency reference content. No drift concern."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this guide entry -- this site uses no stock/AI photography anywhere (per project convention) and this article has no self-authored SVG either, only a data table. Nothing to validate."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "ads.txt resolves correctly to pub-5245502795720653 (verified live, HTTP 200). robots.txt has explicit AI-crawler Allow rules. /privacy/ and /about/ both return 200. No scam-area-codes-adjacent content in this article (no scam/fraud subject matter at all), so the site's scam-content-overreach risk does not apply here. No misleading claims, no deceptive layout."
+    }
+  ],
+  "independent_verification": "2 candidate findings were sent to an independent review agent before any fix was made: title length (88 chars incl. suffix) and meta description length (193 chars), both initially flagged based on a stale ~150-160-char threshold this audit mistakenly reasoned from (recalled from this log's earliest entries rather than checking for a superseding precedent). Agent completed normally (no watchdog/stuck-agent escalation needed) and returned NOT-CONFIRMED for both, citing this log's own later-established L-0805-2 precedent (compare to actual sitewide distribution). Directly re-verified in this run with check_seo_field_stats.py: z=0.72 (title) and z=0.39 (description), both well within normal range -- independent agent's verdict confirmed by a second, independent method. No other findings across the 13 dimensions required independent verification; every other claim in dimension 2 was independently re-confirmed via direct primary/near-primary source checks (site's own zipCounty.json diff, live GeoNames.org lookup, multiple WebSearch queries against amld.org-sourced content, DataForSEO SERP + direct competitor page inspection) rather than being a 'problem' needing a second opinion.",
+  "actions_taken": [
+    "No edits made -- all 13 dimensions passed, no confirmed problems.",
+    "Appended a recurrence line to 独立站/内容通用教训库.md's L-0805-2 entry documenting the stale-threshold near-miss (this audit reasoned from a remembered old figure instead of running check_seo_field_stats.py first, which would have shown both fields were normal all along).",
+    "Ran python3 独立站/research-db/seo_drift.py baseline https://dialwick.com/austin-zip-codes/ before starting the deep-dive (standard practice); no compare/fix cycle needed since no edits were made.",
+    "No build/commit/push/deploy/IndexNow submission needed -- source file unchanged."
+  ],
+  "seo_score": "no issues found; title/description both within this site's established normal distribution (z<1) per check_seo_field_stats.py",
+  "geo_score": "~86-88/99 (pass, comfortably above the 80 threshold; no fix needed)",
+  "escalation": null
+}
+```
