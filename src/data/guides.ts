@@ -1794,6 +1794,91 @@ export const guides: Guide[] = [
 			{ label: 'NANPA: 10-Digit Dialing Required in the Michigan 313 Area Code', url: 'https://www.nanpa.com/sites/default/files/2025-09/MI_313-679_MandatoryDialingPressRelease.pdf' },
 		],
 	},
+	{
+		slug: 'new-jersey-area-codes',
+		category: 'Area Code Lists',
+		title: 'Every New Jersey Area Code, and the Day Three of Them Launched at Once',
+		description:
+			"New Jersey has 10 area codes today, all descended from a single statewide code assigned in 1947 -- including three overlays the state's utility board activated on the exact same day in 2001.",
+		published: '2026-08-27',
+		updated: '2026-08-27',
+		coreSummary:
+			"New Jersey ran on a single area code, 201, for its entire population from 1947 until 1956, when the state split off 609 to cover the southern half. Three more splits followed -- 908 in 1990, then 973 and 732 both in 1997 -- before New Jersey's Board of Public Utilities stopped splitting altogether: 551, 848, and 862 all went into service on the same day, December 29, 2001, stacked on top of 201, 732, and 973 respectively. The newest code, 640, overlaid the southern 609 region in 2018. New Jersey has 10 area codes in total today, and every one of them traces back to 201.",
+		sections: [
+			{
+				heading: "All 10 New Jersey area codes",
+				body: [
+					"New Jersey's 10 area codes cover a state that started with just one. The table below lists all of them, along with the region each covers and the date it went into service -- see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in the notes that follow.",
+				],
+				table: {
+					caption: 'All 10 New Jersey area codes',
+					columns: ['Area code', 'Region', 'In service since'],
+					rows: [
+						['201', 'Bergen and Hudson Counties, northeastern NJ', '1947 (original)'],
+						['551', 'Bergen and Hudson Counties (overlay on 201)', 'Dec 29, 2001'],
+						['609', 'Trenton, Atlantic City, Princeton, central & southeastern NJ', '1956'],
+						['640', 'Same territory as 609 (overlay)', 'Sep 17, 2018'],
+						['732', 'New Brunswick, Lakewood, Neptune, east-central NJ', 'Jun 1, 1997'],
+						['848', 'Same territory as 732 (overlay)', 'Dec 29, 2001'],
+						['856', 'Cherry Hill, Camden, Millville, Vineland, southwestern NJ', 'Jun 12, 1999'],
+						['862', 'Northernmost NJ (overlay on 973)', 'Dec 29, 2001'],
+						['908', 'Elizabeth, Plainfield, Warren County, west-central NJ', '1990'],
+						['973', 'Newark, Paterson, most of northeastern NJ', 'Jun 1, 1997'],
+					],
+				},
+			},
+			{
+				heading: 'Every New Jersey area code descends from one 1947 original',
+				body: [
+					"201 covered every phone in New Jersey when the North American Numbering Plan launched in 1947. It kept that job for nine years, until the state's first split in 1956 handed the southern half -- Trenton, Atlantic City, Princeton -- to a new code, 609. 201 itself didn't split again until 1990, when 908 took over Elizabeth, Plainfield, and the rest of west-central Jersey, and then again in 1997, when 973 took Newark and Paterson off its hands. That same year, 908 split a second time, giving up New Brunswick and the Jersey Shore corridor to a brand-new 732.",
+					"By the end of 1997, five codes -- 201, 609, 908, 973, and 732 -- covered a state that had launched with just that first one alone. 609 split once more in 1999, handing Camden and the rest of the southwest to 856. Every one of New Jersey's 10 area codes today is a direct descendant of that single 1947 code, whether by a geographic split or, starting in 2001, by an overlay stacked on the same ground.",
+				],
+			},
+			{
+				heading: 'Three overlays, one day: December 29, 2001',
+				body: [
+					"New Jersey's Board of Public Utilities approved all-services overlays on three area codes at once -- 201, 732, and 973 -- in a single order dated March 19, 2001. All three new codes went into service together on December 29, 2001: 551 stacked onto 201's Bergen and Hudson County territory, 848 onto 732's central Jersey Shore corridor, and 862 onto 973's Newark-Paterson footprint. None of the three took over any new geography; each shares its entire coverage area with the code it overlaid, which is why 10-digit dialing became mandatory in all three regions that same year.",
+					"That's a different pattern from how New Jersey had relieved area codes for the previous 44 years. Every split before 2001 -- 609 in 1956, 908 in 1990, 973 and 732 in 1997 -- handed off a piece of geography to the new code and let the original keep the rest. After 2001, New Jersey never split another area code; every fix since has been an overlay on ground the state had already assigned.",
+				],
+			},
+			{
+				heading: "640, New Jersey's newest, followed the same dialing-first sequence as Michigan's 679",
+				body: [
+					"640 is New Jersey's only 21st-century area code addition outside the 2001 batch, and its rollout followed a script regulators have used elsewhere since: the dialing change came before the numbers did. The state's Board of Public Utilities opened permissive 10-digit dialing across 609 on January 20, 2018, made it mandatory on August 18, 2018, and only then activated 640 itself, on September 17, 2018 -- about a month after every 609 call already required 10 digits.",
+					"That same order matters wherever a code overlay happens, because a new 10-digit number and an old 7-digit one in the same area code could otherwise collide. [Michigan followed an identical sequence](/michigan-area-codes/) when it overlaid Detroit's 313 with 679 in 2025 -- 10-digit dialing went mandatory a month before the new code's first numbers were assigned there too, even though the two states made that call seven years apart.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does New Jersey have?',
+				answer: '10 as of 2026, all descended from the single code, 201, that covered the entire state when the numbering plan launched in 1947.',
+			},
+			{
+				question: "What is New Jersey's newest area code?",
+				answer:
+					'640, an overlay on the southern 609 region that began receiving new phone line assignments on September 17, 2018.',
+			},
+			{
+				question: 'What was New Jersey\'s original area code?',
+				answer: '201, assigned to the entire state in 1947. Every other New Jersey area code today descends from it, either directly or through a later split.',
+			},
+			{
+				question: 'Do I need to dial 10 digits for local calls in New Jersey?',
+				answer:
+					"Yes, in the four regions that share territory between two area codes: 201/551, 732/848, 973/862, and 609/640. New Jersey's tenth code, 856, was created by a 1999 split rather than an overlay and does not share its footprint with another code the same way.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
+			{ label: 'Wikipedia: Area codes 201 and 551', url: 'https://en.wikipedia.org/wiki/Area_codes_201_and_551' },
+			{ label: 'Wikipedia: Area codes 732 and 848', url: 'https://en.wikipedia.org/wiki/Area_codes_732_and_848' },
+			{ label: 'Wikipedia: Area codes 973 and 862', url: 'https://en.wikipedia.org/wiki/Area_codes_973_and_862' },
+			{ label: 'Wikipedia: Area codes 609 and 640', url: 'https://en.wikipedia.org/wiki/Area_codes_609_and_640' },
+			{ label: 'New Jersey Board of Public Utilities: Area Code 609 Overlay Approved and New Dialing Procedures', url: 'https://www.nj.gov/bpu/pdf/telecopdfs/NJ-640-609-856.pdf' },
+			{ label: 'GlobeNewswire: Mandatory 10-Digit Dialing to Begin August 18 in New Jersey Area Code 609 and Portions of Area Code 856', url: 'https://www.globenewswire.com/news-release/2018/08/16/1553015/0/en/Mandatory-10-Digit-Dialing-to-Begin-August-18-In-New-Jersey-Area-Code-609-and-Portions-of-Area-Code-856.html' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Guides
