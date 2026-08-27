@@ -2810,6 +2810,82 @@ export const guides: Guide[] = [
 		],
 	},
 	{
+		slug: 'how-to-call-india-from-us',
+		category: 'International Dialing',
+		title: "India's Country Code Is +91, and Regulators Want to Retire Its Area Codes",
+		description:
+			"Dial 011, then 91, then the area code with its leading 0 dropped. India's STD system dates to 1960, and a 2025 regulator proposal could scrap area codes for a single 10-digit format.",
+		published: '2026-08-27',
+		updated: '2026-08-27',
+		coreSummary:
+			"Dial 011, then 91 (India's country code), then the STD area code with its leading 0 dropped, then the local number. A mobile number skips the area code step entirely: just 011, then 91, then the 10 digits as written. Delhi's own area code happens to be 11, written domestically with a 0 in front as 011, so a Delhi number and the US exit code share the exact same three digits, for two entirely unrelated reasons. India assigns two-digit STD codes to eight of its largest cities (Delhi, Mumbai, Kolkata, Chennai, Pune, Hyderabad, Ahmedabad, and Bengaluru), three digits to large secondary cities, and up to four digits to smaller towns, a tiered system that traces back to the country's first subscriber trunk-dialing route, commissioned between Lucknow and Kanpur in 1960. That system may not last much longer. In February 2025, the Telecom Regulatory Authority of India recommended retiring STD codes altogether in favor of a single closed 10-digit format for every fixed-line number, a change that still needs the national telecom department's sign-off before it takes effect.",
+		sections: [
+			{
+				heading: 'Dialing India: country code 91, step by step',
+				body: [
+					"Calling an Indian landline from a US phone: dial 011, then 91, then the STD area code with its leading 0 dropped, then the rest of the local number. Calling an Indian mobile number works the same way, except there's no area code to trim. Mobile numbers are a plain 10 digits, and the whole string goes straight after 91. From a mobile phone or most VoIP services, a \"+\" replaces the 011, so +91 followed by the same digits reaches the same number.",
+				],
+				table: {
+					columns: ['Step', 'What to dial'],
+					rows: [
+						['1. Exit code (landline)', '011'],
+						['1. Exit code (mobile/VoIP)', '+'],
+						['2. Country code', '91'],
+						['3. STD area code (landline only)', 'drop the leading 0'],
+						['4. Local number', 'remaining digits'],
+					],
+				},
+			},
+			{
+				heading: "Delhi's area code and the US exit code are both 011, and that's a coincidence",
+				body: [
+					"A Delhi landline written domestically as (011) 4165 2378 becomes 011 91 11 4165 2378 when dialed from a US phone. The same three digits, 011, show up twice in that string for two unconnected reasons. The first 011 is the exit code any US phone dials before any international call, the housekeeping signal that tells the network the next digits aren't a domestic number. The second is Delhi's own STD area code, 11, written with the 0 that India adds to any area code dialed from inside the country and that gets dropped once +91 takes its place. It's the same kind of coincidence this site has already documented closer to home, where [Austin's 787 ZIP prefix happens to share three digits with Puerto Rico's unrelated 787 area code](/austin-zip-codes/): two separate numbering systems landing on the same digits by chance, not because one derives from the other.",
+					"A mobile number written domestically as 98765 43210 becomes 011 91 98765 43210 from a US landline, or +91 98765 43210 from a mobile. There's no area code involved, so nothing gets dropped.",
+				],
+			},
+			{
+				heading: 'Why Delhi, Mumbai, Kolkata, and five other cities get two-digit codes',
+				body: [
+					"India hands out STD area codes in tiers: two digits for its eight largest metro economies (Delhi at 11, Mumbai at 22, Kolkata at 33, Chennai at 44, Pune at 20, Hyderabad at 40, Ahmedabad at 79, and Bengaluru at 80), three digits for large secondary cities, and three to four digits for smaller towns and rural districts, with shorter codes going to the cities expected to carry the heaviest call volume. That tiering isn't new: India's Department of Telecommunications runs it under the National Numbering Plan first issued in 2003, but the underlying practice of dialing a city by code rather than routing every long-distance call through a live operator goes back further, to the country's first subscriber trunk-dialing route, switched on between Lucknow and Kanpur in 1960. The International Telecommunication Union assigned India its own +91 country code around the same decade, separating Indian numbers from the shared regional dialing plans some neighboring countries were still using at the time.",
+				],
+			},
+			{
+				heading: 'A 2025 regulatory proposal could retire STD codes altogether',
+				body: [
+					"On February 6, 2025, the Telecom Regulatory Authority of India (TRAI) recommended dropping the STD system entirely in favor of a single closed 10-digit numbering format for every fixed-line number nationwide, replacing the current setup where a number's length depends on how many digits its city's STD code uses. Under the proposal, every fixed-line call, including a call between two numbers in the same city, would require dialing a leading 0 followed by the area code and the subscriber's number. There would no longer be a shorter \"local call\" version of the number to dial. TRAI's recommendation says existing phone numbers themselves wouldn't change; only the requirement to dial the full string, area code included, would apply everywhere. The regulator proposed giving telecom operators six months to roll out the new format once the Department of Telecommunications signs off, but as of this writing that approval hasn't been granted, so the current STD system, area codes and all, is still what's in effect.",
+					"India isn't the first place this site has covered where a country code hides more than one numbering system underneath it. [The US country code](/us-country-code/) is shared by 20 different countries and territories under the North American Numbering Plan, which is the opposite problem: one code covering many places instead of one place needing many area codes.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: "What is India's country code?",
+				answer: '91.',
+			},
+			{
+				question: 'Do I drop the 0 when calling an Indian landline from the US?',
+				answer:
+					"Yes. The 0 in front of an Indian STD area code is a domestic trunk prefix, not part of the number itself, so it's dropped rather than replaced once +91 takes its place. Mobile numbers don't have this problem, since they're a plain 10 digits with no area code or leading 0 to worry about.",
+			},
+			{
+				question: "Why does Delhi's area code look like the US exit code?",
+				answer:
+					'Coincidence. Delhi\'s STD area code is 11, written domestically with a 0 in front as "011," the same three digits as the 011 exit code every US phone dials before any international call. The two numbers mean completely different things and come from two unrelated numbering systems.',
+			},
+			{
+				question: 'Is India getting rid of area codes?',
+				answer:
+					"Not yet. India's telecom regulator, TRAI, recommended replacing the STD area-code system with a single 10-digit numbering format in February 2025, but the change needs approval from the Department of Telecommunications first, and that approval hadn't come through by the time this page was published. Existing phone numbers wouldn't change under the proposal. Only the requirement to dial the full area code, even for local calls, would.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Telephone numbers in India', url: 'https://en.wikipedia.org/wiki/Telephone_numbers_in_India' },
+			{ label: 'Wikipedia: Telecommunications in India', url: 'https://en.wikipedia.org/wiki/Telecommunications_in_India' },
+			{ label: 'Telecom Regulatory Authority of India: Press Release No. 09/2025 (recommendations on numbering for fixed-line services)', url: 'https://www.trai.gov.in/sites/default/files/2025-02/PR_No.09of2025.pdf' },
+			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+		],
+	},
+	{
 		slug: 'phoenix-zip-codes',
 		category: 'ZIP Codes',
 		title: 'Phoenix ZIP Codes: All 77, and Why the List Never Crosses a County Line',
