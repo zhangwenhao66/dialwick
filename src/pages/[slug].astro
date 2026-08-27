@@ -55,6 +55,7 @@ function md(text: string): string {
 		.replace(/\*(.*?)\*/g, '<em>$1</em>')
 		.replace(/\[([^\]]+)\]\(((?:[^()]|\([^()]*\))*)\)/g, '<a href="$2">$1</a>');
 }
+import { imgDims } from '../data/imageDims';
 ---
 
 <Layout title={guide.title} description={guide.description} ogImage="/favicon.svg" ogType="article">
@@ -68,6 +69,8 @@ function md(text: string): string {
 		authorName={AUTHOR_NAME}
 		authorUrl={`${SITE_ORIGIN}/about/`}
 		image={heroImage}
+		imageWidth={imgDims(heroImage)?.w}
+		imageHeight={imgDims(heroImage)?.h}
 		url={pageUrl}
 	/>
 	<BreadcrumbList slot="head" items={breadcrumbItems} />
