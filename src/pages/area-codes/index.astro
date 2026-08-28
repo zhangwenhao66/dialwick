@@ -4,6 +4,11 @@ import { guides, type GuideCategory } from '../../data/guides';
 
 const AREA_CODE_CATEGORIES: GuideCategory[] = ['Area Code Lists', 'Area Code Guides', 'Area Codes'];
 const categoryGuides = guides.filter((g) => AREA_CODE_CATEGORIES.includes(g.category));
+
+// Directory-entry code: a real area code where the title carries one,
+// otherwise a padded row number, like a printed contents page.
+const entryCode = (title: string, i: number) =>
+	title.match(/\b[2-9]\d{2}\b/)?.[0] ?? String(i + 1).padStart(2, '0');
 ---
 
 <Layout
@@ -18,20 +23,23 @@ const categoryGuides = guides.filter((g) => AREA_CODE_CATEGORIES.includes(g.cate
 	</p>
 
 	{categoryGuides.length === 0 ? (
-		<p class="mt-10 text-sm text-[var(--ink)]/40">Pages in this section are coming soon.</p>
+		<p class="mt-10 text-sm text-[var(--ink)]/70">Pages in this section are coming soon.</p>
 	) : (
-		<div class="mt-10 flex flex-col">
-			{categoryGuides.map((g) => (
-				<a href={`/${g.slug}/`} class="item border-b border-[var(--rule)] py-5 no-underline first:pt-0">
-					<p class="m-0 text-lg font-bold leading-snug text-[var(--ink)] hover:underline">{g.title}</p>
-					<p class="m-0 mt-1.5 text-sm text-[var(--ink)]/55">{g.description}</p>
-				</a>
-			))}
+		<div class="mt-10">
+			<p class="idx-tab font-mono-num m-0 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent-dark)]">Index</p>
+			<div class="idx-card flex flex-col">
+				{categoryGuides.map((g, i) => (
+					<a href={`/${g.slug}/`} class="group block border-b border-dotted border-[var(--rule)] px-5 py-4 no-underline last:border-b-0">
+						<span class="dir-row">
+							<span class="font-mono-num shrink-0 text-[0.82rem] font-bold text-[var(--accent-dark)]">{entryCode(g.title, i)}</span>
+							<span class="min-w-0 text-base font-bold leading-snug text-[var(--ink)] group-hover:underline">{g.title}</span>
+							<span class="dir-leader" aria-hidden="true"></span>
+							<span class="dir-arrow font-mono-num shrink-0 text-sm text-[var(--accent-dark)]" aria-hidden="true">&rarr;</span>
+						</span>
+						<span class="mt-1 block text-sm leading-relaxed text-[var(--ink)]/70">{g.description}</span>
+					</a>
+				))}
+			</div>
 		</div>
 	)}
 </Layout>
-
-<style>
-	.item { display: block; transition: padding-left 0.15s ease; }
-	.item:hover { padding-left: 0.5rem; }
-</style>

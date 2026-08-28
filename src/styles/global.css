@@ -43,3 +43,56 @@ body {
 	max-width: 64rem;
 	padding-inline: 1rem;
 }
+
+/*
+ * 2026-08-29 UI de-templating (display layer only, conservative pass).
+ *
+ * The skeleton moves from the matrix's shared "hero + list" layout to a
+ * literal phone-directory metaphor: index cards with a top tab ear (pure
+ * CSS), row entries led by a mono code, and dot leaders running to a page
+ * arrow -- like the contents page of a printed directory. Content, URLs,
+ * schema and the head block are untouched.
+ */
+
+/* Index card with a tab ear. The tab overlaps the card's top border by
+   1.5px (its own border-bottom is omitted and z-index lifts it above), so
+   the ear reads as part of the card outline -- no images, no clip-path. */
+.idx-tab {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	margin: 0 0 -1.5px 1rem;
+	padding: 0.42rem 1.05rem 0.55rem;
+	background: var(--card);
+	border: 1.5px solid var(--ink);
+	border-bottom: none;
+	border-radius: 8px 8px 0 0;
+}
+.idx-card {
+	background: var(--card);
+	border: 1.5px solid var(--ink);
+	border-radius: 8px;
+	box-shadow: 3px 3px 0 rgba(26, 35, 50, 0.07);
+}
+
+/* Directory row: mono code · title · dot leader · arrow. */
+.dir-row {
+	display: flex;
+	align-items: baseline;
+	gap: 0.6rem;
+	min-width: 0;
+}
+.dir-leader {
+	flex: 1 1 auto;
+	min-width: 1.5rem;
+	border-bottom: 2px dotted #b3a98d;
+	transform: translateY(-0.28em);
+}
+@media (max-width: 639px) {
+	/* Narrow screens: the leader and arrow fold away so rows never force
+	   horizontal scroll at 375px. */
+	.dir-leader,
+	.dir-arrow {
+		display: none;
+	}
+}
