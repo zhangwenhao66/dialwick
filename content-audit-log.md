@@ -1584,3 +1584,109 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "escalation": null
 }
 ```
+
+## boston-zip-codes
+
+```json
+{
+  "url_slug": "boston-zip-codes",
+  "url": "https://dialwick.com/boston-zip-codes/",
+  "last_audited": "2026-08-28",
+  "published_date": "2026-08-06",
+  "diagnostic_checklist": [
+    "1. Are the six annexation dates (Roxbury 1868, Dorchester 1870, Charlestown/Brighton/West Roxbury 1873 vote/1874 effective, Hyde Park 1911 vote/1912 effective) accurate?",
+    "2. Is the 'Brighton Ring' $1.56M spending / $438K revenue / 81% vote figure independently sourced, not invented?",
+    "3. Are 02201 = Boston City Hall and 02203 = JFK Federal Building accurate and still current?",
+    "4. Does the 36-ZIP table and the 14-ZIP annexed-town list match this site's own canonical zipCounty.json (GeoNames) exactly?",
+    "5. Does the article's claim that '02212's Middlesex County tag has no public-record explanation' hold up, or is there a findable explanation for what 02212 actually is?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass, strong",
+      "detail": "8 named sources spanning GeoNames, Boston.gov, GSA, USPS PostalPro, Boston Public Library research guide, Wikipedia, a local historian (wpmarchione.com), and the City of Boston Archives -- among the best-sourced articles audited on this site so far (most prior audits found 1-4 sources)."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "pass on checklist items 1-4; confirmed gap on item 5 -> fixed",
+      "detail": "(1) All 6 annexation dates independently WebSearch-verified against Boston city archives/Wikipedia/BPL: Roxbury Jan 5 1868, Dorchester Jan 3 1870, Charlestown/Brighton/West Roxbury Oct 7 1873 vote effective Jan 5 1874, Hyde Park Nov 7 1911 vote effective Jan 1 1912 -- all exact matches. (2) Brighton Ring figures independently confirmed via WebSearch of the article's own cited source (wpmarchione.com): $1.56M spending against $438K revenue, eightfold debt increase, 81% yes vote -- exact match, not invented. (3) 02201=City Hall and 02203=JFK Federal Building both confirmed via independent WebSearch (GSA.gov, EEOC.gov). (4) Programmatically diffed the 36-row table and the 14 annexed-town ZIP codes against this site's own src/lib/data/zipCounty.json: zero mismatches on both. (5) CONFIRMED GAP: the article's body and FAQ both asserted 'no public USPS or county record explains' 02212's Middlesex County tag, treating it as a pure unexplained anomaly. Independent research (curl of zip-codes.com/zip-code/02212, zipwise.com, greatdata.com, plus WebSearch cross-check) found 02212 is a Unique ZIP Bank of America has used for downtown Boston mail since November 2008, and every third-party ZIP database checked (3 direct fetches + wider WebSearch sample) tags it Suffolk County, not Middlesex -- none support the Middlesex tag. Independent verification agent confirmed this is solid enough (multiple converging sources) to add a sourced caveat. Fixed: added the Bank of America/Suffolk-County fact to the body and FAQ, without changing the table's Middlesex value (which remains accurate to the site's disclosed GeoNames methodology) -- same precedent as the atlanta-zip-codes 30339 caveat."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "No stale claims found; all facts are historically stable (annexation history, ZIP assignments) rather than subject to active-database drift."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "WebSearch for Boston ZIP/annexation content shows the SERP dominated by plain zip-codes.com/zipcodestogo.com listings, scattered single-neighborhood Wikipedia pages, and real-estate blog listicles -- none integrate the 36-code table + City Hall/federal-building explanation + six-town annexation history + 14-ZIP cross-reference into one place. Genuine incremental value confirmed."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "initial candidate finding (title length) NOT CONFIRMED after independent review; no fix made",
+      "detail": "Live page checked via curl+DOM: single H1, 4 H2s, canonical present, schema (Article/FAQPage/BreadcrumbList/WebPage/Organization) present. Meta description 158 chars -- within established site range, no action. Title tag 87 chars total (76-char field + ' | DialWick' suffix) was initially flagged as a candidate problem against a generic ~50-60 char SERP guideline. Independent verification agent, and this run's own follow-up python3 独立站/scripts/check_seo_field_stats.py --new-slug boston-zip-codes, both found z=0.66 against this site's own title-length distribution (n=46, mean=64.8, stdev=16.8) -- well within normal range per the site's established L-0805-2 distribution-based methodology, which supersedes the generic character-count guideline. NOT-CONFIRMED, left as-is. This is the second consecutive day this exact stale-threshold near-miss pattern has recurred on this site (see austin-zip-codes, 2026-08-27) -- flagged to Owen, see escalation note below."
+    },
+    {
+      "dimension": "6. GEO / ai-seo (99-point rubric)",
+      "status": "pass, ~88-90/99 (manual rubric assessment, consistent with this site's established audit methodology)",
+      "detail": "Strong structure (4 H2s, 36-row table, 3-item FAQ with schema), 8 named sources (above this site's average), dense specific dated statistics throughout, genuine bidirectional internal links (2 outbound to atlanta-zip-codes/los-angeles-zip-codes, 2 inbound from nashville-zip-codes) with real comparative facts rather than generic anchor text. One of the stronger-scoring articles audited on this site to date. No GEO-blocking issue found."
+    },
+    {
+      "dimension": "7. Humanizer / avoid-ai-writing backfill",
+      "status": "pass, checked (published 2026-08-06, one day before the 2026-08-07 avoid-ai-writing mandate -- early-content backfill check required)",
+      "detail": "Manual full-text read against the humanizer/avoid-ai-writing pattern list found no AI-writing tells: no vague attribution, no rule-of-three padding, no promotional language, no inline-header lists, sentence-case headings throughout, dashes consistently use this site's established ' -- ' double-hyphen convention. Newly-added caveat text (02212 fix) also checked, same result -- clean."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "confirmed problem -> fixed",
+      "detail": "7 of 8 cited sources returned HTTP 200. The GSA source (JFK Federal Building citation) returned HTTP 404, redirecting to a dead gsa.gov/sandbox/offline-pages/regional-microsite-archive stub -- confirmed independently by a verification agent, which also verified a replacement URL (gsa.gov/real-estate/explore-historic-buildings/find-a-historic-federal-building/john-f-kennedy-federal-building-boston-ma, HTTP 200) is live and covers the same building/topic. Fixed: source URL updated."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "2 manual outbound in-body links (atlanta-zip-codes, los-angeles-zip-codes) and 2 manual inbound links from nashville-zip-codes, both directions carrying real comparative facts rather than generic anchors. 'ZIP Codes' category has 26 members (>6), so the automated related-guides rotation only shows a subset -- expected behavior, not a bug, and manual links already provide link health."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all auto-derive from the guide object fields; live page confirmed post-fix that FAQPage reflects the updated 02212 answer and the sources array includes the new zip-codes.com citation. Noted but out of scope for a single-article fix: the Article schema's ImageObject falls back to the sitewide favicon (24x24) since this article has no hero image -- this is a site-wide template behavior from the recent site-toolkit ImageObject rollout, not specific to this article, so not actioned here; flagged for whoever owns that rollout to review across all image-less articles."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure ZIP-code/municipal-annexation-history content. No reverse-lookup functionality, no YMYL claims, no sensitive-entity risk."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "No violence/weapons/drugs/gambling content, no misleading headline. ads.txt correctly resolves to pub-5245502795720653; /privacy/, /about/, /terms/ all present."
+    }
+  ],
+  "independent_confirmations": [
+    "Agent 1 (title length, 87 chars): NOT CONFIRMED -- z=0.66 against site's own distribution, normal range, no fix.",
+    "Agent 2 (GSA source link rot): CONFIRMED -- original 404, replacement URL verified live and on-topic.",
+    "Agent 3 (ZIP 02212 Bank of America / Suffolk County): CONFIRMED -- 3 direct-fetched sources + wider WebSearch sample all converge on Suffolk County and Bank of America; solid enough for a sourced caveat per established site precedent."
+  ],
+  "actions_taken": [
+    "Replaced dead GSA source URL with a verified-live replacement covering the same JFK Federal Building topic.",
+    "Added a caveat to the body (section 1) and rewrote the FAQ answer explaining what ZIP 02212 actually is (a Bank of America Unique ZIP since Nov 2008) and that third-party ZIP databases tag it Suffolk County, without changing the table's Middlesex value (kept per the site's established atlanta-zip-codes/30339 precedent: accurate to disclosed GeoNames methodology).",
+    "Added 1 new source citation (zip-codes.com's 02212 page).",
+    "Did NOT fix the title length -- initial candidate finding was independently reviewed and rejected (z=0.66, normal range); recorded as a second consecutive day's recurrence of the L-0805-2 stale-threshold near-miss pattern in 独立站/内容通用教训库.md.",
+    "npm test (64/64) and npm run build (55 pages) both passed after the edit.",
+    "Ran seo_drift.py baseline before editing and compare after deploy: 1 WARNING-level finding (expected schema content change from the FAQ/sources edit), no CRITICAL findings.",
+    "Committed (c3f277f) and pushed to origin/main; verified live via polling (Bank of America text and new GSA URL both confirmed present on first check, HTTP 200; 404 page still functions correctly for a nonexistent path).",
+    "Submitted https://dialwick.com/boston-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200); logged to indexnow-submit-log.json (committed separately as c3f277f/845a391, carefully hand-merged against a concurrent dialwick-content-publishing session's own uncommitted IndexNow entry for country-code-92-pakistan so neither was clobbered).",
+    "Appended a dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Left imageDims.ts untouched -- unrelated, pre-existing uncommitted changes from a separate site-toolkit ImageObject rollout session, out of scope for this audit."
+  ],
+  "seo_score": "1 confirmed issue (dead GSA source link) found and fixed; title-length candidate finding independently reviewed and rejected as a false positive (z=0.66, normal range)",
+  "geo_score": "~88-90/99 pre- and post-fix (pass, comfortably above the 80 threshold; the 02212 fix improves EEAT/completeness slightly but doesn't change the overall structural score)",
+  "escalation": null,
+  "process_note": "This audit hit the L-0805-2 stale-threshold near-miss pattern (see 独立站/内容通用教训库.md) for the second consecutive day on this same site (austin-zip-codes 2026-08-27, boston-zip-codes 2026-08-28) -- initially reasoning from a remembered generic SERP character-count guideline instead of running check_seo_field_stats.py first. Both times an independent verification agent caught it before any incorrect edit was made, so no harm resulted, but the recurrence rate suggests this should become a mandatory first sub-step of dimension 5 rather than continuing to rely on independent review as the backstop -- see the lessons-library entry for the explicit recommendation to Owen."
+}
+```
