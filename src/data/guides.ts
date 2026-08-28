@@ -650,7 +650,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'All 36 ZIP codes with "Boston" as the primary USPS place name',
 				body: [
-					'USPS lists 36 ZIP codes with "Boston, MA" as the primary place name. 35 sit in Suffolk County, the county Boston has anchored since the state\'s founding. The one exception, 02212, is tagged Middlesex County in this table\'s source data -- a discrepancy worth flagging rather than guessing at: it doesn\'t match the Suffolk designation most simplified ZIP directories default to for every Boston code, and no public USPS or county record this site could find explains why this specific non-geographic code carries a different county tag. The table below reports what the source data says rather than silently overriding it.',
+					'USPS lists 36 ZIP codes with "Boston, MA" as the primary place name. 35 sit in Suffolk County, the county Boston has anchored since the state\'s founding. The one exception, 02212, is tagged Middlesex County in this table\'s source data -- a discrepancy worth flagging rather than guessing at: it doesn\'t match the Suffolk designation most simplified ZIP directories default to for every Boston code, and no public USPS or county record this site could find explains why this specific non-geographic code carries a different county tag. The table below reports what the source data says rather than silently overriding it. What 02212 actually is has a clearer answer than why it\'s tagged Middlesex: it\'s a Unique ZIP code Bank of America has used for its downtown Boston mail since November 2008, and third-party ZIP databases (zip-codes.com, among others) that identify the assignment also tag the code Suffolk County, not Middlesex -- checked 2026-08-28.',
 					'Total counts vary by source more than usual for this list. This site\'s own data returns 36, unitedstateszipcodes.org lists 33, and zip-codes.com\'s broader city page lists 50 -- split 32 standard, 9 Unique, and 9 PO Box. The gap isn\'t really a disagreement about which ZIP codes exist; it\'s a difference in scope. Some directories fold in the neighborhood-named ZIPs covered in the section below (which this table excludes, since they carry a different USPS place name), and some count long-retired or rarely-used codes differently.',
 				],
 				table: {
@@ -699,13 +699,14 @@ export const guides: Guide[] = [
 			{
 				question: 'Why does ZIP code 02212 show up in Middlesex County instead of Suffolk?',
 				answer:
-					"This site's source data (GeoNames) tags 02212 to Middlesex County, unlike every other Boston ZIP code, which sits in Suffolk. No public record explains the discrepancy, and this site reports it rather than overriding it with an assumption.",
+					"This site's source data (GeoNames) tags 02212 to Middlesex County, unlike every other Boston ZIP code, which sits in Suffolk. No public record explains that specific county tag, but the code's use is documented: it's a Unique ZIP Bank of America has used for downtown Boston mail since November 2008, and third-party ZIP databases that identify that assignment tag it Suffolk County instead.",
 			},
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'Contact Boston City Hall -- Boston.gov', url: 'https://www.boston.gov/departments/mayors-office/contact-boston-city-hall' },
-			{ label: 'GSA: John F. Kennedy Federal Building, Boston, MA', url: 'https://www.gsa.gov/about-us/regions/region-1new-england/buildings-and-facilities/massachusetts/john-f-kennedy-federal-building' },
+			{ label: 'GSA: John F. Kennedy Federal Building, Boston, MA', url: 'https://www.gsa.gov/real-estate/explore-historic-buildings/find-a-historic-federal-building/john-f-kennedy-federal-building-boston-ma' },
+			{ label: 'ZIP-Codes.com: ZIP Code 02212 (Bank of America, Suffolk County)', url: 'https://www.zip-codes.com/zip-code/02212/zip-code-02212.asp' },
 			{ label: 'USPS PostalPro: Unique ZIP Code Matrix', url: 'https://postalpro.usps.com/node/1481' },
 			{ label: "Boston's Annexed Towns -- Boston Public Library research guide", url: 'https://guides.bpl.org/TownsOfBoston' },
 			{ label: 'Wikipedia: Brighton, Boston (1873 vote / 1874 annexation)', url: 'https://en.wikipedia.org/wiki/Brighton,_Boston' },
