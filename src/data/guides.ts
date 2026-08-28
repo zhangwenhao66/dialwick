@@ -3897,4 +3897,79 @@ export const guides: Guide[] = [
 			{ label: 'USAFacts: Bexar County, Texas population data', url: 'https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/texas/county/bexar-county/' },
 		],
 	},
+	{
+		slug: 'country-code-92-pakistan',
+		category: 'International Dialing',
+		title: "Pakistan's Country Code Is +92, and Its Prefixes Reveal the Carrier",
+		description:
+			"City codes run two to five digits; mobile numbers all start 03, a leftover of a 2008 digit migration. India's telecom regulator has also issued a specific advisory about calls from this code.",
+		published: '2026-08-28',
+		updated: '2026-08-28',
+		coreSummary:
+			"Pakistan's country code is +92. Dialing in from abroad, drop the domestic leading 0 and follow it with either a city code (two digits for major cities like Karachi and Lahore, longer for smaller towns) or, for a mobile number, a three-digit carrier prefix starting with 03. That mobile format is newer than it looks: a 2008 regulatory migration moved a digit out of the carrier prefix and into the subscriber number, so a number written as 0333-51xxxxx before April 2008 became 033-351xxxxx afterward, with the same 11 digits split differently. Beyond the numbering mechanics, India's Department of Telecommunications issued a public advisory in March 2024 about impersonation calls arriving from +92 numbers over WhatsApp, a pattern distinct from the US-focused robocall scams DialWick covers elsewhere.",
+		sections: [
+			{
+				heading: 'A landline number is built from a city code; a mobile number is built from a carrier code',
+				body: [
+					"Calling a Pakistani landline from the US: dial 011, then 92, then the city code with its leading 0 dropped, then the local number. Karachi and Lahore, the two largest cities, use two-digit codes, the shortest on the network. Smaller cities and towns get longer codes (up to five digits), with a shorter local number making up the difference. Calling a Pakistani mobile number works the same way structurally, but the code that follows +92 is a carrier prefix, not a place: every Pakistani mobile number starts with 03, and the two digits after that identify which network issued it, not what city the subscriber lives in.",
+				],
+				table: {
+					caption: 'City codes for six major Pakistani cities',
+					columns: ['City', 'Area code'],
+					rows: [
+						['Karachi', '21'],
+						['Lahore', '42'],
+						['Islamabad / Rawalpindi', '51'],
+						['Faisalabad', '41'],
+						['Multan', '61'],
+						['Peshawar', '91'],
+						['Quetta', '81'],
+					],
+				},
+			},
+			{
+				heading: 'The 2008 migration that moved a digit from the carrier code into the number',
+				body: [
+					"Before April 1, 2008, Pakistan's four major mobile networks (Mobilink, Warid, Ufone, and Telenor) used a 4-digit carrier prefix followed by a 7-digit subscriber number, written domestically as something like 0333-51xxxxx. The Pakistan Telecommunication Authority (PTA) shortened the carrier prefix to 3 digits and lengthened the subscriber number to 8, so that same number became 033-351xxxxx: the total digit count stayed at 11 domestically, but the boundary between \"which network\" and \"which subscriber\" shifted by one place. Both formats worked in parallel through June 30, 2008; from July 1 onward, only the new format connected. A few smaller carriers active at the time, Paktel, Instaphone, and SCOM, which served Azad Kashmir and the northern areas, had their carrier codes change digits as well as length, not just shift a digit into the subscriber number, so the migration wasn't a uniform find-and-replace across every operator.",
+				],
+			},
+			{
+				heading: 'Why 030x and 032x both belong to Jazz today',
+				body: [
+					"The digits right after 03 identify a specific carrier: Jazz uses 030x and 032x, Zong uses 031x (plus a newer 037x block added as its original range filled up), Ufone uses 033x, and Telenor uses 034x. Jazz having two separate blocks is a merger artifact, not a coincidence. 030x was Mobilink's own prefix from the start, while 032x belonged to Warid Telecom, a separate company. PTA cleared a merger between the two in July 2016, and the combined firm launched a single new brand, Jazz, on January 6, 2017; Mobilink stopped operating under its old name four days later, while Warid's brand lingered roughly another year as its customers were migrated onto new SIMs. One caveat that applies to any of these prefixes: Mobile Number Portability lets a subscriber keep their number after switching carriers, so a 032x number today is likely but not guaranteed to still be on Jazz's network.",
+				],
+			},
+			{
+				heading: "India's telecom regulator has flagged this code specifically",
+				body: [
+					"On March 29, 2024, India's Department of Telecommunications (DoT) publicly warned mobile users about WhatsApp calls arriving from foreign numbers starting with +92, describing callers who impersonate police or other government officials, claim the recipient is linked to a crime, and pressure them into transferring money or handing over personal information, a pattern Indian media has taken to calling a \"digital arrest\" scam. DoT's advisory directs anyone who gets one of these calls to report it through the Chakshu tool on its Sanchar Saathi portal rather than engage with the caller. That's a different mechanism from the US-focused \"one ring\" (Wangiri) robocall scam the FCC and FTC warn about (see [Is There Really Such a Thing as a 'Scam Area Code'?](/scam-area-codes/) for how that one works), since the DoT advisory is about impersonation during a live call, not about the cost of calling a missed number back.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: "What is Pakistan's country code?",
+				answer: '+92.',
+			},
+			{
+				question: 'How can I tell a Pakistani mobile number from a landline number?',
+				answer:
+					"Drop the leading 0 and look at what comes right after +92. Mobile numbers always start with a 3 there (03 domestically, giving prefixes like 300, 321, or 345), while landline city codes, Karachi's 21, Lahore's 42, and the rest, don't overlap with that block.",
+			},
+			{
+				question: 'Why did India warn people about calls from +92?',
+				answer:
+					"India's Department of Telecommunications issued a public advisory in March 2024 after reports of WhatsApp calls from +92 numbers in which callers impersonated police or other officials and pressured recipients into transferring money or sharing personal details. The advisory tells recipients to report such calls through the Chakshu tool on the Sanchar Saathi portal instead of engaging with the caller.",
+			},
+		],
+		sources: [
+			{ label: 'PTA: 7-8 Digit Mobile Subscriber Number Migration Update', url: 'https://www.pta.gov.pk/category/7-8-digit-mobile-subscriber-number-migration-update-1210917378-2023-06-01' },
+			{ label: 'Dawn: Phone numbers in Karachi, Lahore changed to eight digits', url: 'https://www.dawn.com/news/935512' },
+			{ label: 'ProPakistani: Mobilink and Warid Are Merging Into One Brand: Jazz', url: 'https://propakistani.pk/2017/01/06/mobilink-warid-merging-one-brand-jazz/' },
+			{ label: 'Wikipedia: Telephone numbers in Pakistan', url: 'https://en.wikipedia.org/wiki/Telephone_numbers_in_Pakistan' },
+			{ label: 'Wikipedia: List of dialling codes in Pakistan', url: 'https://en.wikipedia.org/wiki/List_of_dialling_codes_in_Pakistan' },
+			{ label: 'Business Standard: DoT warns against picking up WhatsApp calls with foreign numbers +92', url: 'https://www.business-standard.com/india-news/dot-warns-against-picking-up-whatsapp-calls-with-foreign-numbers-92-124032900166_1.html' },
+			{ label: 'FCC: "One Ring" Phone Scam', url: 'https://www.fcc.gov/consumers/guides/one-ring-phone-scam' },
+		],
+	},
 ];
