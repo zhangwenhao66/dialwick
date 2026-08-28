@@ -264,5 +264,18 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-28",
+    "action": "submitted",
+    "reason": "游标停留站(next_start_site=DialWick)首位处理。今日新发布country-code-92-pakistan（13:00档）：URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。boston-zip-codes（今日审计更新）已收录未提交。第二轮遍历时用build-index-queue.py队列取代理值最高候选los-angeles-zip-codes，URL Inspection显示Crawled-currently not indexed，REQUEST INDEXING提交成功。",
+    "submitted_urls": [
+      "https://dialwick.com/country-code-92-pakistan/",
+      "https://dialwick.com/los-angeles-zip-codes/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/boston-zip-codes/"
+    ],
+    "quota_used": "2 of shared account-wide daily quota"
   }
 ]
