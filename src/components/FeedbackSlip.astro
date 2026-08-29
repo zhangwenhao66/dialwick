@@ -1,0 +1,116 @@
+---
+// Reader response slip -- display-layer only. No external requests; fires one
+// GA4 event through the gtag already loaded in Layout.astro (silently no-ops
+// if gtag is absent). Styled as an index-card slip with a tab ear to match
+// the directory design language.
+---
+
+<div class="dw-fb mt-10">
+	<p class="idx-tab font-mono-num m-0 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent-dark)]">Response slip</p>
+	<div class="idx-card px-5 py-4">
+		<p class="dw-fb-q">Did you find the number you needed?</p>
+		<div class="dw-fb-actions">
+			<button type="button" class="dw-fb-btn" data-dw-verdict="helpful">Found it</button>
+			<button type="button" class="dw-fb-btn" data-dw-verdict="not_helpful">Still looking</button>
+		</div>
+		<p class="dw-fb-note" data-dw-note aria-live="polite"></p>
+	</div>
+</div>
+
+<script>
+	const slip = document.querySelector('.dw-fb');
+	if (slip) {
+		const note = slip.querySelector('[data-dw-note]');
+		const buttons = Array.from(slip.querySelectorAll('button[data-dw-verdict]'));
+		buttons.forEach((btn) => {
+			btn.addEventListener('click', () => {
+				const verdict = btn.getAttribute('data-dw-verdict');
+				const w = window as typeof window & { gtag?: (...args: unknown[]) => void };
+				if (w.gtag) w.gtag('event', 'page_feedback', { verdict });
+				buttons.forEach((b) => {
+					(b as HTMLButtonElement).disabled = true;
+				});
+				btn.classList.add('dw-fb-chosen');
+				if (!note) return;
+				if (verdict === 'not_helpful') {
+					const mailto =
+						'mailto:contact@dialwick.com?subject=' +
+						encodeURIComponent('Page feedback: ' + location.pathname);
+					note.innerHTML =
+						'Filed, thank you. Tell us what’s missing: <a href="' +
+						mailto +
+						'">contact@dialwick.com</a>';
+				} else {
+					note.textContent = 'Filed, thank you. Slip recorded.';
+				}
+			});
+		});
+	}
+</script>
+
+<style>
+	.dw-fb-q {
+		margin: 0;
+		font-size: 1rem;
+		font-weight: 700;
+		color: var(--ink);
+	}
+	.dw-fb-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		margin-top: 0.8rem;
+	}
+	.dw-fb-btn {
+		cursor: pointer;
+		font: inherit;
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: var(--ink);
+		background: var(--paper);
+		border: 1.5px solid var(--ink);
+		border-radius: 6px;
+		padding: 0.45rem 1.1rem;
+		box-shadow: 2px 2px 0 rgba(26, 35, 50, 0.12);
+	}
+	.dw-fb-btn:hover:not(:disabled) {
+		background: var(--ink);
+		color: #fff;
+	}
+	.dw-fb-btn:active:not(:disabled) {
+		transform: translate(1px, 1px);
+		box-shadow: 1px 1px 0 rgba(26, 35, 50, 0.12);
+	}
+	.dw-fb-btn:focus-visible {
+		outline: 2px solid var(--accent-dark);
+		outline-offset: 2px;
+	}
+	.dw-fb-btn:disabled {
+		cursor: default;
+		border-color: var(--rule);
+		color: var(--ink);
+		opacity: 0.55;
+		box-shadow: none;
+	}
+	.dw-fb-btn:disabled.dw-fb-chosen {
+		opacity: 1;
+		border-color: var(--ink);
+		background: var(--ink);
+		color: #fff;
+	}
+	.dw-fb-note {
+		margin: 0.7rem 0 0;
+		min-height: 2.6em;
+		font-size: 0.85rem;
+		line-height: 1.3;
+		color: var(--ink);
+		opacity: 0.75;
+	}
+	.dw-fb-note :global(a) {
+		color: var(--accent-dark);
+		text-decoration: none;
+	}
+	.dw-fb-note :global(a:hover) {
+		text-decoration: underline;
+	}
+</style>

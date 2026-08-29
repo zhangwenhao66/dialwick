@@ -7,6 +7,7 @@ import { pickRelatedGuides } from '../../vendor/site-toolkit/packages/related-gu
 import { guides, type Guide, type GuideCategory } from '../data/guides';
 import { getDialingGuide } from '../lib/internationalDialing';
 import DialFormatBuilder from '../components/DialFormatBuilder.astro';
+import FeedbackSlip from '../components/FeedbackSlip.astro';
 import { AUTHOR_NAME, SITE_ORIGIN } from '../consts';
 
 export function getStaticPaths() {
@@ -184,6 +185,8 @@ import { imgDims } from '../data/imageDims';
 				</div>
 			</div>
 		)}
+
+		<FeedbackSlip />
 
 		<div class="mt-10 border-t border-[var(--rule)] pt-6 text-sm text-[var(--ink)]/55">
 			<p class="m-0">Written and edited by <a href="/about/" class="text-[var(--ink)]/70 no-underline hover:text-[var(--ink)] hover:underline">{AUTHOR_NAME}</a></p>
