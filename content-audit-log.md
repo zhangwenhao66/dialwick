@@ -1690,3 +1690,92 @@ First full 13-dimension audit for this article (published 2026-08-03; had only r
   "process_note": "This audit hit the L-0805-2 stale-threshold near-miss pattern (see 独立站/内容通用教训库.md) for the second consecutive day on this same site (austin-zip-codes 2026-08-27, boston-zip-codes 2026-08-28) -- initially reasoning from a remembered generic SERP character-count guideline instead of running check_seo_field_stats.py first. Both times an independent verification agent caught it before any incorrect edit was made, so no harm resulted, but the recurrence rate suggests this should become a mandatory first sub-step of dimension 5 rather than continuing to rely on independent review as the backstop -- see the lessons-library entry for the explicit recommendation to Owen."
 }
 ```
+
+## nashville-zip-codes
+
+First audit for this article (published 2026-08-09, `published` field already present -- no L-0809-style backfill needed). Selected as the oldest of 29 never-audited articles per the site's rotation rule.
+
+```json
+{
+  "url_slug": "nashville-zip-codes",
+  "url": "https://dialwick.com/nashville-zip-codes/",
+  "last_audited": "2026-08-29",
+  "published_date": "2026-08-09",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Specific named entities, dates, and vote tallies throughout (Beverly Briley, Ben West, County Judge Beverly Briley, June 28 1962 referendum, April 1 1963 implementation, 400-399 and 458-447 Lakewood votes); 5 named sources incl. the primary Nashville.gov government-history page and Wikipedia's Lakewood, TN article, not generic attribution."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "pass -- extensively verified, nothing changed",
+      "detail": "This site has hit the same 'entirely within one county' overclaim (L-0804-2 in the lessons library) 4 times before on DialWick alone (what-county-is-chicago-in, what-county-is-houston-in, dallas-zip-codes, chicago-zip-codes), so this was the priority check. Verdict: does NOT recur here, for a structural reason absent in those cases -- Nashville-Davidson is a true consolidated city-county government (the city government IS the county government since 1963), unlike Chicago/Houston/Dallas which are cities whose municipal limits happen to sit inside/across county lines. Verified: (a) curl of nashville.gov/departments/government/history-metro (the article's own cited source) matches the article's 1958 rejection, $10 wheel tax / 'green sticker tax' nickname, 82,000-resident annexation, the exact six satellite-city names, June 28 1962 vote, April 1 1963 implementation with Briley as first mayor, 'first city in the country to achieve true consolidation,' and 'some fourteen consolidated governments...each used the 1962 Nashville charter as a model' -- all verbatim or near-verbatim matches to the primary source, correctly attributed as the source's own claim rather than asserted independently. (b) Wikipedia's Lakewood, Tennessee article confirms the Aug 5 2010 400-399 vote and the March 15 2011 458-447 re-vote exactly. (c) WebSearch confirms ZIP 37138's USPS primary place name is Old Hickory (Lakewood listed only as an acceptable alternative), matching the article's claim. (d) Site's own src/lib/data/zipCounty.json queried directly: exactly 39 rows with place='Nashville'/state='TN', all 39 tagged county=Davidson, and the ZIP list matches the article's table exactly digit-for-digit; Goodlettsville's 2 codes (37070/37072) also both tagged Davidson in the site's data, and the article already hedges this appropriately given 37072 factually spans into Sumner/Robertson per third-party sources. (e) WebSearch of 'Nashville, TN' ZIP-in-other-counties turned up no primary-place-name exception (zipcodestogo.com's own page title independently confirms 'All 39 ZIP Codes...Davidson County'). No fabricated quotes, no sources[] gaps for specific claims, no reversed-source misreadings found."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "published=updated=2026-08-09, 20 days old at audit time. Content is 1960s consolidation history plus a ZIP/county table verified still accurate against the site's own current data file -- nothing here has a natural refresh cadence shorter than years."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "get_serp_results for 'nashville zip codes': DialWick does not currently rank in the top 10 (dominated by real-estate/homes-for-sale ZIP listicles -- nashvillesmls.com, nashvillehomeviewer.com, reliantrealty.com -- plus a printable-map page and Nashville's own open-data portal). That's a visibility gap, not a content-quality problem: the competing pages are shallow zip-to-neighborhood/home-search directories, while this article's 1963 consolidation history, satellite-city ZIP-vs-government distinction, and Lakewood dissolution litigation are not present in that SERP's content type -- genuine incremental value, consistent with this site's established differentiation pattern on sibling articles."
+    },
+    {
+      "dimension": "5. SEO technical audit",
+      "status": "pass",
+      "detail": "Live page checked via curl+DOM: single H1, 3 content H2s + FAQ H2 (no skipped levels), self-referencing canonical, no meta robots/noindex, Article+FAQPage+BreadcrumbList JSON-LD all present and consistent with content, 1 data table. Ran scripts/check_seo_field_stats.py against the site's own 46-article distribution: title length z=0.72 (normal range), description length z=-0.52 (normal range) -- both comfortably inside the site's own norms, not the L-0805-2 false-positive trap this site hit twice in the prior two days."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85-88/99 (estimated against the same rubric used elsewhere in this log)",
+      "detail": "Strong structure (3 H2s + FAQPage schema + data table), dense specific dated statistics with named-source attribution, 3 outbound + 2 inbound manual in-body cross-links carrying real comparative facts (not generic anchors), professional/civic terminology, clear direct-answer opening (coreSummary). Weaker spots: no direct expert quotations (paraphrase of Nashville.gov rather than a quoted line), which is the same minor gap noted on other well-scoring articles in this log. Comfortably above the 80-point bar."
+    },
+    {
+      "dimension": "7. Humanizer backfill",
+      "status": "not applicable",
+      "detail": "Published 2026-08-09, after the 2026-08-07 humanizer+avoid-ai-writing mandate took effect, so this should already have passed both checks at publish time. Manual re-read found no AI-writing tells (double-hyphen dashes used consistently instead of em-dash, no vague attribution, no rule-of-three padding, varied sentence lengths, no promotional/inflated language) -- no re-pass needed."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "All 5 sources checked via curl. geonames.org, nashville.gov, en.wikipedia.org, goodlettsville.gov all return HTTP 200. zipcodestogo.com/city/Nashville/TN/ returns 403 to curl but is confirmed live and indexed via WebSearch (page title 'Nashville, TN ZIP Code List -- All 39 ZIP Codes & Map | Davidson County' matches current content) -- standard bot-blocking, not link rot, consistent with this site's established pattern for this class of finding."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "3 manual outbound in-body links (boston-zip-codes x2, what-county-is-chicago-in x1). 2 manual inbound links from indianapolis-zip-codes (bidirectional, both carrying real comparative facts about the two cities' consolidation histories, not generic anchors). grep of guides.ts confirms no other article name-checks 'Nashville' without linking to it -- the site's previously-documented zero-outbound-link pattern does not recur here. 'ZIP Codes' category has 27 members (>6), so the automated related-guides rotation also applies on top of the manual links."
+    },
+    {
+      "dimension": "10. Schema data consistency",
+      "status": "pass",
+      "detail": "Article, FAQPage (4 Q&As matching the 4 faq[] entries), BreadcrumbList (3 ListItems) all present in live JSON-LD and consistent with the rendered content; no orphaned or mismatched schema fields."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Civic/municipal-history content (referendum votes, annexation, a 1960s-era note on the African-American community being divided over consolidation, sourced directly from Nashville.gov's own account). No AdSense-sensitive categories, no health/financial/legal advice, no personal-data exposure."
+    },
+    {
+      "dimension": "12. Image licensing",
+      "status": "not applicable",
+      "detail": "Confirmed site-wide, not article-specific: every DialWick ZIP-codes page (checked nashville, denver, atlanta) falls back to favicon.svg for og:image -- this site's ZIP/area-code reference template doesn't use hero images at all, so there is nothing to license-check on this page."
+    },
+    {
+      "dimension": "13. AdSense policy risk",
+      "status": "pass",
+      "detail": "Correct shared publisher ID (pub-5245502795720653) present, standard ad slot rendering, no content in the sensitive/misinformation/regulated categories that would put the shared 10-site account at risk."
+    }
+  ],
+  "actions_taken": [
+    "None -- all 13 dimensions passed on first review; no edits made to guides.ts.",
+    "Specifically targeted-checked this site's most-recurring lessons-library pattern (L-0804-2, 'entirely within one county' overclaim, 4 prior DialWick hits) and confirmed it does not apply here, for a structural reason (true consolidated city-county government) documented in the finding above.",
+    "No independent-agent spawn needed per the task's own 'don't manufacture problems' instruction -- there were no confirmed-or-candidate findings to hand to a reviewer.",
+    "No git changes, no rebuild/redeploy, no IndexNow resubmission (nothing changed on the live page)."
+  ],
+  "seo_score": "No issues found; title/description both within normal site-wide range per check_seo_field_stats.py (z=0.72, z=-0.52).",
+  "geo_score": "~85-88/99 (estimated), comfortably above the 80 threshold.",
+  "escalation": null
+}
+```
