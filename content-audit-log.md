@@ -1779,3 +1779,108 @@ First audit for this article (published 2026-08-09, `published` field already pr
   "escalation": null
 }
 ```
+
+## atlanta-area-code
+
+First audit for this article (published 2026-08-19, `published` field already present -- no L-0809-style backfill needed). Selected as one of 29 never-audited articles (never appeared in this log before) per the site's rotation rule.
+
+```json
+{
+  "url_slug": "atlanta-area-code",
+  "url": "https://dialwick.com/atlanta-area-code/",
+  "last_audited": "2026-08-30",
+  "published_date": "2026-08-19",
+  "diagnostic_checklist": [
+    "1. Are the three geographic splits (912 in 1954, 706 in 1992, 770 in 1995) dated correctly?",
+    "2. Are the three overlay dates (678 in 1998, 470 in 2010, 943 in 2022) dated correctly?",
+    "3. Is the 'NANPA's senior director at the time described [470] publicly as intended primarily for downtown Atlanta' attribution real and correctly framed?",
+    "4. Does the table's 'still issuing new numbers?' column (404/678 no, 770/470/943 yes) match reality and the article's own cited sources?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "6 named sources (Wikipedia: Area code 404, Area code 770, Area codes 678/470/943; 2 Georgia PSC PDFs; 1 AJC news article), all independently curl-verified HTTP 200. Specific dated claims throughout, not generic attribution."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem (770) -> fixed; confirmed not-a-problem (470, NANPA quote)",
+      "detail": "Checklist items 1-2 independently verified via WebSearch against Wikipedia's Area code 404/770/678,470,943 pages: 912 split 1954-07-01, 706 split 1992-05-03, 770 split 1995-08-01, 678 overlay 1998 (Wikipedia's own page gives Jan 15, DialWick's Jan 6 is the implementation-vs-first-assignment distinction seen elsewhere on this site, not an error), 470 overlay 2010-02-26, 943 overlay 2022-03-15 -- all confirmed accurate. Checklist item 3 (NANPA senior director quote): independent agent confirmed this is a real, accurately attributed quote (John Manning, NANPA senior director, quoted by the Atlanta Journal-Constitution in 2010: 'Primarily for Downtown Atlanta and surrounding areas, the number is going to be 470'). Checklist item 4 (exhaustion table): **the article's own cited Wikipedia source ('Area codes 678, 470, and 943') states in its History section that prefixes in 678 AND 770 'have also all been allocated,' directly contradicting the table's '770: Yes.'** Corroborated by a Georgia PSC press release (Oct 28, 2020) describing 404/770/678/470 as a single depleting pool that prompted the 943 relief code ('will not be assigned to any service providers until the current codes have been exhausted'). Independently confirmed by a fresh-context agent using the same two primary sources. A separate independent check on 470 (raised because the same reasoning could plausibly extend to it) found the article's own cited source explicitly and separately singles out 470 as still having its own unassigned prefixes ('leaving only 470 central office codes available') -- confirmed NOT a problem, 470's 'Yes' is accurate."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "published=updated=2026-08-19, 11 days old at audit time. The 770 finding is a factual error present since publication, not content that became outdated during the 11-day window."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass",
+      "detail": "WebSearch for the target topic shows a SERP dominated by area-code lookup aggregator/mill sites (allareacodes.com, 212areacode.com, SIPNEX, globalcallforwarding.com) that give basic facts but conflate 470's 2001 reservation date with its 2010 in-service date in a confusing way, and don't organize the split-vs-overlay historical progression as clearly as this article does. Genuine incremental value, consistent with this site's established differentiation pattern."
+    },
+    {
+      "dimension": "5. SEO technical audit",
+      "status": "confirmed problem -> fixed",
+      "detail": "Live page checked via curl+DOM: single H1, 4 content H2s + FAQ H2, self-referencing canonical, 3 JSON-LD blocks (Article/FAQPage/BreadcrumbList) present and consistent. Meta description was 165 chars raw -- independent agent confirmed via pixel-width estimate (~1000-1090px vs. Google's ~920-990px desktop / ~680px mobile budgets) that this exceeds safe-display limits on both desktop and mobile, more precisely than a bare char-count comparison to the site's 161-char/not-escalated precedent would suggest. Fixed as part of the same edit that corrected the exhaustion-count framing (165 -> 156 chars). Title field 90 chars (101 with ' | DialWick' suffix) -- within this site's established precedent range (up to 101 chars seen on nashville-zip-codes); not escalated."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~86-88/99 (estimated against the same rubric used elsewhere in this log)",
+      "detail": "Strong structure (4 H2s + data table + FAQPage schema), 6 named authoritative sources all verified live, dense specific dated statistics, 5 confirmed live inbound cross-links. Weaker on direct verbatim quotation (the NANPA quote is paraphrased, not quoted verbatim) -- consistent with the minor gap noted on other well-scoring articles in this log. Comfortably above the 80-point bar; no GEO-specific fix needed since the factual/SEO fixes did not touch structure."
+    },
+    {
+      "dimension": "7. Humanizer / avoid-ai-writing",
+      "status": "pass (spot-check, not mandatory backfill)",
+      "detail": "Published 2026-08-19, after the 2026-08-07 avoid-ai-writing mandate, so this is a spot-check. Mechanical scan: zero hits on the AI-vocabulary word list (delve/tapestry/testament/pivotal/etc., Tier 1-3), zero curly quotes, zero true em/en dashes (site's established ' -- ' ASCII convention used throughout). Newly-written replacement passages (title/description/coreSummary/heading/2 body paragraphs/1 FAQ answer) re-scanned the same way after the fix -- also clean."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "All 6 cited sources (3 Wikipedia, 2 GA PSC PDFs, 1 AJC article) return HTTP 200."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, not an orphan",
+      "detail": "5 confirmed live manual inbound links from other articles: miami-area-code (x2, 'Atlanta's numbering plan'), chicago-area-code (via automated related-guides rotation, category has 7 members), indianapolis-zip-codes ('Atlanta'), las-vegas-area-code ('Atlanta'). No duplicate anchor text within any single source article (checked per L-0818-3)."
+    },
+    {
+      "dimension": "10. Schema data consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList all present, auto-derived from guide object fields; datePublished/dateModified both 2026-08-19 matching published/updated. Post-fix: headline/description in the Article schema automatically reflect the corrected title/description text (confirmed via seo_drift.py compare, WARNING-level 'schema content changed' matches the expected edit, no CRITICAL findings)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure telecom-numbering-plan history content. No sensitive topics, no named-individual risk beyond a routine 2010 regulatory-official quote (independently confirmed accurate)."
+    },
+    {
+      "dimension": "12. Image licensing",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this article -- consistent with this site's established no-images pattern for area-code guides."
+    },
+    {
+      "dimension": "13. AdSense policy risk",
+      "status": "pass",
+      "detail": "ads.txt correctly resolves to pub-5245502795720653; /privacy/ page reachable (200). No sensitive categories, no misleading/clickbait framing."
+    }
+  ],
+  "independent_confirmations": [
+    "Agent 1 (770 exhaustion status): CONFIRMED PROBLEM -- article's own cited Wikipedia source plus a Georgia PSC press release both contradict the table's '770: Yes'.",
+    "Agent 2 (NANPA senior director quote attribution): NOT A PROBLEM -- verified as a real, accurately attributed 2010 AJC quote from John Manning.",
+    "Agent 3 (meta description length): CONFIRMED PROBLEM -- pixel-width estimate exceeds both desktop and mobile display budgets.",
+    "Agent 4 (470 exhaustion status, spawned after the 770 finding raised the question of whether 470 was also affected): NOT A PROBLEM -- the same cited source explicitly separates 470 from the exhausted group."
+  ],
+  "actions_taken": [
+    "Corrected the article's exhaustion-count framing from 'two exhausted / three still issuing' to 'three exhausted (404, 678, 770) / two still issuing (470, 943)': title, description, coreSummary, the area-code table's 770 row, one section heading, two body paragraphs, and one FAQ answer all updated for consistency. Assessed against this site's own precedent (scam-area-codes' 'six'->'seven' fix, which cascaded through title/description/FAQ without escalation) and judged to be the same class of routine factual correction, not a reversal of the article's core thesis (the splits-vs-overlays historical progression is entirely unaffected) -- fixed directly rather than emailing Owen.",
+    "Shortened the meta description from 165 to 156 chars in the same edit (independently confirmed truncation risk).",
+    "Ran seo_drift.py baseline before edits and compare after: title/meta description/schema-content changes all WARNING/INFO level and match the intended edit; no CRITICAL findings.",
+    "npm test (64/64 passed) and npm run build (56 pages) both passed after the edit.",
+    "Committed (535969a) and pushed to origin/main; DialWick auto-deploys via git-connected Cloudflare Pages (no deploy hook needed); verified live via polling (new title text confirmed present in live HTML).",
+    "Submitted https://dialwick.com/atlanta-area-code/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200); logged to indexnow-submit-log.json.",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Checked 内容通用教训库.md's lesson entries before and after; no new generalizable pattern found (the 770/470 exhaustion-status error is a site/topic-specific factual correction, does not meet the 'would recur on a different site/topic' bar for the shared lessons library)."
+  ],
+  "seo_score": "1 confirmed issue (meta description length, 165->156 chars) found and fixed as part of the same edit; title (101 chars w/ suffix) reviewed and not escalated per site precedent",
+  "geo_score": "~86-88/99 both before and after fix (pass; the fix corrected a factual/framing error and a technical SEO field, not content depth or structure)",
+  "escalation": null
+}
+```
