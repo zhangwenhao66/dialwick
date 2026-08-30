@@ -2887,6 +2887,83 @@ export const guides: Guide[] = [
 		],
 	},
 	{
+		slug: 'how-to-call-uk-from-us',
+		category: 'International Dialing',
+		title: "The UK's Country Code Is +44, and Most Britons Get Their Own Area Code Wrong",
+		description:
+			'Dial 011, then 44, then drop the leading 0. London\'s real area code is 020, not "0207" or "0208" -- a study found only 13% of people could name it correctly.',
+		published: '2026-08-30',
+		updated: '2026-08-30',
+		coreSummary:
+			'The United Kingdom\'s country code is +44. Dialing in from a US phone: 011, then 44, then the area code or mobile prefix with its leading 0 dropped, then the rest of the number. London\'s area code looks longer than it is because of how the city\'s numbering plan grew: it dialed as a plain 01 until 1990, split into 071 and 081 that year, became 0171 and 0181 in a 1995 nationwide overhaul called PhONEday, then folded both of those into a single code, 020, in 2000\'s Big Number Change. That last consolidation left a documented mix-up behind -- a study commissioned after the change found only 13% of people could correctly name London\'s area code without a prompt, while 59% answered "0207" or "0208" instead, numbers that have never actually existed as area codes on their own. And the UK\'s own outgoing exit code is a different two digits entirely: 00, not 011, a detail that matters to any US traveler trying to dial home from a British phone.',
+		sections: [
+			{
+				heading: 'Dialing the UK from a US phone, step by step',
+				body: [
+					'Calling a UK landline or mobile number from the US: dial 011, then 44 (the UK\'s country code), then the area code or mobile prefix with its leading 0 dropped, then the rest of the number. A London landline written domestically as 020 7946 0958 becomes 011 44 20 7946 0958 from a US phone, or +44 20 7946 0958 from a mobile or VoIP line that accepts a plus sign in place of 011. UK mobile numbers follow the identical rule: a number written domestically as 07911 123456 becomes 011 44 7911 123456, dropping only the single leading 0 and nothing else.',
+				],
+				table: {
+					columns: ['Step', 'What to dial'],
+					rows: [
+						['1. Exit code (landline)', '011'],
+						['1. Exit code (mobile/VoIP)', '+'],
+						['2. Country code', '44'],
+						['3. Area code or mobile prefix', 'drop the leading 0'],
+						['4. Local number', 'remaining digits'],
+					],
+				},
+			},
+			{
+				heading: "How London's area code went from 01 to 071/081 to 0171/0181 to 020",
+				body: [
+					'London\'s area code has changed more times since the 1960s than any other UK city\'s. It started as a plain 01, covering the whole of Greater London under one code, until May 1990, when growing demand split it in two: 071 for the inner city, 081 for outer London and the suburbs. That split bought only five years of headroom. On 16 April 1995, a nationwide change called PhONEday inserted a "1" after the leading 0 in every UK geographic area code to free up numbering space, turning London\'s 071 and 081 into 0171 and 0181 -- and, in five other cities that were running low on numbers (Bristol, Leeds, Leicester, Nottingham, and Sheffield), replacing the old code outright with a new four-digit one instead. PhONEday had itself been delayed once already, first floated in 1991 for a 1994 rollout, and it shipped with an eight-month period where old and new codes worked side by side, backed by a GBP 16 million advertising campaign to get callers to switch over.',
+					'The final consolidation came with the Big Number Change: 0171 and 0181 both folded into a single code, 020, with new eight-digit local numbers replacing the old seven-digit ones. The new range went live on 1 June 1999 and ran in parallel with the old codes until the cutover on 22 April 2000, after which 0171 and 0181 stopped connecting for good. London\'s numbering capacity grew roughly fivefold in the process, and Cardiff, Coventry, Northern Ireland, Portsmouth, and Southampton all got the same eight-digit treatment on the same date.',
+					'That fivefold boost didn\'t last forever. By 2019, Ofcom was back in nearly the same spot PhONEday and the Big Number Change had each once solved: London\'s three existing ranges, 020 3, 020 7, and 020 8, had roughly 30 million numbers allocated between them, and fewer than a million were left to hand out to phone companies, who were distributing about 30,000 London numbers a week. Ofcom opened a fourth range, 020 4, later that year to keep pace -- the third numbering squeeze since PhONEday, this time solved with a smaller top-up instead of a full renumbering.',
+				],
+			},
+			{
+				heading: '"0207" and "0208" aren\'t area codes, even though most people think they are',
+				body: [
+					'London\'s actual area code is 020, one digit shorter than most callers assume. The mix-up traces directly back to the Big Number Change: before 2000, Inner London genuinely did dial as 0171 and Outer London as 0181, so a generation of callers memorized those as the area code. When both collapsed into 020, the 7 or 8 that used to open the area code became instead the first digit of a new eight-digit local number -- so a number that used to read 0171 946 0958 became 020 7946 0958, the same digits with the boundary between "area code" and "local number" shifted one place to the left. A study commissioned after the change found only 13% of respondents could name 020 as London\'s area code without being prompted, while 59% answered "0207" or "0208" instead, numbers that have never been valid area codes standing on their own. The practical consequence: dialing a London number from inside the London area only requires the last eight digits, no area code at all, because the trunk prefix "0" and the area code "20" are simply ignored on local calls.',
+				],
+			},
+			{
+				heading: "The UK's own exit code is 00, not 011",
+				body: [
+					'A US caller dialing into the UK uses 011, the exit code any US or Canadian phone dials before an international call. A UK caller dialing out uses a different code entirely: 00. That\'s not an arbitrary choice -- 00 matches the international call prefix the International Telecommunication Union recommends, and the UK switched to it on the same day as PhONEday, 16 April 1995, replacing an older 010 prefix. The distinction matters most to a US traveler in the UK trying to call home using a number copied straight off a US webpage: dialing 011 1 literally from a UK phone won\'t connect, because 011 isn\'t a recognized UK exit code -- it has to be 00 1, followed by the US area code and number (a "+" still works from a mobile or VoIP line, since it substitutes for whichever exit code the local network expects). The US and the UK simply settled on different digits for the identical job, the same way [the US shares its own +1 country code with 19 other North American and Caribbean places](/us-country-code/) while the UK\'s +44 belongs to it alone.',
+				],
+			},
+		],
+		faq: [
+			{
+				question: "What is the UK's country code?",
+				answer: '+44.',
+			},
+			{
+				question: 'Do I drop the 0 when calling a UK number from the US?',
+				answer:
+					'Yes. The leading 0 in front of any UK area code or mobile prefix is a domestic trunk prefix, dropped once +44 (or 011 44) takes its place. A London landline written as 020 7946 0958 domestically becomes 011 44 20 7946 0958 from a US phone.',
+			},
+			{
+				question: 'Is London\'s area code 0207 or 0208?',
+				answer:
+					'No. London\'s actual area code is 020. "0207" and "0208" were never valid area codes on their own -- the 7 or 8 that follows 020 is the first digit of an eight-digit local number, a mix-up so common that a study found only 13% of people could name 020 correctly without a hint.',
+			},
+			{
+				question: "What's the UK's own international dialing code, if it isn't 011?",
+				answer:
+					"00. The UK adopted 00 as its outgoing international access code on the same day it introduced PhONEday, 16 April 1995, matching the ITU's standard international call prefix rather than the 011 the US and Canada use.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: PhONEday', url: 'https://en.wikipedia.org/wiki/PhONEday' },
+			{ label: 'Wikipedia: Big Number Change', url: 'https://en.wikipedia.org/wiki/Big_Number_Change' },
+			{ label: 'Wikipedia: UK telephone code misconceptions', url: 'https://en.wikipedia.org/wiki/UK_telephone_code_misconceptions' },
+			{ label: 'Ofcom (via WiredGov): London calling -- Ofcom to release new \'(020) 4\' phone numbers', url: 'https://www.wired-gov.net/wg/news.nsf/articles/London+calling+Ofcom+to+release+new+020+4+phone+numbers+30082019131500?open=' },
+			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+		],
+	},
+	{
 		slug: 'phoenix-zip-codes',
 		category: 'ZIP Codes',
 		title: 'Phoenix ZIP Codes: All 77, and Why the List Never Crosses a County Line',
