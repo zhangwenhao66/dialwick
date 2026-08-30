@@ -16,7 +16,7 @@ export interface GuideSection {
 	heading: string;
 	body: string[];
 	table?: DataTable;
-	/** Raw, self-authored inline SVG markup -- no stock photos or AI-generated "realistic" imagery on this site. */
+	/** Raw, self-authored inline SVG markup; no stock photos or AI-generated "realistic" imagery on this site. */
 	diagramSvg?: string;
 }
 
@@ -56,7 +56,7 @@ const NPA_DIAGRAM = `<svg viewBox="0 0 640 170" width="100%" style="max-width:64
 	<rect x="430" y="40" width="200" height="70" rx="8" fill="#131a27"/>
 	<text x="530" y="85" text-anchor="middle" fill="#f6f4ee" font-size="30" font-family="ui-monospace, monospace" font-weight="700">0142</text>
 
-	<text x="320" y="145" text-anchor="middle" fill="#1a2332" font-size="13" font-family="ui-sans-serif, system-ui" opacity="0.6">10 digits total -- the area code identifies a numbering plan area, not a single town</text>
+	<text x="320" y="145" text-anchor="middle" fill="#1a2332" font-size="13" font-family="ui-sans-serif, system-ui" opacity="0.6">10 digits total. The area code identifies a numbering plan area, not a single town</text>
 </svg>`;
 
 export const guides: Guide[] = [
@@ -72,14 +72,14 @@ export const guides: Guide[] = [
 		published: '2026-08-03',
 		updated: '2026-08-03',
 		coreSummary:
-			"USPS assigns 92 ZIP codes with Atlanta as the primary place name. Most are in Fulton County, but roughly a fifth sit in DeKalb County -- Atlanta's ZIP map has never lined up neatly with a single county line. One of those 92, 39901, isn't a neighborhood at all: it's the unique ZIP code for the IRS's Atlanta service center.",
+			"USPS assigns 92 ZIP codes with Atlanta as the primary place name. Most are in Fulton County, but roughly a fifth sit in DeKalb County. Atlanta's ZIP map has never lined up neatly with a single county line. One of those 92, 39901, isn't a neighborhood at all: it's the unique ZIP code for the IRS's Atlanta service center.",
 		sections: [
 			{
 				heading: "Atlanta's ZIP codes span two counties, not one",
 				body: [
-					"Atlanta sits mostly in Fulton County, but the city's ZIP codes don't stop at the Fulton line. USPS ZIP boundaries follow mail-delivery routes, not municipal or county borders, and several ZIP codes on Atlanta's north and northeast side -- around Emory, Druid Hills, Chamblee, and the Perimeter -- fall inside DeKalb County even though the mailing address reads \"Atlanta, GA.\"",
-					"Of the 92 ZIP codes USPS lists with Atlanta as the primary place, the county split works out to roughly four Fulton ZIPs for every one DeKalb ZIP. If a piece of mail is addressed to Atlanta, checking the ZIP against the table below is the only reliable way to know which county it's actually in -- the city name on the envelope won't tell you.",
-					"One row deserves a caveat rather than a flat answer: 30339 (Vinings, Cumberland, and Truist Park, home of the Atlanta Braves) is listed here as Fulton because that's what this table's source, GeoNames, assigns it. But most population-weighted ZIP-to-county datasets put the bulk of that ZIP's land and residents in neighboring Cobb County instead, with only a smaller Fulton slice. GeoNames' single-county field can flatten a ZIP that genuinely straddles a line -- 30339 is the one code in this table where that happens.",
+					"Atlanta sits mostly in Fulton County, but the city's ZIP codes don't stop at the Fulton line. USPS ZIP boundaries follow mail-delivery routes, not municipal or county borders, and several ZIP codes on Atlanta's north and northeast side (around Emory, Druid Hills, Chamblee, and the Perimeter) fall inside DeKalb County even though the mailing address reads \"Atlanta, GA.\"",
+					"Of the 92 ZIP codes USPS lists with Atlanta as the primary place, the county split works out to roughly four Fulton ZIPs for every one DeKalb ZIP. If a piece of mail is addressed to Atlanta, checking the ZIP against the table below is the only reliable way to know which county it's actually in; the city name on the envelope won't tell you.",
+					"One row deserves a caveat rather than a flat answer: 30339 (Vinings, Cumberland, and Truist Park, home of the Atlanta Braves) is listed here as Fulton because that's what this table's source, GeoNames, assigns it. But most population-weighted ZIP-to-county datasets put the bulk of that ZIP's land and residents in neighboring Cobb County instead, with only a smaller Fulton slice. GeoNames' single-county field can flatten a ZIP that genuinely straddles a line, and 30339 is the one code in this table where that happens.",
 				],
 				table: {
 					caption: 'All 92 ZIP codes with "Atlanta, GA" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-04)',
@@ -114,20 +114,20 @@ export const guides: Guide[] = [
 			{
 				heading: 'Downtown, Midtown, and Buckhead each have their own ZIP',
 				body: [
-					"Three Atlanta ZIP codes are widely recognized on their own: 30303 covers downtown around Five Points and the Georgia State campus, 30309 covers Midtown, and 30305 / 30326 / 30327 cover the three main slices of Buckhead. 30310 covers the West End on the city's near-southwest side. Beyond these well-known ones, USPS doesn't publish an official neighborhood-to-ZIP crosswalk, and Atlanta's neighborhood boundaries are informal enough that different maps draw them differently -- the table above (ZIP and county only) is the part that comes from an authoritative source.",
+					"Three Atlanta ZIP codes are widely recognized on their own: 30303 covers downtown around Five Points and the Georgia State campus, 30309 covers Midtown, and 30305 / 30326 / 30327 cover the three main slices of Buckhead. 30310 covers the West End on the city's near-southwest side. Beyond these well-known ones, USPS doesn't publish an official neighborhood-to-ZIP crosswalk, and Atlanta's neighborhood boundaries are informal enough that different maps draw them differently. The table above (ZIP and county only) is the part that comes from an authoritative source.",
 				],
 			},
 			{
 				heading: "Why a ZIP is assigned to the IRS, not a neighborhood",
 				body: [
-					"39901 doesn't fit the pattern of the other 91 ZIPs at all -- it's numerically far outside Georgia's normal 30000-31999 block, and it isn't a delivery area anyone lives in. It's a unique ZIP code the USPS assigns to a single large-volume mail recipient: the IRS's Atlanta service center. Other IRS processing centers get the same treatment (Austin, TX uses 73301; Fresno, CA uses 93888) -- when an organization receives enough mail, USPS carves out a ZIP that belongs to it alone, regardless of where that number would otherwise fall on the map. Atlanta only has the one; [Chicago carries 28 of these single-recipient ZIPs](/chicago-zip-codes/), nearly a third of its total, reflecting its role as a major aviation and banking hub.",
+					"39901 doesn't fit the pattern of the other 91 ZIPs at all: it's numerically far outside Georgia's normal 30000-31999 block, and it isn't a delivery area anyone lives in. It's a unique ZIP code the USPS assigns to a single large-volume mail recipient: the IRS's Atlanta service center. Other IRS processing centers get the same treatment (Austin, TX uses 73301; Fresno, CA uses 93888). When an organization receives enough mail, USPS carves out a ZIP that belongs to it alone, regardless of where that number would otherwise fall on the map. Atlanta only has the one; [Chicago carries 28 of these single-recipient ZIPs](/chicago-zip-codes/), nearly a third of its total, reflecting its role as a major aviation and banking hub.",
 				],
 			},
 			{
 				heading: 'Several of Atlanta\'s best-known suburbs are not "Atlanta" ZIPs at all',
 				body: [
-					"Sandy Springs, Dunwoody, and Brookhaven all incorporated as their own independent cities between 2005 and 2012, but ZIP codes don't automatically follow city incorporations -- USPS updates its place-name database on its own schedule, which is why mail to parts of Sandy Springs and Dunwoody sometimes still shows \"Atlanta, GA\" as the recommended city name even though neither is legally part of Atlanta. Conversely, some of the DeKalb ZIPs in the table above (30338, 30350) already show \"Dunwoody\" as an acceptable alternate. This is normal and doesn't affect mail delivery; ZIP boundaries and municipal boundaries are two different systems that were never designed to match.",
-					"That schedule is now actively moving for Sandy Springs specifically: in March 2026, USPS approved the city's request to become the default mailing name -- replacing \"Atlanta\" -- for seven of its ZIP codes (30319, 30327, 30328, 30338, 30339, 30342, and 30350; an eighth Sandy Springs ZIP, 30092, wasn't included). USPS said updating its Address Management System database to reflect the change could take several weeks. As of this table's last GeoNames check (2026-08-04), all seven still carry \"Atlanta\" as their listed place name -- the change hadn't yet propagated to that database -- but readers in those ZIPs should expect \"Sandy Springs\" to start appearing instead.",
+					"Sandy Springs, Dunwoody, and Brookhaven all incorporated as their own independent cities between 2005 and 2012, but ZIP codes don't automatically follow city incorporations. USPS updates its place-name database on its own schedule, which is why mail to parts of Sandy Springs and Dunwoody sometimes still shows \"Atlanta, GA\" as the recommended city name even though neither is legally part of Atlanta. Conversely, some of the DeKalb ZIPs in the table above (30338, 30350) already show \"Dunwoody\" as an acceptable alternate. This is normal and doesn't affect mail delivery; ZIP boundaries and municipal boundaries are two different systems that were never designed to match.",
+					"That schedule is now actively moving for Sandy Springs specifically: in March 2026, USPS approved the city's request to become the default mailing name, in place of \"Atlanta,\" for seven of its ZIP codes (30319, 30327, 30328, 30338, 30339, 30342, and 30350; an eighth Sandy Springs ZIP, 30092, wasn't included). USPS said updating its Address Management System database to reflect the change could take several weeks. As of this table's last GeoNames check (2026-08-04), all seven still carry \"Atlanta\" as their listed place name because the change hadn't yet propagated to that database, but readers in those ZIPs should expect \"Sandy Springs\" to start appearing instead.",
 				],
 			},
 		],
@@ -135,17 +135,17 @@ export const guides: Guide[] = [
 			{
 				question: 'What is the main ZIP code for Atlanta?',
 				answer:
-					"There isn't a single one -- Atlanta uses 92 different ZIP codes across Fulton and DeKalb counties. 30303 is the closest thing to a \"downtown\" ZIP, covering the Five Points/Georgia State area.",
+					"There isn't a single one. Atlanta uses 92 different ZIP codes across Fulton and DeKalb counties. 30303 is the closest thing to a \"downtown\" ZIP, covering the Five Points/Georgia State area.",
 			},
 			{
 				question: 'Is Atlanta in Fulton County or DeKalb County?',
 				answer:
-					"Mostly Fulton, but not entirely -- about a fifth of Atlanta's ZIP codes, concentrated on the north and northeast side (Emory, Druid Hills, Chamblee, the Perimeter), are in DeKalb County even though they carry an Atlanta mailing address.",
+					"Mostly Fulton, but not entirely. About a fifth of Atlanta's ZIP codes, concentrated on the north and northeast side (Emory, Druid Hills, Chamblee, the Perimeter), are in DeKalb County even though they carry an Atlanta mailing address.",
 			},
 			{
 				question: 'Why does 39901 show up as an Atlanta ZIP code?',
 				answer:
-					"It's a unique ZIP USPS assigned to a single large mail recipient -- the IRS's Atlanta service center -- rather than to a residential area. It doesn't follow the normal geographic numbering pattern because it isn't a geographic ZIP at all.",
+					"It's a unique ZIP USPS assigned to a single large mail recipient, the IRS's Atlanta service center, rather than to a residential area. It doesn't follow the normal geographic numbering pattern because it isn't a geographic ZIP at all.",
 			},
 		],
 		sources: [
@@ -159,11 +159,11 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'New York City ZIP Codes: All 311, by Borough',
 		description:
-			"NYC's five boroughs use 311 ZIP codes -- and Queens is the only one where the map runs on neighborhood names, not the borough name itself.",
+			"NYC's five boroughs use 311 ZIP codes, and Queens is the only one where the map runs on neighborhood names, not the borough name itself.",
 		published: '2026-08-03',
 		updated: '2026-08-06',
 		coreSummary:
-			"New York City's five boroughs together use 311 ZIP codes: 146 in Manhattan (New York County), 79 in Queens, 47 in Brooklyn (Kings County), 25 in the Bronx, and 14 on Staten Island (Richmond County). Manhattan, Brooklyn, the Bronx, and Staten Island ZIPs are all addressed with the borough name; Queens is the outlier -- its ZIPs are addressed by neighborhood (Astoria, Flushing, Jamaica, and 38 others), never \"Queens.\"",
+			"New York City's five boroughs together use 311 ZIP codes: 146 in Manhattan (New York County), 79 in Queens, 47 in Brooklyn (Kings County), 25 in the Bronx, and 14 on Staten Island (Richmond County). Manhattan, Brooklyn, the Bronx, and Staten Island ZIPs are all addressed with the borough name; Queens is the outlier: its ZIPs are addressed by neighborhood (Astoria, Flushing, Jamaica, and 38 others), never \"Queens.\"",
 		sections: [
 			{
 				heading: 'The five boroughs by ZIP code count',
@@ -185,14 +185,14 @@ export const guides: Guide[] = [
 			{
 				heading: 'Queens is the exception: its ZIP codes never say "Queens"',
 				body: [
-					"Ask for a Brooklyn ZIP code and USPS calls it \"Brooklyn.\" Ask for a Staten Island ZIP and it's \"Staten Island.\" Queens breaks that pattern entirely -- every one of its 79 ZIP codes is addressed by an older, more local place name instead: Astoria, Long Island City, Flushing, Jamaica, Forest Hills, Rockaway Park, and 35 others. \"Queens\" itself never appears as a USPS place name.",
-					"The most commonly cited explanation goes back to 1898: Queens was consolidated that year from a patchwork of existing towns and villages that already had their own post offices, and many of those names stuck instead of being replaced by the new borough name. That's not the full story, though -- Staten Island's five original towns (Castleton, Middletown, Northfield, Southfield, and Westfield) were folded into the city in that very same 1898 merger, yet Staten Island addresses use the single borough name today, not those old town names. And not every Queens place name even predates 1898: Bellerose, for instance, was coined as a new development name in the early 1900s, well after consolidation. Brooklyn, by contrast, had already unified its post offices under \"Brooklyn\" before 1898, so that name stuck there without the same complication.",
+					"Ask for a Brooklyn ZIP code and USPS calls it \"Brooklyn.\" Ask for a Staten Island ZIP and it's \"Staten Island.\" Queens breaks that pattern entirely. Every one of its 79 ZIP codes is addressed by an older, more local place name instead: Astoria, Long Island City, Flushing, Jamaica, Forest Hills, Rockaway Park, and 35 others. \"Queens\" itself never appears as a USPS place name.",
+					"The most commonly cited explanation goes back to 1898: Queens was consolidated that year from a patchwork of existing towns and villages that already had their own post offices, and many of those names stuck instead of being replaced by the new borough name. That's not the full story, though. Staten Island's five original towns (Castleton, Middletown, Northfield, Southfield, and Westfield) were folded into the city in that very same 1898 merger, yet Staten Island addresses use the single borough name today, not those old town names. And not every Queens place name even predates 1898: Bellerose, for instance, was coined as a new development name in the early 1900s, well after consolidation. Brooklyn, by contrast, had already unified its post offices under \"Brooklyn\" before 1898, so that name stuck there without the same complication.",
 				],
 			},
 			{
 				heading: 'Manhattan, Brooklyn, the Bronx, and Staten Island line up exactly with their counties',
 				body: [
-					"New York City is unusual among major US cities in that each of its boroughs is legally identical to a county -- Manhattan is New York County, Brooklyn is Kings County, the Bronx is Bronx County, and Staten Island is Richmond County. That means every ZIP code in one of these four boroughs sits entirely within a single, named county, with no cross-county splits the way [Atlanta splits between Fulton and DeKalb](/atlanta-zip-codes/) or [Chicago's near suburbs](/chicago-zip-codes/) sometimes have.",
+					"New York City is unusual among major US cities in that each of its boroughs is legally identical to a county: Manhattan is New York County, Brooklyn is Kings County, the Bronx is Bronx County, and Staten Island is Richmond County. That means every ZIP code in one of these four boroughs sits entirely within a single, named county, with no cross-county splits the way [Atlanta splits between Fulton and DeKalb](/atlanta-zip-codes/) or [Chicago's near suburbs](/chicago-zip-codes/) sometimes have.",
 				],
 			},
 		],
@@ -205,7 +205,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Why don\'t Queens ZIP codes say "Queens"?',
 				answer:
-					"The most commonly cited reason: Queens was assembled in 1898 from towns and villages that already had their own post offices under their own names -- Astoria, Flushing, Jamaica, and dozens more -- and USPS kept using many of those local names instead of switching everything to \"Queens.\" That's not the whole explanation, though -- Staten Island went through the same 1898 consolidation and didn't keep its old town names, so pre-existing post offices alone don't fully account for the pattern.",
+					"The most commonly cited reason: Queens was assembled in 1898 from towns and villages that already had their own post offices under their own names (Astoria, Flushing, Jamaica, and dozens more), and USPS kept using many of those local names instead of switching everything to \"Queens.\" That's not the whole explanation, though. Staten Island went through the same 1898 consolidation and didn't keep its old town names, so pre-existing post offices alone don't fully account for the pattern.",
 			},
 			{
 				question: 'What ZIP code range does Manhattan use?',
@@ -227,11 +227,11 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Texas ZIP Codes: How the State's 2,600 Codes Are Organized",
 		description:
-			"Texas doesn't have one ZIP code system, it has a range spanning 73301 to 88595 -- and which major city has the most ZIP codes isn't the one with the most people.",
+			"Texas doesn't have one ZIP code system, it has a range spanning 73301 to 88595, and the major city with the most ZIP codes isn't the one with the most people.",
 		published: '2026-08-03',
 		updated: '2026-08-09',
 		coreSummary:
-			"Texas uses roughly 2,600 ZIP codes spread across 52 distinct three-digit prefixes, running from 73301 in the north (a Texas-adjacent IRS ZIP shared with Oklahoma's numbering block) to 88595 near El Paso in the far west. No single ZIP covers a whole city -- Houston alone uses 178 of them, more than any other Texas city. The real surprise is further down the list: El Paso has fewer than half of San Antonio's population but nearly twice its ZIP code count.",
+			"Texas uses roughly 2,600 ZIP codes spread across 52 distinct three-digit prefixes, running from 73301 in the north (a Texas-adjacent IRS ZIP shared with Oklahoma's numbering block) to 88595 near El Paso in the far west. No single ZIP covers a whole city. Houston alone uses 178 of them, more than any other Texas city. The real surprise is further down the list: El Paso has fewer than half of San Antonio's population but nearly twice its ZIP code count.",
 		sections: [
 			{
 				heading: "Texas ZIP codes run from the 733 prefix to the 885 prefix",
@@ -242,7 +242,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'ZIP code count by major city',
 				body: [
-					"City population and ZIP code count don't move together in a straight line -- a city's ZIP count depends more on its physical footprint and how spread out its delivery routes are than on how many people live there.",
+					"City population and ZIP code count don't move together in a straight line. A city's ZIP count depends more on its physical footprint and how spread out its delivery routes are than on how many people live there.",
 					"Dallas and Austin each get a deeper breakdown elsewhere on this site: [Dallas's ZIP list](/dallas-zip-codes/) includes four codes that actually belong to a legally independent town Dallas could never annex, and [Austin's ZIP breakdown](/austin-zip-codes/) shows how its 74 codes split across two counties.",
 				],
 				table: {
@@ -261,7 +261,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Why El Paso has more ZIP codes than San Antonio, despite being smaller',
 				body: [
-					"San Antonio has more than double El Paso's population -- roughly 1.5 million versus 680,000, per Census Bureau estimates -- yet El Paso is assigned nearly twice as many ZIP codes. The more commonly cited reason isn't El Paso's location so much as its footprint: at roughly 248 square miles, El Paso is one of the largest Texas cities by land area, and its territory includes Fort Bliss, one of the US Army's largest posts, whose facilities carry their own separate ZIP codes. ZIP codes are drawn around mail-carrier routes and delivery volume, not population evenly divided across a city, so a large, sprawling service area anchored by a major military installation produces more, smaller zones than San Antonio's more compact urban core does.",
+					"San Antonio has more than double El Paso's population (roughly 1.5 million versus 680,000, per Census Bureau estimates), yet El Paso is assigned nearly twice as many ZIP codes. The more commonly cited reason isn't El Paso's location so much as its footprint: at roughly 248 square miles, El Paso is one of the largest Texas cities by land area, and its territory includes Fort Bliss, one of the US Army's largest posts, whose facilities carry their own separate ZIP codes. ZIP codes are drawn around mail-carrier routes and delivery volume, not population evenly divided across a city, so a large, sprawling service area anchored by a major military installation produces more, smaller zones than San Antonio's more compact urban core does.",
 				],
 			},
 		],
@@ -273,7 +273,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Which Texas city has the most ZIP codes?',
 				answer:
-					"Houston, with 178 -- well ahead of El Paso (137), Dallas (105), San Antonio (83), Austin (74), and Fort Worth (56). Houston is also Texas's most populous city, so its ZIP lead isn't the surprising part; the bigger anomaly is farther down the list, where El Paso outranks the much larger San Antonio.",
+					"Houston, with 178, well ahead of El Paso (137), Dallas (105), San Antonio (83), Austin (74), and Fort Worth (56). Houston is also Texas's most populous city, so its ZIP lead isn't the surprising part; the bigger anomaly is farther down the list, where El Paso outranks the much larger San Antonio.",
 			},
 		],
 		sources: [
@@ -460,16 +460,16 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Austin ZIP Codes: The Full List, Two Counties, and Two That Belong to the IRS",
 		description:
-			"USPS assigns Austin 74 ZIP codes -- 72 in Travis County and 2 in Williamson -- plus two non-geographic codes reserved for the IRS, numbered in a block that looks like it belongs to Puerto Rico.",
+			"USPS assigns Austin 74 ZIP codes (72 in Travis County and 2 in Williamson), plus two non-geographic codes reserved for the IRS, numbered in a block that looks like it belongs to Puerto Rico.",
 		published: '2026-08-05',
 		updated: '2026-08-05',
 		coreSummary:
-			"USPS assigns 74 ZIP codes with Austin, Texas as the primary place name. 72 sit in Travis County; the other two, 78717 and 78729, are in Williamson County to the northwest, the legacy of 1970s-80s subdivisions the city later annexed. Two more codes on the list, 73301 and 73344, aren't neighborhoods at all -- they're non-geographic ZIP codes reserved for the IRS's Austin submission processing center, numbered in the 733 block used elsewhere for Oklahoma rather than Texas's usual 787 block. That 787 prefix is itself a coincidence worth flagging: it's the same three digits as Puerto Rico's 787 area code, a completely unrelated numbering system (ZIP codes vs. NANP phone numbers) that happens to share Austin's ZIP prefix.",
+			"USPS assigns 74 ZIP codes with Austin, Texas as the primary place name. 72 sit in Travis County; the other two, 78717 and 78729, are in Williamson County to the northwest, the legacy of 1970s-80s subdivisions the city later annexed. Two more codes on the list, 73301 and 73344, aren't neighborhoods at all: they're non-geographic ZIP codes reserved for the IRS's Austin submission processing center, numbered in the 733 block used elsewhere for Oklahoma rather than Texas's usual 787 block. That 787 prefix is itself a coincidence worth flagging: it's the same three digits as Puerto Rico's 787 area code, a completely unrelated numbering system (ZIP codes vs. NANP phone numbers) that happens to share Austin's ZIP prefix.",
 		sections: [
 			{
 				heading: 'All 74 ZIP codes USPS assigns to Austin',
 				body: [
-					'USPS lists 74 ZIP codes with "Austin, TX" as the primary place name -- a figure this site\'s [Texas ZIP code overview](/texas-zip-codes/) already cites in its per-city comparison table, putting Austin fifth among Texas cities behind Houston, El Paso, Dallas, and San Antonio. 72 of the 74 sit in Travis County. The other two, 78717 and 78729, sit in Williamson County to the northwest -- covered in the section below.',
+					'USPS lists 74 ZIP codes with "Austin, TX" as the primary place name, a figure this site\'s [Texas ZIP code overview](/texas-zip-codes/) already cites in its per-city comparison table, putting Austin fifth among Texas cities behind Houston, El Paso, Dallas, and San Antonio. 72 of the 74 sit in Travis County. The other two, 78717 and 78729, sit in Williamson County to the northwest, covered in the section below.',
 				],
 				table: {
 					caption: 'All 74 ZIP codes with "Austin, TX" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-05)',
@@ -500,16 +500,16 @@ export const guides: Guide[] = [
 			{
 				heading: "Two Austin ZIP codes belong to the IRS, not a neighborhood",
 				body: [
-					"73301 and 73344 stand out from the rest of the list immediately: they don't start with 787 like every other Austin ZIP, and neither corresponds to a residential or commercial delivery area. Both are non-geographic ZIP codes USPS reserves for a single high-volume recipient -- in this case, the IRS's Austin submission processing center, which handles tax return processing, ITIN applications, and taxpayer correspondence for a large multi-state region. 73301 is the better-known of the two; 73344 serves the same IRS campus, in the Walnut Creek Business Park area of Travis County, and carries no population of its own.",
-					"This site's [Atlanta ZIP page](/atlanta-zip-codes/) covers the same pattern -- one IRS-only ZIP, 39901 -- and [Chicago carries 28 similar single-recipient codes](/chicago-zip-codes/) for airports and banks. What makes Austin's pair distinctive is the numbering: 73301 and 73344 sit in the 733 block, the same three-digit prefix range used for northern Oklahoma ZIP codes, rather than Texas's own 787 block that every other Austin ZIP uses. USPS assigns non-geographic codes like these somewhat independently of the surrounding area's normal numbering sequence, which is how an IRS facility physically located in Austin ends up with a ZIP code that looks, on paper, like it belongs three states away.",
-					"The 787 prefix shared by Austin's other 72 ZIP codes is itself worth a note, because it's easy to conflate with something unrelated: 787 is also the area code covering Puerto Rico, in service since March 1, 1996, when it split off the old 809 code as explained on this site's [country code page](/us-country-code/). A ZIP prefix and an area code are two completely separate USPS/NANPA numbering systems that happen to share three digits in this case -- Austin's postal ZIPs and Puerto Rico's telephone area code have no relationship to each other beyond the coincidence.",
+					"73301 and 73344 stand out from the rest of the list immediately: they don't start with 787 like every other Austin ZIP, and neither corresponds to a residential or commercial delivery area. Both are non-geographic ZIP codes USPS reserves for a single high-volume recipient: in this case, the IRS's Austin submission processing center, which handles tax return processing, ITIN applications, and taxpayer correspondence for a large multi-state region. 73301 is the better-known of the two; 73344 serves the same IRS campus, in the Walnut Creek Business Park area of Travis County, and carries no population of its own.",
+					"This site's [Atlanta ZIP page](/atlanta-zip-codes/) covers the same pattern (one IRS-only ZIP, 39901), and [Chicago carries 28 similar single-recipient codes](/chicago-zip-codes/) for airports and banks. What makes Austin's pair distinctive is the numbering: 73301 and 73344 sit in the 733 block, the same three-digit prefix range used for northern Oklahoma ZIP codes, rather than Texas's own 787 block that every other Austin ZIP uses. USPS assigns non-geographic codes like these somewhat independently of the surrounding area's normal numbering sequence, which is how an IRS facility physically located in Austin ends up with a ZIP code that looks, on paper, like it belongs three states away.",
+					"The 787 prefix shared by Austin's other 72 ZIP codes is itself worth a note, because it's easy to conflate with something unrelated: 787 is also the area code covering Puerto Rico, in service since March 1, 1996, when it split off the old 809 code as explained on this site's [country code page](/us-country-code/). A ZIP prefix and an area code are two completely separate USPS/NANPA numbering systems that happen to share three digits in this case. Austin's postal ZIPs and Puerto Rico's telephone area code have no relationship to each other beyond the coincidence.",
 				],
 			},
 			{
 				heading: "Why two Austin ZIP codes are in Williamson County, not Travis",
 				body: [
-					"78717 and 78729 cover Austin's far northwest, an area that developed differently from the rest of the city. Starting in 1973, this section of what's now northwest Austin was organized as Williamson County Municipal Utility District No. 1 -- a special utility district set up to provide water and wastewater service to new subdivisions before the city itself had annexed the land. Home construction in the district began in 1975 and continued through the mid-1980s. The City of Austin didn't fully annex the area until December 31, 2008, under a Strategic Partnership Agreement first signed in 1998 and amended in 2004 -- the annexation itself converted the old MUD into the Anderson Mill Limited District, ratified by a vote of district residents in May 2009. By the time that happened, thousands of houses already existed under Williamson County's jurisdiction rather than the city's own utilities. The Milwood neighborhood nearby followed a similar path as part of the North Austin MUD annexation.",
-					"USPS ZIP boundaries don't automatically shift when a city annexes new territory, which is why 78717 and 78729 still carry an Austin mailing address today even though the underlying county line was set decades before the city limits caught up to it. It's the same category of mismatch this site documents in [Atlanta, where ZIP and county lines don't match either](/atlanta-zip-codes/) -- just a different underlying cause: Atlanta's split traces to Fulton/DeKalb's shared metro history, Austin's traces to utility-district development that predated annexation.",
+					"78717 and 78729 cover Austin's far northwest, an area that developed differently from the rest of the city. Starting in 1973, this section of what's now northwest Austin was organized as Williamson County Municipal Utility District No. 1, a special utility district set up to provide water and wastewater service to new subdivisions before the city itself had annexed the land. Home construction in the district began in 1975 and continued through the mid-1980s. The City of Austin didn't fully annex the area until December 31, 2008, under a Strategic Partnership Agreement first signed in 1998 and amended in 2004. The annexation itself converted the old MUD into the Anderson Mill Limited District, ratified by a vote of district residents in May 2009. By the time that happened, thousands of houses already existed under Williamson County's jurisdiction rather than the city's own utilities. The Milwood neighborhood nearby followed a similar path as part of the North Austin MUD annexation.",
+					"USPS ZIP boundaries don't automatically shift when a city annexes new territory, which is why 78717 and 78729 still carry an Austin mailing address today even though the underlying county line was set decades before the city limits caught up to it. It's the same category of mismatch this site documents in [Atlanta, where ZIP and county lines don't match either](/atlanta-zip-codes/), though the underlying cause differs: Atlanta's split traces to Fulton/DeKalb's shared metro history, Austin's traces to utility-district development that predated annexation.",
 				],
 			},
 		],
@@ -517,17 +517,17 @@ export const guides: Guide[] = [
 			{
 				question: 'What is the main ZIP code for Austin?',
 				answer:
-					"There isn't a single one -- Austin uses 74 different ZIP codes, 72 of them in Travis County. 78701 covers downtown Austin.",
+					"There isn't a single one. Austin uses 74 different ZIP codes, 72 of them in Travis County. 78701 covers downtown Austin.",
 			},
 			{
 				question: 'Is Austin in Travis County or Williamson County?',
 				answer:
-					"Mostly Travis -- 72 of Austin's 74 ZIP codes are in Travis County. Two, 78717 and 78729, are in Williamson County to the northwest, covering neighborhoods that were developed under a Williamson County utility district starting in 1973, before the city annexed the area in 2008.",
+					"Mostly Travis: 72 of Austin's 74 ZIP codes are in Travis County. Two, 78717 and 78729, are in Williamson County to the northwest, covering neighborhoods that were developed under a Williamson County utility district starting in 1973, before the city annexed the area in 2008.",
 			},
 			{
 				question: 'Why do 73301 and 73344 show up as Austin ZIP codes?',
 				answer:
-					"Both are non-geographic ZIP codes USPS reserves for the IRS's Austin submission processing center rather than a residential area. That's why they don't follow Austin's usual 787 prefix -- they sit in the 733 numbering block instead, the same block used for parts of Oklahoma.",
+					"Both are non-geographic ZIP codes USPS reserves for the IRS's Austin submission processing center rather than a residential area. That's why they don't follow Austin's usual 787 prefix: they sit in the 733 numbering block instead, the same block used for parts of Oklahoma.",
 			},
 		],
 		sources: [
@@ -641,17 +641,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Boston ZIP Codes: The Full List, City Hall's Own Code, and Six Annexed Towns",
 		description:
-			"USPS assigns 36 ZIP codes to \"Boston, MA\" -- but City Hall, a federal building, and six once-independent towns that Boston annexed tell the rest of the story.",
+			"USPS assigns 36 ZIP codes to \"Boston, MA,\" but City Hall, a federal building, and six once-independent towns that Boston annexed tell the rest of the story.",
 		published: '2026-08-06',
 		updated: '2026-08-06',
 		coreSummary:
-			"USPS lists 36 ZIP codes with \"Boston\" as the primary place name -- 35 in Suffolk County, plus one, 02212, that this site's source data tags to Middlesex County for reasons no public record explains. A chunk of the 36 aren't neighborhoods at all: 02201 is Boston City Hall's own non-geographic ZIP, and 02203 belongs to the John F. Kennedy Federal Building in Government Center, part of a broader set of institutional \"Unique ZIP Codes\" USPS reserves for large single recipients rather than delivery routes. And the 36-code list understates the city's real footprint, because six towns Boston annexed between 1868 and 1912 -- Roxbury, Dorchester, Charlestown, Brighton, West Roxbury, and Hyde Park -- still carry their pre-annexation names at the post office instead of \"Boston,\" adding 14 more ZIP codes (Jamaica Plain, Roslindale, Allston, Mattapan, and Roxbury Crossing among them) that are legally part of the city but don't say so in the mailing address.",
+			"USPS lists 36 ZIP codes with \"Boston\" as the primary place name: 35 in Suffolk County, plus one, 02212, that this site's source data tags to Middlesex County for reasons no public record explains. A chunk of the 36 aren't neighborhoods at all: 02201 is Boston City Hall's own non-geographic ZIP, and 02203 belongs to the John F. Kennedy Federal Building in Government Center, part of a broader set of institutional \"Unique ZIP Codes\" USPS reserves for large single recipients rather than delivery routes. And the 36-code list understates the city's real footprint, because six towns Boston annexed between 1868 and 1912 (Roxbury, Dorchester, Charlestown, Brighton, West Roxbury, and Hyde Park) still carry their pre-annexation names at the post office instead of \"Boston,\" adding 14 more ZIP codes (Jamaica Plain, Roslindale, Allston, Mattapan, and Roxbury Crossing among them) that are legally part of the city but don't say so in the mailing address.",
 		sections: [
 			{
 				heading: 'All 36 ZIP codes with "Boston" as the primary USPS place name',
 				body: [
-					'USPS lists 36 ZIP codes with "Boston, MA" as the primary place name. 35 sit in Suffolk County, the county Boston has anchored since the state\'s founding. The one exception, 02212, is tagged Middlesex County in this table\'s source data -- a discrepancy worth flagging rather than guessing at: it doesn\'t match the Suffolk designation most simplified ZIP directories default to for every Boston code, and no public USPS or county record this site could find explains why this specific non-geographic code carries a different county tag. The table below reports what the source data says rather than silently overriding it. What 02212 actually is has a clearer answer than why it\'s tagged Middlesex: it\'s a Unique ZIP code Bank of America has used for its downtown Boston mail since November 2008, and third-party ZIP databases (zip-codes.com, among others) that identify the assignment also tag the code Suffolk County, not Middlesex -- checked 2026-08-28.',
-					'Total counts vary by source more than usual for this list. This site\'s own data returns 36, unitedstateszipcodes.org lists 33, and zip-codes.com\'s broader city page lists 50 -- split 32 standard, 9 Unique, and 9 PO Box. The gap isn\'t really a disagreement about which ZIP codes exist; it\'s a difference in scope. Some directories fold in the neighborhood-named ZIPs covered in the section below (which this table excludes, since they carry a different USPS place name), and some count long-retired or rarely-used codes differently.',
+					'USPS lists 36 ZIP codes with "Boston, MA" as the primary place name. 35 sit in Suffolk County, the county Boston has anchored since the state\'s founding. The one exception, 02212, is tagged Middlesex County in this table\'s source data, a discrepancy worth flagging rather than guessing at: it doesn\'t match the Suffolk designation most simplified ZIP directories default to for every Boston code, and no public USPS or county record this site could find explains why this specific non-geographic code carries a different county tag. The table below reports what the source data says rather than silently overriding it. What 02212 actually is has a clearer answer than why it\'s tagged Middlesex: it\'s a Unique ZIP code Bank of America has used for its downtown Boston mail since November 2008, and third-party ZIP databases (zip-codes.com, among others) that identify the assignment also tag the code Suffolk County, not Middlesex (checked 2026-08-28).',
+					'Total counts vary by source more than usual for this list. This site\'s own data returns 36, unitedstateszipcodes.org lists 33, and zip-codes.com\'s broader city page lists 50, split 32 standard, 9 Unique, and 9 PO Box. The gap isn\'t really a disagreement about which ZIP codes exist; it\'s a difference in scope. Some directories fold in the neighborhood-named ZIPs covered in the section below (which this table excludes, since they carry a different USPS place name), and some count long-retired or rarely-used codes differently.',
 				],
 				table: {
 					caption: 'All 36 ZIP codes with "Boston, MA" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-06)',
@@ -672,16 +672,16 @@ export const guides: Guide[] = [
 			{
 				heading: "City Hall, a federal building, and Boston's other non-geographic ZIP codes",
 				body: [
-					'02201 is Boston City Hall\'s own ZIP code -- 1 City Hall Square carries it directly, and city departments each get a four-digit add-on appended to it for faster internal routing. 02203 belongs to the John F. Kennedy Federal Building in Government Center, the twin-tower federal complex that houses the Boston Immigration Court and the EEOC\'s Boston Area Office, among other federal tenants. Neither code covers a residential area or a population; both exist because USPS assigns a dedicated "Unique ZIP Code" to a single institution once its mail volume justifies its own internal distribution system, the same mechanism that gives large universities, hospitals, and federal agencies elsewhere their own codes.',
-					"That pattern repeats across a meaningful share of Boston's list. Of the roughly 50 ZIP codes zip-codes.com's broader Boston city page tracks, it classifies 9 as Unique and another 9 as PO Box-only -- together more than a third of the total, none of them a neighborhood a resident would list as their address. This site's [Atlanta ZIP page](/atlanta-zip-codes/) documents a single such code (39901, the IRS's Atlanta processing center); Boston's list carries close to ten times as many, spread across city government, federal agencies, and large institutional mail recipients rather than concentrated in one.",
+					'02201 is Boston City Hall\'s own ZIP code: 1 City Hall Square carries it directly, and city departments each get a four-digit add-on appended to it for faster internal routing. 02203 belongs to the John F. Kennedy Federal Building in Government Center, the twin-tower federal complex that houses the Boston Immigration Court and the EEOC\'s Boston Area Office, among other federal tenants. Neither code covers a residential area or a population; both exist because USPS assigns a dedicated "Unique ZIP Code" to a single institution once its mail volume justifies its own internal distribution system, the same mechanism that gives large universities, hospitals, and federal agencies elsewhere their own codes.',
+					"That pattern repeats across a meaningful share of Boston's list. Of the roughly 50 ZIP codes zip-codes.com's broader Boston city page tracks, it classifies 9 as Unique and another 9 as PO Box-only, together more than a third of the total, none of them a neighborhood a resident would list as their address. This site's [Atlanta ZIP page](/atlanta-zip-codes/) documents a single such code (39901, the IRS's Atlanta processing center); Boston's list carries close to ten times as many, spread across city government, federal agencies, and large institutional mail recipients rather than concentrated in one.",
 				],
 			},
 			{
 				heading: "Why Dorchester, Roxbury, and four other Boston neighborhoods don't carry the city's name",
 				body: [
-					"Six towns joined the City of Boston between 1868 and 1912, each by its own vote, and none of them lost its name at the post office when it did. Roxbury was annexed January 5, 1868; Dorchester followed January 3, 1870. Charlestown, Brighton, and West Roxbury all joined together after a single October 7, 1873 vote, with the annexation effective January 5, 1874. Hyde Park was the last: residents voted to join on November 7, 1911, and the annexation took effect January 1, 1912. The individual motives varied more than a single explanation can cover. Roxbury's annexation is tied by Boston's own annexation-history accounts to the city's water and sewer systems, infrastructure the smaller town struggled to replicate on its own. Brighton's case ran closer to the opposite direction: in the four years before its 1873 vote, a group of local businessmen known as the \"Brighton Ring\" pushed the town into roughly $1.56 million of infrastructure spending against about $438,000 of revenue -- an eightfold jump in town debt -- then steered 81% of voters toward annexation so Boston would absorb what Brighton owed. Hyde Park's annexation, per the City of Boston Archives' own account, was driven mainly from Boston's side: the town's mills had drawn a wave of immigrant labor by the early 1900s, and the city wanted the tax revenue that growth represented.",
-					"Those six former towns, plus neighborhoods carved out of them afterward, account for 14 ZIP codes today that are legally inside Boston but carry a different USPS place name: Roxbury (02119) and Roxbury Crossing (02120); Dorchester, split across four codes (02121, 02122, 02124, 02125); Mattapan (02126), itself once considered part of Dorchester; Charlestown (02129); Jamaica Plain (02130) and Roslindale (02131), both carved from the old town of West Roxbury; West Roxbury itself (02132); Allston (02134) and Brighton (02135), the same annexed town split into two postal names; and Hyde Park (02136). None of the 14 appears in the 36-code table above, because none of them uses \"Boston\" as its USPS place name -- but a piece of mail addressed to any of them is, legally, addressed to the City of Boston all the same.",
-					"This site's [Los Angeles ZIP page](/los-angeles-zip-codes/) documents the same kind of split, on a larger scale and with a single documented cause: Los Angeles annexed most of the San Fernando Valley in one 1915 vote driven by access to aqueduct water rights, and 14 Valley neighborhoods still carry their pre-annexation names today. Boston's version played out earlier and more piecemeal -- six separate votes over 44 years, each town joining for its own local reasons rather than one shared cause -- but it left the same kind of trace on the ZIP map.",
+					"Six towns joined the City of Boston between 1868 and 1912, each by its own vote, and none of them lost its name at the post office when it did. Roxbury was annexed January 5, 1868; Dorchester followed January 3, 1870. Charlestown, Brighton, and West Roxbury all joined together after a single October 7, 1873 vote, with the annexation effective January 5, 1874. Hyde Park was the last: residents voted to join on November 7, 1911, and the annexation took effect January 1, 1912. The individual motives varied more than a single explanation can cover. Roxbury's annexation is tied by Boston's own annexation-history accounts to the city's water and sewer systems, infrastructure the smaller town struggled to replicate on its own. Brighton's case ran closer to the opposite direction: in the four years before its 1873 vote, a group of local businessmen known as the \"Brighton Ring\" pushed the town into roughly $1.56 million of infrastructure spending against about $438,000 of revenue, an eightfold jump in town debt, then steered 81% of voters toward annexation so Boston would absorb what Brighton owed. Hyde Park's annexation, per the City of Boston Archives' own account, was driven mainly from Boston's side: the town's mills had drawn a wave of immigrant labor by the early 1900s, and the city wanted the tax revenue that growth represented.",
+					"Those six former towns, plus neighborhoods carved out of them afterward, account for 14 ZIP codes today that are legally inside Boston but carry a different USPS place name: Roxbury (02119) and Roxbury Crossing (02120); Dorchester, split across four codes (02121, 02122, 02124, 02125); Mattapan (02126), itself once considered part of Dorchester; Charlestown (02129); Jamaica Plain (02130) and Roslindale (02131), both carved from the old town of West Roxbury; West Roxbury itself (02132); Allston (02134) and Brighton (02135), the same annexed town split into two postal names; and Hyde Park (02136). None of the 14 appears in the 36-code table above, because none of them uses \"Boston\" as its USPS place name. But a piece of mail addressed to any of them is, legally, addressed to the City of Boston all the same.",
+					"This site's [Los Angeles ZIP page](/los-angeles-zip-codes/) documents the same kind of split, on a larger scale and with a single documented cause: Los Angeles annexed most of the San Fernando Valley in one 1915 vote driven by access to aqueduct water rights, and 14 Valley neighborhoods still carry their pre-annexation names today. Boston's version played out earlier and more piecemeal: six separate votes over 44 years, each town joining for its own local reasons rather than one shared cause. But it left the same kind of trace on the ZIP map.",
 				],
 			},
 		],
@@ -689,7 +689,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What is the main ZIP code for Boston?',
 				answer:
-					"There isn't a single one -- Boston uses 36 ZIP codes under its own name. Boston City Hall, at 1 City Hall Square, uses 02201.",
+					"There isn't a single one. Boston uses 36 ZIP codes under its own name. Boston City Hall, at 1 City Hall Square, uses 02201.",
 			},
 			{
 				question: 'Is Dorchester part of Boston?',
@@ -704,14 +704,14 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Contact Boston City Hall -- Boston.gov', url: 'https://www.boston.gov/departments/mayors-office/contact-boston-city-hall' },
+			{ label: 'Contact Boston City Hall (Boston.gov)', url: 'https://www.boston.gov/departments/mayors-office/contact-boston-city-hall' },
 			{ label: 'GSA: John F. Kennedy Federal Building, Boston, MA', url: 'https://www.gsa.gov/real-estate/explore-historic-buildings/find-a-historic-federal-building/john-f-kennedy-federal-building-boston-ma' },
 			{ label: 'ZIP-Codes.com: ZIP Code 02212 (Bank of America, Suffolk County)', url: 'https://www.zip-codes.com/zip-code/02212/zip-code-02212.asp' },
 			{ label: 'USPS PostalPro: Unique ZIP Code Matrix', url: 'https://postalpro.usps.com/node/1481' },
-			{ label: "Boston's Annexed Towns -- Boston Public Library research guide", url: 'https://guides.bpl.org/TownsOfBoston' },
+			{ label: "Boston's Annexed Towns (Boston Public Library research guide)", url: 'https://guides.bpl.org/TownsOfBoston' },
 			{ label: 'Wikipedia: Brighton, Boston (1873 vote / 1874 annexation)', url: 'https://en.wikipedia.org/wiki/Brighton,_Boston' },
-			{ label: "Annexation Embraced: Brighton's 1873 Acceptance of Boston -- local-historian account of the Brighton Ring and town debt", url: 'https://wpmarchione.com/2017/05/19/annexation-embraced-brightons-1873-acceptance-of-boston/' },
-			{ label: 'City of Boston Archives: Celebrating Hyde Park -- Annexation exhibit', url: 'https://cityofbostonarchives.omeka.net/exhibits/show/hydepark/annexation' },
+			{ label: "Annexation Embraced: Brighton's 1873 Acceptance of Boston (local-historian account of the Brighton Ring and town debt)", url: 'https://wpmarchione.com/2017/05/19/annexation-embraced-brightons-1873-acceptance-of-boston/' },
+			{ label: 'City of Boston Archives: Celebrating Hyde Park (Annexation exhibit)', url: 'https://cityofbostonarchives.omeka.net/exhibits/show/hydepark/annexation' },
 		],
 	},
 	{
@@ -719,16 +719,16 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Nashville ZIP Codes: The Full List, and Why Metro's Satellite Cities Share It",
 		description:
-			"USPS assigns 39 ZIP codes to Nashville, all in Davidson County -- home to the first true city-county merger in the US, and five satellite cities without a ZIP of their own.",
+			"USPS assigns 39 ZIP codes to Nashville, all in Davidson County, home to the first true city-county merger in the US, and five satellite cities without a ZIP of their own.",
 		published: '2026-08-09',
 		updated: '2026-08-09',
 		coreSummary:
-			'USPS assigns 39 ZIP codes to "Nashville, TN" as the primary place name, and this site\'s source data ties every one of them to Davidson County -- no split, no exception. That\'s not a coincidence of geography. Nashville and Davidson County merged into a single Metropolitan Government on April 1, 1963, after voters approved consolidation on June 28, 1962, having rejected an earlier version of the same plan in 1958. The 1963 charter let six incorporated communities -- Berry Hill, Belle Meade, Oak Hill, Forest Hills, Goodlettsville, and Lakewood -- keep their own city governments, police departments, and zoning inside the new Metro structure. Only one of them, Goodlettsville, also kept a ZIP code of its own. This site\'s data shows the other surviving satellite cities file under "Nashville" the same as every other Davidson County address, and Lakewood, which dissolved its charter in 2011, never had a distinct ZIP to begin with.',
+			'USPS assigns 39 ZIP codes to "Nashville, TN" as the primary place name, and this site\'s source data ties every one of them to Davidson County: no split, no exception. That\'s not a coincidence of geography. Nashville and Davidson County merged into a single Metropolitan Government on April 1, 1963, after voters approved consolidation on June 28, 1962, having rejected an earlier version of the same plan in 1958. The 1963 charter let six incorporated communities (Berry Hill, Belle Meade, Oak Hill, Forest Hills, Goodlettsville, and Lakewood) keep their own city governments, police departments, and zoning inside the new Metro structure. Only one of them, Goodlettsville, also kept a ZIP code of its own. This site\'s data shows the other surviving satellite cities file under "Nashville" the same as every other Davidson County address, and Lakewood, which dissolved its charter in 2011, never had a distinct ZIP to begin with.',
 		sections: [
 			{
 				heading: 'All 39 ZIP codes USPS assigns to Nashville',
 				body: [
-					'Every ZIP code with "Nashville, TN" as its primary USPS place name sits in Davidson County, per this site\'s source data -- a clean 39-for-39 split with no cross-county outlier like the one this site flagged on the [Boston ZIP list](/boston-zip-codes/). An independent lookup returns the same total: zipcodestogo.com\'s own Nashville page also lists 39 codes for Davidson County, a useful cross-check given how much these totals tend to drift between directories that scope the list differently.',
+					'Every ZIP code with "Nashville, TN" as its primary USPS place name sits in Davidson County, per this site\'s source data, a clean 39-for-39 split with no cross-county outlier like the one this site flagged on the [Boston ZIP list](/boston-zip-codes/). An independent lookup returns the same total: zipcodestogo.com\'s own Nashville page also lists 39 codes for Davidson County, a useful cross-check given how much these totals tend to drift between directories that scope the list differently.',
 				],
 				table: {
 					caption: 'All 39 ZIP codes with "Nashville, TN" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-09)',
@@ -750,22 +750,22 @@ export const guides: Guide[] = [
 			{
 				heading: 'Why every single one lands in Davidson County',
 				body: [
-					"Nashville tried to consolidate with Davidson County once before it worked. Voters rejected a charter to merge the city and county governments in 1958, even though it had the backing of both Nashville newspapers, then-Mayor Ben West, and County Judge Beverly Briley. Nashville responded by annexing roughly 82,000 residents from the surrounding county and imposing a $10 \"wheel tax\" on every car that regularly used city streets -- a levy suburban residents nicknamed the \"green sticker tax\" and resented enough that it revived the push for a real merger instead of piecemeal annexation. A second charter commission wrote a new plan, this one splitting the county into an Urban Services District and a General Services District with different tax levels depending on which city services a resident actually received. Voters approved it on June 28, 1962, and the Metropolitan Government of Nashville and Davidson County was sworn in on April 1, 1963, with Beverly Briley as its first mayor. Nashville's own government history page calls it the first city in the country to achieve true consolidation, as opposed to partial mergers other cities had already tried; roughly fourteen consolidated city-county governments exist in the US today, and each one, per that same account, used Nashville's 1962 charter as a model.",
-					"That history is what makes the 39-for-39 Davidson County count more than a coincidence. This site's [Chicago county page](/what-county-is-chicago-in/) documents another major city that sits entirely inside a single county, but Cook County was simply drawn wide enough to hold Chicago and 135 other municipalities alongside it -- Chicago's city government and Cook County's government are still two separate governments. Nashville's single-county footprint is structural rather than incidental: since 1963, the city government and the county government have been the same government, so there's no county line left inside Nashville's limits to split a ZIP code across.",
+					"Nashville tried to consolidate with Davidson County once before it worked. Voters rejected a charter to merge the city and county governments in 1958, even though it had the backing of both Nashville newspapers, then-Mayor Ben West, and County Judge Beverly Briley. Nashville responded by annexing roughly 82,000 residents from the surrounding county and imposing a $10 \"wheel tax\" on every car that regularly used city streets, a levy suburban residents nicknamed the \"green sticker tax\" and resented enough that it revived the push for a real merger instead of piecemeal annexation. A second charter commission wrote a new plan, this one splitting the county into an Urban Services District and a General Services District with different tax levels depending on which city services a resident actually received. Voters approved it on June 28, 1962, and the Metropolitan Government of Nashville and Davidson County was sworn in on April 1, 1963, with Beverly Briley as its first mayor. Nashville's own government history page calls it the first city in the country to achieve true consolidation, as opposed to partial mergers other cities had already tried; roughly fourteen consolidated city-county governments exist in the US today, and each one, per that same account, used Nashville's 1962 charter as a model.",
+					"That history is what makes the 39-for-39 Davidson County count more than a coincidence. This site's [Chicago county page](/what-county-is-chicago-in/) documents another major city that sits entirely inside a single county, but Cook County was simply drawn wide enough to hold Chicago and 135 other municipalities alongside it. Chicago's city government and Cook County's government are still two separate governments. Nashville's single-county footprint is structural rather than incidental: since 1963, the city government and the county government have been the same government, so there's no county line left inside Nashville's limits to split a ZIP code across.",
 				],
 			},
 			{
-				heading: 'Six communities kept a government of their own -- only one kept a ZIP code',
+				heading: 'Six communities kept a government of their own, but only one kept a ZIP code',
 				body: [
-					'The 1963 charter didn\'t erase every local government inside the new Metro structure. Six incorporated communities -- Berry Hill, Belle Meade, Oak Hill, Forest Hills, Goodlettsville, and Lakewood -- were allowed to keep their own charters, city councils, police departments, and zoning rules rather than folding into Metro entirely. Lakewood\'s charter didn\'t survive: after nearly five decades as a self-governing "satellite city," residents voted to dissolve it on August 5, 2010, by a single vote, 400 to 399. The city sued over alleged voting irregularities, a Davidson County Chancery Court judge ordered a new election, and on March 15, 2011, residents voted again, 458 to 447, to fold into Metro for good. Its old ZIP code, 37138, was never actually its own in postal terms -- this site\'s data ties that code to the neighboring Old Hickory place name, not Lakewood.',
-					'The four satellite cities still standing today tell a more consistent story. This site\'s data shows none of Berry Hill, Belle Meade, Oak Hill, or Forest Hills carries its own ZIP place name -- addresses in all four read "Nashville, TN," identical to the rest of Davidson County, even though each city still runs its own city hall and police force decades after 1963. Goodlettsville is the exception, with two ZIP codes of its own, 37070 and 37072. Geography plausibly plays a role: Goodlettsville\'s own city government describes itself as straddling the Davidson-Sumner county line, with the larger share of its land area in Sumner County even though most of its population lives on the Davidson County side. This site\'s source data ties both Goodlettsville ZIP codes to Davidson County rather than splitting them the way it splits, for instance, [Boston\'s 02212](/boston-zip-codes/) into a different county from the rest of that city\'s list -- one more reminder that a single ZIP database\'s county tag doesn\'t always capture every line a city actually crosses on the ground.',
+					'The 1963 charter didn\'t erase every local government inside the new Metro structure. Six incorporated communities (Berry Hill, Belle Meade, Oak Hill, Forest Hills, Goodlettsville, and Lakewood) were allowed to keep their own charters, city councils, police departments, and zoning rules rather than folding into Metro entirely. Lakewood\'s charter didn\'t survive: after nearly five decades as a self-governing "satellite city," residents voted to dissolve it on August 5, 2010, by a single vote, 400 to 399. The city sued over alleged voting irregularities, a Davidson County Chancery Court judge ordered a new election, and on March 15, 2011, residents voted again, 458 to 447, to fold into Metro for good. Its old ZIP code, 37138, was never actually its own in postal terms: this site\'s data ties that code to the neighboring Old Hickory place name, not Lakewood.',
+					'The four satellite cities still standing today tell a more consistent story. This site\'s data shows none of Berry Hill, Belle Meade, Oak Hill, or Forest Hills carries its own ZIP place name: addresses in all four read "Nashville, TN," identical to the rest of Davidson County, even though each city still runs its own city hall and police force decades after 1963. Goodlettsville is the exception, with two ZIP codes of its own, 37070 and 37072. Geography plausibly plays a role: Goodlettsville\'s own city government describes itself as straddling the Davidson-Sumner county line, with the larger share of its land area in Sumner County even though most of its population lives on the Davidson County side. This site\'s source data ties both Goodlettsville ZIP codes to Davidson County rather than splitting them the way it splits, for instance, [Boston\'s 02212](/boston-zip-codes/) into a different county from the rest of that city\'s list, one more reminder that a single ZIP database\'s county tag doesn\'t always capture every line a city actually crosses on the ground.',
 				],
 			},
 		],
 		faq: [
 			{
 				question: 'How many ZIP codes does Nashville have?',
-				answer: "39, and every one of them sits in Davidson County -- the same county Nashville's city government merged with in 1963.",
+				answer: "39, and every one of them sits in Davidson County, the same county Nashville's city government merged with in 1963.",
 			},
 			{
 				question: 'What county is Nashville in?',
@@ -775,20 +775,20 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Belle Meade part of Nashville?',
 				answer:
-					"It's part of the Metropolitan Government of Nashville and Davidson County, but it kept its own city charter, police department, and zoning when Metro formed in 1963. It doesn't have its own ZIP code -- mail addressed there reads \"Nashville, TN\" the same as the rest of the county.",
+					"It's part of the Metropolitan Government of Nashville and Davidson County, but it kept its own city charter, police department, and zoning when Metro formed in 1963. It doesn't have its own ZIP code; mail addressed there reads \"Nashville, TN\" the same as the rest of the county.",
 			},
 			{
 				question: "Why does Goodlettsville have its own ZIP codes instead of using Nashville's?",
 				answer:
-					"Goodlettsville is one of six communities that kept its own city charter inside Metro Nashville-Davidson County in 1963, and it also straddles the Davidson-Sumner county line -- a combination the other three surviving satellite cities (Berry Hill, Belle Meade, Oak Hill, Forest Hills) don't share, and none of them has its own ZIP code.",
+					"Goodlettsville is one of six communities that kept its own city charter inside Metro Nashville-Davidson County in 1963, and it also straddles the Davidson-Sumner county line, a combination the other three surviving satellite cities (Berry Hill, Belle Meade, Oak Hill, Forest Hills) don't share, and none of them has its own ZIP code.",
 			},
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'History of Metropolitan Nashville Government -- Nashville.gov', url: 'https://www.nashville.gov/departments/government/history-metro' },
-			{ label: 'Lakewood, Tennessee -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Lakewood,_Tennessee' },
-			{ label: 'Location -- Goodlettsville, TN official website', url: 'https://www.goodlettsville.gov/2007/Location' },
-			{ label: 'Nashville, TN ZIP code list -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Nashville/TN/' },
+			{ label: 'History of Metropolitan Nashville Government (Nashville.gov)', url: 'https://www.nashville.gov/departments/government/history-metro' },
+			{ label: 'Lakewood, Tennessee (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Lakewood,_Tennessee' },
+			{ label: 'Location (Goodlettsville, TN official website)', url: 'https://www.goodlettsville.gov/2007/Location' },
+			{ label: 'Nashville, TN ZIP code list (zipcodestogo.com)', url: 'https://www.zipcodestogo.com/city/Nashville/TN/' },
 		],
 	},
 	{
@@ -800,12 +800,12 @@ export const guides: Guide[] = [
 		published: '2026-08-10',
 		updated: '2026-08-10',
 		coreSummary:
-			"USPS assigns 66 ZIP codes to \"Denver, CO\" as the primary place name. This site's data ties 55 of them to Denver County -- the consolidated City and County of Denver, created in 1902 -- but the other 11 fall outside it: six in Jefferson County, to the west around Lakewood and Wheat Ridge, and five in Adams County, to the north around Federal Heights and Thornton. Denver having its own consolidated government since 1902 doesn't mean its ZIP footprint stops at that government's border -- USPS delivery routes were drawn around mail carriers' paths, not the county line the state legislature set more than a century ago.",
+			"USPS assigns 66 ZIP codes to \"Denver, CO\" as the primary place name. This site's data ties 55 of them to Denver County (the consolidated City and County of Denver, created in 1902), but the other 11 fall outside it: six in Jefferson County, to the west around Lakewood and Wheat Ridge, and five in Adams County, to the north around Federal Heights and Thornton. Denver having its own consolidated government since 1902 doesn't mean its ZIP footprint stops at that government's border. USPS delivery routes were drawn around mail carriers' paths, not the county line the state legislature set more than a century ago.",
 		sections: [
 			{
 				heading: 'All 66 ZIP codes USPS assigns to Denver',
 				body: [
-					"Of the 66 ZIP codes with \"Denver, CO\" as the primary USPS place name, this site's source data places 55 in Denver County itself, six in Jefferson County, and five in Adams County. zipcodestogo.com's own Denver city page lists 64 codes for comparison -- close to this site's 66, but not identical, which is typical: independent ZIP directories routinely disagree by a handful of codes depending on whether they count PO-Box-only or otherwise non-standard codes the same way.",
+					"Of the 66 ZIP codes with \"Denver, CO\" as the primary USPS place name, this site's source data places 55 in Denver County itself, six in Jefferson County, and five in Adams County. zipcodestogo.com's own Denver city page lists 64 codes for comparison: close to this site's 66, but not identical, which is typical: independent ZIP directories routinely disagree by a handful of codes depending on whether they count PO-Box-only or otherwise non-standard codes the same way.",
 				],
 				table: {
 					caption: 'All 66 ZIP codes with "Denver, CO" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-10)',
@@ -834,15 +834,15 @@ export const guides: Guide[] = [
 			{
 				heading: 'How Denver became a county unto itself in 1902',
 				body: [
-					"Denver started out inside Arapahoe County, one of the 17 original counties the Colorado General Assembly created on November 1, 1861, with Denver City serving as the county seat. That arrangement lasted forty years. In 1901, the legislature voted to split Arapahoe County three ways: a new, consolidated City and County of Denver; a new Adams County to the north, named for five-time gubernatorial candidate and then-sitting Governor Alva Adams; and the rump of the old county, temporarily renamed South Arapahoe County. A Colorado Supreme Court ruling, follow-up legislation, and a referendum delayed the split from taking effect until November 15, 1902, and South Arapahoe County's name didn't even last a full year -- the legislature changed it back to plain Arapahoe County on April 11, 1903, with its seat relocated to Littleton.",
-					"Jefferson County, the source of this site's other six Denver ZIP codes, wasn't part of that 1902 reorganization at all. It's one of the same 17 counties created alongside the original Arapahoe County back in 1861, sitting immediately to Denver's west with its own county seat at Golden. So the Jefferson County ZIP codes on the list above aren't a product of Denver's consolidation -- they're a reminder that Denver, like Atlanta on this site's own [ZIP list for Atlanta](/atlanta-zip-codes/), simply has USPS delivery routes that cross into a neighboring county that's always been there, regardless of what Denver's own government boundary looks like.",
+					"Denver started out inside Arapahoe County, one of the 17 original counties the Colorado General Assembly created on November 1, 1861, with Denver City serving as the county seat. That arrangement lasted forty years. In 1901, the legislature voted to split Arapahoe County three ways: a new, consolidated City and County of Denver; a new Adams County to the north, named for five-time gubernatorial candidate and then-sitting Governor Alva Adams; and the rump of the old county, temporarily renamed South Arapahoe County. A Colorado Supreme Court ruling, follow-up legislation, and a referendum delayed the split from taking effect until November 15, 1902, and South Arapahoe County's name didn't even last a full year: the legislature changed it back to plain Arapahoe County on April 11, 1903, with its seat relocated to Littleton.",
+					"Jefferson County, the source of this site's other six Denver ZIP codes, wasn't part of that 1902 reorganization at all. It's one of the same 17 counties created alongside the original Arapahoe County back in 1861, sitting immediately to Denver's west with its own county seat at Golden. So the Jefferson County ZIP codes on the list above aren't a product of Denver's consolidation; they're a reminder that Denver, like Atlanta on this site's own [ZIP list for Atlanta](/atlanta-zip-codes/), simply has USPS delivery routes that cross into a neighboring county that's always been there, regardless of what Denver's own government boundary looks like.",
 				],
 			},
 			{
 				heading: 'Six ZIPs west in Jefferson County, five north in Adams',
 				body: [
-					"The six Jefferson County ZIP codes on Denver's list -- 80214, 80215, 80225, 80226, 80228, and 80232 -- sit in the corridor just west of downtown, an area covered mostly by Lakewood, Jefferson County's largest city, along with slivers of Wheat Ridge and Edgewater. unitedstateszipcodes.org's own boundary data shows 80214 in particular splits across several place names at once -- Lakewood, Edgewater, and Wheat Ridge all draw from it -- which is a reminder that a single \"place\" label on a ZIP code, whether it reads Denver or something else, can mask a boundary that a postal carrier's route crosses more than once.",
-					"The five Adams County ZIP codes -- 80221, 80229, 80233, 80234, and 80260 -- sit north of downtown, in the Federal Heights, Thornton, and Northglenn corridor. 80221 is the one worth a caveat: unitedstateszipcodes.org's boundary data shows it straddling both Adams and Denver counties at once, with Adams holding the larger share. This site's table above, like GeoNames' broader dataset, assigns each ZIP code to a single county, so 80221 shows up here as Adams only -- the same kind of simplification this site flagged on the [Atlanta ZIP list](/atlanta-zip-codes/), where one ZIP straddling Fulton and Cobb counties got flattened into a single row too.",
+					"The six Jefferson County ZIP codes on Denver's list (80214, 80215, 80225, 80226, 80228, and 80232) sit in the corridor just west of downtown, an area covered mostly by Lakewood, Jefferson County's largest city, along with slivers of Wheat Ridge and Edgewater. unitedstateszipcodes.org's own boundary data shows 80214 in particular splits across several place names at once: Lakewood, Edgewater, and Wheat Ridge all draw from it. That's a reminder that a single \"place\" label on a ZIP code, whether it reads Denver or something else, can mask a boundary that a postal carrier's route crosses more than once.",
+					"The five Adams County ZIP codes (80221, 80229, 80233, 80234, and 80260) sit north of downtown, in the Federal Heights, Thornton, and Northglenn corridor. 80221 is the one worth a caveat: unitedstateszipcodes.org's boundary data shows it straddling both Adams and Denver counties at once, with Adams holding the larger share. This site's table above, like GeoNames' broader dataset, assigns each ZIP code to a single county, so 80221 shows up here as Adams only, the same kind of simplification this site flagged on the [Atlanta ZIP list](/atlanta-zip-codes/), where one ZIP straddling Fulton and Cobb counties got flattened into a single row too.",
 				],
 			},
 		],
@@ -850,17 +850,17 @@ export const guides: Guide[] = [
 			{
 				question: 'How many ZIP codes does Denver have?',
 				answer:
-					"66, per this site's source data -- 55 in Denver County, six in Jefferson County, and five in Adams County.",
+					"66, per this site's source data: 55 in Denver County, six in Jefferson County, and five in Adams County.",
 			},
 			{
 				question: 'What county is Denver in?',
 				answer:
-					"Denver County -- officially the consolidated City and County of Denver, created in 1902 when the Colorado legislature split it off from Arapahoe County. But not every ZIP code addressed to Denver actually sits inside that county; 11 of the 66 on this site's list fall in neighboring Jefferson or Adams County instead.",
+					"Denver County, officially the consolidated City and County of Denver, created in 1902 when the Colorado legislature split it off from Arapahoe County. But not every ZIP code addressed to Denver actually sits inside that county; 11 of the 66 on this site's list fall in neighboring Jefferson or Adams County instead.",
 			},
 			{
 				question: 'Why do some Denver ZIP codes fall in Jefferson County?',
 				answer:
-					"Jefferson County has bordered Denver since 1861, decades before Denver became its own consolidated city-county in 1902. USPS draws ZIP boundaries around mail-delivery routes, not government lines, so six ZIP codes addressed to Denver -- covering parts of Lakewood, Wheat Ridge, and Edgewater -- actually sit across that older county line.",
+					"Jefferson County has bordered Denver since 1861, decades before Denver became its own consolidated city-county in 1902. USPS draws ZIP boundaries around mail-delivery routes, not government lines, so six ZIP codes addressed to Denver (covering parts of Lakewood, Wheat Ridge, and Edgewater) actually sit across that older county line.",
 			},
 			{
 				question: 'Is ZIP code 80221 in Denver or Federal Heights?',
@@ -870,13 +870,13 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Denver -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Denver' },
-			{ label: 'Adams County, Colorado -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Adams_County,_Colorado' },
-			{ label: 'South Arapahoe County, Colorado -- Wikipedia', url: 'https://en.wikipedia.org/wiki/South_Arapahoe_County,_Colorado' },
-			{ label: 'Jefferson County, Colorado -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Jefferson_County,_Colorado' },
-			{ label: 'ZIP Code 80221 -- unitedstateszipcodes.org', url: 'https://www.unitedstateszipcodes.org/80221/' },
-			{ label: 'ZIP Code 80214 -- unitedstateszipcodes.org', url: 'https://www.unitedstateszipcodes.org/80214/' },
-			{ label: 'Denver, CO ZIP code list -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Denver/CO/' },
+			{ label: 'Denver (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Denver' },
+			{ label: 'Adams County, Colorado (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Adams_County,_Colorado' },
+			{ label: 'South Arapahoe County, Colorado (Wikipedia)', url: 'https://en.wikipedia.org/wiki/South_Arapahoe_County,_Colorado' },
+			{ label: 'Jefferson County, Colorado (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Jefferson_County,_Colorado' },
+			{ label: 'ZIP Code 80221 (unitedstateszipcodes.org)', url: 'https://www.unitedstateszipcodes.org/80221/' },
+			{ label: 'ZIP Code 80214 (unitedstateszipcodes.org)', url: 'https://www.unitedstateszipcodes.org/80214/' },
+			{ label: 'Denver, CO ZIP code list (zipcodestogo.com)', url: 'https://www.zipcodestogo.com/city/Denver/CO/' },
 		],
 	},
 
@@ -885,17 +885,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Houston ZIP Codes: The Full List, and the Independent City Filed Under Houston's Name",
 		description:
-			"Houston has 178 ZIP codes in two postal blocks -- and one of them, 77005, belongs to a city that has never joined Houston, while its equally independent neighbor Bellaire got a ZIP name of its own instead.",
+			"Houston has 178 ZIP codes in two postal blocks, and one of them, 77005, belongs to a city that has never joined Houston, while its equally independent neighbor Bellaire got a ZIP name of its own instead.",
 		published: '2026-08-11',
 		updated: '2026-08-11',
 		coreSummary:
-			'USPS assigns 178 ZIP codes to "Houston, TX" as the primary place name, and this site\'s source data puts every one of them in Harris County -- no cross-county split, unlike this site\'s Atlanta or Denver lists. They split into two blocks: 98 codes in the 770xx range, covering the delivery routes that carry most of the city\'s residential and business mail, and 80 in the 772xx range, a mix mostly made up of PO boxes and single-recipient codes assigned to government offices and other high-volume mailers. One 770xx code, 77005, belongs to West University Place, an independent city that has never joined Houston -- yet its next-door neighbor Bellaire, just as independent, was given a ZIP place name of its own (77401) instead of Houston\'s. On the other side of that inconsistency sits Independence Heights, Texas\'s first incorporated Black city, which actually did vote to join Houston in 1928 and carries Houston\'s name today for the far less surprising reason that it really is part of the city.',
+			'USPS assigns 178 ZIP codes to "Houston, TX" as the primary place name, and this site\'s source data puts every one of them in Harris County: no cross-county split, unlike this site\'s Atlanta or Denver lists. They split into two blocks: 98 codes in the 770xx range, covering the delivery routes that carry most of the city\'s residential and business mail, and 80 in the 772xx range, a mix mostly made up of PO boxes and single-recipient codes assigned to government offices and other high-volume mailers. One 770xx code, 77005, belongs to West University Place, an independent city that has never joined Houston. Yet its next-door neighbor Bellaire, just as independent, was given a ZIP place name of its own (77401) instead of Houston\'s. On the other side of that inconsistency sits Independence Heights, Texas\'s first incorporated Black city, which actually did vote to join Houston in 1928 and carries Houston\'s name today for the far less surprising reason that it really is part of the city.',
 		sections: [
 			{
 				heading: 'All 178 ZIP codes with "Houston, TX" as the primary USPS place name',
 				body: [
-					'Every one of the 178 ZIP codes USPS assigns to "Houston, TX" sits in Harris County, per this site\'s source data -- there\'s no county split here the way there is on this site\'s [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists. A separate tally from zip-codes.com breaks the same 178 codes down by delivery type: 97 standard codes tied to carrier routes, 75 PO Box codes, and 6 unique codes reserved for single high-volume recipients, one example being the City of Houston\'s own municipal mailing address at P.O. Box 1562, ZIP 77251.',
-					"That delivery-type split lines up closely with a pattern visible in the raw ZIP numbers themselves: 98 codes fall in the contiguous 770xx block (77001 through 77099), which covers most of the city's residential and business delivery routes, while the other 80 sit in a separate, far less contiguous 772xx block (77201 through 77299) -- the same range where most of the PO Box and unique codes live. It's the same convention this site found behind two outlier Los Angeles codes, 90095 and 90134: cities with enough mail volume get extra, non-sequential codes carved out for specific high-volume recipients rather than geography.",
+					'Every one of the 178 ZIP codes USPS assigns to "Houston, TX" sits in Harris County, per this site\'s source data. There\'s no county split here the way there is on this site\'s [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists. A separate tally from zip-codes.com breaks the same 178 codes down by delivery type: 97 standard codes tied to carrier routes, 75 PO Box codes, and 6 unique codes reserved for single high-volume recipients, one example being the City of Houston\'s own municipal mailing address at P.O. Box 1562, ZIP 77251.',
+					"That delivery-type split lines up closely with a pattern visible in the raw ZIP numbers themselves: 98 codes fall in the contiguous 770xx block (77001 through 77099), which covers most of the city's residential and business delivery routes, while the other 80 sit in a separate, far less contiguous 772xx block (77201 through 77299), the same range where most of the PO Box and unique codes live. It's the same convention this site found behind two outlier Los Angeles codes, 90095 and 90134: cities with enough mail volume get extra, non-sequential codes carved out for specific high-volume recipients rather than geography.",
 				],
 				table: {
 					caption: 'All 178 ZIP codes with "Houston, TX" as the primary USPS place name (per GeoNames.org, checked 2026-08-11)',
@@ -943,14 +943,14 @@ export const guides: Guide[] = [
 			{
 				heading: "West University Place: an independent city that shows up on Houston's own list",
 				body: [
-					'ZIP 77005 -- one of the 178 in the table above -- belongs to West University Place, a city with its own government, its own police department, and its own city hall that has never joined Houston at all. West University Place incorporated in 1925 and adopted a home-rule, council-manager charter in 1940; Houston annexed the unincorporated land around it over the following decades but left the incorporated city itself alone, the same way it later grew around Bellaire and Southside Place. Today West University Place sits entirely inside Houston\'s outline on a map, at about two square miles, bordered on its remaining sides by Bellaire and Southside Place.',
-					"That makes 77005 an inconsistency, not a mistake, once you look at Bellaire next door: Bellaire is just as independent as West University Place -- Houston annexed the land around it too, completing the encirclement on December 31, 1948, and Bellaire responded the following April by adopting its own home-rule charter -- yet USPS gave Bellaire a ZIP place name of its own, 77401 (and 77402), rather than filing it under Houston. Two neighboring cities, both fully surrounded, both never annexed, and only one of them carries the surrounding city's name at the post office. It's a version of the same disconnect this site found in [Dallas](/dallas-zip-codes/), where a legally independent town, Highland Park, has its ZIP codes filed under Dallas's name anyway -- a reminder that a USPS place name tracks mail routing, not incorporation records.",
+					'ZIP 77005, one of the 178 in the table above, belongs to West University Place, a city with its own government, its own police department, and its own city hall that has never joined Houston at all. West University Place incorporated in 1925 and adopted a home-rule, council-manager charter in 1940; Houston annexed the unincorporated land around it over the following decades but left the incorporated city itself alone, the same way it later grew around Bellaire and Southside Place. Today West University Place sits entirely inside Houston\'s outline on a map, at about two square miles, bordered on its remaining sides by Bellaire and Southside Place.',
+					"That makes 77005 an inconsistency, not a mistake, once you look at Bellaire next door: Bellaire is just as independent as West University Place. Houston annexed the land around it too, completing the encirclement on December 31, 1948, and Bellaire responded the following April by adopting its own home-rule charter. Yet USPS gave Bellaire a ZIP place name of its own, 77401 (and 77402), rather than filing it under Houston. Two neighboring cities, both fully surrounded, both never annexed, and only one of them carries the surrounding city's name at the post office. It's a version of the same disconnect this site found in [Dallas](/dallas-zip-codes/), where a legally independent town, Highland Park, has its ZIP codes filed under Dallas's name anyway, a reminder that a USPS place name tracks mail routing, not incorporation records.",
 				],
 			},
 			{
 				heading: 'Independence Heights: the one neighborhood on this list that actually did join Houston',
 				body: [
-					"Two of the 178 codes above, 77018 and 77022, cover Independence Heights, a neighborhood in north Houston bounded roughly by Tidwell Road, Yale Street, Loop 610, and Airline Drive. Its history runs in the opposite direction from West University Place's: Independence Heights incorporated on January 25, 1915, becoming the first Black-governed municipality in Texas, with attorney George O. Burgess elected its first mayor over a population of around 600. Over the next decade the city built its own shell-paved streets, plank sidewalks, and a municipal water system, and by the late 1920s it was home to roughly 40 Black-owned businesses -- grocery stores, a lumber company, law offices, and more.",
+					"Two of the 178 codes above, 77018 and 77022, cover Independence Heights, a neighborhood in north Houston bounded roughly by Tidwell Road, Yale Street, Loop 610, and Airline Drive. Its history runs in the opposite direction from West University Place's: Independence Heights incorporated on January 25, 1915, becoming the first Black-governed municipality in Texas, with attorney George O. Burgess elected its first mayor over a population of around 600. Over the next decade the city built its own shell-paved streets, plank sidewalks, and a municipal water system, and by the late 1920s it was home to roughly 40 Black-owned businesses: grocery stores, a lumber company, law offices, and more.",
 					"Unlike Bellaire and West University Place, Independence Heights didn't hold out. Facing money problems the small city struggled to solve on its own, residents voted in November 1928 to dissolve their own incorporation specifically so they could become part of Houston, and the annexation took effect on December 26, 1929. The city services residents hoped annexation would bring were slow to arrive, but the ZIP codes covering the old townsite, 77018 and 77022, carry Houston's name today for the most straightforward reason on this whole list: the neighborhood actually voted to become part of Houston, and did.",
 				],
 			},
@@ -964,12 +964,12 @@ export const guides: Guide[] = [
 			{
 				question: 'Is West University Place part of the city of Houston?',
 				answer:
-					"No. West University Place has run its own city council and police force since it incorporated in 1925 and has never been annexed by Houston. Its ZIP code, 77005, is nonetheless filed under Houston's name -- a USPS mail-routing convention, not a legal boundary.",
+					"No. West University Place has run its own city council and police force since it incorporated in 1925 and has never been annexed by Houston. Its ZIP code, 77005, is nonetheless filed under Houston's name, a USPS mail-routing convention, not a legal boundary.",
 			},
 			{
 				question: "Why does Bellaire have its own ZIP code but West University Place doesn't?",
 				answer:
-					"Both are independent cities fully surrounded by Houston, but USPS treated them differently: Bellaire was assigned its own place name, 77401, while West University Place's ZIP, 77005, carries Houston's name instead. There's no annexation-status difference between the two cities that explains the split -- it comes down to how USPS's place-name database happened to be set up.",
+					"Both are independent cities fully surrounded by Houston, but USPS treated them differently: Bellaire was assigned its own place name, 77401, while West University Place's ZIP, 77005, carries Houston's name instead. There's no annexation-status difference between the two cities that explains the split. It comes down to how USPS's place-name database happened to be set up.",
 			},
 			{
 				question: 'What is Independence Heights, and is it part of Houston?',
@@ -979,11 +979,11 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Houston, Texas ZIP codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/tx-houston.asp' },
-			{ label: 'West University Place, Texas -- Wikipedia', url: 'https://en.wikipedia.org/wiki/West_University_Place,_Texas' },
-			{ label: 'History of Bellaire, Texas -- Wikipedia', url: 'https://en.wikipedia.org/wiki/History_of_Bellaire,_Texas' },
-			{ label: 'Independence Heights -- Texas State Historical Association', url: 'https://www.tshaonline.org/handbook/entries/independence-heights-tx' },
-			{ label: 'Independence Heights, Houston -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Independence_Heights,_Houston' },
+			{ label: 'Houston, Texas ZIP codes (zip-codes.com)', url: 'https://www.zip-codes.com/city/tx-houston.asp' },
+			{ label: 'West University Place, Texas (Wikipedia)', url: 'https://en.wikipedia.org/wiki/West_University_Place,_Texas' },
+			{ label: 'History of Bellaire, Texas (Wikipedia)', url: 'https://en.wikipedia.org/wiki/History_of_Bellaire,_Texas' },
+			{ label: 'Independence Heights (Texas State Historical Association)', url: 'https://www.tshaonline.org/handbook/entries/independence-heights-tx' },
+			{ label: 'Independence Heights, Houston (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Independence_Heights,_Houston' },
 		],
 	},
 	{
@@ -991,17 +991,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Las Vegas ZIP Codes: The Full List, and the Strip That Isn't Really in the City",
 		description:
-			"Las Vegas has 77 ZIP codes -- and the Strip's own code, 89109, is split between Paradise and Winchester, two unincorporated towns Clark County created to keep the resort corridor out of the city's tax base.",
+			"Las Vegas has 77 ZIP codes, and the Strip's own code, 89109, is split between Paradise and Winchester, two unincorporated towns Clark County created to keep the resort corridor out of the city's tax base.",
 		published: '2026-08-11',
 		updated: '2026-08-11',
 		coreSummary:
-			'USPS assigns 77 ZIP codes to "Las Vegas, NV" as the primary place name, and this site\'s source data puts every one of them in Clark County -- no cross-county split like this site\'s Atlanta or Denver lists. The best-known of the 77, 89109, isn\'t mostly inside the city of Las Vegas at all: a city-data.com boundary breakdown puts 53.44% of that ZIP in Paradise, 42.03% in Winchester, and only 4.53% in the City of Las Vegas proper. Paradise and Winchester are both unincorporated Clark County towns that grew out of a 1950 fight over the Strip\'s tax base -- county commissioners created the original township of Paradise on December 8, 1950, after casino operators lobbied to keep the resort corridor out of the city\'s reach, then reorganized it in 1951 into two towns along school-district lines, one of which took the name Winchester in 1953. Neither town has ever been part of the City of Las Vegas, and neither has its own ZIP place name -- so their ZIP codes, including the Strip\'s, are filed under "Las Vegas" anyway.',
+			'USPS assigns 77 ZIP codes to "Las Vegas, NV" as the primary place name, and this site\'s source data puts every one of them in Clark County: no cross-county split like this site\'s Atlanta or Denver lists. The best-known of the 77, 89109, isn\'t mostly inside the city of Las Vegas at all: a city-data.com boundary breakdown puts 53.44% of that ZIP in Paradise, 42.03% in Winchester, and only 4.53% in the City of Las Vegas proper. Paradise and Winchester are both unincorporated Clark County towns that grew out of a 1950 fight over the Strip\'s tax base. County commissioners created the original township of Paradise on December 8, 1950, after casino operators lobbied to keep the resort corridor out of the city\'s reach, then reorganized it in 1951 into two towns along school-district lines, one of which took the name Winchester in 1953. Neither town has ever been part of the City of Las Vegas, and neither has its own ZIP place name, so their ZIP codes, including the Strip\'s, are filed under "Las Vegas" anyway.',
 		sections: [
 			{
 				heading: 'All 77 ZIP codes with "Las Vegas, NV" as the primary USPS place name',
 				body: [
-					"USPS assigns 77 ZIP codes to \"Las Vegas, NV\" as the primary place name, and every one of them sits in Clark County according to this site's source data -- there's no county split here the way there is on this site's [Atlanta](/atlanta-zip-codes/) or [Denver](/denver-zip-codes/) lists. Clark County is the only county Las Vegas touches, so a county breakdown wouldn't tell you anything useful about this city's ZIP map.",
-					"All 77 fall inside a single contiguous block, 89101 through 89199. That's different from [Houston](/houston-zip-codes/), which splits its ZIP codes into two separate ranges, 770xx and 772xx, with the second block reserved mostly for PO Boxes and high-volume mailers -- Las Vegas's codes here don't carry that same split.",
+					"USPS assigns 77 ZIP codes to \"Las Vegas, NV\" as the primary place name, and every one of them sits in Clark County according to this site's source data. There's no county split here the way there is on this site's [Atlanta](/atlanta-zip-codes/) or [Denver](/denver-zip-codes/) lists. Clark County is the only county Las Vegas touches, so a county breakdown wouldn't tell you anything useful about this city's ZIP map.",
+					"All 77 fall inside a single contiguous block, 89101 through 89199. That's different from [Houston](/houston-zip-codes/), which splits its ZIP codes into two separate ranges, 770xx and 772xx, with the second block reserved mostly for PO Boxes and high-volume mailers; Las Vegas's codes here don't carry that same split.",
 				],
 				table: {
 					caption: 'All 77 ZIP codes with "Las Vegas, NV" as the primary USPS place name (per GeoNames.org, checked 2026-08-11)',
@@ -1029,16 +1029,16 @@ export const guides: Guide[] = [
 			{
 				heading: 'Paradise: the town casino operators invented to keep the Strip out of city hall',
 				body: [
-					"The most recognizable ZIP code on the list above, 89109, is the address for most of the Las Vegas Strip -- and most of that ZIP code isn't actually inside the city of Las Vegas. A boundary breakdown from city-data.com splits 89109 three ways: 53.44% in Paradise, 42.03% in Winchester, and just 4.53% in the City of Las Vegas itself. Both Paradise and Winchester are unincorporated Clark County towns that have never been annexed by, or become part of, the City of Las Vegas.",
-					"Paradise exists because of a fight over tax revenue. In 1950, Las Vegas mayor Ernie Cragin pushed to annex the then-unincorporated Strip so the city could tax the casinos being built along it. A group of casino operators, led by the Flamingo's Gus Greenbaum, lobbied the Clark County Commission for township status instead -- a designation that would keep the Strip under county government and out of the city's reach. The commission created Paradise on December 8, 1950, and its first town board was made up of five casino managers, with Greenbaum as chair.",
-					"Paradise's population was 191,238 at the 2020 census. Beyond the Strip, the town also contains Harry Reid International Airport and the University of Nevada, Las Vegas -- none of it part of the city whose name shows up on the mail.",
+					"The most recognizable ZIP code on the list above, 89109, is the address for most of the Las Vegas Strip, and most of that ZIP code isn't actually inside the city of Las Vegas. A boundary breakdown from city-data.com splits 89109 three ways: 53.44% in Paradise, 42.03% in Winchester, and just 4.53% in the City of Las Vegas itself. Both Paradise and Winchester are unincorporated Clark County towns that have never been annexed by, or become part of, the City of Las Vegas.",
+					"Paradise exists because of a fight over tax revenue. In 1950, Las Vegas mayor Ernie Cragin pushed to annex the then-unincorporated Strip so the city could tax the casinos being built along it. A group of casino operators, led by the Flamingo's Gus Greenbaum, lobbied the Clark County Commission for township status instead, a designation that would keep the Strip under county government and out of the city's reach. The commission created Paradise on December 8, 1950, and its first town board was made up of five casino managers, with Greenbaum as chair.",
+					"Paradise's population was 191,238 at the 2020 census. Beyond the Strip, the town also contains Harry Reid International Airport and the University of Nevada, Las Vegas. None of it is part of the city whose name shows up on the mail.",
 				],
 			},
 			{
 				heading: 'Winchester: the sibling town with the same origin story',
 				body: [
 					"Winchester exists because of a legal snag in Paradise's original boundary: it crossed into two separate school districts, which Nevada law didn't allow. To fix that, the county reorganized Paradise in 1951 into two towns, one covering the section inside the Las Vegas school district and the other covering the section inside the Paradise school district. In October 1953, the first of those two took the name Winchester and the second kept the name Paradise. Both towns are still governed today by the Clark County Commission, each with its own town advisory board, and neither has ever been part of the city of Las Vegas. Winchester's 2020 census population was 36,403.",
-					"Neither Paradise nor Winchester has its own ZIP place name. ZIP codes inside both towns -- including 89109, the Strip's own code -- are filed under \"Las Vegas\" because that's the mailing city USPS assigns them, not because the towns are part of the city. It's the same kind of mismatch this site found in [Houston](/houston-zip-codes/), where ZIP 77005 carries Houston's name despite belonging to the fully independent city of West University Place -- except in Las Vegas's case, it's the entire world-famous resort corridor filed under a city that has never governed it.",
+					"Neither Paradise nor Winchester has its own ZIP place name. ZIP codes inside both towns (including 89109, the Strip's own code) are filed under \"Las Vegas\" because that's the mailing city USPS assigns them, not because the towns are part of the city. It's the same kind of mismatch this site found in [Houston](/houston-zip-codes/), where ZIP 77005 carries Houston's name despite belonging to the fully independent city of West University Place, except that in Las Vegas's case it's the entire world-famous resort corridor filed under a city that has never governed it.",
 				],
 			},
 		],
@@ -1066,11 +1066,11 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Paradise, Nevada -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Paradise,_Nevada' },
-			{ label: 'Winchester, Nevada -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Winchester,_Nevada' },
-			{ label: 'Where is Paradise in Las Vegas? -- Las Vegas Review-Journal', url: 'https://www.reviewjournal.com/local/local-las-vegas/the-origins-of-paradise-in-las-vegas-3174948/' },
-			{ label: 'Las Vegas vs. Clark County: there are differences between living in city limits and unincorporated county land -- Las Vegas Sun', url: 'https://lasvegassun.com/news/2019/jul/12/las-vegas-vs-clark-county-there-are-differences-be/' },
-			{ label: 'ZIP code 89109 city breakdown -- city-data.com', url: 'https://www.city-data.com/zips/89109.html' },
+			{ label: 'Paradise, Nevada (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Paradise,_Nevada' },
+			{ label: 'Winchester, Nevada (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Winchester,_Nevada' },
+			{ label: 'Where is Paradise in Las Vegas? (Las Vegas Review-Journal)', url: 'https://www.reviewjournal.com/local/local-las-vegas/the-origins-of-paradise-in-las-vegas-3174948/' },
+			{ label: 'Las Vegas vs. Clark County: there are differences between living in city limits and unincorporated county land (Las Vegas Sun)', url: 'https://lasvegassun.com/news/2019/jul/12/las-vegas-vs-clark-county-there-are-differences-be/' },
+			{ label: 'ZIP code 89109 city breakdown (city-data.com)', url: 'https://www.city-data.com/zips/89109.html' },
 		],
 	},
 	{
@@ -1078,17 +1078,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'Sacramento ZIP Codes: The Full List, and the 59 That Never Reach a House',
 		description:
-			"Sacramento has 100 ZIP codes, but 59 sit in a block state agencies use for tax filings and other high-volume mail -- only 41 actually cover the city's homes and businesses.",
+			"Sacramento has 100 ZIP codes, but 59 sit in a block state agencies use for tax filings and other high-volume mail; only 41 actually cover the city's homes and businesses.",
 		published: '2026-08-12',
 		updated: '2026-08-12',
 		coreSummary:
-			'USPS assigns 100 ZIP codes to "Sacramento, CA" as the primary place name, all in Sacramento County per this site\'s source data -- no cross-county split like this site\'s Atlanta or Denver lists. They split into two ranges: 41 codes in the 958xx block, covering the city\'s actual residential and business delivery routes, and 59 in the 942xx block, reserved for high-volume state government correspondence rather than home delivery -- among them the California Franchise Tax Board\'s separate PO Box codes for personal returns without payment (94240), personal returns with payment (94267), and business returns (94257). The split traces back to February 1854, when the state legislature voted to move California\'s capital to Sacramento from Benicia. A separate zip-codes.com breakdown of the same city, compiled at a different time, puts the total at 99 and classifies it as 29 standard delivery codes, 61 unique high-volume codes, and 9 PO Box codes -- close to, but not an exact match for, this site\'s own count.',
+			'USPS assigns 100 ZIP codes to "Sacramento, CA" as the primary place name, all in Sacramento County per this site\'s source data: no cross-county split like this site\'s Atlanta or Denver lists. They split into two ranges: 41 codes in the 958xx block, covering the city\'s actual residential and business delivery routes, and 59 in the 942xx block, reserved for high-volume state government correspondence rather than home delivery. Among them are the California Franchise Tax Board\'s separate PO Box codes for personal returns without payment (94240), personal returns with payment (94267), and business returns (94257). The split traces back to February 1854, when the state legislature voted to move California\'s capital to Sacramento from Benicia. A separate zip-codes.com breakdown of the same city, compiled at a different time, puts the total at 99 and classifies it as 29 standard delivery codes, 61 unique high-volume codes, and 9 PO Box codes, close to, but not an exact match for, this site\'s own count.',
 		sections: [
 			{
 				heading: 'All 100 ZIP codes with "Sacramento, CA" as the primary USPS place name',
 				body: [
-					"Sacramento County is the only county in this table, unlike this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists, which each split across county lines. zip-codes.com runs its own count of Sacramento's ZIP codes and lands on 99, one short of the 100 pulled from this site's GeoNames-based source data -- the two counts were compiled at different times and won't necessarily line up exactly. Where zip-codes.com does add useful detail is delivery type: it classifies 29 of the codes as standard routes tied to carriers, 61 as unique codes tied to a single high-volume recipient, and 9 as PO Boxes.",
-					"That delivery-type split lines up with a pattern visible in the raw ZIP numbers themselves: 41 codes fall in the 958xx block (95811 through 95899), which covers most of the city's actual residential and business delivery routes, while the other 59 sit in a separate 942xx block (94203 through 94299) reserved for state government correspondence -- similar to the way this site found [Houston](/houston-zip-codes/) splitting into a residential 770xx block and a PO-Box-heavy 772xx block, though Sacramento's non-residential share is proportionally larger.",
+					"Sacramento County is the only county in this table, unlike this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists, which each split across county lines. zip-codes.com runs its own count of Sacramento's ZIP codes and lands on 99, one short of the 100 pulled from this site's GeoNames-based source data. The two counts were compiled at different times and won't necessarily line up exactly. Where zip-codes.com does add useful detail is delivery type: it classifies 29 of the codes as standard routes tied to carriers, 61 as unique codes tied to a single high-volume recipient, and 9 as PO Boxes.",
+					"That delivery-type split lines up with a pattern visible in the raw ZIP numbers themselves: 41 codes fall in the 958xx block (95811 through 95899), which covers most of the city's actual residential and business delivery routes, while the other 59 sit in a separate 942xx block (94203 through 94299) reserved for state government correspondence, similar to the way this site found [Houston](/houston-zip-codes/) splitting into a residential 770xx block and a PO-Box-heavy 772xx block, though Sacramento's non-residential share is proportionally larger.",
 				],
 				table: {
 					caption: 'All 100 ZIP codes with "Sacramento, CA" as the primary USPS place name (per GeoNames.org, checked 2026-08-12)',
@@ -1120,8 +1120,8 @@ export const guides: Guide[] = [
 			{
 				heading: "Why 59 of Sacramento's 100 ZIP codes never deliver mail to a house",
 				body: [
-					"The 942xx block exists because Sacramento is California's seat of government, not because the city itself is unusually large -- its population, about 525,000, is smaller than San Francisco's (roughly 830,000) or San Jose's (roughly 990,000), both of which get by with far fewer non-residential codes. The state legislature voted to move the capital to Sacramento from Benicia in February 1854, and the growth of state government in the city since then is what eventually pushed USPS to carve out dedicated codes for departments that receive far more mail than any single street address could sort through on its own.",
-					"The California Franchise Tax Board's own mailing-address page shows exactly how that plays out: personal income tax returns filed without a payment go to PO Box 942840, Sacramento, CA 94240; the same returns filed with a payment go to a different code, 94267; and business tax returns go to yet another, 94257. None of those three codes corresponds to a street address a resident could visit -- each one exists to sort incoming tax mail by return type before it's even opened, a level of postal subdivision a typical U.S. city never needs.",
+					"The 942xx block exists because Sacramento is California's seat of government, not because the city itself is unusually large. Its population, about 525,000, is smaller than San Francisco's (roughly 830,000) or San Jose's (roughly 990,000), both of which get by with far fewer non-residential codes. The state legislature voted to move the capital to Sacramento from Benicia in February 1854, and the growth of state government in the city since then is what eventually pushed USPS to carve out dedicated codes for departments that receive far more mail than any single street address could sort through on its own.",
+					"The California Franchise Tax Board's own mailing-address page shows exactly how that plays out: personal income tax returns filed without a payment go to PO Box 942840, Sacramento, CA 94240; the same returns filed with a payment go to a different code, 94267; and business tax returns go to yet another, 94257. None of those three codes corresponds to a street address a resident could visit. Each one exists to sort incoming tax mail by return type before it's even opened, a level of postal subdivision a typical U.S. city never needs.",
 				],
 			},
 		],
@@ -1139,7 +1139,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What ZIP code do I use to mail a California state tax return?',
 				answer:
-					"It depends on the form and whether a payment is included. The Franchise Tax Board lists separate ZIP codes for each combination -- personal returns without payment go to 94240, personal returns with payment go to 94267, and business returns go to 94257 -- each a dedicated PO Box, not a street address.",
+					"It depends on the form and whether a payment is included. The Franchise Tax Board lists separate ZIP codes for each combination: personal returns without payment go to 94240, personal returns with payment go to 94267, and business returns go to 94257. Each is a dedicated PO Box, not a street address.",
 			},
 			{
 				question: "When did Sacramento become California's capital?",
@@ -1149,9 +1149,9 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Sacramento, CA ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-sacramento.asp' },
+			{ label: 'Sacramento, CA ZIP Codes (zip-codes.com)', url: 'https://www.zip-codes.com/city/ca-sacramento.asp' },
 			{ label: 'Franchise Tax Board: Mailing addresses', url: 'https://www.ftb.ca.gov/help/contact/mailing-addresses.html' },
-			{ label: 'California State Capitol -- Wikipedia', url: 'https://en.wikipedia.org/wiki/California_State_Capitol' },
+			{ label: 'California State Capitol (Wikipedia)', url: 'https://en.wikipedia.org/wiki/California_State_Capitol' },
 		],
 	},
 	{
@@ -1159,16 +1159,16 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'San Diego ZIP Codes: The Full List, and the Three That Belong to a Military Base',
 		description:
-			"San Diego has 76 ZIP codes, and every one sits inside San Diego County -- no split like this site's Denver or Atlanta lists. Three of them, though, belong to a Navy or Marine base instead of a neighborhood.",
+			"San Diego has 76 ZIP codes, and every one sits inside San Diego County, with no split like this site's Denver or Atlanta lists. Three of them, though, belong to a Navy or Marine base instead of a neighborhood.",
 		published: '2026-08-13',
 		updated: '2026-08-13',
 		coreSummary:
-			"USPS assigns 76 ZIP codes to \"San Diego, CA\" as the primary place name, and every one of them sits inside San Diego County, per this site's GeoNames-based source data -- unlike this site's Denver or Atlanta lists, where the ZIP footprint spills across a county line, San Diego's stays on one side of it. The count itself is not settled: zip-codes.com puts the city at 81 ZIP codes, and other directories land anywhere from 75 to 95 depending on how PO-Box-only and single-recipient codes get classified. Three of the 76 on this site's list do not belong to any neighborhood at all. 92136 is Naval Base San Diego on 32nd Street, the Pacific Fleet's main surface-ship homeport. 92140 is Marine Corps Recruit Depot San Diego, where West Coast recruits have trained since 1923. And 92145 is Marine Corps Air Station Miramar, the Navy base that sent its Topgun fighter school to Nevada in 1996 and its own ownership to the Marine Corps a year later.",
+			"USPS assigns 76 ZIP codes to \"San Diego, CA\" as the primary place name, and every one of them sits inside San Diego County, per this site's GeoNames-based source data. Unlike this site's Denver or Atlanta lists, where the ZIP footprint spills across a county line, San Diego's stays on one side of it. The count itself is not settled: zip-codes.com puts the city at 81 ZIP codes, and other directories land anywhere from 75 to 95 depending on how PO-Box-only and single-recipient codes get classified. Three of the 76 on this site's list do not belong to any neighborhood at all. 92136 is Naval Base San Diego on 32nd Street, the Pacific Fleet's main surface-ship homeport. 92140 is Marine Corps Recruit Depot San Diego, where West Coast recruits have trained since 1923. And 92145 is Marine Corps Air Station Miramar, the Navy base that sent its Topgun fighter school to Nevada in 1996 and its own ownership to the Marine Corps a year later.",
 		sections: [
 			{
 				heading: 'All 76 ZIP codes with "San Diego, CA" as the primary USPS place name',
 				body: [
-					"Every one of the 76 falls inside San Diego County -- the same pattern this site found in [Sacramento](/sacramento-zip-codes/), and a contrast to [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/), where the ZIP list crosses into a neighboring county. Directories disagree on the total more than they disagree on the county, though: zip-codes.com counts 81 ZIP codes for San Diego, five above the 76 this site pulls from GeoNames, and other trackers range from 75 to 95 depending on whether they fold PO-Box-only and single-recipient codes into the total or list them separately.",
+					"Every one of the 76 falls inside San Diego County, the same pattern this site found in [Sacramento](/sacramento-zip-codes/), and a contrast to [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/), where the ZIP list crosses into a neighboring county. Directories disagree on the total more than they disagree on the county, though: zip-codes.com counts 81 ZIP codes for San Diego, five above the 76 this site pulls from GeoNames, and other trackers range from 75 to 95 depending on whether they fold PO-Box-only and single-recipient codes into the total or list them separately.",
 					"San Diego also dials on two area codes, 619 and 858, both covered in more detail on this site's [California area code list](/california-area-codes/).",
 				],
 				table: {
@@ -1197,15 +1197,15 @@ export const guides: Guide[] = [
 			{
 				heading: 'Why the number sequence skips Coronado and San Ysidro',
 				body: [
-					"The gaps in that sequence -- no 92118, 92143, 92173, or 92178 -- are not missing data. All four fall inside San Diego County too, but USPS assigns them to Coronado (92118 and 92178) and San Ysidro (92143 and 92173) instead of to San Diego itself, even though both places sit within a few miles of downtown. Coronado is its own incorporated city, connected to San Diego by a bridge and a narrow spit of land called the Silver Strand, and has never been part of San Diego's municipal government.",
-					"San Ysidro's case is different: it has been a neighborhood inside the City of San Diego since 1957, when the city annexed the South Bay communities of Palm City, Otay, and San Ysidro to secure a more reliable water supply. Annexation folded San Ysidro into San Diego's city limits, but USPS never merged its ZIP codes into San Diego's own -- 92143 and 92173 still carry San Ysidro's name today, nearly seventy years later, a reminder that a place can lose its city government and keep its postal identity anyway.",
+					"The gaps in that sequence (no 92118, 92143, 92173, or 92178) are not missing data. All four fall inside San Diego County too, but USPS assigns them to Coronado (92118 and 92178) and San Ysidro (92143 and 92173) instead of to San Diego itself, even though both places sit within a few miles of downtown. Coronado is its own incorporated city, connected to San Diego by a bridge and a narrow spit of land called the Silver Strand, and has never been part of San Diego's municipal government.",
+					"San Ysidro's case is different: it has been a neighborhood inside the City of San Diego since 1957, when the city annexed the South Bay communities of Palm City, Otay, and San Ysidro to secure a more reliable water supply. Annexation folded San Ysidro into San Diego's city limits, but USPS never merged its ZIP codes into San Diego's own: 92143 and 92173 still carry San Ysidro's name today, nearly seventy years later, a reminder that a place can lose its city government and keep its postal identity anyway.",
 				],
 			},
 			{
 				heading: 'Three ZIP codes that belong to a base, not a neighborhood',
 				body: [
-					"92136 belongs to Naval Base San Diego, the installation along 32nd Street that serves as the Pacific Fleet's principal homeport for surface ships -- destroyers, cruisers, and amphibious vessels tie up along its piers rather than at any of the commercial waterfront a few miles north. 92140 belongs to Marine Corps Recruit Depot San Diego, the Marine Corps' West Coast boot camp; the Corps moved its recruit training there from Mare Island, near Vallejo, in 1923, and the depot's Spanish Colonial Revival buildings, designed by architect Bertram Goodhue, are now on the National Register of Historic Places.",
-					"92145 belongs to Marine Corps Air Station Miramar, a base with a split identity of its own. The Navy ran it for decades as \"Fightertown,\" home to F-14 squadrons and the Navy Fighter Weapons School known as Topgun -- until the summer of 1996, when Topgun's need for more training airspace than Miramar could offer sent it north to Naval Air Station Fallon, Nevada, where it still operates today. The base itself followed a similar path a year later: after the Marine Corps lost its own Southern California air stations at El Toro and Tustin to closure, it took over Miramar from the Navy on October 1, 1997, and the field has flown Marine Corps colors ever since.",
+					"92136 belongs to Naval Base San Diego, the installation along 32nd Street that serves as the Pacific Fleet's principal homeport for surface ships. Destroyers, cruisers, and amphibious vessels tie up along its piers rather than at any of the commercial waterfront a few miles north. 92140 belongs to Marine Corps Recruit Depot San Diego, the Marine Corps' West Coast boot camp; the Corps moved its recruit training there from Mare Island, near Vallejo, in 1923, and the depot's Spanish Colonial Revival buildings, designed by architect Bertram Goodhue, are now on the National Register of Historic Places.",
+					"92145 belongs to Marine Corps Air Station Miramar, a base with a split identity of its own. The Navy ran it for decades as \"Fightertown,\" home to F-14 squadrons and the Navy Fighter Weapons School known as Topgun, until the summer of 1996, when Topgun's need for more training airspace than Miramar could offer sent it north to Naval Air Station Fallon, Nevada, where it still operates today. The base itself followed a similar path a year later: after the Marine Corps lost its own Southern California air stations at El Toro and Tustin to closure, it took over Miramar from the Navy on October 1, 1997, and the field has flown Marine Corps colors ever since.",
 				],
 			},
 		],
@@ -1218,7 +1218,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What county is San Diego in?',
 				answer:
-					"San Diego County, and unlike this site's Denver or Atlanta ZIP lists, all 76 ZIP codes USPS assigns to San Diego stay inside that one county -- none spill across a county line.",
+					"San Diego County, and unlike this site's Denver or Atlanta ZIP lists, all 76 ZIP codes USPS assigns to San Diego stay inside that one county; none spill across a county line.",
 			},
 			{
 				question: 'Which San Diego ZIP codes belong to a military base?',
@@ -1228,17 +1228,17 @@ export const guides: Guide[] = [
 			{
 				question: "Why isn't Coronado's ZIP code included in San Diego's list?",
 				answer:
-					"Coronado is its own incorporated city, not a San Diego neighborhood, so USPS assigns it separate ZIP codes -- 92118 and 92178 -- even though it sits directly across San Diego Bay and shares a land connection with the city via the Silver Strand.",
+					"Coronado is its own incorporated city, not a San Diego neighborhood, so USPS assigns it separate ZIP codes (92118 and 92178) even though it sits directly across San Diego Bay and shares a land connection with the city via the Silver Strand.",
 			},
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'San Diego, CA ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-san-diego.asp' },
-			{ label: 'Naval Base San Diego -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Naval_Base_San_Diego' },
-			{ label: 'Marine Corps Recruit Depot San Diego -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Marine_Corps_Recruit_Depot_San_Diego' },
-			{ label: 'Marine Corps Air Station Miramar -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Marine_Corps_Air_Station_Miramar' },
-			{ label: 'San Ysidro, San Diego -- Wikipedia', url: 'https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego,_California' },
-			{ label: 'Coronado, California -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Coronado,_California' },
+			{ label: 'San Diego, CA ZIP Codes (zip-codes.com)', url: 'https://www.zip-codes.com/city/ca-san-diego.asp' },
+			{ label: 'Naval Base San Diego (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Naval_Base_San_Diego' },
+			{ label: 'Marine Corps Recruit Depot San Diego (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Marine_Corps_Recruit_Depot_San_Diego' },
+			{ label: 'Marine Corps Air Station Miramar (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Marine_Corps_Air_Station_Miramar' },
+			{ label: 'San Ysidro, San Diego (Wikipedia)', url: 'https://en.wikipedia.org/wiki/San_Ysidro,_San_Diego,_California' },
+			{ label: 'Coronado, California (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Coronado,_California' },
 		],
 	},
 	{
@@ -1250,35 +1250,35 @@ export const guides: Guide[] = [
 		published: '2026-08-13',
 		updated: '2026-08-13',
 		coreSummary:
-			"Every USPS ZIP code has exactly one official \"preferred place name\" on file -- the city that shows up on the last line of the address -- and USPS assigns it based on which post office services the delivery route, not which town, city, or county the address legally sits in. That distinction is why a property can be physically located in one town while its ZIP code's preferred name reads as a different one entirely, sometimes across a county line. USPS has a formal process for correcting a preferred name, and cities have petitioned to change one, but the mismatch itself is common enough to have its own paper trail -- and it recently changed how a Colorado real estate listing showed up online.",
+			"Every USPS ZIP code has exactly one official \"preferred place name\" on file (the city that shows up on the last line of the address), and USPS assigns it based on which post office services the delivery route, not which town, city, or county the address legally sits in. That distinction is why a property can be physically located in one town while its ZIP code's preferred name reads as a different one entirely, sometimes across a county line. USPS has a formal process for correcting a preferred name, and cities have petitioned to change one, but the mismatch itself is common enough to have its own paper trail, and it recently changed how a Colorado real estate listing showed up online.",
 		sections: [
 			{
 				heading: "A ZIP code's city name comes from a post office, not a map",
 				body: [
-					'USPS\'s Publication 28 addressing standards define what the postal service calls the "last line" of an address -- city, state, and ZIP -- and every five-digit ZIP has one preferred city name attached to it in USPS\'s own address-matching database. That name is set administratively, based on the post office that historically handled delivery for the area, not by checking a municipal boundary, a county line, or a map of where residents consider themselves to live.',
-					"Most of the time nobody notices, because the post office that serves an area and the town people call home are the same place. The mismatch shows up when they aren't: a subdivision built between two towns, a rural stretch where one post office covers ground that technically belongs to a neighboring county, or a ZIP boundary drawn decades ago that never got redrawn as the area around it grew. This site has already documented a version of the same underlying fact in [Los Angeles](/los-angeles-zip-codes/), where dozens of neighborhoods that are legally part of the city still carry a different name at the post office. A ZIP code's place name is a routing label USPS assigns for its own delivery logistics, not a ruling on what city an address legally belongs to -- the same gap that makes an [area code](/how-do-area-codes-work/) a poor stand-in for a timezone.",
+					'USPS\'s Publication 28 addressing standards define what the postal service calls the "last line" of an address (city, state, and ZIP), and every five-digit ZIP has one preferred city name attached to it in USPS\'s own address-matching database. That name is set administratively, based on the post office that historically handled delivery for the area, not by checking a municipal boundary, a county line, or a map of where residents consider themselves to live.',
+					"Most of the time nobody notices, because the post office that serves an area and the town people call home are the same place. The mismatch shows up when they aren't: a subdivision built between two towns, a rural stretch where one post office covers ground that technically belongs to a neighboring county, or a ZIP boundary drawn decades ago that never got redrawn as the area around it grew. This site has already documented a version of the same underlying fact in [Los Angeles](/los-angeles-zip-codes/), where dozens of neighborhoods that are legally part of the city still carry a different name at the post office. A ZIP code's place name is a routing label USPS assigns for its own delivery logistics, not a ruling on what city an address legally belongs to, the same gap that makes an [area code](/how-do-area-codes-work/) a poor stand-in for a timezone.",
 				],
 			},
 			{
 				heading: 'A Colorado listing that read as an entirely different town',
 				body: [
-					"Anne-Britt Ostlund, an agent with Mountain Rose Realty, ran into this on a listing at 456 Ridge Road -- a property that sits in Ouray County and should read as Ridgway, Colorado, Ouray County's largest town. Instead, the ZIP code covering that address carries Montrose as its USPS preferred place name -- the seat of neighboring Montrose County. The two towns sit close enough together that a shared ZIP delivery route makes sense on a map. On the ground, they're two separate towns in two separate counties, with buyers who don't overlap.",
+					"Anne-Britt Ostlund, an agent with Mountain Rose Realty, ran into this on a listing at 456 Ridge Road, a property that sits in Ouray County and should read as Ridgway, Colorado, Ouray County's largest town. Instead, the ZIP code covering that address carries Montrose as its USPS preferred place name, the seat of neighboring Montrose County. The two towns sit close enough together that a shared ZIP delivery route makes sense on a map. On the ground, they're two separate towns in two separate counties, with buyers who don't overlap.",
 					"<div style=\"margin:12px 0;padding:18px 20px;background:#f8fafc;border-left:4px solid #4a5568;border-radius:8px;\"><p style=\"margin:0;font-size:1.05rem;font-style:italic;color:#1e293b;line-height:1.6;\">&ldquo;Those are two ENTIRELY different markets and buyer types and it's caused havoc on Zillow and other websites, I even got a call from the local MLS trying to tell me I have the home in the wrong town!&rdquo;</p><p style=\"margin:8px 0 0;font-size:0.8125rem;color:#64748b;\">Anne-Britt Ostlund, Mountain Rose Realty</p></div>",
-					"Zillow and most other listing sites don't independently verify what town a property sits in -- they pull the city from the address's ZIP code, and that means they inherit whatever name USPS has on file for that ZIP, correct or not. A listing rooted in a mountain-town market can end up displayed under a neighboring valley town's name instead, to buyers who search by location and to a local MLS that flagged the listing as possibly misfiled before realizing the address itself was never wrong -- the ZIP code's label was.",
+					"Zillow and most other listing sites don't independently verify what town a property sits in. They pull the city from the address's ZIP code, and that means they inherit whatever name USPS has on file for that ZIP, correct or not. A listing rooted in a mountain-town market can end up displayed under a neighboring valley town's name instead, to buyers who search by location and to a local MLS that flagged the listing as possibly misfiled before realizing the address itself was never wrong; the ZIP code's label was.",
 				],
 			},
 			{
 				heading: 'The same mismatch has turned up from Virginia to Georgia',
 				body: [
-					"ZIP 20152 covers South Riding, Virginia, a Loudoun County community of roughly 37,000 people, but USPS's preferred place name for that ZIP is Chantilly, the next town over -- South Riding is accepted only as an alternate. Oakland, California, has the same problem in reverse: part of ZIP 94608 sits inside Oakland's city limits, but USPS's preferred name for that whole ZIP is Emeryville, the smaller city next door.",
-					"Alameda County ran a formal \"Community Identity Project\" specifically because of how often this comes up for unincorporated communities: if you live in an unincorporated area near a mid-size city, the county found, your mailing address probably carries that city's name even though you don't live within its borders, pay its taxes, or vote in its elections. Sandy Springs, Georgia, spent years pushing back against the reverse version of the same problem -- its ZIP codes carried \"Atlanta\" as the preferred name even after Sandy Springs incorporated as its own city in 2005 -- and won USPS approval in March 2026 to make Sandy Springs the default name instead. Sandy Springs shows the mismatch is fixable, just not automatically and not quickly.",
+					"ZIP 20152 covers South Riding, Virginia, a Loudoun County community of roughly 37,000 people, but USPS's preferred place name for that ZIP is Chantilly, the next town over; South Riding is accepted only as an alternate. Oakland, California, has the same problem in reverse: part of ZIP 94608 sits inside Oakland's city limits, but USPS's preferred name for that whole ZIP is Emeryville, the smaller city next door.",
+					"Alameda County ran a formal \"Community Identity Project\" specifically because of how often this comes up for unincorporated communities: if you live in an unincorporated area near a mid-size city, the county found, your mailing address probably carries that city's name even though you don't live within its borders, pay its taxes, or vote in its elections. Sandy Springs, Georgia, spent years pushing back against the reverse version of the same problem: its ZIP codes carried \"Atlanta\" as the preferred name even after Sandy Springs incorporated as its own city in 2005. The city won USPS approval in March 2026 to make Sandy Springs the default name instead. Sandy Springs shows the mismatch is fixable, just not automatically and not quickly.",
 				],
 			},
 			{
 				heading: "What actually fixes it, and what doesn't",
 				body: [
-					"USPS has a formal process for this, laid out in a 2016 Management Instruction on the ZIP Code Boundary Review Process. A city, community group, or individual can request a preferred-name change by submitting it in writing to the district manager for the area, either directly or through a local postmaster who forwards it along. The district manager is required to respond within 60 days. For a full boundary or name change covering a whole ZIP code -- the kind of request Sandy Springs made -- USPS requires a survey of affected addresses, with at least half returned and at least half of those in favor, before it will act. Appeals go to USPS's Manager of Rural Delivery in Washington, D.C.",
-					"For an individual property, mail delivery usually isn't the problem: USPS's address-matching system already accepts a range of alternate city names for a given ZIP, which is why \"South Riding, VA 20152\" delivers fine even though Chantilly is the official preferred name. What doesn't get fixed by that leniency is how third-party platforms display the address. Zillow, an MLS, a shipping carrier's rate lookup, or a GPS system typically defaults to the single preferred name on file, not whichever alternate a homeowner or agent prefers. Short of a formal USPS petition, the practical move for a real estate listing is to spell out the correct town and county explicitly in the listing description and public records, and be ready to explain the mismatch the first time a buyer, another agent, or an MLS reviewer flags it as if it were an error -- because on paper, at a glance, it looks like one.",
+					"USPS has a formal process for this, laid out in a 2016 Management Instruction on the ZIP Code Boundary Review Process. A city, community group, or individual can request a preferred-name change by submitting it in writing to the district manager for the area, either directly or through a local postmaster who forwards it along. The district manager is required to respond within 60 days. For a full boundary or name change covering a whole ZIP code (the kind of request Sandy Springs made), USPS requires a survey of affected addresses, with at least half returned and at least half of those in favor, before it will act. Appeals go to USPS's Manager of Rural Delivery in Washington, D.C.",
+					"For an individual property, mail delivery usually isn't the problem: USPS's address-matching system already accepts a range of alternate city names for a given ZIP, which is why \"South Riding, VA 20152\" delivers fine even though Chantilly is the official preferred name. What doesn't get fixed by that leniency is how third-party platforms display the address. Zillow, an MLS, a shipping carrier's rate lookup, or a GPS system typically defaults to the single preferred name on file, not whichever alternate a homeowner or agent prefers. Short of a formal USPS petition, the practical move for a real estate listing is to spell out the correct town and county explicitly in the listing description and public records, and be ready to explain the mismatch the first time a buyer, another agent, or an MLS reviewer flags it as if it were an error, because on paper, at a glance, it looks like one.",
 				],
 			},
 		],
@@ -1296,17 +1296,17 @@ export const guides: Guide[] = [
 			{
 				question: "Does a ZIP code's city name affect my school district or property taxes?",
 				answer:
-					"No. A ZIP code is a USPS mail-routing label with no legal standing -- school district assignment, tax jurisdiction, and voting districts are set independently by cities, counties, and school boards, and none of them follow ZIP code lines.",
+					"No. A ZIP code is a USPS mail-routing label with no legal standing. School district assignment, tax jurisdiction, and voting districts are set independently by cities, counties, and school boards, and none of them follow ZIP code lines.",
 			},
 			{
 				question: "Will my mail still get delivered if I use the town's own name instead of the ZIP's preferred name?",
 				answer:
-					"Usually, yes. USPS's address-matching system accepts a range of alternate city names for a given ZIP code -- it's why South Riding, VA addresses (ZIP 20152) deliver correctly even though Chantilly is the official preferred name on file. It isn't guaranteed for every ZIP, though, and accepting an alternate for delivery doesn't change what name a third-party site like Zillow or an MLS displays.",
+					"Usually, yes. USPS's address-matching system accepts a range of alternate city names for a given ZIP code; it's why South Riding, VA addresses (ZIP 20152) deliver correctly even though Chantilly is the official preferred name on file. It isn't guaranteed for every ZIP, though, and accepting an alternate for delivery doesn't change what name a third-party site like Zillow or an MLS displays.",
 			},
 		],
 		sources: [
 			{ label: 'USPS Postal Explorer, Publication 28: Last Line of the Address', url: 'https://pe.usps.com/text/pub28/28c2_006.htm' },
-			{ label: 'CRS via EveryCRSReport: Postal Primer -- ZIP Codes and Boundary Review Process', url: 'https://www.everycrsreport.com/reports/IF12132.html' },
+			{ label: 'CRS via EveryCRSReport: Postal Primer (ZIP Codes and Boundary Review Process)', url: 'https://www.everycrsreport.com/reports/IF12132.html' },
 			{ label: 'Rough Draft Atlanta: Sandy Springs wins USPS approval for city name on mailing addresses', url: 'https://roughdraftatlanta.com/2026/03/11/sandy-springs-zip-code-review/' },
 			{ label: 'Alameda County Community Identity Project', url: 'https://www.acgov.org/cda/USPSproject/solutions-action.htm' },
 			{ label: 'UnitedStatesZipCodes.org: ZIP Code 20152 (South Riding / Chantilly, VA)', url: 'https://www.unitedstateszipcodes.org/20152/' },
@@ -1318,17 +1318,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'Kansas City ZIP Codes: Two Cities, Two States, Two Separate Lists',
 		description:
-			"Kansas City is really two cities in two states, and USPS treats them as separate places. Every ZIP for Kansas City, Missouri (71, three counties) and Kansas City, Kansas (15, one county) -- and why the split happened.",
+			"Kansas City is really two cities in two states, and USPS treats them as separate places. Every ZIP for Kansas City, Missouri (71, three counties) and Kansas City, Kansas (15, one county), plus why the split happened.",
 		published: '2026-08-13',
 		updated: '2026-08-13',
 		coreSummary:
-			"There are two Kansas Citys, and USPS assigns each one its own separate set of ZIP codes. Kansas City, Missouri carries 71 ZIP codes with \"Kansas City\" as the primary USPS place name, spread across three counties -- Jackson (48), Clay (14), and Platte (9). Kansas City, Kansas carries 15, all inside a single county, Wyandotte. Missouri's Kansas City incorporated first, in 1853; towns on the Kansas side of the state line incorporated their own Kansas City nearly two decades later, in 1872, and that city took its current shape in 1886, when five of those towns consolidated into one municipality. A search for \"kansas city zip code\" could mean either one, and the two ZIP lists don't overlap at all.",
+			"There are two Kansas Citys, and USPS assigns each one its own separate set of ZIP codes. Kansas City, Missouri carries 71 ZIP codes with \"Kansas City\" as the primary USPS place name, spread across three counties: Jackson (48), Clay (14), and Platte (9). Kansas City, Kansas carries 15, all inside a single county, Wyandotte. Missouri's Kansas City incorporated first, in 1853; towns on the Kansas side of the state line incorporated their own Kansas City nearly two decades later, in 1872, and that city took its current shape in 1886, when five of those towns consolidated into one municipality. A search for \"kansas city zip code\" could mean either one, and the two ZIP lists don't overlap at all.",
 		sections: [
 			{
 				heading: 'Two cities named Kansas City, on two sides of a state line',
 				body: [
-					"Most cities that share a name are nowhere near each other. Kansas City is the exception: there's a Kansas City in Missouri and a Kansas City in Kansas, sitting directly across a state line from one another, close enough that a single road -- State Line Road -- runs along the border between them for miles. USPS treats them as two entirely separate places, each with its own ZIP code range, its own county assignments, and its own city government.",
-					"Kansas City, Missouri is the larger of the two by a wide margin: 71 ZIP codes, all starting with 641, spread across three counties. Kansas City, Kansas is smaller: 15 ZIP codes, all starting with 66, all inside one county. Neither list borrows from the other -- but a web search for \"kansas city zip code\" doesn't specify which city the searcher means, which is the reason this page covers both.",
+					"Most cities that share a name are nowhere near each other. Kansas City is the exception: there's a Kansas City in Missouri and a Kansas City in Kansas, sitting directly across a state line from one another, close enough that a single road, State Line Road, runs along the border between them for miles. USPS treats them as two entirely separate places, each with its own ZIP code range, its own county assignments, and its own city government.",
+					"Kansas City, Missouri is the larger of the two by a wide margin: 71 ZIP codes, all starting with 641, spread across three counties. Kansas City, Kansas is smaller: 15 ZIP codes, all starting with 66, all inside one county. Neither list borrows from the other. But a web search for \"kansas city zip code\" doesn't specify which city the searcher means, which is the reason this page covers both.",
 				],
 			},
 			{
@@ -1364,7 +1364,7 @@ export const guides: Guide[] = [
 			{
 				heading: "Kansas City, Kansas's 15 ZIP codes, all in one county",
 				body: [
-					"Kansas City, Kansas has a simpler footprint: all 15 of its ZIP codes sit inside Wyandotte County, and have since 1997, when the city and county merged into a single government (more on that below). There's no annexation-driven spread into a second county the way there is on the Missouri side -- Wyandotte County's own boundary is close to Kansas City, Kansas's boundary too, aside from a couple of smaller cities inside the county, Bonner Springs and Edwardsville, which keep separate ZIP codes of their own.",
+					"Kansas City, Kansas has a simpler footprint: all 15 of its ZIP codes sit inside Wyandotte County, and have since 1997, when the city and county merged into a single government (more on that below). There's no annexation-driven spread into a second county the way there is on the Missouri side. Wyandotte County's own boundary is close to Kansas City, Kansas's boundary too, aside from a couple of smaller cities inside the county, Bonner Springs and Edwardsville, which keep separate ZIP codes of their own.",
 				],
 				table: {
 					caption: 'All 15 ZIP codes with "Kansas City, KS" as the primary USPS place name (per GeoNames.org, checked 2026-08-13)',
@@ -1379,21 +1379,21 @@ export const guides: Guide[] = [
 			{
 				heading: 'Why there are two Kansas Citys in the first place',
 				body: [
-					'Missouri\'s Kansas City came first. What became the city began as a river landing platted by a group of investors, including John McCoy, in 1838, and Missouri formally incorporated it as the "City of Kansas" on March 28, 1853 -- named for the Kansas River, not the state, which didn\'t exist yet. Kansas wasn\'t admitted to the Union until 1861.',
-					'Once Kansas became a state, towns on its side of the border started growing too, and in 1872 several of them incorporated as "Kansas City, Kansas," borrowing the name of the already-successful Missouri city next door. That first version didn\'t last as a single city -- the Kansas City, Kansas that exists today dates to March 1886, when the governor of Kansas consolidated five separate towns (Wyandotte, old Kansas City, Armourdale, Armstrong, and Riverview) into one municipality, under a state law that allowed adjoining towns to merge once their combined population cleared a 15,000-resident threshold.',
+					'Missouri\'s Kansas City came first. What became the city began as a river landing platted by a group of investors, including John McCoy, in 1838, and Missouri formally incorporated it as the "City of Kansas" on March 28, 1853, named for the Kansas River, not the state, which didn\'t exist yet. Kansas wasn\'t admitted to the Union until 1861.',
+					'Once Kansas became a state, towns on its side of the border started growing too, and in 1872 several of them incorporated as "Kansas City, Kansas," borrowing the name of the already-successful Missouri city next door. That first version didn\'t last as a single city. The Kansas City, Kansas that exists today dates to March 1886, when the governor of Kansas consolidated five separate towns (Wyandotte, old Kansas City, Armourdale, Armstrong, and Riverview) into one municipality, under a state law that allowed adjoining towns to merge once their combined population cleared a 15,000-resident threshold.',
 				],
 			},
 			{
 				heading: 'The government that merged the Kansas city with its county',
 				body: [
 					"Kansas City, Kansas took one more structural step that Kansas City, Missouri never did: on April 1, 1997, voters in Wyandotte County approved a charter merging the city government with the county government into a single body, the Unified Government of Wyandotte County and Kansas City, Kansas, which took effect that October. The merger followed years of civic trouble in the county, including persistent rumors of patronage and corruption among local officials, and was pitched to voters as a way to cut duplicated bureaucracy and rebuild the county's economic prospects.",
-					"That's the structural reason Kansas City, Kansas's ZIP codes map so closely onto a single county: since 1997, the city and Wyandotte County have effectively run as one government. Kansas City, Missouri has no equivalent merger with Jackson, Clay, or Platte County -- it remains a city government layered on top of three separate county governments, part of why its own ZIP footprint spreads across all three.",
+					"That's the structural reason Kansas City, Kansas's ZIP codes map so closely onto a single county: since 1997, the city and Wyandotte County have effectively run as one government. Kansas City, Missouri has no equivalent merger with Jackson, Clay, or Platte County; it remains a city government layered on top of three separate county governments, part of why its own ZIP footprint spreads across all three.",
 				],
 			},
 			{
 				heading: 'Different area codes too',
 				body: [
-					"The two cities also dial on separate [area codes](/how-do-area-codes-work/): Kansas City, Missouri uses 816, one of the original area codes assigned nationwide in 1947, later overlaid by 975 in 2023. Kansas City, Kansas uses 913, also original to 1947, which gave up part of its territory to a new area code, 785, in 1997 -- the same year Wyandotte County and Kansas City, Kansas merged their governments.",
+					"The two cities also dial on separate [area codes](/how-do-area-codes-work/): Kansas City, Missouri uses 816, one of the original area codes assigned nationwide in 1947, later overlaid by 975 in 2023. Kansas City, Kansas uses 913, also original to 1947, which gave up part of its territory to a new area code, 785, in 1997, the same year Wyandotte County and Kansas City, Kansas merged their governments.",
 					"State Line Road itself carries the border for much of its length: on the stretch running south from Chester Avenue, northbound traffic runs through Missouri and southbound traffic runs through Kansas, switching states without the road ever turning.",
 				],
 			},
@@ -1440,16 +1440,16 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Richmond, VA ZIP Codes: All 39, and How a City in No County Spills Into Two",
 		description:
-			"Richmond is one of Virginia's 38 independent cities -- legally part of no county at all. Its ZIP codes don't honor that line: the full 39-code list, and why 10 of them are filed under Chesterfield or Henrico instead.",
+			"Richmond is one of Virginia's 38 independent cities, legally part of no county at all. Its ZIP codes don't honor that line: the full 39-code list, and why 10 of them are filed under Chesterfield or Henrico instead.",
 		published: '2026-08-16',
 		updated: '2026-08-16',
 		coreSummary:
-			"USPS assigns 39 ZIP codes with Richmond as the primary place name, but Richmond itself is one of Virginia's 38 independent cities -- since the state's Constitution of 1869-70 took effect in 1870, Virginia's cities have sat outside every county, equal in legal standing to a county rather than nested inside one. Twenty-nine of those 39 ZIP codes fall inside the City of Richmond proper. The other 10 spill into the two counties that surround it, five each into Henrico and Chesterfield, because USPS draws ZIP boundaries around mail-delivery routes rather than municipal lines. A search for \"richmond zip code\" can also mean an entirely different place: Richmond County, Virginia, a rural county on the Northern Neck more than 50 miles away that has no connection to the city at all.",
+			"USPS assigns 39 ZIP codes with Richmond as the primary place name, but Richmond itself is one of Virginia's 38 independent cities. Since the state's Constitution of 1869-70 took effect in 1870, Virginia's cities have sat outside every county, equal in legal standing to a county rather than nested inside one. Twenty-nine of those 39 ZIP codes fall inside the City of Richmond proper. The other 10 spill into the two counties that surround it, five each into Henrico and Chesterfield, because USPS draws ZIP boundaries around mail-delivery routes rather than municipal lines. A search for \"richmond zip code\" can also mean an entirely different place: Richmond County, Virginia, a rural county on the Northern Neck more than 50 miles away that has no connection to the city at all.",
 		sections: [
 			{
 				heading: "All 39 ZIP codes, and the three jurisdictions behind them",
 				body: [
-					"Of the 39 ZIP codes USPS lists with Richmond as the primary place name, 29 sit inside the City of Richmond's own boundary. The remaining 10 are split evenly: five fall in Henrico County, which wraps around Richmond's north and east side, and five fall in Chesterfield County, to the south and southwest. Every ZIP in this table carries \"Richmond, VA\" on the mailing address regardless of which of the three it's actually in -- the jurisdiction column below is the only way to tell them apart.",
+					"Of the 39 ZIP codes USPS lists with Richmond as the primary place name, 29 sit inside the City of Richmond's own boundary. The remaining 10 are split evenly: five fall in Henrico County, which wraps around Richmond's north and east side, and five fall in Chesterfield County, to the south and southwest. Every ZIP in this table carries \"Richmond, VA\" on the mailing address regardless of which of the three it's actually in; the jurisdiction column below is the only way to tell them apart.",
 				],
 				table: {
 					caption: 'All 39 ZIP codes with "Richmond, VA" as the primary USPS place name, by jurisdiction (per GeoNames.org, checked 2026-08-16)',
@@ -1474,14 +1474,14 @@ export const guides: Guide[] = [
 			{
 				heading: "Richmond is legally in no county at all",
 				body: [
-					"That \"City of Richmond\" jurisdiction in the table above isn't shorthand for a county -- it's the real answer. Richmond is one of Virginia's 38 independent cities, a status that means the city sits entirely outside county government, equal in legal standing to a county rather than a municipality inside one. Virginia's cities were first split from their surrounding counties by the state's Constitution of 1869-70, which took effect in 1870 upon Virginia's readmission to the Union during Reconstruction; the 1902 and current 1971 constitutions carried the arrangement forward. An independent city runs its own schools, courts, and roads without a county layer above it, and its residents don't belong to any county for any legal purpose.",
-					"Virginia's 38 independent cities account for nearly all of this kind of jurisdiction in the entire country -- only three other American cities work the same way: Baltimore, Maryland (separated from Baltimore County in 1851); St. Louis, Missouri (voters approved separation from St. Louis County in an 1876 referendum, formalized in 1877); and Carson City, Nevada (consolidated with the former Ormsby County in 1969). Every other city in the United States, no matter how large, sits inside at least one county.",
+					"That \"City of Richmond\" jurisdiction in the table above isn't shorthand for a county: it's the real answer. Richmond is one of Virginia's 38 independent cities, a status that means the city sits entirely outside county government, equal in legal standing to a county rather than a municipality inside one. Virginia's cities were first split from their surrounding counties by the state's Constitution of 1869-70, which took effect in 1870 upon Virginia's readmission to the Union during Reconstruction; the 1902 and current 1971 constitutions carried the arrangement forward. An independent city runs its own schools, courts, and roads without a county layer above it, and its residents don't belong to any county for any legal purpose.",
+					"Virginia's 38 independent cities account for nearly all of this kind of jurisdiction in the entire country. Only three other American cities work the same way: Baltimore, Maryland (separated from Baltimore County in 1851); St. Louis, Missouri (voters approved separation from St. Louis County in an 1876 referendum, formalized in 1877); and Carson City, Nevada (consolidated with the former Ormsby County in 1969). Every other city in the United States, no matter how large, sits inside at least one county.",
 				],
 			},
 			{
 				heading: "Why 10 of Richmond's ZIP codes land in a county anyway",
 				body: [
-					"USPS draws ZIP code boundaries around mail-delivery routes, not around municipal or county lines, and it doesn't make an exception for a city that happens to be its own jurisdiction. The 10 ZIP codes assigned to Henrico or Chesterfield in the table above physically extend past Richmond's city limits into the neighboring county, but the post office handling that route still uses \"Richmond\" as the address's place name -- the same mismatch this site has already documented for [Atlanta](/atlanta-zip-codes/), where a fifth of the city's ZIP codes carry an Atlanta address while sitting in DeKalb County rather than Fulton.",
+					"USPS draws ZIP code boundaries around mail-delivery routes, not around municipal or county lines, and it doesn't make an exception for a city that happens to be its own jurisdiction. The 10 ZIP codes assigned to Henrico or Chesterfield in the table above physically extend past Richmond's city limits into the neighboring county, but the post office handling that route still uses \"Richmond\" as the address's place name, the same mismatch this site has already documented for [Atlanta](/atlanta-zip-codes/), where a fifth of the city's ZIP codes carry an Atlanta address while sitting in DeKalb County rather than Fulton.",
 					"Richmond's version is a sharper case than Atlanta's. Atlanta's home county (Fulton) and its overflow county (DeKalb) are both ordinary counties, so swapping one for the other doesn't change the basic kind of government involved. Richmond's home jurisdiction isn't a county to begin with, which makes those 10 ZIP codes the only Richmond-addressed ones that touch county government at all.",
 				],
 			},
@@ -1502,7 +1502,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What county is Richmond, Virginia in?',
 				answer:
-					"None. Richmond is one of Virginia's 38 independent cities, a status that places it outside county government entirely -- legally equal to a county rather than located inside one. Ten of its 39 ZIP codes do extend into the two counties that border it, Henrico and Chesterfield, but the city proper isn't part of either.",
+					"None. Richmond is one of Virginia's 38 independent cities, a status that places it outside county government entirely, legally equal to a county rather than located inside one. Ten of its 39 ZIP codes do extend into the two counties that border it, Henrico and Chesterfield, but the city proper isn't part of either.",
 			},
 			{
 				question: "Why do some Richmond ZIP codes belong to Henrico or Chesterfield County?",
@@ -1512,7 +1512,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Richmond County the same place as the city of Richmond?',
 				answer:
-					"No. Richmond County is a separate, rural county on Virginia's Northern Neck, more than 50 miles from the city, with its own county seat (Warsaw) and no shared government. The two share a name from colonial-era naming, not from any administrative connection -- the same kind of coincidence that makes New York City's Staten Island legally \"Richmond County\" in an unrelated state.",
+					"No. Richmond County is a separate, rural county on Virginia's Northern Neck, more than 50 miles from the city, with its own county seat (Warsaw) and no shared government. The two share a name from colonial-era naming, not from any administrative connection, the same kind of coincidence that makes New York City's Staten Island legally \"Richmond County\" in an unrelated state.",
 			},
 			{
 				question: 'What area code does Richmond, VA use?',
@@ -1538,16 +1538,16 @@ export const guides: Guide[] = [
 		category: 'Area Code Lists',
 		title: 'Every Texas Area Code, and the Overlay Stack Behind Each Metro',
 		description:
-			"Texas has 29 area codes today. Dallas alone stacks four on the same footprint -- the full list, plus how Houston, San Antonio, and Austin overlay theirs too.",
+			"Texas has 29 area codes today. Dallas alone stacks four on the same footprint. Here's the full list, plus how Houston, San Antonio, and Austin overlay theirs too.",
 		published: '2026-08-03',
 		updated: '2026-08-12',
 		coreSummary:
-			"Texas has grown from four original 1947 area codes (214, 512, 713, and 915) to 29 today. Dallas alone now runs on four overlaid codes (214/469/972/945); add Fort Worth's own 817/682 pair and the wider metroplex runs on six area codes total. Houston runs on five overlaid codes (713/281/832/346/621). Smaller metros like Waco, Corpus Christi, Abilene, Lubbock, and Laredo still get by on a single, un-overlaid code -- it's only the state's four largest metros that have run out of room.",
+			"Texas has grown from four original 1947 area codes (214, 512, 713, and 915) to 29 today. Dallas alone now runs on four overlaid codes (214/469/972/945); add Fort Worth's own 817/682 pair and the wider metroplex runs on six area codes total. Houston runs on five overlaid codes (713/281/832/346/621). Smaller metros like Waco, Corpus Christi, Abilene, Lubbock, and Laredo still get by on a single, un-overlaid code; it's only the state's four largest metros that have run out of room.",
 		sections: [
 			{
 				heading: 'All 29 Texas area codes',
 				body: [
-					"Texas started with four area codes in the original 1947 numbering plan -- 214 for the northeast (Dallas and Fort Worth), 512 for south-central Texas (Austin and San Antonio), 713 for the southeast (Houston), and 915 for the west (El Paso and part of Hudspeth County). Every other Texas code on this list is a descendant of one of those four, created either by splitting off a region or by [overlaying](/how-do-area-codes-work/) an existing area with a second code once the original ran out of numbers.",
+					"Texas started with four area codes in the original 1947 numbering plan: 214 for the northeast (Dallas and Fort Worth), 512 for south-central Texas (Austin and San Antonio), 713 for the southeast (Houston), and 915 for the west (El Paso and part of Hudspeth County). Every other Texas code on this list is a descendant of one of those four, created either by splitting off a region or by [overlaying](/how-do-area-codes-work/) an existing area with a second code once the original ran out of numbers.",
 				],
 				table: {
 					caption: 'All 29 Texas area codes',
@@ -1588,8 +1588,8 @@ export const guides: Guide[] = [
 			{
 				heading: 'Dallas runs a four-code overlay stack; Houston runs a five-code one',
 				body: [
-					"214 was Dallas's only area code from 1947 until 1990, when it split off 903 to cover northeast Texas. By 1996, 214 itself had run out of numbers again -- but instead of splitting Dallas geographically a second time, the state overlaid the same footprint with 972, then added 469 as a third overlay in 1999, and 945 as a fourth in 2021. All four codes -- 214, 469, 972, and 945 -- now serve the exact same Dallas metro area simultaneously; which one a given phone gets is essentially random.",
-					"[Houston](/houston-zip-codes/) followed an almost identical pattern: 713 was the original 1947 code, split to create 281 in 1996, which was itself overlaid rather than split again -- first by 832 in 1999, then 346 in 2014, then 621 in 2025. Fort Worth (817, overlaid by 682 in 2000) and San Antonio (210, overlaid by 726 in 2017) each run a smaller two-code version of the same pattern; only Austin (512, overlaid by 737) has managed with just two codes so far. 806, Lubbock and Amarillo's code since 1957, hasn't needed a second code at all -- see this site's [Lubbock ZIP code list](/lubbock-zip-codes/) for how little pressure that code is still under.",
+					"214 was Dallas's only area code from 1947 until 1990, when it split off 903 to cover northeast Texas. By 1996, 214 itself had run out of numbers again. But instead of splitting Dallas geographically a second time, the state overlaid the same footprint with 972, then added 469 as a third overlay in 1999, and 945 as a fourth in 2021. All four codes (214, 469, 972, and 945) now serve the exact same Dallas metro area simultaneously; which one a given phone gets is essentially random.",
+					"[Houston](/houston-zip-codes/) followed an almost identical pattern: 713 was the original 1947 code, split to create 281 in 1996, which was itself overlaid rather than split again: first by 832 in 1999, then 346 in 2014, then 621 in 2025. Fort Worth (817, overlaid by 682 in 2000) and San Antonio (210, overlaid by 726 in 2017) each run a smaller two-code version of the same pattern; only Austin (512, overlaid by 737) has managed with just two codes so far. 806, Lubbock and Amarillo's code since 1957, hasn't needed a second code at all; see this site's [Lubbock ZIP code list](/lubbock-zip-codes/) for how little pressure that code is still under.",
 				],
 			},
 		],
@@ -1619,11 +1619,11 @@ export const guides: Guide[] = [
 		category: 'Area Code Lists',
 		title: "All 41 California Area Codes, Plus the Family Tree Behind LA's Seven",
 		description:
-			"All 41 California area codes, mapped to region and year in service -- plus how LA split and overlaid its way from one 1947 code, 213, to seven today.",
+			"All 41 California area codes, mapped to region and year in service, plus how LA split and overlaid its way from one 1947 code, 213, to seven today.",
 		published: '2026-08-03',
 		updated: '2026-08-17',
 		coreSummary:
-			"California started with three area codes in 1947 -- 213 (southern California), 415 (northern California), and 916 (the Sacramento area, added slightly later that year) -- and now has 41, more than any other US state. Los Angeles alone has split and overlaid its way from 213 to seven area codes covering the same general metro area today.",
+			"California started with three area codes in 1947: 213 (southern California), 415 (northern California), and 916 (the Sacramento area, added slightly later that year). It now has 41, more than any other US state. Los Angeles alone has split and overlaid its way from 213 to seven area codes covering the same general metro area today.",
 		sections: [
 			{
 				heading: 'All 41 California area codes',
@@ -1681,8 +1681,8 @@ export const guides: Guide[] = [
 			{
 				heading: 'Los Angeles: from one code in 1947 to seven today',
 				body: [
-					"213 covered the entire southern third of California when it launched in 1947. Los Angeles's own growth forced five splits off of 213 over the following decades -- 714 (1951, Orange County), 805 (1957, the central coast), 818 (1984, the San Fernando Valley), 310 (1991, the southwestern coast), and 323 (1998, the rest of central LA) -- before the pattern shifted from splitting to overlaying: 424 stacked onto 310 in 2006, 747 onto 818 in 2009, and, after 213 and 323 were formally merged back into a single overlay complex in 2017, a seventh code, 738, was added on top of that combined area in November 2024.",
-					"San Francisco followed a similar but smaller path: 415 (1947) split off 408 and 707 in 1959, then 510 in 1991 and 650 in 1997, before finally being overlaid by 628 in 2015 once splitting stopped being an option. Sacramento's 916 split twice -- 209 broke off first in 1958 to cover Stockton, Modesto, and Merced, then 530 followed in 1997 for Redding, Chico, and Lake Tahoe -- before 279 was added as an overlay on what remained of 916 in 2018; see this site's [Sacramento ZIP code list](/sacramento-zip-codes/) for how that same county lines up on the postal side, or 209's own numbering history for why that code didn't get its own overlay until 2022, thirteen months after regulators had already forced it into 10-digit dialing.",
+					"213 covered the entire southern third of California when it launched in 1947. Los Angeles's own growth forced five splits off of 213 over the following decades: 714 (1951, Orange County), 805 (1957, the central coast), 818 (1984, the San Fernando Valley), 310 (1991, the southwestern coast), and 323 (1998, the rest of central LA). After that the pattern shifted from splitting to overlaying: 424 stacked onto 310 in 2006, 747 onto 818 in 2009, and, after 213 and 323 were formally merged back into a single overlay complex in 2017, a seventh code, 738, was added on top of that combined area in November 2024.",
+					"San Francisco followed a similar but smaller path: 415 (1947) split off 408 and 707 in 1959, then 510 in 1991 and 650 in 1997, before finally being overlaid by 628 in 2015 once splitting stopped being an option. Sacramento's 916 split twice: 209 broke off first in 1958 to cover Stockton, Modesto, and Merced, then 530 followed in 1997 for Redding, Chico, and Lake Tahoe. In 2018, 279 was added as an overlay on what remained of 916; see this site's [Sacramento ZIP code list](/sacramento-zip-codes/) for how that same county lines up on the postal side, or 209's own numbering history for why that code didn't get its own overlay until 2022, thirteen months after regulators had already forced it into 10-digit dialing.",
 					"949's 1998 split from 714 shows the same relief pattern on a smaller scale, and it left one loose end: a strip of Irvine still dials on 714 instead. See this site's [Irvine ZIP code list](/irvine-zip-codes/) for exactly where that boundary falls.",
 				],
 			},
@@ -1690,12 +1690,12 @@ export const guides: Guide[] = [
 		faq: [
 			{
 				question: 'How many area codes does California have?',
-				answer: '41 as of 2026 -- more than any other US state.',
+				answer: '41 as of 2026, more than any other US state.',
 			},
 			{
 				question: 'What area codes does Los Angeles use?',
 				answer:
-					'213, 323, 310, 424, 818, 747, and 738 -- seven in all -- currently overlay parts of the [greater LA area](/los-angeles-zip-codes/), all descendants of the single area code, 213, that covered the entire southern third of California in 1947.',
+					'213, 323, 310, 424, 818, 747, and 738, seven in all, currently overlay parts of the [greater LA area](/los-angeles-zip-codes/), all descendants of the single area code, 213, that covered the entire southern third of California in 1947.',
 			},
 			{
 				question: 'What was the very first California area code?',
@@ -1714,16 +1714,16 @@ export const guides: Guide[] = [
 		category: 'Area Code Lists',
 		title: "Every Michigan Area Code, and the Split Tree Behind Detroit's Newest",
 		description:
-			"Michigan has 13 area codes today, seven descended from Detroit's original 313 -- here's the full list, plus the split-and-overlay chain behind each one, including the newest, 679.",
+			"Michigan has 13 area codes today, seven descended from Detroit's original 313. Here's the full list, plus the split-and-overlay chain behind each one, including the newest, 679.",
 		published: '2026-08-10',
 		updated: '2026-08-17',
 		coreSummary:
-			'Michigan started with three area codes in the original 1947 numbering plan -- 313 for Detroit, 517 for Lansing, and 616 for Grand Rapids -- and has split and overlaid its way to 13 today. Detroit\'s 313 alone accounts for seven of them, most recently 679, which began serving new phone lines on November 7, 2025, a month after 10-digit local dialing became mandatory across the Detroit metro.',
+			'Michigan started with three area codes in the original 1947 numbering plan: 313 for Detroit, 517 for Lansing, and 616 for Grand Rapids. It has split and overlaid its way to 13 today. Detroit\'s 313 alone accounts for seven of them, most recently 679, which began serving new phone lines on November 7, 2025, a month after 10-digit local dialing became mandatory across the Detroit metro.',
 		sections: [
 			{
 				heading: 'All 13 Michigan area codes',
 				body: [
-					"Michigan's 13 area codes trace back to just three original codes assigned when the North American Numbering Plan launched in 1947. Seven descend from Detroit's 313 alone; the rest split off from Grand Rapids's 616 or Lansing's 517, as the table below shows -- see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in practice.",
+					"Michigan's 13 area codes trace back to just three original codes assigned when the North American Numbering Plan launched in 1947. Seven descend from Detroit's 313 alone; the rest split off from Grand Rapids's 616 or Lansing's 517, as the table below shows; see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in practice.",
 				],
 				table: {
 					caption: 'All 13 Michigan area codes',
@@ -1748,23 +1748,23 @@ export const guides: Guide[] = [
 			{
 				heading: "Detroit's 313 grew into seven of Michigan's 13 codes",
 				body: [
-					"313 covered the entire Detroit metro area on its own from 1947 until 1993, when the state split off 810 to cover Flint, Port Huron, and the rural Thumb region northeast of the city. 810 was itself split twice more within a decade -- 248 broke off in 1997 to cover Oakland County, and 586 followed in 2001 for Macomb County -- before Oakland County ran out of numbers under 248 alone and got a second, overlaid code, 947, in 2002. Detroit's other direct split, 734, peeled off Ann Arbor and Ypsilanti in 1997.",
-					"313 itself kept its original Detroit-Dearborn-Grosse Pointes footprint the whole time, and by the early 2020s was projected to run out of available numbers again -- this time without room left to split off a new geographic area. Michigan's regulator chose an overlay instead: 679 was reserved for the same territory 313 already covered, and went into service for new lines on November 7, 2025. Between the two of them, the seven codes descended from 313 -- 313, 810, 248, 586, 947, 734, and 679 -- now account for just over half of the state's total.",
-					"One metro area's original code eventually accounting for the majority of its state's total isn't unique to Michigan -- [California's own area code history](/california-area-codes/) shows the same pattern at a larger scale, where Los Angeles alone now runs on seven area codes, all descended from a single 1947 code, 213.",
+					"313 covered the entire Detroit metro area on its own from 1947 until 1993, when the state split off 810 to cover Flint, Port Huron, and the rural Thumb region northeast of the city. 810 was itself split twice more within a decade: 248 broke off in 1997 to cover Oakland County, and 586 followed in 2001 for Macomb County. Oakland County then ran out of numbers under 248 alone and got a second, overlaid code, 947, in 2002. Detroit's other direct split, 734, peeled off Ann Arbor and Ypsilanti in 1997.",
+					"313 itself kept its original Detroit-Dearborn-Grosse Pointes footprint the whole time, and by the early 2020s was projected to run out of available numbers again, this time without room left to split off a new geographic area. Michigan's regulator chose an overlay instead: 679 was reserved for the same territory 313 already covered, and went into service for new lines on November 7, 2025. Between the two of them, the seven codes descended from 313 (313, 810, 248, 586, 947, 734, and 679) now account for just over half of the state's total.",
+					"One metro area's original code eventually accounting for the majority of its state's total isn't unique to Michigan: [California's own area code history](/california-area-codes/) shows the same pattern at a larger scale, where Los Angeles alone now runs on seven area codes, all descended from a single 1947 code, 213.",
 				],
 			},
 			{
 				heading: "Grand Rapids and Lansing split off the rest",
 				body: [
-					"616 covered Grand Rapids and the rest of southwestern Michigan from 1947 until 1961, when the Upper Peninsula split off as 906 -- geographically Michigan's largest area code by far, despite covering one of its smallest populations. 616 split twice more after that: 231 broke off the northwestern Lower Peninsula (Traverse City, Muskegon) in 1999, and 269 took Kalamazoo and Battle Creek in 2002, leaving 616 itself with just the immediate Grand Rapids area.",
-					"517 has had the quietest history of Michigan's three originals: it covered Lansing and the south-central part of the state from 1947 and split only once, handing Bay City, Saginaw, and Alpena to the new 989 code in 2001. Unlike 313 and 248, neither 517 nor 616 has needed an overlay yet -- both still run on a single area code today.",
+					"616 covered Grand Rapids and the rest of southwestern Michigan from 1947 until 1961, when the Upper Peninsula split off as 906, geographically Michigan's largest area code by far, despite covering one of its smallest populations. 616 split twice more after that: 231 broke off the northwestern Lower Peninsula (Traverse City, Muskegon) in 1999, and 269 took Kalamazoo and Battle Creek in 2002, leaving 616 itself with just the immediate Grand Rapids area.",
+					"517 has had the quietest history of Michigan's three originals: it covered Lansing and the south-central part of the state from 1947 and split only once, handing Bay City, Saginaw, and Alpena to the new 989 code in 2001. Unlike 313 and 248, neither 517 nor 616 has needed an overlay yet; both still run on a single area code today.",
 				],
 			},
 			{
 				heading: "679 is under a year old, and it changed how Detroit dials",
 				body: [
-					"The Michigan Public Service Commission set 679 in motion after an early-2020s projection put 313's number exhaustion in the third quarter of 2025 -- the estimate that triggered the overlay case. That exhaustion date has since been pushed back: thousands-block number pooling and other conservation measures extended 313's runway, and the commission's own 2025 filings put the current projected exhaustion date in late 2027. The overlay itself went ahead on its original schedule regardless. Because 313 already covered a fully built-out urban area with no adjacent territory left to split off, the commission chose an overlay rather than a geographic split -- meaning existing 313 numbers stayed exactly as they were, and new phone lines in the same area became eligible to receive 679 numbers once the overlay went into service.",
-					"The overlay came with a dialing change that arrived before the new area code itself did: starting April 7, 2025, callers within the 313 area were asked to begin practicing 10-digit dialing, and it became mandatory for all local calls on October 7, 2025 -- a full month before 679 numbers were actually assigned, starting November 7, 2025. That sequencing is standard for NANPA-coordinated overlays: the dialing change has to be in place first, or a new 10-digit number and an old 7-digit one in the same area code could collide.",
+					"The Michigan Public Service Commission set 679 in motion after an early-2020s projection put 313's number exhaustion in the third quarter of 2025, the estimate that triggered the overlay case. That exhaustion date has since been pushed back: thousands-block number pooling and other conservation measures extended 313's runway, and the commission's own 2025 filings put the current projected exhaustion date in late 2027. The overlay itself went ahead on its original schedule regardless. Because 313 already covered a fully built-out urban area with no adjacent territory left to split off, the commission chose an overlay rather than a geographic split, meaning existing 313 numbers stayed exactly as they were, and new phone lines in the same area became eligible to receive 679 numbers once the overlay went into service.",
+					"The overlay came with a dialing change that arrived before the new area code itself did: starting April 7, 2025, callers within the 313 area were asked to begin practicing 10-digit dialing, and it became mandatory for all local calls on October 7, 2025, a full month before 679 numbers were actually assigned, starting November 7, 2025. That sequencing is standard for NANPA-coordinated overlays: the dialing change has to be in place first, or a new 10-digit number and an old 7-digit one in the same area code could collide.",
 				],
 			},
 		],
@@ -1781,7 +1781,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Do I need to dial 10 digits for local calls in Michigan?',
 				answer:
-					'It depends on the area code. 10-digit dialing is mandatory in the two overlaid regions -- 313/679 (Detroit metro, mandatory since October 7, 2025) and 248/947 (Oakland County) -- because two area codes share the same territory there. Michigan\'s other nine area codes are not currently overlaid and still allow 7-digit local dialing.',
+					'It depends on the area code. 10-digit dialing is mandatory in the two overlaid regions, 313/679 (Detroit metro, mandatory since October 7, 2025) and 248/947 (Oakland County), because two area codes share the same territory there. Michigan\'s other nine area codes are not currently overlaid and still allow 7-digit local dialing.',
 			},
 			{
 				question: "What was Michigan's original area code?",
@@ -1800,16 +1800,16 @@ export const guides: Guide[] = [
 		category: 'Area Code Lists',
 		title: 'Every New Jersey Area Code, and the Day Three of Them Launched at Once',
 		description:
-			"New Jersey has 10 area codes today, all descended from a single statewide code assigned in 1947 -- including three overlays the state's utility board activated on the exact same day in 2001.",
+			"New Jersey has 10 area codes today, all descended from a single statewide code assigned in 1947, including three overlays the state's utility board activated on the exact same day in 2001.",
 		published: '2026-08-27',
 		updated: '2026-08-27',
 		coreSummary:
-			"New Jersey ran on a single area code, 201, for its entire population from 1947 until 1956, when the state split off 609 to cover the southern half. Three more splits followed -- 908 in 1990, then 973 and 732 both in 1997 -- before New Jersey's Board of Public Utilities stopped splitting altogether: 551, 848, and 862 all went into service on the same day, December 29, 2001, stacked on top of 201, 732, and 973 respectively. The newest code, 640, overlaid the southern 609 region in 2018. New Jersey has 10 area codes in total today, and every one of them traces back to 201.",
+			"New Jersey ran on a single area code, 201, for its entire population from 1947 until 1956, when the state split off 609 to cover the southern half. Three more splits followed: 908 in 1990, then 973 and 732 both in 1997. After that, New Jersey's Board of Public Utilities stopped splitting altogether: 551, 848, and 862 all went into service on the same day, December 29, 2001, stacked on top of 201, 732, and 973 respectively. The newest code, 640, overlaid the southern 609 region in 2018. New Jersey has 10 area codes in total today, and every one of them traces back to 201.",
 		sections: [
 			{
 				heading: "All 10 New Jersey area codes",
 				body: [
-					"New Jersey's 10 area codes cover a state that started with just one. The table below lists all of them, along with the region each covers and the date it went into service -- see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in the notes that follow.",
+					"New Jersey's 10 area codes cover a state that started with just one. The table below lists all of them, along with the region each covers and the date it went into service; see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in the notes that follow.",
 				],
 				table: {
 					caption: 'All 10 New Jersey area codes',
@@ -1831,22 +1831,22 @@ export const guides: Guide[] = [
 			{
 				heading: 'Every New Jersey area code descends from one 1947 original',
 				body: [
-					"201 covered every phone in New Jersey when the North American Numbering Plan launched in 1947. It kept that job for nine years, until the state's first split in 1956 handed the southern half -- Trenton, Atlantic City, Princeton -- to a new code, 609. 201 itself didn't split again until 1990, when 908 took over Elizabeth, Plainfield, and the rest of west-central Jersey, and then again in 1997, when 973 took Newark and Paterson off its hands. That same year, 908 split a second time, giving up New Brunswick and the Jersey Shore corridor to a brand-new 732.",
-					"By the end of 1997, five codes -- 201, 609, 908, 973, and 732 -- covered a state that had launched with just that first one alone. 609 split once more in 1999, handing Camden and the rest of the southwest to 856. Every one of New Jersey's 10 area codes today is a direct descendant of that single 1947 code, whether by a geographic split or, starting in 2001, by an overlay stacked on the same ground.",
+					"201 covered every phone in New Jersey when the North American Numbering Plan launched in 1947. It kept that job for nine years, until the state's first split in 1956 handed the southern half (Trenton, Atlantic City, Princeton) to a new code, 609. 201 itself didn't split again until 1990, when 908 took over Elizabeth, Plainfield, and the rest of west-central Jersey, and then again in 1997, when 973 took Newark and Paterson off its hands. That same year, 908 split a second time, giving up New Brunswick and the Jersey Shore corridor to a brand-new 732.",
+					"By the end of 1997, five codes (201, 609, 908, 973, and 732) covered a state that had launched with just that first one alone. 609 split once more in 1999, handing Camden and the rest of the southwest to 856. Every one of New Jersey's 10 area codes today is a direct descendant of that single 1947 code, whether by a geographic split or, starting in 2001, by an overlay stacked on the same ground.",
 				],
 			},
 			{
 				heading: 'Three overlays, one day: December 29, 2001',
 				body: [
-					"New Jersey's Board of Public Utilities approved all-services overlays on three area codes at once -- 201, 732, and 973 -- in a single order dated March 19, 2001. All three new codes went into service together on December 29, 2001: 551 stacked onto 201's Bergen and Hudson County territory, 848 onto 732's central Jersey Shore corridor, and 862 onto 973's Newark-Paterson footprint. None of the three took over any new geography; each shares its entire coverage area with the code it overlaid, which is why 10-digit dialing became mandatory in all three regions that same year.",
-					"That's a different pattern from how New Jersey had relieved area codes for the previous 44 years. Every split before 2001 -- 609 in 1956, 908 in 1990, 973 and 732 in 1997 -- handed off a piece of geography to the new code and let the original keep the rest. After 2001, New Jersey never split another area code; every fix since has been an overlay on ground the state had already assigned.",
+					"New Jersey's Board of Public Utilities approved all-services overlays on three area codes at once (201, 732, and 973) in a single order dated March 19, 2001. All three new codes went into service together on December 29, 2001: 551 stacked onto 201's Bergen and Hudson County territory, 848 onto 732's central Jersey Shore corridor, and 862 onto 973's Newark-Paterson footprint. None of the three took over any new geography; each shares its entire coverage area with the code it overlaid, which is why 10-digit dialing became mandatory in all three regions that same year.",
+					"That's a different pattern from how New Jersey had relieved area codes for the previous 44 years. Every split before 2001 (609 in 1956, 908 in 1990, 973 and 732 in 1997) handed off a piece of geography to the new code and let the original keep the rest. After 2001, New Jersey never split another area code; every fix since has been an overlay on ground the state had already assigned.",
 				],
 			},
 			{
 				heading: "640, New Jersey's newest, followed the same dialing-first sequence as Michigan's 679",
 				body: [
-					"640 is New Jersey's only 21st-century area code addition outside the 2001 batch, and its rollout followed a script regulators have used elsewhere since: the dialing change came before the numbers did. The state's Board of Public Utilities opened permissive 10-digit dialing across 609 on January 20, 2018, made it mandatory on August 18, 2018, and only then activated 640 itself, on September 17, 2018 -- about a month after every 609 call already required 10 digits.",
-					"That same order matters wherever a code overlay happens, because a new 10-digit number and an old 7-digit one in the same area code could otherwise collide. [Michigan followed an identical sequence](/michigan-area-codes/) when it overlaid Detroit's 313 with 679 in 2025 -- 10-digit dialing went mandatory a month before the new code's first numbers were assigned there too, even though the two states made that call seven years apart.",
+					"640 is New Jersey's only 21st-century area code addition outside the 2001 batch, and its rollout followed a script regulators have used elsewhere since: the dialing change came before the numbers did. The state's Board of Public Utilities opened permissive 10-digit dialing across 609 on January 20, 2018, made it mandatory on August 18, 2018, and only then activated 640 itself, on September 17, 2018, about a month after every 609 call already required 10 digits.",
+					"That same order matters wherever a code overlay happens, because a new 10-digit number and an old 7-digit one in the same area code could otherwise collide. [Michigan followed an identical sequence](/michigan-area-codes/) when it overlaid Detroit's 313 with 679 in 2025: 10-digit dialing went mandatory a month before the new code's first numbers were assigned there too, even though the two states made that call seven years apart.",
 				],
 			},
 		],
@@ -1893,7 +1893,7 @@ export const guides: Guide[] = [
 		published: '2026-08-03',
 		updated: '2026-08-13',
 		coreSummary:
-			"A North American phone number is 10 digits split into three parts: a 3-digit area code (NPA), a 3-digit exchange (NXX), and a 4-digit subscriber number. Area codes were originally handed out based on rotary-dial efficiency, not geography -- the busiest cities got the codes that took the least time to dial. When an area runs out of numbers today, the fix is either a split (dividing the region and giving half a new code) or an overlay (adding a second code on top of the same region) -- and since the late 1990s, nearly every fix has been an overlay.",
+			"A North American phone number is 10 digits split into three parts: a 3-digit area code (NPA), a 3-digit exchange (NXX), and a 4-digit subscriber number. Area codes were originally handed out based on rotary-dial efficiency, not geography: the busiest cities got the codes that took the least time to dial. When an area runs out of numbers today, the fix is either a split (dividing the region and giving half a new code) or an overlay (adding a second code on top of the same region), and since the late 1990s, nearly every fix has been an overlay.",
 		sections: [
 			{
 				heading: 'The three parts of a US phone number',
@@ -1905,7 +1905,7 @@ export const guides: Guide[] = [
 			{
 				heading: "212 wasn't random: the original 1947 codes were built around rotary-dial speed",
 				body: [
-					"When AT&T rolled out the first 86 area codes in 1947, it assigned them using a rule tied to rotary-dial phones, not geography: cities expected to receive the most long-distance calls got the area codes that took the fewest rotary \"pulls\" to dial, since each digit's dial pull took time roughly proportional to its value. New York City, the most-called destination in the country at the time, got 212 -- as low a pull count as a 3-digit code with a required middle digit of 1 could get. Los Angeles got 213, and Chicago got 312, for the same reason.",
+					"When AT&T rolled out the first 86 area codes in 1947, it assigned them using a rule tied to rotary-dial phones, not geography: cities expected to receive the most long-distance calls got the area codes that took the fewest rotary \"pulls\" to dial, since each digit's dial pull took time roughly proportional to its value. New York City, the most-called destination in the country at the time, got 212, as low a pull count as a 3-digit code with a required middle digit of 1 could get. Los Angeles got 213, and Chicago got 312, for the same reason.",
 					"There was a second rule behind the middle digit specifically: any state or province with more than one area code got a code with 1 as its middle digit (212, 213, 312...), while states with only a single area code got a 0 in the middle instead (202 for Washington D.C., 401 for all of Rhode Island). That's a fossil of the 1947 plan you can still spot in a lot of today's area codes, even though the underlying rotary-dial logic stopped mattering decades ago.",
 				],
 			},
@@ -1913,13 +1913,13 @@ export const guides: Guide[] = [
 				heading: 'Split vs. overlay: two different fixes for the same problem',
 				body: [
 					"An area code eventually runs out of available NXX exchange blocks as an area's population and phone/device count grow. Historically, the fix was a split: draw a line through the region, keep the old code on one side, and assign a brand-new code to the other. Los Angeles's original 213 was split this way five separate times between 1951 and 1998, each time handing off a geographic slice to a new code (714, 805, 818, 310, 323).",
-					"Splits have a real cost: everyone on the losing side of the line has to change their number's area code, and businesses have to reprint everything. Starting in the 1990s, the industry mostly switched to overlays instead -- instead of dividing the region, a second area code is layered on top of the exact same geographic footprint, and only new phone numbers get assigned to it. Existing numbers never change, but everyone in an overlay area has to dial all 10 digits (area code included) for every call, even a next-door neighbor. Manhattan is the extreme example: 212 (1947) was overlaid by 646 (1999) and then 332 (2017), both layered on that same Manhattan-only footprint, plus 917 (1992), a citywide overlay that covers all five boroughs and reaches Manhattan too -- so a Manhattan phone number today can carry any of four different area codes, even though only three of them (212, 646, 332) are Manhattan-exclusive.",
+					"Splits have a real cost: everyone on the losing side of the line has to change their number's area code, and businesses have to reprint everything. Starting in the 1990s, the industry mostly switched to overlays: rather than dividing the region, a second area code is layered on top of the exact same geographic footprint, and only new phone numbers get assigned to it. Existing numbers never change, but everyone in an overlay area has to dial all 10 digits (area code included) for every call, even a next-door neighbor. Manhattan is the extreme example: 212 (1947) was overlaid by 646 (1999) and then 332 (2017), both layered on that same Manhattan-only footprint, plus 917 (1992), a citywide overlay that covers all five boroughs and reaches Manhattan too, so a Manhattan phone number today can carry any of four different area codes, even though only three of them (212, 646, 332) are Manhattan-exclusive.",
 				],
 			},
 			{
 				heading: "An area code doesn't reliably tell you a timezone anymore",
 				body: [
-					"Because area codes map to numbering plan areas that were drawn decades ago and don't get redrawn when state or timezone boundaries shift in practice, and because mobile numbers travel with their owner instead of staying tied to a location, a given area code is a much weaker timezone signal than it looks. A 915 number was assigned in El Paso, Texas, which observes Mountain Time even though the rest of Texas is Central -- and a person who got that number in El Paso in 2015 keeps dialing 915 no matter where in the country they've moved since.",
+					"Because area codes map to numbering plan areas that were drawn decades ago and don't get redrawn when state or timezone boundaries shift in practice, and because mobile numbers travel with their owner instead of staying tied to a location, a given area code is a much weaker timezone signal than it looks. A 915 number was assigned in El Paso, Texas, which observes Mountain Time even though the rest of Texas is Central, and a person who got that number in El Paso in 2015 keeps dialing 915 no matter where in the country they've moved since.",
 				],
 			},
 		],
@@ -1937,7 +1937,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Why did New York City get area code 212?',
 				answer:
-					"Because the original 1947 numbering plan assigned area codes based on rotary-dial pull count, and New York was the country's busiest long-distance destination -- it got the lowest-pull-count code available among those reserved for multi-code states.",
+					"Because the original 1947 numbering plan assigned area codes based on rotary-dial pull count, and New York was the country's busiest long-distance destination, so it got the lowest-pull-count code available among those reserved for multi-code states.",
 			},
 		],
 		sources: [
@@ -1954,12 +1954,12 @@ export const guides: Guide[] = [
 		published: '2026-08-03',
 		updated: '2026-08-04',
 		coreSummary:
-			'There is no list of domestic US area codes that scammers "use" -- the FCC and FTC\'s own data shows the opposite: robocallers fake your own local area code on purpose, a tactic called neighbor spoofing, so an unfamiliar 415 number can easily not be from the Bay Area at all. The one real, documented exception is the "one ring" scam, which relies on real North American Numbering Plan area codes assigned to a handful of Caribbean nations and territories, not domestic scam-only codes.',
+			'There is no list of domestic US area codes that scammers "use." The FCC and FTC\'s own data shows the opposite: robocallers fake your own local area code on purpose, a tactic called neighbor spoofing, so an unfamiliar 415 number can easily not be from the Bay Area at all. The one real, documented exception is the "one ring" scam, which relies on real North American Numbering Plan area codes assigned to a handful of Caribbean nations and territories, not domestic scam-only codes.',
 		sections: [
 			{
-				heading: "Scammers don't have their own area codes -- they fake yours",
+				heading: "Scammers don't have their own area codes; they fake yours",
 				body: [
-					"A caller ID showing your own area code feels trustworthy, which is exactly why robocallers exploit it. The FCC's term for this is neighbor spoofing: the call might genuinely originate anywhere, including overseas, but the caller ID display is deliberately falsified to show a number sharing your area code and even your first few exchange digits. The Truth in Caller ID Act makes this illegal when done with intent to defraud, with penalties up to $10,000 per violation -- but the law hasn't stopped the practice, because the technology to fake caller ID is cheap and widely available to robocall operations.",
+					"A caller ID showing your own area code feels trustworthy, which is exactly why robocallers exploit it. The FCC's term for this is neighbor spoofing: the call might genuinely originate anywhere, including overseas, but the caller ID display is deliberately falsified to show a number sharing your area code and even your first few exchange digits. The Truth in Caller ID Act makes this illegal when done with intent to defraud, with penalties up to $10,000 per violation. But the law hasn't stopped the practice, because the technology to fake caller ID is cheap and widely available to robocall operations.",
 					'Practically, this means "is 213 a scam area code" is the wrong question. Any area code can appear on a spoofed call, including your own, and the number displayed tells you nothing reliable about who is actually calling.',
 					"<div style=\"margin:12px 0;padding:18px 20px;background:#f8fafc;border-left:4px solid #4a5568;border-radius:8px;\"><p style=\"margin:0;font-size:1.05rem;font-style:italic;color:#1e293b;line-height:1.6;\">&ldquo;Neighbor spoofing works because the software behind it lets a caller punch in any number they want, including one that matches your own area code and prefix. Scammers know a familiar-looking number reads as safe, so they mirror it on purpose.&rdquo;</p><p style=\"margin:8px 0 0;font-size:0.8125rem;color:#64748b;\">Michael Kruse, criminal defense lawyer and founder of Kruse Law Firm, whose caseload includes fraud cases</p></div>",
 					'The stakes go beyond a nuisance call. Chris Brooks, co-founder of Crypto Asset Recovery, has spent years helping people recover access to lost wallets, which means he also sees how they got taken in the first place. In one case he worked, a client received a call displaying his bank\'s exact local number, the one printed on the back of his card. A caller posing as the fraud department warned him his crypto exchange account was compromised and walked him through "securing" it. He handed over his seed phrase, and the wallet was drained within minutes.',
@@ -1969,7 +1969,7 @@ export const guides: Guide[] = [
 			{
 				heading: "The real exception: the 'one ring' scam and ten Caribbean NANP codes",
 				body: [
-					"There is one well-documented pattern where specific area codes really are disproportionately tied to a scam, and it works differently from neighbor spoofing. Eight Caribbean nations and territories are full members of the North American Numbering Plan, meaning their phone numbers use ordinary-looking 3-digit area codes exactly like a US state does -- nothing in the number format signals that it's actually an international call.",
+					"There is one well-documented pattern where specific area codes really are disproportionately tied to a scam, and it works differently from neighbor spoofing. Eight Caribbean nations and territories are full members of the North American Numbering Plan, meaning their phone numbers use ordinary-looking 3-digit area codes exactly like a US state does. Nothing in the number format signals that it's actually an international call.",
 					'The "one ring" (or "Wangiri") scam exploits this directly: an autodialer places a call, lets it ring once, and hangs up before anyone can answer, hoping curiosity drives the recipient to call back. Calling back connects to an international, often premium-rate number, and the recipient gets charged steep per-minute and connection fees that show up later on their phone bill.',
 				],
 				table: {
@@ -1997,7 +1997,7 @@ export const guides: Guide[] = [
 				heading: 'What to actually do about an unfamiliar call',
 				body: [
 					'The FTC\'s standing advice, independent of which area code shows up, is simple and doesn\'t require memorizing any list: don\'t answer calls from numbers you don\'t recognize, and never call back a number that rang once and disconnected. If you do answer and something feels off, hang up rather than staying on the line to "verify" who they are. Review your phone bill for unexpected international or premium charges if you did call back a one-ring number, and report the call to your carrier.',
-					"If a caller claiming to be your bank, a government agency, or a utility asks you to act urgently, hang up and call the organization back using a number from an old bill or statement, not the one that showed up on your screen. Michael Kruse, a criminal defense lawyer whose caseload includes both sides of fraud cases, says that single habit is what actually stops most of these calls from going anywhere -- verifying independently works regardless of how convincing the spoofed number looked.",
+					"If a caller claiming to be your bank, a government agency, or a utility asks you to act urgently, hang up and call the organization back using a number from an old bill or statement, not the one that showed up on your screen. Michael Kruse, a criminal defense lawyer whose caseload includes both sides of fraud cases, says that single habit is what actually stops most of these calls from going anywhere: verifying independently works regardless of how convincing the spoofed number looked.",
 				],
 			},
 		],
@@ -2005,7 +2005,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Are there area codes that are always scams?',
 				answer:
-					'No domestic US area code is inherently a scam -- scammers routinely spoof caller ID to show your own local area code. The one real exception is a set of Caribbean NANP codes (268, 284, 473, 649, 664, 767, 809/829/849, 876) tied to the documented "one ring" callback scam.',
+					'No domestic US area code is inherently a scam. Scammers routinely spoof caller ID to show your own local area code. The one real exception is a set of Caribbean NANP codes (268, 284, 473, 649, 664, 767, 809/829/849, 876) tied to the documented "one ring" callback scam.',
 				},
 			{
 				question: 'What is "neighbor spoofing"?',
@@ -2029,16 +2029,16 @@ export const guides: Guide[] = [
 		category: 'Area Code Guides',
 		title: 'Chicago Area Codes: 312, 773, 872, and How 312 Became an Island',
 		description:
-			"312 used to cover all of Chicago and its suburbs. Two splits and an overlay later, it's an enclave -- surrounded by 773, inside the same city.",
+			"312 used to cover all of Chicago and its suburbs. Two splits and an overlay later, it's an enclave, surrounded by 773, inside the same city.",
 		published: '2026-08-10',
 		updated: '2026-08-10',
 		coreSummary:
-			'Chicago runs on three overlaid area codes today -- 312, 773, and 872 -- all serving the exact same footprint inside city limits. 312 started in 1947 as the single code for the whole Chicago area, including the suburbs. A 1989 split carved off the suburbs into 708, and a second split in 1996 carved off every Chicago neighborhood outside downtown into 773, leaving 312 an enclave: a small area code entirely encircled by 773 rather than bordering a different region. 872 overlaid both in 2009 once splitting the city a third time stopped being a workable option.',
+			'Chicago runs on three overlaid area codes today (312, 773, and 872), all serving the exact same footprint inside city limits. 312 started in 1947 as the single code for the whole Chicago area, including the suburbs. A 1989 split carved off the suburbs into 708, and a second split in 1996 carved off every Chicago neighborhood outside downtown into 773, leaving 312 an enclave: a small area code entirely encircled by 773 rather than bordering a different region. 872 overlaid both in 2009 once splitting the city a third time stopped being a workable option.',
 		sections: [
 			{
 				heading: "Chicago's three area codes",
 				body: [
-					"All three of the area codes below cover the identical geographic footprint -- the [City of Chicago](/chicago-zip-codes/), inside [Cook County](/what-county-is-chicago-in/). Which one a given phone number carries depends only on when it was assigned, not on where in the city its owner lives or works.",
+					"All three of the area codes below cover the identical geographic footprint: the [City of Chicago](/chicago-zip-codes/), inside [Cook County](/what-county-is-chicago-in/). Which one a given phone number carries depends only on when it was assigned, not on where in the city its owner lives or works.",
 				],
 				table: {
 					caption: "Chicago's area codes",
@@ -2053,15 +2053,15 @@ export const guides: Guide[] = [
 			{
 				heading: 'Two splits turned the original 312 into an island',
 				body: [
-					"312 was one of the original 86 area codes AT&T assigned in 1947, and at the time it covered the entire Chicago metropolitan area -- the city itself plus the surrounding suburbs that would later get their own codes. Chicago's growth forced two separate splits off that original footprint. The first, on November 11, 1989, drew a line around the city limits and handed every suburban number a new code, 708, while every number still inside Chicago kept 312.",
-					"The second split, on October 12, 1996, cut through the city itself rather than separating city from suburb again -- a rarer move in US area code history. Chicago outside downtown and the Loop moved to a new code, 773, while the downtown core kept 312. That left 312 as what telecom planners call an enclave area code: a small numbering plan area completely surrounded by a single other area code (773) rather than bordering several different regions the way a typical split-off code does.",
-					"By 2008, population and cell phone growth meant even two codes covering the same city weren't enough new numbers. Rather than attempting a third geographic split -- which would have meant redrawing lines through an already-small downtown core -- Illinois regulators added 872 in 2009 as an overlay across the combined footprint of both 312 and 773. Anyone who already had a 312 or 773 number kept it; only new numbers assigned after November 7, 2009 got 872. The [difference between a split and an overlay](/how-do-area-codes-work/) is the same distinction that shaped [Detroit's newest area code, 679](/michigan-area-codes/).",
+					"312 was one of the original 86 area codes AT&T assigned in 1947, and at the time it covered the entire Chicago metropolitan area, the city itself plus the surrounding suburbs that would later get their own codes. Chicago's growth forced two separate splits off that original footprint. The first, on November 11, 1989, drew a line around the city limits and handed every suburban number a new code, 708, while every number still inside Chicago kept 312.",
+					"The second split, on October 12, 1996, cut through the city itself rather than separating city from suburb again, a rarer move in US area code history. Chicago outside downtown and the Loop moved to a new code, 773, while the downtown core kept 312. That left 312 as what telecom planners call an enclave area code: a small numbering plan area completely surrounded by a single other area code (773) rather than bordering several different regions the way a typical split-off code does.",
+					"By 2008, population and cell phone growth meant even two codes covering the same city weren't enough new numbers. Rather than attempting a third geographic split (which would have meant redrawing lines through an already-small downtown core), Illinois regulators added 872 in 2009 as an overlay across the combined footprint of both 312 and 773. Anyone who already had a 312 or 773 number kept it; only new numbers assigned after November 7, 2009 got 872. The [difference between a split and an overlay](/how-do-area-codes-work/) is the same distinction that shaped [Detroit's newest area code, 679](/michigan-area-codes/).",
 				],
 			},
 			{
 				heading: 'The Chicago suburbs run their own separate overlay pairs',
 				body: [
-					"The area codes bordering Chicago -- 847/224 to the north and northwest, 630/331 to the west, 708/464 to the south and west, and 815/779 further out -- are separate numbering plan areas, not part of the city's own 312/773/872 overlay. 708 itself, the code split off Chicago in 1989, later needed its own overlay: 464 was added on top of it in 2022 for the same reason 872 was added downtown, more subscribers than the original code had numbers left to assign.",
+					"The area codes bordering Chicago (847/224 to the north and northwest, 630/331 to the west, 708/464 to the south and west, and 815/779 further out) are separate numbering plan areas, not part of the city's own 312/773/872 overlay. 708 itself, the code split off Chicago in 1989, later needed its own overlay: 464 was added on top of it in 2022 for the same reason 872 was added downtown, more subscribers than the original code had numbers left to assign.",
 				],
 			},
 		],
@@ -2074,7 +2074,7 @@ export const guides: Guide[] = [
 			{
 				question: "What's the difference between 312 and 773?",
 				answer:
-					"312 covers downtown Chicago and the Loop; 773 covers the rest of the city. Both have been in service since the 1996 split and neither is being phased out -- which number you have depends on when it was assigned, not where you live today.",
+					"312 covers downtown Chicago and the Loop; 773 covers the rest of the city. Both have been in service since the 1996 split and neither is being phased out; which number you have depends on when it was assigned, not where you live today.",
 			},
 			{
 				question: 'Why is 312 called an enclave area code?',
@@ -2099,16 +2099,16 @@ export const guides: Guide[] = [
 		category: 'Area Code Guides',
 		title: 'New York City Area Codes: All Eight, Plus the Manhattan Block Wired Into the Bronx',
 		description:
-			"NYC runs on eight area codes split into two separate overlay stacks -- one for Manhattan, one for the other four boroughs -- except for the Manhattan neighborhood that uses neither.",
+			"NYC runs on eight area codes split into two separate overlay stacks (one for Manhattan, one for the other four boroughs), except for the Manhattan neighborhood that uses neither.",
 		published: '2026-08-12',
 		updated: '2026-08-12',
 		coreSummary:
-			"New York City is served by eight area codes: 212, 646, and 332 cover Manhattan; 718, 347, 929, and the newly activated 465 cover the Bronx, Brooklyn, Queens, and Staten Island; and 917, added in 1992, is the one code that overlays all five boroughs at once. The two four-borough groups exist because the city's numbering plan split only once, in 1984, dividing Manhattan from everywhere else -- every area code added since has overlaid one side of that line, never both. One neighborhood breaks the pattern: Marble Hill, legally part of Manhattan, dials on the outer-borough codes instead, because its phone lines run through a Bronx switching center.",
+			"New York City is served by eight area codes: 212, 646, and 332 cover Manhattan; 718, 347, 929, and the newly activated 465 cover the Bronx, Brooklyn, Queens, and Staten Island; and 917, added in 1992, is the one code that overlays all five boroughs at once. The two four-borough groups exist because the city's numbering plan split only once, in 1984, dividing Manhattan from everywhere else. Every area code added since has overlaid one side of that line, never both. One neighborhood breaks the pattern: Marble Hill, legally part of Manhattan, dials on the outer-borough codes instead, because its phone lines run through a Bronx switching center.",
 		sections: [
 			{
 				heading: "New York City's eight area codes, and which side of the 1984 line each one sits on",
 				body: [
-					'New York City had a single area code, 212, from the start of the North American Numbering Plan in 1947 until 1984. Every code added since belongs to one of two separate overlay stacks -- Manhattan\'s or the outer boroughs\' -- with a single exception that crosses both.',
+					'New York City had a single area code, 212, from the start of the North American Numbering Plan in 1947 until 1984. Every code added since belongs to one of two separate overlay stacks (Manhattan\'s or the outer boroughs\') with a single exception that crosses both.',
 				],
 				table: {
 					caption: "NYC's area codes and which boroughs each one covers",
@@ -2128,29 +2128,29 @@ export const guides: Guide[] = [
 			{
 				heading: 'The 1984 split, and why the Bronx changed sides eight years later',
 				body: [
-					"By the early 1980s New York City was working through phone numbers faster than any other US region -- fax lines, dedicated business lines, second household lines, and the first pagers and car phones were all drawing from the same 212 pool. New York Telephone asked state regulators to divide the city, and on September 1, 1984, area code 718 went into service for Brooklyn, Queens, and Staten Island. Manhattan kept 212, and so, at first, did the Bronx.",
-					"That arrangement didn't last. On July 1, 1992, the Bronx moved from 212 to 718, aligning it with the other three outer boroughs and leaving 212 as Manhattan's alone. The switch drew objections from Bronx residents and businesses reluctant to give up a code that had become cultural shorthand for New York -- the same resistance outer-borough lawmakers had raised eight years earlier over the original split. It's the only geographic realignment New York City's phone system has gone through; every area code added afterward has overlaid an existing footprint rather than redrawing a boundary, the same shift from splits to overlays that later reshaped [Chicago's numbering plan](/chicago-area-code/) and [Detroit's](/michigan-area-codes/).",
+					"By the early 1980s New York City was working through phone numbers faster than any other US region. Fax lines, dedicated business lines, second household lines, and the first pagers and car phones were all drawing from the same 212 pool. New York Telephone asked state regulators to divide the city, and on September 1, 1984, area code 718 went into service for Brooklyn, Queens, and Staten Island. Manhattan kept 212, and so, at first, did the Bronx.",
+					"That arrangement didn't last. On July 1, 1992, the Bronx moved from 212 to 718, aligning it with the other three outer boroughs and leaving 212 as Manhattan's alone. The switch drew objections from Bronx residents and businesses reluctant to give up a code that had become cultural shorthand for New York, the same resistance outer-borough lawmakers had raised eight years earlier over the original split. It's the only geographic realignment New York City's phone system has gone through; every area code added afterward has overlaid an existing footprint rather than redrawing a boundary, the same shift from splits to overlays that later reshaped [Chicago's numbering plan](/chicago-area-code/) and [Detroit's](/michigan-area-codes/).",
 				],
 			},
 			{
 				heading: '917 is the one code that crosses the Manhattan/outer-borough line',
 				body: [
-					"917 went into service February 4, 1992, as the first overlay area code in North American Numbering Plan history -- a template every overlay since, in New York and elsewhere, has followed. Regulators created it specifically to absorb the city's fast-growing pager and early cell phone market, moving that traffic off 212 and 718 rather than splitting either code's geographic footprint again. The FCC later ruled that reserving an area code for one type of service was not allowed, but by then 917 numbers had already spread across ordinary landlines too.",
-					"What makes 917 structurally different from every other NYC code is its footprint: instead of belonging to the Manhattan stack (212, 646, 332) or the outer-borough stack (718, 347, 929, 465), it was assigned across all five boroughs from day one. No area code added to New York City since 1992 has repeated that -- 646 and 332 stayed inside Manhattan's line, and 347, 929, and 465 all stayed inside the outer boroughs'.",
+					"917 went into service February 4, 1992, as the first overlay area code in North American Numbering Plan history, a template every overlay since, in New York and elsewhere, has followed. Regulators created it specifically to absorb the city's fast-growing pager and early cell phone market, moving that traffic off 212 and 718 rather than splitting either code's geographic footprint again. The FCC later ruled that reserving an area code for one type of service was not allowed, but by then 917 numbers had already spread across ordinary landlines too.",
+					"What makes 917 structurally different from every other NYC code is its footprint: instead of belonging to the Manhattan stack (212, 646, 332) or the outer-borough stack (718, 347, 929, 465), it was assigned across all five boroughs from day one. No area code added to New York City since 1992 has repeated that: 646 and 332 stayed inside Manhattan's line, and 347, 929, and 465 all stayed inside the outer boroughs'.",
 				],
 			},
 			{
 				heading: "Marble Hill: legally Manhattan, dials like the Bronx",
 				body: [
-					"Marble Hill is a small residential neighborhood at Manhattan's northern tip, and it's the reason every table above needs the words \"except Marble Hill\" or \"and Marble Hill.\" The neighborhood is still legally part of the Borough of Manhattan and New York County, but its area codes are 718, 347, 929, and 465 -- the outer-borough set -- not 212, 646, or 332.",
+					"Marble Hill is a small residential neighborhood at Manhattan's northern tip, and it's the reason every table above needs the words \"except Marble Hill\" or \"and Marble Hill.\" The neighborhood is still legally part of the Borough of Manhattan and New York County, but its area codes are 718, 347, 929, and 465 (the outer-borough set), not 212, 646, or 332.",
 					"The split traces back to the Harlem River Ship Canal, cut through Manhattan's northern tip in 1895 to connect the Harlem and Hudson Rivers for shipping traffic. The new canal severed Marble Hill from the rest of Manhattan Island, turning it briefly into its own island bounded by the canal on one side and the old, unfilled Harlem River channel on the other. In 1914, that old channel was filled in, physically joining Marble Hill to the Bronx mainland while its legal status as part of Manhattan never changed. Its phone lines were run through a Bronx switching center, and when the Bronx moved to 718 in 1992, Marble Hill's numbers went with it. Residents petitioned to keep 212 at the time; rewiring the neighborhood into a Manhattan switching center instead was judged too costly, and the outer-borough assignment has stuck through every overlay added since.",
 				],
 			},
 			{
 				heading: '465 activated in June 2026, the newest addition to either stack',
 				body: [
-					"New York's Public Service Commission authorized 465 as an overlay on the outer-borough stack -- 347, 718, and 929 -- once regulators projected that group would run out of assignable numbers. New numbers under 465 began going into service June 18, 2026; it's projected to supply roughly 11 more years of numbers for the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill.",
-					"465 changes nothing for anyone who already has a number on 212, 718, 917, 646, 347, 929, or 332 -- existing numbers, including their area codes, stay exactly as they are. It only affects new lines ordered in the outer-borough footprint from that date forward, and 10-digit dialing, already required citywide since 917 first overlaid 212 and 718 in 1992, doesn't change either.",
+					"New York's Public Service Commission authorized 465 as an overlay on the outer-borough stack (347, 718, and 929) once regulators projected that group would run out of assignable numbers. New numbers under 465 began going into service June 18, 2026; it's projected to supply roughly 11 more years of numbers for the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill.",
+					"465 changes nothing for anyone who already has a number on 212, 718, 917, 646, 347, 929, or 332: existing numbers, including their area codes, stay exactly as they are. It only affects new lines ordered in the outer-borough footprint from that date forward, and 10-digit dialing, already required citywide since 917 first overlaid 212 and 718 in 1992, doesn't change either.",
 				],
 			},
 		],
@@ -2163,22 +2163,22 @@ export const guides: Guide[] = [
 			{
 				question: "What's the difference between 212 and 718?",
 				answer:
-					'212 is Manhattan\'s original 1947 area code. 718 was created September 1, 1984 for Brooklyn, Queens, and Staten Island, and the Bronx moved from 212 to 718 on July 1, 1992. That 1984 split is the only geographic realignment New York City\'s numbering plan has gone through -- every code added since has overlaid an existing footprint instead.',
+					'212 is Manhattan\'s original 1947 area code. 718 was created September 1, 1984 for Brooklyn, Queens, and Staten Island, and the Bronx moved from 212 to 718 on July 1, 1992. That 1984 split is the only geographic realignment New York City\'s numbering plan has gone through; every code added since has overlaid an existing footprint instead.',
 			},
 			{
 				question: 'Why does Marble Hill use 718 instead of 212, even though it\'s legally part of Manhattan?',
 				answer:
-					"Marble Hill was cut off from the rest of Manhattan Island by the Harlem River Ship Canal in 1895, then physically joined to the Bronx mainland by landfill in 1914, while remaining legally part of the Borough of Manhattan. Its phone lines run through a Bronx switching center, so when the Bronx moved to area code 718 in 1992, Marble Hill's numbers moved with it -- and it has stayed on the outer-borough side of every overlay added since (347, 929, and 465).",
+					"Marble Hill was cut off from the rest of Manhattan Island by the Harlem River Ship Canal in 1895, then physically joined to the Bronx mainland by landfill in 1914, while remaining legally part of the Borough of Manhattan. Its phone lines run through a Bronx switching center, so when the Bronx moved to area code 718 in 1992, Marble Hill's numbers moved with it, and it has stayed on the outer-borough side of every overlay added since (347, 929, and 465).",
 			},
 			{
 				question: 'Do I need to dial 10 digits for a local NYC call?',
 				answer:
-					'Yes. Ten-digit dialing (area code plus number) has been required for every local call in New York City since 917 first overlaid 212 and 718 in February 1992 -- true for all eight of today\'s codes, including the newly added 465.',
+					'Yes. Ten-digit dialing (area code plus number) has been required for every local call in New York City since 917 first overlaid 212 and 718 in February 1992, true for all eight of today\'s codes, including the newly added 465.',
 			},
 			{
 				question: "What is 465, New York's newest area code?",
 				answer:
-					"465 is an overlay added to the outer-borough stack -- 347, 718, and 929 -- covering the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill. New numbers started using it June 18, 2026; it doesn't change any number that already exists.",
+					"465 is an overlay added to the outer-borough stack (347, 718, and 929), covering the Bronx, Brooklyn, Queens, Staten Island, and Marble Hill. New numbers started using it June 18, 2026; it doesn't change any number that already exists.",
 			},
 		],
 		sources: [
@@ -2201,24 +2201,24 @@ export const guides: Guide[] = [
 		category: 'Area Code Guides',
 		title: 'Atlanta Area Codes: 404, 770, 678, 470, 943, and the Three That Stopped Taking New Numbers',
 		description:
-			"Atlanta runs on five area codes. Three, 404, 678, and 770, ran out of numbers to give out -- existing lines still work, but nobody gets a new one from them.",
+			"Atlanta runs on five area codes. Three, 404, 678, and 770, ran out of numbers to give out: existing lines still work, but nobody gets a new one from them.",
 		published: '2026-08-19',
 		updated: '2026-08-19',
 		coreSummary:
-			"Metro Atlanta is served by five area codes -- 404, 770, 678, 470, and 943 -- but only two of them, 470 and 943, can still be handed out to new phone lines. 404, the original code covering all of Georgia in 1947; 770, split off from it in 1995; and 678, the first overlay added in 1998, all ran through every available prefix. Existing 404, 678, and 770 numbers keep working forever, but the North American Numbering Plan Administrator (NANPA) stopped assigning new ones from those three codes once they were exhausted. Georgia's numbering plan split geographically only once, drawing a line at the Interstate 285 perimeter in 1995 -- every code added since has overlaid both sides of that line at once rather than drawing a new one.",
+			"Metro Atlanta is served by five area codes (404, 770, 678, 470, and 943), but only two of them, 470 and 943, can still be handed out to new phone lines. 404, the original code covering all of Georgia in 1947; 770, split off from it in 1995; and 678, the first overlay added in 1998, all ran through every available prefix. Existing 404, 678, and 770 numbers keep working forever, but the North American Numbering Plan Administrator (NANPA) stopped assigning new ones from those three codes once they were exhausted. Georgia's numbering plan split geographically only once, drawing a line at the Interstate 285 perimeter in 1995. Every code added since has overlaid both sides of that line at once rather than drawing a new one.",
 		sections: [
 			{
 				heading: "Atlanta's five area codes",
 				body: [
-					"470 and 943 cover the entire combined footprint of 404, 770, and 678 -- there's no way to tell which of the five an Atlanta number carries just by knowing what part of the metro its owner lives in. Assignment depends only on when the line was activated.",
+					"470 and 943 cover the entire combined footprint of 404, 770, and 678; there's no way to tell which of the five an Atlanta number carries just by knowing what part of the metro its owner lives in. Assignment depends only on when the line was activated.",
 				],
 				table: {
 					caption: "Atlanta's area codes and whether each still issues new numbers",
 					columns: ['Area code', 'Coverage', 'In service since', 'Still issuing new numbers?'],
 					rows: [
-						['404', 'Georgia (statewide in 1947; Atlanta inside the I-285 perimeter today)', '1947 (original)', 'No -- exhausted October 2013'],
-						['770', 'Metro Atlanta outside the I-285 perimeter', 'August 1, 1995', 'No -- exhausted'],
-						['678', 'Overlay on 404 and 770', 'January 6, 1998', 'No -- exhausted'],
+						['404', 'Georgia (statewide in 1947; Atlanta inside the I-285 perimeter today)', '1947 (original)', 'No (exhausted October 2013)'],
+						['770', 'Metro Atlanta outside the I-285 perimeter', 'August 1, 1995', 'No (exhausted)'],
+						['678', 'Overlay on 404 and 770', 'January 6, 1998', 'No (exhausted)'],
 						['470', 'Overlay on 404, 770, and 678', 'February 26, 2010', 'Yes'],
 						['943', 'Overlay on 404, 770, 678, and 470', 'March 15, 2022', 'Yes'],
 					],
@@ -2227,22 +2227,22 @@ export const guides: Guide[] = [
 			{
 				heading: 'Three splits carved Georgia down to just metro Atlanta',
 				body: [
-					"404 was one of the [original 86 area codes](/how-do-area-codes-work/) the North American Numbering Plan assigned in 1947, and it started out covering the entire state of Georgia -- not just Atlanta. Three splits over the next 48 years narrowed it down to roughly its present footprint. The first, on July 1, 1954, cut off the southern half of the state as area code 912, leaving 404 running from the Tennessee and North Carolina lines south to Columbus and Augusta.",
-					"That boundary held for 38 years. On May 3, 1992, regulators split off nearly everything outside the immediate Atlanta area as area code 706, shrinking 404 to roughly the metro region. The third and final geographic split came just three years later: on August 1, 1995, 404 was divided along the Interstate 285 perimeter highway, with everything outside it becoming area code 770. That 1995 line is the last one Georgia's numbering plan has ever drawn -- every area code assigned to metro Atlanta since has been an overlay across an existing footprint, not a new geographic boundary.",
+					"404 was one of the [original 86 area codes](/how-do-area-codes-work/) the North American Numbering Plan assigned in 1947, and it started out covering the entire state of Georgia, not just Atlanta. Three splits over the next 48 years narrowed it down to roughly its present footprint. The first, on July 1, 1954, cut off the southern half of the state as area code 912, leaving 404 running from the Tennessee and North Carolina lines south to Columbus and Augusta.",
+					"That boundary held for 38 years. On May 3, 1992, regulators split off nearly everything outside the immediate Atlanta area as area code 706, shrinking 404 to roughly the metro region. The third and final geographic split came just three years later: on August 1, 1995, 404 was divided along the Interstate 285 perimeter highway, with everything outside it becoming area code 770. That 1995 line is the last one Georgia's numbering plan has ever drawn. Every area code assigned to metro Atlanta since has been an overlay across an existing footprint, not a new geographic boundary.",
 				],
 			},
 			{
 				heading: 'Three overlays in 24 years, each covering more ground than the last',
 				body: [
-					"678 went into service January 6, 1998, as an overlay spanning both 404 and 770 at once -- the first time a single new Atlanta code crossed the 1995 perimeter line instead of respecting it. That set the pattern every later addition followed. 470 arrived February 26, 2010, overlaying all three existing codes (404, 678, and 770); NANPA's senior director at the time described it publicly as intended primarily for downtown Atlanta and the surrounding area, though like every other overlay it was assignable anywhere in the combined footprint.",
-					"By October 2020, exhaustion analyses were projecting that the four-code combination would run out of assignable prefixes by the second quarter of 2023. The Georgia Public Service Commission approved a fifth code that month, and NANPA assigned 943; it went into service March 15, 2022, overlaying 404, 770, 678, and 470 simultaneously. The new code's footprint reaches well beyond Atlanta's city limits -- it covers the same PSC-defined region as the four codes before it, including Alpharetta, Duluth, Dunwoody, East Point, Forest Park, Gainesville, Griffin, Lawrenceville, Mableton, Marietta, Peachtree City, Roswell, Sandy Springs, Smyrna, and Tucker. The same shift from geographic splits to stacked overlays, once a region runs out of room to redraw lines, shaped [Chicago's numbering plan](/chicago-area-code/) and New York City's outer-borough codes.",
+					"678 went into service January 6, 1998, as an overlay spanning both 404 and 770 at once, the first time a single new Atlanta code crossed the 1995 perimeter line instead of respecting it. That set the pattern every later addition followed. 470 arrived February 26, 2010, overlaying all three existing codes (404, 678, and 770); NANPA's senior director at the time described it publicly as intended primarily for downtown Atlanta and the surrounding area, though like every other overlay it was assignable anywhere in the combined footprint.",
+					"By October 2020, exhaustion analyses were projecting that the four-code combination would run out of assignable prefixes by the second quarter of 2023. The Georgia Public Service Commission approved a fifth code that month, and NANPA assigned 943; it went into service March 15, 2022, overlaying 404, 770, 678, and 470 simultaneously. The new code's footprint reaches well beyond Atlanta's city limits: it covers the same PSC-defined region as the four codes before it, including Alpharetta, Duluth, Dunwoody, East Point, Forest Park, Gainesville, Griffin, Lawrenceville, Mableton, Marietta, Peachtree City, Roswell, Sandy Springs, Smyrna, and Tucker. The same shift from geographic splits to stacked overlays, once a region runs out of room to redraw lines, shaped [Chicago's numbering plan](/chicago-area-code/) and New York City's outer-borough codes.",
 				],
 			},
 			{
-				heading: '404, 678, and 770 still work -- they just can\'t be assigned to anyone new',
+				heading: '404, 678, and 770 still work; they just can\'t be assigned to anyone new',
 				body: [
-					"\"Exhausted\" describes the supply of unassigned central office prefixes within a code, not the code itself. Every 404, 678, and 770 number already in service keeps working exactly as before; nothing about exhaustion forces a number to change. What exhaustion means in practice is that phone carriers can no longer request new blocks of numbers from any of the three codes -- when a carrier needs numbers for new customers in the Atlanta overlay region, NANPA assigns them from 470 or 943 instead, the only two codes that still have prefixes left to give out.",
-					"404's exhaustion is documented precisely: every central office prefix in the code had been assigned to a service provider by October 2013. 678 and 770 exhausted later -- both were fully allocated by the time regulators approved 943 in October 2020, the same shortfall projected to hit the whole four-code combination by the second quarter of 2023. 470 was added in 2010, well ahead of any of that, because overlay codes are typically requested years before a projected exhaustion date rather than after it arrives.",
+					"\"Exhausted\" describes the supply of unassigned central office prefixes within a code, not the code itself. Every 404, 678, and 770 number already in service keeps working exactly as before; nothing about exhaustion forces a number to change. What exhaustion means in practice is that phone carriers can no longer request new blocks of numbers from any of the three codes. When a carrier needs numbers for new customers in the Atlanta overlay region, NANPA assigns them from 470 or 943 instead, the only two codes that still have prefixes left to give out.",
+					"404's exhaustion is documented precisely: every central office prefix in the code had been assigned to a service provider by October 2013. 678 and 770 exhausted later: both were fully allocated by the time regulators approved 943 in October 2020, the same shortfall projected to hit the whole four-code combination by the second quarter of 2023. 470 was added in 2010, well ahead of any of that, because overlay codes are typically requested years before a projected exhaustion date rather than after it arrives.",
 				],
 			},
 		],
@@ -2255,17 +2255,17 @@ export const guides: Guide[] = [
 			{
 				question: 'Can I still get a new phone number with a 404 or 678 area code?',
 				answer:
-					"No. Both codes ran through every available central office prefix -- 404 by October 2013, 678 by the time regulators approved 943 in 2020 -- so NANPA no longer assigns new numbers from either one. (770 is in the same position, also exhausted.) Existing 404 and 678 numbers are unaffected and keep working; new lines in the Atlanta overlay region are assigned 470 or 943 instead.",
+					"No. Both codes ran through every available central office prefix (404 by October 2013, 678 by the time regulators approved 943 in 2020), so NANPA no longer assigns new numbers from either one. (770 is in the same position, also exhausted.) Existing 404 and 678 numbers are unaffected and keep working; new lines in the Atlanta overlay region are assigned 470 or 943 instead.",
 			},
 			{
 				question: "What's the difference between 404 and 770?",
 				answer:
-					"404 is Atlanta's original 1947 area code, narrowed by two earlier splits (912 in 1954, 706 in 1992) to roughly the metro region and then split again on August 1, 1995 along the Interstate 285 perimeter. 770 is what that 1995 split created: everything outside the perimeter. It's the only geographic line Atlanta's numbering plan has ever drawn -- 678, 470, and 943 all overlay both sides of it rather than adding a new boundary.",
+					"404 is Atlanta's original 1947 area code, narrowed by two earlier splits (912 in 1954, 706 in 1992) to roughly the metro region and then split again on August 1, 1995 along the Interstate 285 perimeter. 770 is what that 1995 split created: everything outside the perimeter. It's the only geographic line Atlanta's numbering plan has ever drawn: 678, 470, and 943 all overlay both sides of it rather than adding a new boundary.",
 			},
 			{
 				question: 'Do I need to dial 10 digits for a local Atlanta call?',
 				answer:
-					'Yes. Once 678 overlaid both 404 and 770 in 1998, the North American Numbering Plan required area code plus number for every local call in the combined footprint, not just long-distance ones -- the same rule that applies in every other overlay region.',
+					'Yes. Once 678 overlaid both 404 and 770 in 1998, the North American Numbering Plan required area code plus number for every local call in the combined footprint, not just long-distance ones, the same rule that applies in every other overlay region.',
 			},
 		],
 		sources: [
@@ -2295,11 +2295,11 @@ export const guides: Guide[] = [
 		category: 'Area Code Guides',
 		title: 'Miami Area Codes: 305, 786, 645, and the 1947 Code That Once Covered All of Florida',
 		description:
-			"Miami-Dade and the Florida Keys share three overlapping area codes today. 305 is the original, dating to 1947 -- back when it covered the entire state of Florida, not just Miami.",
+			"Miami-Dade and the Florida Keys share three overlapping area codes today. 305 is the original, dating to 1947, back when it covered the entire state of Florida, not just Miami.",
 		published: '2026-08-20',
 		updated: '2026-08-20',
 		coreSummary:
-			"Miami-Dade County and the Florida Keys are served by three overlapping area codes today -- 305, 786, and 645 -- but only 305 dates back to 1947, when it was one of the original 86 area codes assigned nationwide and covered the entire state of Florida. Four splits over the following decades peeled the rest of the state away: 813 for the Tampa Bay area in 1953, 904 for north Florida in 1965, 407 for the east coast and Orlando in 1988, and 954 for Broward County in 1995. Once Miami-Dade had nowhere left to split, Florida switched to overlays instead -- 786 arrived in 1998, and 645 followed in 2023, both stacked on the same territory as 305 rather than drawing a new line.",
+			"Miami-Dade County and the Florida Keys are served by three overlapping area codes today (305, 786, and 645), but only 305 dates back to 1947, when it was one of the original 86 area codes assigned nationwide and covered the entire state of Florida. Four splits over the following decades peeled the rest of the state away: 813 for the Tampa Bay area in 1953, 904 for north Florida in 1965, 407 for the east coast and Orlando in 1988, and 954 for Broward County in 1995. Once Miami-Dade had nowhere left to split, Florida switched to overlays instead: 786 arrived in 1998, and 645 followed in 2023, both stacked on the same territory as 305 rather than drawing a new line.",
 		sections: [
 			{
 				heading: "Miami's three overlapping area codes",
@@ -2319,8 +2319,8 @@ export const guides: Guide[] = [
 			{
 				heading: 'From all of Florida to three overlaid codes on one county',
 				body: [
-					"305 was one of the 86 original area codes the newly formed North American Numbering Plan assigned in 1947, and back then it covered the entire state of Florida, not just Miami. Growth pulled the state apart from 305 four separate times over the next 48 years. The west coast, from the Tampa Bay area south, split off as 813 in 1953 -- the area was served mostly by General Telephone (GTE) rather than AT&T at the time, so the split ran along a company boundary as well as a geographic one. North Florida, from the Panhandle down to Jacksonville, followed in 1965, moving to 904 with permissive dialing starting July 6 and mandatory dialing beginning January 1, 1966. The east coast from Palm Beach County north through Brevard County, plus the Orlando metro area, split off as 407 on April 16, 1988. The last geographic split came on September 11, 1995, when Broward County was carved out as 954, narrowing 305 down to roughly its footprint today: Miami-Dade County and the Florida Keys.",
-					"Regulators predicted the 954 split would delay 305's exhaustion but not prevent it, and they were right -- growth from cell phones and pagers pushed the reconfigured 305 close to running out of numbers again within two years. Rather than split Miami-Dade a fifth time, Florida installed 786 as an overlay on March 1, 1998, the state's first overlay complex; it initially covered only Miami-Dade County before later extending across the rest of 305's territory, including the Keys. That same pattern held when a third code became necessary: the Florida Public Service Commission approved 645 in February 2022, and it went into service August 4, 2023 -- ahead of the combined exhaustion of 305 and 786's assignable prefixes, which regulators had projected would otherwise land sometime that same year. The shift from splitting a growing region to stacking overlays on top of it, once there's no more geography left to divide, is the same shift that shaped [Atlanta's numbering plan](/atlanta-area-code/) once 404 ran out of room to split again -- see [how area codes actually work](/how-do-area-codes-work/) for the split-versus-overlay distinction itself.",
+					"305 was one of the 86 original area codes the newly formed North American Numbering Plan assigned in 1947, and back then it covered the entire state of Florida, not just Miami. Growth pulled the state apart from 305 four separate times over the next 48 years. The west coast, from the Tampa Bay area south, split off as 813 in 1953. The area was served mostly by General Telephone (GTE) rather than AT&T at the time, so the split ran along a company boundary as well as a geographic one. North Florida, from the Panhandle down to Jacksonville, followed in 1965, moving to 904 with permissive dialing starting July 6 and mandatory dialing beginning January 1, 1966. The east coast from Palm Beach County north through Brevard County, plus the Orlando metro area, split off as 407 on April 16, 1988. The last geographic split came on September 11, 1995, when Broward County was carved out as 954, narrowing 305 down to roughly its footprint today: Miami-Dade County and the Florida Keys.",
+					"Regulators predicted the 954 split would delay 305's exhaustion but not prevent it, and they were right: growth from cell phones and pagers pushed the reconfigured 305 close to running out of numbers again within two years. Rather than split Miami-Dade a fifth time, Florida installed 786 as an overlay on March 1, 1998, the state's first overlay complex; it initially covered only Miami-Dade County before later extending across the rest of 305's territory, including the Keys. That same pattern held when a third code became necessary: the Florida Public Service Commission approved 645 in February 2022, and it went into service August 4, 2023, ahead of the combined exhaustion of 305 and 786's assignable prefixes, which regulators had projected would otherwise land sometime that same year. The shift from splitting a growing region to stacking overlays on top of it, once there's no more geography left to divide, is the same shift that shaped [Atlanta's numbering plan](/atlanta-area-code/) once 404 ran out of room to split again; see [how area codes actually work](/how-do-area-codes-work/) for the split-versus-overlay distinction itself.",
 				],
 				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: area code 305 begins in 1947 covering all of Florida, its last split (954) happens in 1995, its first overlay (786) arrives in 1998, and a third overlay (645) arrives in 2023">
 	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
@@ -2350,14 +2350,14 @@ export const guides: Guide[] = [
 				heading: "'Mr. 305' and the market for old Miami numbers",
 				body: [
 					"Miami's attachment to 305 runs deeper than most cities' relationship with their own area code. Miami native Armando Christian Perez built his entire stage persona around it, going by Pitbull and \"Mr. 305\" since early in his career, and 305-branded tattoos are common enough locally that Miami-Dade natives have their own catchphrase for it: \"305 'til I die.\"",
-					"That attachment created an actual resale market. Ed Mance, who runs PhoneNumberGuy.com buying up old business phone numbers in bulk and reselling them, told the Washington Post that 305 is one of his best sellers, trailing only Los Angeles's 310 and New York's 212 -- and he typically prices these secondhand numbers between $299 and $799. The irony, according to Miami New Times' reporting, is that 305 hasn't actually been a guarantee for new registrations in decades: register a new line in Miami-Dade today and you're more likely to end up with 786, or now 645, than the code the city built its identity around.",
+					"That attachment created an actual resale market. Ed Mance, who runs PhoneNumberGuy.com buying up old business phone numbers in bulk and reselling them, told the Washington Post that 305 is one of his best sellers, trailing only Los Angeles's 310 and New York's 212, and he typically prices these secondhand numbers between $299 and $799. The irony, according to Miami New Times' reporting, is that 305 hasn't actually been a guarantee for new registrations in decades: register a new line in Miami-Dade today and you're more likely to end up with 786, or now 645, than the code the city built its identity around.",
 				],
 			},
 			{
 				heading: 'The AI voicemail scam FPL is warning Miami customers about',
 				body: [
-					"Florida Power & Light -- the utility serving most of Miami-Dade -- has been warning customers since May 2026 about a wave of AI-generated scam voicemails impersonating its billing department. One recorded message opens: \"The state of Florida has recently changed its efficiency standards. Your house has been flagged for an energy compliance review.\" Another, using a fabricated employee name, says: \"Hey it's Will from Florida Power and Light compliance department... you can get up to $3,000 dollars in energy rebates and possibly a new air conditioner at no cost\" if the customer calls back immediately.",
-					"None of it is real, and it's a different threat from the caller-ID spoofing covered in [is there really a 'scam area code'?](/scam-area-codes/) -- this scam doesn't fake a phone number at all, it fakes an entire voicemail from a fictional employee. FPL says the calls are engineered to extract personal information and payment once a customer dials the number left in the voicemail. The company's actual policy rules out everything the scam relies on: FPL states it will never ask a customer to pay outside its own authorized payment channels, and it will never show up at a home or business, or otherwise demand, payment through a prepaid card, cryptocurrency, or services like Zelle, Cash App, or Venmo to avoid disconnection. If an account is genuinely past due, FPL's own process is to leave a prerecorded message and send a letter asking the customer to call FPL -- not the reverse. Anyone who gets one of these calls should hang up and dial the number printed on an actual FPL bill, not the one left in the voicemail.",
+					"Florida Power & Light, the utility serving most of Miami-Dade, has been warning customers since May 2026 about a wave of AI-generated scam voicemails impersonating its billing department. One recorded message opens: \"The state of Florida has recently changed its efficiency standards. Your house has been flagged for an energy compliance review.\" Another, using a fabricated employee name, says: \"Hey it's Will from Florida Power and Light compliance department... you can get up to $3,000 dollars in energy rebates and possibly a new air conditioner at no cost\" if the customer calls back immediately.",
+					"None of it is real, and it's a different threat from the caller-ID spoofing covered in [is there really a 'scam area code'?](/scam-area-codes/): this scam doesn't fake a phone number at all, it fakes an entire voicemail from a fictional employee. FPL says the calls are engineered to extract personal information and payment once a customer dials the number left in the voicemail. The company's actual policy rules out everything the scam relies on: FPL states it will never ask a customer to pay outside its own authorized payment channels, and it will never show up at a home or business, or otherwise demand, payment through a prepaid card, cryptocurrency, or services like Zelle, Cash App, or Venmo to avoid disconnection. If an account is genuinely past due, FPL's own process is to leave a prerecorded message and send a letter asking the customer to call FPL, not the reverse. Anyone who gets one of these calls should hang up and dial the number printed on an actual FPL bill, not the one left in the voicemail.",
 				],
 			},
 		],
@@ -2365,12 +2365,12 @@ export const guides: Guide[] = [
 			{
 				question: 'How many area codes does Miami have?',
 				answer:
-					"Three: 305 (1947, the original), 786 (1998), and 645 (2023). All three cover the identical Miami-Dade County and Florida Keys footprint -- which code a number carries depends only on when it was assigned.",
+					"Three: 305 (1947, the original), 786 (1998), and 645 (2023). All three cover the identical Miami-Dade County and Florida Keys footprint; which code a number carries depends only on when it was assigned.",
 			},
 			{
 				question: 'Can I still get a phone number with a 305 area code?',
 				answer:
-					"Technically yes -- 305 hasn't run out of assignable numbers -- but in practice most newly registered lines in Miami-Dade are handed 786 or 645 today rather than 305.",
+					"Technically yes (305 hasn't run out of assignable numbers), but in practice most newly registered lines in Miami-Dade are handed 786 or 645 today rather than 305.",
 			},
 			{
 				question: 'Why is Miami nicknamed "the 305"?',
@@ -2380,12 +2380,12 @@ export const guides: Guide[] = [
 			{
 				question: 'Do I need to dial 10 digits for a local Miami call?',
 				answer:
-					"Yes. Once 786 overlaid 305 in 1998, the combined numbering plan area required area code plus number for every local call -- the standard rule in any overlay region, including Miami's.",
+					"Yes. Once 786 overlaid 305 in 1998, the combined numbering plan area required area code plus number for every local call, the standard rule in any overlay region, including Miami's.",
 			},
 			{
 				question: "What's the FPL phone scam Miami-area customers should know about?",
 				answer:
-					'Since May 2026, AI-generated voicemails have impersonated FPL\'s "compliance department," claiming a home was flagged for an "energy compliance review" and dangling up to $3,000 in rebates or a free air conditioner to get customers to call back and hand over payment or personal information. FPL never demands payment this way -- the real company only contacts past-due accounts by prerecorded message and letter, and never asks for the payment methods (prepaid cards, cryptocurrency, Zelle, Cash App, Venmo) the scam relies on.',
+					'Since May 2026, AI-generated voicemails have impersonated FPL\'s "compliance department," claiming a home was flagged for an "energy compliance review" and dangling up to $3,000 in rebates or a free air conditioner to get customers to call back and hand over payment or personal information. FPL never demands payment this way. The real company only contacts past-due accounts by prerecorded message and letter, and never asks for the payment methods (prepaid cards, cryptocurrency, Zelle, Cash App, Venmo) the scam relies on.',
 			},
 		],
 		sources: [
@@ -2410,28 +2410,28 @@ export const guides: Guide[] = [
 		category: 'Counties',
 		title: 'What County Is Chicago In?',
 		description:
-			"All 84 of Chicago's ZIP codes sit inside Cook County -- only the city's O'Hare strip dips into DuPage. Cook is the second-most-populous US county, and it's growing again, not losing ground to Harris County.",
+			"All 84 of Chicago's ZIP codes sit inside Cook County; only the city's O'Hare strip dips into DuPage. Cook is the second-most-populous US county, and it's growing again, not losing ground to Harris County.",
 		published: '2026-08-03',
 		updated: '2026-08-18',
 		coreSummary:
-			"Every one of the 84 ZIP codes USPS assigns to Chicago sits in Cook County, Illinois -- the only exception is the city's own municipal boundary, which picked up a small, uninhabited strip of DuPage County when Chicago annexed O'Hare Airport in 1956. Cook County was established in 1831, has Chicago as its seat, and contains 135 separate incorporated municipalities beyond Chicago itself. It's the second-most-populous county in the US at roughly 5.19 million people, and it has been growing again since 2023 after losing residents earlier in the decade -- Harris County, Texas (Houston) is the fastest-growing large county nationally and has narrowed the gap, though it still trails Cook by roughly 150,000 people.",
+			"Every one of the 84 ZIP codes USPS assigns to Chicago sits in Cook County, Illinois. The only exception is the city's own municipal boundary, which picked up a small, uninhabited strip of DuPage County when Chicago annexed O'Hare Airport in 1956. Cook County was established in 1831, has Chicago as its seat, and contains 135 separate incorporated municipalities beyond Chicago itself. It's the second-most-populous county in the US at roughly 5.19 million people, and it has been growing again since 2023 after losing residents earlier in the decade. Harris County, Texas (Houston) is the fastest-growing large county nationally and has narrowed the gap, though it still trails Cook by roughly 150,000 people.",
 		sections: [
 			{
 				heading: 'Chicago is entirely inside Cook County',
 				body: [
-					"All 84 ZIP codes with Chicago as their primary USPS place name sit inside Cook County, Illinois (see the [full Chicago ZIP code list](/chicago-zip-codes/)), and Cook County has been Chicago's home county since the county's creation in 1831 by the Illinois state legislature -- the 54th county established in the state. The one asterisk is the city's own municipal boundary, not its ZIP codes: when Chicago annexed O'Hare Airport in 1956, the deal pulled in a small, uninhabited strip on the airport's southwest edge that actually sits in DuPage County. It's a narrower crossing than [Atlanta's split between Fulton and DeKalb](/atlanta-zip-codes/) -- no Chicago ZIP code or resident is affected, just airport land -- but it means \"Chicago never crosses a county line\" isn't quite literally true.",
+					"All 84 ZIP codes with Chicago as their primary USPS place name sit inside Cook County, Illinois (see the [full Chicago ZIP code list](/chicago-zip-codes/)), and Cook County has been Chicago's home county since the county's creation in 1831 by the Illinois state legislature, the 54th county established in the state. The one asterisk is the city's own municipal boundary, not its ZIP codes: when Chicago annexed O'Hare Airport in 1956, the deal pulled in a small, uninhabited strip on the airport's southwest edge that actually sits in DuPage County. It's a narrower crossing than [Atlanta's split between Fulton and DeKalb](/atlanta-zip-codes/) (no Chicago ZIP code or resident is affected, just airport land), but it means \"Chicago never crosses a county line\" isn't quite literally true.",
 				],
 			},
 			{
 				heading: 'Cook County is much bigger than just Chicago',
 				body: [
-					"Chicago is Cook County's seat and by far its largest city, but the county contains 135 separate incorporated municipalities in total -- 23 cities, 1 town, and 111 villages, either entirely or partially within its boundaries. Well-known Chicago suburbs like Evanston, Oak Park, Cicero, and Skokie are all their own separate municipalities inside Cook County, distinct from Chicago itself even though they're commonly lumped together as \"Chicago\" in casual conversation.",
+					"Chicago is Cook County's seat and by far its largest city, but the county contains 135 separate incorporated municipalities in total: 23 cities, 1 town, and 111 villages, either entirely or partially within its boundaries. Well-known Chicago suburbs like Evanston, Oak Park, Cicero, and Skokie are all their own separate municipalities inside Cook County, distinct from Chicago itself even though they're commonly lumped together as \"Chicago\" in casual conversation.",
 				],
 			},
 			{
 				heading: "Cook County is the second-largest US county by population, and growing again",
 				body: [
-					'Cook County\'s population of roughly 5.19 million makes it the second-most-populous county in the country, behind only Los Angeles County, California. Cook lost residents through the pandemic years, bottoming out at about 5.13 million in 2022, but it has grown every year since -- the Census Bureau\'s most recent estimate (July 2025) puts the county about 84,000 below its 2020 count, not still falling. [Harris County, Texas](/what-county-is-houston-in/) (Houston\'s home county) has been the fastest-growing large county in the US, adding roughly 106,000 residents in a single year (2023 to 2024), and it has narrowed the distance to Cook -- but Cook still led by about 150,000 people as of the latest count, and whether Harris eventually overtakes it is not yet a settled trend.',
+					'Cook County\'s population of roughly 5.19 million makes it the second-most-populous county in the country, behind only Los Angeles County, California. Cook lost residents through the pandemic years, bottoming out at about 5.13 million in 2022, but it has grown every year since. The Census Bureau\'s most recent estimate (July 2025) puts the county about 84,000 below its 2020 count, not still falling. [Harris County, Texas](/what-county-is-houston-in/) (Houston\'s home county) has been the fastest-growing large county in the US, adding roughly 106,000 residents in a single year (2023 to 2024), and it has narrowed the distance to Cook. But Cook still led by about 150,000 people as of the latest count, and whether Harris eventually overtakes it is not yet a settled trend.',
 				],
 			},
 		],
@@ -2439,7 +2439,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What county is Chicago in?',
 				answer:
-					"Chicago's ZIP codes are entirely inside Cook County -- all 84 of the city's ZIP codes fall within it, with no split into a neighboring county. (The city's own boundary does dip into a small, uninhabited corner of DuPage County at O'Hare Airport, but that sliver isn't part of any Chicago ZIP code.)",
+					"Chicago's ZIP codes are entirely inside Cook County: all 84 of the city's ZIP codes fall within it, with no split into a neighboring county. (The city's own boundary does dip into a small, uninhabited corner of DuPage County at O'Hare Airport, but that sliver isn't part of any Chicago ZIP code.)",
 			},
 			{
 				question: 'What is the county seat of Cook County?',
@@ -2448,13 +2448,13 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Cook County the same as Chicago?',
 				answer:
-					"No -- Cook County is much larger and contains 135 separate municipalities beyond Chicago itself, including well-known suburbs like Evanston, Oak Park, and Cicero.",
+					"No. Cook County is much larger and contains 135 separate municipalities beyond Chicago itself, including well-known suburbs like Evanston, Oak Park, and Cicero.",
 			},
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Cook County, Illinois -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Cook_County,_Illinois' },
-			{ label: "O'Hare, Chicago -- Wikipedia (community area straddling Cook and DuPage counties)", url: 'https://en.wikipedia.org/wiki/O%27Hare,_Chicago' },
+			{ label: 'Cook County, Illinois (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Cook_County,_Illinois' },
+			{ label: "O'Hare, Chicago (Wikipedia; community area straddling Cook and DuPage counties)", url: 'https://en.wikipedia.org/wiki/O%27Hare,_Chicago' },
 			{ label: 'US Census Bureau: Vintage 2025 population estimates for counties (April 2020 to July 2025)', url: 'https://www.census.gov/newsroom/press-releases/2026/2025-popest-metro-micro-counties.html' },
 		],
 	},
@@ -2463,29 +2463,29 @@ export const guides: Guide[] = [
 		category: 'Counties',
 		title: 'What County Is Houston In?',
 		description:
-			"Houston's 178 ZIP codes sit entirely inside Harris County -- only small annexed strips of the city itself dip into Fort Bend and Montgomery. Harris is closing the population gap on Chicago's Cook County.",
+			"Houston's 178 ZIP codes sit entirely inside Harris County; only small annexed strips of the city itself dip into Fort Bend and Montgomery. Harris is closing the population gap on Chicago's Cook County.",
 		published: '2026-08-03',
 		updated: '2026-08-20',
 		coreSummary:
-			"Every one of the 178 ZIP codes USPS assigns to Houston sits in Harris County, Texas. Houston's actual city limits are a little wider than that: annexation over the decades has pulled small pieces of the city into Fort Bend and Montgomery counties too. Harris County itself was founded in December 1836, with Houston named its county seat that same month. It's currently the third-most-populous county in the US at roughly 5.05 million people and is growing faster than any other large county in the country -- narrowing the gap with Cook County, Illinois (Chicago), though Cook still held a lead of roughly 150,000 people as of the latest Census Bureau estimate.",
+			"Every one of the 178 ZIP codes USPS assigns to Houston sits in Harris County, Texas. Houston's actual city limits are a little wider than that: annexation over the decades has pulled small pieces of the city into Fort Bend and Montgomery counties too. Harris County itself was founded in December 1836, with Houston named its county seat that same month. It's currently the third-most-populous county in the US at roughly 5.05 million people and is growing faster than any other large county in the country, narrowing the gap with Cook County, Illinois (Chicago), though Cook still held a lead of roughly 150,000 people as of the latest Census Bureau estimate.",
 		sections: [
 			{
 				heading: 'Houston is entirely inside Harris County',
 				body: [
-					"Every one of the 178 ZIP codes USPS lists with Houston as the primary place name sits inside Harris County, Texas (see the [full Houston ZIP code list](/houston-zip-codes/)) -- no cross-county split at the ZIP level the way some major US cities have. That distinction only holds at the ZIP-code level, though. Houston's actual city limits are wider: annexation over the decades pulled small slices of southwest and northeast Houston into Fort Bend and Montgomery counties, so the city itself crosses county lines even though none of its ZIP codes do. Harris County was founded on December 22, 1836, and organized the following March; Houston was named the county seat that same December, and has held the role ever since. The county takes its name from John Richardson Harris, who founded the town of Harrisburg on Buffalo Bayou a decade earlier, in 1826.",
+					"Every one of the 178 ZIP codes USPS lists with Houston as the primary place name sits inside Harris County, Texas (see the [full Houston ZIP code list](/houston-zip-codes/)), with no cross-county split at the ZIP level the way some major US cities have. That distinction only holds at the ZIP-code level, though. Houston's actual city limits are wider: annexation over the decades pulled small slices of southwest and northeast Houston into Fort Bend and Montgomery counties, so the city itself crosses county lines even though none of its ZIP codes do. Harris County was founded on December 22, 1836, and organized the following March; Houston was named the county seat that same December, and has held the role ever since. The county takes its name from John Richardson Harris, who founded the town of Harrisburg on Buffalo Bayou a decade earlier, in 1826.",
 				],
 			},
 			{
 				heading: 'Harris County is closing in on the second-largest spot in the US',
 				body: [
-					"Harris County's population of roughly 5.05 million currently ranks third nationally, behind Los Angeles County, California and [Cook County, Illinois (Chicago)](/what-county-is-chicago-in/). Harris County added about 106,000 residents in a single 12-month period (2023 to 2024) -- more than any other county in the country -- and it has kept growing faster than Cook County since, even though Cook itself returned to growth after a pandemic-era dip rather than continuing to shrink. Harris still trailed Cook by roughly 150,000 people as of the Census Bureau's most recent estimate (July 2025); whether that gap closes further is not yet a settled trend.",
+					"Harris County's population of roughly 5.05 million currently ranks third nationally, behind Los Angeles County, California and [Cook County, Illinois (Chicago)](/what-county-is-chicago-in/). Harris County added about 106,000 residents in a single 12-month period (2023 to 2024), more than any other county in the country, and it has kept growing faster than Cook County since, even though Cook itself returned to growth after a pandemic-era dip rather than continuing to shrink. Harris still trailed Cook by roughly 150,000 people as of the Census Bureau's most recent estimate (July 2025); whether that gap closes further is not yet a settled trend.",
 				],
 			},
 		],
 		faq: [
 			{
 				question: 'Is Houston in Harris County?',
-				answer: "Yes, for ZIP codes -- every one sits inside Harris County. Houston's actual city limits are slightly wider, though: annexation has pulled small pieces of the city into Fort Bend and Montgomery counties over the years, just not any area with a Houston-named ZIP code.",
+				answer: "Yes, for ZIP codes: every one sits inside Harris County. Houston's actual city limits are slightly wider, though: annexation has pulled small pieces of the city into Fort Bend and Montgomery counties over the years, just not any area with a Houston-named ZIP code.",
 			},
 			{
 				question: 'When was Harris County founded?',
@@ -2498,8 +2498,8 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Harris County, Texas -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Harris_County,_Texas' },
-			{ label: 'Houston -- Wikipedia (municipal boundary spans Harris, Fort Bend, and Montgomery counties)', url: 'https://en.wikipedia.org/wiki/Houston' },
+			{ label: 'Harris County, Texas (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Harris_County,_Texas' },
+			{ label: 'Houston (Wikipedia; municipal boundary spans Harris, Fort Bend, and Montgomery counties)', url: 'https://en.wikipedia.org/wiki/Houston' },
 			{ label: 'Axios Houston: Harris County poised to become 2nd most populous county', url: 'https://www.axios.com/local/houston/2025/03/13/harris-county-second-largest-county-by-population-houston-migration-boom' },
 			{ label: 'US Census Bureau: Vintage 2025 population estimates for counties (April 2020 to July 2025)', url: 'https://www.census.gov/newsroom/press-releases/2026/2025-popest-metro-micro-counties.html' },
 		],
@@ -2513,16 +2513,16 @@ export const guides: Guide[] = [
 		category: 'International Dialing',
 		title: 'How to Call Mexico From the US (2026 Format)',
 		description:
-			"011 + 52 + the 10-digit number -- and since Mexico's 2019 dialing reform, mobile numbers no longer need an extra digit. A lot of guides online still describe the old, retired format.",
+			"011 + 52 + the 10-digit number, and since Mexico's 2019 dialing reform, mobile numbers no longer need an extra digit. A lot of guides online still describe the old, retired format.",
 		published: '2026-08-03',
 		updated: '2026-08-03',
 		coreSummary:
-			"Dial 011, then 52 (Mexico's country code), then the 10-digit local number -- the same format for landlines and mobiles alike. Mexico eliminated its old 01/044/045 prefix system in a 2019 dialing reform, so any guide still telling you to add an extra digit for a Mexican cell phone is describing a format that stopped working years ago.",
+			"Dial 011, then 52 (Mexico's country code), then the 10-digit local number, the same format for landlines and mobiles alike. Mexico eliminated its old 01/044/045 prefix system in a 2019 dialing reform, so any guide still telling you to add an extra digit for a Mexican cell phone is describing a format that stopped working years ago.",
 		sections: [
 			{
 				heading: 'The current format',
 				body: [
-					"Calling Mexico from a US landline: dial 011, then 52, then the 10-digit number. From a mobile phone or most VoIP services, you can substitute a \"+\" for the 011 -- so +52 followed by the 10 digits works the same way.",
+					"Calling Mexico from a US landline: dial 011, then 52, then the 10-digit number. From a mobile phone or most VoIP services, you can substitute a \"+\" for the 011, so +52 followed by the 10 digits works the same way.",
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
@@ -2537,7 +2537,7 @@ export const guides: Guide[] = [
 			{
 				heading: "Mexico's 2019 reform: no more extra digit for mobile numbers",
 				body: [
-					'Before August 2019, calling a Mexican mobile number required inserting an extra "1" after the 52 country code, and domestic Mexican calls used separate 01, 044, and 045 prefixes depending on whether the call was long-distance or to a cell phone. Mexico\'s telecom regulator eliminated all of that in the 2019 reform: every Mexican number, landline or mobile, is now dialed the same simple way, with no extra digit and no prefix distinction. Plenty of "how to call Mexico" guides published before 2019 are still online and still describe the retired format -- if a source tells you to dial an extra 1 for a Mexican cell phone, it\'s out of date.',
+					'Before August 2019, calling a Mexican mobile number required inserting an extra "1" after the 52 country code, and domestic Mexican calls used separate 01, 044, and 045 prefixes depending on whether the call was long-distance or to a cell phone. Mexico\'s telecom regulator eliminated all of that in the 2019 reform: every Mexican number, landline or mobile, is now dialed the same simple way, with no extra digit and no prefix distinction. Plenty of "how to call Mexico" guides published before 2019 are still online and still describe the retired format. If a source tells you to dial an extra 1 for a Mexican cell phone, it\'s out of date.',
 				],
 			},
 			{
@@ -2549,7 +2549,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Do I still need to add a 1 to call a Mexican cell phone?',
 				answer:
-					"No. Mexico's August 2019 dialing reform eliminated the extra digit for mobile numbers -- landlines and cell phones are now dialed with the exact same 011 + 52 + 10-digit format.",
+					"No. Mexico's August 2019 dialing reform eliminated the extra digit for mobile numbers; landlines and cell phones are now dialed with the exact same 011 + 52 + 10-digit format.",
 			},
 			{
 				question: "What is Mexico's country code?",
@@ -2557,7 +2557,7 @@ export const guides: Guide[] = [
 			},
 			{
 				question: 'Can I just dial +52 instead of 011 52?',
-				answer: 'Yes, on a mobile phone or most VoIP services -- the "+" substitutes for the 011 exit code and works identically.',
+				answer: 'Yes, on a mobile phone or most VoIP services: the "+" substitutes for the 011 exit code and works identically.',
 			},
 		],
 		sources: [
@@ -2569,16 +2569,16 @@ export const guides: Guide[] = [
 		category: 'International Dialing',
 		title: 'The US Country Code Is +1, and 19 Other Places Share It',
 		description:
-			"+1 isn't unique to the United States -- Canada and 18 Caribbean nations and territories dial out under the same code, and most of them didn't get their own area code until the 1990s.",
+			"+1 isn't unique to the United States. Canada and 18 Caribbean nations and territories dial out under the same code, and most of them didn't get their own area code until the 1990s.",
 		published: '2026-08-05',
 		updated: '2026-08-25',
 		coreSummary:
-			"The US country code is +1, but +1 alone doesn't tell you a number is American. Twenty places share it under the North American Numbering Plan (NANP): the US and its territories, Canada, and 18 Caribbean nations and territories, from the Bahamas to Trinidad and Tobago. Most of those islands didn't get their own area code until the 1990s -- before that, calls to more than a dozen of them all funneled through one shared area code, 809. The only way to tell a US number from a Bahamian, Jamaican, or Bermudian one dialed under the same +1 is the three-digit area code that follows it.",
+			"The US country code is +1, but +1 alone doesn't tell you a number is American. Twenty places share it under the North American Numbering Plan (NANP): the US and its territories, Canada, and 18 Caribbean nations and territories, from the Bahamas to Trinidad and Tobago. Most of those islands didn't get their own area code until the 1990s. Before that, calls to more than a dozen of them all funneled through one shared area code, 809. The only way to tell a US number from a Bahamian, Jamaican, or Bermudian one dialed under the same +1 is the three-digit area code that follows it.",
 		sections: [
 			{
 				heading: '+1 belongs to 20 places, not just the United States',
 				body: [
-					"NANPA, the organization that assigns every area code used across the US, Canada, and the Caribbean, counts 20 member countries and territories that all dial out under the shared +1 country code: the United States and its territories, Canada, and 18 Caribbean nations and territories, from Anguilla to Turks and Caicos. Nothing about a +1 number's format signals which of those 20 it actually belongs to -- the country code by itself only narrows a call down to North America and the Caribbean, not to a specific country. The three-digit area code that follows +1 is what actually does that work, the same way it does inside the US (see [how US area codes actually work](/how-do-area-codes-work/)).",
+					"NANPA, the organization that assigns every area code used across the US, Canada, and the Caribbean, counts 20 member countries and territories that all dial out under the shared +1 country code: the United States and its territories, Canada, and 18 Caribbean nations and territories, from Anguilla to Turks and Caicos. Nothing about a +1 number's format signals which of those 20 it actually belongs to. The country code by itself only narrows a call down to North America and the Caribbean, not to a specific country. The three-digit area code that follows +1 is what actually does that work, the same way it does inside the US (see [how US area codes actually work](/how-do-area-codes-work/)).",
 				],
 				table: {
 					caption: 'NANP members outside the US and Canada, and their area code(s)',
@@ -2615,14 +2615,14 @@ export const guides: Guide[] = [
 			{
 				heading: 'How to actually dial a US number from abroad',
 				body: [
-					"Calling a US number from outside the NANP works the same way as calling any other +1 destination: dial your own country's international exit code, then 1, then the 10-digit US number (area code plus the 7-digit line). Most of the world dials out with 00 as that exit code -- the US and Canada are two of the few places that use 011 instead, which only matters if you're calling out of North America, not into it. On a mobile phone or most VoIP apps, a leading + does the same job as the exit code and works from almost anywhere.",
+					"Calling a US number from outside the NANP works the same way as calling any other +1 destination: dial your own country's international exit code, then 1, then the 10-digit US number (area code plus the 7-digit line). Most of the world dials out with 00 as that exit code; the US and Canada are two of the few places that use 011 instead, which only matters if you're calling out of North America, not into it. On a mobile phone or most VoIP apps, a leading + does the same job as the exit code and works from almost anywhere.",
 					'A US number written as (415) 555-0142 becomes 00 1 415 555 0142 when dialed from the UK or most of the rest of the world, or +1 415 555 0142 from a mobile.',
 				],
 			},
 			{
 				heading: "A +1 number isn't automatically American, and it isn't automatically safe either",
 				body: [
-					'The shared +1 code has a real practical downside: eight of the Caribbean NANP codes above -- 268, 284, 473, 649, 664, 767, 809/829/849, and 876 -- are the specific area codes tied to the "one ring" scam, where an autodialer calls once and hangs up, hoping the recipient calls back into a premium-rate international line. See [Is There Really Such a Thing as a \'Scam Area Code\'?](/scam-area-codes/) for how that scam works and what the FCC and FTC recommend doing about it.',
+					'The shared +1 code has a real practical downside: eight of the Caribbean NANP codes above (268, 284, 473, 649, 664, 767, 809/829/849, and 876) are the specific area codes tied to the "one ring" scam, where an autodialer calls once and hangs up, hoping the recipient calls back into a premium-rate international line. See [Is There Really Such a Thing as a \'Scam Area Code\'?](/scam-area-codes/) for how that scam works and what the FCC and FTC recommend doing about it.',
 				],
 			},
 		],
@@ -2630,17 +2630,17 @@ export const guides: Guide[] = [
 			{
 				question: 'What is the US country code?',
 				answer:
-					"+1 -- but it isn't unique to the United States. Canada and 18 Caribbean nations and territories, from the Bahamas to Trinidad and Tobago, dial out under the same +1 code as part of the North American Numbering Plan.",
+					"+1, though it isn't unique to the United States. Canada and 18 Caribbean nations and territories, from the Bahamas to Trinidad and Tobago, dial out under the same +1 code as part of the North American Numbering Plan.",
 			},
 			{
 				question: 'How do I dial a US phone number from another country?',
 				answer:
-					"Most of the world dials your own country's exit code (00, in most places) before 1, then the full 10-digit US number including the area code. Callers from Canada skip the exit code entirely -- Canada and the US share the same numbering plan, so a Canada-to-US call is just 1 plus the 10-digit number, identical to a domestic long-distance call. A leading + substitutes for the exit code on most mobile phones.",
+					"Most of the world dials your own country's exit code (00, in most places) before 1, then the full 10-digit US number including the area code. Callers from Canada skip the exit code entirely: Canada and the US share the same numbering plan, so a Canada-to-US call is just 1 plus the 10-digit number, identical to a domestic long-distance call. A leading + substitutes for the exit code on most mobile phones.",
 			},
 			{
 				question: 'If a phone number starts with +1, is it definitely from the US?',
 				answer:
-					'No. +1 only narrows a number down to one of 20 North American Numbering Plan members -- the US, Canada, or 18 Caribbean nations and territories. The three-digit area code that follows +1 is what actually identifies the country.',
+					'No. +1 only narrows a number down to one of 20 North American Numbering Plan members: the US, Canada, or 18 Caribbean nations and territories. The three-digit area code that follows +1 is what actually identifies the country.',
 			},
 		],
 		sources: [
@@ -2661,7 +2661,7 @@ export const guides: Guide[] = [
 		published: '2026-08-06',
 		updated: '2026-08-06',
 		coreSummary:
-			"Dial 011, then 63 (the Philippines' country code), then the area or mobile code with its leading 0 dropped, then the rest of the local number. A Manila landline written domestically as (02) 8123 4567 becomes 011 63 2 8123 4567; a mobile number written as 0917 123 4567 becomes 011 63 917 123 4567. The leading 0 on Philippine area and mobile codes is a domestic trunk prefix -- the same rule that applies across most of the world -- and it's dropped, not replaced, when the +63 country code takes its place.",
+			"Dial 011, then 63 (the Philippines' country code), then the area or mobile code with its leading 0 dropped, then the rest of the local number. A Manila landline written domestically as (02) 8123 4567 becomes 011 63 2 8123 4567; a mobile number written as 0917 123 4567 becomes 011 63 917 123 4567. The leading 0 on Philippine area and mobile codes is a domestic trunk prefix (the same rule that applies across most of the world), and it's dropped, not replaced, when the +63 country code takes its place.",
 		sections: [
 			{
 				heading: 'Dialing the Philippines: country code 63, step by step',
@@ -2682,21 +2682,21 @@ export const guides: Guide[] = [
 			{
 				heading: "Manila's one-digit area code, and the 8-digit landline switch nobody advertised",
 				body: [
-					"Metro Manila's area code is just \"2\" -- written domestically as 02, it's the only single-digit area code left in the Philippines, a legacy of the capital region getting numbered first, before the rest of the country's multi-digit scheme was assigned. Every other Philippine area code runs two to four digits.",
-					"What's easy to miss, including in a lot of older \"how to call the Philippines\" guides still online, is that Metro Manila landlines quietly grew an eighth digit in 2019. The National Telecommunications Commission (NTC) ordered the migration in Memorandum Order No. 10-10-2017, originally set for March 2019 and then pushed to October 6, 2019 to give banks and card issuers time to update their systems. Each carrier inserted its own single \"PTE\" (public telecommunications entity) identifier digit at the front of the old 7-digit number -- Globe's assigned digit was 7, so an existing number like (02) 576-4567 became (02) 7576-4567 overnight, with no change to the area code itself. The area code 02 also covers a handful of towns just outside Metro Manila proper, including parts of Rizal province, San Pedro in Laguna, and Bacoor in Cavite -- calling any of those numbers from the US uses the identical 011 63 2 format.",
+					"Metro Manila's area code is just \"2.\" Written domestically as 02, it's the only single-digit area code left in the Philippines, a legacy of the capital region getting numbered first, before the rest of the country's multi-digit scheme was assigned. Every other Philippine area code runs two to four digits.",
+					"What's easy to miss, including in a lot of older \"how to call the Philippines\" guides still online, is that Metro Manila landlines quietly grew an eighth digit in 2019. The National Telecommunications Commission (NTC) ordered the migration in Memorandum Order No. 10-10-2017, originally set for March 2019 and then pushed to October 6, 2019 to give banks and card issuers time to update their systems. Each carrier inserted its own single \"PTE\" (public telecommunications entity) identifier digit at the front of the old 7-digit number. Globe's assigned digit was 7, so an existing number like (02) 576-4567 became (02) 7576-4567 overnight, with no change to the area code itself. The area code 02 also covers a handful of towns just outside Metro Manila proper, including parts of Rizal province, San Pedro in Laguna, and Bacoor in Cavite; calling any of those numbers from the US uses the identical 011 63 2 format.",
 				],
 			},
 			{
 				heading: 'Mobile numbers all start with 9, and the leading 0 is not part of the number',
 				body: [
-					'Philippine mobile numbers are reserved under prefixes starting with 9 -- written domestically with a leading trunk 0, as in 0917 123 4567. That 0 is dialing plan housekeeping, not part of the subscriber\'s actual number, which is why it disappears rather than getting replaced by anything when you call from abroad: 0917 123 4567 becomes 011 63 917 123 4567, an even 10 digits after the country code, matching the area-code rule exactly.',
+					'Philippine mobile numbers are reserved under prefixes starting with 9, written domestically with a leading trunk 0, as in 0917 123 4567. That 0 is dialing plan housekeeping, not part of the subscriber\'s actual number, which is why it disappears rather than getting replaced by anything when you call from abroad: 0917 123 4567 becomes 011 63 917 123 4567, an even 10 digits after the country code, matching the area-code rule exactly.',
 				],
 			},
 			{
 				heading: 'Worked examples',
 				body: [
 					"A Metro Manila landline formatted domestically as (02) 8123 4567 becomes 011 63 2 8123 4567 from a US landline, or +63 2 8123 4567 from a mobile. A Philippine mobile number written as 0917 123 4567 becomes 011 63 917 123 4567, or +63 917 123 4567.",
-					"The Philippines shares this exit-code-plus-country-code shape with most international destinations -- see [how to call Mexico from the US](/how-to-call-mexico-from-us/) for a comparison, and [the US country code](/us-country-code/) for the same drop-the-leading-digit logic working in the other direction, into the US instead of out of it (most callers outside North America dial 00, not 011, before the US's own +1).",
+					"The Philippines shares this exit-code-plus-country-code shape with most international destinations; see [how to call Mexico from the US](/how-to-call-mexico-from-us/) for a comparison, and [the US country code](/us-country-code/) for the same drop-the-leading-digit logic working in the other direction, into the US instead of out of it (most callers outside North America dial 00, not 011, before the US's own +1).",
 				],
 			},
 		],
@@ -2708,12 +2708,12 @@ export const guides: Guide[] = [
 			{
 				question: 'Do I need to add a PTE digit myself when calling a Metro Manila landline?',
 				answer:
-					"No. The extra digit that Metro Manila landlines gained in the NTC's October 2019 migration (for example, Globe's 7) is already part of the current 8-digit local number -- you dial it as part of step 4, the same as any other digit. There's no separate digit to add on top of what the number's owner gives you.",
+					"No. The extra digit that Metro Manila landlines gained in the NTC's October 2019 migration (for example, Globe's 7) is already part of the current 8-digit local number: you dial it as part of step 4, the same as any other digit. There's no separate digit to add on top of what the number's owner gives you.",
 			},
 			{
 				question: 'Can I just dial +63 instead of 011 63?',
 				answer:
-					'Yes -- on a mobile phone or most VoIP apps, holding down "0" or tapping "+" gets you the same result as dialing 011, so +63 917 123 4567 reaches the same number as 011 63 917 123 4567.',
+					'Yes. On a mobile phone or most VoIP apps, holding down "0" or tapping "+" gets you the same result as dialing 011, so +63 917 123 4567 reaches the same number as 011 63 917 123 4567.',
 			},
 		],
 		sources: [
@@ -2727,11 +2727,11 @@ export const guides: Guide[] = [
 		category: 'International Dialing',
 		title: 'How to Call Australia From the US (Country Code +61)',
 		description:
-			"Dial 011, then 61, then the area code with its leading 0 dropped -- one of just four area codes that cover the entire country, the last survivors of a renumbering that retired dozens of others.",
+			"Dial 011, then 61, then the area code with its leading 0 dropped, one of just four area codes that cover the entire country, the last survivors of a renumbering that retired dozens of others.",
 		published: '2026-08-20',
 		updated: '2026-08-20',
 		coreSummary:
-			"Dial 011, then 61 (Australia's country code), then the area code with its leading 0 dropped, then the local number. Australia's landlines run on just four area codes for the whole country -- 02 for Sydney and the Central East region, 03 for Melbourne and the South-east (Tasmania included), 07 for Brisbane and the rest of Queensland, and 08 for Adelaide, Perth, and the Northern Territory -- the survivors of a 1994-1998 renumbering that retired dozens of smaller codes, including a four-digit exception unique to Kangaroo Island. Mobile numbers, written domestically as 04xx, follow the identical drop-the-0 rule as landlines.",
+			"Dial 011, then 61 (Australia's country code), then the area code with its leading 0 dropped, then the local number. Australia's landlines run on just four area codes for the whole country: 02 for Sydney and the Central East region, 03 for Melbourne and the South-east (Tasmania included), 07 for Brisbane and the rest of Queensland, and 08 for Adelaide, Perth, and the Northern Territory. They're the survivors of a 1994-1998 renumbering that retired dozens of smaller codes, including a four-digit exception unique to Kangaroo Island. Mobile numbers, written domestically as 04xx, follow the identical drop-the-0 rule as landlines.",
 		sections: [
 			{
 				heading: 'Dialing Australia: country code 61, step by step',
@@ -2752,8 +2752,8 @@ export const guides: Guide[] = [
 			{
 				heading: 'From dozens of area codes to four: the 1994-1998 renumbering',
 				body: [
-					"Before the mid-1990s, Australia's phone numbers looked nothing like today's system. By 1994 the country had six two-digit area codes for its capitals -- 02 (Sydney), 03 (Melbourne), 06 (Canberra), 07 (Brisbane), 08 (Adelaide), and 09 (Perth) -- plus 48 three-digit codes covering everywhere from Hobart to mid-west Western Australia, and one lone four-digit holdout: Kangaroo Island's 0848, which had never been folded into a larger code.",
-					"Regulators spent 1994 through 1998 collapsing that whole patchwork into the four regional codes still in use today, lengthening every local number by a digit or two along the way and rolling the process out area by area to avoid two different subscribers ending up with the same number mid-transition. The first conversion landed in the Sydney suburb of Mona Vale on 25 July 1994; the last happened more than three years later, on 10 November 1997, when Queensland's 070, 071, 076, 077, and 079 codes all folded into the modern (07) 4yxx xxxx format. In most cases the old area code got absorbed straight into the new local number -- Canberra's (06) 2xx xxxx became (02) 62xx xxxx, and the Northern Territory's (089) xx xxxx became (08) 89xx xxxx. Sydney and Melbourne, the two largest exchanges, needed a different fix: both added a leading 9 to existing numbers instead. Tasmania lost its own area code entirely, absorbed into Melbourne's 03 range despite being a separate state, and Queensland ended up splitting its numbers across three internal ranges (07 3... for Brisbane, 07 5... for the Gold and Sunshine Coasts, 07 4... for the rest). Until the changeover officially ended on 1 March 1999, callers had to dial the full area code even for calls within their own -- purely to stop numbers from clashing while the changes were still rolling out, a rule that's long gone even though some older guides still repeat it.",
+					"Before the mid-1990s, Australia's phone numbers looked nothing like today's system. By 1994 the country had six two-digit area codes for its capitals: 02 (Sydney), 03 (Melbourne), 06 (Canberra), 07 (Brisbane), 08 (Adelaide), and 09 (Perth), plus 48 three-digit codes covering everywhere from Hobart to mid-west Western Australia, and one lone four-digit holdout: Kangaroo Island's 0848, which had never been folded into a larger code.",
+					"Regulators spent 1994 through 1998 collapsing that whole patchwork into the four regional codes still in use today, lengthening every local number by a digit or two along the way and rolling the process out area by area to avoid two different subscribers ending up with the same number mid-transition. The first conversion landed in the Sydney suburb of Mona Vale on 25 July 1994; the last happened more than three years later, on 10 November 1997, when Queensland's 070, 071, 076, 077, and 079 codes all folded into the modern (07) 4yxx xxxx format. In most cases the old area code got absorbed straight into the new local number: Canberra's (06) 2xx xxxx became (02) 62xx xxxx, and the Northern Territory's (089) xx xxxx became (08) 89xx xxxx. Sydney and Melbourne, the two largest exchanges, needed a different fix: both added a leading 9 to existing numbers instead. Tasmania lost its own area code entirely, absorbed into Melbourne's 03 range despite being a separate state, and Queensland ended up splitting its numbers across three internal ranges (07 3... for Brisbane, 07 5... for the Gold and Sunshine Coasts, 07 4... for the rest). Until the changeover officially ended on 1 March 1999, callers had to dial the full area code even for calls within their own, purely to stop numbers from clashing while the changes were still rolling out, a rule that's long gone even though some older guides still repeat it.",
 				],
 				table: {
 					caption: "Australia's four area codes today",
@@ -2769,15 +2769,15 @@ export const guides: Guide[] = [
 			{
 				heading: 'Mobile numbers, and the 1300/1800 numbers that country code 61 alone won\'t reach',
 				body: [
-					"Mobile numbers sit outside the four regional codes entirely, under a single national prefix, 04, written domestically as 04xx xxx xxx. That prefix wasn't always this open: before November 1998, only the 040x and 041x ranges existed as mobile numbers, freed up from what had been New South Wales's regional area codes during the same renumbering described above. Mobile number portability arrived later still, on 25 September 2001 -- before that date, a mobile number's middle digits reliably identified which carrier issued it, which is no longer true today.",
-					'Some Australian numbers don\'t use the four-region system at all. Numbers starting with 13, 1300, or 1800 are local-rate and toll-free lines that route over a separate domestic network, and they carry no leading 0 to drop -- Wikipedia\'s numbering-plan overview notes that 13xx and 1300 numbers can be dialed directly after the country code with nothing removed. What that overview doesn\'t promise is that the call will actually connect: multiple Australian telecom providers describe reaching a 1300, 1800, or 13 number from outside the country as inconsistent, since completion depends on whether the calling carrier has an agreement to route into that domestic network at all. A business that wants overseas customers to be able to reach it reliably will usually publish an ordinary geographic number -- 02, 03, 07, or 08 -- specifically to sidestep that gap.',
+					"Mobile numbers sit outside the four regional codes entirely, under a single national prefix, 04, written domestically as 04xx xxx xxx. That prefix wasn't always this open: before November 1998, only the 040x and 041x ranges existed as mobile numbers, freed up from what had been New South Wales's regional area codes during the same renumbering described above. Mobile number portability arrived later still, on 25 September 2001. Before that date, a mobile number's middle digits reliably identified which carrier issued it, which is no longer true today.",
+					'Some Australian numbers don\'t use the four-region system at all. Numbers starting with 13, 1300, or 1800 are local-rate and toll-free lines that route over a separate domestic network, and they carry no leading 0 to drop. Wikipedia\'s numbering-plan overview notes that 13xx and 1300 numbers can be dialed directly after the country code with nothing removed. What that overview doesn\'t promise is that the call will actually connect: multiple Australian telecom providers describe reaching a 1300, 1800, or 13 number from outside the country as inconsistent, since completion depends on whether the calling carrier has an agreement to route into that domestic network at all. A business that wants overseas customers to be able to reach it reliably will usually publish an ordinary geographic number (02, 03, 07, or 08) specifically to sidestep that gap.',
 				],
 			},
 			{
 				heading: 'Worked examples',
 				body: [
 					'A Sydney landline written domestically as (02) 9374 4000 becomes 011 61 2 9374 4000 from a US landline, or +61 2 9374 4000 from a mobile. A mobile number written as 0412 345 678 becomes 011 61 412 345 678, or +61 412 345 678.',
-					"Australia's four-code system is an outlier -- see [the US country code](/us-country-code/) for the opposite extreme, where a single country code covers 20 different NANP members, or [how US area codes actually work](/how-do-area-codes-work/) for a numbering plan that assigns hundreds of area codes across one country instead of four for an entire continent.",
+					"Australia's four-code system is an outlier; see [the US country code](/us-country-code/) for the opposite extreme, where a single country code covers 20 different NANP members, or [how US area codes actually work](/how-do-area-codes-work/) for a numbering plan that assigns hundreds of area codes across one country instead of four for an entire continent.",
 				],
 			},
 		],
@@ -2789,7 +2789,7 @@ export const guides: Guide[] = [
 			{
 				question: 'How many area codes does Australia have?',
 				answer:
-					'Just four geographic codes -- 02, 03, 07, and 08 -- cover the entire country. They\'re what survived a 1994-1998 renumbering that retired dozens of smaller two- and three-digit codes, plus a four-digit exception unique to Kangaroo Island.',
+					'Just four geographic codes (02, 03, 07, and 08) cover the entire country. They\'re what survived a 1994-1998 renumbering that retired dozens of smaller two- and three-digit codes, plus a four-digit exception unique to Kangaroo Island.',
 			},
 			{
 				question: 'Can I call an Australian 1800 or 1300 number from the US?',
@@ -2799,7 +2799,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Can I just dial +61 instead of 011 61?',
 				answer:
-					'Yes -- on a mobile phone or most VoIP services, a "+" substitutes for the 011 exit code and works identically, so +61 2 9374 4000 reaches the same number as 011 61 2 9374 4000.',
+					'Yes. On a mobile phone or most VoIP services, a "+" substitutes for the 011 exit code and works identically, so +61 2 9374 4000 reaches the same number as 011 61 2 9374 4000.',
 			},
 		],
 		sources: [
@@ -2891,11 +2891,11 @@ export const guides: Guide[] = [
 		category: 'International Dialing',
 		title: "The UK's Country Code Is +44, and Most Britons Get Their Own Area Code Wrong",
 		description:
-			'Dial 011, then 44, then drop the leading 0. London\'s real area code is 020, not "0207" or "0208" -- a study found only 13% of people could name it correctly.',
+			'Dial 011, then 44, then drop the leading 0. London\'s real area code is 020, not "0207" or "0208"; a study found only 13% of people could name it correctly.',
 		published: '2026-08-30',
 		updated: '2026-08-30',
 		coreSummary:
-			'The United Kingdom\'s country code is +44. Dialing in from a US phone: 011, then 44, then the area code or mobile prefix with its leading 0 dropped, then the rest of the number. London\'s area code looks longer than it is because of how the city\'s numbering plan grew: it dialed as a plain 01 until 1990, split into 071 and 081 that year, became 0171 and 0181 in a 1995 nationwide overhaul called PhONEday, then folded both of those into a single code, 020, in 2000\'s Big Number Change. That last consolidation left a documented mix-up behind -- a study commissioned after the change found only 13% of people could correctly name London\'s area code without a prompt, while 59% answered "0207" or "0208" instead, numbers that have never actually existed as area codes on their own. And the UK\'s own outgoing exit code is a different two digits entirely: 00, not 011, a detail that matters to any US traveler trying to dial home from a British phone.',
+			'The United Kingdom\'s country code is +44. Dialing in from a US phone: 011, then 44, then the area code or mobile prefix with its leading 0 dropped, then the rest of the number. London\'s area code looks longer than it is because of how the city\'s numbering plan grew: it dialed as a plain 01 until 1990, split into 071 and 081 that year, became 0171 and 0181 in a 1995 nationwide overhaul called PhONEday, then folded both of those into a single code, 020, in 2000\'s Big Number Change. That last consolidation left a documented mix-up behind: a study commissioned after the change found only 13% of people could correctly name London\'s area code without a prompt, while 59% answered "0207" or "0208" instead, numbers that have never actually existed as area codes on their own. And the UK\'s own outgoing exit code is a different two digits entirely: 00, not 011, a detail that matters to any US traveler trying to dial home from a British phone.',
 		sections: [
 			{
 				heading: 'Dialing the UK from a US phone, step by step',
@@ -2916,21 +2916,21 @@ export const guides: Guide[] = [
 			{
 				heading: "How London's area code went from 01 to 071/081 to 0171/0181 to 020",
 				body: [
-					'London\'s area code has changed more times since the 1960s than any other UK city\'s. It started as a plain 01, covering the whole of Greater London under one code, until May 1990, when growing demand split it in two: 071 for the inner city, 081 for outer London and the suburbs. That split bought only five years of headroom. On 16 April 1995, a nationwide change called PhONEday inserted a "1" after the leading 0 in every UK geographic area code to free up numbering space, turning London\'s 071 and 081 into 0171 and 0181 -- and, in five other cities that were running low on numbers (Bristol, Leeds, Leicester, Nottingham, and Sheffield), replacing the old code outright with a new four-digit one instead. PhONEday had itself been delayed once already, first floated in 1991 for a 1994 rollout, and it shipped with an eight-month period where old and new codes worked side by side, backed by a GBP 16 million advertising campaign to get callers to switch over.',
+					'London\'s area code has changed more times since the 1960s than any other UK city\'s. It started as a plain 01, covering the whole of Greater London under one code, until May 1990, when growing demand split it in two: 071 for the inner city, 081 for outer London and the suburbs. That split bought only five years of headroom. On 16 April 1995, a nationwide change called PhONEday inserted a "1" after the leading 0 in every UK geographic area code to free up numbering space, turning London\'s 071 and 081 into 0171 and 0181, and, in five other cities that were running low on numbers (Bristol, Leeds, Leicester, Nottingham, and Sheffield), replacing the old code outright with a new four-digit one instead. PhONEday had itself been delayed once already, first floated in 1991 for a 1994 rollout, and it shipped with an eight-month period where old and new codes worked side by side, backed by a GBP 16 million advertising campaign to get callers to switch over.',
 					'The final consolidation came with the Big Number Change: 0171 and 0181 both folded into a single code, 020, with new eight-digit local numbers replacing the old seven-digit ones. The new range went live on 1 June 1999 and ran in parallel with the old codes until the cutover on 22 April 2000, after which 0171 and 0181 stopped connecting for good. London\'s numbering capacity grew roughly fivefold in the process, and Cardiff, Coventry, Northern Ireland, Portsmouth, and Southampton all got the same eight-digit treatment on the same date.',
-					'That fivefold boost didn\'t last forever. By 2019, Ofcom was back in nearly the same spot PhONEday and the Big Number Change had each once solved: London\'s three existing ranges, 020 3, 020 7, and 020 8, had roughly 30 million numbers allocated between them, and fewer than a million were left to hand out to phone companies, who were distributing about 30,000 London numbers a week. Ofcom opened a fourth range, 020 4, later that year to keep pace -- the third numbering squeeze since PhONEday, this time solved with a smaller top-up instead of a full renumbering.',
+					'That fivefold boost didn\'t last forever. By 2019, Ofcom was back in nearly the same spot PhONEday and the Big Number Change had each once solved: London\'s three existing ranges, 020 3, 020 7, and 020 8, had roughly 30 million numbers allocated between them, and fewer than a million were left to hand out to phone companies, who were distributing about 30,000 London numbers a week. Ofcom opened a fourth range, 020 4, later that year to keep pace, the third numbering squeeze since PhONEday, this time solved with a smaller top-up instead of a full renumbering.',
 				],
 			},
 			{
 				heading: '"0207" and "0208" aren\'t area codes, even though most people think they are',
 				body: [
-					'London\'s actual area code is 020, one digit shorter than most callers assume. The mix-up traces directly back to the Big Number Change: before 2000, Inner London genuinely did dial as 0171 and Outer London as 0181, so a generation of callers memorized those as the area code. When both collapsed into 020, the 7 or 8 that used to open the area code became instead the first digit of a new eight-digit local number -- so a number that used to read 0171 946 0958 became 020 7946 0958, the same digits with the boundary between "area code" and "local number" shifted one place to the left. A study commissioned after the change found only 13% of respondents could name 020 as London\'s area code without being prompted, while 59% answered "0207" or "0208" instead, numbers that have never been valid area codes standing on their own. The practical consequence: dialing a London number from inside the London area only requires the last eight digits, no area code at all, because the trunk prefix "0" and the area code "20" are simply ignored on local calls.',
+					'London\'s actual area code is 020, one digit shorter than most callers assume. The mix-up traces directly back to the Big Number Change: before 2000, Inner London genuinely did dial as 0171 and Outer London as 0181, so a generation of callers memorized those as the area code. When both collapsed into 020, the 7 or 8 that used to open the area code became instead the first digit of a new eight-digit local number, so a number that used to read 0171 946 0958 became 020 7946 0958, the same digits with the boundary between "area code" and "local number" shifted one place to the left. A study commissioned after the change found only 13% of respondents could name 020 as London\'s area code without being prompted, while 59% answered "0207" or "0208" instead, numbers that have never been valid area codes standing on their own. The practical consequence: dialing a London number from inside the London area only requires the last eight digits, no area code at all, because the trunk prefix "0" and the area code "20" are simply ignored on local calls.',
 				],
 			},
 			{
 				heading: "The UK's own exit code is 00, not 011",
 				body: [
-					'A US caller dialing into the UK uses 011, the exit code any US or Canadian phone dials before an international call. A UK caller dialing out uses a different code entirely: 00. That\'s not an arbitrary choice -- 00 matches the international call prefix the International Telecommunication Union recommends, and the UK switched to it on the same day as PhONEday, 16 April 1995, replacing an older 010 prefix. The distinction matters most to a US traveler in the UK trying to call home using a number copied straight off a US webpage: dialing 011 1 literally from a UK phone won\'t connect, because 011 isn\'t a recognized UK exit code -- it has to be 00 1, followed by the US area code and number (a "+" still works from a mobile or VoIP line, since it substitutes for whichever exit code the local network expects). The US and the UK simply settled on different digits for the identical job, the same way [the US shares its own +1 country code with 19 other North American and Caribbean places](/us-country-code/) while the UK\'s +44 belongs to it alone.',
+					'A US caller dialing into the UK uses 011, the exit code any US or Canadian phone dials before an international call. A UK caller dialing out uses a different code entirely: 00. That\'s not an arbitrary choice: 00 matches the international call prefix the International Telecommunication Union recommends, and the UK switched to it on the same day as PhONEday, 16 April 1995, replacing an older 010 prefix. The distinction matters most to a US traveler in the UK trying to call home using a number copied straight off a US webpage: dialing 011 1 literally from a UK phone won\'t connect, because 011 isn\'t a recognized UK exit code; it has to be 00 1, followed by the US area code and number (a "+" still works from a mobile or VoIP line, since it substitutes for whichever exit code the local network expects). The US and the UK simply settled on different digits for the identical job, the same way [the US shares its own +1 country code with 19 other North American and Caribbean places](/us-country-code/) while the UK\'s +44 belongs to it alone.',
 				],
 			},
 		],
@@ -2947,7 +2947,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Is London\'s area code 0207 or 0208?',
 				answer:
-					'No. London\'s actual area code is 020. "0207" and "0208" were never valid area codes on their own -- the 7 or 8 that follows 020 is the first digit of an eight-digit local number, a mix-up so common that a study found only 13% of people could name 020 correctly without a hint.',
+					'No. London\'s actual area code is 020. "0207" and "0208" were never valid area codes on their own. The 7 or 8 that follows 020 is the first digit of an eight-digit local number, a mix-up so common that a study found only 13% of people could name 020 correctly without a hint.',
 			},
 			{
 				question: "What's the UK's own international dialing code, if it isn't 011?",
@@ -2959,7 +2959,7 @@ export const guides: Guide[] = [
 			{ label: 'Wikipedia: PhONEday', url: 'https://en.wikipedia.org/wiki/PhONEday' },
 			{ label: 'Wikipedia: Big Number Change', url: 'https://en.wikipedia.org/wiki/Big_Number_Change' },
 			{ label: 'Wikipedia: UK telephone code misconceptions', url: 'https://en.wikipedia.org/wiki/UK_telephone_code_misconceptions' },
-			{ label: 'Ofcom (via WiredGov): London calling -- Ofcom to release new \'(020) 4\' phone numbers', url: 'https://www.wired-gov.net/wg/news.nsf/articles/London+calling+Ofcom+to+release+new+020+4+phone+numbers+30082019131500?open=' },
+			{ label: 'Ofcom (via WiredGov): London calling, Ofcom to release new \'(020) 4\' phone numbers', url: 'https://www.wired-gov.net/wg/news.nsf/articles/London+calling+Ofcom+to+release+new+020+4+phone+numbers+30082019131500?open=' },
 			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
 		],
 	},
@@ -2968,17 +2968,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'Phoenix ZIP Codes: All 77, and Why the List Never Crosses a County Line',
 		description:
-			"Phoenix has 77 ZIP codes, all inside Maricopa County -- not because the city stayed small, but because it annexed nearly 500 square miles since 1950, faster than its ZIP list ever needed to reach a second county.",
+			"Phoenix has 77 ZIP codes, all inside Maricopa County, not because the city stayed small, but because it annexed nearly 500 square miles since 1950, faster than its ZIP list ever needed to reach a second county.",
 		published: '2026-08-17',
 		updated: '2026-08-17',
 		coreSummary:
-			"USPS assigns 77 ZIP codes to \"Phoenix, AZ\" as the primary place name, and every one of them sits inside Maricopa County, per this site's GeoNames-based source data -- the same single-county pattern this site found in San Diego and Sacramento, unlike Denver or Atlanta, where the list crosses into a second county entirely. zip-codes.com counts a smaller total, 71 ZIP codes, and other directories land closer to 74 or 75, a gap that traces back to how each one handles overlapping postal boundaries and PO-Box-only codes rather than to any real dispute about the county line. Phoenix's single-county footprint isn't a small-city coincidence -- the city added roughly 95 square miles through annexation in the 1950s alone, on its way from 17.1 square miles in 1950 to 517.9 square miles today, more land area than New York City, Los Angeles, or Chicago each cover individually. Two of the 77 ZIP codes on this site's list don't belong to a neighborhood at all: 85001 is a PO-Box-only code for the downtown business core, and 85034 belongs to Phoenix Sky Harbor International Airport.",
+			"USPS assigns 77 ZIP codes to \"Phoenix, AZ\" as the primary place name, and every one of them sits inside Maricopa County, per this site's GeoNames-based source data, the same single-county pattern this site found in San Diego and Sacramento, unlike Denver or Atlanta, where the list crosses into a second county entirely. zip-codes.com counts a smaller total, 71 ZIP codes, and other directories land closer to 74 or 75, a gap that traces back to how each one handles overlapping postal boundaries and PO-Box-only codes rather than to any real dispute about the county line. Phoenix's single-county footprint isn't a small-city coincidence: the city added roughly 95 square miles through annexation in the 1950s alone, on its way from 17.1 square miles in 1950 to 517.9 square miles today, more land area than New York City, Los Angeles, or Chicago each cover individually. Two of the 77 ZIP codes on this site's list don't belong to a neighborhood at all: 85001 is a PO-Box-only code for the downtown business core, and 85034 belongs to Phoenix Sky Harbor International Airport.",
 		sections: [
 			{
 				heading: 'All 77 ZIP codes with "Phoenix, AZ" as the primary USPS place name',
 				body: [
-					"Every one of the 77 falls inside Maricopa County -- the same pattern this site found in [Sacramento](/sacramento-zip-codes/) and [San Diego](/san-diego-zip-codes/), and a contrast to [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/), where the ZIP list crosses into a neighboring county. What varies between sources isn't the county, it's the count: zip-codes.com lists 71 ZIP codes for Phoenix, six short of the 77 GeoNames assigns, and other trackers settle around 74 or 75 -- differences that come down to whether overlapping postal boundaries and PO-Box-only codes get folded into the total or listed separately.",
-					"Phoenix also dials on three area codes -- 602, 623, and 480 -- and all three now overlay the entire metro area rather than serving separate zones, a history covered in the FAQ below.",
+					"Every one of the 77 falls inside Maricopa County, the same pattern this site found in [Sacramento](/sacramento-zip-codes/) and [San Diego](/san-diego-zip-codes/), and a contrast to [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/), where the ZIP list crosses into a neighboring county. What varies between sources isn't the county, it's the count: zip-codes.com lists 71 ZIP codes for Phoenix, six short of the 77 GeoNames assigns, and other trackers settle around 74 or 75, differences that come down to whether overlapping postal boundaries and PO-Box-only codes get folded into the total or listed separately.",
+					"Phoenix also dials on three area codes (602, 623, and 480), and all three now overlay the entire metro area rather than serving separate zones, a history covered in the FAQ below.",
 				],
 				table: {
 					caption: 'All 77 ZIP codes with "Phoenix, AZ" as the primary USPS place name (per GeoNames.org, checked 2026-08-17)',
@@ -3006,15 +3006,15 @@ export const guides: Guide[] = [
 			{
 				heading: "How a 17-square-mile town grew into a footprint bigger than New York City's",
 				body: [
-					"Phoenix's single-county ZIP list isn't a sign of a small city. The city's own published history puts its 1950 footprint at 17.1 square miles and its population at 106,000 -- close to the Census Bureau's count of 106,818 that year. Over the following decade the city added about 95 square miles through annexation -- including Maryvale and large sections of south Phoenix in 1959. Growth on that scale kept going for decades: Phoenix covered around 470 square miles by the early 2000s and stands at 517.9 square miles today, more land area than New York City, Los Angeles, or Chicago each cover individually.",
-					"Cities racing to expand in that era often annexed narrow, contiguous strips of land just to keep a neighboring town from claiming the same ground first, then filled in the territory behind those strips later. Phoenix used that strategy through the 1950s and 1960s as it and its neighbors -- [Scottsdale](/scottsdale-zip-codes/), Tempe, Glendale, Mesa -- pushed into the same stretch of desert at the same time. The reason none of that growth ever pushed a Phoenix ZIP code into a second county is simpler than it looks: Maricopa County itself covers 9,224 square miles, more than seventeen times the land Phoenix occupies today. There's a lot of county left for the city to grow into before its ZIP list would ever need to follow Denver's or Atlanta's cross-county pattern.",
+					"Phoenix's single-county ZIP list isn't a sign of a small city. The city's own published history puts its 1950 footprint at 17.1 square miles and its population at 106,000, close to the Census Bureau's count of 106,818 that year. Over the following decade the city added about 95 square miles through annexation, including Maryvale and large sections of south Phoenix in 1959. Growth on that scale kept going for decades: Phoenix covered around 470 square miles by the early 2000s and stands at 517.9 square miles today, more land area than New York City, Los Angeles, or Chicago each cover individually.",
+					"Cities racing to expand in that era often annexed narrow, contiguous strips of land just to keep a neighboring town from claiming the same ground first, then filled in the territory behind those strips later. Phoenix used that strategy through the 1950s and 1960s as it and its neighbors ([Scottsdale](/scottsdale-zip-codes/), Tempe, Glendale, Mesa) pushed into the same stretch of desert at the same time. The reason none of that growth ever pushed a Phoenix ZIP code into a second county is simpler than it looks: Maricopa County itself covers 9,224 square miles, more than seventeen times the land Phoenix occupies today. There's a lot of county left for the city to grow into before its ZIP list would ever need to follow Denver's or Atlanta's cross-county pattern.",
 				],
 			},
 			{
 				heading: "Two ZIP codes that don't belong to any neighborhood",
 				body: [
 					"85001 is downtown Phoenix's original ZIP code, assigned when USPS rolled out five-digit ZIP codes nationwide on July 1, 1963. It's the only one on this list that isn't a neighborhood: a PO-Box-only code covering the Copper Square and Central City business core, with no residential population of its own. The Arizona State Capitol and Wesley Bolin Memorial Plaza, the state's outdoor war memorial, sit two ZIP codes over at 85007, not inside 85001.",
-					"85034 belongs to Phoenix Sky Harbor International Airport rather than any neighborhood -- the airport sits close enough to downtown that its runways fall inside the same numbered sequence as the rest of central Phoenix, rather than off in a separate suburban code the way many US airports are.",
+					"85034 belongs to Phoenix Sky Harbor International Airport rather than any neighborhood. The airport sits close enough to downtown that its runways fall inside the same numbered sequence as the rest of central Phoenix, rather than off in a separate suburban code the way many US airports are.",
 				],
 			},
 		],
@@ -3022,17 +3022,17 @@ export const guides: Guide[] = [
 			{
 				question: 'How many ZIP codes does Phoenix have?',
 				answer:
-					"This site's GeoNames-based source data counts 77. That's higher than zip-codes.com's count of 71, and higher than the 74 or 75 other directories tend to report -- the gap comes from how each tracker classifies PO-Box-only and overlapping postal codes, not from any disagreement about which ZIP codes belong to Phoenix in the first place.",
+					"This site's GeoNames-based source data counts 77. That's higher than zip-codes.com's count of 71, and higher than the 74 or 75 other directories tend to report. The gap comes from how each tracker classifies PO-Box-only and overlapping postal codes, not from any disagreement about which ZIP codes belong to Phoenix in the first place.",
 			},
 			{
 				question: 'What county is Phoenix in?',
 				answer:
-					"Maricopa County, and every one of the 77 ZIP codes USPS assigns to Phoenix stays inside that single county. Despite Phoenix covering more land than New York City, Los Angeles, or Chicago individually, Maricopa County itself is large enough -- 9,224 square miles -- that the city's ZIP list has never needed to cross into a second county.",
+					"Maricopa County, and every one of the 77 ZIP codes USPS assigns to Phoenix stays inside that single county. Despite Phoenix covering more land than New York City, Los Angeles, or Chicago individually, Maricopa County itself is large enough (9,224 square miles) that the city's ZIP list has never needed to cross into a second county.",
 			},
 			{
 				question: 'Why is ZIP code 85001 a PO box only?',
 				answer:
-					"85001 is downtown Phoenix's original ZIP code, assigned in 1963 when USPS introduced five-digit codes nationwide. It now covers the Copper Square and Central City business core -- office towers and government buildings rather than housing -- so USPS classifies it as a PO-Box-only code with no residential population of its own.",
+					"85001 is downtown Phoenix's original ZIP code, assigned in 1963 when USPS introduced five-digit codes nationwide. It now covers the Copper Square and Central City business core (office towers and government buildings rather than housing), so USPS classifies it as a PO-Box-only code with no residential population of its own.",
 			},
 			{
 				question: 'What area codes does Phoenix use?',
@@ -3042,12 +3042,12 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Phoenix, AZ ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/az-phoenix.asp' },
-			{ label: 'ZIP Code 85001 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/85001/zip-code-85001.asp' },
+			{ label: 'Phoenix, AZ ZIP Codes (zip-codes.com)', url: 'https://www.zip-codes.com/city/az-phoenix.asp' },
+			{ label: 'ZIP Code 85001 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/85001/zip-code-85001.asp' },
 			{ label: 'City of Phoenix: City History', url: 'https://www.phoenix.gov/administration/departments/communications/history-facts/city-history.html' },
-			{ label: 'Phoenix, Arizona -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Phoenix,_Arizona' },
-			{ label: 'Maricopa County, Arizona -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Maricopa_County,_Arizona' },
-			{ label: 'Phoenix Sky Harbor International Airport -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport' },
+			{ label: 'Phoenix, Arizona (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Phoenix,_Arizona' },
+			{ label: 'Maricopa County, Arizona (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Maricopa_County,_Arizona' },
+			{ label: 'Phoenix Sky Harbor International Airport (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Phoenix_Sky_Harbor_International_Airport' },
 		],
 	},
 	{
@@ -3055,17 +3055,17 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Cincinnati ZIP Codes: All 71, and Two That Aren't in Hamilton County",
 		description:
-			"Cincinnati's 71 ZIP codes almost all sit in Hamilton County -- except one that's a 20,000-person Clermont County suburb, and one that's an 18-box mail drop with no residents at all.",
+			"Cincinnati's 71 ZIP codes almost all sit in Hamilton County, except one that's a 20,000-person Clermont County suburb, and one that's an 18-box mail drop with no residents at all.",
 		published: '2026-08-17',
 		updated: '2026-08-17',
 		coreSummary:
-			"USPS assigns 71 ZIP codes with Cincinnati as the primary place name, and this site's GeoNames-based source data puts 69 of them inside Hamilton County, where Cincinnati has been the county seat since the county's creation in 1790. The other two sit outside it: 45245 is a Clermont County community of roughly 20,000 people, spanning Withamsville, Mount Carmel, and Summerside, addressed as Cincinnati because its mail route runs out of a Cincinnati-area postal facility rather than a Clermont one. 45275, in Brown County, has no recorded residents at all -- postal trackers describe it as an 18-box mail-drop facility on a single road, Clay Drive, and most directories still file it under Hamilton County by mistake. One more code on the list, 45999, isn't a neighborhood either: it's the dedicated ZIP the IRS uses at its Cincinnati service center to process specific categories of business and international tax filings.",
+			"USPS assigns 71 ZIP codes with Cincinnati as the primary place name, and this site's GeoNames-based source data puts 69 of them inside Hamilton County, where Cincinnati has been the county seat since the county's creation in 1790. The other two sit outside it: 45245 is a Clermont County community of roughly 20,000 people, spanning Withamsville, Mount Carmel, and Summerside, addressed as Cincinnati because its mail route runs out of a Cincinnati-area postal facility rather than a Clermont one. 45275, in Brown County, has no recorded residents at all. Postal trackers describe it as an 18-box mail-drop facility on a single road, Clay Drive, and most directories still file it under Hamilton County by mistake. One more code on the list, 45999, isn't a neighborhood either: it's the dedicated ZIP the IRS uses at its Cincinnati service center to process specific categories of business and international tax filings.",
 		sections: [
 			{
 				heading: '69 in Hamilton County, plus two that most directories miss',
 				body: [
-					"Most ZIP code directories, including several with active Cincinnati listings, file all 71 of the city's ZIP codes under a single county: Hamilton, where Cincinnati has served as county seat since Arthur St. Clair organized the county in 1790. This site's source data, built from GeoNames' postal code registry, agrees on the total -- 71, matching independent counts from zip-codes.com and ZipCodesToGo -- but splits two of those codes into neighboring counties instead of Hamilton.",
-					"45245 belongs to Clermont County, covering Withamsville, Mount Carmel, and Summerside across Union and Pierce townships, an active suburban area on Cincinnati's east side with roughly 20,000 residents. 45275 belongs to Brown County, the only Cincinnati-addressed ZIP code that does -- and unlike 45245, it isn't a residential community. GeoNames and other postal trackers describe it as a single-route PO box facility, 18 boxes along Clay Drive, with no population recorded.",
+					"Most ZIP code directories, including several with active Cincinnati listings, file all 71 of the city's ZIP codes under a single county: Hamilton, where Cincinnati has served as county seat since Arthur St. Clair organized the county in 1790. This site's source data, built from GeoNames' postal code registry, agrees on the total (71, matching independent counts from zip-codes.com and ZipCodesToGo), but splits two of those codes into neighboring counties instead of Hamilton.",
+					"45245 belongs to Clermont County, covering Withamsville, Mount Carmel, and Summerside across Union and Pierce townships, an active suburban area on Cincinnati's east side with roughly 20,000 residents. 45275 belongs to Brown County, the only Cincinnati-addressed ZIP code that does, and unlike 45245, it isn't a residential community. GeoNames and other postal trackers describe it as a single-route PO box facility, 18 boxes along Clay Drive, with no population recorded.",
 				],
 			},
 			{
@@ -3098,15 +3098,15 @@ export const guides: Guide[] = [
 			{
 				heading: "45999 isn't a ZIP code for anyone who lives there",
 				body: [
-					'One entry on the list, 45999, doesn\'t correspond to a neighborhood or a residential mail route -- it\'s the ZIP code the IRS uses at its Cincinnati service center to process specific categories of business and international tax correspondence. IRS notices mailed from Cincinnati, including forms like the CP132 balance-due notice, carry a return address of "Internal Revenue Service, Cincinnati, OH 45999," with a numeric stop code appended for internal routing. Which specific filings route to Cincinnati rather than another IRS service center varies by form type -- different notices and forms list different coverage areas -- which is part of why the center needed a dedicated ZIP code rather than sharing one with any Cincinnati neighborhood.',
-					"Cincinnati isn't the only city on this site with an IRS-only ZIP in its list -- [Atlanta's does too](/atlanta-zip-codes/), assigned to a separate service center entirely.",
+					'One entry on the list, 45999, doesn\'t correspond to a neighborhood or a residential mail route: it\'s the ZIP code the IRS uses at its Cincinnati service center to process specific categories of business and international tax correspondence. IRS notices mailed from Cincinnati, including forms like the CP132 balance-due notice, carry a return address of "Internal Revenue Service, Cincinnati, OH 45999," with a numeric stop code appended for internal routing. Which specific filings route to Cincinnati rather than another IRS service center varies by form type (different notices and forms list different coverage areas), which is part of why the center needed a dedicated ZIP code rather than sharing one with any Cincinnati neighborhood.',
+					"Cincinnati isn't the only city on this site with an IRS-only ZIP in its list: [Atlanta's does too](/atlanta-zip-codes/), assigned to a separate service center entirely.",
 				],
 			},
 			{
 				heading: '513 split once, in 1996, then got a second layer in 2023',
 				body: [
-					"Cincinnati's [area code](/how-do-area-codes-work/), 513, dates to 1947, one of the original area codes assigned nationwide. It covered the whole region alone for almost fifty years, until September 28, 1996, when regulators split off a new code, 937, for Dayton, Springfield, and the rest of southwestern Ohio outside the immediate Cincinnati metro -- the same kind of geographic split this site has covered for [Chicago](/chicago-area-code/) and other major metro area codes.",
-					"513 itself was never split again after 1996. Instead, on April 28, 2023, regulators added an overlay code, 283, covering the identical territory as 513 rather than dividing it further -- new phone numbers in the Cincinnati region can now be assigned either 513 or 283, while every number already carrying a 513 area code keeps working exactly as before.",
+					"Cincinnati's [area code](/how-do-area-codes-work/), 513, dates to 1947, one of the original area codes assigned nationwide. It covered the whole region alone for almost fifty years, until September 28, 1996, when regulators split off a new code, 937, for Dayton, Springfield, and the rest of southwestern Ohio outside the immediate Cincinnati metro, the same kind of geographic split this site has covered for [Chicago](/chicago-area-code/) and other major metro area codes.",
+					"513 itself was never split again after 1996. Instead, on April 28, 2023, regulators added an overlay code, 283, covering the identical territory as 513 rather than dividing it further. New phone numbers in the Cincinnati region can now be assigned either 513 or 283, while every number already carrying a 513 area code keeps working exactly as before.",
 				],
 			},
 		],
@@ -3114,7 +3114,7 @@ export const guides: Guide[] = [
 			{
 				question: 'How many ZIP codes does Cincinnati have?',
 				answer:
-					"71, per this site's GeoNames-based source data -- matching independent counts from zip-codes.com and ZipCodesToGo. Most directories attribute all 71 to Hamilton County, but two, 45245 and 45275, actually sit in Clermont and Brown counties.",
+					"71, per this site's GeoNames-based source data, matching independent counts from zip-codes.com and ZipCodesToGo. Most directories attribute all 71 to Hamilton County, but two, 45245 and 45275, actually sit in Clermont and Brown counties.",
 			},
 			{
 				question: 'What county is Cincinnati in?',
@@ -3124,7 +3124,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Why is ZIP code 45999 different from the rest?',
 				answer:
-					"It isn't a neighborhood. 45999 is the dedicated ZIP code the IRS uses at its Cincinnati service center to process specific categories of business and international tax filings -- which exact filings route there depends on the form, not on where the taxpayer lives.",
+					"It isn't a neighborhood. 45999 is the dedicated ZIP code the IRS uses at its Cincinnati service center to process specific categories of business and international tax filings. Which exact filings route there depends on the form, not on where the taxpayer lives.",
 			},
 			{
 				question: "What is Cincinnati's area code?",
@@ -3134,18 +3134,18 @@ export const guides: Guide[] = [
 			{
 				question: 'Does anyone live in ZIP code 45275?',
 				answer:
-					"Not according to postal records. 45275 is described as an 18-box mail-drop facility on a single road, Clay Drive, in Brown County, with no residential population recorded -- unlike 45245, its Clermont County counterpart, which covers an active suburban community of roughly 20,000 people.",
+					"Not according to postal records. 45275 is described as an 18-box mail-drop facility on a single road, Clay Drive, in Brown County, with no residential population recorded, unlike 45245, its Clermont County counterpart, which covers an active suburban community of roughly 20,000 people.",
 			},
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'All ZIP Codes, Map and Demographics of Cincinnati, OH -- zip-codes.com', url: 'https://www.zip-codes.com/city/oh-cincinnati.asp' },
-			{ label: 'Cincinnati, OH ZIP code list -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Cincinnati/OH/' },
-			{ label: 'ZIP Code 45245 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/45245/zip-code-45245.asp' },
-			{ label: 'ZIP Code 45275 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/45275/zip-code-45275.asp' },
+			{ label: 'All ZIP Codes, Map and Demographics of Cincinnati, OH (zip-codes.com)', url: 'https://www.zip-codes.com/city/oh-cincinnati.asp' },
+			{ label: 'Cincinnati, OH ZIP code list (zipcodestogo.com)', url: 'https://www.zipcodestogo.com/city/Cincinnati/OH/' },
+			{ label: 'ZIP Code 45245 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/45245/zip-code-45245.asp' },
+			{ label: 'ZIP Code 45275 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/45275/zip-code-45275.asp' },
 			{ label: 'IRS CP132 notice sample (Cincinnati, OH 45999 return address)', url: 'https://www.irs.gov/pub/notices/cp132_english.pdf' },
-			{ label: 'Cincinnati, Ohio -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Cincinnati' },
-			{ label: 'Hamilton County, Ohio -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Hamilton_County,_Ohio' },
+			{ label: 'Cincinnati, Ohio (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Cincinnati' },
+			{ label: 'Hamilton County, Ohio (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Hamilton_County,_Ohio' },
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
@@ -3154,16 +3154,16 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Fresno ZIP Codes: The Full List, and Why Two-Thirds Aren't Delivery Routes",
 		description:
-			"All 58 ZIP codes USPS assigns to Fresno, California -- entirely inside Fresno County -- plus the 2010 split that created 93737 and the two ZIPs tied to an IRS tax-processing center that closed in 2021.",
+			"All 58 ZIP codes USPS assigns to Fresno, California (entirely inside Fresno County), plus the 2010 split that created 93737 and the two ZIPs tied to an IRS tax-processing center that closed in 2021.",
 		published: '2026-08-18',
 		updated: '2026-08-18',
 		coreSummary:
-			"USPS assigns 58 ZIP codes to Fresno, California, and unlike this site's Atlanta, Denver, or Cincinnati lists, every one of them sits inside a single county -- Fresno County, no split across a line. zip-codes.com's own delivery-type breakdown for the city puts only 19 of the 58 on standard residential and business routes; the other 39 split into 28 PO Box codes and 11 unique codes reserved for single high-volume recipients, outnumbering the standard codes by roughly two to one. Two of those unique codes, 93844 and 93888, aren't Fresno neighborhoods at all -- zip-codes.com tags both as IRS Service Center addresses, tracing back to a paper tax-return processing center the IRS permanently closed in Fresno at the end of September 2021. And one of the 58, 93737, didn't exist before July 2010, when USPS carved it out of a crowded 93727 to keep mail moving on the city's east side.",
+			"USPS assigns 58 ZIP codes to Fresno, California, and unlike this site's Atlanta, Denver, or Cincinnati lists, every one of them sits inside a single county: Fresno County, no split across a line. zip-codes.com's own delivery-type breakdown for the city puts only 19 of the 58 on standard residential and business routes; the other 39 split into 28 PO Box codes and 11 unique codes reserved for single high-volume recipients, outnumbering the standard codes by roughly two to one. Two of those unique codes, 93844 and 93888, aren't Fresno neighborhoods at all: zip-codes.com tags both as IRS Service Center addresses, tracing back to a paper tax-return processing center the IRS permanently closed in Fresno at the end of September 2021. And one of the 58, 93737, didn't exist before July 2010, when USPS carved it out of a crowded 93727 to keep mail moving on the city's east side.",
 		sections: [
 			{
 				heading: 'All 58 ZIP codes USPS assigns to Fresno',
 				body: [
-					"Every one of the 58 ZIP codes USPS assigns to \"Fresno, CA\" as the primary place name sits inside Fresno County, per this site's source data -- there's no county split here the way there is on this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists. What the county-level view hides is how few of those 58 codes actually correspond to a residential mail route: zip-codes.com's own delivery-type tally for the city counts 19 standard codes, 28 PO Box codes, and 11 unique codes assigned to single high-volume recipients -- meaning the codes that aren't tied to an ordinary carrier route outnumber the ones that are, by roughly two to one.",
+					"Every one of the 58 ZIP codes USPS assigns to \"Fresno, CA\" as the primary place name sits inside Fresno County, per this site's source data. There's no county split here the way there is on this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists. What the county-level view hides is how few of those 58 codes actually correspond to a residential mail route: zip-codes.com's own delivery-type tally for the city counts 19 standard codes, 28 PO Box codes, and 11 unique codes assigned to single high-volume recipients, meaning the codes that aren't tied to an ordinary carrier route outnumber the ones that are, by roughly two to one.",
 				],
 				table: {
 					caption: 'All 58 ZIP codes with "Fresno, CA" as the primary USPS place name (per GeoNames.org, checked 2026-08-18)',
@@ -3188,21 +3188,21 @@ export const guides: Guide[] = [
 				heading: 'The 2010 split that created 93737',
 				body: [
 					"93737 is the newest code on the list above, and it exists because of a specific, documented USPS decision rather than a gradual boundary drift. The Postal Service's Sacramento District announced in mid-2010 that the 93727 ZIP, on Fresno's east side, had grown crowded enough to justify carving out a piece of it as its own code. The split took effect July 1, 2010, and only affected around 1,200 customers on the east side of Temperance Avenue, who received notice by mail that spring; the same Sunnyside postal station on East Olive Avenue kept handling their delivery afterward; only the ZIP printed on the envelope changed.",
-					"That's a narrower kind of change than the splits and overlays this site has documented at the area-code level -- see the [California area codes list](/california-area-codes/) for how Fresno's own area code, 559, split off a larger numbering plan area in 1998 -- but it follows the same underlying logic: when growth outpaces what a single code can carry efficiently, the agency responsible draws a new line rather than letting the old one strain indefinitely.",
+					"That's a narrower kind of change than the splits and overlays this site has documented at the area-code level (see the [California area codes list](/california-area-codes/) for how Fresno's own area code, 559, split off a larger numbering plan area in 1998), but it follows the same underlying logic: when growth outpaces what a single code can carry efficiently, the agency responsible draws a new line rather than letting the old one strain indefinitely.",
 				],
 			},
 			{
 				heading: "93844 and 93888: two ZIPs tied to an IRS center that closed in 2021",
 				body: [
-					"93844 and 93888 both stand out from the rest of the table above -- neither is a delivery area anyone lives in, and zip-codes.com tags both as IRS Service Center codes among the 11 unique codes in its tally. They trace back to a paper tax-return processing center the IRS operated at Butler and Peach avenues on Fresno's east side -- inside the same 93727 ZIP this article's earlier section covers -- which employed roughly 3,000 people at its 2016 peak before the agency wound the site down and closed it permanently at the end of September 2021, as electronic filing displaced most paper returns. Taxpayers in the states the Fresno center used to serve -- Alaska, California, Hawaii, Ohio, and Washington -- now mail paper returns to the IRS's Ogden, Utah processing center instead, but the two Fresno ZIP codes remain in USPS's own database regardless.",
-					"This site's own [Atlanta ZIP list](/atlanta-zip-codes/) already flags the same single-recipient pattern for Atlanta's 39901 and Austin's 73301, and for [Chicago's 28 single-recipient codes](/chicago-zip-codes/) -- when an organization receives enough mail, USPS carves out a ZIP that belongs to it alone, wherever that number happens to fall in the numbering sequence. Fresno's pair is a reminder that a unique ZIP can keep existing in that database even after the facility it was built for has shut down.",
+					"93844 and 93888 both stand out from the rest of the table above: neither is a delivery area anyone lives in, and zip-codes.com tags both as IRS Service Center codes among the 11 unique codes in its tally. They trace back to a paper tax-return processing center the IRS operated at Butler and Peach avenues on Fresno's east side (inside the same 93727 ZIP this article's earlier section covers), which employed roughly 3,000 people at its 2016 peak before the agency wound the site down and closed it permanently at the end of September 2021, as electronic filing displaced most paper returns. Taxpayers in the states the Fresno center used to serve (Alaska, California, Hawaii, Ohio, and Washington) now mail paper returns to the IRS's Ogden, Utah processing center instead, but the two Fresno ZIP codes remain in USPS's own database regardless.",
+					"This site's own [Atlanta ZIP list](/atlanta-zip-codes/) already flags the same single-recipient pattern for Atlanta's 39901 and Austin's 73301, and for [Chicago's 28 single-recipient codes](/chicago-zip-codes/): when an organization receives enough mail, USPS carves out a ZIP that belongs to it alone, wherever that number happens to fall in the numbering sequence. Fresno's pair is a reminder that a unique ZIP can keep existing in that database even after the facility it was built for has shut down.",
 				],
 			},
 			{
 				heading: "From 209 to 559 to 357: Fresno's area codes, one of them barely a year old",
 				body: [
-					"Fresno's phone numbers trace back to 209, which itself split off from 916 -- one of California's three original 1947 area codes -- in 1958, decades before Fresno had a code of its own to call. Fresno kept 209 for four more decades before the region split off its own code, 559, in November 1998, the same year several other fast-growing California metros split off codes of their own. 559 stayed Fresno's only code for more than 26 years, longer than 213 lasted before Los Angeles's first split in 1951, before regulators added an overlay, 357, on March 26, 2025 -- among the newest area codes in the state, per Wikipedia's tracking of the numbering plan.",
-					"That overlay means new phone numbers in the Fresno area now carry 357 rather than 559, while existing 559 numbers keep working exactly as before -- the same overlay pattern this site's [California area codes list](/california-area-codes/) documents elsewhere in the state. San Francisco added its own overlay, 628, back in 2015, and Sacramento added 279 in 2018, both years ahead of Fresno's turn. Los Angeles's most recent overlay, 738, is the one that came close: it landed November 1, 2024, less than five months before 357 arrived in Fresno.",
+					"Fresno's phone numbers trace back to 209, which itself split off from 916 (one of California's three original 1947 area codes) in 1958, decades before Fresno had a code of its own to call. Fresno kept 209 for four more decades before the region split off its own code, 559, in November 1998, the same year several other fast-growing California metros split off codes of their own. 559 stayed Fresno's only code for more than 26 years, longer than 213 lasted before Los Angeles's first split in 1951, before regulators added an overlay, 357, on March 26, 2025, among the newest area codes in the state, per Wikipedia's tracking of the numbering plan.",
+					"That overlay means new phone numbers in the Fresno area now carry 357 rather than 559, while existing 559 numbers keep working exactly as before, the same overlay pattern this site's [California area codes list](/california-area-codes/) documents elsewhere in the state. San Francisco added its own overlay, 628, back in 2015, and Sacramento added 279 in 2018, both years ahead of Fresno's turn. Los Angeles's most recent overlay, 738, is the one that came close: it landed November 1, 2024, less than five months before 357 arrived in Fresno.",
 				],
 			},
 		],
@@ -3235,10 +3235,10 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'All ZIP Codes, Map and Demographics of Fresno, CA -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-fresno.asp' },
+			{ label: 'All ZIP Codes, Map and Demographics of Fresno, CA (zip-codes.com)', url: 'https://www.zip-codes.com/city/ca-fresno.asp' },
 			{ label: 'USPS: ZIP Code change for Fresno, CA 93727 (2010 news release)', url: 'https://about.usps.com/news/state-releases/ca/2010/ca_2010_0622.htm' },
 			{ label: 'IRS IR-2021-185: New mailing address for some Western states as Fresno, California, paper tax return processing center closes', url: 'https://www.irs.gov/newsroom/new-mailing-address-for-some-western-states-as-fresno-california-paper-tax-return-processing-center-closes' },
-			{ label: 'Area codes 559 and 357 -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Area_codes_559_and_357' },
+			{ label: 'Area codes 559 and 357 (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Area_codes_559_and_357' },
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
 	},
@@ -3247,16 +3247,16 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: "Huntsville, AL ZIP Codes: All 24, and the 7 That Aren't Neighborhoods",
 		description:
-			"All 24 ZIP codes USPS assigns to Huntsville, AL -- including the 7 reserved for single addresses like a credit union and a university, and one that sits mostly on Redstone Arsenal.",
+			"All 24 ZIP codes USPS assigns to Huntsville, AL, including the 7 reserved for single addresses like a credit union and a university, and one that sits mostly on Redstone Arsenal.",
 		published: '2026-08-21',
 		updated: '2026-08-21',
 		coreSummary:
-			"USPS assigns 24 ZIP codes to Huntsville, Alabama, and per this site's GeoNames-based source data, every one sits inside a single county -- Madison -- the same pattern this site has already documented for Fresno's 58 codes. What the flat county view hides is how few of Huntsville's 24 codes serve an ordinary carrier route: zip-codes.com's own delivery-type tally for the city counts 11 standard codes, 7 unique codes reserved for a single high-volume address, and 6 PO Box codes -- meaning fewer than half are the kind of code a residential mail carrier actually walks. Two of those 7 unique codes are on the public record for a specific tenant: 35893 belongs to Redstone Federal Credit Union, Alabama's largest credit union, and 35899 belongs to the University of Alabama in Huntsville. A third code on the list, 35808, carries the Huntsville place name in USPS and GeoNames records but sits mostly on Redstone Arsenal, the Army post that hosts NASA's Marshall Space Flight Center.",
+			"USPS assigns 24 ZIP codes to Huntsville, Alabama, and per this site's GeoNames-based source data, every one sits inside a single county, Madison, the same pattern this site has already documented for Fresno's 58 codes. What the flat county view hides is how few of Huntsville's 24 codes serve an ordinary carrier route: zip-codes.com's own delivery-type tally for the city counts 11 standard codes, 7 unique codes reserved for a single high-volume address, and 6 PO Box codes, meaning fewer than half are the kind of code a residential mail carrier actually walks. Two of those 7 unique codes are on the public record for a specific tenant: 35893 belongs to Redstone Federal Credit Union, Alabama's largest credit union, and 35899 belongs to the University of Alabama in Huntsville. A third code on the list, 35808, carries the Huntsville place name in USPS and GeoNames records but sits mostly on Redstone Arsenal, the Army post that hosts NASA's Marshall Space Flight Center.",
 		sections: [
 			{
 				heading: 'All 24 ZIP codes, and why fewer than half are standard delivery routes',
 				body: [
-					"Madison County holds all 24 of the ZIP codes USPS assigns to \"Huntsville, AL,\" per this site's source data -- a cleaner map than [Atlanta's](/atlanta-zip-codes/) or [Denver's](/denver-zip-codes/) county-straddling lists, and one Huntsville shares with [Fresno](/fresno-zip-codes/). Counting by county alone hides how the codes actually function, though: split by delivery type, zip-codes.com's tally puts only 11 of Huntsville's 24 on standard carrier routes, against 7 reserved for a single high-volume address and 6 assigned to PO boxes -- a smaller standard-route share than Fresno manages with 19 out of 58, despite Huntsville's list running well under half Fresno's length.",
+					"Madison County holds all 24 of the ZIP codes USPS assigns to \"Huntsville, AL,\" per this site's source data, a cleaner map than [Atlanta's](/atlanta-zip-codes/) or [Denver's](/denver-zip-codes/) county-straddling lists, and one Huntsville shares with [Fresno](/fresno-zip-codes/). Counting by county alone hides how the codes actually function, though: split by delivery type, zip-codes.com's tally puts only 11 of Huntsville's 24 on standard carrier routes, against 7 reserved for a single high-volume address and 6 assigned to PO boxes, a smaller standard-route share than Fresno manages with 19 out of 58, despite Huntsville's list running well under half Fresno's length.",
 				],
 				table: {
 					caption: 'All 24 ZIP codes with "Huntsville, AL" as the primary USPS place name (per GeoNames.org, checked 2026-08-21)',
@@ -3273,22 +3273,22 @@ export const guides: Guide[] = [
 			{
 				heading: 'Two of the 7 unique codes belong to a credit union and a university',
 				body: [
-					"Unique ZIP codes exist for a single organization or address large enough to justify its own code, rather than sharing one with its surrounding neighborhood -- and Huntsville's public record identifies two by name. 35893 is assigned to Redstone Federal Credit Union at 220 Wynn Drive, Alabama's largest credit union and one of the 20 largest federal credit unions in the country by membership. 35899 belongs to the University of Alabama in Huntsville, which anchors Cummings Research Park -- the second-largest research park in the United States and the fourth-largest in the world by size. Because unique codes like these are administrative rather than residential, the Census Bureau doesn't publish population figures for either one, unlike the standard codes on the same list.",
+					"Unique ZIP codes exist for a single organization or address large enough to justify its own code, rather than sharing one with its surrounding neighborhood, and Huntsville's public record identifies two by name. 35893 is assigned to Redstone Federal Credit Union at 220 Wynn Drive, Alabama's largest credit union and one of the 20 largest federal credit unions in the country by membership. 35899 belongs to the University of Alabama in Huntsville, which anchors Cummings Research Park, the second-largest research park in the United States and the fourth-largest in the world by size. Because unique codes like these are administrative rather than residential, the Census Bureau doesn't publish population figures for either one, unlike the standard codes on the same list.",
 					"The other 5 unique codes on Huntsville's list aren't identified by a single named tenant in public postal directories the way 35893 and 35899 are, so this page doesn't guess at who holds them.",
 				],
 			},
 			{
 				heading: "35808 carries Huntsville's name but sits mostly on an Army post",
 				body: [
-					"35808 is the one code on this list that blurs the line between city and federal installation. USPS and GeoNames both file it under \"Huntsville, AL,\" and it's the code this site's source data returns for the city -- but independent ZIP-boundary trackers city-data.com and zipdatamaps.com both describe its actual footprint as centered on Redstone Arsenal, the Army post that hosts the Army's Aviation and Missile Command, the Missile Defense Agency, and NASA's Marshall Space Flight Center. The arsenal's own post office, at 3710 Aerobee Road, operates under that same 35808 code.",
-					"That's a different kind of blurred line than the one on this site's [Cincinnati list](/cincinnati-zip-codes/), where a defunct IRS processing center got its own dedicated code -- 35808 is an active federal installation folded into a city's ordinary ZIP list rather than carved out as an obviously administrative code like 35893 or 35899.",
+					"35808 is the one code on this list that blurs the line between city and federal installation. USPS and GeoNames both file it under \"Huntsville, AL,\" and it's the code this site's source data returns for the city. But independent ZIP-boundary trackers city-data.com and zipdatamaps.com both describe its actual footprint as centered on Redstone Arsenal, the Army post that hosts the Army's Aviation and Missile Command, the Missile Defense Agency, and NASA's Marshall Space Flight Center. The arsenal's own post office, at 3710 Aerobee Road, operates under that same 35808 code.",
+					"That's a different kind of blurred line than the one on this site's [Cincinnati list](/cincinnati-zip-codes/), where a defunct IRS processing center got its own dedicated code: 35808 is an active federal installation folded into a city's ordinary ZIP list rather than carved out as an obviously administrative code like 35893 or 35899.",
 				],
 			},
 			{
 				heading: "256 split from 205 in 1998, then added an overlay 12 years later",
 				body: [
-					"Huntsville's [area code](/how-do-area-codes-work/), 256, didn't exist before March 23, 1998, when regulators split it off from 205, which had covered the entire state of Alabama since the North American Numbering Plan assigned area codes nationwide in 1947. 256 took the northern and northeastern part of the state -- Huntsville, Decatur, Florence, and Gadsden -- while 205 kept Birmingham and the rest; a permissive dialing period let callers use either code through September 28, 1998, while phone systems, pagers, and fax machines were reprogrammed.",
-					"No second split followed 256's creation. What came next, on July 10, 2010, was an overlay: 938, layered onto the same 256 footprint rather than carving out a new slice of territory, so a new Huntsville-area number can land on either code while every number already dialing 256 stays put. Twelve years passed between the split and that overlay -- roughly the interval this site's Toronto area's 437 overlay records between each of that region's own overlay additions, and a small fraction of the 74 years Washington, D.C. waited for its first one.",
+					"Huntsville's [area code](/how-do-area-codes-work/), 256, didn't exist before March 23, 1998, when regulators split it off from 205, which had covered the entire state of Alabama since the North American Numbering Plan assigned area codes nationwide in 1947. 256 took the northern and northeastern part of the state (Huntsville, Decatur, Florence, and Gadsden), while 205 kept Birmingham and the rest; a permissive dialing period let callers use either code through September 28, 1998, while phone systems, pagers, and fax machines were reprogrammed.",
+					"No second split followed 256's creation. What came next, on July 10, 2010, was an overlay: 938, layered onto the same 256 footprint rather than carving out a new slice of territory, so a new Huntsville-area number can land on either code while every number already dialing 256 stays put. Twelve years passed between the split and that overlay, roughly the interval this site's Toronto area's 437 overlay records between each of that region's own overlay additions, and a small fraction of the 74 years Washington, D.C. waited for its first one.",
 				],
 			},
 		],
@@ -3301,7 +3301,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What county is Huntsville, Alabama in?',
 				answer:
-					'Madison County. Unlike several other cities on this site, all 24 of Huntsville\'s ZIP codes fall inside a single county -- there\'s no split across a county line.',
+					'Madison County. Unlike several other cities on this site, all 24 of Huntsville\'s ZIP codes fall inside a single county; there\'s no split across a county line.',
 			},
 			{
 				question: "What is Huntsville's area code?",
@@ -3311,7 +3311,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Redstone Arsenal part of a Huntsville ZIP code?',
 				answer:
-					"Yes -- 35808 carries the Huntsville place name in USPS and GeoNames records, but independent ZIP-boundary trackers describe its footprint as centered on Redstone Arsenal, the Army post that hosts NASA's Marshall Space Flight Center and the Missile Defense Agency.",
+					"Yes: 35808 carries the Huntsville place name in USPS and GeoNames records, but independent ZIP-boundary trackers describe its footprint as centered on Redstone Arsenal, the Army post that hosts NASA's Marshall Space Flight Center and the Missile Defense Agency.",
 			},
 			{
 				question: "Why do some Huntsville ZIP codes have no population data?",
@@ -3321,11 +3321,11 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'All ZIP Codes, Map and Demographics of Huntsville, AL -- zip-codes.com', url: 'https://www.zip-codes.com/city/al-huntsville.asp' },
-			{ label: 'Huntsville, AL ZIP Code List -- zipcodestogo.com', url: 'https://www.zipcodestogo.com/city/Huntsville/AL/' },
-			{ label: 'ZIP Code 35893 (Redstone Federal Credit Union) -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/35893/zip-code-35893.asp' },
-			{ label: '35808 Zip Code (Redstone Arsenal, Alabama) Profile -- city-data.com', url: 'https://www.city-data.com/zips/35808.html' },
-			{ label: 'Redstone Arsenal Alabama ZIP Code Map -- zipdatamaps.com', url: 'https://www.zipdatamaps.com/en/us/zip-maps/al/cdp/borders/redstone-arsenal-zip-code-map' },
+			{ label: 'All ZIP Codes, Map and Demographics of Huntsville, AL (zip-codes.com)', url: 'https://www.zip-codes.com/city/al-huntsville.asp' },
+			{ label: 'Huntsville, AL ZIP Code List (zipcodestogo.com)', url: 'https://www.zipcodestogo.com/city/Huntsville/AL/' },
+			{ label: 'ZIP Code 35893 (Redstone Federal Credit Union), zip-codes.com', url: 'https://www.zip-codes.com/zip-code/35893/zip-code-35893.asp' },
+			{ label: '35808 Zip Code (Redstone Arsenal, Alabama) Profile, city-data.com', url: 'https://www.city-data.com/zips/35808.html' },
+			{ label: 'Redstone Arsenal Alabama ZIP Code Map (zipdatamaps.com)', url: 'https://www.zipdatamaps.com/en/us/zip-maps/al/cdp/borders/redstone-arsenal-zip-code-map' },
 			{ label: 'Wikipedia: Area codes 256 and 938', url: 'https://en.wikipedia.org/wiki/Area_codes_256_and_938' },
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
@@ -3335,11 +3335,11 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'Indianapolis ZIP Codes: All 63, and the Four Cities Unigov Never Absorbed',
 		description:
-			"Indianapolis's 63 ZIP codes mostly sit in Marion County -- the result of a 1970 city-county merger that absorbed almost everything except four cities that still run their own police, fire, and mayor's office today.",
+			"Indianapolis's 63 ZIP codes mostly sit in Marion County, the result of a 1970 city-county merger that absorbed almost everything except four cities that still run their own police, fire, and mayor's office today.",
 		published: '2026-08-21',
 		updated: '2026-08-21',
 		coreSummary:
-			"USPS assigns 63 ZIP codes to \"Indianapolis, IN\" as the primary place name, and this site's source data ties 59 of them to Marion County -- a direct result of Unigov, the 1970 law that merged the governments of Indianapolis and Marion County into one. Unlike Nashville's [1963 merger with Davidson County](/nashville-zip-codes/), which went to a public referendum, Unigov was passed by the Indiana General Assembly with no county-wide vote at all, and it deliberately left four municipalities out: Beech Grove, Lawrence, and Southport kept their own mayors, and the town of Speedway kept its own council, along with all four keeping independent police and fire departments. Only one of the four, Beech Grove, also kept a ZIP code of its own, 46107; addresses in Lawrence, Southport, and Speedway still read \"Indianapolis, IN\" like the rest of Marion County. This site's data assigns the remaining four ZIP codes on the list, 46262, 46280, 46288, and 46290, to Hamilton County instead of Marion -- though a cross-check against zip-codes.com's own per-ZIP lookups agrees on only two of those four, a reminder that even directories built specifically to track ZIP-to-county boundaries don't always agree with each other.",
+			"USPS assigns 63 ZIP codes to \"Indianapolis, IN\" as the primary place name, and this site's source data ties 59 of them to Marion County, a direct result of Unigov, the 1970 law that merged the governments of Indianapolis and Marion County into one. Unlike Nashville's [1963 merger with Davidson County](/nashville-zip-codes/), which went to a public referendum, Unigov was passed by the Indiana General Assembly with no county-wide vote at all, and it deliberately left four municipalities out: Beech Grove, Lawrence, and Southport kept their own mayors, and the town of Speedway kept its own council, along with all four keeping independent police and fire departments. Only one of the four, Beech Grove, also kept a ZIP code of its own, 46107; addresses in Lawrence, Southport, and Speedway still read \"Indianapolis, IN\" like the rest of Marion County. This site's data assigns the remaining four ZIP codes on the list, 46262, 46280, 46288, and 46290, to Hamilton County instead of Marion, though a cross-check against zip-codes.com's own per-ZIP lookups agrees on only two of those four, a reminder that even directories built specifically to track ZIP-to-county boundaries don't always agree with each other.",
 		sections: [
 			{
 				heading: 'All 63 ZIP codes with "Indianapolis, IN" as the primary USPS place name',
@@ -3369,28 +3369,28 @@ export const guides: Guide[] = [
 			{
 				heading: 'Two of the four "Hamilton County" codes don\'t hold up under a second lookup',
 				body: [
-					"A direct check against zip-codes.com's own per-ZIP pages confirms this site's Hamilton County assignment for two of the four: 46280 covers part of Carmel, an incorporated Hamilton County suburb, and 46290 is a low-population business and PO box code that zip-codes.com also places in Hamilton. For the other two, the same source disagrees outright -- its pages for both 46262 and 46288 list Marion County, not Hamilton, contradicting this site's own GeoNames-derived data. Neither ZIP code has enough independent coverage to settle which directory has it right, so this site is naming the disagreement rather than picking a side: readers who need a Hamilton-vs-Marion answer for 46262 or 46288 specifically should treat both counties as contested until a primary source, like Marion or Hamilton County's own GIS parcel lookup, resolves it.",
+					"A direct check against zip-codes.com's own per-ZIP pages confirms this site's Hamilton County assignment for two of the four: 46280 covers part of Carmel, an incorporated Hamilton County suburb, and 46290 is a low-population business and PO box code that zip-codes.com also places in Hamilton. For the other two, the same source disagrees outright: its pages for both 46262 and 46288 list Marion County, not Hamilton, contradicting this site's own GeoNames-derived data. Neither ZIP code has enough independent coverage to settle which directory has it right, so this site is naming the disagreement rather than picking a side: readers who need a Hamilton-vs-Marion answer for 46262 or 46288 specifically should treat both counties as contested until a primary source, like Marion or Hamilton County's own GIS parcel lookup, resolves it.",
 					"That disagreement is a smaller-scale version of the same lesson this site's [Cincinnati ZIP list](/cincinnati-zip-codes/) and [Huntsville ZIP list](/huntsville-zip-codes/) already document: a ZIP code's county tag and a city's mailing address don't always trace back to the same boundary, and different directories built from different source files can land on different answers for the exact same five digits.",
 				],
 			},
 			{
-				heading: 'Marion County became Indianapolis in 1970 -- almost all of it',
+				heading: 'Marion County became Indianapolis in 1970, almost all of it',
 				body: [
-					"The reason 59 of 63 Indianapolis ZIP codes sit in Marion County isn't incidental. On January 1, 1970, the Indiana General Assembly merged the government of the City of Indianapolis with the government of Marion County under a law known locally as Unigov, championed by then-mayor (and later U.S. Senator) Richard Lugar. Unlike [Nashville's 1963 merger with Davidson County](/nashville-zip-codes/), which required voters to approve a charter at the ballot box -- and which they rejected once, in 1958, before passing it in 1962 -- Unigov never went to a county-wide referendum at all. State legislators wrote and passed it directly.",
-					"To get the law through, its authors carved out an exception: the cities of Beech Grove, Lawrence, and Southport, plus the town of Speedway, stayed outside the Consolidated City. Each kept its own police department, school system, and fire service on pre-Unigov borders; Beech Grove, Lawrence, and Southport also kept their own elected mayors, while Speedway, organized as a town rather than a city, kept its own town council instead. Residents of all four still pay county-wide taxes and vote both for their own local government and for the mayor of Indianapolis and a district seat on the City-County Council -- a double layer of representation that doesn't exist anywhere in Nashville's fully merged Davidson County.",
+					"The reason 59 of 63 Indianapolis ZIP codes sit in Marion County isn't incidental. On January 1, 1970, the Indiana General Assembly merged the government of the City of Indianapolis with the government of Marion County under a law known locally as Unigov, championed by then-mayor (and later U.S. Senator) Richard Lugar. Unlike [Nashville's 1963 merger with Davidson County](/nashville-zip-codes/), which required voters to approve a charter at the ballot box (and which they rejected once, in 1958, before passing it in 1962), Unigov never went to a county-wide referendum at all. State legislators wrote and passed it directly.",
+					"To get the law through, its authors carved out an exception: the cities of Beech Grove, Lawrence, and Southport, plus the town of Speedway, stayed outside the Consolidated City. Each kept its own police department, school system, and fire service on pre-Unigov borders; Beech Grove, Lawrence, and Southport also kept their own elected mayors, while Speedway, organized as a town rather than a city, kept its own town council instead. Residents of all four still pay county-wide taxes and vote both for their own local government and for the mayor of Indianapolis and a district seat on the City-County Council, a double layer of representation that doesn't exist anywhere in Nashville's fully merged Davidson County.",
 				],
 			},
 			{
 				heading: "Only one of the four excluded cities kept its own ZIP code",
 				body: [
-					"Beech Grove -- a roughly 2.5-square-mile city entirely surrounded by Indianapolis on all sides -- is the only one of the four excluded municipalities with a ZIP code of its own, 46107, distinct from the Indianapolis list above. Lawrence, Southport, and Speedway all use \"Indianapolis, IN\" as their USPS mailing address despite running independent city or town governments; Speedway's own post office, at 6110 W. 25th Street, still files under ZIP code 46224 and the city name \"Indianapolis\" on its own listing.",
+					"Beech Grove, a roughly 2.5-square-mile city entirely surrounded by Indianapolis on all sides, is the only one of the four excluded municipalities with a ZIP code of its own, 46107, distinct from the Indianapolis list above. Lawrence, Southport, and Speedway all use \"Indianapolis, IN\" as their USPS mailing address despite running independent city or town governments; Speedway's own post office, at 6110 W. 25th Street, still files under ZIP code 46224 and the city name \"Indianapolis\" on its own listing.",
 					"That's close to the mirror image of what this site found in Nashville, where four of the five satellite cities still standing lack their own ZIP and the one exception, Goodlettsville, plausibly kept its ZIP because it physically straddles a county line rather than because of any political independence. In Indianapolis, ZIP code assignment and self-government turn out to be almost entirely unrelated: three cities kept their own mayors and police forces for over fifty years and still share a ZIP list with the city that surrounds them.",
 				],
 			},
 			{
 				heading: "317 held alone for almost 70 years before Indianapolis got a second area code",
 				body: [
-					"Indianapolis has carried [area code](/how-do-area-codes-work/) 317 since 1947, one of the original codes assigned nationwide, and it briefly covered a much larger footprint before Gary and northern Indiana split off into 219 the following year and central Indiana outside the immediate metro split off into 765 in 1997. What came next wasn't a third split -- it was an overlay, the same growth response this site has documented for [Atlanta](/atlanta-area-code/): on March 15, 2016, regulators activated 463 across the identical nine-county footprint 317 already covered, so new numbers in the region draw from either code instead of any territory changing hands. On a phone keypad, 463 spells out \"IND,\" the same three letters as Indianapolis's airport code. Ten-digit dialing became mandatory that October, after regulators pushed the original September deadline back a month at the request of security alarm companies whose equipment still relied on seven-digit dialing.",
+					"Indianapolis has carried [area code](/how-do-area-codes-work/) 317 since 1947, one of the original codes assigned nationwide, and it briefly covered a much larger footprint before Gary and northern Indiana split off into 219 the following year and central Indiana outside the immediate metro split off into 765 in 1997. What came next wasn't a third split; it was an overlay, the same growth response this site has documented for [Atlanta](/atlanta-area-code/): on March 15, 2016, regulators activated 463 across the identical nine-county footprint 317 already covered, so new numbers in the region draw from either code instead of any territory changing hands. On a phone keypad, 463 spells out \"IND,\" the same three letters as Indianapolis's airport code. Ten-digit dialing became mandatory that October, after regulators pushed the original September deadline back a month at the request of security alarm companies whose equipment still relied on seven-digit dialing.",
 				],
 			},
 		],
@@ -3403,7 +3403,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What county is Indianapolis in?',
 				answer:
-					"Mostly Marion County -- the result of Unigov, a 1970 state law that merged the governments of Indianapolis and Marion County. Four municipalities, Beech Grove, Lawrence, Southport, and Speedway, were excluded from the merger and still run their own local governments today.",
+					"Mostly Marion County, the result of Unigov, a 1970 state law that merged the governments of Indianapolis and Marion County. Four municipalities, Beech Grove, Lawrence, Southport, and Speedway, were excluded from the merger and still run their own local governments today.",
 			},
 			{
 				question: 'Is Beech Grove part of Indianapolis?',
@@ -3413,7 +3413,7 @@ export const guides: Guide[] = [
 			{
 				question: "Why does Carmel share a ZIP code with Indianapolis?",
 				answer:
-					"ZIP code 46280 is addressed as \"Indianapolis, IN\" by USPS despite covering part of Carmel, an incorporated Hamilton County suburb -- one of several cases nationally where a ZIP code's mailing-address city and its actual jurisdiction don't match.",
+					"ZIP code 46280 is addressed as \"Indianapolis, IN\" by USPS despite covering part of Carmel, an incorporated Hamilton County suburb, one of several cases nationally where a ZIP code's mailing-address city and its actual jurisdiction don't match.",
 			},
 			{
 				question: "What is Indianapolis's area code?",
@@ -3423,14 +3423,14 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'ZIP Code 46262 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46262/zip-code-46262.asp' },
-			{ label: 'ZIP Code 46288 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46288/zip-code-46288.asp' },
-			{ label: 'ZIP Code 46280 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46280/zip-code-46280.asp' },
-			{ label: 'ZIP Code 46290 -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/46290/zip-code-46290.asp' },
-			{ label: 'Excluded Cities -- Encyclopedia of Indianapolis', url: 'https://indyencyclopedia.org/excluded-cities/' },
-			{ label: 'Unigov -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Unigov' },
-			{ label: 'Area codes 317 and 463 -- Wikipedia', url: 'https://en.wikipedia.org/wiki/Area_codes_317_and_463' },
-			{ label: 'Speedway, Indiana post office listing -- USPS store locator', url: 'https://www.postallocations.com/in/indianapolis/speedway' },
+			{ label: 'ZIP Code 46262 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/46262/zip-code-46262.asp' },
+			{ label: 'ZIP Code 46288 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/46288/zip-code-46288.asp' },
+			{ label: 'ZIP Code 46280 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/46280/zip-code-46280.asp' },
+			{ label: 'ZIP Code 46290 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/46290/zip-code-46290.asp' },
+			{ label: 'Excluded Cities (Encyclopedia of Indianapolis)', url: 'https://indyencyclopedia.org/excluded-cities/' },
+			{ label: 'Unigov (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Unigov' },
+			{ label: 'Area codes 317 and 463 (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Area_codes_317_and_463' },
+			{ label: 'Speedway, Indiana post office listing (USPS store locator)', url: 'https://www.postallocations.com/in/indianapolis/speedway' },
 		],
 	},
 	{
@@ -3525,7 +3525,7 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'All ZIP Codes, Map and Demographics of Irvine, CA -- zip-codes.com', url: 'https://www.zip-codes.com/city/ca-irvine.asp' },
+			{ label: 'All ZIP Codes, Map and Demographics of Irvine, CA (zip-codes.com)', url: 'https://www.zip-codes.com/city/ca-irvine.asp' },
 			{ label: 'Wikipedia: Irvine, California', url: 'https://en.wikipedia.org/wiki/Irvine,_California' },
 			{ label: 'Wikipedia: University of California, Irvine', url: 'https://en.wikipedia.org/wiki/University_of_California,_Irvine' },
 			{ label: 'UC Irvine 60th Anniversary: Pre-1965 Archives (Irvine Company land transfer, $1 sale)', url: 'https://uci.edu/60th/pre-1965.php' },
@@ -3614,9 +3614,9 @@ export const guides: Guide[] = [
 			{ label: 'City of Long Beach: Health Department', url: 'https://www.longbeach.gov/health/' },
 			{ label: 'Berkeleyside: Why does Berkeley have its own public health department?', url: 'https://www.berkeleyside.org/2020/04/15/berkeley-is-unusual-in-having-its-own-public-health-division-how-does-that-work-during-a-pandemic' },
 			{ label: 'City of Vernon: Health and Environmental Control Department', url: 'https://www.cityofvernonca.gov/government/health' },
-			{ label: 'ZIP Code 90840 Info -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/90840/zip-code-90840.asp' },
-			{ label: 'ZIP Code 90822 Info -- zip-codes.com', url: 'https://www.zip-codes.com/zip-code/90822/zip-code-90822.asp' },
-			{ label: 'VA Long Beach Healthcare System -- Contact Us', url: 'https://www.va.gov/long-beach-health-care/contact-us/' },
+			{ label: 'ZIP Code 90840 Info (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/90840/zip-code-90840.asp' },
+			{ label: 'ZIP Code 90822 Info (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/90822/zip-code-90822.asp' },
+			{ label: 'VA Long Beach Healthcare System: Contact Us', url: 'https://www.va.gov/long-beach-health-care/contact-us/' },
 		],
 	},
 	{
@@ -3624,16 +3624,16 @@ export const guides: Guide[] = [
 		category: 'Area Code Guides',
 		title: 'Las Vegas Area Codes: 702, 725, and the Split That Sent the Rest of Nevada to 775',
 		description:
-			"Las Vegas runs on two area codes today, 702 and 725 -- but 702 alone covered the entire state of Nevada for more than 50 years before growth split off everywhere outside Clark County.",
+			"Las Vegas runs on two area codes today, 702 and 725, but 702 alone covered the entire state of Nevada for more than 50 years before growth split off everywhere outside Clark County.",
 		published: '2026-08-23',
 		updated: '2026-08-23',
 		coreSummary:
-			"Two area codes serve Las Vegas and the rest of Clark County today, 702 and 725 -- but 702 alone once covered the entire state of Nevada for more than 50 years, from its 1947 assignment until December 12, 1998, when the state's growth forced a geographic split. Everything outside almost all of Clark County -- Reno, Carson City, Elko, Ely, Sparks, and Winnemucca among them -- moved to the new area code 775, while 702 narrowed down to the Las Vegas Valley, Henderson, and Boulder City. Las Vegas never split its own metro area again; once 702 itself started running low on numbers, regulators overlaid it with a second code, 725, on June 3, 2014, rather than dividing the valley a second time.",
+			"Two area codes serve Las Vegas and the rest of Clark County today, 702 and 725, but 702 alone once covered the entire state of Nevada for more than 50 years, from its 1947 assignment until December 12, 1998, when the state's growth forced a geographic split. Everything outside almost all of Clark County (Reno, Carson City, Elko, Ely, Sparks, and Winnemucca among them) moved to the new area code 775, while 702 narrowed down to the Las Vegas Valley, Henderson, and Boulder City. Las Vegas never split its own metro area again; once 702 itself started running low on numbers, regulators overlaid it with a second code, 725, on June 3, 2014, rather than dividing the valley a second time.",
 		sections: [
 			{
 				heading: "Las Vegas's two area codes",
 				body: [
-					"Both codes cover the identical registered territory today -- almost all of Clark County, including the Las Vegas Valley, Henderson, and Boulder City. Which one a given Las Vegas number carries depends only on when the line was activated, not which part of the valley its owner lives in.",
+					"Both codes cover the identical registered territory today: almost all of Clark County, including the Las Vegas Valley, Henderson, and Boulder City. Which one a given Las Vegas number carries depends only on when the line was activated, not which part of the valley its owner lives in.",
 				],
 				table: {
 					caption: "Las Vegas's area codes and when each went into service",
@@ -3672,14 +3672,14 @@ export const guides: Guide[] = [
 			{
 				heading: '725 arrived as an overlay, not a second split',
 				body: [
-					"By the early 2010s, growth inside 702's narrowed Clark County footprint was again eating through the code's supply of central office prefixes. Rather than split the valley a second time -- which would have forced some existing Las Vegas numbers to change area codes -- regulators added 725 as an overlay on June 3, 2014, stacking a second code across the identical territory 702 already covered. Every existing 702 number kept working exactly as before; new lines opened after that date could be assigned either 702 or 725, depending on which prefixes were still available.",
-					"The 10-digit dialing requirement that comes with any overlay applies here too: since 725 went live in 2014, every local call inside the Las Vegas Valley needs the area code plus the seven-digit number, even calling next door -- the same rule this site's [overview of how area codes work](/how-do-area-codes-work/) covers for overlay regions generally.",
+					"By the early 2010s, growth inside 702's narrowed Clark County footprint was again eating through the code's supply of central office prefixes. Rather than split the valley a second time (which would have forced some existing Las Vegas numbers to change area codes), regulators added 725 as an overlay on June 3, 2014, stacking a second code across the identical territory 702 already covered. Every existing 702 number kept working exactly as before; new lines opened after that date could be assigned either 702 or 725, depending on which prefixes were still available.",
+					"The 10-digit dialing requirement that comes with any overlay applies here too: since 725 went live in 2014, every local call inside the Las Vegas Valley needs the area code plus the seven-digit number, even calling next door, the same rule this site's [overview of how area codes work](/how-do-area-codes-work/) covers for overlay regions generally.",
 				],
 			},
 			{
 				heading: "'The 702': how an area code became a Vegas brand",
 				body: [
-					"Las Vegas is the only major city inside 702's footprint, and decades of tourism marketing and hometown pride have turned the three digits into shorthand for the city itself -- \"the 702\" shows up on merchandise, in song lyrics, and in local business names across the valley much the way [\"the 305\" does for Miami](/miami-area-code/). The American R&B vocal group 702, active through the late 1990s and early 2000s, took its name directly from the area code, years before most Las Vegas residents thought of 725 as anything but a local number too.",
+					"Las Vegas is the only major city inside 702's footprint, and decades of tourism marketing and hometown pride have turned the three digits into shorthand for the city itself: \"the 702\" shows up on merchandise, in song lyrics, and in local business names across the valley much the way [\"the 305\" does for Miami](/miami-area-code/). The American R&B vocal group 702, active through the late 1990s and early 2000s, took its name directly from the area code, years before most Las Vegas residents thought of 725 as anything but a local number too.",
 				],
 			},
 			{
@@ -3709,7 +3709,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Do I need to dial 10 digits for a local Las Vegas call?',
 				answer:
-					'Yes. Once 725 overlaid 702 on June 3, 2014, the combined numbering plan area required area code plus number for every local call -- the standard rule in any overlay region.',
+					'Yes. Once 725 overlaid 702 on June 3, 2014, the combined numbering plan area required area code plus number for every local call, the standard rule in any overlay region.',
 			},
 			{
 				question: 'Is there a current phone scam targeting Las Vegas NV Energy customers?',
@@ -3742,13 +3742,13 @@ export const guides: Guide[] = [
 		published: '2026-08-23',
 		updated: '2026-08-23',
 		coreSummary:
-			"USPS assigns 26 ZIP codes to Lubbock, Texas, and every one of them sits inside Lubbock County, where Lubbock has been the county seat since 1891. zip-codes.com's own delivery-type count for the city puts 16 on standard routes, 7 as PO Box-only codes, and 3 as unique codes tied to a single organization apiece -- and the university whose name is stamped across the city doesn't hold one of those three the way most people would guess. Texas Tech's main campus ZIP, 79409, is classified Standard; the unique slot instead goes to Texas Tech's own medical school two miles east, the city government's own PO box, and a private marketing firm. One more ZIP on the list, 79401, marks the downtown blocks an F5 tornado tore through on the night of May 11, 1970, killing 26 people and contributing to how meteorologists still measure tornado damage today. And running under all 26 ZIPs is a single area code, 806, that has covered the Texas Panhandle since 1957 without ever being split or overlaid -- the only one of the six area codes serving Texas before 1983 that's never needed relief.",
+			"USPS assigns 26 ZIP codes to Lubbock, Texas, and every one of them sits inside Lubbock County, where Lubbock has been the county seat since 1891. zip-codes.com's own delivery-type count for the city puts 16 on standard routes, 7 as PO Box-only codes, and 3 as unique codes tied to a single organization apiece, and the university whose name is stamped across the city doesn't hold one of those three the way most people would guess. Texas Tech's main campus ZIP, 79409, is classified Standard; the unique slot instead goes to Texas Tech's own medical school two miles east, the city government's own PO box, and a private marketing firm. One more ZIP on the list, 79401, marks the downtown blocks an F5 tornado tore through on the night of May 11, 1970, killing 26 people and contributing to how meteorologists still measure tornado damage today. And running under all 26 ZIPs is a single area code, 806, that has covered the Texas Panhandle since 1957 without ever being split or overlaid, the only one of the six area codes serving Texas before 1983 that's never needed relief.",
 		sections: [
 			{
 				heading: 'All 26 ZIP codes, and how few are ordinary delivery routes',
 				body: [
-					"Every one of the 26 ZIP codes USPS assigns to \"Lubbock, TX\" as the primary place name sits inside Lubbock County, per this site's source data, which simplifies things compared with the multi-county sprawl on this site's [Atlanta](/atlanta-zip-codes/) or [Chicago](/chicago-zip-codes/) lists -- Lubbock has been the seat of that single county since 1891, so there's no courthouse ambiguity layered on top of the ZIP map either.",
-					"What the county-level view hides is how few of those 26 codes correspond to an ordinary delivery route. zip-codes.com's own breakdown for the city counts 16 standard codes, 7 PO Box-only codes, and 3 unique codes reserved for a single organization apiece -- meaning fewer than two-thirds of Lubbock's ZIP codes are the kind that covers more than one address.",
+					"Every one of the 26 ZIP codes USPS assigns to \"Lubbock, TX\" as the primary place name sits inside Lubbock County, per this site's source data, which simplifies things compared with the multi-county sprawl on this site's [Atlanta](/atlanta-zip-codes/) or [Chicago](/chicago-zip-codes/) lists. Lubbock has been the seat of that single county since 1891, so there's no courthouse ambiguity layered on top of the ZIP map either.",
+					"What the county-level view hides is how few of those 26 codes correspond to an ordinary delivery route. zip-codes.com's own breakdown for the city counts 16 standard codes, 7 PO Box-only codes, and 3 unique codes reserved for a single organization apiece, meaning fewer than two-thirds of Lubbock's ZIP codes are the kind that covers more than one address.",
 				],
 				table: {
 					caption: 'All 26 ZIP codes with "Lubbock, TX" as the primary USPS place name, by delivery type (zip-codes.com, checked 2026-08-23)',
@@ -3775,7 +3775,7 @@ export const guides: Guide[] = [
 				heading: "79401 and the tornado that changed how damage gets measured",
 				body: [
 					"79401 covers downtown Lubbock, including the 20-story Metro Tower at 1220 Broadway, known when it opened in 1955 as the Great Plains Life Building, then the tallest building in the city. On the night of May 11, 1970, an F5 tornado tore through that same stretch of downtown as part of an 8.5-mile path that killed 26 people, according to Wikipedia's sourced account of the storm; NOAA's Storm Prediction Center lists it as the 24th F5 or EF5 tornado recorded in the United States since 1950.",
-					"The Great Plains Life Building itself took heavy damage and sat vacant for years before reopening as residential lofts in 1975 -- Wikipedia's entry on the building notes it's the second-tallest building on record to survive a direct F5 hit, behind only the ALICO Building in Waco. The broader damage survey Ted Fujita conducted across the city afterward, matching wind-speed estimates to specific patterns of structural failure, fed into the Fujita Scale he introduced the following year -- the same F-scale this site uses elsewhere to describe tornado intensity.",
+					"The Great Plains Life Building itself took heavy damage and sat vacant for years before reopening as residential lofts in 1975. Wikipedia's entry on the building notes it's the second-tallest building on record to survive a direct F5 hit, behind only the ALICO Building in Waco. The broader damage survey Ted Fujita conducted across the city afterward, matching wind-speed estimates to specific patterns of structural failure, fed into the Fujita Scale he introduced the following year, the same F-scale this site uses elsewhere to describe tornado intensity.",
 				],
 			},
 			{
@@ -3815,7 +3815,7 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'All ZIP Codes, Map and Demographics of Lubbock, TX -- zip-codes.com', url: 'https://www.zip-codes.com/city/tx-lubbock.asp' },
+			{ label: 'All ZIP Codes, Map and Demographics of Lubbock, TX (zip-codes.com)', url: 'https://www.zip-codes.com/city/tx-lubbock.asp' },
 			{ label: 'Wikipedia: Lubbock, Texas', url: 'https://en.wikipedia.org/wiki/Lubbock,_Texas' },
 			{ label: 'Wikipedia: Lubbock tornado', url: 'https://en.wikipedia.org/wiki/Lubbock_tornado' },
 			{ label: 'Wikipedia: Metro Tower (Lubbock)', url: 'https://en.wikipedia.org/wiki/Metro_Tower_(Lubbock)' },
@@ -3912,12 +3912,12 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'Scottsdale, AZ ZIP Codes -- zip-codes.com', url: 'https://www.zip-codes.com/city/az-scottsdale.asp' },
-			{ label: 'Is Kierland Really in Scottsdale? The 85254 Zip Explained -- Best Arizona Home Finder', url: 'https://www.bestarizonahomefinder.com/blog/is-kierland-really-in-scottsdale-85254-magic-zip-code/' },
-			{ label: 'ZIP Code 85254 Boundary Map -- ZipMap.net', url: 'https://zipmap.net/zips/85254.htm' },
-			{ label: 'McDowell Sonoran Preserve -- City of Scottsdale', url: 'https://www.scottsdaleaz.gov/preserve' },
+			{ label: 'Scottsdale, AZ ZIP Codes (zip-codes.com)', url: 'https://www.zip-codes.com/city/az-scottsdale.asp' },
+			{ label: 'Is Kierland Really in Scottsdale? The 85254 Zip Explained (Best Arizona Home Finder)', url: 'https://www.bestarizonahomefinder.com/blog/is-kierland-really-in-scottsdale-85254-magic-zip-code/' },
+			{ label: 'ZIP Code 85254 Boundary Map (ZipMap.net)', url: 'https://zipmap.net/zips/85254.htm' },
+			{ label: 'McDowell Sonoran Preserve (City of Scottsdale)', url: 'https://www.scottsdaleaz.gov/preserve' },
 			{ label: 'Fast Facts About the McDowell Sonoran Conservancy', url: 'https://www.mcdowellsonoran.org/fast-facts-about-the-mcdowell-sonoran-conservancy/' },
-			{ label: 'Scottsdale celebrates McDowell Sonoran Preserve -- Daily Independent (yourvalley.net)', url: 'https://www.yourvalley.net/stories/scottsdale-celebrates-mcdowell-sonoran-preserve,100365' },
+			{ label: 'Scottsdale celebrates McDowell Sonoran Preserve, Daily Independent (yourvalley.net)', url: 'https://www.yourvalley.net/stories/scottsdale-celebrates-mcdowell-sonoran-preserve,100365' },
 			{ label: 'Wikipedia: McDowell Sonoran Preserve', url: 'https://en.wikipedia.org/wiki/McDowell_Sonoran_Preserve' },
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
@@ -3968,8 +3968,8 @@ export const guides: Guide[] = [
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
-			{ label: 'History of Bexar County -- Bexar County, TX official website', url: 'https://www.bexar.org/2985/History-of-Bexar-County' },
-			{ label: 'Handbook of Texas: Bexar County -- Texas State Historical Association', url: 'https://www.tshaonline.org/handbook/entries/bexar-county' },
+			{ label: 'History of Bexar County (Bexar County, TX official website)', url: 'https://www.bexar.org/2985/History-of-Bexar-County' },
+			{ label: 'Handbook of Texas: Bexar County (Texas State Historical Association)', url: 'https://www.tshaonline.org/handbook/entries/bexar-county' },
 			{ label: 'Wikipedia: Bexar County, Texas', url: 'https://en.wikipedia.org/wiki/Bexar_County,_Texas' },
 			{ label: 'US Census Bureau QuickFacts: Bexar County, Texas', url: 'https://www.census.gov/quickfacts/fact/table/bexarcountytexas/PST045224' },
 			{ label: 'USAFacts: Bexar County, Texas population data', url: 'https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/texas/county/bexar-county/' },
