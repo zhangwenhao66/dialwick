@@ -2199,13 +2199,13 @@ export const guides: Guide[] = [
 	{
 		slug: 'atlanta-area-code',
 		category: 'Area Code Guides',
-		title: 'Atlanta Area Codes: 404, 770, 678, 470, 943, and the Two That Stopped Taking New Numbers',
+		title: 'Atlanta Area Codes: 404, 770, 678, 470, 943, and the Three That Stopped Taking New Numbers',
 		description:
-			"Atlanta runs on five area codes today. Two of them, 404 and 678, ran out of prefixes to hand out years ago -- existing numbers still work, but nobody gets a new one.",
+			"Atlanta runs on five area codes. Three, 404, 678, and 770, ran out of numbers to give out -- existing lines still work, but nobody gets a new one from them.",
 		published: '2026-08-19',
 		updated: '2026-08-19',
 		coreSummary:
-			"Metro Atlanta is served by five area codes -- 404, 770, 678, 470, and 943 -- but only three of them, 770, 470, and 943, can still be handed out to new phone lines. 404, the original code covering all of Georgia in 1947, and 678, its first overlay from 1998, both ran through every available prefix years ago; existing 404 and 678 numbers keep working forever, but the North American Numbering Plan Administrator (NANPA) stopped assigning new ones from those two codes once they were exhausted. Georgia's numbering plan split geographically only once, drawing a line at the Interstate 285 perimeter in 1995 -- every code added since has overlaid both sides of that line at once rather than drawing a new one.",
+			"Metro Atlanta is served by five area codes -- 404, 770, 678, 470, and 943 -- but only two of them, 470 and 943, can still be handed out to new phone lines. 404, the original code covering all of Georgia in 1947; 770, split off from it in 1995; and 678, the first overlay added in 1998, all ran through every available prefix. Existing 404, 678, and 770 numbers keep working forever, but the North American Numbering Plan Administrator (NANPA) stopped assigning new ones from those three codes once they were exhausted. Georgia's numbering plan split geographically only once, drawing a line at the Interstate 285 perimeter in 1995 -- every code added since has overlaid both sides of that line at once rather than drawing a new one.",
 		sections: [
 			{
 				heading: "Atlanta's five area codes",
@@ -2217,7 +2217,7 @@ export const guides: Guide[] = [
 					columns: ['Area code', 'Coverage', 'In service since', 'Still issuing new numbers?'],
 					rows: [
 						['404', 'Georgia (statewide in 1947; Atlanta inside the I-285 perimeter today)', '1947 (original)', 'No -- exhausted October 2013'],
-						['770', 'Metro Atlanta outside the I-285 perimeter', 'August 1, 1995', 'Yes'],
+						['770', 'Metro Atlanta outside the I-285 perimeter', 'August 1, 1995', 'No -- exhausted'],
 						['678', 'Overlay on 404 and 770', 'January 6, 1998', 'No -- exhausted'],
 						['470', 'Overlay on 404, 770, and 678', 'February 26, 2010', 'Yes'],
 						['943', 'Overlay on 404, 770, 678, and 470', 'March 15, 2022', 'Yes'],
@@ -2239,10 +2239,10 @@ export const guides: Guide[] = [
 				],
 			},
 			{
-				heading: '404 and 678 still work -- they just can\'t be assigned to anyone new',
+				heading: '404, 678, and 770 still work -- they just can\'t be assigned to anyone new',
 				body: [
-					"\"Exhausted\" describes the supply of unassigned central office prefixes within a code, not the code itself. Every 404 and 678 number already in service keeps working exactly as before; nothing about exhaustion forces a number to change. What exhaustion means in practice is that phone carriers can no longer request new blocks of numbers from either code -- when a carrier needs numbers for new customers in the Atlanta overlay region, NANPA assigns them from 770, 470, or 943 instead, the three codes that still have prefixes left to give out.",
-					"404's exhaustion is documented precisely: every central office prefix in the code had been assigned to a service provider by October 2013, with 678 following not long after. 470 was added in 2010, three years before 404 actually ran dry, because overlay codes are typically requested years ahead of the projected exhaustion date rather than after it arrives -- the same lead time regulators later gave 943 when they approved it in October 2020 for a shortfall not projected until the second quarter of 2023.",
+					"\"Exhausted\" describes the supply of unassigned central office prefixes within a code, not the code itself. Every 404, 678, and 770 number already in service keeps working exactly as before; nothing about exhaustion forces a number to change. What exhaustion means in practice is that phone carriers can no longer request new blocks of numbers from any of the three codes -- when a carrier needs numbers for new customers in the Atlanta overlay region, NANPA assigns them from 470 or 943 instead, the only two codes that still have prefixes left to give out.",
+					"404's exhaustion is documented precisely: every central office prefix in the code had been assigned to a service provider by October 2013. 678 and 770 exhausted later -- both were fully allocated by the time regulators approved 943 in October 2020, the same shortfall projected to hit the whole four-code combination by the second quarter of 2023. 470 was added in 2010, well ahead of any of that, because overlay codes are typically requested years before a projected exhaustion date rather than after it arrives.",
 				],
 			},
 		],
@@ -2255,7 +2255,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Can I still get a new phone number with a 404 or 678 area code?',
 				answer:
-					"No. Both codes ran through every available central office prefix -- 404 by October 2013, 678 not long after -- so NANPA no longer assigns new numbers from either one. Existing 404 and 678 numbers are unaffected and keep working; new lines in the Atlanta overlay region are assigned 770, 470, or 943 instead.",
+					"No. Both codes ran through every available central office prefix -- 404 by October 2013, 678 by the time regulators approved 943 in 2020 -- so NANPA no longer assigns new numbers from either one. (770 is in the same position, also exhausted.) Existing 404 and 678 numbers are unaffected and keep working; new lines in the Atlanta overlay region are assigned 470 or 943 instead.",
 			},
 			{
 				question: "What's the difference between 404 and 770?",
