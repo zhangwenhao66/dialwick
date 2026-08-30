@@ -130,42 +130,46 @@
   "https://dialwick.com/boston-zip-codes/": {
     "submitted_date": "2026-08-06",
     "last_submitted_date": "2026-08-28",
-    "verified_status": "pending",
-    "note": "Discovered but not crawled, discovered date shows sentinel anomaly '01 Jan 2006', cannot determine true age; distinct crawl message variant ('was discovered but has not been crawled yet' with troubleshooting bullets, not the usual 'has some issues' text)",
-    "last_checked_date": "2026-08-28",
+    "verified_status": "stale_not_indexed",
+    "note": "Discovered date shows sentinel '01 Jan 2006' anomaly (persistent, seen multiple prior runs); submitted 08-06, 24 days, exceeds 14-day threshold",
+    "last_checked_date": "2026-08-30",
     "verified_method": "bwt_url_inspection",
     "verify_note": "哨兵异常持续(discovered 01 Jan 2006), 无法判定真实账龄"
   },
   "https://dialwick.com/nashville-zip-codes/": {
     "submitted_date": "2026-08-09",
     "last_submitted_date": "2026-08-09",
-    "verified_status": "pending",
-    "last_checked_date": "2026-08-28",
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-08-30",
     "verified_method": "bwt_url_inspection",
-    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄"
+    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄",
+    "note": "Discovered date shows sentinel '01 Jan 2006' anomaly; submitted 08-09, 21 days, exceeds 14-day threshold"
   },
   "https://dialwick.com/denver-zip-codes/": {
     "submitted_date": "2026-08-09",
     "last_submitted_date": "2026-08-09",
-    "verified_status": "pending",
-    "last_checked_date": "2026-08-28",
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-08-30",
     "verified_method": "bwt_url_inspection",
-    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄"
+    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄",
+    "note": "Discovered date shows sentinel '01 Jan 2006' anomaly; submitted 08-09, 21 days, exceeds 14-day threshold"
   },
   "https://dialwick.com/michigan-area-codes/": {
     "submitted_date": "2026-08-10",
     "last_submitted_date": "2026-08-17",
-    "verified_status": "pending",
-    "last_checked_date": "2026-08-28",
+    "verified_status": "verified_indexed",
+    "last_checked_date": "2026-08-30",
     "verified_method": "bwt_url_inspection",
-    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄"
+    "verify_note": "哨兵异常(discovered 01 Jan 2006), 无法判定真实账龄",
+    "note": "Indexed successfully; 2 SEO/GEO issues found (Title too long, Meta Description too long or too short) - does not affect index status"
   },
   "https://dialwick.com/chicago-area-code/": {
     "submitted_date": "2026-08-10",
     "last_submitted_date": "2026-08-11",
-    "verified_status": "pending",
-    "last_checked_date": "2026-08-28",
-    "verified_method": "bwt_url_inspection"
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-08-30",
+    "verified_method": "bwt_url_inspection",
+    "note": "Discovered date shows sentinel '01 Jan 2006' anomaly; submitted 08-10, 20 days, exceeds 14-day threshold"
   },
   "https://dialwick.com/houston-zip-codes/": {
     "submitted_date": "2026-08-11",
