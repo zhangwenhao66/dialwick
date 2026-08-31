@@ -1884,3 +1884,112 @@ First audit for this article (published 2026-08-19, `published` field already pr
   "escalation": null
 }
 ```
+
+## how-to-call-philippines-from-usa
+
+```json
+{
+  "url_slug": "how-to-call-philippines-from-usa",
+  "url": "https://dialwick.com/how-to-call-philippines-from-usa/",
+  "last_audited": "2026-08-31",
+  "published_date": "2026-08-06",
+  "article_specific_checklist": [
+    "011+63 exit-code/country-code sequence and the drop-leading-0 rule for area/mobile codes",
+    "Metro Manila's single-digit area code (2/02) and whether it is truly unique",
+    "NTC Memorandum Order No. 10-10-2017's 7->8 digit landline migration (original March 2019 date, actual October 6 2019 date, and the reason for the delay)",
+    "Carrier-specific PTE identifier digits (Globe=7 example used in the worked example)",
+    "Coverage of the 02 migration beyond Metro Manila proper (Rizal province, San Pedro/Laguna, Bacoor/Cavite)",
+    "Mobile number format (10 digits, prefix starting with 9, leading 0 dropped when dialing from abroad)"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Specific, checkable detail throughout: named regulatory order number (NTC Memorandum Order No. 10-10-2017), a specific carrier example (Globe's PTE digit 7, (02) 576-4567 -> (02) 7576-4567), specific named outlying areas (Rizal, San Pedro/Laguna, Bacoor/Cavite). Not generic filler."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "pass, all claims confirmed",
+      "detail": "6 load-bearing claims (011+63+drop-0 sequence; Manila's single-digit '2' area code; NTC MO 10-10-2017 mandating 7->8 digit migration originally set for March 2019; deferral to October 6 2019 specifically due to BAP/CCAP petitions to give banks/card issuers time; Globe's PTE identifier being '7' and PLDT's being a *different* digit '8'; the migration's coverage extending to Rizal province/San Pedro/Bacoor) all independently verified via WebSearch against GMA News, PNA, Inquirer, CCAP.ph, and PLDT's own official statement. No fabrication, no L-0806-9-style unsupported historical-influence claim, no over-generalization found (the article itself already correctly scopes the '02 area code' as covering more than just Metro Manila proper, so the single-digit-area-code claim and the multi-locality coverage claim are consistent, not contradictory)."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "WebSearch for any Philippine numbering-plan change 2020-2026 found none; multiple sources (Sent.dm, Twilio docs, Grokipedia) confirm no significant NTC reallocation since the 2019 8-digit expansion. published=updated=2026-08-06 remains accurate, no refresh needed."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass -- confirmed still holds 25 days post-publish",
+      "detail": "Fresh SERP spot-check for 'how to call the Philippines from the US' (Vonage, Telnyx, Instarem, MyCountryMobile, Revolut, WorldRemit, RingFlow, DialLink) confirms none of the current top results mention the 2019 8-digit landline migration, the PTE identifier digit mechanic, or Manila's single-digit-area-code status -- all cover only the basic 011+63+drop-0 format. This site's differentiation claim from the original publish log (verified independently, not just carried over) still holds."
+    },
+    {
+      "dimension": "5. SEO technical/on-page",
+      "status": "pass",
+      "detail": "check_seo_field_stats.py: title 58 chars (z=-0.44), description 157 chars (z=-1.09), both well within normal range, no flag. dist build: single H1, logical H2 hierarchy (6 headings incl. an embedded 'Format your own Philippines number' dial formatter tool), self-referencing canonical, no robots noindex, title/meta description render correctly."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~85/99 (estimated against this site's established manual rubric)",
+      "detail": "Strong structure (dialing-steps table, 3 body sections, FAQ, embedded interactive formatter tool), 3 named authoritative sources (Wikipedia, PNA, FCC) all verified live, dense specific dated statistics (2017 order date, March 2019 original date, October 6 2019 actual date, specific PTE digit). Weaker on direct expert quotation and cross-domain internal links (2 outbound, see dimension 9 for inbound gap now fixed). Comfortably above the 80-point bar."
+    },
+    {
+      "dimension": "7. Humanizer/avoid-ai-writing backfill",
+      "status": "not applicable",
+      "detail": "Published 2026-08-06, before the 2026-08-07 humanizer/avoid-ai-writing mandate date, so a full backfill is not formally required -- ran a spot-check anyway: zero hits on AI-vocabulary word list, zero curly quotes, zero true em/en dashes and zero narrative ASCII ' -- ' (confirmed via check_prose_patterns.py L-0821-4 check: 0 narrative hyphen hits)."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "Wikipedia 'Telephone numbers in the Philippines' returns HTTP 200 directly. PNA (pna.gov.ph/articles/1056843) and FCC tip-sheet URL both return 403 to scripted curl/UA but confirmed live and current via WebSearch snippets showing matching, unchanged content -- standard bot-blocking (Akamai-style), not link rot, consistent with this site's established pattern for these same two domains (see scam-area-codes entry above)."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "Automated related-guides rotation coverage simulated for all 8 members of the 'International Dialing' category: 100% coverage confirmed (this article is surfaced in mexico/india/uk/pakistan/france's sidebars), so not a rotation-coverage orphan. However grep of guides.ts found ZERO manual in-body anchor links pointing to this slug from any other article, despite 4 sibling International Dialing articles (india, uk, pakistan, france) being published after it and 4 of them choosing to hand-write a comparison bridge to us-country-code instead. This is a genuine, checkable internal-link-investment gap (new lessons-library entry L-0831-3), not just a coverage-simulation pass. Fixed: added one natural, factually-accurate bridging sentence in how-to-call-uk-from-us's numbering-history section, linking to this article as a comparable 2019 digit-insertion capacity fix (Manila's 8th-digit insertion vs. the UK's PhONEday/Big Number Change/2019 020-4 pattern)."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList all present in dist build, auto-derived from guide fields; datePublished/dateModified both 2026-08-06 matching published/updated (unchanged, per this site's established precedent of not bumping `updated` for audit-only fixes)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure telecom-numbering-plan content (regulatory order history, carrier identifier digits). No sensitive topics, no reverse-lookup functionality, consistent with site's YMYL/privacy scope."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this article."
+    },
+    {
+      "dimension": "13. AdSense policy risk",
+      "status": "pass",
+      "detail": "ads.txt correctly resolves to pub-5245502795720653; /privacy/ page reachable. No sensitive categories, no misleading framing."
+    },
+    {
+      "dimension": "14. Mechanical prose patterns (check_prose_patterns.py)",
+      "status": "confirmed problem -> fixed",
+      "detail": "Initial run: L-0819-9 FAQ-body verbatim duplication, 2 of 3 FAQ answers had >=20 consecutive-char overlaps with body text ('that metro manila landlines', 'a mobile phone or most voip'). Rewrote both FAQ#2 and FAQ#3 answers (preserving factual content, swapping the illustrative mobile number example) through 3 iterations until check_prose_patterns.py returned exit code 0 (all 3 checks: 's own attribution, rather-than/instead-of framing, hyphen zero-tolerance, and FAQ duplication all pass)."
+    }
+  ],
+  "independent_confirmations": [
+    "Background agent (general-purpose, read-only, no access to this audit's conclusions): independently WebSearch-verified all 7 substantive factual claims (country code/exit code, Manila's single-digit area code, NTC MO 10-10-2017, October 2019 deferral reason, carrier-specific PTE digits 7 vs 8, mobile number format, outlying-area coverage) plus a timeliness check for 2020-2026 changes. Result: all CONFIRMED, no refutations, including the easy-to-flub details (delay reason specifically BAP/CCAP petitions, the two carriers getting DIFFERENT digits not the same one). Completed in ~34s, did not stall -- no watchdog stop needed."
+  ],
+  "actions_taken": [
+    "Rewrote FAQ#2 and FAQ#3 answers to eliminate 2 verbatim body-text overlaps flagged by check_prose_patterns.py (L-0819-9); re-ran to exit code 0.",
+    "Added one manual in-body cross-link FROM how-to-call-uk-from-us TO this article (dimension 9 fix) -- a factually-accurate comparison between Manila's 2019 8th-digit insertion and the UK's PhONEday/Big Number Change/2019 020-4 numbering-capacity fixes.",
+    "That UK edit exposed a pre-existing, unrelated L-0819-9 FAQ-body duplication issue already present in how-to-call-uk-from-us (3 overlaps, none related to my new sentence) -- fixed incidentally since the file was already open for editing; not logged as a separate formal audit entry for that slug since it was not the article under audit, but noted here for traceability.",
+    "seo_drift.py baseline captured for both how-to-call-philippines-from-usa and how-to-call-uk-from-us before any edits.",
+    "npm test (64/64 passed) and npm run build (57 pages) both passed after all edits.",
+    "Did not touch `published` or `updated` fields on either article, per this site's established precedent (atlanta-area-code audit) of not bumping `updated` for audit-only fixes when `published` already exists.",
+    "Committed and pushed to origin/main; DialWick auto-deploys via git-connected Cloudflare Pages (no deploy hook). Polled both live URLs post-deploy (cache-busted) confirming 200 + updated content. seo_drift.py compare run against both baselines -- no CRITICAL findings.",
+    "Submitted both changed URLs via tools/submit-indexnow.mjs.",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Appended new entry L-0831-3 to 独立站/内容通用教训库.md: automated related-guides rotation coverage being 100% does not mean an article has received any real manual in-body internal link investment -- audits must separately grep for actual hand-written inbound anchors, not just simulate rotation coverage."
+  ],
+  "seo_score": "no confirmed on-page SEO issues; title/description both within normal z-score range",
+  "geo_score": "~85/99 (pass, comfortably above 80-point bar, unaffected by the two fixes since neither touched structure/authority/statistics)",
+  "escalation": null
+}
+```

@@ -2708,12 +2708,12 @@ export const guides: Guide[] = [
 			{
 				question: 'Do I need to add a PTE digit myself when calling a Metro Manila landline?',
 				answer:
-					"No. The extra digit that Metro Manila landlines gained in the NTC's October 2019 migration (for example, Globe's 7) is already part of the current 8-digit local number: you dial it as part of step 4, the same as any other digit. There's no separate digit to add on top of what the number's owner gives you.",
+					"No. The identifier assigned during the NTC's October 2019 migration (Globe's, for example, is 7) already belongs to the current 8-digit number, so it's dialed as part of step 4 like any other digit. Nothing extra needs to be tacked on beyond what the number's owner gives you.",
 			},
 			{
 				question: 'Can I just dial +63 instead of 011 63?',
 				answer:
-					'Yes. On a mobile phone or most VoIP apps, holding down "0" or tapping "+" gets you the same result as dialing 011, so +63 917 123 4567 reaches the same number as 011 63 917 123 4567.',
+					'Yes. Most smartphones and VoIP apps let you hold down "0" until it turns into a "+", producing the same result as dialing 011 manually: domestic 0919 456 7890 is reachable equally well through +63 919 456 7890 or through 011 63 919 456 7890.',
 			},
 		],
 		sources: [
@@ -2918,7 +2918,7 @@ export const guides: Guide[] = [
 				body: [
 					'London\'s area code has changed more times since the 1960s than any other UK city\'s. It started as a plain 01, covering the whole of Greater London under one code, until May 1990, when growing demand split it in two: 071 for the inner city, 081 for outer London and the suburbs. That split bought only five years of headroom. On 16 April 1995, a nationwide change called PhONEday inserted a "1" after the leading 0 in every UK geographic area code to free up numbering space, turning London\'s 071 and 081 into 0171 and 0181, and, in five other cities that were running low on numbers (Bristol, Leeds, Leicester, Nottingham, and Sheffield), replacing the old code outright with a new four-digit one instead. PhONEday had itself been delayed once already, first floated in 1991 for a 1994 rollout, and it shipped with an eight-month period where old and new codes worked side by side, backed by a GBP 16 million advertising campaign to get callers to switch over.',
 					'The final consolidation came with the Big Number Change: 0171 and 0181 both folded into a single code, 020, with new eight-digit local numbers replacing the old seven-digit ones. The new range went live on 1 June 1999 and ran in parallel with the old codes until the cutover on 22 April 2000, after which 0171 and 0181 stopped connecting for good. London\'s numbering capacity grew roughly fivefold in the process, and Cardiff, Coventry, Northern Ireland, Portsmouth, and Southampton all got the same eight-digit treatment on the same date.',
-					'That fivefold boost didn\'t last forever. By 2019, Ofcom was back in nearly the same spot PhONEday and the Big Number Change had each once solved: London\'s three existing ranges, 020 3, 020 7, and 020 8, had roughly 30 million numbers allocated between them, and fewer than a million were left to hand out to phone companies, who were distributing about 30,000 London numbers a week. Ofcom opened a fourth range, 020 4, later that year to keep pace, the third numbering squeeze since PhONEday, this time solved with a smaller top-up instead of a full renumbering.',
+					'That fivefold boost didn\'t last forever. By 2019, Ofcom was back in nearly the same spot PhONEday and the Big Number Change had each once solved: London\'s three existing ranges, 020 3, 020 7, and 020 8, had roughly 30 million numbers allocated between them, and fewer than a million were left to hand out to phone companies, who were distributing about 30,000 London numbers a week. Ofcom opened a fourth range, 020 4, later that year to keep pace, the third numbering squeeze since PhONEday, this time solved with a smaller top-up instead of a full renumbering. Manila hit a comparable landline squeeze that same year, and reached for the PhONEday-style fix rather than a new area code: [an eighth digit inserted into every existing Metro Manila number](/how-to-call-philippines-from-usa/), not a fresh range issued alongside the old one.',
 				],
 			},
 			{
@@ -2942,17 +2942,17 @@ export const guides: Guide[] = [
 			{
 				question: 'Do I drop the 0 when calling a UK number from the US?',
 				answer:
-					'Yes. The leading 0 in front of any UK area code or mobile prefix is a domestic trunk prefix, dropped once +44 (or 011 44) takes its place. A London landline written as 020 7946 0958 domestically becomes 011 44 20 7946 0958 from a US phone.',
+					"Yes. Any leading 0 that opens a UK number is domestic trunk-prefix housekeeping, not part of the subscriber's actual digits, so it disappears once +44 or 011 44 replaces it, the identical convention this site documents for calling any other country.",
 			},
 			{
 				question: 'Is London\'s area code 0207 or 0208?',
 				answer:
-					'No. London\'s actual area code is 020. "0207" and "0208" were never valid area codes on their own. The 7 or 8 that follows 020 is the first digit of an eight-digit local number, a mix-up so common that a study found only 13% of people could name 020 correctly without a hint.',
+					"No. London dials on 020 alone; the four-digit reading is a holdover from the pre-2000 codes and was never a genuine area code in its own right. What people assume is part of the area code is really an opening digit belonging to the subscriber's own number.",
 			},
 			{
 				question: "What's the UK's own international dialing code, if it isn't 011?",
 				answer:
-					"00. The UK adopted 00 as its outgoing international access code on the same day it introduced PhONEday, 16 April 1995, matching the ITU's standard international call prefix rather than the 011 the US and Canada use.",
+					'00. Britain adopted that two-digit prefix for outgoing overseas calls on 16 April 1995, the same day PhONEday took effect, aligning with the exit code most of the rest of the world dials rather than the digits North America uses.',
 			},
 		],
 		sources: [
