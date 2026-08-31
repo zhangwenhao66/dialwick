@@ -4050,4 +4050,74 @@ export const guides: Guide[] = [
 			{ label: 'FCC: "One Ring" Phone Scam', url: 'https://www.fcc.gov/consumers/guides/one-ring-phone-scam' },
 		],
 	},
+	{
+		slug: 'how-to-call-france-from-us',
+		category: 'International Dialing',
+		title: "France's Country Code Is +33, and a 2005 Rule Still Shapes Its Freebox Numbers",
+		description:
+			"Dial 011, then 33, then drop the leading 0. France's five regional zones trace to a 1996 overnight switch, and its 09 prefix exists because of a 2005 fix for VoIP boxes like Freebox.",
+		published: '2026-08-31',
+		updated: '2026-08-31',
+		coreSummary:
+			"France's country code is +33. Dialing in from a US phone: dial 011, then 33, then the French number with its leading 0 dropped, so a number written domestically as 01 42 68 53 00 becomes 011 33 1 42 68 53 00, or +33 1 42 68 53 00 from a mobile or VoIP line. That first digit isn't arbitrary. France splits into five geographic zones, 01 for the Paris region, 02 for the northwest, 03 for the northeast, 04 for the southeast, and 05 for the southwest, plus 06 and 07 reserved for mobile numbers. The whole ten-digit format dates to a single overnight switch on October 18, 1996, when France replaced a numbering plan that had long distinguished Paris from \"the provinces\" with one closed system covering the entire country. A newer prefix, 09, doesn't correspond to a place at all: French regulator ARCEP created that range in a December 2005 decision to give internet-telephony services, including the VoIP lines bundled into Freebox and similar internet boxes, a dedicated block separate from the older 087 numbers those services had been using, with the migration required to finish by December 15, 2008.",
+		sections: [
+			{
+				heading: 'Dialing France: country code 33, step by step',
+				body: [
+					"Calling a French landline or mobile number from the US: dial 011, then 33 (France's country code), then the ten-digit French number with its leading 0 dropped, then the rest of the digits. A Paris landline written domestically as 01 42 68 53 00 becomes 011 33 1 42 68 53 00 from a US phone, or +33 1 42 68 53 00 from a mobile or VoIP line that accepts a plus sign in place of 011. A French mobile number follows the identical rule: 06 12 34 56 78 becomes 011 33 6 12 34 56 78, dropping only the single leading 0.",
+				],
+				table: {
+					columns: ['Step', 'What to dial'],
+					rows: [
+						['1. Exit code (landline)', '011'],
+						['1. Exit code (mobile/VoIP)', '+'],
+						['2. Country code', '33'],
+						['3. French number', 'drop the leading 0'],
+						['4. Remaining digits', 'dial as written'],
+					],
+				},
+			},
+			{
+				heading: "Why the first digit after France's 0 tells you a region, not a city",
+				body: [
+					"Every French number carries a zone digit as the first of its ten digits: 1 for the Paris region (Île-de-France), 2 for the northwest, 3 for the northeast, 4 for the southeast, and 5 for the southwest, with 6 and 7 set aside for mobile numbers regardless of where the subscriber lives. That structure is deliberately coarser than the US or UK model, which hands out a distinct code to individual metro areas; France's five zones each cover multiple regions and tens of millions of people, so the digit narrows a call down to roughly a fifth of the country, not a city.",
+					"The current format is younger than it looks. France ran an eight-digit numbering plan through the 1980s, splitting Paris from the rest of the country under separate rules until an October 1985 reform brought the two closer together. That still wasn't enough headroom for a phone network growing through the 1990s, so at 11 p.m. on October 18, 1996, France switched its entire numbering plan overnight: every existing number gained a two-digit zone prefix, expanding the whole country to a uniform ten-digit format and retiring the old Paris-versus-province split for good. The reform also swapped France's own international exit code, from an older 19 to the current 00, the same night.",
+				],
+			},
+			{
+				heading: "The 09 prefix isn't a place, it's a 2005 fix for VoIP boxes like Freebox",
+				body: [
+					"A French number starting with 09 doesn't identify a region the way 01 through 05 do, because it was never meant to. French telecom regulator ARCEP created the 09 range in Decision No. 2005-1085 of December 15, 2005, to give newly emerging internet-telephony services, the kind of VoIP line that French internet providers were starting to bundle free with home broadband, a dedicated slice of the numbering plan separate from the geographic zones and separate from the 087 numbers those services had been assigned earlier. The 087 range had caused its own problems: it blurred the line between ordinary phone calls and premium-rate services, complicated which carriers could route the calls, and ran into difficulty being recognized internationally.",
+					'Free, the ISP behind the Freebox internet box, is the case that shows how the switch actually played out: in the years after the 2005 decision, Free migrated its bundled VoIP numbers from the 087 range to a slice of 09 (095), giving subscribers time to pass along their new number before the older 087 range stopped functioning entirely on December 15, 2008. A 09 number today can belong to any interpersonal-communications service, not just Freebox, so the prefix tells a caller almost nothing about geography, only that the line likely runs over the internet rather than a traditional copper connection, a different kind of ambiguity than the one already documented for [the UK\'s own numbering plan](/how-to-call-uk-from-us/), where a leading-zero mix-up rather than a technology shift is what confuses callers.',
+				],
+			},
+		],
+		faq: [
+			{
+				question: "What is France's country code?",
+				answer: '33.',
+			},
+			{
+				question: 'Do I drop the 0 when calling a French number from the US?',
+				answer:
+					"Yes. That 0 is a domestic trunk prefix, not part of the number itself, so it's replaced rather than kept once +33 or 011 33 takes over. Keeping it in by habit is the single most common reason a US-to-France call fails to connect.",
+			},
+			{
+				question: 'What does a French phone number starting with 09 mean?',
+				answer:
+					"It marks the line as internet-based, not a copper phone or a cell connection. France's telecom regulator opened that range in a late-2005 decision specifically for providers like the VoIP service bundled into home internet boxes such as Freebox. Unlike 01 through 05, it carries no regional meaning at all.",
+			},
+			{
+				question: 'Are 06 and 07 numbers always mobile in France?',
+				answer:
+					"Yes, everywhere in the country. A landline's regional digit (01 through 05) reflects the subscriber's location; 06 and 07 identify a cell phone instead, with no tie to any particular part of France.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Telephone numbers in France', url: 'https://en.wikipedia.org/wiki/Telephone_numbers_in_France' },
+			{ label: "Légifrance: Décision n° 2005-1085 de l'ARCEP du 15 décembre 2005", url: 'https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000814276' },
+			{ label: 'ARCEP: press release on the introduction of the 09 number range', url: 'https://en.arcep.fr/news/press-releases/view/n/arcep-updates-the-french-numbering-plan-and-introduces-a-new-range-of-digits-beginning-with-09-for-interpersonal-communications.html' },
+			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+		],
+	},
 ];
