@@ -300,5 +300,15 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-08-31",
+    "action": "submitted",
+    "reason": "今日新发布how-to-call-france-from-us（压制期非模板选题）：URL Inspection确认URL is not on Google，REQUEST INDEXING首次点击报错\"We had a problem submitting your indexing request, please try again later\"（瞬时错误非配额耗尽——本站当时是本轮第5个提交，配额充足），重试后成功确认Indexing requested。",
+    "submitted_urls": [
+      "https://dialwick.com/how-to-call-france-from-us/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
