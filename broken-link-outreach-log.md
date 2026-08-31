@@ -202,3 +202,20 @@ theultimates.com（旧版 anywho.com 类反查工具）另跑了一次 `backlink
 
 1. `www.momboard.com/local-area-links/`（密歇根房产经纪人协会，页面质量高但CAPTCHA拦截联系表单）继续跳过，不再尝试。
 2. 本轮竞品缺口分析方向（政府/商会quick-links页）已连续三轮验证有效（Pitch 5/6/8/9/10），可继续沿这个方向找新候选。
+
+---
+
+## 2026-08-31（第六次运行，`trafficsite-broken-link-building`）
+
+### 第一部分：核实10天以前的旧pitch
+
+08-21发出的Pitch 8（clay@hendersonkychamber.com，Message ID `1a024d7ffde4dc44`）今天满10天，此前从未验证过（Pitch 9同日发出，留给下轮核实，按"每站每次挑1条最早的"规则本轮只处理1条）。
+
+- curl复查 `https://hendersonkychamber.com/community-partners/`：HTTP 200，全文无"dialwick"字样，判定**`not_replaced`**。这是"竞品缺口"类pitch（对方已链allareacodes.com/unitedstateszipcodes.org，请求增补DialWick的国际拨号内容），核实的是"是否已加链接"。
+- `dataforseo_query.py backlinks dialwick.com --limit 100`：未查到hendersonkychamber.com引荐域名。
+- `gmail_send.py list --query "from:clay@hendersonkychamber.com"`返回空，对方从未回复。
+- 目标是真实的肯塔基州Henderson商会官方页面，符合"真实权威度"标准，发送简短跟进邮件（过Skill(humanizer)+Skill(avoid-ai-writing)均无命中），`gmail_send.py send --from dialwick --reply-to 1a024d7ffde4dc44`，Message ID `1a057f0781fb8f1b`。标记 **`verified_not_replaced_followed_up_once`**。
+
+本轮系上层`trafficsite-broken-link-building`会话按「外链产能集中规则」统一处理：DialWick当前处于Google August 2026垃圾更新算法性整站压制中（见`流量站矩阵风险应对追踪.md`），未入选本轮新机会挖掘前3站，第二部分本轮跳过。Pitch 9（kjohnson@kenmoreny.gov，同为8/21发出）留待下轮核实。
+
+**累计口径**：DialWick断链置换战术累计已发送10封pitch（含本轮1封跟进）；已验证`not_replaced` 1条、`verified_live_backlink_confirmed` 0条，转化率仍为0。
