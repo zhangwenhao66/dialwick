@@ -310,5 +310,17 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-09-01",
+    "action": "submitted",
+    "reason": "今日休息未发布新文章（压制期内无合格非模板选题）。队列首位候选new-york-zip-codes已收录。Page indexing报告discovered-currently-not-indexed列表候选las-vegas-area-code确认未收录（本站压制期，32个crawled-not-indexed+8个discovered-not-indexed），提交成功。",
+    "submitted_urls": [
+      "https://dialwick.com/las-vegas-area-code/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/new-york-zip-codes/"
+    ],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
