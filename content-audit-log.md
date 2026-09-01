@@ -1993,3 +1993,111 @@ First audit for this article (published 2026-08-19, `published` field already pr
   "escalation": null
 }
 ```
+
+## denver-zip-codes
+
+Selected this run because it had never appeared in this log before (never-audited = oldest-of-all per SKILL.md tiebreak rule). Among the 28 never-audited slugs, chose the one with the earliest `guides.ts` introduction commit (`c4aa931`, 2026-08-10 00:26 +0800), ahead of `michigan-area-codes` (2026-08-10 13:20 +0800, same calendar day but later).
+
+Site-specific checklist for this article: (1) does the 66-code ZIP table's Jefferson/Adams county assignments match GeoNames/unitedstateszipcodes.org; (2) is the 1901-1902 Arapahoe County split history (dates, who split off, who was governor) accurate; (3) is the Jefferson County founding/seat claim accurate; (4) do the two flagged straddling ZIPs (80214, 80221) match independent boundary data; (5) since this is a single-city ZIP page (not one of the 373 single-area-code template pages), the standing risk note's "4 real differentiated facts" bar doesn't strictly apply, but checked anyway: article has real, checkable local history (1902 consolidation, Arapahoe/Jefferson/Adams county genealogy, 80214/80221 boundary caveats) well beyond a generic template.
+
+```json
+{
+  "url_slug": "denver-zip-codes",
+  "url": "https://dialwick.com/denver-zip-codes/",
+  "last_audited": "2026-09-01",
+  "published_date": "2026-08-10",
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Names GeoNames.org (CC BY 4.0), Wikipedia, unitedstateszipcodes.org, and zipcodestogo.com as concrete, checkable sources throughout, with explicit caveats about cross-directory count disagreement (64 vs 66) rather than false precision."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "confirmed problem -> fixed",
+      "detail": "Body text claimed Adams County was named for 'five-time gubernatorial candidate and then-sitting Governor Alva Adams' at the time of the 1901 legislative split (effective Nov 15, 1902). Independent WebSearch confirmed Alva Adams's three terms were 1887-89, 1897-99, and Jan-Mar 1905 -- he held no office in 1901-1902. The actual sitting Colorado governor for the entire window (Jan 1901-Jan 1903) was James Bradley Orman, who (per Wikipedia's Adams County, Colorado page, already an existing source on this article, and corroborated independently by adamscountyco.gov's county history page) personally designated Brighton as Adams County's temporary seat once the split took effect. 'Five-time gubernatorial candidate' held up under its own check (1884 loss, 1886/1896/1904 wins -- the 1904 win contested and later overturned by the legislature -- and a 1906 loss = 5 candidacies), so only the 'then-sitting Governor' clause was wrong, not the whole sentence. All other checkable claims (17 original 1861 counties, Arapahoe/Jefferson county seats, Nov 15 1902 effective date, South Arapahoe's April 11 1903 rename, GeoNames-sourced ZIP-to-county rows for 80214/80221/etc, unitedstateszipcodes.org's 80214 multi-place-name split and 80221 Adams/Denver straddle) independently re-verified and confirmed accurate; no other fabrications found."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass",
+      "detail": "No NANPA/USPS area-code or ZIP reassignment activity found for the Denver metro since publish (2026-08-10) that would change this article's ZIP-to-county table or historical claims. Not a periodic/recurring-event topic, so no additional post-publish-date event search was required beyond the standard staleness check."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass -- strong",
+      "detail": "dataforseo-query serp for 'denver zip codes' returned 12 elements; dialwick.com does not currently rank in the top 10 organic results. Top results (Zillow, davidsellsdenver.com, mycomove.com, ibuyer.com, gisgeography.com) are real-estate/neighborhood-guide ZIP maps and directory listings -- confirmed via direct check that Zillow's page is a bare ZIP-to-county browse list with no historical/civic-mechanism content. This article's 1902 consolidation history, Arapahoe/Jefferson/Adams county genealogy, and named-source boundary caveats (80214, 80221) are genuine incremental value versus the SERP, not a rehash. (Not ranking top-10 yet is a separate, pre-existing ranking-performance fact, not an SEO/content defect on this page -- and per this site's standing algorithmic-suppression context, not something this audit treats as actionable or as grounds to recommend publishing-cadence changes.)"
+    },
+    {
+      "dimension": "5. SEO technical (seo-audit + check_seo_field_stats.py)",
+      "status": "confirmed problem -> fixed (description); pass (everything else)",
+      "detail": "Live page: single H1, 4 H2s (3 content + FAQ), self-referencing canonical, no noindex, Article/FAQPage/BreadcrumbList JSON-LD all present and internally consistent, no images (none expected -- no hero/diagramSvg field on this entry). Description was 208 chars, z-score 1.12 (>=1 threshold) against the site's 48-article mean of 182.1/stdev 23.1; independent research confirmed 208 chars exceeds real Google desktop (~150-160 char) and especially mobile (~105-120 char) truncation limits, with the description's most distinctive fact (the 1902 consolidation) landing right where truncation would cut it. Shortened to 155 chars (new z-score -1.13), consistent with this site's prior fix precedent (scam-area-codes, 250->148 chars). Title (74 chars field / 85 with '| DialWick' suffix) had z-score 0.52, within normal range, left as-is."
+    },
+    {
+      "dimension": "6. GEO (99-point/11-dimension rubric)",
+      "status": "pass, ~83/99 both before and after",
+      "detail": "Manual rubric pass against the 99-point weighting (16/14/13/12/10/8/8/6/5/4/3): strong on statistical completeness (full 66-row table with 3-way county breakdown), citability (self-contained FAQ answers), structure (clean H1/H2/table/FAQ), and robustness (explicit caveats on 80214/80221 and cross-directory count disagreement). Weakest dimension is authoritative direct quotes (paraphrase throughout, no verbatim quoted material from GeoNames/Wikipedia/unitedstateszipcodes.org) -- a pre-existing, site-wide pattern also noted on scam-area-codes' first audit, not something to force-fix by inventing quotes (per this site's fabrication-risk lesson). Neither the factual fix nor the prose rewrites touched structure, statistics, or authority signals, so the score is unaffected by this audit's edits."
+    },
+    {
+      "dimension": "7. Early-content AI-tell backfill",
+      "status": "not applicable",
+      "detail": "Published 2026-08-10, after the 2026-08-07 humanizer/avoid-ai-writing mandate date -- should already have gone through the pipeline at publish time. Ran humanizer + avoid-ai-writing anyway on the audited/rewritten spans as part of Step 5 verification (see actions_taken); both passed clean pre-existing text too (0 em/en dashes, 0 curly quotes site-wide on this entry)."
+    },
+    {
+      "dimension": "8. External source link rot",
+      "status": "pass",
+      "detail": "GeoNames, Wikipedia (Denver, Adams County, South Arapahoe County, Jefferson County, James Bradley Orman, Alva Adams (governor)) all return HTTP 200 directly. unitedstateszipcodes.org (80214, 80221) and zipcodestogo.com return 403 to scripted curl/UA but confirmed live and current via WebSearch snippets with matching content -- same established bot-blocking pattern as this site's prior audits of these two domains, not link rot. New source adamscountyco.gov/about-adams-county/history-profile/ confirmed 200 and its content (Brighton, Orman, county commissioners) matches the claim it supports."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, strong -- not an orphan",
+      "detail": "grep of guides.ts found 7 other published articles (houston-zip-codes, las-vegas-zip-codes, sacramento-zip-codes, san-diego-zip-codes, phoenix-zip-codes, fresno-zip-codes, huntsville-zip-codes) with genuine hand-written in-body markdown anchor links to this slug, comparing their own county situation against Denver's cross-county split. This article also links out to atlanta-zip-codes in-body. Well beyond automated related-guides rotation coverage alone."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass",
+      "detail": "Article/FAQPage/BreadcrumbList JSON-LD all present in the dist build and auto-derived from guide fields; datePublished/dateModified both remain 2026-08-10 (published/updated left unchanged -- see actions_taken -- consistent with this site's established precedent of not bumping `updated` for audit-only fixes when `published` already exists)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass",
+      "detail": "Pure ZIP-code/county-boundary reference content plus 19th/20th-century Colorado county-formation history. No reverse-lookup functionality or language, no PII, no drift toward the site's stated red line."
+    },
+    {
+      "dimension": "12. Image validity & copyright",
+      "status": "not applicable",
+      "detail": "No hero image, inline image, or diagramSvg field on this article; confirmed via live HTML that the page renders no <img> tags."
+    },
+    {
+      "dimension": "13. AdSense policy risk",
+      "status": "pass",
+      "detail": "ads.txt resolves to pub-5245502795720653; /privacy/ and /about/ both return 200. No scam-facilitation content (this is the ZIP-reference page type, not the scam-area-codes page type this dimension is mainly aimed at)."
+    },
+    {
+      "dimension": "14. Mechanical prose patterns (check_prose_patterns.py)",
+      "status": "confirmed problem -> fixed (2 of 2 categories); 1 residual accepted",
+      "detail": "Initial run: L-0819-8 '[named source]'s own [noun]' pattern hit 5x (description, x2 section bodies, x2 more) -- threshold is >2. L-0819-9 FAQ-body verbatim overlap hit on all 4 FAQ answers (52/59/22/48 consecutive chars). Rewrote all 5 'own' instances (removed 'own' and varied surrounding phrasing/verbs) -> 0 occurrences. Rewrote all 4 FAQ answers across 4 iterations to eliminate verbatim overlap; got 3 of 4 to 0 chars overlap. FAQ#4 ('Is ZIP code 80221 in Denver or Federal Heights?') retains a 25-char residual overlap that is exactly the bare source domain name 'unitedstateszipcodes.org' -- the same 'proper-noun anchor that can't be reworded without sacrificing citability/self-containment' pattern already documented in the shared lessons library (nudibranch, no-shave-november precedents), so accepted per that precedent rather than further churned (each further rewrite attempt kept relocating the overlap to a different fixed anchor -- 'Denver County itself' -> '55 in Denver County' -> domain name -- consistent with the library's noted 'whack-a-mole' risk)."
+    }
+  ],
+  "independent_confirmations": [
+    "4 candidate findings sent to independent verification. 3 of 4 background general-purpose agents (given only the single finding + evidence, no other context) completed normally and returned CONFIRMED real problem: (a) meta description length/truncation risk, (b) 'X's own Y' 5x repetition, (c) FAQ verbatim overlap (with a tiered confidence split flagged: overlaps #1/#2 high-confidence, #3/#4 weaker/proper-noun-anchored -- consistent with what the fix process itself later found). The 4th agent (Alva Adams governor claim) was killed by the platform's own stream watchdog after 600s of no progress ('Agent stalled: no progress for 600s') -- not a false-negative result, a hard stall/timeout. Per this task's watchdog protocol, did not wait further or respawn; self-verified the same claim with equivalent rigor via fresh independent WebSearch (Alva Adams's actual term dates, James Bradley Orman's 1901-1903 term, and the Wikipedia Adams County page's explicit 'Governor James Bradley Orman designated Brighton as the temporary Adams County Seat' sentence) and reached the same CONFIRMED conclusion the agent would likely have reached. Logging per instructions: independent agent stuck/stalled after 600s (platform stream watchdog), stopped automatically by the platform (no manual TaskStop needed since it had already terminated), self-verified instead -- this finding is NOT independent-agent-confirmed, it is self-verified."
+  ],
+  "actions_taken": [
+    "Corrected the Alva Adams 'then-sitting Governor' error: named James B. Orman as the actual governor during the 1901-1902 split, added the Brighton-temporary-seat detail, kept the 'five-time gubernatorial candidate' framing (verified accurate) and clarified Adams's actual terms (1887-89, 1897-89, brief 1905 return).",
+    "Added 2 new sources[] entries (James Bradley Orman and Alva Adams (governor), both Wikipedia) plus 1 corroborating source (adamscountyco.gov county history page) supporting the corrected claim, per this site's standing practice of not leaving new factual assertions without a sources[] entry.",
+    "Shortened meta description from 208 to 155 chars (new z-score -1.13) to fix SERP truncation risk, preserving the core hook (66 total, 11 outside Denver County, Jefferson/Adams, 1902 consolidation).",
+    "Removed all 5 '[named source]'s own [noun]' instances (description, x2 in 'How Denver became...' section, x2 in the Jefferson/Adams ZIP section), varying phrasing/verbs across instances rather than uniformly deleting 'own'.",
+    "Rewrote all 4 FAQ answers across 4 iterations to eliminate near-verbatim body-text overlap (mechanical scanner false-triggered on my own first 2 rewrite attempts before landing on a version with only the proper-noun-anchored residual noted above); re-ran check_prose_patterns.py after each round.",
+    "Re-ran humanizer and avoid-ai-writing on all edited spans: clean (0 em/en dashes, 0 curly quotes, no word-list/template/copula-avoidance/rule-of-three violations found).",
+    "seo_drift.py baseline captured before any edits.",
+    "npm test (64/64 passed) and npm run build (57 pages) both passed after all edits; confirmed dist/denver-zip-codes/index.html contains both fixes (Orman/Brighton text, 155-char description).",
+    "Did NOT touch `published` or `updated` (both already '2026-08-10'), per this site's established precedent (atlanta-area-code, how-to-call-philippines-from-usa audits) of not bumping `updated` for audit-only fixes when `published` already exists.",
+    "Committed and pushed to origin/main; DialWick auto-deploys via git-connected Cloudflare Pages (no deploy hook). Polled the live URL (cache-busted) until it returned 200 with the new content, and spot-checked a nonexistent path still returns a real 404. seo_drift.py compare run against the baseline -- no unexplained CRITICAL findings.",
+    "Submitted https://dialwick.com/denver-zip-codes/ via tools/submit-indexnow.mjs.",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Checked this article against every entry in 独立站/内容通用教训库.md's 教训条目 section before starting. Two entries recurred (both already-graduated hard checks, so this is their Nth recurrence, logged as single-line additions rather than new entries): L-0819-8 ('X's own Y' attribution repetition) and L-0819-9 (FAQ near-verbatim body overlap). Neither is a first-or-second recurrence needing escalation -- both were already escalated to scripts/check_prose_patterns.py on 2026-08-30 specifically because of repeated recurrence, and this run is exactly the mechanism (the script) doing its job, not a new gap."
+  ],
+  "seo_score": "1 confirmed issue found and fixed (meta description length, z 1.12 -> -1.13); title and all other on-page technical checks passed",
+  "geo_score": "~83/99 before and after (pass, unaffected by fixes -- none touched structure/statistics/authority dimensions)",
+  "escalation": null
+}
+```
