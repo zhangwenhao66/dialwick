@@ -890,7 +890,7 @@ export const guides: Guide[] = [
 		description:
 			"Houston has 178 ZIP codes in two postal blocks, and one of them, 77005, belongs to a city that has never joined Houston, while its equally independent neighbor Bellaire got a ZIP name of its own instead.",
 		published: '2026-08-11',
-		updated: '2026-08-11',
+		updated: '2026-09-02',
 		coreSummary:
 			'USPS assigns 178 ZIP codes to "Houston, TX" as the primary place name, and this site\'s source data puts every one of them in Harris County: no cross-county split, unlike this site\'s Atlanta or Denver lists. They split into two blocks: 98 codes in the 770xx range, covering the delivery routes that carry most of the city\'s residential and business mail, and 80 in the 772xx range, a mix mostly made up of PO boxes and single-recipient codes assigned to government offices and other high-volume mailers. One 770xx code, 77005, belongs to West University Place, an independent city that has never joined Houston. Yet its next-door neighbor Bellaire, just as independent, was given a ZIP place name of its own (77401) instead of Houston\'s. On the other side of that inconsistency sits Independence Heights, Texas\'s first incorporated Black city, which actually did vote to join Houston in 1928 and carries Houston\'s name today for the far less surprising reason that it really is part of the city.',
 		sections: [
@@ -962,7 +962,7 @@ export const guides: Guide[] = [
 			{
 				question: 'How many ZIP codes does Houston have?',
 				answer:
-					"178, all in Harris County per this site's source data. A separate breakdown from zip-codes.com splits that total into 97 standard delivery-route codes, 75 PO Box codes, and 6 unique codes reserved for single high-volume recipients.",
+					"178, all in Harris County per this site's source data. Nearly all are standard residential or PO Box codes; only a few are set aside for single major mail recipients, such as the city government itself, whose own P.O. Box (1562) carries ZIP 77251.",
 			},
 			{
 				question: 'Is West University Place part of the city of Houston?',
@@ -977,7 +977,7 @@ export const guides: Guide[] = [
 			{
 				question: 'What is Independence Heights, and is it part of Houston?',
 				answer:
-					"Independence Heights was Texas's first incorporated Black municipality, established in 1915 in what's now north Houston. Residents voted to dissolve the city and join Houston in November 1928, and the annexation took effect on December 26, 1929. Its ZIP codes today, 77018 and 77022, carry Houston's name because the neighborhood really did become part of the city.",
+					"Independence Heights was Texas's first Black-governed municipality, incorporated in 1915 under founding mayor George O. Burgess. It's the one entry on this list that actually chose annexation: unlike neighbors Bellaire and West University Place, which stayed independent, Independence Heights voted to dissolve and join Houston when it couldn't solve its own money problems, becoming part of the city just over a year later. That's why those two ZIP codes wear Houston's name today, the only entry on this list without a naming inconsistency to explain.",
 			},
 		],
 		sources: [
