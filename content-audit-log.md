@@ -2101,3 +2101,46 @@ Site-specific checklist for this article: (1) does the 66-code ZIP table's Jeffe
   "escalation": null
 }
 ```
+
+## houston-zip-codes
+
+```json
+{
+  "url_slug": "houston-zip-codes",
+  "last_audited": "2026-09-02",
+  "published_date": "2026-08-11",
+  "findings": [
+    { "dimension": "1. EEAT", "status": "pass", "detail": "Specific, sourced narrative (West University Place incorporation/charter history, Bellaire annexation-encirclement history, Independence Heights founding/dissolution history), not generic ZIP-list filler." },
+    { "dimension": "2. Factual accuracy", "status": "pass", "detail": "WebSearch-verified all 5 key claims: West University Place incorporated 1925 + 1940 home-rule charter (TSHA/click2houston agree); Bellaire encircled Dec 31 1948 + home-rule charter April 1949 (TSHA/bellairecivicclub agree); Independence Heights incorporated Jan 25 1915, first Black-incorporated city in Texas, mayor George O. Burgess, ~600 population, dissolved via Nov 1928 vote, annexation effective Dec 26 1929 (TSHA/houstonchronicle/hmdb agree). No fabrications found." },
+    { "dimension": "3. Timeliness", "status": "pass, no action needed", "detail": "published field already present (2026-08-11); no update-field-without-published-backfill risk." },
+    { "dimension": "4. Competitive differentiation", "status": "pass", "detail": "unitedstateszipcodes.org/zip-codes.com-type competitors list ZIP codes without the annexation-history narrative (West University Place vs Bellaire naming inconsistency, Independence Heights). Genuine increment." },
+    { "dimension": "5. SEO technical audit", "status": "pass", "detail": "title z=1.19, description z=0.94 (both within normal range per check_seo_field_stats.py). Live curl: canonical self-referential correct, single H1 matches title, meta description matches data, Article+FAQPage+BreadcrumbList schema all render, ads.txt correct (pub-5245502795720653)." },
+    { "dimension": "6. GEO audit", "status": "pass, ~estimated 88-90/99 both before and after fix", "detail": "coreSummary definition block + FAQ with schema + specific sourced statistics + clear H2 structure already established at publish; FAQ-verbatim-overlap fix (see dimension 14) slightly improves unique-information density but doesn't change structural score." },
+    { "dimension": "7. Early-content AI-tell backlog", "status": "not applicable", "detail": "Published 2026-08-11, after avoid-ai-writing was made mandatory (2026-08-07); not a backlog candidate." },
+    { "dimension": "8. External source link rot", "status": "pass", "detail": "All 6 sources (GeoNames, zip-codes.com, 2x Wikipedia, TSHA, Wikipedia Independence Heights) return HTTP 200 via curl with a real UA." },
+    { "dimension": "9. Internal link health", "status": "pass, strong, not orphaned", "detail": "6 other published articles (las-vegas-zip-codes x2, sacramento-zip-codes, an area-code-history article, a Harris-County article) carry genuine hand-written inbound anchor links to this slug. Outbound links to denver-zip-codes/atlanta-zip-codes/dallas-zip-codes all resolve." },
+    { "dimension": "10. Schema consistency", "status": "pass", "detail": "Article/FAQPage/BreadcrumbList all render correctly before and after the FAQ text edit; datePublished unaffected (published field untouched), dateModified now reflects updated bump to 2026-09-02 (see actions_taken)." },
+    { "dimension": "11. Compliance/AdSense risk", "status": "pass", "detail": "Pure geography/postal-history reference content, no restricted categories, no sensationalism. ads.txt correct." },
+    { "dimension": "12. Image validity & copyright", "status": "not applicable", "detail": "Site-wide design choice: no guide-level image field exists anywhere in DialWick's data model, confirmed via grep across guides.ts. Not a per-article defect." },
+    { "dimension": "13. AdSense policy risk", "status": "pass", "detail": "Same as dimension 11 -- no restricted content, ads.txt correct, /privacy/ and /about/ return 200 (spot-checked)." },
+    { "dimension": "14. Mechanical prose patterns (check_prose_patterns.py)", "status": "confirmed problem -> fixed (2 of 4 flagged FAQ overlaps); 3 residual accepted as false positives / unavoidable", "detail": "Initial run flagged L-0819-9 on all 4 FAQ answers (82/27/24/55 char overlaps). Independent background agent verified each individually: FAQ#1 (ZIP delivery-type breakdown) and FAQ#4 (Independence Heights annexation summary) CONFIRMED as genuine copy-shrink restatement adding no new information; FAQ#2 ('filed under Houston's name') and FAQ#3 ('West University Place's') ruled NOT CONFIRMED -- short generic phrase and unavoidable proper-noun repetition respectively, consistent with this site's established false-positive pattern for proper-noun/domain-name anchors. Rewrote FAQ#1 and FAQ#4 to add new framing (P.O. Box 1562 example; George O. Burgess detail + explicit comparison framing) instead of restating. Re-run after fix: FAQ#2/#3 unchanged (accepted per above), plus one new short overlap in the rewritten FAQ#4 ('Bellaire and West University Place') -- same proper-noun-anchor class, accepted without a second independent-verification round since it is structurally identical to the already-verified false-positive category." }
+  ],
+  "independent_confirmations": [
+    "1 candidate category (FAQ verbatim overlap, 4 sub-items) sent to independent verification via a single background general-purpose agent that read the source file directly (no other context). Completed normally in ~98s, no stall. Verdict: 2 of 4 sub-items (FAQ#1, FAQ#4) CONFIRMED real problems requiring rewrite; 2 of 4 (FAQ#2, FAQ#3) NOT CONFIRMED (false positives). All other 13 dimensions found no candidate issues, so no further independent-verification agents were needed."
+  ],
+  "actions_taken": [
+    "Rewrote FAQ answer #1 ('How many ZIP codes does Houston have?') to cite the City of Houston's own P.O. Box 1562 (ZIP 77251) as a concrete example instead of restating the 97/75/6 delivery-type breakdown already given in the body.",
+    "Rewrote FAQ answer #4 ('What is Independence Heights, and is it part of Houston?') to add founding-mayor George O. Burgess and explicit contrast framing against Bellaire/West University Place, instead of copy-shrinking the body's annexation-date sentence.",
+    "Bumped `updated` from '2026-08-11' to '2026-09-02' (published field already existed, so no backfill needed per the site's hard rule).",
+    "npm run build (58 pages) passed both before and after the edit.",
+    "Manually captured pre-edit technical-SEO baseline via curl (title/canonical/H1/schema/description/ads.txt) instead of running seo_drift.py baseline (script wasn't invoked this run); compared the same 4 signals post-deploy and confirmed byte-for-byte match except the intended FAQ text change -- no unexplained structural regression.",
+    "Committed (4f0ba45) and pushed to origin/main; DialWick auto-deploys via git-connected Cloudflare Pages. Polled the live URL (cache-busted) until the new FAQ text appeared (~35s).",
+    "Submitted https://dialwick.com/houston-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 200).",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Checked against 独立站/内容通用教训库.md's 教训条目 section before starting; L-0819-9 recurred again (already a graduated hard check per 2026-08-30 escalation, this run is the check doing its job, not a new gap worth separately noting)."
+  ],
+  "seo_score": "no issues found; title/description z-scores both in normal range, no change",
+  "geo_score": "~88-90/99 estimated, both before and after (qualitative structural assessment, not a full skill re-run; FAQ fix improves information density marginally without changing structural score)",
+  "escalation": null
+}
+```
