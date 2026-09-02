@@ -322,5 +322,18 @@
       "https://dialwick.com/new-york-zip-codes/"
     ],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-09-02",
+    "action": "submitted",
+    "reason": "trafficsite-gsc-index-requests例行运行，游标停留位DayAlmanac，DialWick排第2位。今日新发布north-carolina-area-codes（URL is not on Google）提交成功。第二轮nyc-area-code已收录，改用atlanta-zip-codes（Crawled-currently-not-indexed）提交成功。",
+    "submitted_urls": [
+      "https://dialwick.com/north-carolina-area-codes/",
+      "https://dialwick.com/atlanta-zip-codes/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/nyc-area-code/"
+    ],
+    "quota_used": "2 of shared account-wide daily quota"
   }
 ]
