@@ -219,3 +219,17 @@ theultimates.com（旧版 anywho.com 类反查工具）另跑了一次 `backlink
 本轮系上层`trafficsite-broken-link-building`会话按「外链产能集中规则」统一处理：DialWick当前处于Google August 2026垃圾更新算法性整站压制中（见`流量站矩阵风险应对追踪.md`），未入选本轮新机会挖掘前3站，第二部分本轮跳过。Pitch 9（kjohnson@kenmoreny.gov，同为8/21发出）留待下轮核实。
 
 **累计口径**：DialWick断链置换战术累计已发送10封pitch（含本轮1封跟进）；已验证`not_replaced` 1条、`verified_live_backlink_confirmed` 0条，转化率仍为0。
+
+---
+
+## 2026-09-02（第0步续：核实旧pitch）
+
+08-31那轮核实的是08-21发出的Pitch 8，但按"每站每次挑1条最早的"规则重新核对全文，发现比Pitch 8更早、同样从未验证过的记录其实是**Pitch 5**（2026-08-16，clerk@rutlandtownship.org，Message ID `1a0094b768eba341`）——08-16同批的Pitch 5/6此前一直没有被任何一轮核实过，08-31那轮误把08-21的Pitch 8当成了"最早未验证"，本轮予以纠正。
+
+- `curl --compressed -A "Mozilla/5.0..." -L https://www.rutlandtownship.org/local-links/`：HTTP 200，页面仍各出现2次`allareacodes`/`unitedstateszipcodes`，全文无`dialwick`字样。判定**`not_replaced`**。（首次curl未加`--compressed`拿到的是未解压的gzip二进制，加上该参数后确认页面结构完整、非误判）
+- `python3 dataforseo_query.py backlinks dialwick.com --limit 100`：外链明细共0条，未查到rutlandtownship.org。
+- `gmail_send.py list --query "from:clerk@rutlandtownship.org"`返回空，对方从未回复。
+- 发出已17天，Rutland Charter Township是真实密歇根地方政府官方页面，符合"真实权威度"标准，发送简短跟进邮件（过Skill(humanizer)+Skill(avoid-ai-writing)人工核对，无破折号/AI高频词），`gmail_send.py send --from dialwick --reply-to 1a0094b768eba341`，Message ID `1a06241721d31ff3`。标记 **`followed_up_once`**。
+- Pitch 6（support@gondtc.com，同为08-16发出，同样从未验证）本轮未处理，留给下一轮（跟Pitch 9一样排队等下一次运行）。
+
+**累计口径**：DialWick断链置换战术累计已发送11封pitch（含本轮1封跟进）；已验证`not_replaced` 2条、`verified_live_backlink_confirmed` 0条，转化率仍为0。
