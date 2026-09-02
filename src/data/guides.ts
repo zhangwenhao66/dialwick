@@ -1883,6 +1883,95 @@ export const guides: Guide[] = [
 			{ label: 'GlobeNewswire: Mandatory 10-Digit Dialing to Begin August 18 in New Jersey Area Code 609 and Portions of Area Code 856', url: 'https://www.globenewswire.com/news-release/2018/08/16/1553015/0/en/Mandatory-10-Digit-Dialing-to-Begin-August-18-In-New-Jersey-Area-Code-609-and-Portions-of-Area-Code-856.html' },
 		],
 	},
+	{
+		slug: 'north-carolina-area-codes',
+		category: 'Area Code Lists',
+		title: 'Every North Carolina Area Code, and the One About to Get Company',
+		description:
+			"North Carolina has 10 area codes today, all descended from the single code assigned to the whole state in 1947, and regulators are now weighing an overlay for the one region still running on just one.",
+		published: '2026-09-02',
+		updated: '2026-09-02',
+		coreSummary:
+			"North Carolina ran on a single area code, 704, from 1947 until 1954, when the state's eastern two-thirds split off as 919. Three more geographic splits followed: 910 split from 919 in 1993, then both 336 (from 910) and 252 (from 919) split off, and 828 split from 704, all in 1998. After that, North Carolina switched to overlays instead of splits: 980 stacked on Charlotte's 704 in 2001, 984 on the Research Triangle's 919 in 2012, 743 on the Piedmont Triad's 336 in 2016, and 472 on the southeastern 910 region in 2022. That leaves 828 (Asheville and the western mountains) and 252 (the northeast) as the only two of North Carolina's 10 area codes that have never been overlaid, and 828's numbers are now projected to run out in the third quarter of 2028.",
+		sections: [
+			{
+				heading: 'All 10 North Carolina area codes',
+				body: [
+					"North Carolina's 10 area codes cover a state that started with just one. The table below lists all of them, along with the region each covers and the date it went into service; see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in the notes that follow.",
+				],
+				table: {
+					caption: 'All 10 North Carolina area codes',
+					columns: ['Area code', 'Region', 'In service since'],
+					rows: [
+						['704', 'Charlotte, Concord, Gastonia, south-central NC', '1947 (original)'],
+						['919', 'Raleigh, Durham, Cary, Chapel Hill (the Research Triangle)', '1954'],
+						['910', 'Fayetteville, Wilmington, Jacksonville, southeastern NC', 'Nov 14, 1993'],
+						['336', 'Piedmont Triad, Wilkesboro, Roxboro, northwestern NC', 'Dec 15, 1997'],
+						['252', 'Greenville, New Bern, Rocky Mount, the Outer Banks', 'Mar 22, 1998'],
+						['828', 'Asheville and the western Blue Ridge Mountains', 'Mar 22, 1998'],
+						['980', 'Same territory as 704, Charlotte (overlay)', 'Feb 10, 2001'],
+						['984', 'Same territory as 919, Research Triangle (overlay)', 'Apr 30, 2012'],
+						['743', 'Same territory as 336, Piedmont Triad (overlay)', 'May 23, 2016'],
+						['472', 'Same territory as 910, southeastern NC (overlay)', 'Oct 7, 2022'],
+					],
+				},
+			},
+			{
+				heading: 'Every North Carolina area code descends from 704, assigned in 1947',
+				body: [
+					"704 covered every phone in North Carolina when the North American Numbering Plan launched in 1947. It kept that job for seven years, until the state's first split in 1954 handed the eastern two-thirds of the state to a new code, 919. That two-code arrangement held for the next 39 years, longer than any other stretch in the state's numbering history, until 1993, when the southern and western portions of 919's territory, including Winston-Salem, Greensboro, Fayetteville, and Wilmington, split off as 910, North Carolina's first new area code in nearly four decades.",
+					"910 didn't last long as a single region either. Four years and a month later, its own growth in the Piedmont Triad forced a second split: on December 15, 1997, 336 took over Winston-Salem, Greensboro, and most of the state's northwest, leaving 910 with just the southeastern coastal strip around Wilmington and Fayetteville. Then, on the very same day, March 22, 1998, North Carolina split twice more: 919 gave up its northeastern corner (Rocky Mount, Greenville, the Outer Banks) to a new code, 252, while 704 gave up its western third (Asheville and the Blue Ridge Mountains) to 828. The state went from four area codes to six in a single day.",
+				],
+			},
+			{
+				heading: 'Four overlays followed the splits, one region at a time',
+				body: [
+					"North Carolina's first overlay came in 2000-2001: BellSouth added 980 on top of Charlotte's 704 territory, with permissive dialing beginning May 1, 2000, and 10-digit dialing made mandatory as of January 10, 2001. The Research Triangle got its own overlay, 984, on April 30, 2012, after regulators had originally planned it for 2001 but delayed it once number pooling freed up enough supply to push the need back a decade.",
+					"The Piedmont Triad's 743 overlay activated on 336 in 2015-2016, and its arrival meant every corridor along I-85 in North Carolina, Charlotte, the Triangle, and now the Triad, required 10-digit dialing. The most recent overlay, 472, stacked onto the southeastern 910 region on October 7, 2022. That region had an unusual reason to move to mandatory 10-digit dialing even before 472 arrived: 910's central office code 988 was claimed nationwide in 2021 for the 988 Suicide & Crisis Lifeline, so any area still allowing 7-digit local calls couldn't keep a working 988 exchange and dial the hotline both at once. 910 made the mandatory 10-digit switch on October 24, 2021, ahead of most of the overlays on this list, for that reason alone.",
+				],
+			},
+			{
+				heading: '828 could be next, and regulators are still weighing how',
+				body: [
+					"828 and 252 are the only two of North Carolina's 10 area codes that have never shared their territory with an overlay, and that may be about to change for one of them. Reporting by The Mountaineer in March 2026 found that 828, covering Asheville and the rest of western North Carolina, has only 66 of its 775 middle-three-digit exchange blocks left to assign, with the remaining supply projected to run out in the third quarter of 2028.",
+					'"They came up with eight alternatives that they looked at, and they looked at how long the numbers would last under each alternative and when they would potentially run out again. They chose this one as the one that would be the most in the public interest," Lucy Edmondson, chief counsel for the North Carolina Utilities Commission, told the paper about the overlay option NANPA has petitioned to use. One alternative under consideration would have split the region instead, giving a similar 31-to-32-year lifespan and avoiding mandatory 10-digit dialing, but at the cost of forcing half of western North Carolina to change numbers. As of that reporting, no new area code number or effective date had been chosen. "It will still be the 828 area, but there\'ll be a second one," Edmondson said.',
+					"North Carolina wouldn't be the only state to add several area codes to a single day's tally at once. [New Jersey activated three separate overlays on the exact same day in 2001](/new-jersey-area-codes/), a state that, like North Carolina, traces every one of its current area codes back to a single 1947 original.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'How many area codes does North Carolina have?',
+				answer:
+					"10 as of 2026, though that count could rise to 11 depending on how North Carolina's utility board rules on a pending Asheville-area number shortage.",
+			},
+			{
+				question: 'What was North Carolina\'s original area code?',
+				answer:
+					"704. It served every phone in the state when the plan began in 1947. Every code the state uses today traces back to it, either directly through a later split, or through 919, which broke away in 1954.",
+			},
+			{
+				question: "What is North Carolina's newest area code?",
+				answer:
+					"472, the overlay serving the coastal southeast, active since the fall of 2022.",
+			},
+			{
+				question: 'Is North Carolina getting an 11th area code?',
+				answer:
+					"Not officially yet. A federal numbering administrator has asked state regulators to sign off on a second code for the mountains once the current supply runs dry, expected around mid-2028, but neither a number nor a start date had been picked as of the most recent reporting.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: List of North Carolina area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_Carolina_area_codes' },
+			{ label: 'Wikipedia: Area codes 704 and 980', url: 'https://en.wikipedia.org/wiki/Area_codes_704_and_980' },
+			{ label: 'Wikipedia: Area codes 919 and 984', url: 'https://en.wikipedia.org/wiki/Area_codes_919_and_984' },
+			{ label: 'Wikipedia: Area codes 336 and 743', url: 'https://en.wikipedia.org/wiki/Area_codes_336_and_743' },
+			{ label: 'Wikipedia: Area codes 910 and 472', url: 'https://en.wikipedia.org/wiki/Area_codes_910_and_472' },
+			{ label: 'Wikipedia: Area code 828', url: 'https://en.wikipedia.org/wiki/Area_code_828' },
+			{ label: 'Wikipedia: Area code 252', url: 'https://en.wikipedia.org/wiki/Area_code_252' },
+			{ label: 'The Mountaineer (Aarik Long): "828 running out of phone numbers: new area code is coming" (Mar. 26, 2026)', url: 'https://www.themountaineer.com/news/828-running-out-of-phone-numbers-new-area-code-is-coming/article_d985f386-59cd-4dde-9bed-34c07d14c6f9.html' },
+		],
+	},
 
 	// ---------------------------------------------------------------------
 	// Area Code Guides
