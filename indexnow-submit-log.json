@@ -209,28 +209,38 @@
   "https://dialwick.com/zip-code-shows-wrong-city/": {
     "submitted_date": "2026-08-13",
     "last_submitted_date": "2026-08-13",
-    "verified_status": "pending",
-    "note": "SourceBottle reply (Anne-Britt Ostlund) used as lead case study"
+    "verified_status": "stale_not_indexed",
+    "note": "SourceBottle reply (Anne-Britt Ostlund) used as lead case study",
+    "last_checked_date": "2026-09-03",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/kansas-city-zip-codes/": {
     "submitted_date": "2026-08-13",
     "last_submitted_date": "2026-08-13",
-    "verified_status": "pending"
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-09-03",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/richmond-va-zip-codes/": {
     "submitted_date": "2026-08-16",
     "last_submitted_date": "2026-08-16",
-    "verified_status": "pending"
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-09-03",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/213-area-code/": {
     "submitted_date": "2026-08-16",
     "last_submitted_date": "2026-08-17",
-    "verified_status": "pending"
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-09-03",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/phoenix-zip-codes/": {
     "submitted_date": "2026-08-17",
     "last_submitted_date": "2026-08-17",
-    "verified_status": "pending"
+    "verified_status": "verified_indexed",
+    "last_checked_date": "2026-09-03",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/cincinnati-zip-codes/": {
     "submitted_date": "2026-08-17",
