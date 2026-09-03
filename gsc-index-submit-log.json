@@ -335,5 +335,15 @@
       "https://dialwick.com/nyc-area-code/"
     ],
     "quota_used": "2 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-09-03",
+    "action": "submitted",
+    "reason": "今日新发布how-to-call-japan-from-us（压制期非模板选题），URL Inspection确认URL is not on Google，提交成功。",
+    "submitted_urls": [
+      "https://dialwick.com/how-to-call-japan-from-us/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "1 of shared account-wide daily quota"
   }
 ]
