@@ -4212,4 +4212,91 @@ export const guides: Guide[] = [
 			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
 		],
 	},
+	{
+		slug: 'how-to-call-japan-from-us',
+		category: 'International Dialing',
+		title: "Japan's Country Code Is +81, and Its New 060 Prefix Just Got Delayed",
+		description:
+			"Dial 011, then 81, then drop the leading 0. Japan's area codes shrink as cities grow, and a fourth mobile prefix, 060, was due this year before carriers postponed the rollout.",
+		published: '2026-09-03',
+		updated: '2026-09-03',
+		coreSummary:
+			"Japan's country code is 81. Calling in from a US phone: dial 011, then 81, then the Japanese number with its leading 0 dropped, so a Tokyo landline written domestically as 03-3200-2222 becomes 011 81 3 3200 2222, or +81 3 3200 2222 from a mobile or VoIP line. That leading digit isn't arbitrary. Japan hands out shorter area codes to bigger cities and longer ones to smaller towns: Tokyo's 23 wards share a single-digit 03, Osaka gets 06, and a small city might carry a four- or five-digit code instead. Mobile numbers run on a separate, and increasingly crowded, system: 090, 080, and 070 were introduced one after another as each ran short, and Japan's telecom ministry approved a fourth prefix, 060, in December 2024. It was supposed to start reaching phones this year. As of this writing, Japan's five mobile carriers have postponed that rollout with no new date announced.",
+		sections: [
+			{
+				heading: 'Dialing Japan: country code 81, step by step',
+				body: [
+					"Calling a Japanese landline or mobile number from the US: dial 011, then 81 (Japan's country code), then the number with its leading 0 dropped, then the rest of the digits as written. A Tokyo landline written domestically as 03-3200-2222 becomes 011 81 3 3200 2222 from a US landline, or +81 3 3200 2222 from a mobile or VoIP line that accepts a plus sign in place of 011. A Japanese mobile number follows the same rule: 090-1234-5678 becomes 011 81 90 1234 5678, dropping only the single leading 0.",
+				],
+				table: {
+					columns: ['Step', 'What to dial'],
+					rows: [
+						['1. Exit code (landline)', '011'],
+						['1. Exit code (mobile/VoIP)', '+'],
+						['2. Country code', '81'],
+						['3. Japanese number', 'drop the leading 0'],
+						['4. Remaining digits', 'dial as written'],
+					],
+				},
+			},
+			{
+				heading: 'Bigger city, shorter code: how Japan sizes its area codes',
+				body: [
+					"Japanese area codes run from one digit to five, and the length runs in the opposite direction from population: Tokyo's 23 special wards, the country's largest population center, share a single-digit code, 3 (written 03 domestically). Osaka carries the other one-digit code, 6. Nagoya, a smaller city, needs three digits, 052, and Yokohama needs three as well, 045. The smallest municipalities and most rural stretches of the country carry four- or five-digit codes, the inverse of the US system described in [how US area codes actually work](/how-do-area-codes-work/), where every region gets a same-length three-digit code regardless of how many people live there.",
+					"Tokyo's own code has changed shape before, and not because the digit 3 stopped being enough. What changed was the local number attached to it. As Tokyo's phone network filled up, NTT lengthened local numbers from seven digits to eight in 1991, so a number written as 03-200-2222 became 03-3200-2222 overnight, with a 3 inserted at the front of the local number rather than the area code itself. Osaka went through the identical fix eight years later, in 1999: 06-584-2222 became 06-6584-2222. Both changes bought room for millions of additional lines in Japan's two largest metro areas without touching the area code that made them recognizably Tokyo or Osaka numbers.",
+				],
+				table: {
+					caption: 'Area code length by city size',
+					columns: ['City', 'Area code', 'Digits'],
+					rows: [
+						['Tokyo (23 wards)', '03', '1'],
+						['Osaka', '06', '1'],
+						['Nagoya', '052', '3'],
+						['Yokohama', '045', '3'],
+					],
+				},
+			},
+			{
+				heading: 'Three mobile prefixes became four in 1999, 2002, and 2013, and a fourth is stuck in the pipeline',
+				body: [
+					"Japan's mobile numbers didn't always share one format. Before 1999, several older systems were in use side by side; that year, the country reorganized them into a single 11-digit format starting with 090. Flip phones drove those 090 numbers toward exhaustion fast enough that Japan opened a second mobile prefix, 080, in March 2002, and the same pressure repeated itself as smartphones spread, prompting a third prefix, 070, in November 2013. By 2024, the ministry overseeing telecoms reported that only about 5.3 million 070 numbers remained unassigned nationwide, with the 090 and 080 ranges already exhausted.",
+					"Japan's Ministry of Internal Affairs and Communications answered that shortage the same way it had twice before: a new prefix. On December 20, 2024, the ministry revised its Telecommunications Numbering Plan to let mobile carriers issue 11-digit numbers starting with 060, adding roughly 90 million numbers to the country's total capacity. The ministry's own announcement set the numbers to start reaching customers \"from July 2026 onward,\" once carriers finished the required system work. That didn't happen on schedule: Japan's five mobile network operators, NTT Docomo, KDDI, Okinawa Cellular Telephone, SoftBank, and Rakuten Mobile, announced in early July 2026 that they were postponing the rollout and would announce a revised date once one was set. No 060 numbers were in customers' hands as of that announcement.",
+				],
+			},
+			{
+				heading: 'Worked examples',
+				body: [
+					"A Tokyo landline written domestically as 03-3200-2222 becomes 011 81 3 3200 2222 from a US landline, or +81 3 3200 2222 from a mobile. A mobile number written as 090-1234-5678 becomes 011 81 90 1234 5678, or +81 90 1234 5678.",
+					"This kind of numbering squeeze isn't unique to Japan; see [the US country code](/us-country-code/) for a different version of the same problem, where 20 separate countries and territories share a single +1 code rather than one country cycling through new mobile prefixes.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: "What is Japan's country code?",
+				answer: '81.',
+			},
+			{
+				question: 'Do I drop the 0 when calling a Japanese number from the US?',
+				answer:
+					"Yes. That leading 0 is a domestic trunk prefix, not part of the number itself, so it's dropped once 011 81 or +81 takes over, the same rule that applies to most countries reached through the 011 exit code.",
+			},
+			{
+				question: 'Are 060 mobile numbers available in Japan yet?',
+				answer:
+					"No. Regulators cleared the new prefix at the end of 2024 with a rollout originally targeted for mid-2026, but NTT Docomo, KDDI, and the other carriers announced a postponement that summer without setting a replacement date.",
+			},
+			{
+				question: "What's the emergency number in Japan?",
+				answer:
+					'110 reaches the police and 119 reaches ambulance and fire services, two separate three-digit numbers rather than the single 911 US callers are used to.',
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Telephone numbers in Japan', url: 'https://en.wikipedia.org/wiki/Telephone_numbers_in_Japan' },
+			{ label: 'Japan Ministry of Internal Affairs and Communications: Adding 060 Numbers to Mobile Phone Numbers for Voice Calls', url: 'https://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/pressrelease/2024/12/20_2.html' },
+			{ label: 'Telecompaper: Japan delays rollout of 060 mobile numbers', url: 'https://www.telecompaper.com/news/japan-delays-rollout-of-060-mobile-numbers--1576412' },
+			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+		],
+	},
 ];
