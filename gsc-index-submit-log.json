@@ -345,5 +345,16 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "1 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-09-04",
+    "action": "submitted",
+    "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。Discovered-not-indexed报告(8条)：how-to-call-australia-from-us(Crawled-currently-not-indexed，最近爬取)确认未收录提交成功。另按代理排序候选atlanta-area-code(压制期固定优先名额)确认未收录提交成功(2条)。",
+    "submitted_urls": [
+      "https://dialwick.com/how-to-call-australia-from-us/",
+      "https://dialwick.com/atlanta-area-code/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "2 of shared account-wide daily quota"
   }
 ]
