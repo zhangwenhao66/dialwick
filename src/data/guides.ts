@@ -3149,15 +3149,22 @@ export const guides: Guide[] = [
 		description:
 			"Cincinnati's 71 ZIP codes almost all sit in Hamilton County, except one that's a 20,000-person Clermont County suburb, and one that's an 18-box mail drop with no residents at all.",
 		published: '2026-08-17',
-		updated: '2026-08-17',
+		updated: '2026-09-06',
 		coreSummary:
-			"USPS assigns 71 ZIP codes with Cincinnati as the primary place name, and this site's GeoNames-based source data puts 69 of them inside Hamilton County, where Cincinnati has been the county seat since the county's creation in 1790. The other two sit outside it: 45245 is a Clermont County community of roughly 20,000 people, spanning Withamsville, Mount Carmel, and Summerside, addressed as Cincinnati because its mail route runs out of a Cincinnati-area postal facility rather than a Clermont one. 45275, in Brown County, has no recorded residents at all. Postal trackers describe it as an 18-box mail-drop facility on a single road, Clay Drive, and most directories still file it under Hamilton County by mistake. One more code on the list, 45999, isn't a neighborhood either: it's the dedicated ZIP the IRS uses at its Cincinnati service center to process specific categories of business and international tax filings.",
+			"USPS assigns 71 ZIP codes with Cincinnati as the primary place name, and this site's GeoNames-based source data puts 69 of them inside Hamilton County, where Cincinnati has been the county seat since the county's creation in 1790. The other two sit outside it: 45245 is a Clermont County community of roughly 20,000 people, spanning Withamsville, Mount Carmel, and Summerside, addressed as Cincinnati because its mail route runs out of a Cincinnati-area postal facility, not a Clermont one. 45275, which this site's GeoNames-based data places in Brown County, has no recorded residents at all: postal trackers describe it as an 18-box mail-drop facility on a single road, Clay Drive. (Other USPS-based directories place 45275 in Hamilton County instead; see the disagreement addressed below.) One more code on the list, 45999, isn't a neighborhood either: it's the dedicated ZIP the IRS uses at its Cincinnati service center to process specific categories of business and international tax filings.",
 		sections: [
 			{
 				heading: '69 in Hamilton County, plus two that most directories miss',
 				body: [
 					"Most ZIP code directories, including several with active Cincinnati listings, file all 71 of the city's ZIP codes under a single county: Hamilton, where Cincinnati has served as county seat since Arthur St. Clair organized the county in 1790. This site's source data, built from GeoNames' postal code registry, agrees on the total (71, matching independent counts from zip-codes.com and ZipCodesToGo), but splits two of those codes into neighboring counties instead of Hamilton.",
-					"45245 belongs to Clermont County, covering Withamsville, Mount Carmel, and Summerside across Union and Pierce townships, an active suburban area on Cincinnati's east side with roughly 20,000 residents. 45275 belongs to Brown County, the only Cincinnati-addressed ZIP code that does, and unlike 45245, it isn't a residential community. GeoNames and other postal trackers describe it as a single-route PO box facility, 18 boxes along Clay Drive, with no population recorded.",
+					"45245 belongs to Clermont County, covering Withamsville, Mount Carmel, and Summerside across Union and Pierce townships, an active suburban area on Cincinnati's east side with roughly 20,000 residents. This site's data attributes 45275 to Brown County, the only Cincinnati-addressed ZIP code that gets that treatment (more on a real disagreement over that county line below), and unlike 45245, it isn't a residential community. GeoNames and other postal trackers describe it as a single-route PO box facility, 18 boxes along Clay Drive, with no population recorded.",
+				],
+			},
+			{
+				heading: 'Why some directories put 45275 in Hamilton County instead',
+				body: [
+					"This isn't a case of one source being careless. This site's ZIP-to-county data comes from GeoNames' postal code registry, and it assigns 45275 to Brown County. But two of the most widely cited USPS-based ZIP directories disagree: zip-codes.com's own page for 45275, listed among this article's sources, tags the ZIP Hamilton County in its site navigation, and ZipCodesToGo's Cincinnati-area listing does the same. All three sources agree on everything else: that USPS assigns 45275 to a Cincinnati mailing address, that it's an 18-box PO-only facility on Clay Drive, and that no residential population is recorded there.",
+					"The likely cause is a boundary-conversion mismatch, not a factual error on any one source's part. Postal ZIP codes are drawn for mail routing, not county lines, so different providers convert a five-digit ZIP into a county using different geographic methods (ZIP centroid, primary carrier route, or ZCTA overlap), and a tiny, low-volume ZIP like 45275 is exactly the kind of edge case where those methods land on different counties. Anyone who needs 45275's county for a legal, tax, or voter-registration purpose should confirm directly with Hamilton County's or Brown County's own records rather than relying on any ZIP-code directory, including this one.",
 				],
 			},
 			{
@@ -3190,7 +3197,7 @@ export const guides: Guide[] = [
 			{
 				heading: "45999 isn't a ZIP code for anyone who lives there",
 				body: [
-					'One entry on the list, 45999, doesn\'t correspond to a neighborhood or a residential mail route: it\'s the ZIP code the IRS uses at its Cincinnati service center to process specific categories of business and international tax correspondence. IRS notices mailed from Cincinnati, including forms like the CP132 balance-due notice, carry a return address of "Internal Revenue Service, Cincinnati, OH 45999," with a numeric stop code appended for internal routing. Which specific filings route to Cincinnati rather than another IRS service center varies by form type (different notices and forms list different coverage areas), which is part of why the center needed a dedicated ZIP code rather than sharing one with any Cincinnati neighborhood.',
+					'One entry on the list, 45999, doesn\'t correspond to a neighborhood or a residential mail route: it\'s the ZIP code the IRS uses at its Cincinnati service center to process specific categories of business and international tax correspondence. IRS notices mailed from Cincinnati, including forms like the CP132 balance-due notice, carry a return address of "Internal Revenue Service, Cincinnati, OH 45999," with a numeric stop code appended for internal routing. Which specific filings route to Cincinnati rather than another IRS service center varies by form type (different notices and forms list different coverage areas), which is part of why the center got its own dedicated ZIP code, not one shared with any Cincinnati neighborhood.',
 					"Cincinnati isn't the only city on this site with an IRS-only ZIP in its list: [Atlanta's does too](/atlanta-zip-codes/), assigned to a separate service center entirely.",
 				],
 			},
@@ -3206,7 +3213,7 @@ export const guides: Guide[] = [
 			{
 				question: 'How many ZIP codes does Cincinnati have?',
 				answer:
-					"71, per this site's GeoNames-based source data, matching independent counts from zip-codes.com and ZipCodesToGo. Most directories attribute all 71 to Hamilton County, but two, 45245 and 45275, actually sit in Clermont and Brown counties.",
+					"71. Three independently built sources land on that same number, this site's own postal-registry compilation, zip-codes.com, and ZipCodesToGo, which is a stronger check than any single source alone: it means the county-line disagreements described on this page are boundary-classification disputes over a couple of specific ZIPs, not a case of anyone missing or double-counting a ZIP code entirely.",
 			},
 			{
 				question: 'What county is Cincinnati in?',
@@ -3216,7 +3223,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Why is ZIP code 45999 different from the rest?',
 				answer:
-					"It isn't a neighborhood. 45999 is the dedicated ZIP code the IRS uses at its Cincinnati service center to process specific categories of business and international tax filings. Which exact filings route there depends on the form, not on where the taxpayer lives.",
+					"It isn't a neighborhood. 45999 is a Cincinnati return address reserved for specific corporate and cross-border filings, for example Form SS-4, the EIN application, when a company's principal place of business is outside the U.S.: the instructions for that form direct those filers to mail it to \"EIN International Operation, Cincinnati, OH 45999.\" A domestic business applying for the same kind of EIN files at a different address entirely.",
 			},
 			{
 				question: "What is Cincinnati's area code?",
@@ -3226,7 +3233,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Does anyone live in ZIP code 45275?',
 				answer:
-					"Not according to postal records. 45275 is described as an 18-box mail-drop facility on a single road, Clay Drive, in Brown County, with no residential population recorded, unlike 45245, its Clermont County counterpart, which covers an active suburban community of roughly 20,000 people.",
+					"Not according to postal records. Whichever county 45275 technically sits in, a point this site's own sources don't fully agree on, every one of them describes the same tiny facility: 18 PO boxes strung along one road, Clay Drive, and nobody actually lives there, a sharp contrast with the roughly 20,000-person suburban community covered by neighboring 45245.",
 			},
 		],
 		sources: [
@@ -3236,6 +3243,8 @@ export const guides: Guide[] = [
 			{ label: 'ZIP Code 45245 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/45245/zip-code-45245.asp' },
 			{ label: 'ZIP Code 45275 (zip-codes.com)', url: 'https://www.zip-codes.com/zip-code/45275/zip-code-45275.asp' },
 			{ label: 'IRS CP132 notice sample (Cincinnati, OH 45999 return address)', url: 'https://www.irs.gov/pub/notices/cp132_english.pdf' },
+			{ label: 'Instructions for Form SS-4 (IRS.gov, EIN International Operation address)', url: 'https://www.irs.gov/instructions/iss4' },
+			{ label: 'ZIP Code 45275 (zipcodestogo.com)', url: 'https://www.zipcodestogo.com/Cincinnati/OH/45275/' },
 			{ label: 'Cincinnati, Ohio (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Cincinnati' },
 			{ label: 'Hamilton County, Ohio (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Hamilton_County,_Ohio' },
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
