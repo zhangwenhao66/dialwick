@@ -2144,3 +2144,55 @@ Site-specific checklist for this article: (1) does the 66-code ZIP table's Jeffe
   "escalation": null
 }
 ```
+
+## cincinnati-zip-codes
+
+```json
+{
+  "url_slug": "cincinnati-zip-codes",
+  "last_audited": "2026-09-06",
+  "published_date": "2026-08-17",
+  "site_selection_note": "Cross-site order = oldest-last-audited-first across all 10 traffic sites (read each site's content-audit-log.md last git-commit timestamp on content-audit-log.md itself). DialWick (2026-09-02 21:42) was the stalest of all 10, so it was processed first this run. Within-site selection used DialWick's index-coverage special rule (site is under index-eligibility-revocation suppression since 2026-09-04, publishing paused): only URLs marked 'Submitted and indexed' in the latest research-db/index-coverage/2026-09-06_dialwick.json snapshot are eligible, since de-indexed/never-crawled pages are the recovery probes and shouldn't be touched. Of the 12 non-homepage indexed URLs, cincinnati-zip-codes had never been audited by this task (no prior url_slug entry in this log), so it was selected.",
+  "unique_checklist": [
+    "Is the '45275 belongs to Brown County' claim actually supported by the article's own cited sources (zip-codes.com, ZipCodesToGo), or does it contradict them?",
+    "Is the 45999 IRS-ZIP description accurate and is there any real, sourceable concrete detail that could be added?",
+    "Are the three area-code dates (513 in 1947, 937 split Sept 28 1996, 283 overlay April 28 2023) accurate?",
+    "Is '45245 ... roughly 20,000 residents' actually supported by real population data?"
+  ],
+  "findings": [
+    { "dimension": "1. EEAT", "status": "pass", "detail": "Specific sourced narrative (annexation/PO-box/IRS-ZIP/area-code-split history), not generic ZIP-list filler." },
+    { "dimension": "2. Factual accuracy", "status": "confirmed problem -> fixed", "detail": "Article's own cited source, zip-codes.com's 45275 page (and ZipCodesToGo's, also verified live), places ZIP 45275 in Hamilton County -- directly contradicting the article's flat claim that '45275 belongs to Brown County' (sourced from this site's own GeoNames-derived src/lib/data/zipCounty.json). The prior text went further and asserted 'most directories still file it under Hamilton County by mistake' with zero evidence either GeoNames or the site's own research had independently confirmed which underlying boundary is authoritative for this obscure PO-Box-only ZIP. All other checked facts (Hamilton County organized 1790 by Arthur St. Clair; 513 dates to 1947, one of the original 1947 area codes; 937 split off Sept 28 1996; 283 overlay went live April 28 2023; 45245 population ~20,249 per ZCTA-level zip-codes.com data, matching 'roughly 20,000') verified correct via WebSearch, no changes needed." },
+    { "dimension": "3. Timeliness", "status": "pass, updated bumped", "detail": "published field already present (2026-08-17); no backfill risk. updated bumped 2026-08-17 -> 2026-09-06 following this run's edits." },
+    { "dimension": "4. Competitive differentiation", "status": "pass", "detail": "SERP check (WebSearch 'cincinnati zip codes list') shows top results are zip-codes.com/zipdatamaps.com/gisgeography.com -- pure list/map sites with no county-discrepancy narrative, no IRS-ZIP backstory, no area-code-overlay history. This article's new Hamilton/Brown County disagreement disclosure is a genuine increment competitors don't have (they're literally one side of the disagreement)." },
+    { "dimension": "5. SEO technical audit", "status": "pass", "detail": "check_seo_field_stats.py: title z=0.16, description z=-0.10, both normal range, unchanged. Live curl: canonical self-referential, single H1 matches title, Article+FAQPage+BreadcrumbList schema render, ads.txt correct (pub-5245502795720653), robots.txt allows GPTBot/ClaudeBot/PerplexityBot/Google-Extended." },
+    { "dimension": "6. GEO audit", "status": "pass, qualitative, no material change", "detail": "coreSummary block, FAQ+schema, sourced statistics, clear H2 structure (now 6 vs 5, new disclosure section) all intact; no full ai-seo re-run performed (qualitative assessment consistent with this site's established practice for edits that don't touch overall structure)." },
+    { "dimension": "7. Early-content AI-tell backlog", "status": "not applicable", "detail": "Published 2026-08-17, after avoid-ai-writing was made mandatory (2026-08-07)." },
+    { "dimension": "8. External source link rot", "status": "pass", "detail": "curl with real UA: GeoNames/zip-codes.com (x3)/IRS CP132 PDF/Wikipedia (x3) all HTTP 200. zipcodestogo.com returned 403 to curl but WebSearch confirms the page is live and indexed (title 'Cincinnati, OH ZIP Code List -- All 71 ZIP Codes & Map | Hamilton County') -- bot-blocking, not link rot, consistent with this site's established pattern for anti-scraping sources." },
+    { "dimension": "9. Internal link health", "status": "pass, not orphaned", "detail": "2 genuine hand-written inbound anchor links from other articles (a 35808/Huntsville-adjacent article, and the huntsville-zip-codes article's cross-reference to this Cincinnati/Huntsville disagreement pattern). All 4 outbound internal links (atlanta-zip-codes, chicago-area-code, how-do-area-codes-work, huntsville-zip-codes) resolve to real slugs." },
+    { "dimension": "10. Schema consistency", "status": "pass, synced", "detail": "seo_drift.py compare post-deploy shows FAQPage schema content changed (expected -- FAQ#1/#3/#5 rewritten) and no other schema regression. dateModified reflects the 2026-09-06 bump; datePublished untouched." },
+    { "dimension": "11-13. Compliance/AdSense risk", "status": "pass", "detail": "Pure geography/postal-history/tax-administration reference content, no restricted categories, no sensationalism. ads.txt correct; /about/ and /privacy/ both return 200." },
+    { "dimension": "12. Image validity & copyright", "status": "not applicable", "detail": "Site-wide: no guide-level image field exists in DialWick's data model." },
+    { "dimension": "14. Mechanical prose patterns (check_prose_patterns.py)", "status": "confirmed problems -> fixed; 3 residual FAQ overlaps accepted as unavoidable", "detail": "Initial run: 'rather than/instead of' 5x (threshold >4) + FAQ/body overlap on all 5 FAQ answers. Independent agent verdicts: county-disagreement finding CONFIRMED (needs disclosure fix, see dimension 2); 'rather than' repetition CONFIRMED (all 5 generic, reducible); FAQ#1/#3/#5 overlaps CONFIRMED (pure restatement, no new info); FAQ#2/#4 overlaps NOT CONFIRMED (unavoidable generic connector phrase / legitimate FAQ compression of scattered facts). After rewriting FAQ#1/#3/#5 and reducing 1 'rather than' instance, re-run showed 'rather than/instead of' now passes (4/1066 words) but surfaced 3 residual FAQ overlaps: FAQ#2 (20 chars, same NOT-CONFIRMED generic connector as before, untouched by this run's edits), FAQ#3 (22-28 chars, from the newly-added IRS Form SS-4 quote -- tried two rewrites to reduce, final residual is a verbatim quote of the actual IRS address string 'Cincinnati, OH 45999', which must stay verbatim for accuracy), FAQ#4 (35 chars, same NOT-CONFIRMED generic geographic descriptor as before). All 3 residuals are either previously-verified false positives or an unavoidable direct quotation; per this site's established practice (see houston-zip-codes 2026-09-02 entry above), accepted without further forced rewriting rather than sacrificing accuracy. Script still exits 1 -- documented here rather than silently treated as clean." }
+  ],
+  "independent_confirmations": [
+    "1 background general-purpose agent, given only the raw evidence (no prior framing/conclusions), verified 4 candidate finding categories independently. Completed normally in ~184s, no stall. Verdicts: county-disagreement CONFIRMED; population-figure candidate NOT CONFIRMED (candidate's own math used the wrong denominator -- CDP sum instead of ZCTA); 'rather than' repetition CONFIRMED; FAQ overlaps 3 of 5 CONFIRMED (FAQ#1/#3/#5), 2 of 5 NOT CONFIRMED (FAQ#2/#4)."
+  ],
+  "actions_taken": [
+    "Added new section 'Why some directories put 45275 in Hamilton County instead' disclosing the real GeoNames-vs-zip-codes.com/ZipCodesToGo disagreement over 45275's county, with a plausible explanation (ZIP-to-county boundary-conversion methodology differences) and guidance to confirm directly with county records for legal/tax/voter-registration purposes -- this also serves as this run's required DialWick 'substantive enhancement' block (real, sourced, reader-usable content that competing zip-codes.com/zipdatamaps.com pages, being one side of the disagreement, would not carry).",
+    "Removed the unsubstantiated 'most directories still file it under Hamilton County by mistake' claim from coreSummary and softened section-1 wording to point to the new disclosure section instead of asserting GeoNames is correct.",
+    "Rewrote FAQ#1 (added why 3-source count agreement is meaningful evidence), FAQ#3 (added real detail: IRS Form SS-4 / EIN International Operation address, sourced from irs.gov/instructions/iss4), FAQ#5 (tied the county disagreement to the population contrast) to remove near-verbatim body restatement and add genuinely new information.",
+    "Reworded 1 of 5 'rather than' instances (45999 section) to reduce contrastive-phrase repetition below threshold.",
+    "Added 2 new sources: 'Instructions for Form SS-4 (IRS.gov, EIN International Operation address)' and 'ZIP Code 45275 (zipcodestogo.com)'.",
+    "Bumped updated from 2026-08-17 to 2026-09-06 (published field already existed, no backfill needed).",
+    "npm run build (59 pages) passed.",
+    "Ran seo_drift.py baseline before deploy and compare after: only WARNING (schema content changed -- expected, FAQ text rewrite) and INFO (H2 count 5->6 -- expected, new section) findings, no CRITICAL.",
+    "Committed (c0dce41) and pushed to origin/main; DialWick auto-deploys via git-connected Cloudflare Pages (no separate deploy hook). Polled the live URL (cache-busted) until new section/FAQ text appeared (~30s).",
+    "Submitted https://dialwick.com/cincinnati-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 202).",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Checked against 独立站/内容通用教训库.md's 教训条目 section before starting; no new generalizable cross-site issue identified beyond what's already covered by existing entries (L-0819-9/L-0820-2 recurred again, both already-graduated hard checks operating as intended -- see dimension 14)."
+  ],
+  "seo_score": "no issues found; title/description z-scores both in normal range, no change",
+  "geo_score": "qualitative pass, no material change (structure intact, new section adds rather than dilutes signal)",
+  "escalation": null
+}
+```
