@@ -314,3 +314,33 @@ Owen Zhang
 contact@dialwick.com
 
 **Review note:** run through `humanizer` and `avoid-ai-writing` skills before this entry was written (two double-hyphen em-dash substitutes in the original draft were cut per `humanizer`'s hard rule against "--" as an em-dash stand-in; `avoid-ai-writing` found no flagged vocabulary, template phrases, or chatbot artifacts, one minor filler edit made: "A surprising number of" -> "Plenty of"). This round has only one email, so the cross-pitch shared-sentence check from the 2026-08-21 incident doesn't apply the same way, but the Mexico fact was deliberately chosen over reusing the Philippines/Australia facts from Pitch 8/9 to keep the campaign's core sentences distinct going forward. Pending independent reviewer sub-agent before send.
+
+---
+
+## Pitch 11 — Middletown Thrall Library (NY), "Ready Reference Center" Telephone Directories page (2026-09-10, resource-suggestion email, `trafficsite-guest-post-outreach`)
+
+- Page: https://www.thrall.org/readyref/Telephone_Directories.html (confirmed live via curl 2026-09-10; `Last-Modified` header = Apr 17, 2026, so genuinely maintained, not an abandoned archive). Parent Ready Reference Center index (https://www.thrall.org/readyref/) last modified May 7, 2026.
+- Why this page: it already lists an "Area Code Listing, by Number" link (http://www.bennetyee.org/ucsd-pages/area.html) as its area-code resource. That page's own text says it is a personal, crowdsourced list ("updated only when an Internet user informs me of a (pending) change... I do not have anything to do with phone companies") with no state-level history or context, exactly the gap DialWick's area-code guides fill. No DialWick link present anywhere on the page. The page also links Country Calling Codes and How to Call Abroad for international dialing, but per this round's index-eligibility restriction only the homepage and california-area-codes (both on the 13-page allowed list) were used as the pitched URLs; international-dialing (currently de-indexed) was deliberately left out of the email.
+- Contact used: bmanigo@rcls.org (Adult Services), found on the library's own staff contact page https://www.thrall.org/contacts.html, which lists department-specific real emails (Library Director, Adult Services, Adult Programs, Government Information, Local History, Youth Services). The "Adult Reference: Ask a Librarian" line on that same page has no static email, just a JS contact form, so Adult Services was used instead as the closest real, published address for content on the Ready Reference Center (an adult-reference resource). Not fabricated or guessed — copied verbatim from the site's own contacts page.
+- Gmail dedup check: `gmail_send.py list --query "to:bmanigo@rcls.org OR to:rcls.org OR to:thrall.org"` returned empty, no prior contact with this domain or address.
+- Fact-checked against `src/data/guides.ts` (`california-area-codes` entry, published 2026-08-03, updated 2026-08-17): California started with three area codes in 1947 (213 southern CA, 415 northern CA, 916 Sacramento area), now has 41, the most of any US state; Los Angeles alone has split and overlaid from 213 to seven area codes covering the same metro area today. This page was chosen as the round's featured topic because it is one of the 13 pages still in Google's index for dialwick.com (site is under an algorithmic indexing-eligibility compression per the task's allowed-page list) and GSC shows it in striking distance: query "california area code" at position 12.7, 97 impressions/28 days, 0 clicks — a real, current opportunity, not previously used in any prior pitch round.
+
+**Email:**
+
+Subject: A resource suggestion for your telephone directories page
+
+Hi,
+
+I came across the Ready Reference Center's telephone directories page and noticed the area code list linked there is maintained by one person and updated only when someone emails in a correction, so it's a solid quick lookup but doesn't get into how any state's area codes came to be. I run DialWick, a similar reference site, and that's the piece it adds.
+
+California is a good example. The state started with three area codes in 1947, 213 for the south, 415 for the north, and 916 around Sacramento, and now has 41, more than any other state. Los Angeles alone has split and overlaid its way from that original 213 to seven area codes covering roughly the same metro area today.
+
+Site: https://dialwick.com/
+California area codes: https://dialwick.com/california-area-codes/
+
+Feel free to skip this if it's not a fit, just thought the history angle might round out what's already there.
+
+Owen Zhang
+contact@dialwick.com
+
+**Review note:** run through `humanizer` and `avoid-ai-writing` skills before this entry was written — no em dashes, no flagged AI vocabulary, no rule-of-three, no chatbot artifacts, sentence lengths vary naturally. Pending independent reviewer sub-agent before send. **Not sent this round regardless of reviewer verdict**: Gmail's 14 alias "Send mail as" configuration (including dialwick's) is currently frozen mid-migration off the Mailjet SMTP relay to AWS SES (SES account still in sandbox) — see `独立站/待Owen处理事项.md` and `独立站/邮件发信基础设施迁移_AWS_SES_20260907.md`. If the reviewer returns "can send," status is recorded as `drafted_blocked_by_ses_migration` rather than sent.
