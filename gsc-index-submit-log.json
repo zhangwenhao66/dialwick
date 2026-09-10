@@ -367,5 +367,18 @@
     ],
     "already_indexed_no_action": [],
     "quota_used": "2 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-09-10",
+    "action": "submitted",
+    "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。new-york-zip-codes已收录(报告数据滞后)。Discovered-currently-not-indexed报告(5条真实积压)：huntsville-zip-codes确认未收录提交成功(第一轮，固定优先名额)。第二轮补提交lubbock-zip-codes(同报告候选，确认未收录)。",
+    "submitted_urls": [
+      "https://dialwick.com/huntsville-zip-codes/",
+      "https://dialwick.com/lubbock-zip-codes/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/new-york-zip-codes/"
+    ],
+    "quota_used": "2 of shared account-wide daily quota"
   }
 ]
