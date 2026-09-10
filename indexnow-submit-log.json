@@ -245,27 +245,37 @@
   "https://dialwick.com/cincinnati-zip-codes/": {
     "submitted_date": "2026-08-17",
     "last_submitted_date": "2026-08-17",
-    "verified_status": "pending"
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-09-10",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/202-area-code/": {
     "submitted_date": "2026-08-18",
     "last_submitted_date": "2026-08-18",
-    "verified_status": "pending"
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-09-10",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/fresno-zip-codes/": {
     "submitted_date": "2026-08-18",
     "last_submitted_date": "2026-08-18",
-    "verified_status": "pending"
+    "verified_status": "verified_indexed",
+    "last_checked_date": "2026-09-10",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/646-area-code/": {
     "submitted_date": "2026-08-19",
     "last_submitted_date": "2026-08-19",
-    "verified_status": "pending"
+    "verified_status": "stale_not_indexed",
+    "last_checked_date": "2026-09-10",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/atlanta-area-code/": {
     "submitted_date": "2026-08-19",
     "last_submitted_date": "2026-08-30",
-    "verified_status": "pending"
+    "verified_status": "verified_indexed",
+    "last_checked_date": "2026-09-10",
+    "verified_method": "bwt_url_inspection"
   },
   "https://dialwick.com/929-area-code/": {
     "submitted_date": "2026-08-20",
