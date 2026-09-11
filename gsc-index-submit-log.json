@@ -380,5 +380,18 @@
       "https://dialwick.com/new-york-zip-codes/"
     ],
     "quota_used": "2 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-09-11",
+    "action": "submitted",
+    "reason": "今日审计更新kansas-city-zip-codes（非新发布），URL Inspection确认已收录，跳过。Page indexing报告Discovered-not-indexed 5条+Crawled-not-indexed 40条（大量真实积压，暂停期无自然收录）。Discovered候选中huntsville-zip-codes已提交过(09-10)，indianapolis-zip-codes确认未提交，提交成功。补充第二轮：Crawled报告最新爬取的atlanta-area-code确认未提交，追加提交。",
+    "submitted_urls": [
+      "https://dialwick.com/indianapolis-zip-codes/",
+      "https://dialwick.com/atlanta-area-code/"
+    ],
+    "already_indexed_no_action": [
+      "https://dialwick.com/kansas-city-zip-codes/"
+    ],
+    "quota_used": "2 of shared account-wide daily quota"
   }
 ]
