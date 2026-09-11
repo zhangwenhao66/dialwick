@@ -2196,3 +2196,116 @@ Site-specific checklist for this article: (1) does the 66-code ZIP table's Jeffe
   "escalation": null
 }
 ```
+
+## kansas-city-zip-codes
+
+```json
+{
+  "url_slug": "kansas-city-zip-codes",
+  "url": "https://dialwick.com/kansas-city-zip-codes/",
+  "last_audited": "2026-09-11",
+  "published_date": "2026-08-13",
+  "note": "First audit of this article (never audited before). Selected via the DialWick-specific rule: only articles in the 2026-09-06 index-coverage snapshot's 'Submitted and indexed' set are eligible during suppression; this was the earliest-published never-audited article among that set's 5 never-audited candidates.",
+  "diagnosed_checkpoints": [
+    "Does the 71-ZIP MO breakdown (Jackson 48 / Clay 14 / Platte 9) match the source data table exactly?",
+    "Is the claim that all 15 KS-side ZIPs sit in Wyandotte County accurate?",
+    "Are the 1853/1872/1886 incorporation dates and the five-town 1886 consolidation (Wyandotte/old Kansas City/Armourdale/Armstrong/Riverview) accurate?",
+    "Is the April 1, 1997 Unified Government merger date (approved) / October 1997 (effective) accurate?",
+    "Are the 816/975 (2023 overlay) and 913/785 (1997 split) area-code histories accurate?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Concrete GeoNames-sourced county breakdown, named historical actors/dates, cross-referenced multiple independent sources (KC History, KCUR, Wikipedia)."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "pass, verified",
+      "detail": "MO 71-ZIP county math verified programmatically against the guides.ts table (48+14+9=71, matches text exactly). KS 15-ZIP Wyandotte claim verified against the table. All 5 diagnosed historical/date claims independently verified via WebSearch against KC History, KCUR, Wikipedia, and NANPA-derived area-code sources -- all accurate, including easy-to-get-wrong details (1872 KS incorporation motive, two-stage 1997 merger approval/effective dates, exact 2023-10-13 and 1997-07-20 area-code transition dates). No fabrication found."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass, no update needed",
+      "detail": "Historical/structural facts, not subject to date decay. published 2026-08-13, updated bumped to 2026-09-11 for this audit's edits (published field pre-existed, no backfill needed)."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass -- strong",
+      "detail": "get_serp_results for 'kansas city zip codes' shows top-10 (gisgeography, ciclt.net, zipcode.org, data.kcmo.org, etc.) are all single-city (MO-only) ZIP lists; none cover the two-cities-same-name framing this article is built around. Genuine differentiation, not a Wikipedia-style rehash."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "confirmed problem -> fixed",
+      "detail": "description was 216 chars (z=1.52 vs site mean 181/stdev 22.8, flagged outlier by check_seo_field_stats.py) -- confirmed by independent agent as a real truncation risk. Shortened to 146 chars (z=-1.49). Title/H1/canonical/schema all fine, unaffected."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, no material change",
+      "detail": "Structure (7 H2s, FAQPage/Article/BreadcrumbList schema, sourced table) intact; FAQ rewrite added distinct phrasing/value rather than diluting signal."
+    },
+    {
+      "dimension": "7. Humanizer backfill",
+      "status": "not applicable",
+      "detail": "published 2026-08-13, post-dates DialWick's mandatory humanizer/avoid-ai-writing pipeline. New FAQ text manually checked for AI-writing tells (no em dashes -- site convention is zero em dashes site-wide, confirmed via grep -c before editing; no vague attribution, no rule-of-three padding); reads consistent with the rest of the site's voice."
+    },
+    {
+      "dimension": "8. External link rot",
+      "status": "confirmed problem -> fixed (2 links)",
+      "detail": "kchistory.org source cited old path /faq/why-there-kansas-city-both-kansas-and-missouri -- curl confirms this 301-redirects to the bare homepage (title 'Home - KCHistory'), not the article; the article now lives at /blog/why-is-there-a-kansas-city-in-both-kansas-and-missouri (HTTP 200, matching title, confirmed via WebSearch as the current live URL). kcur.org source cited old dated path /community/2015-03-06/how-kck-and-wyandotte-county-unified-during-troubled-times -- WebSearch shows the site restructured to undated /post/ paths; confirmed current URL is /post/how-kck-and-wyandotte-county-unified-during-troubled-times (same article, October 2015 publish date, matching content). Both source URLs updated."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "confirmed problem -> fixed",
+      "detail": "grep -c '/kansas-city-zip-codes/' src/data/guides.ts returned 0 before this fix -- a true orphan page with zero inbound manual cross-links, despite the site having an established 'the same pattern this site found in [X] ... a contrast to [Y] or [Z]' cross-linking cluster among its multi-county ZIP articles (San Diego links to Sacramento; Phoenix links to Sacramento/San Diego and contrasts against Denver/Atlanta). Kansas City (MO side spans 3 counties, same structural case as Denver/Atlanta) was conspicuously absent from that cluster. Fixed by adding 'or [Kansas City](/kansas-city-zip-codes/)' to the Phoenix article's existing contrast-list sentence."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass after fix",
+      "detail": "FAQPage schema content changed as expected when FAQ answers were rewritten (flagged as WARNING by seo_drift.py compare, confirmed as the intended edit, no CRITICAL)."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass, not applicable",
+      "detail": "No sensitive topics (municipal history/ZIP geography), no drift risk."
+    },
+    {
+      "dimension": "12. Image validity",
+      "status": "not applicable",
+      "detail": "DialWick's [slug].astro uses a site-wide favicon as og:image for all pages; this article carries no per-page hero image, consistent with other ZIP-list pages on this site."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "No violence/restricted-category content, no misleading headline, ads.txt/privacy/terms pages unaffected by this edit."
+    },
+    {
+      "dimension": "14. Mechanical prose-pattern checks",
+      "status": "confirmed problem -> fixed",
+      "detail": "check_prose_patterns.py initially flagged 5 FAQ answers with >=20-char verbatim overlap against body/coreSummary text (L-0819-9). \"'s own\" and comparison-framework counts were already within threshold; hyphen check clean. Took 5 iterative rewrite rounds (each re-running the script) to fully converge to exit 0 -- this article's dense factual repetition (71/15/1853/1872/1886/1997/816/975/913/785 recur across sections, coreSummary, and table captions) meant early rewrites kept colliding with other sentences' existing phrasing (e.g. 'across three counties', 'inside a single county', 'consolidated into one'). Final version uses genuinely distinct wording and sentence structure per FAQ answer without changing any facts."
+    },
+    {
+      "dimension": "15. Google spam-policy compliance",
+      "status": "pass",
+      "detail": "Ran Skill(google-spam-compliance): scaled-content-abuse PASS (genuine per-city GeoNames data + real historical narrative, not a template-swap page; differentiated from SERP per dimension 4), all other categories PASS or N/A, AI-content check PASS (non-commodity, original synthesis)."
+    }
+  ],
+  "independent_review": "Spawned 1 fresh-context agent to verify all 4 non-mechanical candidate findings (description length, FAQ overlap, kchistory.org dead link, orphan page) -- all 4 CONFIRMED, including the agent independently re-running curl (confirmed 301-to-homepage) and grep (confirmed 0 inbound links) rather than trusting the claims. Did not time out or stall (completed in ~2min). kcur.org link fix was mechanical (WebSearch-verified current URL) and not routed through the independent-review agent since it surfaced after the agent's scope was set; independently WebSearch-confirmed before applying.",
+  "actions_taken": [
+    "Shortened description from 216 to 146 chars.",
+    "Rewrote all 5 FAQ answers to remove verbatim overlap with body/coreSummary while preserving every fact.",
+    "Updated 2 stale source URLs: kchistory.org (old /faq/ path 301s to homepage -> new /blog/ path) and kcur.org (old dated /community/ path -> current /post/ path).",
+    "Added 'or [Kansas City](/kansas-city-zip-codes/)' to phoenix-zip-codes's existing cross-link cluster sentence, fixing the orphan-page finding.",
+    "Bumped updated from 2026-08-13 to 2026-09-11 (published field already existed, no backfill needed).",
+    "npm run build (59 pages) passed.",
+    "Ran seo_drift.py baseline before deploy and compare after: 2 WARNINGs (schema content changed, meta description changed -- both expected/intended), no CRITICAL.",
+    "Committed (caeafbe) and pushed to origin/main; DialWick auto-deploys via git-connected Cloudflare Pages (no separate deploy hook). Polled the live URL (cache-busted) until new FAQ/description text appeared (~60s); also confirmed phoenix-zip-codes live page now contains the new inbound link.",
+    "Submitted both https://dialwick.com/kansas-city-zip-codes/ and https://dialwick.com/phoenix-zip-codes/ via tools/submit-indexnow.mjs (Bing 200, Yandex 202).",
+    "Appended dated entry to 内容发布日志.md marking this as a content-quality-audit update, not a new publish.",
+    "Checked against 独立站/内容通用教训库.md before starting; no new generalizable cross-site issue beyond what's already covered (FAQ-body overlap is the already-graduated L-0819-9 hard check, operating as intended)."
+  ],
+  "seo_score": "description outlier fixed (z 1.52 -> -1.49), title unaffected (z -0.03)",
+  "geo_score": "qualitative pass, no material change",
+  "escalation": null
+}
+```
