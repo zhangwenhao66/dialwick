@@ -233,3 +233,26 @@ theultimates.com（旧版 anywho.com 类反查工具）另跑了一次 `backlink
 - Pitch 6（support@gondtc.com，同为08-16发出，同样从未验证）本轮未处理，留给下一轮（跟Pitch 9一样排队等下一次运行）。
 
 **累计口径**：DialWick断链置换战术累计已发送11封pitch（含本轮1封跟进）；已验证`not_replaced` 2条、`verified_live_backlink_confirmed` 0条，转化率仍为0。
+
+---
+
+## 2026-09-11（第八次运行）— 「外链产能集中规则」2026-09-04修订：本轮固定优先名额轮到DialWick（CalcBadger上轮09-09已处理，DialWick最久未处理）
+
+### 第一部分：核实旧pitch
+
+按"每站每次挑1条最早的"重新核对全文，Pitch 5（09-02已验证`followed_up_once`）、Pitch 8（08-31已验证`followed_up_once`）均已处理。**Pitch 6**（support@gondtc.com，NDTC"Local Links"页竞品缺口机会，2026-08-16发出，Message ID `1a0094d3c4a8630d`）此前一直未处理，是本轮最早的未验证记录。
+
+- curl复查 `https://www.gondtc.com/resources/`：HTTP 200，全文`allareacodes`出现2次，无"dialwick"字样，判定**`not_replaced`**。
+- `python3 research-db/dataforseo_query.py backlinks dialwick.com --limit 100`：外链明细共0条，未查到gondtc.com。
+- `gmail_send.py list --query "from:gondtc.com OR from:support@gondtc.com"`返回空，对方从未回复。
+- 发出已26天，NDTC是真实运营的北达科他州电话公司、"Local Links"页含真实社区机构链接（非自动生成），符合"真实权威度"标准，发送简短跟进邮件，`gmail_send.py send --from dialwick --reply-to 1a0094d3c4a8630d`，Message ID `1a09105053448697`。标记 **`followed_up_once`**。
+
+**⚠️ 流程缺口如实记录（本session事后自查发现，非隐瞒）**：上述跟进邮件发送**先于**本session读到`独立站/邮件发信基础设施迁移_AWS_SES_20260907.md`当前状态（截至09-09/09-10仍未完成，14个域名"Send mail as"仍走Mailjet）与`独立站/待Owen处理事项.md`里"SES迁移期间14个域名邮件发送暂停执行"的既定冻结决定——本session未在处理DialWick前先检查这两份文档，导致这封跟进邮件经旧Mailjet路径发出，已无法撤回。发现冻结记录后，本session立即停止对本轮其余候选（Pitch 9核实归入下次、第二部分新机会挖掘）的实际发送，全部改为只起草不发送，与MythCairn/UmberLore/DayAlmanac三站本轮处理方式一致。已在`独立站/待Owen处理事项.md`同名条目补记本次违规。
+
+Pitch 9（kjohnson@kenmoreny.gov，2026-08-21发出，同样从未验证）本轮未处理，留给下一轮。
+
+### 第二部分：新机会挖掘（仅限仍在索引的13个页面，见风险追踪2026-09-04节）
+
+读`research-db/index-coverage/2026-09-06_dialwick.json`，确认当前仍`Submitted and indexed`的13个URL：首页 + austin/boston/cincinnati/kansas-city/new-york/sacramento/texas 的zip-codes页 + california/chicago/michigan/nyc的area-code页 + zip-code-shows-wrong-city。WebSearch定向搜索"helpful links/useful links"类政府页citing allareacodes.com或unitedstateszipcodes.org（延续Pitch 5/6/8/9验证有效的"竞品缺口"框架），命中3个密歇根township页面（ausabletwp-mi.gov、comstockmi.gov、columbustwpmi.gov的useful-links页）——逐一curl核实，**3个页面均无任何area code/zip code相关内容**（搜索引擎误匹配"Michigan"+"useful links"关键词，非真实候选），全部排除。本轮未找到新的真实候选（死链或竞品缺口皆无）。
+
+**累计口径**：DialWick断链置换战术累计已发送12封pitch（含2封跟进）；已验证`not_replaced` 3条(Rutland/Henderson/gondtc)、`verified_live_backlink_confirmed` 0条，转化率仍为0/12。
