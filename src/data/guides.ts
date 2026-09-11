@@ -1321,9 +1321,9 @@ export const guides: Guide[] = [
 		category: 'ZIP Codes',
 		title: 'Kansas City ZIP Codes: Two Cities, Two States, Two Separate Lists',
 		description:
-			"Kansas City is really two cities in two states, and USPS treats them as separate places. Every ZIP for Kansas City, Missouri (71, three counties) and Kansas City, Kansas (15, one county), plus why the split happened.",
+			"Kansas City is really two cities in two states. Every ZIP for Kansas City, Missouri (71, three counties) and Kansas City, Kansas (15, one county).",
 		published: '2026-08-13',
-		updated: '2026-08-13',
+		updated: '2026-09-11',
 		coreSummary:
 			"There are two Kansas Citys, and USPS assigns each one its own separate set of ZIP codes. Kansas City, Missouri carries 71 ZIP codes with \"Kansas City\" as the primary USPS place name, spread across three counties: Jackson (48), Clay (14), and Platte (9). Kansas City, Kansas carries 15, all inside a single county, Wyandotte. Missouri's Kansas City incorporated first, in 1853; towns on the Kansas side of the state line incorporated their own Kansas City nearly two decades later, in 1872, and that city took its current shape in 1886, when five of those towns consolidated into one municipality. A search for \"kansas city zip code\" could mean either one, and the two ZIP lists don't overlap at all.",
 		sections: [
@@ -1405,35 +1405,35 @@ export const guides: Guide[] = [
 			{
 				question: 'How many ZIP codes does Kansas City have?',
 				answer:
-					"It depends which Kansas City. Kansas City, Missouri has 71 ZIP codes with \"Kansas City\" as the primary USPS place name; Kansas City, Kansas has 15. The two lists are entirely separate.",
+					"That depends which city you're asking about. USPS keeps two distinct tallies for the pair: 71 codes tied to the Missouri side and 15 tied to the Kansas side, 86 altogether, with zero codes shared between them.",
 			},
 			{
 				question: 'What county is Kansas City, Missouri in?',
 				answer:
-					"Kansas City, Missouri spans three counties: Jackson (48 of its 71 ZIP codes), Clay (14), and Platte (9). Jackson County contains the city's original downtown and most of its historic core.",
+					"Missouri's side isn't contained in one county the way some cities are. Jackson carries the bulk of it, 48 of the 71 codes, along with downtown and the oldest neighborhoods, while Clay (14) and Platte (9) hold the areas annexed north once the city had nowhere left to expand toward Kansas.",
 			},
 			{
 				question: 'What county is Kansas City, Kansas in?',
 				answer:
-					"Wyandotte County, entirely. Since 1997, Kansas City, Kansas and Wyandotte County have run under a single Unified Government, which is why the city's ZIP codes and the county's boundary line up so closely.",
+					"Just one: Wyandotte. The city and the county folded into a single joint government there back in 1997, which explains why its 15 codes stay bundled behind one boundary instead of spreading out the way Missouri's side does.",
 			},
 			{
 				question: 'Why are there two cities called Kansas City?',
 				answer:
-					"Missouri's Kansas City incorporated first, in 1853, named for the Kansas River. Once Kansas became a state in 1861, towns on the Kansas side of the state line grew too, and several of them consolidated in 1886 into a second city that borrowed the name: Kansas City, Kansas.",
+					"The Missouri side came first, chartered in 1853 and named after the Kansas River rather than the state, because Kansas itself didn't join the Union for another eight years. Towns just across that future border grew large enough on their own that five of them merged in 1886 and picked up the name already thriving next door.",
 			},
 			{
 				question: 'Do Kansas City, Missouri and Kansas City, Kansas use the same area code?',
 				answer:
-					'No. Kansas City, Missouri uses 816 (overlaid by 975 in 2023); Kansas City, Kansas uses 913. Both were among the original area codes assigned in 1947.',
+					"No. The Missouri side dials 816, with 975 overlaid on top of it in 2023 once numbers started running short, and the Kansas side dials 913. Both trace back to the first nationwide round of area codes handed out in 1947.",
 			},
 		],
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'Wikipedia: Kansas City, Missouri', url: 'https://en.wikipedia.org/wiki/Kansas_City,_Missouri' },
 			{ label: 'Wikipedia: Kansas City, Kansas', url: 'https://en.wikipedia.org/wiki/Kansas_City,_Kansas' },
-			{ label: 'KC History (Missouri Valley Special Collections): Why is there a Kansas City in both Kansas and Missouri?', url: 'https://kchistory.org/faq/why-there-kansas-city-both-kansas-and-missouri' },
-			{ label: 'KCUR: How KCK And Wyandotte County Unified During Troubled Times', url: 'https://www.kcur.org/community/2015-03-06/how-kck-and-wyandotte-county-unified-during-troubled-times' },
+			{ label: 'KC History (Missouri Valley Special Collections): Why is there a Kansas City in both Kansas and Missouri?', url: 'https://www.kchistory.org/blog/why-is-there-a-kansas-city-in-both-kansas-and-missouri' },
+			{ label: 'KCUR: How KCK And Wyandotte County Unified During Troubled Times', url: 'https://www.kcur.org/post/how-kck-and-wyandotte-county-unified-during-troubled-times' },
 			{ label: 'Wikipedia: State Line Road', url: 'https://en.wikipedia.org/wiki/State_Line_Road' },
 			{ label: 'Wikipedia: List of North American Numbering Plan area codes', url: 'https://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes' },
 		],
@@ -3069,7 +3069,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'All 77 ZIP codes with "Phoenix, AZ" as the primary USPS place name',
 				body: [
-					"Every one of the 77 falls inside Maricopa County, the same pattern this site found in [Sacramento](/sacramento-zip-codes/) and [San Diego](/san-diego-zip-codes/), and a contrast to [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/), where the ZIP list crosses into a neighboring county. What varies between sources isn't the county, it's the count: zip-codes.com lists 71 ZIP codes for Phoenix, six short of the 77 GeoNames assigns, and other trackers settle around 74 or 75, differences that come down to whether overlapping postal boundaries and PO-Box-only codes get folded into the total or listed separately.",
+					"Every one of the 77 falls inside Maricopa County, the same pattern this site found in [Sacramento](/sacramento-zip-codes/) and [San Diego](/san-diego-zip-codes/), and a contrast to [Denver](/denver-zip-codes/), [Atlanta](/atlanta-zip-codes/), or [Kansas City](/kansas-city-zip-codes/), where the ZIP list crosses into a neighboring county. What varies between sources isn't the county, it's the count: zip-codes.com lists 71 ZIP codes for Phoenix, six short of the 77 GeoNames assigns, and other trackers settle around 74 or 75, differences that come down to whether overlapping postal boundaries and PO-Box-only codes get folded into the total or listed separately.",
 					"Phoenix also dials on three area codes (602, 623, and 480), and all three now overlay the entire metro area rather than serving separate zones, a history covered in the FAQ below.",
 				],
 				table: {
