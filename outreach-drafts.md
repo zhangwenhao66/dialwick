@@ -344,3 +344,27 @@ Owen Zhang
 contact@dialwick.com
 
 **Review note:** run through `humanizer` and `avoid-ai-writing` skills before this entry was written — no em dashes, no flagged AI vocabulary, no rule-of-three, no chatbot artifacts, sentence lengths vary naturally. Pending independent reviewer sub-agent before send. **Not sent this round regardless of reviewer verdict**: Gmail's 14 alias "Send mail as" configuration (including dialwick's) is currently frozen mid-migration off the Mailjet SMTP relay to AWS SES (SES account still in sandbox) — see `独立站/待Owen处理事项.md` and `独立站/邮件发信基础设施迁移_AWS_SES_20260907.md`. If the reviewer returns "can send," status is recorded as `drafted_blocked_by_ses_migration` rather than sent.
+
+---
+
+## Pitch 1 — SIPNEX (contact@sipnex.ca) — 2026-09-12 (first linkable-asset distribution pass for this site)
+
+Status: DRAFTED, pending independent review.
+
+Subject: A data point for your area-code overlay posts
+
+Hi,
+
+I came across your posts on the 442 and 424 California overlays. I run DialWick, a phone-number reference site, and our California area-codes page tracks the same kind of split/overlay history across the whole state, not just LA.
+
+The short version: LA started with one code (213, assigned in 1947) and now covers seven area codes through a string of splits and overlays. California as a whole currently has 41 active area codes.
+
+Page with the region-by-region breakdown and year-by-year timeline: https://dialwick.com/california-area-codes/. Might be a useful cross-reference if you ever cover other states' overlay histories.
+
+Best,
+Owen
+DialWick
+
+**Verification notes**: This is DialWick's first run of `trafficsite-linkable-asset-building` (no `linkable-asset-log.md` existed before this run) and it has no `[已发布]` linkable asset yet. Per the site's 2026-09-04 "外链产能集中规则" override (DialWick is in an index-resignation-type suppression; new pages are not getting crawled, so the directive is "只给仍在索引的 13 页找真实引用", not build new pages), this run skipped Step 1 (no new asset built) and treated `/california-area-codes/` — one of the 13 pages confirmed `Submitted and indexed` in `research-db/index-coverage/2026-09-06_dialwick.json` — as the resource to pitch, per Step 3. Target found via WebSearch (`"area code" split history overlay California telecom blog 2026 article`) — sipnex.ca is a real VOIP/telecom company blog with two specific, on-topic posts (442 and 424 area code overlays). Contact `contact@sipnex.ca` confirmed live via `curl` on both their contact page and the 442-area-code post itself. Dedup: `gmail_send.py list --query "to:sipnex.ca"` → empty; `grep -ril "sipnex" 独立站/` → only SERP-snapshot JSON files (sipnex appearing as a competitor in unrelated keyword-research pulls), no prior outreach contact. "213 (1947), now seven codes" and "41 active area codes statewide" verified directly against the live page (`?cb=$RANDOM`) before drafting, not assumed from search-engine summaries (an earlier WebSearch claimed "38" and "39" area codes for California from third-party blogs — did not use those, used DialWick's own page's real count instead).
+
+**Status: ⛔ NOT SENT this run — blocked by the SES migration freeze.** Independent review verdict was CAN SEND (all facts verified against the live page, sipnex.ca and its contact confirmed live and on-topic, no dedup conflict). Withholding actual send anyway: as of this run, the 14 matrix domains' Gmail "Send mail as" still routes through Mailjet, which Mailjet has told Owen it no longer permits for this use (see `独立站/待Owen处理事项.md` "SES迁移期间..." and `独立站/邮件发信基础设施迁移_AWS_SES_20260907.md`, both still open as of this run — and note two prior instances of this exact task family sending anyway before checking, recorded in the same todo-doc entry on 2026-09-09 and 2026-09-11; this run checked before any site's pitch was drafted, not after). Marked `drafted_blocked_by_ses_migration`; send once Owen completes the SES cutover.
