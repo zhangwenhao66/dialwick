@@ -1719,7 +1719,7 @@ export const guides: Guide[] = [
 		description:
 			"Michigan has 13 area codes today, seven descended from Detroit's original 313. Here's the full list, plus the split-and-overlay chain behind each one, including the newest, 679.",
 		published: '2026-08-10',
-		updated: '2026-08-17',
+		updated: '2026-09-12',
 		coreSummary:
 			'Michigan started with three area codes in the original 1947 numbering plan: 313 for Detroit, 517 for Lansing, and 616 for Grand Rapids. It has split and overlaid its way to 13 today. Detroit\'s 313 alone accounts for seven of them, most recently 679, which began serving new phone lines on November 7, 2025, a month after 10-digit local dialing became mandatory across the Detroit metro.',
 		sections: [
@@ -1770,26 +1770,33 @@ export const guides: Guide[] = [
 					"The overlay came with a dialing change that arrived before the new area code itself did: starting April 7, 2025, callers within the 313 area were asked to begin practicing 10-digit dialing, and it became mandatory for all local calls on October 7, 2025, a full month before 679 numbers were actually assigned, starting November 7, 2025. That sequencing is standard for NANPA-coordinated overlays: the dialing change has to be in place first, or a new 10-digit number and an old 7-digit one in the same area code could collide.",
 				],
 			},
+			{
+				heading: 'What still dials on three digits, and what needed reprogramming',
+				body: [
+					"The overlay didn't touch every kind of number in the 313/679 region. Emergency and community short codes kept their original length: 911 and 988 are still three digits, and so are 211, 311, 411, 511, 611, 711, and 811 anywhere they're already in service. None of those grew to 10 digits when 679 went live.",
+					"What did need attention, per the press release NANPA issued announcing the mandatory-dialing date, was anything still programmed to place calls using the old 7-digit format. Its list of examples runs well beyond phones: life-safety systems, medical alert devices, alarm and security systems, fax machines, automatic gates, ankle monitors, speed dialers, and call-forwarding or voicemail settings all needed a check, alongside the more obvious cases, like updating a business's printed stationery or a personal check to show the area code next to the number. Most equipment sold in the past decade already dials 10 digits by default, but NANPA flagged older hardware specifically, and told anyone unsure how a device was configured to contact its medical-alert or security provider directly rather than assume it still worked.",
+				],
+			},
 		],
 		faq: [
 			{
 				question: 'How many area codes does Michigan have?',
-				answer: '13 as of 2026, up from the three Michigan started with in the original 1947 numbering plan (313, 517, and 616).',
+				answer: 'Thirteen, counting the 679 overlay that started serving new lines in November 2025. Detroit\'s original code alone has since multiplied into seven of them.',
 			},
 			{
 				question: "What is Michigan's newest area code?",
 				answer:
-					'679, an overlay on Detroit\'s 313 that began receiving new phone line assignments on November 7, 2025.',
+					"679, the overlay code that started going out to new Detroit-area phone lines exactly a month after the 10-digit requirement there took effect, in early November 2025.",
 			},
 			{
 				question: 'Do I need to dial 10 digits for local calls in Michigan?',
 				answer:
-					'It depends on the area code. 10-digit dialing is mandatory in the two overlaid regions, 313/679 (Detroit metro, mandatory since October 7, 2025) and 248/947 (Oakland County), because two area codes share the same territory there. Michigan\'s other nine area codes are not currently overlaid and still allow 7-digit local dialing.',
+					"It depends on the area code. Two regions require it because a second code was layered onto an existing coverage area instead of splitting it geographically: Detroit's 313/679 (mandatory since October 7, 2025) and Oakland County's 248/947. The state's other nine codes haven't been overlaid, so a 7-digit call still connects there.",
 			},
 			{
 				question: "What was Michigan's original area code?",
 				answer:
-					"Michigan launched with three in 1947: 313 for Detroit, 517 for Lansing, and 616 for Grand Rapids.",
+					"Not one code but three, all assigned in 1947, the year the nationwide phone numbering system debuted: Detroit got 313, Lansing got 517, and Grand Rapids got 616. Nine more codes have since split or overlaid onto that original trio.",
 			},
 		],
 		sources: [
