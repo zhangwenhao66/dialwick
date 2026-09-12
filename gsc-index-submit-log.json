@@ -393,5 +393,16 @@
       "https://dialwick.com/kansas-city-zip-codes/"
     ],
     "quota_used": "2 of shared account-wide daily quota"
+  },
+  {
+    "date": "2026-09-12",
+    "action": "submitted",
+    "reason": "今日无新发布（暂停中）。Page indexing报告Discovered-not-indexed 5条（huntsville/indianapolis-zip-codes此前已提交过），新查候选irvine-zip-codes确认Crawled-currently-not-indexed未提交过，提交成功。第二轮补充查同报告，追加提交long-beach-zip-codes（同为未提交的新候选，lubbock-zip-codes未查）。",
+    "submitted_urls": [
+      "https://dialwick.com/irvine-zip-codes/",
+      "https://dialwick.com/long-beach-zip-codes/"
+    ],
+    "already_indexed_no_action": [],
+    "quota_used": "2 of shared account-wide daily quota"
   }
 ]
