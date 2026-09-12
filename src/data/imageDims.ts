@@ -6,6 +6,10 @@ export const IMAGE_DIMS: Record<string, { w: number; h: number }> = {
  "/favicon.svg": {
   "h": 24,
   "w": 24
+ },
+ "/logo-512.png": {
+  "h": 512,
+  "w": 512
  }
 };
 
