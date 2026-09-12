@@ -2309,3 +2309,108 @@ Site-specific checklist for this article: (1) does the 66-code ZIP table's Jeffe
   "escalation": null
 }
 ```
+
+## michigan-area-codes
+
+```json
+{
+  "url_slug": "michigan-area-codes",
+  "url": "https://dialwick.com/michigan-area-codes/",
+  "last_audited": "2026-09-12",
+  "published_date": "2026-08-10",
+  "note": "First audit of this article (never audited before). Selected via the DialWick-specific rule: only articles in the 2026-09-06 index-coverage snapshot's 'Submitted and indexed' set are eligible during suppression (13/56 pages indexed); this was the earliest-published never-audited article among that set's 4 never-audited candidates (michigan-area-codes/nyc-area-code/sacramento-zip-codes/zip-code-shows-wrong-city).",
+  "diagnosed_checkpoints": [
+    "Do the 13 area codes' 'In service since' dates in the table match the authoritative record exactly?",
+    "Is the 313 -> 810/248/586/947/734 split/overlay chronology and the 'seven of thirteen descend from 313' arithmetic accurate?",
+    "Is the 679 overlay (Nov 7, 2025) / mandatory 10-digit dialing (Oct 7, 2025) timeline accurate?",
+    "Is the claim that MPSC's 2025 filings pushed the 313 exhaustion projection to 'late 2027' supported?",
+    "Do the cross-links to /california-area-codes/ and /how-do-area-codes-work/ point to real, existing slugs?"
+  ],
+  "findings": [
+    {
+      "dimension": "1. EEAT",
+      "status": "pass",
+      "detail": "Named, linked sources (Wikipedia NANP list, Michigan Public Service Commission PDF, NANPA press release), specific dated events, not generic filler."
+    },
+    {
+      "dimension": "2. Factual accuracy",
+      "status": "pass, verified",
+      "detail": "All 13 area code 'in service since' dates cross-checked against Wikipedia's raw wikitext for List_of_North_American_Numbering_Plan_area_codes (fetched via curl+API, not WebFetch) -- exact match on every row. 313 split/overlay chronology (810 1993, 248 1997, 586 2001, 947 2002 overlay, 734 1997) and 616/517 splits (906 1961, 231 1999, 269 2002, 989 2001) all match Wikipedia. 679 overlay Nov 7 2025 / mandatory 10-digit Oct 7 2025 / permissive period from Apr 7 2025 confirmed via WebSearch against michigan.gov MPSC news releases, Bridge Michigan, Detroit News, CBS News. 'Late 2027' exhaustion projection confirmed matching MPSC/NANPA's current Q4 2027 estimate (revised down from an earlier Q3 2025 projection, as the article itself states). No fabrication found."
+    },
+    {
+      "dimension": "3. Timeliness",
+      "status": "pass, no update needed beyond this audit's edits",
+      "detail": "published 2026-08-10, updated was 2026-08-17 -> bumped to 2026-09-12 for this audit (published field pre-existed, no backfill needed). No material Michigan area-code developments since Aug 17 found via WebSearch."
+    },
+    {
+      "dimension": "4. Competitive differentiation",
+      "status": "pass -- confirmed via SERP",
+      "detail": "dataforseo_query.py serp for 'michigan area codes': top organic competitor att.com titled 'Michigan Area Codes: All 12 Codes, Map & City Lookup' -- misses the 679 overlay this article covers, a genuine, verifiable incremental-value gap vs. the SERP, not a Wikipedia-style rehash."
+    },
+    {
+      "dimension": "5. SEO technical/on-page audit",
+      "status": "pass, no change needed",
+      "detail": "check_seo_field_stats.py: title 68 chars (z=0.16), description 177 chars (z=-0.13), both within normal range both before and after this audit's edits."
+    },
+    {
+      "dimension": "6. GEO / ai-seo",
+      "status": "pass, ~86/99 (manual rubric estimate)",
+      "detail": "Strong structure (table + FAQPage/Article/BreadcrumbList schema + new section), 3 named authority sources, 3 inbound + 2 outbound internal cross-links. New section adds a second authoritative source's specific facts (NANPA press release) rather than diluting signal."
+    },
+    {
+      "dimension": "7. Humanizer backfill",
+      "status": "not applicable to pre-existing text; new text manually checked",
+      "detail": "published 2026-08-10, post-dates DialWick's mandatory humanizer/avoid-ai-writing pipeline. New section + FAQ rewrites manually checked against humanizer's Wikipedia-tells checklist: 2 em dashes introduced during FAQ rewriting were caught (site-wide grep showed 0 em dashes before this edit) and removed; no vague attribution, no rule-of-three padding, no filler phrases found."
+    },
+    {
+      "dimension": "8. External link rot",
+      "status": "checked, inconclusive on 1 of 2; not treated as a confirmed problem",
+      "detail": "NANPA PDF source (nanpa.com) -- curl returns HTTP 200, valid PDF, content directly read and used to source this audit's new section. Michigan.gov MPSC PDF source -- curl returns 403, but the ENTIRE michigan.gov domain (including its homepage) returns 403 to curl, indicating a bot-blocking WAF rather than link rot; WebSearch independently confirms michigan.gov/mpsc is actively publishing 313/679-related content today. Not flagged as broken per project's 'don't manufacture problems from bot-blocked domains' precedent (see CLAUDE.md Wikipedia/WebFetch entries)."
+    },
+    {
+      "dimension": "9. Internal link health",
+      "status": "pass, no action needed",
+      "detail": "internal_link_audit.py + grep confirm michigan-area-codes is NOT an orphan: 3 inbound contextual links from how-do-area-codes-work, chicago-area-code, and nyc-area-code, plus 2 outbound cross-links (california-area-codes, how-do-area-codes-work) both confirmed pointing to real existing slugs."
+    },
+    {
+      "dimension": "10. Schema consistency",
+      "status": "pass, auto-generated",
+      "detail": "FAQPage/Article schema generated from guides.ts data at build time via site-toolkit shared components; no manual schema field to desync. seo_drift.py compare post-deploy showed schema content changed (WARNING, expected from FAQ text edit) but not cleared/broken."
+    },
+    {
+      "dimension": "11. Compliance/sensitivity drift",
+      "status": "pass, not applicable",
+      "detail": "Pure telecom infrastructure reference content, no people/events subject to reputational drift."
+    },
+    {
+      "dimension": "12. Image availability/copyright",
+      "status": "not applicable",
+      "detail": "DialWick's data-table-driven article format uses no heroImage field anywhere in guides.ts (site-wide, confirmed via grep) -- not a defect specific to this article."
+    },
+    {
+      "dimension": "13. AdSense policy compliance",
+      "status": "pass",
+      "detail": "No violence/weapons/drugs/gambling content, no misleading headline, ads.txt unaffected by this edit (not content-related)."
+    },
+    {
+      "dimension": "14. Mechanical prose patterns (check_prose_patterns.py)",
+      "status": "confirmed problem -> fixed",
+      "detail": "Initial run: L-0819-9 flagged all 4 FAQ answers with >=20-char verbatim overlap with body text (up to 61 chars for FAQ#4). Independent agent confirmed as a real problem (FAQ#1/#4 in particular were near-total copy-paste, not paraphrase). Rewrote all 4 FAQ answers across 3 iterations (each subsequent edit introduced new shorter overlaps, incl. a 3-count breach of the L-0819-8 's own' threshold from the new section's first draft) until check_prose_patterns.py returned exit 0 on all three narrative-pattern checks."
+    },
+    {
+      "dimension": "15. Google spam compliance",
+      "status": "pass (self-assessed via google-spam-compliance skill instructions)",
+      "detail": "Three-factor test: effort=yes (state-specific dated split/overlay narrative, not template filler), originality=partial (base table data is public-record, like all competitors', but the split-tree synthesis + cross-references are original), added value=yes (beats att.com's outdated 12-code list; new section adds NANPA-sourced facts no competitor page has). No FAIL across the 11 categories; site-wide template-page structural risk (373 similar area-code/zip pages) is an already-tracked known risk (index-coverage suppression response, not a new finding)."
+    }
+  ],
+  "actions_taken": [
+    "Rewrote all 4 FAQ answers to eliminate >=20-char verbatim overlap with body text (L-0819-9)",
+    "enhancement: added new sourced section 'What still dials on three digits, and what needed reprogramming' (~220 words) -- N-1-1 short codes (911/988/211/311/411/511/611/711/811) unaffected by the overlay, plus NANPA's official list of equipment types needing reprogramming (life-safety systems, medical alert devices, alarm/security systems, fax machines, gates, ankle monitors, speed dialers) -- sourced from the NANPA press release already cited in this article's sources array (fetched directly via curl+PyPDF2, confirmed 200 OK); satisfies DialWick's 2026-09-04 index-coverage-recovery 'real incremental value' protocol",
+    "Removed 2 em dashes introduced during FAQ rewriting (site-wide convention is zero em dashes)",
+    "updated: 2026-08-17 -> 2026-09-12 (published field pre-existed, no backfill needed)"
+  ],
+  "seo_score": "no material change (title/description both already within normal z-score range)",
+  "geo_score": "~86/99 (manual rubric estimate, maintained/slightly improved by added authority source)",
+  "escalation": null
+}
+```
