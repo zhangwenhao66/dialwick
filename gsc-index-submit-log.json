@@ -1,408 +1,420 @@
 [
-  {
-    "date": "2026-08-04",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行，跨天连续游标机制首次运行（本站首次出现在本任务日志）。今日新发布2篇（dallas-zip-codes/chicago-zip-codes），取代理值最高的chicago-zip-codes（URL is not on Google）提交成功。第二轮取dallas-zip-codes（同样未收录）提交成功。",
-    "submitted_urls": [
-      "https://dialwick.com/chicago-zip-codes/",
-      "https://dialwick.com/dallas-zip-codes/"
-    ],
-    "quota_used": "2 of shared account-wide daily quota (8th and 17th requests this run)"
-  },
-  {
-    "date": "2026-08-05",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行。今日新发布us-country-code（URL is not on Google）提交成功。第二轮起用build-index-queue.py代理排序逐个检查全部11个候选URL（los-angeles-zip-codes/new-york-zip-codes/texas-area-codes/california-area-codes/texas-zip-codes/atlanta-zip-codes/what-county-is-houston-in/what-county-is-chicago-in/how-to-call-mexico-from-us/how-do-area-codes-work/scam-area-codes），全部已'URL is on Google'（自然收录，未消耗配额），本站第二轮无新提交，游标继续前进不重置。",
-    "submitted_urls": [
-      "https://dialwick.com/us-country-code/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/los-angeles-zip-codes/",
-      "https://dialwick.com/new-york-zip-codes/",
-      "https://dialwick.com/texas-area-codes/",
-      "https://dialwick.com/california-area-codes/",
-      "https://dialwick.com/texas-zip-codes/",
-      "https://dialwick.com/atlanta-zip-codes/",
-      "https://dialwick.com/what-county-is-houston-in/",
-      "https://dialwick.com/what-county-is-chicago-in/",
-      "https://dialwick.com/how-to-call-mexico-from-us/",
-      "https://dialwick.com/how-do-area-codes-work/",
-      "https://dialwick.com/scam-area-codes/"
-    ],
-    "quota_used": "1 request this run (round 1 only; round 2 all candidates pre-checked and already indexed)"
-  },
-  {
-    "date": "2026-08-06",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行。今日新发布how-to-call-philippines-from-usa（见内容发布日志.md；new-york-zip-codes为同日审计更新非新发布）。第一轮取how-to-call-philippines-from-usa（URL is not on Google）提交成功。第二轮因Chrome扩展断连未能到达本站，队列后续候选本次未检查。",
-    "submitted_urls": [
-      "https://dialwick.com/how-to-call-philippines-from-usa/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 request this run (round 1 only; round 2 not reached due to Chrome extension disconnect)"
-  },
-  {
-    "date": "2026-08-06",
-    "action": "already_indexed",
-    "reason": "第二轮（Chrome扩展重连后继续）：依次检查new-york-zip-codes/texas-area-codes均已'URL is on Google'（自然收录，未消耗配额）。本站第二轮无新提交，游标继续前进不重置。",
-    "submitted_urls": [],
-    "already_indexed_no_action": [
-      "https://dialwick.com/new-york-zip-codes/",
-      "https://dialwick.com/texas-area-codes/"
-    ],
-    "quota_used": "0 requests (round 2, all checked candidates already indexed)"
-  },
-  {
-    "date": "2026-08-07",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行（跨天连续游标轮换，两轮）。按收入代理排序队列逐个URL Inspection检查：已收录（URL is on Google）的候选跳过不消耗配额，共12个；找到未收录候选后提交REQUEST INDEXING，两轮各提交1个，共1个。",
-    "submitted_urls": [
-      "https://dialwick.com/boston-zip-codes/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/los-angeles-zip-codes/",
-      "https://dialwick.com/new-york-zip-codes/",
-      "https://dialwick.com/texas-area-codes/",
-      "https://dialwick.com/california-area-codes/",
-      "https://dialwick.com/texas-zip-codes/",
-      "https://dialwick.com/atlanta-zip-codes/",
-      "https://dialwick.com/what-county-is-houston-in/",
-      "https://dialwick.com/what-county-is-chicago-in/",
-      "https://dialwick.com/how-to-call-mexico-from-us/",
-      "https://dialwick.com/austin-zip-codes/",
-      "https://dialwick.com/how-do-area-codes-work/",
-      "https://dialwick.com/scam-area-codes/"
-    ],
-    "quota_used": "1 requests (2轮各1次)"
-  },
-  {
-    "date": "2026-08-08",
-    "action": "skipped_all_indexed",
-    "reason": "trafficsite-gsc-index-requests例行运行。Overview页面显示'0 not indexed pages / 23 indexed pages'，个别抽查候选(los-angeles-zip-codes)确认已收录，判定队列内剩余候选（体量×KD代理排序前12）同样已收录，未逐一Inspection查询，未消耗提交配额。",
-    "submitted_urls": [],
-    "already_indexed_no_action": [
-      "https://dialwick.com/los-angeles-zip-codes/"
-    ],
-    "note": "Overview统计口径0未收录页面，队列其余11个候选(new-york-zip-codes/texas-area-codes/california-area-codes/texas-zip-codes/atlanta-zip-codes/what-county-is-houston-in/what-county-is-chicago-in/how-to-call-mexico-from-us/austin-zip-codes/how-do-area-codes-work/scam-area-codes)未逐一URL Inspection核实，依据站级0未收录统计推断",
-    "quota_used": "0 requests (Overview确认全站已收录)"
-  },
-  {
-    "date": "2026-08-09",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行。处理今日新发布 nashville-zip-codes（第9篇），URL Inspection确认'Discovered - currently not indexed'，REQUEST INDEXING后确认'Indexing requested'。站内其余23篇均已收录（0 not indexed pages）。",
-    "submitted_urls": [
-      "https://dialwick.com/nashville-zip-codes/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 request"
-  },
-  {
-    "date": "2026-08-10",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行，本次游标终点站。今日两篇新发布，denver-zip-codes查询确认'Discovered - currently not indexed'，REQUEST INDEXING后确认'Indexing requested'。michigan-area-codes本轮时间/配额限制未及查询，留待下次运行优先处理。",
-    "submitted_urls": [
-      "https://dialwick.com/denver-zip-codes/"
-    ],
-    "already_indexed_no_action": [],
-    "not_checked_this_run": [
-      "https://dialwick.com/michigan-area-codes/"
-    ],
-    "quota_used": "1 request"
-  },
-  {
-    "date": "2026-08-11",
-    "action": "submitted",
-    "reason": "游标第10站，完成本轮完整一圈。今日新发布houston-zip-codes（第13篇，178个ZIP，Harris County）URL Inspection显示未收录（URL is unknown to Google），REQUEST INDEXING后确认'Indexing requested'。",
-    "submitted_urls": [
-      "https://dialwick.com/houston-zip-codes/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 request"
-  },
-  {
-    "date": "2026-08-12",
-    "action": "submitted",
-    "reason": "游标第9站。今日新发布sacramento-zip-codes（第15篇，单区号页解禁前继续走ZIP角度补充覆盖）URL Inspection显示未收录（URL is unknown to Google），REQUEST INDEXING后确认'Indexing requested'。",
-    "submitted_urls": [
-      "https://dialwick.com/sacramento-zip-codes/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 request"
-  },
-  {
-    "date": "2026-08-13",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行。今日新发布san-diego-zip-codes（dialwick-content-publishing第17篇）。URL Inspection确认'URL is not on Google'，REQUEST INDEXING提交成功，等待约20秒确认'Indexing requested'。",
-    "submitted_urls": [
-      "https://dialwick.com/san-diego-zip-codes/"
-    ],
-    "quota_used": "1 of shared account-wide daily quota (9th request this run)"
-  },
-  {
-    "date": "2026-08-16",
-    "action": "skipped_all_indexed",
-    "reason": "按队列脚本代理排序检查候选：kansas-city-zip-codes（08-13新发布）、los-angeles-zip-codes、nyc-area-code均已收录。站点自身Page indexing报告显示'0 not indexed, 26 indexed, Good job! No issues detected'，确认当前无未收录页面可提交，跳过不消耗配额。",
-    "submitted_urls": [],
-    "already_indexed_no_action": [
-      "https://dialwick.com/kansas-city-zip-codes/",
-      "https://dialwick.com/los-angeles-zip-codes/",
-      "https://dialwick.com/nyc-area-code/"
-    ],
-    "quota_used": "0 (skipped, no unindexed candidate found)"
-  },
-  {
-    "date": "2026-08-16",
-    "action": "submitted",
-    "reason": "同日第二次运行（首次运行结尾因Claude in Chrome工具故障卡在Hollowvane，等待网络恢复后重试成功续跑）。GSC自身Page indexing报告仍显示'Good job! No issues detected'（0未收录）。改查今日新发布：richmond-va-zip-codes（13:00档dialwick-content-publishing第20篇，见内容发布日志）经URL Inspection确认'URL is not on Google'（URL unknown to Google），REQUEST INDEXING提交成功确认'Indexing requested'。new-york-zip-codes队列候选已收录。",
-    "submitted_urls": [
-      "https://dialwick.com/richmond-va-zip-codes/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/new-york-zip-codes/"
-    ],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-17",
-    "action": "submitted",
-    "reason": "今日新发布两篇（213-area-code本站首篇单区号页；phoenix-zip-codes 19:00时段）+内容质量审计更新california-area-codes。URL Inspection确认213-area-code与california-area-codes均已'URL is on Google'（已收录），phoenix-zip-codes为'URL is not on Google'，REQUEST INDEXING提交成功确认'Indexing requested'。",
-    "submitted_urls": [
-      "https://dialwick.com/phoenix-zip-codes/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/213-area-code/",
-      "https://dialwick.com/california-area-codes/"
-    ],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-18",
-    "action": "submitted",
-    "reason": "今日新发布第24篇202-area-code，URL Inspection确认'URL is not on Google'，REQUEST INDEXING提交成功确认'Indexing requested'。",
-    "submitted_urls": [
-      "https://dialwick.com/202-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-19",
-    "action": "submitted",
-    "reason": "无今日新发布。Pages报告显示未索引仅剩1个'Crawled - currently not indexed'（Google端决策，非排队等待，Affected pages波动归零），站点已接近满收录（37/38+）。改用build-index-queue.py优先级队列候选646-area-code，URL Inspection确认'URL is not on Google'（unknown to Google），REQUEST INDEXING提交成功确认'Indexing requested'。",
-    "submitted_urls": [
-      "https://dialwick.com/646-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-20",
-    "action": "submitted",
-    "reason": "今日新发布929-area-code（第28篇，dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。同日dialwick-content-quality-audit更新what-county-is-houston-in为既有页非新页面，未重复处理。",
-    "submitted_urls": [
-      "https://dialwick.com/929-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-21",
-    "action": "submitted",
-    "reason": "今日新发布437-area-code（第31篇，dialwick-content-publishing任务，13:00档，本站首篇非美国区号）。URL Inspection确认URL is not on Google/Discovered-currently not indexed，REQUEST INDEXING提交成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/437-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-22",
-    "action": "submitted",
-    "reason": "今日新发布214-area-code（dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/214-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-23",
-    "action": "submitted",
-    "reason": "今日新发布206-area-code（第37篇，dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/206-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-24",
-    "action": "submitted",
-    "reason": "今日新发布209-area-code（第40篇，dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/209-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-26",
-    "action": "submitted",
-    "reason": "今日无新发布（页型集中度闸门禁用模板页，非模板候选词已耗尽）。改用build-index-queue.py队列取代理值最高候选miami-area-code，URL Inspection确认未收录，REQUEST INDEXING提交成功。",
-    "submitted_urls": [
-      "https://dialwick.com/miami-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": 1
-  },
-  {
-    "date": "2026-08-27",
-    "action": "submitted",
-    "reason": "今日新发布new-jersey-area-codes（dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/new-jersey-area-codes/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-28",
-    "action": "submitted",
-    "reason": "游标停留站(next_start_site=DialWick)首位处理。今日新发布country-code-92-pakistan（13:00档）：URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。boston-zip-codes（今日审计更新）已收录未提交。第二轮遍历时用build-index-queue.py队列取代理值最高候选los-angeles-zip-codes，URL Inspection显示Crawled-currently not indexed，REQUEST INDEXING提交成功。",
-    "submitted_urls": [
-      "https://dialwick.com/country-code-92-pakistan/",
-      "https://dialwick.com/los-angeles-zip-codes/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/boston-zip-codes/"
-    ],
-    "quota_used": "2 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-29",
-    "action": "submitted",
-    "reason": "今日随机休息未发布新页。用build-index-queue.py队列遍历：new-york-zip-codes/nyc-area-code已收录，texas-area-codes显示Crawled-currently not indexed，REQUEST INDEXING提交成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/texas-area-codes/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/new-york-zip-codes/",
-      "https://dialwick.com/nyc-area-code/"
-    ],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-30",
-    "action": "submitted",
-    "reason": "今日新发布how-to-call-uk-from-us：URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/how-to-call-uk-from-us/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-08-31",
-    "action": "submitted",
-    "reason": "今日新发布how-to-call-france-from-us（压制期非模板选题）：URL Inspection确认URL is not on Google，REQUEST INDEXING首次点击报错\"We had a problem submitting your indexing request, please try again later\"（瞬时错误非配额耗尽——本站当时是本轮第5个提交，配额充足），重试后成功确认Indexing requested。",
-    "submitted_urls": [
-      "https://dialwick.com/how-to-call-france-from-us/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-01",
-    "action": "submitted",
-    "reason": "今日休息未发布新文章（压制期内无合格非模板选题）。队列首位候选new-york-zip-codes已收录。Page indexing报告discovered-currently-not-indexed列表候选las-vegas-area-code确认未收录（本站压制期，32个crawled-not-indexed+8个discovered-not-indexed），提交成功。",
-    "submitted_urls": [
-      "https://dialwick.com/las-vegas-area-code/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/new-york-zip-codes/"
-    ],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-02",
-    "action": "submitted",
-    "reason": "trafficsite-gsc-index-requests例行运行，游标停留位DayAlmanac，DialWick排第2位。今日新发布north-carolina-area-codes（URL is not on Google）提交成功。第二轮nyc-area-code已收录，改用atlanta-zip-codes（Crawled-currently-not-indexed）提交成功。",
-    "submitted_urls": [
-      "https://dialwick.com/north-carolina-area-codes/",
-      "https://dialwick.com/atlanta-zip-codes/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/nyc-area-code/"
-    ],
-    "quota_used": "2 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-03",
-    "action": "submitted",
-    "reason": "今日新发布how-to-call-japan-from-us（压制期非模板选题），URL Inspection确认URL is not on Google，提交成功。",
-    "submitted_urls": [
-      "https://dialwick.com/how-to-call-japan-from-us/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "1 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-04",
-    "action": "submitted",
-    "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。Discovered-not-indexed报告(8条)：how-to-call-australia-from-us(Crawled-currently-not-indexed，最近爬取)确认未收录提交成功。另按代理排序候选atlanta-area-code(压制期固定优先名额)确认未收录提交成功(2条)。",
-    "submitted_urls": [
-      "https://dialwick.com/how-to-call-australia-from-us/",
-      "https://dialwick.com/atlanta-area-code/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "2 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-09",
-    "action": "submitted",
-    "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。Discovered-currently-not-indexed报告(5条)+Crawled-currently-not-indexed报告(40条，真实积压)：indianapolis-zip-codes与irvine-zip-codes确认未收录，均提交成功(第一轮1条+第二轮补提交1条，固定优先名额)。",
-    "submitted_urls": [
-      "https://dialwick.com/indianapolis-zip-codes/",
-      "https://dialwick.com/irvine-zip-codes/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "2 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-10",
-    "action": "submitted",
-    "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。new-york-zip-codes已收录(报告数据滞后)。Discovered-currently-not-indexed报告(5条真实积压)：huntsville-zip-codes确认未收录提交成功(第一轮，固定优先名额)。第二轮补提交lubbock-zip-codes(同报告候选，确认未收录)。",
-    "submitted_urls": [
-      "https://dialwick.com/huntsville-zip-codes/",
-      "https://dialwick.com/lubbock-zip-codes/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/new-york-zip-codes/"
-    ],
-    "quota_used": "2 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-11",
-    "action": "submitted",
-    "reason": "今日审计更新kansas-city-zip-codes（非新发布），URL Inspection确认已收录，跳过。Page indexing报告Discovered-not-indexed 5条+Crawled-not-indexed 40条（大量真实积压，暂停期无自然收录）。Discovered候选中huntsville-zip-codes已提交过(09-10)，indianapolis-zip-codes确认未提交，提交成功。补充第二轮：Crawled报告最新爬取的atlanta-area-code确认未提交，追加提交。",
-    "submitted_urls": [
-      "https://dialwick.com/indianapolis-zip-codes/",
-      "https://dialwick.com/atlanta-area-code/"
-    ],
-    "already_indexed_no_action": [
-      "https://dialwick.com/kansas-city-zip-codes/"
-    ],
-    "quota_used": "2 of shared account-wide daily quota"
-  },
-  {
-    "date": "2026-09-12",
-    "action": "submitted",
-    "reason": "今日无新发布（暂停中）。Page indexing报告Discovered-not-indexed 5条（huntsville/indianapolis-zip-codes此前已提交过），新查候选irvine-zip-codes确认Crawled-currently-not-indexed未提交过，提交成功。第二轮补充查同报告，追加提交long-beach-zip-codes（同为未提交的新候选，lubbock-zip-codes未查）。",
-    "submitted_urls": [
-      "https://dialwick.com/irvine-zip-codes/",
-      "https://dialwick.com/long-beach-zip-codes/"
-    ],
-    "already_indexed_no_action": [],
-    "quota_used": "2 of shared account-wide daily quota"
-  }
+    {
+        "date": "2026-08-04",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行，跨天连续游标机制首次运行（本站首次出现在本任务日志）。今日新发布2篇（dallas-zip-codes/chicago-zip-codes），取代理值最高的chicago-zip-codes（URL is not on Google）提交成功。第二轮取dallas-zip-codes（同样未收录）提交成功。",
+        "submitted_urls": [
+            "https://dialwick.com/chicago-zip-codes/",
+            "https://dialwick.com/dallas-zip-codes/"
+        ],
+        "quota_used": "2 of shared account-wide daily quota (8th and 17th requests this run)"
+    },
+    {
+        "date": "2026-08-05",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行。今日新发布us-country-code（URL is not on Google）提交成功。第二轮起用build-index-queue.py代理排序逐个检查全部11个候选URL（los-angeles-zip-codes/new-york-zip-codes/texas-area-codes/california-area-codes/texas-zip-codes/atlanta-zip-codes/what-county-is-houston-in/what-county-is-chicago-in/how-to-call-mexico-from-us/how-do-area-codes-work/scam-area-codes），全部已'URL is on Google'（自然收录，未消耗配额），本站第二轮无新提交，游标继续前进不重置。",
+        "submitted_urls": [
+            "https://dialwick.com/us-country-code/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/los-angeles-zip-codes/",
+            "https://dialwick.com/new-york-zip-codes/",
+            "https://dialwick.com/texas-area-codes/",
+            "https://dialwick.com/california-area-codes/",
+            "https://dialwick.com/texas-zip-codes/",
+            "https://dialwick.com/atlanta-zip-codes/",
+            "https://dialwick.com/what-county-is-houston-in/",
+            "https://dialwick.com/what-county-is-chicago-in/",
+            "https://dialwick.com/how-to-call-mexico-from-us/",
+            "https://dialwick.com/how-do-area-codes-work/",
+            "https://dialwick.com/scam-area-codes/"
+        ],
+        "quota_used": "1 request this run (round 1 only; round 2 all candidates pre-checked and already indexed)"
+    },
+    {
+        "date": "2026-08-06",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行。今日新发布how-to-call-philippines-from-usa（见内容发布日志.md；new-york-zip-codes为同日审计更新非新发布）。第一轮取how-to-call-philippines-from-usa（URL is not on Google）提交成功。第二轮因Chrome扩展断连未能到达本站，队列后续候选本次未检查。",
+        "submitted_urls": [
+            "https://dialwick.com/how-to-call-philippines-from-usa/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 request this run (round 1 only; round 2 not reached due to Chrome extension disconnect)"
+    },
+    {
+        "date": "2026-08-06",
+        "action": "already_indexed",
+        "reason": "第二轮（Chrome扩展重连后继续）：依次检查new-york-zip-codes/texas-area-codes均已'URL is on Google'（自然收录，未消耗配额）。本站第二轮无新提交，游标继续前进不重置。",
+        "submitted_urls": [],
+        "already_indexed_no_action": [
+            "https://dialwick.com/new-york-zip-codes/",
+            "https://dialwick.com/texas-area-codes/"
+        ],
+        "quota_used": "0 requests (round 2, all checked candidates already indexed)"
+    },
+    {
+        "date": "2026-08-07",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行（跨天连续游标轮换，两轮）。按收入代理排序队列逐个URL Inspection检查：已收录（URL is on Google）的候选跳过不消耗配额，共12个；找到未收录候选后提交REQUEST INDEXING，两轮各提交1个，共1个。",
+        "submitted_urls": [
+            "https://dialwick.com/boston-zip-codes/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/los-angeles-zip-codes/",
+            "https://dialwick.com/new-york-zip-codes/",
+            "https://dialwick.com/texas-area-codes/",
+            "https://dialwick.com/california-area-codes/",
+            "https://dialwick.com/texas-zip-codes/",
+            "https://dialwick.com/atlanta-zip-codes/",
+            "https://dialwick.com/what-county-is-houston-in/",
+            "https://dialwick.com/what-county-is-chicago-in/",
+            "https://dialwick.com/how-to-call-mexico-from-us/",
+            "https://dialwick.com/austin-zip-codes/",
+            "https://dialwick.com/how-do-area-codes-work/",
+            "https://dialwick.com/scam-area-codes/"
+        ],
+        "quota_used": "1 requests (2轮各1次)"
+    },
+    {
+        "date": "2026-08-08",
+        "action": "skipped_all_indexed",
+        "reason": "trafficsite-gsc-index-requests例行运行。Overview页面显示'0 not indexed pages / 23 indexed pages'，个别抽查候选(los-angeles-zip-codes)确认已收录，判定队列内剩余候选（体量×KD代理排序前12）同样已收录，未逐一Inspection查询，未消耗提交配额。",
+        "submitted_urls": [],
+        "already_indexed_no_action": [
+            "https://dialwick.com/los-angeles-zip-codes/"
+        ],
+        "note": "Overview统计口径0未收录页面，队列其余11个候选(new-york-zip-codes/texas-area-codes/california-area-codes/texas-zip-codes/atlanta-zip-codes/what-county-is-houston-in/what-county-is-chicago-in/how-to-call-mexico-from-us/austin-zip-codes/how-do-area-codes-work/scam-area-codes)未逐一URL Inspection核实，依据站级0未收录统计推断",
+        "quota_used": "0 requests (Overview确认全站已收录)"
+    },
+    {
+        "date": "2026-08-09",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行。处理今日新发布 nashville-zip-codes（第9篇），URL Inspection确认'Discovered - currently not indexed'，REQUEST INDEXING后确认'Indexing requested'。站内其余23篇均已收录（0 not indexed pages）。",
+        "submitted_urls": [
+            "https://dialwick.com/nashville-zip-codes/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 request"
+    },
+    {
+        "date": "2026-08-10",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行，本次游标终点站。今日两篇新发布，denver-zip-codes查询确认'Discovered - currently not indexed'，REQUEST INDEXING后确认'Indexing requested'。michigan-area-codes本轮时间/配额限制未及查询，留待下次运行优先处理。",
+        "submitted_urls": [
+            "https://dialwick.com/denver-zip-codes/"
+        ],
+        "already_indexed_no_action": [],
+        "not_checked_this_run": [
+            "https://dialwick.com/michigan-area-codes/"
+        ],
+        "quota_used": "1 request"
+    },
+    {
+        "date": "2026-08-11",
+        "action": "submitted",
+        "reason": "游标第10站，完成本轮完整一圈。今日新发布houston-zip-codes（第13篇，178个ZIP，Harris County）URL Inspection显示未收录（URL is unknown to Google），REQUEST INDEXING后确认'Indexing requested'。",
+        "submitted_urls": [
+            "https://dialwick.com/houston-zip-codes/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 request"
+    },
+    {
+        "date": "2026-08-12",
+        "action": "submitted",
+        "reason": "游标第9站。今日新发布sacramento-zip-codes（第15篇，单区号页解禁前继续走ZIP角度补充覆盖）URL Inspection显示未收录（URL is unknown to Google），REQUEST INDEXING后确认'Indexing requested'。",
+        "submitted_urls": [
+            "https://dialwick.com/sacramento-zip-codes/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 request"
+    },
+    {
+        "date": "2026-08-13",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行。今日新发布san-diego-zip-codes（dialwick-content-publishing第17篇）。URL Inspection确认'URL is not on Google'，REQUEST INDEXING提交成功，等待约20秒确认'Indexing requested'。",
+        "submitted_urls": [
+            "https://dialwick.com/san-diego-zip-codes/"
+        ],
+        "quota_used": "1 of shared account-wide daily quota (9th request this run)"
+    },
+    {
+        "date": "2026-08-16",
+        "action": "skipped_all_indexed",
+        "reason": "按队列脚本代理排序检查候选：kansas-city-zip-codes（08-13新发布）、los-angeles-zip-codes、nyc-area-code均已收录。站点自身Page indexing报告显示'0 not indexed, 26 indexed, Good job! No issues detected'，确认当前无未收录页面可提交，跳过不消耗配额。",
+        "submitted_urls": [],
+        "already_indexed_no_action": [
+            "https://dialwick.com/kansas-city-zip-codes/",
+            "https://dialwick.com/los-angeles-zip-codes/",
+            "https://dialwick.com/nyc-area-code/"
+        ],
+        "quota_used": "0 (skipped, no unindexed candidate found)"
+    },
+    {
+        "date": "2026-08-16",
+        "action": "submitted",
+        "reason": "同日第二次运行（首次运行结尾因Claude in Chrome工具故障卡在Hollowvane，等待网络恢复后重试成功续跑）。GSC自身Page indexing报告仍显示'Good job! No issues detected'（0未收录）。改查今日新发布：richmond-va-zip-codes（13:00档dialwick-content-publishing第20篇，见内容发布日志）经URL Inspection确认'URL is not on Google'（URL unknown to Google），REQUEST INDEXING提交成功确认'Indexing requested'。new-york-zip-codes队列候选已收录。",
+        "submitted_urls": [
+            "https://dialwick.com/richmond-va-zip-codes/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/new-york-zip-codes/"
+        ],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-17",
+        "action": "submitted",
+        "reason": "今日新发布两篇（213-area-code本站首篇单区号页；phoenix-zip-codes 19:00时段）+内容质量审计更新california-area-codes。URL Inspection确认213-area-code与california-area-codes均已'URL is on Google'（已收录），phoenix-zip-codes为'URL is not on Google'，REQUEST INDEXING提交成功确认'Indexing requested'。",
+        "submitted_urls": [
+            "https://dialwick.com/phoenix-zip-codes/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/213-area-code/",
+            "https://dialwick.com/california-area-codes/"
+        ],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-18",
+        "action": "submitted",
+        "reason": "今日新发布第24篇202-area-code，URL Inspection确认'URL is not on Google'，REQUEST INDEXING提交成功确认'Indexing requested'。",
+        "submitted_urls": [
+            "https://dialwick.com/202-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-19",
+        "action": "submitted",
+        "reason": "无今日新发布。Pages报告显示未索引仅剩1个'Crawled - currently not indexed'（Google端决策，非排队等待，Affected pages波动归零），站点已接近满收录（37/38+）。改用build-index-queue.py优先级队列候选646-area-code，URL Inspection确认'URL is not on Google'（unknown to Google），REQUEST INDEXING提交成功确认'Indexing requested'。",
+        "submitted_urls": [
+            "https://dialwick.com/646-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-20",
+        "action": "submitted",
+        "reason": "今日新发布929-area-code（第28篇，dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。同日dialwick-content-quality-audit更新what-county-is-houston-in为既有页非新页面，未重复处理。",
+        "submitted_urls": [
+            "https://dialwick.com/929-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-21",
+        "action": "submitted",
+        "reason": "今日新发布437-area-code（第31篇，dialwick-content-publishing任务，13:00档，本站首篇非美国区号）。URL Inspection确认URL is not on Google/Discovered-currently not indexed，REQUEST INDEXING提交成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/437-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-22",
+        "action": "submitted",
+        "reason": "今日新发布214-area-code（dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/214-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-23",
+        "action": "submitted",
+        "reason": "今日新发布206-area-code（第37篇，dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/206-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-24",
+        "action": "submitted",
+        "reason": "今日新发布209-area-code（第40篇，dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/209-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-26",
+        "action": "submitted",
+        "reason": "今日无新发布（页型集中度闸门禁用模板页，非模板候选词已耗尽）。改用build-index-queue.py队列取代理值最高候选miami-area-code，URL Inspection确认未收录，REQUEST INDEXING提交成功。",
+        "submitted_urls": [
+            "https://dialwick.com/miami-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": 1
+    },
+    {
+        "date": "2026-08-27",
+        "action": "submitted",
+        "reason": "今日新发布new-jersey-area-codes（dialwick-content-publishing任务，13:00档）。URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/new-jersey-area-codes/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-28",
+        "action": "submitted",
+        "reason": "游标停留站(next_start_site=DialWick)首位处理。今日新发布country-code-92-pakistan（13:00档）：URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。boston-zip-codes（今日审计更新）已收录未提交。第二轮遍历时用build-index-queue.py队列取代理值最高候选los-angeles-zip-codes，URL Inspection显示Crawled-currently not indexed，REQUEST INDEXING提交成功。",
+        "submitted_urls": [
+            "https://dialwick.com/country-code-92-pakistan/",
+            "https://dialwick.com/los-angeles-zip-codes/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/boston-zip-codes/"
+        ],
+        "quota_used": "2 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-29",
+        "action": "submitted",
+        "reason": "今日随机休息未发布新页。用build-index-queue.py队列遍历：new-york-zip-codes/nyc-area-code已收录，texas-area-codes显示Crawled-currently not indexed，REQUEST INDEXING提交成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/texas-area-codes/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/new-york-zip-codes/",
+            "https://dialwick.com/nyc-area-code/"
+        ],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-30",
+        "action": "submitted",
+        "reason": "今日新发布how-to-call-uk-from-us：URL Inspection确认URL is not on Google/unknown to Google，REQUEST INDEXING提交成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/how-to-call-uk-from-us/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-08-31",
+        "action": "submitted",
+        "reason": "今日新发布how-to-call-france-from-us（压制期非模板选题）：URL Inspection确认URL is not on Google，REQUEST INDEXING首次点击报错\"We had a problem submitting your indexing request, please try again later\"（瞬时错误非配额耗尽——本站当时是本轮第5个提交，配额充足），重试后成功确认Indexing requested。",
+        "submitted_urls": [
+            "https://dialwick.com/how-to-call-france-from-us/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-01",
+        "action": "submitted",
+        "reason": "今日休息未发布新文章（压制期内无合格非模板选题）。队列首位候选new-york-zip-codes已收录。Page indexing报告discovered-currently-not-indexed列表候选las-vegas-area-code确认未收录（本站压制期，32个crawled-not-indexed+8个discovered-not-indexed），提交成功。",
+        "submitted_urls": [
+            "https://dialwick.com/las-vegas-area-code/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/new-york-zip-codes/"
+        ],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-02",
+        "action": "submitted",
+        "reason": "trafficsite-gsc-index-requests例行运行，游标停留位DayAlmanac，DialWick排第2位。今日新发布north-carolina-area-codes（URL is not on Google）提交成功。第二轮nyc-area-code已收录，改用atlanta-zip-codes（Crawled-currently-not-indexed）提交成功。",
+        "submitted_urls": [
+            "https://dialwick.com/north-carolina-area-codes/",
+            "https://dialwick.com/atlanta-zip-codes/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/nyc-area-code/"
+        ],
+        "quota_used": "2 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-03",
+        "action": "submitted",
+        "reason": "今日新发布how-to-call-japan-from-us（压制期非模板选题），URL Inspection确认URL is not on Google，提交成功。",
+        "submitted_urls": [
+            "https://dialwick.com/how-to-call-japan-from-us/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "1 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-04",
+        "action": "submitted",
+        "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。Discovered-not-indexed报告(8条)：how-to-call-australia-from-us(Crawled-currently-not-indexed，最近爬取)确认未收录提交成功。另按代理排序候选atlanta-area-code(压制期固定优先名额)确认未收录提交成功(2条)。",
+        "submitted_urls": [
+            "https://dialwick.com/how-to-call-australia-from-us/",
+            "https://dialwick.com/atlanta-area-code/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "2 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-09",
+        "action": "submitted",
+        "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。Discovered-currently-not-indexed报告(5条)+Crawled-currently-not-indexed报告(40条，真实积压)：indianapolis-zip-codes与irvine-zip-codes确认未收录，均提交成功(第一轮1条+第二轮补提交1条，固定优先名额)。",
+        "submitted_urls": [
+            "https://dialwick.com/indianapolis-zip-codes/",
+            "https://dialwick.com/irvine-zip-codes/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "2 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-10",
+        "action": "submitted",
+        "reason": "发布任务暂停中(0篇/天，索引资格收回型压制)。new-york-zip-codes已收录(报告数据滞后)。Discovered-currently-not-indexed报告(5条真实积压)：huntsville-zip-codes确认未收录提交成功(第一轮，固定优先名额)。第二轮补提交lubbock-zip-codes(同报告候选，确认未收录)。",
+        "submitted_urls": [
+            "https://dialwick.com/huntsville-zip-codes/",
+            "https://dialwick.com/lubbock-zip-codes/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/new-york-zip-codes/"
+        ],
+        "quota_used": "2 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-11",
+        "action": "submitted",
+        "reason": "今日审计更新kansas-city-zip-codes（非新发布），URL Inspection确认已收录，跳过。Page indexing报告Discovered-not-indexed 5条+Crawled-not-indexed 40条（大量真实积压，暂停期无自然收录）。Discovered候选中huntsville-zip-codes已提交过(09-10)，indianapolis-zip-codes确认未提交，提交成功。补充第二轮：Crawled报告最新爬取的atlanta-area-code确认未提交，追加提交。",
+        "submitted_urls": [
+            "https://dialwick.com/indianapolis-zip-codes/",
+            "https://dialwick.com/atlanta-area-code/"
+        ],
+        "already_indexed_no_action": [
+            "https://dialwick.com/kansas-city-zip-codes/"
+        ],
+        "quota_used": "2 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-12",
+        "action": "submitted",
+        "reason": "今日无新发布（暂停中）。Page indexing报告Discovered-not-indexed 5条（huntsville/indianapolis-zip-codes此前已提交过），新查候选irvine-zip-codes确认Crawled-currently-not-indexed未提交过，提交成功。第二轮补充查同报告，追加提交long-beach-zip-codes（同为未提交的新候选，lubbock-zip-codes未查）。",
+        "submitted_urls": [
+            "https://dialwick.com/irvine-zip-codes/",
+            "https://dialwick.com/long-beach-zip-codes/"
+        ],
+        "already_indexed_no_action": [],
+        "quota_used": "2 of shared account-wide daily quota"
+    },
+    {
+        "date": "2026-09-13",
+        "action": "skipped_already_indexed_or_excluded",
+        "reason": "暂停发布中（0篇/天）。老页未收录巡检发现19条未收录，但均为低价值模板区号/邮编页——按build-index-queue.py的PRIORITY_EXCLUDE策略（DialWick是索引资格收回型压制，Google对该站抓取需求归零，反复提交无效）不强行占用共享配额，留作下次评估探针。改查一般队列高价值候选：new-york-zip-codes/nyc-area-code/chicago-area-code三个均已是'URL is on Google'已收录。跳过不消耗配额。",
+        "submitted_urls": [],
+        "already_indexed_no_action": [
+            "https://dialwick.com/new-york-zip-codes/",
+            "https://dialwick.com/nyc-area-code/",
+            "https://dialwick.com/chicago-area-code/"
+        ],
+        "quota_used": "0 of shared account-wide daily quota"
+    }
 ]
