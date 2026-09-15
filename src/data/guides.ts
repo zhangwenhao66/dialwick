@@ -236,14 +236,14 @@ export const guides: Guide[] = [
 			{
 				heading: "Texas ZIP codes run from the 733 prefix to the 885 prefix",
 				body: [
-					"Texas is large enough that USPS didn't give it one contiguous ZIP block the way it does for smaller states. The state's ZIP codes span 52 different three-digit prefixes from 733 up through 885, roughly tracking a north-to-south, then east-to-west numbering sweep that Texas shares at its edges with Oklahoma (73xxx), Louisiana (70xxx border areas), and New Mexico (88xxx).",
+					"Texas is large enough that USPS didn't give it one contiguous ZIP block the way it does for smaller states. The state's ZIP codes span 52 different three-digit prefixes from 733 up through 885, roughly tracking a north-to-south, then east-to-west numbering sweep that Texas shares at its edges with Oklahoma (73xxx), Louisiana (70xxx border areas), and New Mexico (88xxx). Phone numbers follow their own separate numbering system layered on top of this ZIP geography: [Texas's area codes](/texas-area-codes/) run on the overlay stacks each metro built up independently, with no fixed relationship to how many ZIP codes that same metro carries.",
 				],
 			},
 			{
 				heading: 'ZIP code count by major city',
 				body: [
 					"City population and ZIP code count don't move together in a straight line. A city's ZIP count depends more on its physical footprint and how spread out its delivery routes are than on how many people live there.",
-					"Dallas and Austin each get a deeper breakdown elsewhere on this site: [Dallas's ZIP list](/dallas-zip-codes/) includes four codes that actually belong to a legally independent town Dallas could never annex, and [Austin's ZIP breakdown](/austin-zip-codes/) shows how its 74 codes split across two counties.",
+					"Dallas and Austin each get a deeper breakdown elsewhere on this site: [Dallas's ZIP list](/dallas-zip-codes/) includes four codes that actually belong to a legally independent town Dallas could never annex, and [Austin's ZIP breakdown](/austin-zip-codes/) shows how its 74 codes split across two counties. Farther west on the same list, [Lubbock's own ZIP breakdown](/lubbock-zip-codes/) covers a different kind of split: which of its 26 codes belong to Texas Tech's campus and which don't, since the campus isn't the only code some people assume it is.",
 				],
 				table: {
 					caption: 'ZIP codes per major Texas city (USPS-assigned place name)',
@@ -299,7 +299,7 @@ export const guides: Guide[] = [
 				heading: 'All 105 ZIP codes USPS assigns to Dallas',
 				body: [
 					"USPS lists 105 ZIP codes with \"Dallas, TX\" as the primary place name (the exact count [Texas ZIP codes](/texas-zip-codes/) puts second behind Houston's 178 and ahead of San Antonio's 83). Every one of the 105 sits in Dallas County, the same single-county pattern [New York City's five boroughs](/new-york-zip-codes/) show, each lining up exactly with one county. That pattern only holds at the ZIP-code level, though: Dallas's actual city limits are wider than its ZIP-code footprint, and annexation over the decades has pulled slices of the city into Collin, Denton, Kaufman, and Rockwall counties too, a wider spread than [Atlanta's two-county split between Fulton and DeKalb](/atlanta-zip-codes/), even though none of that shows up in a Dallas-named ZIP code.",
-					"Downtown alone accounts for three of them: 75201, 75202, and 75270 all cover the central business district around Dallas City Hall and the Arts District.",
+					"Downtown alone accounts for three of them: 75201, 75202, and 75270 all cover the central business district around Dallas City Hall and the Arts District. Not every ZIP code on a big-city list corresponds to an actual delivery route, either: [roughly two-thirds of Fresno's ZIP codes turn out not to be standard residential routes at all](/fresno-zip-codes/), a much larger non-residential share than Dallas's four Highland Park exceptions.",
 				],
 				table: {
 					caption: 'All 105 ZIP codes with "Dallas, TX" as the primary USPS place name (all in Dallas County)',
@@ -389,7 +389,7 @@ export const guides: Guide[] = [
 				heading: 'All 84 ZIP codes USPS assigns to Chicago, and all of them sit in one county',
 				body: [
 					"USPS lists 84 ZIP codes with \"Chicago, IL\" as the primary place name. Every single one falls inside Cook County, which has been Chicago's home county since 1831. That pattern holds at the ZIP-code level; it isn't quite true of the city's full municipal boundary, though: this site's [Chicago county page](/what-county-is-chicago-in/) covers the one exception, a small, uninhabited strip of DuPage County the city picked up when it annexed O'Hare Airport in 1956.",
-					"Of the 84, 56 cover residential and mixed-use neighborhoods, clustered in the familiar 60601-60661 range. The other 28 are unique ZIP codes assigned to a single organization rather than a delivery area, covered below.",
+					"Of the 84, 56 cover residential and mixed-use neighborhoods, clustered in the familiar 60601-60661 range. The other 28 are unique ZIP codes assigned to a single organization rather than a delivery area, covered below. That same gap between a ZIP code and an actual neighborhood shows up on a much smaller scale in Alabama: [7 of Huntsville's 24 ZIP codes don't correspond to a distinct neighborhood either](/huntsville-zip-codes/), the same non-residential pattern this site keeps finding across cities of very different sizes.",
 				],
 				table: {
 					caption: 'All 84 ZIP codes with "Chicago, IL" as the primary USPS place name (all in Cook County)',
@@ -552,7 +552,7 @@ export const guides: Guide[] = [
 				heading: 'All 94 ZIP codes with "Los Angeles" as the primary USPS place name',
 				body: [
 					'USPS lists 94 ZIP codes with "Los Angeles, CA" as the primary place name, and every one of them sits in Los Angeles County, with no cross-county split, the same pattern this site found in [Chicago](/chicago-zip-codes/). Most of the range runs 90001 through 90099, with a handful of higher, non-sequential codes (90134, 90189) mixed in for high-volume recipients rather than delivery areas.',
-					"One of those higher codes has a specific, well-documented story: 90095 belongs to UCLA. The university shared Westwood's 90024 ZIP code until USPS carved out a dedicated campus code on January 1, 1995, along with a new addressing format built around department names and box numbers instead of street addresses, the same system UCLA mail still uses today.",
+					"One of those higher codes has a specific, well-documented story: 90095 belongs to UCLA. The university shared Westwood's 90024 ZIP code until USPS carved out a dedicated campus code on January 1, 1995, along with a new addressing format built around department names and box numbers instead of street addresses, the same system UCLA mail still uses today. That same city-name-versus-ZIP-name mismatch, just playing out for entire well-known neighborhoods instead of one university, is exactly the pattern [this site's broader look at why a ZIP code shows the wrong city](/zip-code-shows-wrong-city/) traces back to how USPS assigns a preferred place name in the first place.",
 				],
 				table: {
 					caption: 'All 94 ZIP codes with "Los Angeles, CA" as the primary USPS place name (all in Los Angeles County)',
@@ -805,7 +805,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'All 66 ZIP codes USPS assigns to Denver',
 				body: [
-					"Of the 66 ZIP codes with \"Denver, CO\" as the primary USPS place name, this site's source data places 55 in Denver County itself, six in Jefferson County, and five in Adams County. zipcodestogo.com's Denver city page lists 64 codes for comparison: close to this site's 66, but not identical, which is typical: independent ZIP directories routinely disagree by a handful of codes depending on whether they count PO-Box-only or otherwise non-standard codes the same way.",
+					"Of the 66 ZIP codes with \"Denver, CO\" as the primary USPS place name, this site's source data places 55 in Denver County itself, six in Jefferson County, and five in Adams County. zipcodestogo.com's Denver city page lists 64 codes for comparison: close to this site's 66, but not identical, which is typical: independent ZIP directories routinely disagree by a handful of codes depending on whether they count PO-Box-only or otherwise non-standard codes the same way. Denver's 11-ZIP spillover into two neighboring counties is a modest version of a much bigger split elsewhere on this site: [Kansas City's ZIP list splits across two different cities in two different states entirely](/kansas-city-zip-codes/), not just two counties in one.",
 				],
 				table: {
 					caption: 'All 66 ZIP codes with "Denver, CO" as the primary USPS place name, by county (per GeoNames.org, checked 2026-08-10)',
@@ -1090,7 +1090,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'All 100 ZIP codes with "Sacramento, CA" as the primary USPS place name',
 				body: [
-					"Sacramento County is the only county in this table, unlike this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists, which each split across county lines. zip-codes.com runs its own count of Sacramento's ZIP codes and lands on 99, one short of the 100 pulled from this site's GeoNames-based source data. The two counts were compiled at different times and won't necessarily line up exactly. Where zip-codes.com does add useful detail is delivery type: it classifies 29 of the codes as standard routes tied to carriers, 61 as unique codes tied to a single high-volume recipient, and 9 as PO Boxes.",
+					"Sacramento County is the only county in this table, unlike this site's [Denver](/denver-zip-codes/) or [Atlanta](/atlanta-zip-codes/) lists, which each split across county lines. zip-codes.com runs its own count of Sacramento's ZIP codes and lands on 99, one short of the 100 pulled from this site's GeoNames-based source data. The two counts were compiled at different times and won't necessarily line up exactly. Where zip-codes.com does add useful detail is delivery type: it classifies 29 of the codes as standard routes tied to carriers, 61 as unique codes tied to a single high-volume recipient, and 9 as PO Boxes. Sacramento's status as both a county seat and the state capital isn't the norm for a major California city, either: [Long Beach, one of the state's largest cities by population, isn't its own county's seat](/long-beach-zip-codes/), a distinction that belongs to Los Angeles instead.",
 					"That delivery-type split lines up with a pattern visible in the raw ZIP numbers themselves: 41 codes fall in the 958xx block (95811 through 95899), which covers most of the city's actual residential and business delivery routes, while the other 59 sit in a separate 942xx block (94203 through 94299) reserved for state government correspondence, similar to the way this site found [Houston](/houston-zip-codes/) splitting into a residential 770xx block and a PO-Box-heavy 772xx block, though Sacramento's non-residential share is proportionally larger.",
 				],
 				table: {
@@ -1259,15 +1259,15 @@ export const guides: Guide[] = [
 				heading: "A ZIP code's city name comes from a post office, not a map",
 				body: [
 					'USPS\'s Publication 28 addressing standards define what the postal service calls the "last line" of an address (city, state, and ZIP), and every five-digit ZIP has one preferred city name attached to it in USPS\'s own address-matching database. That name is set administratively, based on the post office that historically handled delivery for the area, not by checking a municipal boundary, a county line, or a map of where residents consider themselves to live.',
-					"Most of the time nobody notices, because the post office that serves an area and the town people call home are the same place. The mismatch shows up when they aren't: a subdivision built between two towns, a rural stretch where one post office covers ground that technically belongs to a neighboring county, or a ZIP boundary drawn decades ago that never got redrawn as the area around it grew. This site has already documented a version of the same underlying fact in [Los Angeles](/los-angeles-zip-codes/), where dozens of neighborhoods that are legally part of the city still carry a different name at the post office. A ZIP code's place name is a routing label USPS assigns for its own delivery logistics, not a ruling on what city an address legally belongs to, the same gap that makes an [area code](/how-do-area-codes-work/) a poor stand-in for a timezone.",
+					"Most of the time nobody notices, because the post office that serves an area and the town people call home are the same place. The mismatch shows up when they aren't: a subdivision built between two towns, a rural stretch where one post office covers ground that technically belongs to a neighboring county, or a ZIP boundary drawn decades ago that never got redrawn as the area around it grew. This site has already documented a version of the same underlying fact in [Los Angeles](/los-angeles-zip-codes/), where dozens of neighborhoods that are legally part of the city still carry a different name at the post office. A ZIP code's place name is a routing label USPS assigns for its own delivery logistics, not a ruling on what city an address legally belongs to, the same gap that makes an [area code](/how-do-area-codes-work/) a poor stand-in for a timezone. The same routing-label-versus-real-geography gap can run in the other direction too: three of [San Diego's ZIP codes belong to a military base rather than a civilian neighborhood](/san-diego-zip-codes/), assigned for delivery logistics with no connection to how residents identify the area.",
 				],
 			},
 			{
 				heading: 'A Colorado listing that read as an entirely different town',
 				body: [
-					"Anne-Britt Ostlund, an agent with Mountain Rose Realty, ran into this on a listing at 456 Ridge Road, a property that sits in Ouray County and should read as Ridgway, Colorado, Ouray County's largest town. Instead, the ZIP code covering that address carries Montrose as its USPS preferred place name, the seat of neighboring Montrose County. The two towns sit close enough together that a shared ZIP delivery route makes sense on a map. On the ground, they're two separate towns in two separate counties, with buyers who don't overlap.",
+					"Anne-Britt Ostlund, an agent with Mountain Rose Realty, ran into this on a listing at 456 Ridge Road, a property that sits in Ouray County and should read as Ridgway, Colorado, Ouray County's largest town. Instead, the ZIP code covering that address carries Montrose as its USPS preferred place name, the seat of neighboring Montrose County. The two towns sit close enough together that a shared ZIP delivery route makes sense on a map. On the ground, they're two separate towns in two separate counties, with buyers who don't overlap. Indianapolis shows a related but different kind of mismatch: its consolidated city-county government, Unigov, still left [four small cities inside Marion County that were never actually absorbed into it](/indianapolis-zip-codes/), a boundary gap that predates ZIP codes entirely but produces a similar kind of confusion.",
 					"<div style=\"margin:12px 0;padding:18px 20px;background:#f8fafc;border-left:4px solid #4a5568;border-radius:8px;\"><p style=\"margin:0;font-size:1.05rem;font-style:italic;color:#1e293b;line-height:1.6;\">&ldquo;Those are two ENTIRELY different markets and buyer types and it's caused havoc on Zillow and other websites, I even got a call from the local MLS trying to tell me I have the home in the wrong town!&rdquo;</p><p style=\"margin:8px 0 0;font-size:0.8125rem;color:#64748b;\">Anne-Britt Ostlund, Mountain Rose Realty</p></div>",
-					"Zillow and most other listing sites don't independently verify what town a property sits in. They pull the city from the address's ZIP code, and that means they inherit whatever name USPS has on file for that ZIP, correct or not. A listing rooted in a mountain-town market can end up displayed under a neighboring valley town's name instead, to buyers who search by location and to a local MLS that flagged the listing as possibly misfiled before realizing the address itself was never wrong; the ZIP code's label was.",
+					"Zillow and most other listing sites don't independently verify what town a property sits in. They pull the city from the address's ZIP code, and that means they inherit whatever name USPS has on file for that ZIP, correct or not. A listing rooted in a mountain-town market can end up displayed under a neighboring valley town's name instead, to buyers who search by location and to a local MLS that flagged the listing as possibly misfiled before realizing the address itself was never wrong; the ZIP code's label was. A version of that same gap between a place's popular identity and its official boundary shows up in Nevada, too: [the Las Vegas Strip that most visitors picture isn't actually inside the city of Las Vegas at all](/las-vegas-zip-codes/), let alone tied to a Las Vegas-named ZIP code.",
 				],
 			},
 			{
@@ -1631,7 +1631,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'All 41 California area codes',
 				body: [
-					"California's 41 area codes are the most of any US state, a direct result of the state's population growth outpacing three-digit-code capacity again and again since 1947. The table groups every code with its current region and the date it went into service.",
+					"California's 41 area codes are the most of any US state, a direct result of the state's population growth outpacing three-digit-code capacity again and again since 1947. The table groups every code with its current region and the date it went into service. Nevada's own numbering history split off from a similarly narrow starting point: [Las Vegas's area codes trace back to a split that sent the rest of Nevada off to 775](/las-vegas-area-code/), leaving 702 (later joined by an overlay, 725) to cover the metro alone, the same split-then-overlay pattern that grew California's original three codes into 41.",
 				],
 				table: {
 					caption: 'All 41 California area codes',
@@ -1726,7 +1726,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'All 13 Michigan area codes',
 				body: [
-					"Michigan's 13 area codes trace back to just three original codes assigned when the North American Numbering Plan launched in 1947. Seven descend from Detroit's 313 alone; the rest split off from Grand Rapids's 616 or Lansing's 517, as the table below shows; see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in practice.",
+					"Michigan's 13 area codes trace back to just three original codes assigned when the North American Numbering Plan launched in 1947. Seven descend from Detroit's 313 alone; the rest split off from Grand Rapids's 616 or Lansing's 517, as the table below shows; see [how area codes actually work](/how-do-area-codes-work/) for what \"split\" and \"overlay\" mean in practice. North Carolina is about to go through the same kind of addition Michigan just finished: [a new overlay code is on the way for the state](/north-carolina-area-codes/), following the same pattern that brought Michigan's newest code, 679, online in November 2025.",
 				],
 				table: {
 					caption: 'All 13 Michigan area codes',
@@ -1997,7 +1997,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'The three parts of a US phone number',
 				body: [
-					'Every standard North American number breaks into an area code, an exchange code, and a subscriber number. Telecom engineers call this the NPA-NXX-XXXX format: NPA (Numbering Plan Area) is the area code, NXX is the three-digit exchange that used to map to a specific switching office, and XXXX is the four-digit line number.',
+					'Every standard North American number breaks into an area code, an exchange code, and a subscriber number. Telecom engineers call this the NPA-NXX-XXXX format: NPA (Numbering Plan Area) is the area code, NXX is the three-digit exchange that used to map to a specific switching office, and XXXX is the four-digit line number. New Jersey\'s own numbering history shows a fix that\'s rarer than the split-versus-overlay choice covered above: [three separate area codes went live there on the exact same day](/new-jersey-area-codes/), a coordinated launch most states never needed.',
 				],
 				diagramSvg: NPA_DIAGRAM,
 			},
@@ -2137,7 +2137,7 @@ export const guides: Guide[] = [
 			{
 				heading: "Chicago's three area codes",
 				body: [
-					"All three of the area codes below cover the identical geographic footprint: the [City of Chicago](/chicago-zip-codes/), inside [Cook County](/what-county-is-chicago-in/). Which one a given phone number carries depends only on when it was assigned, not on where in the city its owner lives or works.",
+					"All three of the area codes below cover the identical geographic footprint: the [City of Chicago](/chicago-zip-codes/), inside [Cook County](/what-county-is-chicago-in/). Which one a given phone number carries depends only on when it was assigned, not on where in the city its owner lives or works. New York City took a different path to a comparably complex numbering picture: [all eight of its area codes](/nyc-area-code/) split across the five boroughs in a way that includes one Manhattan phone block wired into the Bronx instead, a boundary quirk with no equivalent in Chicago's tidier three-code overlay stack.",
 				],
 				table: {
 					caption: "Chicago's area codes",
@@ -2309,7 +2309,7 @@ export const guides: Guide[] = [
 			{
 				heading: "Atlanta's five area codes",
 				body: [
-					"470 and 943 cover the entire combined footprint of 404, 770, and 678; there's no way to tell which of the five an Atlanta number carries just by knowing what part of the metro its owner lives in. Assignment depends only on when the line was activated.",
+					"470 and 943 cover the entire combined footprint of 404, 770, and 678; there's no way to tell which of the five an Atlanta number carries just by knowing what part of the metro its owner lives in. Assignment depends only on when the line was activated. Miami's own numbering history reaches back even further than Atlanta's: [one of its area codes, 305, used to cover the entire state of Florida](/miami-area-code/) before a 1947 boundary the rest of the state eventually outgrew, the same kind of single-code-to-many split Atlanta went through starting decades later.",
 				],
 				table: {
 					caption: "Atlanta's area codes and whether each still issues new numbers",
@@ -2518,7 +2518,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Chicago is entirely inside Cook County',
 				body: [
-					"All 84 ZIP codes with Chicago as their primary USPS place name sit inside Cook County, Illinois (see the [full Chicago ZIP code list](/chicago-zip-codes/)), and Cook County has been Chicago's home county since the county's creation in 1831 by the Illinois state legislature, the 54th county established in the state. The one asterisk is the city's own municipal boundary, not its ZIP codes: when Chicago annexed O'Hare Airport in 1956, the deal pulled in a small, uninhabited strip on the airport's southwest edge that actually sits in DuPage County. It's a narrower crossing than [Atlanta's split between Fulton and DeKalb](/atlanta-zip-codes/) (no Chicago ZIP code or resident is affected, just airport land), but it means \"Chicago never crosses a county line\" isn't quite literally true.",
+					"All 84 ZIP codes with Chicago as their primary USPS place name sit inside Cook County, Illinois (see the [full Chicago ZIP code list](/chicago-zip-codes/)), and Cook County has been Chicago's home county since the county's creation in 1831 by the Illinois state legislature, the 54th county established in the state. The one asterisk is the city's own municipal boundary, not its ZIP codes: when Chicago annexed O'Hare Airport in 1956, the deal pulled in a small, uninhabited strip on the airport's southwest edge that actually sits in DuPage County. It's a narrower crossing than [Atlanta's split between Fulton and DeKalb](/atlanta-zip-codes/) (no Chicago ZIP code or resident is affected, just airport land), but it means \"Chicago never crosses a county line\" isn't quite literally true. [San Antonio's own county answer](/what-county-is-san-antonio-in/) turns out to have a comparably tidy exception worth checking before assuming every big Texas city sits in exactly one county the way Houston does.",
 				],
 			},
 			{
@@ -2571,7 +2571,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Houston is entirely inside Harris County',
 				body: [
-					"Every one of the 178 ZIP codes USPS lists with Houston as the primary place name sits inside Harris County, Texas (see the [full Houston ZIP code list](/houston-zip-codes/)), with no cross-county split at the ZIP level the way some major US cities have. That distinction only holds at the ZIP-code level, though. Houston's actual city limits are wider: annexation over the decades pulled small slices of southwest and northeast Houston into Fort Bend and Montgomery counties, so the city itself crosses county lines even though none of its ZIP codes do. Harris County was founded on December 22, 1836, and organized the following March; Houston was named the county seat that same December, and has held the role ever since. The county takes its name from John Richardson Harris, who founded the town of Harrisburg on Buffalo Bayou a decade earlier, in 1826.",
+					"Every one of the 178 ZIP codes USPS lists with Houston as the primary place name sits inside Harris County, Texas (see the [full Houston ZIP code list](/houston-zip-codes/)), with no cross-county split at the ZIP level the way some major US cities have. That distinction only holds at the ZIP-code level, though. Houston's actual city limits are wider: annexation over the decades pulled small slices of southwest and northeast Houston into Fort Bend and Montgomery counties, so the city itself crosses county lines even though none of its ZIP codes do. Harris County was founded on December 22, 1836, and organized the following March; Houston was named the county seat that same December, and has held the role ever since. The county takes its name from John Richardson Harris, who founded the town of Harrisburg on Buffalo Bayou a decade earlier, in 1826. Virginia takes the opposite extreme from Houston's straightforward single-county answer: [Richmond isn't part of any county at all](/richmond-va-zip-codes/), one of Virginia's independent cities, a legal status that has no equivalent in Texas or almost anywhere else in the country.",
 				],
 			},
 			{
@@ -2621,7 +2621,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'The current format',
 				body: [
-					"Calling Mexico from a US landline: dial 011, then 52, then the 10-digit number. From a mobile phone or most VoIP services, you can substitute a \"+\" for the 011, so +52 followed by the 10 digits works the same way.",
+					"Calling Mexico from a US landline: dial 011, then 52, then the 10-digit number. From a mobile phone or most VoIP services, you can substitute a \"+\" for the 011, so +52 followed by the 10 digits works the same way. Not every country's dialing format has stayed this stable, either: [the Philippines quietly added an eighth digit to Manila's landline numbers](/how-to-call-philippines-from-usa/) in a 2019 regulatory migration, the same year Mexico eliminated its own old prefix system.",
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
@@ -2765,7 +2765,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Dialing the Philippines: country code 63, step by step',
 				body: [
-					"Calling the Philippines from a US landline: dial 011, then 63, then the area or mobile code with its leading 0 removed, then the remaining digits. From a mobile phone or most VoIP services, a \"+\" takes the place of the 011, so +63 followed by the same digits gets you there just as reliably.",
+					"Calling the Philippines from a US landline: dial 011, then 63, then the area or mobile code with its leading 0 removed, then the remaining digits. From a mobile phone or most VoIP services, a \"+\" takes the place of the 011, so +63 followed by the same digits gets you there just as reliably. Australia went the opposite direction on complexity: [a 1994-1998 renumbering retired dozens of smaller Australian area codes](/how-to-call-australia-from-us/) down to just four that now cover the entire country, one code per region rather than one per city.",
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
@@ -2835,7 +2835,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Dialing Australia: country code 61, step by step',
 				body: [
-					"Calling Australia from a US landline: dial 011, then 61, then the area code with its leading 0 dropped, then the rest of the local number. From a mobile phone or most VoIP services, a \"+\" takes the place of the 011, so +61 followed by the same digits works just as reliably.",
+					"Calling Australia from a US landline: dial 011, then 61, then the area code with its leading 0 dropped, then the rest of the local number. From a mobile phone or most VoIP services, a \"+\" takes the place of the 011, so +61 followed by the same digits works just as reliably. India's own area-code system may not survive much longer at all: [a 2025 regulator proposal would retire Indian STD codes entirely](/how-to-call-india-from-us/) in favor of a single 10-digit format, a more drastic consolidation than Australia's four-code renumbering.",
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
@@ -2923,7 +2923,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Dialing India: country code 91, step by step',
 				body: [
-					"Calling an Indian landline from a US phone: dial 011, then 91, then the STD area code with its leading 0 dropped, then the rest of the local number. Calling an Indian mobile number works the same way, except there's no area code to trim. Mobile numbers are a plain 10 digits, and the whole string goes straight after 91. From a mobile phone or most VoIP services, a \"+\" replaces the 011, so +91 followed by the same digits reaches the same number.",
+					"Calling an Indian landline from a US phone: dial 011, then 91, then the STD area code with its leading 0 dropped, then the rest of the local number. Calling an Indian mobile number works the same way, except there's no area code to trim. Mobile numbers are a plain 10 digits, and the whole string goes straight after 91. From a mobile phone or most VoIP services, a \"+\" replaces the 011, so +91 followed by the same digits reaches the same number. The UK went through a comparable consolidation two decades earlier: [London's old 071/081 split folded into a single code, 020, in 2000](/how-to-call-uk-from-us/), though a later survey found most Britons still can't correctly name that area code without a prompt.",
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
@@ -2999,7 +2999,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Dialing the UK from a US phone, step by step',
 				body: [
-					'Calling a UK landline or mobile number from the US: dial 011, then 44 (the UK\'s country code), then the area code or mobile prefix with its leading 0 dropped, then the rest of the number. A London landline written domestically as 020 7946 0958 becomes 011 44 20 7946 0958 from a US phone, or +44 20 7946 0958 from a mobile or VoIP line that accepts a plus sign in place of 011. UK mobile numbers follow the identical rule: a number written domestically as 07911 123456 becomes 011 44 7911 123456, dropping only the single leading 0 and nothing else.',
+					'Calling a UK landline or mobile number from the US: dial 011, then 44 (the UK\'s country code), then the area code or mobile prefix with its leading 0 dropped, then the rest of the number. A London landline written domestically as 020 7946 0958 becomes 011 44 20 7946 0958 from a US phone, or +44 20 7946 0958 from a mobile or VoIP line that accepts a plus sign in place of 011. UK mobile numbers follow the identical rule: a number written domestically as 07911 123456 becomes 011 44 7911 123456, dropping only the single leading 0 and nothing else. Pakistan\'s own mobile numbering went through a quieter but comparable shift: [a 2008 migration moved a digit out of the carrier prefix and into the subscriber number](/country-code-92-pakistan/), splitting the same 11 digits differently without changing the total length.',
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
@@ -3077,7 +3077,7 @@ export const guides: Guide[] = [
 				heading: 'All 77 ZIP codes with "Phoenix, AZ" as the primary USPS place name',
 				body: [
 					"Every one of the 77 falls inside Maricopa County, the same pattern this site found in [Sacramento](/sacramento-zip-codes/) and [San Diego](/san-diego-zip-codes/), and a contrast to [Denver](/denver-zip-codes/), [Atlanta](/atlanta-zip-codes/), or [Kansas City](/kansas-city-zip-codes/), where the ZIP list crosses into a neighboring county. What varies between sources isn't the county, it's the count: zip-codes.com lists 71 ZIP codes for Phoenix, six short of the 77 GeoNames assigns, and other trackers settle around 74 or 75, differences that come down to whether overlapping postal boundaries and PO-Box-only codes get folded into the total or listed separately.",
-					"Phoenix also dials on three area codes (602, 623, and 480), and all three now overlay the entire metro area rather than serving separate zones, a history covered in the FAQ below.",
+					"Phoenix also dials on three area codes (602, 623, and 480), and all three now overlay the entire metro area rather than serving separate zones, a history covered in the FAQ below. Neighboring Scottsdale has its own quirk in the same vein: [one of its ZIP codes actually carries a Phoenix address](/scottsdale-zip-codes/) rather than its own city name, the reverse of Phoenix's tidy single-county footprint.",
 				],
 				table: {
 					caption: 'All 77 ZIP codes with "Phoenix, AZ" as the primary USPS place name (per GeoNames.org, checked 2026-08-17)',
@@ -4097,7 +4097,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'A landline number is built from a city code; a mobile number is built from a carrier code',
 				body: [
-					"Calling a Pakistani landline from the US: dial 011, then 92, then the city code with its leading 0 dropped, then the local number. Karachi and Lahore, the two largest cities, use two-digit codes, the shortest on the network. Smaller cities and towns get longer codes (up to five digits), with a shorter local number making up the difference. Calling a Pakistani mobile number works the same way structurally, but the code that follows +92 is a carrier prefix, not a place: every Pakistani mobile number starts with 03, and the two digits after that identify which network issued it, not what city the subscriber lives in.",
+					"Calling a Pakistani landline from the US: dial 011, then 92, then the city code with its leading 0 dropped, then the local number. Karachi and Lahore, the two largest cities, use two-digit codes, the shortest on the network. Smaller cities and towns get longer codes (up to five digits), with a shorter local number making up the difference. Calling a Pakistani mobile number works the same way structurally, but the code that follows +92 is a carrier prefix, not a place: every Pakistani mobile number starts with 03, and the two digits after that identify which network issued it, not what city the subscriber lives in. France solved a related numbering problem with a dedicated prefix instead of a carrier code: [French regulator ARCEP created the 09 range in 2005](/how-to-call-france-from-us/) specifically to give VoIP services like Freebox their own block, separate from geographic or mobile numbers entirely.",
 				],
 				table: {
 					caption: 'City codes for six major Pakistani cities',
@@ -4172,7 +4172,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Dialing France: country code 33, step by step',
 				body: [
-					"Calling a French landline or mobile number from the US: dial 011, then 33 (France's country code), then the ten-digit French number with its leading 0 dropped, then the rest of the digits. A Paris landline written domestically as 01 42 68 53 00 becomes 011 33 1 42 68 53 00 from a US phone, or +33 1 42 68 53 00 from a mobile or VoIP line that accepts a plus sign in place of 011. A French mobile number follows the identical rule: 06 12 34 56 78 becomes 011 33 6 12 34 56 78, dropping only the single leading 0.",
+					"Calling a French landline or mobile number from the US: dial 011, then 33 (France's country code), then the ten-digit French number with its leading 0 dropped, then the rest of the digits. A Paris landline written domestically as 01 42 68 53 00 becomes 011 33 1 42 68 53 00 from a US phone, or +33 1 42 68 53 00 from a mobile or VoIP line that accepts a plus sign in place of 011. A French mobile number follows the identical rule: 06 12 34 56 78 becomes 011 33 6 12 34 56 78, dropping only the single leading 0. Japan is running into the opposite problem with its own newest prefix: [a fourth mobile code, 060, was approved in December 2024](/how-to-call-japan-from-us/) but has since been postponed by every one of Japan's carriers, with no new rollout date announced.",
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
@@ -4242,7 +4242,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Dialing Japan: country code 81, step by step',
 				body: [
-					"Calling a Japanese landline or mobile number from the US: dial 011, then 81 (Japan's country code), then the number with its leading 0 dropped, then the rest of the digits as written. A Tokyo landline written domestically as 03-3200-2222 becomes 011 81 3 3200 2222 from a US landline, or +81 3 3200 2222 from a mobile or VoIP line that accepts a plus sign in place of 011. A Japanese mobile number follows the same rule: 090-1234-5678 becomes 011 81 90 1234 5678, dropping only the single leading 0.",
+					"Calling a Japanese landline or mobile number from the US: dial 011, then 81 (Japan's country code), then the number with its leading 0 dropped, then the rest of the digits as written. A Tokyo landline written domestically as 03-3200-2222 becomes 011 81 3 3200 2222 from a US landline, or +81 3 3200 2222 from a mobile or VoIP line that accepts a plus sign in place of 011. A Japanese mobile number follows the same rule: 090-1234-5678 becomes 011 81 90 1234 5678, dropping only the single leading 0. Not every country's recent numbering change added complexity: [Mexico went the opposite direction in 2019](/how-to-call-mexico-from-us/), dropping mobile numbers' extra prefix digit rather than adding a new one, the reverse of Japan's newest-prefix problem above.",
 				],
 				table: {
 					columns: ['Step', 'What to dial'],
