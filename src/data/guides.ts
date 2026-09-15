@@ -140,12 +140,12 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Atlanta in Fulton County or DeKalb County?',
 				answer:
-					"Mostly Fulton, but not entirely. About a fifth of Atlanta's ZIP codes, concentrated on the north and northeast side (Emory, Druid Hills, Chamblee, the Perimeter), are in DeKalb County even though they carry an Atlanta mailing address.",
+					"Mostly Fulton, but not entirely. Roughly one in five of the 92 ZIPs lies in DeKalb County instead, in a band running toward the northeast corner of the metro near Chamblee, the Perimeter mall corridor, Druid Hills, and the Emory campus, even though they carry an Atlanta mailing address.",
 			},
 			{
 				question: 'Why does 39901 show up as an Atlanta ZIP code?',
 				answer:
-					"It's a unique ZIP USPS assigned to a single large mail recipient, the IRS's Atlanta service center, rather than to a residential area. It doesn't follow the normal geographic numbering pattern because it isn't a geographic ZIP at all.",
+					"It's a unique ZIP USPS set aside for a single mail-heavy tenant in the city: the IRS processing facility that handles Atlanta-area returns, rather than any residential area. It doesn't follow the normal geographic numbering pattern because it isn't a geographic ZIP at all.",
 			},
 		],
 		sources: [
@@ -509,7 +509,7 @@ export const guides: Guide[] = [
 				heading: "Why two Austin ZIP codes are in Williamson County, not Travis",
 				body: [
 					"78717 and 78729 cover Austin's far northwest, an area that developed differently from the rest of the city. Starting in 1973, this section of what's now northwest Austin was organized as Williamson County Municipal Utility District No. 1, a special utility district set up to provide water and wastewater service to new subdivisions before the city itself had annexed the land. Home construction in the district began in 1975 and continued through the mid-1980s. The City of Austin didn't fully annex the area until December 31, 2008, under a Strategic Partnership Agreement first signed in 1998 and amended in 2004. The annexation itself converted the old MUD into the Anderson Mill Limited District, ratified by a vote of district residents in May 2009. By the time that happened, thousands of houses already existed under Williamson County's jurisdiction rather than the city's own utilities. The Milwood neighborhood nearby followed a similar path as part of the North Austin MUD annexation.",
-					"USPS ZIP boundaries don't automatically shift when a city annexes new territory, which is why 78717 and 78729 still carry an Austin mailing address today even though the underlying county line was set decades before the city limits caught up to it. It's the same category of mismatch this site documents in [Atlanta, where ZIP and county lines don't match either](/atlanta-zip-codes/), though the underlying cause differs: Atlanta's split traces to Fulton/DeKalb's shared metro history, Austin's traces to utility-district development that predated annexation.",
+					"USPS ZIP boundaries don't automatically shift when a city annexes new territory, which is why 78717 and 78729 still carry an Austin mailing address today even though the underlying county line was set decades before the city limits caught up to it. It's the same category of mismatch this site documents in [Atlanta, where ZIP and county lines don't match either](/atlanta-zip-codes/), though the underlying cause differs: Atlanta's ZIP boundaries simply follow mail-delivery routes rather than county lines, while Austin's traces to utility-district development that predated annexation.",
 				],
 			},
 		],
@@ -522,12 +522,12 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Austin in Travis County or Williamson County?',
 				answer:
-					"Mostly Travis: 72 of Austin's 74 ZIP codes are in Travis County. Two, 78717 and 78729, are in Williamson County to the northwest, covering neighborhoods that were developed under a Williamson County utility district starting in 1973, before the city annexed the area in 2008.",
+					"Mostly Travis: 72 of the city's 74 ZIP codes fall there. The remaining pair, 78717 and 78729, cross into Williamson County instead, covering neighborhoods that were developed under a utility district starting in 1973, before the city annexed the area in 2008.",
 			},
 			{
 				question: 'Why do 73301 and 73344 show up as Austin ZIP codes?',
 				answer:
-					"Both are non-geographic ZIP codes USPS reserves for the IRS's Austin submission processing center rather than a residential area. That's why they don't follow Austin's usual 787 prefix: they sit in the 733 numbering block instead, the same block used for parts of Oklahoma.",
+					"Both belong to the same IRS tax-return processing site rather than to any residential area; USPS sets aside a dedicated ZIP whenever a single recipient handles enough mail volume, without following the area's usual numbering. That's why they don't follow Austin's usual 787 prefix: they sit in the 733 numbering block instead, the same block used for parts of Oklahoma.",
 			},
 		],
 		sources: [
@@ -2309,7 +2309,7 @@ export const guides: Guide[] = [
 			{
 				heading: "Atlanta's five area codes",
 				body: [
-					"470 and 943 cover the entire combined footprint of 404, 770, and 678; there's no way to tell which of the five an Atlanta number carries just by knowing what part of the metro its owner lives in. Assignment depends only on when the line was activated. Miami's own numbering history reaches back even further than Atlanta's: [one of its area codes, 305, used to cover the entire state of Florida](/miami-area-code/) before a 1947 boundary the rest of the state eventually outgrew, the same kind of single-code-to-many split Atlanta went through starting decades later.",
+					"470 and 943 cover the entire combined footprint of 404, 770, and 678; there's no way to tell which of the five an Atlanta number carries just by knowing what part of the metro its owner lives in. Assignment depends only on when the line was activated. Miami's numbering history starts the same year as Atlanta's: [one of its area codes, 305, also dates to 1947 and once covered the entire state of Florida](/miami-area-code/) before growth split the rest of the state away from it, the same kind of single-code-to-many split Atlanta went through starting decades later.",
 				],
 				table: {
 					caption: "Atlanta's area codes and whether each still issues new numbers",
@@ -2354,17 +2354,17 @@ export const guides: Guide[] = [
 			{
 				question: 'Can I still get a new phone number with a 404 or 678 area code?',
 				answer:
-					"No. Both codes ran through every available central office prefix (404 by October 2013, 678 by the time regulators approved 943 in 2020), so NANPA no longer assigns new numbers from either one. (770 is in the same position, also exhausted.) Existing 404 and 678 numbers are unaffected and keep working; new lines in the Atlanta overlay region are assigned 470 or 943 instead.",
+					"No. NANPA handed out the last available prefix in each code (404 in October 2013, 678 not long before the fifth code, 943, arrived in 2022), so it no longer assigns new numbers from either one. (770 is in the same position, also exhausted.) Existing 404 and 678 numbers are unaffected and keep working; anyone activating a new line today gets 470 or 943 instead.",
 			},
 			{
 				question: "What's the difference between 404 and 770?",
 				answer:
-					"404 is Atlanta's original 1947 area code, narrowed by two earlier splits (912 in 1954, 706 in 1992) to roughly the metro region and then split again on August 1, 1995 along the Interstate 285 perimeter. 770 is what that 1995 split created: everything outside the perimeter. It's the only geographic line Atlanta's numbering plan has ever drawn: 678, 470, and 943 all overlay both sides of it rather than adding a new boundary.",
+					"404 is Atlanta's original 1947 area code, narrowed by two earlier splits (912 in 1954, 706 in 1992) down to the immediate metro footprint, then divided a third time in the summer of 1995, with I-285 as the dividing line. 770 is what that 1995 split created: the territory beyond that highway loop. It's the only line Georgia has ever drawn for the metro this way: 678, 470, and 943 all overlay both sides of it instead of splitting off new territory.",
 			},
 			{
 				question: 'Do I need to dial 10 digits for a local Atlanta call?',
 				answer:
-					'Yes. Once 678 overlaid both 404 and 770 in 1998, the North American Numbering Plan required area code plus number for every local call in the combined footprint, not just long-distance ones, the same rule that applies in every other overlay region.',
+					"Yes. Once 678 overlaid both 404 and 770 in 1998, NANPA's rules required area code plus number for every local call across all three codes' territory, not just long-distance ones, the standard rule anywhere codes stack on the same ground.",
 			},
 		],
 		sources: [
