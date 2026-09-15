@@ -2414,3 +2414,21 @@ Site-specific checklist for this article: (1) does the 66-code ZIP table's Jeffe
   "escalation": null
 }
 ```
+
+```json
+{
+  "tool_slug": "机械检查回溯_20260916",
+  "audited": "2026-09-16",
+  "source": "owen-opc-kit/docs/机械检查回溯发现_20260916.md",
+  "findings_fixed": [
+    {
+      "issue": "scottsdale-zip-codes一条sources[]死链：bestarizonahomefinder.com的85254 magic zip文章404",
+      "script": "check_sources_urls.py --guides src/data/guides.ts --slug scottsdale-zip-codes",
+      "fix": "换源为Williams Luxury Homes的同主题文章(williamsluxuryhomes.com/the-magic-zip-code-scottsdale-arizona/)，先用WebSearch找候选、curl确认200可达，再curl抓正文核对方向一致（Scottsdale mailing address + Phoenix municipal jurisdiction，与本文原claim方向相同，非反向）——过程中发现另一候选kellyfjones.com方向说反了（说成Phoenix地址+Scottsdale管辖），未采用",
+      "commit": "e7319df"
+    }
+  ],
+  "verify": "check_sources_urls.py复验scottsdale-zip-codes零DEAD（仅2条既有SOFT不算死链）；npm run build 59页成功；push后curl绕缓存/scottsdale-zip-codes/返回200",
+  "escalation": null
+}
+```
