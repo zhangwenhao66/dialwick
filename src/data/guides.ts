@@ -4021,7 +4021,7 @@ export const guides: Guide[] = [
 		sources: [
 			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 			{ label: 'Scottsdale, AZ ZIP Codes (zip-codes.com)', url: 'https://www.zip-codes.com/city/az-scottsdale.asp' },
-			{ label: 'Is Kierland Really in Scottsdale? The 85254 Zip Explained (Best Arizona Home Finder)', url: 'https://www.bestarizonahomefinder.com/blog/is-kierland-really-in-scottsdale-85254-magic-zip-code/' },
+			{ label: "What Is the Magic Zip Code of 85254 in Scottsdale, Arizona? (Williams Luxury Homes)", url: 'https://williamsluxuryhomes.com/the-magic-zip-code-scottsdale-arizona/' },
 			{ label: 'ZIP Code 85254 Boundary Map (ZipMap.net)', url: 'https://zipmap.net/zips/85254.htm' },
 			{ label: 'McDowell Sonoran Preserve (City of Scottsdale)', url: 'https://www.scottsdaleaz.gov/preserve' },
 			{ label: 'Fast Facts About the McDowell Sonoran Conservancy', url: 'https://www.mcdowellsonoran.org/fast-facts-about-the-mcdowell-sonoran-conservancy/' },
