@@ -1,0 +1,12 @@
+[
+  {
+    "index": 1,
+    "verdict": "CONFIRMED",
+    "note": "las-vegas-area-code's own body confirms both parts of the claim. Split: 'On December 12, 1998, everything outside almost all of Clark County moved to the new area code 775, leaving 702 to cover the Las Vegas Valley, Henderson, and Boulder City on its own' -- matches 'a split that sent the rest of Nevada off to 775, leaving 702 ... to cover the metro alone.' Overlay: 'regulators added 725 as an overlay on June 3, 2014, stacking a second code across the identical territory 702 already covered' -- matches '(later joined by an overlay, 725)'. Both dates/mechanisms line up; no fabrication."
+  },
+  {
+    "index": 2,
+    "verdict": "CONFIRMED",
+    "note": "sacramento-zip-codes' own body states 'Sacramento County is the only county in this table' and USPS assigns all 100 Sacramento ZIP codes within Sacramento County per its source data -- this confirms the bridge sentence's implicit claim that Sacramento's ZIP codes and its 916/279 area codes cover 'that same county.' The bridge sentence is a soft see-also pointer (no specific number/date claim about the target beyond the shared-county framing), and that framing checks out against the target's own text."
+  }
+]

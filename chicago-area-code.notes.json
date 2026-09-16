@@ -1,0 +1,12 @@
+[
+  {
+    "index": 1,
+    "verdict": "CONFIRMED",
+    "note": "how-do-area-codes-work's own body defines exactly this distinction: 'Split vs. overlay: two different fixes for the same problem ... Historically, the fix was a split: draw a line through the region ... Starting in the 1990s, the industry mostly switched to overlays: rather than dividing the region, a second area code is layered on top of the exact same geographic footprint.' This matches the bridge sentence's premise that there is a real, documented 'difference between a split and an overlay.'"
+  },
+  {
+    "index": 2,
+    "verdict": "CONFIRMED",
+    "note": "michigan-area-codes' own body confirms 679 is Detroit's newest code and that it was created as an overlay, not a split, which is exactly the split/overlay distinction the bridge sentence claims 'shaped' it: 'Because 313 already covered a fully built-out urban area with no adjacent territory left to split off, the commission chose an overlay rather than a geographic split ... 679 was reserved for the same territory 313 already covered, and went into service for new lines on November 7, 2025.' The article also confirms 679 is the newest of Michigan's 13 codes ('the newest, 679... began serving new phone lines on November 7, 2025')."
+  }
+]

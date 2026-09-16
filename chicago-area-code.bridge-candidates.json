@@ -1,0 +1,16 @@
+[
+  {
+    "index": 1,
+    "source": "正文",
+    "sentence": "The [difference between a split and an overlay](/how-do-area-codes-work/) is the same distinction that shaped [Detroit's newest area code, 679](/michigan-area-codes/).",
+    "target_slug": "how-do-area-codes-work",
+    "target_found": true
+  },
+  {
+    "index": 2,
+    "source": "正文",
+    "sentence": "The [difference between a split and an overlay](/how-do-area-codes-work/) is the same distinction that shaped [Detroit's newest area code, 679](/michigan-area-codes/).",
+    "target_slug": "michigan-area-codes",
+    "target_found": true
+  }
+]

@@ -645,7 +645,7 @@ export const guides: Guide[] = [
 		published: '2026-08-06',
 		updated: '2026-08-06',
 		coreSummary:
-			"USPS lists 36 ZIP codes with \"Boston\" as the primary place name: 35 in Suffolk County, plus one, 02212, that this site's source data tags to Middlesex County for reasons no public record explains. A chunk of the 36 aren't neighborhoods at all: 02201 is Boston City Hall's own non-geographic ZIP, and 02203 belongs to the John F. Kennedy Federal Building in Government Center, part of a broader set of institutional \"Unique ZIP Codes\" USPS reserves for large single recipients rather than delivery routes. And the 36-code list understates the city's real footprint, because six towns Boston annexed between 1868 and 1912 (Roxbury, Dorchester, Charlestown, Brighton, West Roxbury, and Hyde Park) still carry their pre-annexation names at the post office instead of \"Boston,\" adding 14 more ZIP codes (Jamaica Plain, Roslindale, Allston, Mattapan, and Roxbury Crossing among them) that are legally part of the city but don't say so in the mailing address.",
+			"USPS lists 36 ZIP codes with \"Boston\" as the primary place name: 35 in Suffolk County, plus one, 02212, that this site's source data tags to Middlesex County for reasons no public record explains. A chunk of the 36 aren't neighborhoods at all: 02201 is Boston City Hall's own non-geographic ZIP, and 02203 belongs to the John F. Kennedy Federal Building in Government Center, part of a broader set of institutional \"Unique ZIP Codes\" USPS reserves for large single recipients, not delivery routes. And the 36-code list understates the city's real footprint, because six towns Boston annexed between 1868 and 1912 (Roxbury, Dorchester, Charlestown, Brighton, West Roxbury, and Hyde Park) still carry their pre-annexation names at the post office instead of \"Boston,\" adding 14 more ZIP codes (Jamaica Plain, Roslindale, Allston, Mattapan, and Roxbury Crossing among them) that are legally part of the city but don't say so in the mailing address.",
 		sections: [
 			{
 				heading: 'All 36 ZIP codes with "Boston" as the primary USPS place name',
@@ -679,9 +679,9 @@ export const guides: Guide[] = [
 			{
 				heading: "Why Dorchester, Roxbury, and four other Boston neighborhoods don't carry the city's name",
 				body: [
-					"Six towns joined the City of Boston between 1868 and 1912, each by its own vote, and none of them lost its name at the post office when it did. Roxbury was annexed January 5, 1868; Dorchester followed January 3, 1870. Charlestown, Brighton, and West Roxbury all joined together after a single October 7, 1873 vote, with the annexation effective January 5, 1874. Hyde Park was the last: residents voted to join on November 7, 1911, and the annexation took effect January 1, 1912. The individual motives varied more than a single explanation can cover. Roxbury's annexation is tied by Boston's own annexation-history accounts to the city's water and sewer systems, infrastructure the smaller town struggled to replicate on its own. Brighton's case ran closer to the opposite direction: in the four years before its 1873 vote, a group of local businessmen known as the \"Brighton Ring\" pushed the town into roughly $1.56 million of infrastructure spending against about $438,000 of revenue, an eightfold jump in town debt, then steered 81% of voters toward annexation so Boston would absorb what Brighton owed. Hyde Park's annexation, per the City of Boston Archives' own account, was driven mainly from Boston's side: the town's mills had drawn a wave of immigrant labor by the early 1900s, and the city wanted the tax revenue that growth represented.",
-					"Those six former towns, plus neighborhoods carved out of them afterward, account for 14 ZIP codes today that are legally inside Boston but carry a different USPS place name: Roxbury (02119) and Roxbury Crossing (02120); Dorchester, split across four codes (02121, 02122, 02124, 02125); Mattapan (02126), itself once considered part of Dorchester; Charlestown (02129); Jamaica Plain (02130) and Roslindale (02131), both carved from the old town of West Roxbury; West Roxbury itself (02132); Allston (02134) and Brighton (02135), the same annexed town split into two postal names; and Hyde Park (02136). None of the 14 appears in the 36-code table above, because none of them uses \"Boston\" as its USPS place name. But a piece of mail addressed to any of them is, legally, addressed to the City of Boston all the same.",
-					"This site's [Los Angeles ZIP page](/los-angeles-zip-codes/) documents the same kind of split, on a larger scale and with a single documented cause: Los Angeles annexed most of the San Fernando Valley in one 1915 vote driven by access to aqueduct water rights, and 14 Valley neighborhoods still carry their pre-annexation names today. Boston's version played out earlier and more piecemeal: six separate votes over 44 years, each town joining for its own local reasons rather than one shared cause. But it left the same kind of trace on the ZIP map.",
+					"Six towns joined the City of Boston between 1868 and 1912, each by its own vote, and none of them lost its name at the post office when it did. Roxbury was annexed January 5, 1868; Dorchester followed January 3, 1870. Charlestown, Brighton, and West Roxbury all joined together after a single October 7, 1873 vote, with the annexation effective January 5, 1874. Hyde Park was the last: residents voted to join on November 7, 1911, and the annexation took effect January 1, 1912. The individual motives varied more than a single explanation can cover. Roxbury's annexation is tied by Boston's annexation-history accounts to the city's water and sewer systems, infrastructure the smaller town struggled to replicate on its own. Brighton's case ran closer to the opposite direction: in the four years before its 1873 vote, a group of local businessmen known as the \"Brighton Ring\" pushed the town into roughly $1.56 million of infrastructure spending against about $438,000 of revenue, an eightfold jump in town debt, then steered 81% of voters toward annexation so Boston would absorb what Brighton owed. Hyde Park's annexation, per the City of Boston Archives' account, was driven mainly from Boston's side: the town's mills had drawn a wave of immigrant labor by the early 1900s, and the city wanted the tax revenue that growth represented.",
+					"Those six former towns, plus neighborhoods carved out of them afterward, account for 14 ZIP codes today that are legally inside Boston but carry a different USPS place name: Roxbury (02119) and Roxbury Crossing (02120); a four-way Dorchester split (02121, 02122, 02124, 02125); Mattapan (02126), itself once considered part of Dorchester; Charlestown (02129); Jamaica Plain (02130) and Roslindale (02131), both carved from the old town of West Roxbury; West Roxbury itself (02132); Allston (02134) and Brighton (02135), the same annexed town split into two postal names; and Hyde Park (02136). None of the 14 appears in the 36-code table above, because none of them uses \"Boston\" as its USPS place name. But a piece of mail addressed to any of them is, legally, addressed to the City of Boston all the same.",
+					"This site's [Los Angeles ZIP page](/los-angeles-zip-codes/) documents the same kind of split, on a larger scale and with a single documented cause: Los Angeles annexed most of the San Fernando Valley in one 1915 vote driven by the fixed water rates that came with joining the city that owned the new aqueduct, and 14 Valley neighborhoods still carry their pre-annexation names today. Boston's version played out earlier and more piecemeal: six separate votes over 44 years, with each town joining for its own local reasons, not one shared cause. But it left the same kind of trace on the ZIP map.",
 				],
 			},
 		],
@@ -694,12 +694,12 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Dorchester part of Boston?',
 				answer:
-					"Yes. Dorchester was an independent town until it was annexed to Boston on January 3, 1870. It's legally part of the city today, but its ZIP codes (02121, 02122, 02124, 02125) still carry the Dorchester name at the post office rather than Boston's.",
+					"Yes, ever since Boston absorbed the formerly self-governing town on January 3, 1870. USPS never updated the paperwork to match: Dorchester was large enough to end up split across four separate ZIP codes, and none of the four switched over to the Boston name.",
 			},
 			{
 				question: 'Why does ZIP code 02212 show up in Middlesex County instead of Suffolk?',
 				answer:
-					"This site's source data (GeoNames) tags 02212 to Middlesex County, unlike every other Boston ZIP code, which sits in Suffolk. No public record explains that specific county tag, but the code's use is documented: it's a Unique ZIP Bank of America has used for downtown Boston mail since November 2008, and third-party ZIP databases that identify that assignment tag it Suffolk County instead.",
+					"Nobody has published a clear reason. 02212 belongs to Bank of America and covers its downtown mail, a Unique ZIP that has existed since late 2008, and every other Boston ZIP sits in Suffolk County. This guide's source table is the outlier: it files 02212 under Middlesex, while outside databases that track the same Bank of America assignment place it in Suffolk like its neighbors.",
 			},
 		],
 		sources: [
@@ -1693,12 +1693,12 @@ export const guides: Guide[] = [
 		faq: [
 			{
 				question: 'How many area codes does California have?',
-				answer: '41 as of 2026, more than any other US state.',
+				answer: 'California has 41 area codes, the highest count of any state in the country.',
 			},
 			{
 				question: 'What area codes does Los Angeles use?',
 				answer:
-					'213, 323, 310, 424, 818, 747, and 738, seven in all, currently overlay parts of the [greater LA area](/los-angeles-zip-codes/), all descendants of the single area code, 213, that covered the entire southern third of California in 1947.',
+					'213, 323, 310, 424, 818, 747, and 738, seven in all, currently overlay parts of the [greater LA area](/los-angeles-zip-codes/). Every one of them traces back to a single ancestor: 213, the code that opened service across the southern part of the state in 1947.',
 			},
 			{
 				question: 'What was the very first California area code?',
@@ -2132,7 +2132,7 @@ export const guides: Guide[] = [
 		published: '2026-08-10',
 		updated: '2026-08-10',
 		coreSummary:
-			'Chicago runs on three overlaid area codes today (312, 773, and 872), all serving the exact same footprint inside city limits. 312 started in 1947 as the single code for the whole Chicago area, including the suburbs. A 1989 split carved off the suburbs into 708, and a second split in 1996 carved off every Chicago neighborhood outside downtown into 773, leaving 312 an enclave: a small area code entirely encircled by 773 rather than bordering a different region. 872 overlaid both in 2009 once splitting the city a third time stopped being a workable option.',
+			'Chicago runs on three overlaid area codes today (312, 773, and 872), all serving the exact same footprint inside city limits. 312 started in 1947 as the single code for the whole Chicago area, including the suburbs. A 1989 split carved off the suburbs into 708, and a second split in 1996 carved off every Chicago neighborhood outside downtown into 773, leaving 312 an enclave: a small area code entirely encircled by 773, not bordering any other region. 872 overlaid both in 2009 once splitting the city a third time stopped being a workable option.',
 		sections: [
 			{
 				heading: "Chicago's three area codes",
@@ -2173,12 +2173,12 @@ export const guides: Guide[] = [
 			{
 				question: "What's the difference between 312 and 773?",
 				answer:
-					"312 covers downtown Chicago and the Loop; 773 covers the rest of the city. Both have been in service since the 1996 split and neither is being phased out; which number you have depends on when it was assigned, not where you live today.",
+					"312 is the smaller footprint, the central business district; 773 wraps around it and picks up every other neighborhood in the city. Both have been in service since the 1996 split and neither is being phased out; a caller can't tell which one someone has just by knowing their address.",
 			},
 			{
 				question: 'Why is 312 called an enclave area code?',
 				answer:
-					"Because it's a small numbering plan area entirely surrounded by a single other code, 773, rather than bordering several different regions the way most split-off area codes do. That happened because Chicago's second split (1996) cut through the city itself instead of separating city from suburb.",
+					"Telecom planners use that label for a code with just one neighbor on every side: 773 wraps all the way around 312's small footprint, a shape most split-off codes don't end up with. Regulators drew the 1996 boundary inside city limits that time, not along them, which is what left 312 boxed in on all sides instead of touching a suburb.",
 			},
 			{
 				question: 'Do I need to dial 10 digits for a local Chicago call?',

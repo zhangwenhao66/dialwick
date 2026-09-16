@@ -1,0 +1,16 @@
+[
+  {
+    "index": 1,
+    "source": "正文",
+    "sentence": "Nevada's own numbering history split off from a similarly narrow starting point: [Las Vegas's area codes trace back to a split that sent the rest of Nevada off to 775](/las-vegas-area-code/), leaving 702 (later joined by an overlay, 725) to cover the metro alone, the same split-then-overlay pattern that grew California's original three codes into 41.",
+    "target_slug": "las-vegas-area-code",
+    "target_found": true
+  },
+  {
+    "index": 2,
+    "source": "正文",
+    "sentence": "In 2018, 279 was added as an overlay on what remained of 916; see this site's [Sacramento ZIP code list](/sacramento-zip-codes/) for how that same county lines up on the postal side, or 209's own numbering history for why that code didn't get its own overlay until 2022, thirteen months after regulators had already forced it into 10-digit dialing.",
+    "target_slug": "sacramento-zip-codes",
+    "target_found": true
+  }
+]

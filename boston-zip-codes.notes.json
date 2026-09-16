@@ -1,0 +1,7 @@
+[
+  {
+    "index": 1,
+    "verdict": "CONFIRMED",
+    "note": "Both facts check out against los-angeles-zip-codes' own body text, and the bridge sentence was tightened to quote the source's own phrasing. (1) Annexation year/mechanism: target article says 'On March 29, 1915, voters approved annexing roughly 170 square miles of the San Fernando Valley into Los Angeles... The motive was water, not space: the Los Angeles Aqueduct had opened in 1913, and Valley communities wanted the fixed water rates that came with joining the city that owned the aqueduct.' The bridge sentence now says '...driven by the fixed water rates that came with joining the city that owned the new aqueduct', matching the source's own wording instead of the looser 'water rights' phrasing used in an earlier draft. (2) Neighborhood count: target article states 'Fourteen San Fernando Valley neighborhoods that are legally part of the City of Los Angeles keep their own ZIP place names instead of Los Angeles', which directly matches '14 Valley neighborhoods still carry their pre-annexation names today' in the bridge sentence."
+  }
+]
