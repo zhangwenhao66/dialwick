@@ -244,10 +244,11 @@
   },
   "https://dialwick.com/cincinnati-zip-codes/": {
     "submitted_date": "2026-08-17",
-    "last_submitted_date": "2026-08-17",
+    "last_submitted_date": "2026-09-18",
     "verified_status": "stale_not_indexed",
     "last_checked_date": "2026-09-10",
-    "verified_method": "bwt_url_inspection"
+    "verified_method": "bwt_url_inspection",
+    "note": "resubmit after fixing double-domain-prefix bug (2026-09-18)"
   },
   "https://dialwick.com/202-area-code/": {
     "submitted_date": "2026-08-18",
@@ -412,11 +413,6 @@
   "https://dialwick.com/how-to-call-japan-from-us/": {
     "submitted_date": "2026-09-03",
     "last_submitted_date": "2026-09-03",
-    "verified_status": "pending"
-  },
-  "https://dialwick.com/https://dialwick.com/cincinnati-zip-codes/": {
-    "submitted_date": "2026-09-06",
-    "last_submitted_date": "2026-09-06",
     "verified_status": "pending"
   }
 }
