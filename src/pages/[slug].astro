@@ -96,7 +96,7 @@ import { imgDims } from '../data/imageDims';
 		<div class="mt-9">
 			<p class="idx-tab font-mono-num m-0 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent-dark)]">Core summary</p>
 			<div class="idx-card px-5 py-4">
-				<p class="m-0 text-[1.05rem] leading-relaxed text-[var(--ink)]">{guide.coreSummary}</p>
+				<p class="m-0 text-[1.05rem] leading-relaxed text-[var(--ink)]" set:html={md(guide.coreSummary)} />
 			</div>
 		</div>
 
