@@ -389,7 +389,8 @@
   "https://dialwick.com/us-country-code": {
     "submitted_date": "2026-08-25",
     "last_submitted_date": "2026-08-25",
-    "verified_status": "pending"
+    "verified_status": "verified_indexed",
+    "verified_date": "2026-10-08"
   },
   "https://dialwick.com/new-jersey-area-codes/": {
     "submitted_date": "2026-08-27",
@@ -416,12 +417,14 @@
   "https://dialwick.com/how-to-call-uk-from-us/": {
     "submitted_date": "2026-08-30",
     "last_submitted_date": "2026-08-31",
-    "verified_status": "pending"
+    "verified_status": "verified_indexed",
+    "verified_date": "2026-10-08"
   },
   "https://dialwick.com/how-to-call-france-from-us/": {
     "submitted_date": "2026-08-31",
     "last_submitted_date": "2026-08-31",
-    "verified_status": "pending"
+    "verified_status": "verified_indexed",
+    "verified_date": "2026-10-08"
   },
   "https://dialwick.com/north-carolina-area-codes/": {
     "submitted_date": "2026-09-02",
