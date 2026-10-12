@@ -256,3 +256,9 @@ Pitch 9（kjohnson@kenmoreny.gov，2026-08-21发出，同样从未验证）本�
 读`research-db/index-coverage/2026-09-06_dialwick.json`，确认当前仍`Submitted and indexed`的13个URL：首页 + austin/boston/cincinnati/kansas-city/new-york/sacramento/texas 的zip-codes页 + california/chicago/michigan/nyc的area-code页 + zip-code-shows-wrong-city。WebSearch定向搜索"helpful links/useful links"类政府页citing allareacodes.com或unitedstateszipcodes.org（延续Pitch 5/6/8/9验证有效的"竞品缺口"框架），命中3个密歇根township页面（ausabletwp-mi.gov、comstockmi.gov、columbustwpmi.gov的useful-links页）——逐一curl核实，**3个页面均无任何area code/zip code相关内容**（搜索引擎误匹配"Michigan"+"useful links"关键词，非真实候选），全部排除。本轮未找到新的真实候选（死链或竞品缺口皆无）。
 
 **累计口径**：DialWick断链置换战术累计已发送12封pitch（含2封跟进）；已验证`not_replaced` 3条(Rutland/Henderson/gondtc)、`verified_live_backlink_confirmed` 0条，转化率仍为0/12。
+
+
+## 2026-10-12 Codex断链专项复查
+
+旧pitch源页HTTP200，未发现本站href；DFS当前快照未发现原来源域。仅历史复查，非新提交/非获链；原信已过14天跟进窗口，不补发。证据：/Users/zhangwh/.codex/automation-runtime/runs/trafficsite-broken-link-building/20261012T2100/old-review.json、/Users/zhangwh/.codex/automation-runtime/runs/trafficsite-broken-link-building/20261012T2100/dialwick-backlinks.txt。共同机会索引已保存历史标记及30天后复查，不更新新机会处理日期。
+本轮4站复查API合计$0.0966。本专项新增0、获链0；17站今日共同台账新动作2/102缺100（War回答未成超链接），逐站 /Users/zhangwh/.codex/automation-runtime/runs/trafficsite-broken-link-building/20261012T2100/17站当日覆盖.md。原十站累计79封/0确认口径及旧ID差异保留，旧低转化待办不重复创建；10月9日三份待批稿未动。
