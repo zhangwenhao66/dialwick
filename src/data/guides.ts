@@ -3264,7 +3264,7 @@ export const guides: Guide[] = [
 		description:
 			"All 58 ZIP codes USPS assigns to Fresno, California (entirely inside Fresno County), plus the 2010 split that created 93737 and the two ZIPs tied to an IRS tax-processing center that closed in 2021.",
 		published: '2026-08-18',
-		updated: '2026-08-18',
+		updated: '2026-10-13',
 		coreSummary:
 			"USPS assigns 58 ZIP codes to Fresno, California, and unlike this site's Atlanta, Denver, or Cincinnati lists, every one of them sits inside a single county: Fresno County, no split across a line. zip-codes.com's own delivery-type breakdown for the city puts only 19 of the 58 on standard residential and business routes; the other 39 split into 28 PO Box codes and 11 unique codes reserved for single high-volume recipients, outnumbering the standard codes by roughly two to one. Two of those unique codes, 93844 and 93888, aren't Fresno neighborhoods at all: zip-codes.com tags both as IRS Service Center addresses, tracing back to a paper tax-return processing center the IRS permanently closed in Fresno at the end of September 2021. And one of the 58, 93737, didn't exist before July 2010, when USPS carved it out of a crowded 93727 to keep mail moving on the city's east side.",
 		sections: [
@@ -3309,7 +3309,7 @@ export const guides: Guide[] = [
 			{
 				heading: "From 209 to 559 to 357: Fresno's area codes, one of them barely a year old",
 				body: [
-					"Fresno's phone numbers trace back to 209, which itself split off from 916 (one of California's three original 1947 area codes) in 1958, decades before Fresno had a code of its own to call. Fresno kept 209 for four more decades before the region split off its own code, 559, in November 1998, the same year several other fast-growing California metros split off codes of their own. 559 stayed Fresno's only code for more than 26 years, longer than 213 lasted before Los Angeles's first split in 1951, before regulators added an overlay, 357, on March 26, 2025, among the newest area codes in the state, per Wikipedia's tracking of the numbering plan.",
+					"Fresno's phone numbers trace back to 209, which itself split off from 916 (one of California's three original 1947 area codes) in 1958, decades before Fresno had a code of its own to call. Fresno kept 209 for four more decades before the region split off its own code, 559, in November 1998, the same year several other fast-growing California metros split off codes of their own. 559 stayed Fresno's only code for more than 26 years, longer than 213 lasted before Los Angeles's first split in 1951, before regulators added an overlay, 357, on March 26, 2025, among the newest area codes in the state, per Wikipedia's tracking of the numbering plan (checked 13 October 2026).",
 					"That overlay means new phone numbers in the Fresno area now carry 357 rather than 559, while existing 559 numbers keep working exactly as before, the same overlay pattern this site's [California area codes list](/california-area-codes/) documents elsewhere in the state. San Francisco added its own overlay, 628, back in 2015, and Sacramento added 279 in 2018, both years ahead of Fresno's turn. Los Angeles's most recent overlay, 738, is the one that came close: it landed November 1, 2024, less than five months before 357 arrived in Fresno.",
 				],
 			},
@@ -3548,9 +3548,9 @@ export const guides: Guide[] = [
 		description:
 			"All 13 ZIP codes USPS assigns to Irvine, California, entirely inside Orange County, plus the 1960 sale that created UC Irvine and the Northpark strip that still dials on 714 instead of 949.",
 		published: '2026-08-22',
-		updated: '2026-08-22',
+		updated: '2026-10-13',
 		coreSummary:
-			"USPS assigns 13 ZIP codes to Irvine, California, and every one of them sits inside Orange County. What sets this list apart from this site's other single-county ZIP pages is the order events happened in: the Irvine Company transferred 1,000 acres of its cattle ranch to the University of California for one dollar in September 1960, UC Irvine opened for classes in 1965, and the city built up around that campus wasn't incorporated until December 28, 1971, six years later. One of the 13 codes, 92697, belongs to the campus itself rather than any neighborhood, and zip-codes.com's delivery-type tally classifies it \"Unique,\" alongside 9 standard routes and 3 PO Box codes. Not all of Irvine dials on the area code most people associate with the city, either: Wikipedia's service-area note for 949 carves out a strip of Northpark Irvine that still runs on 714.",
+			"USPS assigns 13 ZIP codes to Irvine, California, and every one of them sits inside Orange County. What sets this list apart from this site's other single-county ZIP pages is the order events happened in: the Irvine Company transferred 1,000 acres of its cattle ranch to the University of California for one dollar in September 1960, UC Irvine opened for classes in 1965, and the city built up around that campus wasn't incorporated until December 28, 1971, six years later. One of the 13 codes, 92697, belongs to the campus itself rather than any neighborhood, and zip-codes.com's delivery-type tally classifies it \"Unique,\" alongside 9 standard routes and 3 PO Box codes. Not all of Irvine dials on the area code most people associate with the city, either: Wikipedia's service-area note for 949 carves out a strip of Northpark Irvine that still runs on 714 (checked 13 October 2026).",
 		sections: [
 			{
 				heading: "One ZIP code with no neighborhood at all",
@@ -3572,7 +3572,7 @@ export const guides: Guide[] = [
 				heading: 'The land the university bought for a dollar',
 				body: [
 					"Irvine's 13 ZIP codes cover ground that was still a working cattle and citrus ranch, roughly 93,000 acres known as the Irvine Ranch, within living memory of people who once worked it. UC president Clark Kerr picked the site in 1959 from a list of candidate parcels architect William Pereira had scouted the year before. In September 1960 the Irvine Company transferred title on 1,000 acres to the university, and UC Irvine's own institutional history records that the company charged one dollar for it because a company charter barred donating property outright to a public entity, so a token sale satisfied the rule instead. President Lyndon B. Johnson dedicated the land in 1964, telling the assembled crowd: \"California is not just talking about education. You are doing something about it.\" UC Irvine opened for classes on October 4, 1965, with 1,589 students.",
-					"The city around that campus hadn't been built yet. Pereira and Irvine Company planners drew up a master plan for a community of 50,000 people radiating outward from the university, and the first phases of five founding villages, Turtle Rock, University Park, Westpark, El Camino Real, and Walnut, were finished by 1970. Residents of those villages voted to incorporate on December 28, 1971, choosing a city substantially larger than Pereira's original blueprint called for, according to Wikipedia's account of that vote. By then the campus the city is named around had already been operating for six years.",
+					"The city around that campus hadn't been built yet. Pereira and Irvine Company planners drew up a master plan for a community of 50,000 people radiating outward from the university, and the first phases of five founding villages, Turtle Rock, University Park, Westpark, El Camino Real, and Walnut, were finished by 1970. Residents of those villages voted to incorporate on December 28, 1971, choosing a city substantially larger than Pereira's original blueprint called for, according to Wikipedia's account of that vote (checked 13 October 2026). By then the campus the city is named around had already been operating for six years.",
 				],
 				diagramSvg: `<svg viewBox="0 0 680 190" width="100%" style="max-width:680px;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline: Irvine Company transfers land to UC for one dollar in 1960, UC Irvine opens for classes in 1965, and the city of Irvine incorporates in 1971">
 	<line x1="50" y1="95" x2="630" y2="95" stroke="#1a2332" stroke-width="2" opacity="0.25"/>
@@ -3593,14 +3593,14 @@ export const guides: Guide[] = [
 			{
 				heading: 'What the campus ZIP code does to a population count',
 				body: [
-					"Because 92697 carries no residential route, it complicates any estimate of Irvine's population built purely from ZIP-level data. Summing the residents zip-codes.com counts across the city's other 12 codes comes to roughly 307,670, short of the 318,629 Wikipedia cites for the city overall as of mid-2025. A single-institution code like 92697 simply doesn't carry a population figure the way a standard route does, so a ZIP-by-ZIP tally will always undercount a city that has one.",
+					"Because 92697 carries no residential route, it complicates any estimate of Irvine's population built purely from ZIP-level data. Summing the residents zip-codes.com counts across the city's other 12 codes comes to roughly 307,670, short of the 318,629 Wikipedia cites for the city overall as of June 2025 (checked 13 October 2026). A single-institution code like 92697 simply doesn't carry a population figure the way a standard route does, so a ZIP-by-ZIP tally will always undercount a city that has one.",
 					"The remaining 12 codes split into 9 standard routes, ordinary neighborhood delivery, and 3 PO Box codes: 92616, 92619, and 92623. None of the three is tied to one large recipient the way 92697 is; they simply separate box-only mail from street delivery within a given area.",
 				],
 			},
 			{
 				heading: "The Irvine block that isn't on 949",
 				body: [
-					"949 has covered Southern Orange County, Irvine included, since splitting off from 714 on April 18, 1998, the same split this site's [California area codes list](/california-area-codes/) tracks alongside the rest of the state's numbering history. Wikipedia's service-area note for 949 carves out one exception inside Irvine: a strip of the Northpark neighborhood, running from the north side of Culver Drive at Interstate 5 to Jamboree Road, that still dials on 714.",
+					"949 has covered Southern Orange County, Irvine included, since splitting off from 714 on April 18, 1998, the same split this site's [California area codes list](/california-area-codes/) tracks alongside the rest of the state's numbering history. Wikipedia's service-area note for 949 (checked 13 October 2026) carves out one exception inside Irvine: a strip of the Northpark neighborhood, running from the north side of Culver Drive at Interstate 5 to Jamboree Road, that still dials on 714.",
 					"714 predates 949 by nearly half a century. It split off from California's original 213 in 1951, decades before Irvine existed as a city, and it later picked up an overlay, 657, on September 23, 2008. The area-code field on zip-codes.com's per-ZIP pages for Irvine reflects that same boundary blur: 11 of the city's 13 codes list 949 alongside 714, 657, or both, and only two, 92602 and 92604, show 949 by itself. See this site's [rundown of how area codes actually work](/how-do-area-codes-work/) for why a numbering-plan boundary and a city's edge rarely line up exactly.",
 				],
 			},
@@ -3628,7 +3628,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Does all of Irvine use area code 949?',
 				answer:
-					"Nearly all of it, but not quite. 949 has served Southern Orange County since splitting from 714 in 1998, but Wikipedia notes that a strip of the Northpark neighborhood, from Culver Drive at Interstate 5 to Jamboree Road, still dials on 714 instead.",
+					"Nearly all of it, but not quite. 949 has served Southern Orange County since splitting from 714 in 1998, but Wikipedia notes that a strip of the Northpark neighborhood, from Culver Drive at Interstate 5 to Jamboree Road, still dials on 714 instead (checked 13 October 2026).",
 			},
 		],
 		sources: [
@@ -3648,14 +3648,14 @@ export const guides: Guide[] = [
 		description:
 			"All 27 ZIP codes GeoNames assigns to Long Beach, California, why the city runs its own health department instead of routing through Los Angeles County, and which codes have almost no residents at all.",
 		published: '2026-08-22',
-		updated: '2026-08-22',
+		updated: '2026-10-13',
 		coreSummary:
-			"Long Beach is the largest city in California that isn't a county seat, according to Wikipedia's profile of the city: with roughly 450,469 residents as of 2025, it outsizes plenty of California cities that do sit at the head of a county, yet Los Angeles, twenty miles up the coast, holds that title for the county Long Beach belongs to. GeoNames assigns 27 ZIP codes to Long Beach, and this site's data confirms every one of them falls inside Los Angeles County. But size and status split again at the health department: Long Beach runs its own, one of only four city-operated health departments left in California, alongside Berkeley, Pasadena, and the small industrial city of Vernon, rather than leaving that job to the county the way most of its neighboring cities do. Of the 27 ZIP codes, zip-codes.com's delivery-type lookup classifies six as \"Unique,\" reserved for a single institution rather than a residential route, and one of those, 90840, is the campus of California State University, Long Beach.",
+			"Long Beach is the largest city in California that isn't a county seat, according to Wikipedia's profile of the city (checked 13 October 2026): with roughly 450,469 residents as of 2025, it outsizes plenty of California cities that do sit at the head of a county, yet Los Angeles, twenty miles up the coast, holds that title for the county Long Beach belongs to. GeoNames assigns 27 ZIP codes to Long Beach, and this site's data confirms every one of them falls inside Los Angeles County. But size and status split again at the health department: Long Beach runs its own, one of only four city-operated health departments left in California, alongside Berkeley, Pasadena, and the small industrial city of Vernon, rather than leaving that job to the county the way most of its neighboring cities do. Of the 27 ZIP codes, zip-codes.com's delivery-type lookup classifies six as \"Unique,\" reserved for a single institution rather than a residential route, and one of those, 90840, is the campus of California State University, Long Beach.",
 		sections: [
 			{
 				heading: '27 ZIP codes, one county, and a city bigger than most county seats',
 				body: [
-					"Los Angeles holds the title of seat for Los Angeles County; Long Beach never has, despite outgrowing plenty of actual county seats along the way. Wikipedia puts Long Beach's 2025 population at roughly 450,469, good for 44th nationally and 7th in California, and that same profile calls it the largest city in the state that isn't a county seat at all. GeoNames' postal-code dataset still ties Long Beach to that same county on paper: all 27 ZIP codes assigned to the city fall inside Los Angeles County, with no split the way some other cities on this site's lists have.",
+					"Los Angeles holds the title of seat for Los Angeles County; Long Beach never has, despite outgrowing plenty of actual county seats along the way. Wikipedia puts Long Beach's 2025 population at roughly 450,469 (checked 13 October 2026), good for 44th nationally and 7th in California, and that same profile calls it the largest city in the state that isn't a county seat at all. GeoNames' postal-code dataset still ties Long Beach to that same county on paper: all 27 ZIP codes assigned to the city fall inside Los Angeles County, with no split the way some other cities on this site's lists have.",
 					"Three of those 27 codes, 90834, 90835, and 90899, returned no individual record when checked against zip-codes.com's lookup tool on August 22, 2026, unlike the other 24, which all resolve. The remaining 24 split by delivery type into 14 standard residential routes, 4 PO Box-only codes (90801, 90809, 90832, and 90853), and 6 codes zip-codes.com classifies \"Unique,\" set aside for a single business, government office, or institution rather than a stretch of streets.",
 				],
 				table: {
@@ -3698,7 +3698,7 @@ export const guides: Guide[] = [
 			{
 				question: 'Is Long Beach the county seat of Los Angeles County?',
 				answer:
-					"No. Los Angeles holds that title, even though Long Beach, per Wikipedia, is the largest city in California that isn't a county seat at all, with roughly 450,469 residents as of 2025.",
+					"No. Los Angeles holds that title, even though Long Beach, per Wikipedia (checked 13 October 2026), is the largest city in California that isn't a county seat at all, with roughly 450,469 residents as of 2025.",
 			},
 			{
 				question: 'Does Long Beach have its own health department?',
@@ -3848,7 +3848,7 @@ export const guides: Guide[] = [
 		description:
 			"Every ZIP code USPS assigns to Lubbock, Texas, all inside Lubbock County, plus which of the three unique ones actually belongs to Texas Tech, and the area code that's gone unsplit since 1957.",
 		published: '2026-08-23',
-		updated: '2026-08-23',
+		updated: '2026-10-13',
 		coreSummary:
 			"USPS assigns 26 ZIP codes to Lubbock, Texas, and every one of them sits inside Lubbock County, where Lubbock has been the county seat since 1891. zip-codes.com's own delivery-type count for the city puts 16 on standard routes, 7 as PO Box-only codes, and 3 as unique codes tied to a single organization apiece, and the university whose name is stamped across the city doesn't hold one of those three the way most people would guess. Texas Tech's main campus ZIP, 79409, is classified Standard; the unique slot instead goes to Texas Tech's own medical school two miles east, the city government's own PO box, and a private marketing firm. One more ZIP on the list, 79401, marks the downtown blocks an F5 tornado tore through on the night of May 11, 1970, killing 26 people and contributing to how meteorologists still measure tornado damage today. And running under all 26 ZIPs is a single area code, 806, that has covered the Texas Panhandle since 1957 without ever being split or overlaid, the only one of the six area codes serving Texas before 1983 that's never needed relief.",
 		sections: [
@@ -3882,8 +3882,8 @@ export const guides: Guide[] = [
 			{
 				heading: "79401 and the tornado that changed how damage gets measured",
 				body: [
-					"79401 covers downtown Lubbock, including the 20-story Metro Tower at 1220 Broadway, known when it opened in 1955 as the Great Plains Life Building, then the tallest building in the city. On the night of May 11, 1970, an F5 tornado tore through that same stretch of downtown as part of an 8.5-mile path that killed 26 people, according to Wikipedia's sourced account of the storm; NOAA's Storm Prediction Center lists it as the 24th F5 or EF5 tornado recorded in the United States since 1950.",
-					"The Great Plains Life Building itself took heavy damage and sat vacant for years before reopening as residential lofts in 1975. Wikipedia's entry on the building notes it's the second-tallest building on record to survive a direct F5 hit, behind only the ALICO Building in Waco. The broader damage survey Ted Fujita conducted across the city afterward, matching wind-speed estimates to specific patterns of structural failure, fed into the Fujita Scale he introduced the following year, the same F-scale this site uses elsewhere to describe tornado intensity.",
+					"79401 covers downtown Lubbock, including the 20-story Metro Tower at 1220 Broadway, known when it opened in 1955 as the Great Plains Life Building, then the tallest building in the city. On the night of May 11, 1970, an F5 tornado tore through that same stretch of downtown as part of an 8.5-mile path that killed 26 people, according to Wikipedia's sourced account of the storm (checked 13 October 2026); NOAA's Storm Prediction Center lists it as the 24th F5 or EF5 tornado recorded in the United States since 1950.",
+					"The Great Plains Life Building itself took heavy damage and sat vacant for years before reopening as residential lofts in 1975. Wikipedia's entry on the building (checked 13 October 2026) notes it's the second-tallest building on record to survive a direct F5 hit, behind only the ALICO Building in Waco. The broader damage survey Ted Fujita conducted across the city afterward, matching wind-speed estimates to specific patterns of structural failure, fed into the Fujita Scale he introduced the following year, the same F-scale this site uses elsewhere to describe tornado intensity.",
 				],
 			},
 			{

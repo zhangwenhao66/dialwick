@@ -2432,3 +2432,17 @@ Site-specific checklist for this article: (1) does the 66-code ZIP table's Jeffe
   "escalation": null
 }
 ```
+
+## Wikipedia attribution backfill — 2026-10-13
+
+扩散判定：通用 / 扫描范围：17 站（未检查：0）/ 命中：9 站，DialWick 本站命中 4 篇 12 处（全矩阵当前扫描结果见 Codex receipt）/ 修复：当场 4 篇，派发 0 / 防复发：check_wikipedia_attribution_drift.py 已入 CHECKS.json 第 54 项 | 教训 L-1012-2 + 发布共用块 B-129 第 15 项。
+
+本批只处理冻结站的事实归因，不改标题、URL、段落结构或内链。基线扫描：`check_wikipedia_attribution_drift.py --all` 为 12 处 / 4 篇；`--all --narrow` 为 Irvine 1 处 / 1 篇。逐条核对状态：12 处均在当日抓取的活维基原文中仍可找到对应论断；0 处判为已漂移，0 处未检查。4 篇各处归因句加入 `checked 13 October 2026`。核对命令均为 `curl -sS -m 40 -A 'Mozilla/5.0 (research)' 'https://en.wikipedia.org/w/index.php?title=<条目>&action=raw' -o <receipt>`：Fresno 使用 `Area_codes_559_and_357`；Irvine 使用 `Irvine,_California`、`University_of_California,_Irvine`、`Area_code_949`；Long Beach 使用 `Long_Beach,_California`；Lubbock 使用 `Lubbock_tornado`、`Metro_Tower_(Lubbock)`。原文收存在 `/Users/zhangwh/.codex/receipts/wikipedia-dialwick-20261013/raw/`。
+
+逐篇核对结论：`fresno-zip-codes`（1 处）357 overlay 加入时间和编号仍在 `Area_codes_559_and_357`；`irvine-zip-codes`（5 处）Northpark 使用 714 的例外在 `Area_code_949` 中仍在（正文/摘要/FAQ 三处），1971-12-28 投票说法在 `Irvine,_California` 中仍在，318,629/2025-06 人口在正文仍在；`long-beach-zip-codes`（3 处）450,469 人口、全国第 44/加州第 7、州内最大非 county seat 均仍在 `Long_Beach,_California`；`lubbock-zip-codes`（3 处）8.5 英里/26 人死亡仍在 `Lubbock_tornado`，Metro Tower 直接遭 F5 后幸存且列为已知第二高建筑仍在 `Metro_Tower_(Lubbock)`。以上是 12 处的逐项“仍在”结论，均以当天抓取原文核过。
+
+Irvine 页面存在一个需如实说明的内部差异：页面正文仍写人口 318,629（截至 2025 年 6 月），信息框另列 318,764 的 2025 estimate。正文对应本稿明确归因的 318,629 仍在活页；本次没有用一处页面字段覆盖另一处，也未改该说法。
+
+改后宽、窄扫描均退出码 0（0 候选）。`run_checks.py` 已对四篇分别运行。桥接句候选均已打开目标文章核对，并在两篇新增 `.notes.json` 中记录依据；该项 4 篇通过。最终结果：Fresno 38 通过 / 2 不通过 / 15 未检查；Irvine 39 / 1 / 15；Long Beach 39 / 1 / 15；Lubbock 39 / 1 / 15（每条实际运行 40 / 应跑 55）。未通过都是修改前存在的 `check_prose_patterns.py` 报警；Fresno 另有重复锚文本。修改前 HEAD 的 `guides.ts` 对四篇同样触发 prose-pattern 报警；冻结期只能做事实修正，清除这些报警需改 FAQ/文案或内链，超出本批准许范围，保留未通过状态。`check_hero_crop.py` 通过：DialWick 不做强制裁剪；其余 15 项未检查，因 CHECKS.json 未定义这些单篇模式。`npm run build` 成功，59 页。`npm ci` 报告 17 项依赖审计漏洞（1 low、5 moderate、8 high、3 critical），本批未改依赖。
+
+待部署验收：内容提交、推送后应以 cache-bypass URL 检查四篇新日期标记；IndexNow 只提交这四个改动 URL。提交号与线上状态随后补记。

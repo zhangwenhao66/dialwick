@@ -1,0 +1,6 @@
+[
+  {"index": 1, "verdict": "CONFIRMED", "note": "california-area-codes page lists 559 as Fresno/San Joaquin Valley, in service Nov 14 1998; its body says 559 split off from 209 in November 1998. Matches the bridge claim."},
+  {"index": 2, "verdict": "CONFIRMED", "note": "atlanta-zip-codes page identifies Atlanta 39901 as the IRS service center's unique single-recipient ZIP and also names Austin 73301 as another IRS-center example. The bridge describes both as single-recipient patterns accurately."},
+  {"index": 3, "verdict": "CONFIRMED", "note": "chicago-zip-codes title and body state that 28 of Chicago's 84 ZIP codes are unique codes assigned to a single organization. Matches the linked description."},
+  {"index": 4, "verdict": "CONFIRMED", "note": "california-area-codes page describes Fresno's 559/357 overlay and states 357 was added in 2025; the article's linked overlay pattern is present. The bridge's existing-vs-new number distinction is accurate for an overlay."}
+]
