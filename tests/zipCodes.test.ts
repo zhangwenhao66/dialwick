@@ -81,3 +81,36 @@ describe('getZipsByState', () => {
 		expect(zips.every((z) => z.stateCode === 'TX')).toBe(true);
 	});
 });
+
+describe('Baltimore City vs Baltimore County (backs /baltimore-city-vs-baltimore-county/)', () => {
+	const md = getZipsByState('MD');
+	const city = md.filter((r) => r.county === 'Baltimore (city)');
+	const county = md.filter((r) => r.county === 'Baltimore');
+
+	it('the city has 39 ZIP codes and every one begins with 212', () => {
+		expect(city.length).toBe(39);
+		expect(city.every((r) => r.zip.startsWith('212'))).toBe(true);
+	});
+
+	it('the county has 53 ZIP codes, split 18 / 15 / 20 across the 210, 211 and 212 prefixes', () => {
+		expect(county.length).toBe(53);
+		expect(county.filter((r) => r.zip.startsWith('210')).length).toBe(18);
+		expect(county.filter((r) => r.zip.startsWith('211')).length).toBe(15);
+		expect(county.filter((r) => r.zip.startsWith('212')).length).toBe(20);
+	});
+
+	it('no ZIP in the 210 or 211 ranges falls inside the city', () => {
+		expect(md.filter((r) => r.county === 'Baltimore (city)' && /^21[01]/.test(r.zip)).length).toBe(0);
+	});
+
+	it('21201 is downtown Baltimore City while 21204 is Towson, the county seat', () => {
+		expect(lookupZip('21201')?.county).toBe('Baltimore (city)');
+		expect(lookupZip('21204')?.county).toBe('Baltimore');
+		expect(lookupZip('21204')?.place).toBe('Towson');
+	});
+
+	it('21250 (UMBC, Catonsville) sits in the county despite carrying the Baltimore mailing name', () => {
+		expect(lookupZip('21250')?.place).toBe('Baltimore');
+		expect(lookupZip('21250')?.county).toBe('Baltimore');
+	});
+});

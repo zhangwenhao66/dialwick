@@ -1478,7 +1478,7 @@ export const guides: Guide[] = [
 				heading: "Richmond is legally in no county at all",
 				body: [
 					"That \"City of Richmond\" jurisdiction in the table above isn't shorthand for a county: it's the real answer. Richmond is one of Virginia's 38 independent cities, a status that means the city sits entirely outside county government, equal in legal standing to a county rather than a municipality inside one. Virginia's cities were first split from their surrounding counties by the state's Constitution of 1869-70, which took effect in 1870 upon Virginia's readmission to the Union during Reconstruction; the 1902 and current 1971 constitutions carried the arrangement forward. An independent city runs its own schools, courts, and roads without a county layer above it, and its residents don't belong to any county for any legal purpose.",
-					"Virginia's 38 independent cities account for nearly all of this kind of jurisdiction in the entire country. Only three other American cities work the same way: Baltimore, Maryland (separated from Baltimore County in 1851); St. Louis, Missouri (voters approved separation from St. Louis County in an 1876 referendum, formalized in 1877); and Carson City, Nevada (consolidated with the former Ormsby County in 1969). Every other city in the United States, no matter how large, sits inside at least one county.",
+					"Virginia's 38 independent cities account for nearly all of this kind of jurisdiction in the entire country. Only three other American cities work the same way: [Baltimore, Maryland](/baltimore-city-vs-baltimore-county/) (separated from Baltimore County in 1851); St. Louis, Missouri (voters approved separation from St. Louis County in an 1876 referendum, formalized in 1877); and Carson City, Nevada (consolidated with the former Ormsby County in 1969). Every other city in the United States, no matter how large, sits inside at least one county.",
 				],
 			},
 			{
@@ -4313,6 +4313,101 @@ export const guides: Guide[] = [
 			{ label: 'Japan Ministry of Internal Affairs and Communications: Adding 060 Numbers to Mobile Phone Numbers for Voice Calls', url: 'https://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/pressrelease/2024/12/20_2.html' },
 			{ label: 'Telecompaper: Japan delays rollout of 060 mobile numbers', url: 'https://www.telecompaper.com/news/japan-delays-rollout-of-060-mobile-numbers--1576412' },
 			{ label: 'FCC: International Long-Distance Calling Made Simple', url: 'https://www.fcc.gov/consumers/guides/international-long-distance-calling-made-simple-tip-sheet' },
+		],
+	},
+	{
+		slug: 'baltimore-city-vs-baltimore-county',
+		category: 'Counties',
+		title: "Baltimore City vs County: What's the Difference?",
+		description:
+			"Baltimore City is not in Baltimore County. It has been an independent city since 1851, yet every one of its ZIP codes sits in the 212 range the county draws on too, and both dial 410, 443 and 667.",
+		published: '2026-10-16',
+		updated: '2026-10-16',
+		coreSummary:
+			"Baltimore City is not part of Baltimore County, and hasn't been since 1851, when Maryland's constitution made it an independent city. It sits inside the county's footprint on a map but answers to its own government, and the Census Bureau counts it as a county equivalent. Baltimore County, founded in 1659 and seated at Towson, wraps around the city on three sides, with Anne Arundel County bordering it to the south. The two share more than a name. Every ZIP code USPS assigns to Baltimore City falls in the 212 prefix, a range the county draws on as well, while the county also reaches into 210 and 211. A Baltimore mailing address, in other words, does not tell you which government you live under. Both also dial the same three area codes: 410, 443 and 667. The county is the larger of the two, with 854,535 residents at the 2020 census against the city's 585,708.",
+		sections: [
+			{
+				heading: 'Baltimore City answers to no county, and that has been settled law since 1851',
+				body: [
+					"For most of its first century Baltimore was the opposite of independent: it was Baltimore County's county seat. The General Assembly moved the seat from Joppa to the growing port town of Baltimore in 1768 and built the county's first courthouse on what is now North Calvert Street the same year. The city stayed inside the county for another 83 years. When Maryland rewrote its constitution in 1851, it designated Baltimore an independent city, and the county went looking for a new seat, settling on Towson in a February 13, 1854 referendum.",
+					"That split is the whole answer to the question. Baltimore City is not in Baltimore County, and it is not in any other county either. For most purposes under Maryland law the city is treated as a county-level entity, and the Census Bureau counts it as a county equivalent when it publishes statistics, which is why Baltimore appears in county-level data tables on its own rather than being folded into the county around it. It is also the most populous independent city in the United States. Outside Virginia, whose 38 independent cities are a family of their own that the [Richmond ZIP code guide](/richmond-va-zip-codes/) sets out, only three American cities sit outside every county: Baltimore, St. Louis and Carson City.",
+					"Baltimore County is the older institution by nearly two centuries, founded in 1659 and one of the 23 counties Maryland has today. The territory it now covers is a fraction of the original grant: the first Baltimore County took in most of northeastern Maryland, including land that later became Cecil and Harford counties along with parts of Carroll, Anne Arundel, Frederick, Howard and Kent.",
+				],
+			},
+			{
+				heading: 'The ZIP prefix that straddles the city-county line',
+				body: [
+					"ZIP codes don't respect city limits, and Baltimore is an unusually clean example of why. Postal prefixes are assigned around delivery routes rather than around whichever government collects your property tax, so the boundary between city and county runs straight through the middle of the 212 range.",
+					"Of the 39 ZIP codes this site's registry assigns to Baltimore City, every single one begins with 212. The 53 it assigns to the county-side of the line split three ways: 18 in the 210 range, 15 in 211 and 20 in 212. Not one ZIP in the 210 or 211 range falls inside the city.",
+					"The practical effect is that 212 on its own tells you nothing. 21201 is downtown Baltimore City. 21204 is Towson, which is the county seat and not in the city at all. Both carry the same prefix.",
+				],
+				table: {
+					caption: 'ZIP codes by prefix, as recorded in this site\'s GeoNames-derived registry',
+					columns: ['ZIP prefix', 'In Baltimore City', 'In Baltimore County', 'What the county side covers'],
+					rows: [
+						['210', '0', '18', 'Rural northern county: Hereford, Monkton, Sparks Glencoe'],
+						['211', '0', '15', 'Northwest and northeast suburbs: Owings Mills, Reisterstown, White Marsh'],
+						['212', '39', '20', 'Downtown, plus the inner ring: Towson, Dundalk, Essex, Catonsville'],
+					],
+				},
+			},
+			{
+				heading: 'A mailing address is not a jurisdiction, even when it says Baltimore',
+				body: [
+					"USPS assigns a preferred place name to each ZIP code, and that name can outlive the boundary it was chosen for. 42 ZIP codes in Maryland carry the place name 'Baltimore' and nothing else, and most of them are indeed in Baltimore City. Not all of them are. 21250, the ZIP for the University of Maryland, Baltimore County campus in Catonsville, sits in the county, and 21240 sits in Anne Arundel County, outside both.",
+					"So an address that reads 'Baltimore, MD' is a statement about a mail route, not about which government you live under. The county and the city run separate property tax assessments, separate police departments and separate school systems, and the ZIP code on the envelope doesn't indicate which one applies. The city-county line is the one thing a mailing address is reliably silent about.",
+				],
+			},
+			{
+				heading: 'Both sides of the line dial the same three area codes',
+				body: [
+					"Area codes are just as unhelpful as a city-county test. Baltimore City and Baltimore County both sit inside the 410/443/667 overlay, and no prefix separates them.",
+					"410 arrived on October 6, 1991, split out of 301, which had covered the entire state since 1947. Numbers ran short quickly enough that 443 was laid over the top of 410 in 1997, and a third code, 667, followed on March 24, 2012. All three now cover the same footprint: Baltimore, Annapolis and Columbia, plus every county and city touching the Chesapeake Bay, the Atlantic Ocean or Delaware. St. Mary's County, in the state's southern tip, was left with 301.",
+					"Because overlay codes draw from a shared pool as lines are activated, a Baltimore number's area code reflects when the line was switched on rather than where it is. New York City, by contrast, runs on [eight area codes](/nyc-area-code/) split into two overlay stacks, with one borough reassigned to the other stack years after the original split.",
+				],
+			},
+			{
+				heading: 'Which of the two has more people?',
+				body: [
+					"Baltimore County has more residents than the city it surrounds: 854,535 at the 2020 census against Baltimore City's 585,708. That makes the county the third-most populous in Maryland, behind Montgomery and Prince George's. Baltimore City is the more populous of the two historically, and its relative decline shows up in its own numbers: it counted 620,961 residents in 2010, a drop of about 5.7% over the decade.",
+					"The city's footprint also stopped growing a century ago. It annexed county land on its western and northern edges in 1888, then again in 1918 and 1919, when the last major annexation took territory from the county on three sides and, for the first time, reached south of the Patapsco River into Anne Arundel County. Nothing comparable has happened since, and that frozen municipal boundary is a second reason the two sides of the line have drifted apart.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'Is Baltimore City in Baltimore County?',
+				answer:
+					"No. The city belongs to no county at all. Baltimore County surrounds it without containing it, and federal statistics report the two separately rather than folding one into the other.",
+			},
+			{
+				question: 'Why is Baltimore City separate from Baltimore County?',
+				answer:
+					"The 1851 state constitution drew the line. Up to then the city had been part of the county and had hosted its government seat since 1768; afterward the county relocated that seat to Towson.",
+			},
+			{
+				question: 'Do Baltimore City and Baltimore County have the same area codes?',
+				answer:
+					'Yes. Three codes reach both sides, 410, 443 and 667, added as successive overlays on one territory. Which one a phone number carries depends on how recently it was issued, not on which side of the boundary it sits.',
+			},
+			{
+				question: 'What county is Baltimore City in?',
+				answer:
+					"None. Maryland treats the city itself as equivalent to a county for most legal purposes. It is one of just three cities outside Virginia that work this way, the others being St. Louis, Missouri, and Carson City, Nevada.",
+			},
+			{
+				question: 'Is Baltimore County bigger than Baltimore City?',
+				answer:
+					"Yes. On population the county comes out ahead, 854,535 to 585,708 in the most recent decennial count.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Baltimore', url: 'https://en.wikipedia.org/wiki/Baltimore' },
+			{ label: 'Wikipedia: Baltimore County, Maryland', url: 'https://en.wikipedia.org/wiki/Baltimore_County,_Maryland' },
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
+			{ label: 'US Census Bureau 2020 ZCTA-to-county relationship file', url: 'https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt' },
+			{ label: 'Wikipedia: Area codes 410, 443, and 667', url: 'https://en.wikipedia.org/wiki/Area_codes_410,_443,_and_667' },
+			{ label: 'Maryland State Archives, Maryland Manual On-Line: Baltimore City government', url: 'https://msa.maryland.gov/msa/mdmanual/36loc/bcity/html/bcity.html' },
 		],
 	},
 ];
