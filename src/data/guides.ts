@@ -4320,7 +4320,7 @@ export const guides: Guide[] = [
 		category: 'Counties',
 		title: "Baltimore City vs County: What's the Difference?",
 		description:
-			"Baltimore City is not in Baltimore County. It has been an independent city since 1851, yet every one of its ZIP codes sits in the 212 range the county draws on too, and both dial 410, 443 and 667.",
+			"Baltimore City is not in Baltimore County. It has been an independent city since 1851, yet its ZIP codes all sit in the 212 range the county also uses.",
 		published: '2026-10-16',
 		updated: '2026-10-16',
 		coreSummary:
