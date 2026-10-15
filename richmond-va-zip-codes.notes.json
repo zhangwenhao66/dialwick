@@ -1,0 +1,5 @@
+[
+  {"index": 1, "verdict": "CONFIRMED", "note": "Bridge says Baltimore separated from Baltimore County in 1851. Target article states the city 'has been an independent city since 1851' and that Maryland's constitution designated it an independent city that year, plus a dedicated section on the 1851 split."},
+  {"index": 2, "verdict": "CONFIRMED", "note": "Bridge says about a fifth of Atlanta's ZIPs carry an Atlanta address while sitting in DeKalb County. Target article says 'Most are in Fulton County, but roughly a fifth sit in DeKalb County' and repeats roughly one in five of the 92 ZIPs in DeKalb even though they carry an Atlanta mailing address."},
+  {"index": 3, "verdict": "CONFIRMED", "note": "Bridge says Staten Island is legally Richmond County. Target article's coreSummary lists '14 on Staten Island (Richmond County)', confirming the borough-county equivalence the bridge relies on."}
+]

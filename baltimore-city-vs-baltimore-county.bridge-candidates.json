@@ -1,0 +1,9 @@
+[
+  {
+    "index": 1,
+    "source": "正文",
+    "sentence": "New York City, by contrast, runs on [eight area codes](/nyc-area-code/) split into two overlay stacks, with one borough reassigned to the other stack years after the original split.",
+    "target_slug": "nyc-area-code",
+    "target_found": true
+  }
+]

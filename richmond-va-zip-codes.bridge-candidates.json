@@ -1,0 +1,23 @@
+[
+  {
+    "index": 1,
+    "source": "正文",
+    "sentence": "Only three other American cities work the same way: [Baltimore, Maryland](/baltimore-city-vs-baltimore-county/) (separated from Baltimore County in 1851); St.",
+    "target_slug": "baltimore-city-vs-baltimore-county",
+    "target_found": true
+  },
+  {
+    "index": 2,
+    "source": "正文",
+    "sentence": "The 10 ZIP codes assigned to Henrico or Chesterfield in the table above physically extend past Richmond's city limits into the neighboring county, but the post office handling that route still uses \\\"Richmond\\\" as the address's place name, the same mismatch this site has already documented for [Atlanta](/atlanta-zip-codes/), where a fifth of the city's ZIP codes carry an Atlanta address while sitting in DeKalb County rather than Fulton.",
+    "target_slug": "atlanta-zip-codes",
+    "target_found": true
+  },
+  {
+    "index": 3,
+    "source": "正文",
+    "sentence": "This site has documented an identical naming coincidence before: New York City's [Staten Island is legally Richmond County](/new-york-zip-codes/), a completely separate use of the same name in a completely different state.",
+    "target_slug": "new-york-zip-codes",
+    "target_found": true
+  }
+]

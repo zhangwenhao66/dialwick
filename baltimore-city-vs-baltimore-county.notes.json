@@ -1,0 +1,8 @@
+[
+  {
+    "index": 1,
+    "verdict": "CONFIRMED",
+    "sentence": "New York City, by contrast, runs on [eight area codes](/nyc-area-code/) split into two overlay stacks, with one borough reassigned to the other stack years after the original split.",
+    "note": "Bridge makes three claims about the target. (a) 'eight area codes': target title is 'New York City Area Codes: All Eight, Plus the Manhattan Block Wired Into the Bronx'. (b) 'split into two overlay stacks': target coreSummary says 'NYC runs on eight area codes split into two separate overlay stacks (one for Manhattan, one for the other four boroughs)'. (c) 'one borough reassigned to the other stack years after the original split': target has a heading 'The 1984 split, and why the Bronx changed sides eight years later' and states 'On July 1, 1992, the Bronx moved from 212 to 718, aligning it with the other three outer boroughs.' All three hold."
+  }
+]
