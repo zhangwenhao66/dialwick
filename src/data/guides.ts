@@ -192,7 +192,7 @@ export const guides: Guide[] = [
 			{
 				heading: 'Manhattan, Brooklyn, the Bronx, and Staten Island line up exactly with their counties',
 				body: [
-					"New York City is unusual among major US cities in that each of its boroughs is legally identical to a county: Manhattan is New York County, Brooklyn is Kings County, the Bronx is Bronx County, and Staten Island is Richmond County. That means every ZIP code in one of these four boroughs sits entirely within a single, named county, with no cross-county splits the way [Atlanta splits between Fulton and DeKalb](/atlanta-zip-codes/) or [Chicago's near suburbs](/chicago-zip-codes/) sometimes have.",
+					"New York City is unusual among major US cities in that each of its boroughs is legally identical to a county: Manhattan is New York County, Brooklyn is Kings County, the Bronx is Bronx County, and Staten Island is Richmond County. Where the county names came from, including why Brooklyn is Kings County, is covered in [why Brooklyn is called Kings County](/why-is-brooklyn-called-kings-county/). That means every ZIP code in one of these four boroughs sits entirely within a single, named county, with no cross-county splits the way [Atlanta splits between Fulton and DeKalb](/atlanta-zip-codes/) or [Chicago's near suburbs](/chicago-zip-codes/) sometimes have.",
 				],
 			},
 		],
@@ -4408,6 +4408,111 @@ export const guides: Guide[] = [
 			{ label: 'US Census Bureau 2020 ZCTA-to-county relationship file', url: 'https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt' },
 			{ label: 'Wikipedia: Area codes 410, 443, and 667', url: 'https://en.wikipedia.org/wiki/Area_codes_410,_443,_and_667' },
 			{ label: 'Maryland State Archives, Maryland Manual On-Line: Baltimore City government', url: 'https://msa.maryland.gov/msa/mdmanual/36loc/bcity/html/bcity.html' },
+		],
+	},
+	{
+		slug: 'why-is-brooklyn-called-kings-county',
+		category: 'Counties',
+		title: 'Why Is Brooklyn Called Kings County?',
+		description:
+			"Brooklyn is Kings County, a name the English gave it in 1683 for Charles II. Each NYC borough matched to its county, ZIP range and area codes.",
+		published: '2026-10-18',
+		updated: '2026-10-18',
+		coreSummary:
+			"Brooklyn and Kings County are the same ground under two names. Brooklyn comes from the Dutch village of Breuckelen, founded in 1646. Kings County was created by the English in 1683 and named for King Charles II, who ruled from 1660 to 1685. The two names stayed apart because the county, not the town, was the unit the English drew in 1683, and Brooklyn took about 200 years to absorb the rest of it. When New York City consolidated in 1898, four of the five boroughs kept the county they already sat on. Brooklyn is Kings County, Manhattan is New York County, Queens is Queens County, Staten Island is Richmond County, and the Bronx is Bronx County, a latecomer split off from New York County in 1914. The table on this page lines up each borough with its county, the ZIP prefixes it uses and the area codes that cover it.",
+		sections: [
+			{
+				heading: 'Two names, one place: Breuckelen came first, Kings came second',
+				body: [
+					"The name Brooklyn is the older of the two. It comes from the town of Breukelen in the Dutch province of Utrecht. Wikipedia's Brooklyn article (checked 2026-10-18) dates the American Breuckelen to 1646 and says the name first appeared in print in 1663, and a local history of the borough adds that the Dutch West India Company authorized the village that year.",
+					"Kings County came from a different power. England took New Netherland in 1664 and renamed it New York for the Duke of York, the king's brother. In 1683 the province was divided into twelve original counties, and Kings County was one of them. It was named for King Charles II of England, who ruled from 1660 to 1685. So the county name honors a monarch, and the borough name honors a Dutch village.",
+					"The county held several towns, and Brooklyn was only one of them. A local history of the borough puts it plainly: Brooklyn and Kings County have two names because it took about 200 years for the city of Brooklyn to annex the other parts of the county. Once Brooklyn had absorbed the rest, the borough and the county covered the same land, and the county name simply stayed on the books.",
+				],
+			},
+			{
+				heading: 'The five boroughs, matched to their counties',
+				body: [
+					"Each borough is coextensive with one county. Queens and the Bronx share their names with their counties, and the other three boroughs do not. The boroughs date from the 1898 consolidation of Greater New York. Four of the county names are older than that, and the Bronx's is the exception.",
+					"The ZIP and area code columns come from this site's own data layer. ZIP ranges are the first and last code the registry lists for each county, and the area codes are those the registry assigns to the borough. The 917 code is a citywide overlay mainly used for cell phones, so it appears for every borough and is left out of the area code column.",
+				],
+				table: {
+					caption: 'NYC boroughs and their counties, with ZIP and area code ranges from the site registry',
+					columns: ['Borough', 'County', 'County name honors', 'ZIP range (prefixes)', 'Area codes (plus citywide 917)'],
+					rows: [
+						['Brooklyn', 'Kings County', 'King Charles II', '11201 to 11256 (112)', '718, 347, 929'],
+						['Manhattan', 'New York County', 'The Duke of York, later James II', '10001 to 10286 (100, 101, 102)', '212, 646, 332'],
+						['Queens', 'Queens County', 'Catherine of Braganza, Charles II\'s queen (presumed)', '11004 to 11697 (110, 111, 113, 114, 116)', '718, 347, 929'],
+						['Staten Island', 'Richmond County', 'Charles Lennox, 1st Duke of Richmond, a son of Charles II', '10301 to 10314 (103)', '718, 347, 929'],
+						['The Bronx', 'Bronx County', 'Jonas Bronck, an early settler of New Netherland (via the Bronx River)', '10451 to 10475 (104)', '718, 347, 929'],
+					],
+				},
+			},
+			{
+				heading: 'Three of the five counties are named for one royal family',
+				body: [
+					"Kings, Queens and Richmond were all created in 1683, and all three point back to the household of Charles II. Kings honors the king himself. Queens is generally attributed to his wife, Catherine of Braganza, who was queen of England at the time. Wikipedia (checked 2026-10-18) says the county is presumed to be named for her, so the attribution is a strong inference rather than a documented naming decree. Richmond is credited to Charles Lennox, the first Duke of Richmond, Charles II's illegitimate son.",
+					"New York County follows the same logic one step earlier. The territory was renamed New York in 1664 after the Duke of York, the king's brother. Manhattan became a borough in 1898 and kept the county name it already had.",
+					"The Bronx is the outlier. It does not honor royalty and it did not exist as a county until 1914, when Bronx County was separated from New York County. The word Bronx traces to Jonas Bronck, who established the first European settlement there in 1639, and the Bronx River took his name.",
+				],
+			},
+			{
+				heading: 'What the 1898 consolidation changed, and what it left alone',
+				body: [
+					"On January 1, 1898, New York County (which then included the Bronx), Kings County, Richmond County and part of Queens County were consolidated under one city charter. The city dissolved the municipalities inside the consolidated area, and each of these became a borough, a new kind of municipal division created by the 1898 charter. The Bronx borough sat inside New York County until 1914.",
+					"The change kept the county names but not always the borough names. Staten Island was officially the Borough of Richmond until 1975, when the name was changed to Staten Island to match everyday usage. The county was left as Richmond County. Queens County itself was larger before the city existed: from 1683 to 1899 it included what is now Nassau County.",
+					"The borough is the city's administrative division and the county is the state's, so the two names do different jobs and never collide.",
+				],
+			},
+			{
+				heading: 'What this means for ZIP codes and phone numbers',
+				body: [
+					"A Brooklyn address does not say Kings County anywhere, and it does not need to. In the site registry every Kings County ZIP code carries the place name Brooklyn, every Richmond County ZIP says Staten Island, and every Bronx County ZIP says Bronx. Queens is different: its ZIP codes carry neighborhood names such as Astoria, Flushing, Bayside and Long Island City, so a Queens address often does not say Queens at all.",
+					"ZIP prefixes follow the geography closely here. Brooklyn runs on 112, Staten Island on 103, the Bronx on 104, and Manhattan on 100 to 102. Queens spreads over 110, 111, 113, 114 and 116. For a full list of Manhattan and Brooklyn postal codes, see the [New York ZIP codes guide](/new-york-zip-codes/).",
+					"Phone numbers are looser than ZIP codes. Manhattan uses 212 with the 646 and 332 overlays, while the other four boroughs share 718 with the 347 and 929 overlays (the Manhattan neighborhood of Marble Hill is the exception and takes the 718 family). The 718 code was split off from 212 in 1984 for Brooklyn, Queens and Staten Island, and the Bronx moved over in 1992. The [NYC area code guide](/nyc-area-code/) covers how the overlays were added.",
+				],
+			},
+		],
+		faq: [
+			{
+				question: 'In which county is Brooklyn, NY?',
+				answer:
+					"Kings County. The two cover identical territory, and English authorities gave the county that name in 1683.",
+			},
+			{
+				question: 'Why is Brooklyn called Kings County?',
+				answer:
+					"Two different naming events produced two names. Dutch settlers took Brooklyn from Breukelen, a town in Utrecht, and founded the village in 1646. The English picked Kings for their own monarch, Charles II, when they carved the province into twelve counties.",
+			},
+			{
+				question: 'When did the 5 boroughs become NYC?',
+				answer:
+					"The consolidation took effect on January 1, 1898. At that point the Bronx was still inside New York County, and it only became its own county in 1914.",
+			},
+			{
+				question: 'Is Brooklyn part of New York County?',
+				answer:
+					"No. New York County is Manhattan alone. Brooklyn has its own county, and so do Queens, Staten Island and the Bronx.",
+			},
+			{
+				question: 'Is Queens named after a queen?',
+				answer:
+					"Most accounts credit the wife of Charles II, a Portuguese princess. It is inferred from who was queen in 1683, and no naming decree is cited.",
+			},
+			{
+				question: 'What is the ZIP code range for Brooklyn?',
+				answer:
+					"The registry here lists Brooklyn ZIPs from 11201 up to 11256, sharing a single three-digit prefix.",
+			},
+		],
+		sources: [
+			{ label: 'Wikipedia: Brooklyn (Kings County)', url: 'https://en.wikipedia.org/wiki/Brooklyn' },
+			{ label: 'Wikipedia: Queens', url: 'https://en.wikipedia.org/wiki/Queens' },
+			{ label: 'Wikipedia: Staten Island (Richmond County)', url: 'https://en.wikipedia.org/wiki/Staten_Island' },
+			{ label: 'Wikipedia: The Bronx', url: 'https://en.wikipedia.org/wiki/The_Bronx' },
+			{ label: 'Wikipedia: Manhattan (New York County)', url: 'https://en.wikipedia.org/wiki/Manhattan' },
+			{ label: 'Wikipedia: Boroughs of New York City', url: 'https://en.wikipedia.org/wiki/Boroughs_of_New_York_City' },
+			{ label: 'Brooklyn Genealogy Info: A quick history of Breuckelen, Kings County and Brooklyn', url: 'https://bklyn-genealogy-info.stevemorse.org/Brooklyn.History.html' },
+			{ label: 'GeoNames.org US postal code database (CC BY 4.0)', url: 'https://www.geonames.org/postal-codes/US/index.html' },
 		],
 	},
 ];
